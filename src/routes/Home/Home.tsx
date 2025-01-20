@@ -1,4 +1,3 @@
-import { Title } from '@/components';
 import { HeroCard, useMediaQueries } from '@jod/design-system';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
@@ -59,7 +58,7 @@ const Home = () => {
 
   return (
     <main role="main" className="mx-auto w-full max-w-screen-xl" id="jod-main">
-      <Title value={t('osaamispolku')} />
+      <title>{t('osaamispolku')}</title>
       <div className="h-[320px] sm:h-auto mx-auto bg-[url(@/../assets/hero.avif)] bg-[length:auto_680px] bg-[top_-4rem_right_-10rem] sm:bg-[length:auto_auto] sm:bg-[top_-10rem_left_-20rem] sm:py-8">
         {sm && <Cards />}
       </div>
