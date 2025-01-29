@@ -8,6 +8,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1440px;
+  --breakpoint-xxl: 1920px;
 
   --color-*: initial;
   --color-accent-25: #bfdbec;

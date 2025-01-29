@@ -1,1 +1,0 @@
-export { useLocalizedRoutes } from './useLocalizedRoutes';
