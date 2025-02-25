@@ -70,11 +70,7 @@ const Root = () => {
       </header>
       <main>
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <img
-            src={preLaunchImg1}
-            alt={t('alt-1')}
-            className="order-1 aspect-square object-cover object-[50%] h-full w-full"
-          />
+          <img src={preLaunchImg1} alt="" className="order-1 aspect-square object-cover object-[50%] h-full w-full" />
           <div className="order-2 aspect-square bg-[#EE7C46] flex flex-col gap-3 lg:gap-5 py-3 px-6 md:pl-[40px] md:pr-[72px] xl:pl-[80px] xl:pr-[160px] justify-center">
             <h1 className="text-black text-[24px] leading-[32px] xl:text-[54px] xl:leading-[64px] xxl:text-[64px] xxl:leading-[84px] font-semibold">
               {t('heading-1')}
@@ -86,7 +82,7 @@ const Root = () => {
 
           <img
             src={preLaunchImg2}
-            alt={t('alt-2')}
+            alt=""
             className="order-3 md:order-4 aspect-square object-cover object-[90%] h-full w-full"
           />
           <div className="order-4 md:order-3 aspect-square bg-[#329DE0] flex flex-col gap-3 lg:gap-5 py-3 px-6 md:pl-[72px] md:pr-[40px] xl:pl-[160px] xl:pr-[80px] justify-center">
@@ -98,11 +94,7 @@ const Root = () => {
             </p>
           </div>
 
-          <img
-            src={preLaunchImg3}
-            alt={t('alt-3')}
-            className="order-5 aspect-square object-cover object-[10%] h-full w-full"
-          />
+          <img src={preLaunchImg3} alt="" className="order-5 aspect-square object-cover object-[10%] h-full w-full" />
           <div className="order-6 aspect-square bg-[#05A8B3] flex flex-col gap-3 lg:gap-5 py-3 px-6 md:pl-[40px] md:pr-[72px] xl:pl-[80px] xl:pr-[160px] justify-center">
             <h1 className="text-black text-[24px] leading-[32px] xl:text-[54px] xl:leading-[64px] xxl:text-[64px] xxl:leading-[84px] font-semibold">
               {t('heading-3')}
@@ -114,7 +106,7 @@ const Root = () => {
 
           <img
             src={preLaunchImg4}
-            alt={t('alt-4')}
+            alt=""
             className="order-7 md:order-8 aspect-square object-cover object-[60%] h-full w-full"
           />
           <div className="order-8 md:order-7 aspect-square bg-[#CD4EB3] flex flex-col gap-3 lg:gap-5 py-3 px-6 md:pl-[72px] md:pr-[40px] xl:pl-[160px] xl:pr-[80px] justify-center">
@@ -126,11 +118,7 @@ const Root = () => {
             </p>
           </div>
 
-          <img
-            src={preLaunchImg5}
-            alt={t('alt-5')}
-            className="order-9 aspect-square object-cover object-[60%] h-full w-full"
-          />
+          <img src={preLaunchImg5} alt="" className="order-9 aspect-square object-cover object-[60%] h-full w-full" />
           <div className="order-10 aspect-square bg-[#A59AB2] flex flex-col gap-3 lg:gap-5 py-3 px-6 md:pl-[40px] md:pr-[72px] xl:pl-[80px] xl:pr-[160px] justify-center">
             <h1 className="text-black text-[24px] leading-[32px] xl:text-[54px] xl:leading-[64px] xxl:text-[64px] xxl:leading-[84px] font-semibold">
               {t('heading-5')}
