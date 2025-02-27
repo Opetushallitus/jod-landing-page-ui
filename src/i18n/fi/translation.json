@@ -1,15 +1,15 @@
 {
   "osaamispolku": "Osaamispolku",
-  "heading-1": "Osaamispolku - aivan uudenlainen palvelukokonaisuus tulossa loppuvuodesta 2025.",
-  "text-1": "Onko haaveissasi uusi ura tai osaamisen kasvattaminen? Osaamispolku on helppokäyttöinen palvelu, joka tukee ja kannustaa sinua suunnan löytämisessä.",
-  "heading-2": "Osaamispolku mahdollistaa yksilöllisten valintojen suunnittelun",
-  "text-2": "Osaamispolku auttaa sinua hahmottamaan ja sanoittamaan omaa osaamistasi sekä kiinnostusten kohteitasi sekä voit tutustua erilaisiin koulutus- ja työmahdollisuuksiin. Luo oma osaamisprofiilisi Osaamispolussa ja suunnittele tulevaisuutesi!",
+  "heading-1": "Osaamispolku – uusi palvelu tulossa loppuvuodesta 2025",
+  "text-1": "Osaamispolku on koulutus- ja urasuunnittelun, osaamisen kehittämisen ja työllistymisen tueksi tarkoitettu helppokäyttöinen palvelu. Osaamispolku on suunnattu ura- ja koulutusvalintoja tekeville, ohjaajille, koulutusorganisaatioille, työelämätoimijoille ja eri hallinnonalojen asiantuntijoille.",
+  "heading-2": "Osaamispolku mahdollistaa omien vaihtoehtojen tunnistamisen",
+  "text-2": "Osaamispolku auttaa sinua hahmottamaan ja sanoittamaan omaa osaamistasi sekä kiinnostusten kohteitasi. Voit myös tutustua erilaisiin oman osaamisesi ja kiinnostuksesi mukaisiin koulutus- ja työmahdollisuuksiisi. Luo oma osaamisprofiilisi Osaamispolkuun ja suunnittele tulevaisuutesi!",
   "heading-3": "Osaamispolku tarjoaa ohjaajille laadukasta tukea ohjaustyöhön",
-  "text-3": "Ohjaajan osiosta löydät kattavasti koostettuna ohjausalaan liittyvää tietosisältöä, laadukkaita työkaluja ohjaustilanteeseen ja tietoa ohjaajan ammatilliseen kehittymiseen liittyen.",
+  "text-3": "Osaamispolun ohjaajan osiosta löydät kattavasti koostettuna ohjausalaan liittyvää tietosisältöä, laadukkaita työkaluja ohjaustilanteeseen ja tietoa ohjaajan ammatilliseen kehittymiseen liittyen.",
   "heading-4": "Osaamispolku tarjoaa laadukasta tietoa suunnittelun ja päätöksenteon tueksi",
-  "text-4": "Osaamispolun tietopalvelu kokoaa yhteen koulutukseen, työmarkkinaan ja osaamiseen liittyvää monipuolista ja luotettavaa tietoa työsi tueksi.",
-  "heading-5": "Tule mukaan kehittämään palvelua yhdessä!",
-  "text-5": "Järjestämme jatkuvasti Osaamispolun esittelytilaisuuksia ja kutsumme palvelun tulevia käyttäjiä mukaan sen kehittämiseen. Jos kiinnostuit Osaamispolusta, ilmoittaudu mukaan sähköpostilistalle alla olevan linkin kautta ja pidämme sinut ajantasalla miten palvelun kehitys etenee.",
+  "text-4": "Osaamispolun tietopalvelu tarjoaa laadukasta, päivittyvää tietoa suunnittelun ja päätöksenteon tueksi kaikkien käyttöön kuten esimerkiksi koulutusorganisaatioille, työelämätoimijoille ja eri hallinnonalan edustajille.",
+  "heading-5": "Tule mukaan kehittämään Osaamispolkua!",
+  "text-5": "Järjestämme Osaamispolun esittelytilaisuuksia ja kutsumme palvelun tulevia käyttäjiä mukaan sen kehittämiseen. Jos kiinnostuit Osaamispolusta, ilmoittaudu mukaan sähköpostilistalle alla olevan linkin kautta ja pidämme sinut ajan tasalla, miten palvelun kehitys etenee.",
   "text-5-link-text": "Ilmoittaudu tästä",
   "copyright": "© Osaamispolku {{year}}"
 }
