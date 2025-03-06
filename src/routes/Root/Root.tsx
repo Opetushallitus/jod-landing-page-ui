@@ -31,7 +31,7 @@ const Root = () => {
     t,
     i18n: { language },
   } = useTranslation();
-  const { md } = useMediaQueries();
+  const { lg } = useMediaQueries();
 
   React.useEffect(() => {
     document.documentElement.setAttribute('lang', i18n.language);
@@ -46,14 +46,14 @@ const Root = () => {
       <meta property="og:url" content={`https://osaamispolku.fi/${language}`} />
       <meta property="og:image" content={preLaunchImg1} />
       <header role="banner">
-        <nav role="navigation" className="flex justify-between gap-4 px-5 md:px-7 py-5 md:py-[20px]">
-          <div className="p2 md:p-3">
-            {language === 'fi' && <LogoRgbFi size={md ? 64 : 30} />}
-            {language === 'sv' && <LogoRgbSv size={md ? 64 : 30} />}
-            {language === 'en' && <LogoRgbEn size={md ? 64 : 30} />}
+        <nav role="navigation" className="flex justify-between gap-4 px-5 lg:px-7 py-5 lg:py-[20px]">
+          <div className="p2 lg:p-3">
+            {language === 'fi' && <LogoRgbFi size={lg ? 64 : 30} />}
+            {language === 'sv' && <LogoRgbSv size={lg ? 64 : 30} />}
+            {language === 'en' && <LogoRgbEn size={lg ? 64 : 30} />}
             <span className="sr-only">{t('osaamispolku')}</span>
           </div>
-          <div className="text-[#888] text-[12px] md:text-[20px] leading-[14px] md:leading-[22px] tracking-[0.12px] md:tracking-[0.2px] font-bold mt-[12px] md:mt-[35px]">
+          <div className="text-[#888] text-[12px] lg:text-[20px] leading-[14px] lg:leading-[22px] tracking-[0.12px] lg:tracking-[0.2px] font-bold mt-[12px] lg:mt-[35px]">
             <NavLink to="/fi" className={({ isActive }) => (isActive ? 'text-black' : undefined)}>
               FI
             </NavLink>
@@ -72,12 +72,8 @@ const Root = () => {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <img src={preLaunchImg1} alt="" className="order-1 aspect-square object-cover object-[50%] h-full w-full" />
           <div className="order-2 aspect-square bg-[#EE7C46] flex flex-col gap-3 lg:gap-5 py-3 px-6 md:pl-[40px] md:pr-[72px] xl:pl-[80px] xl:pr-[160px] justify-center">
-            <h1 className="text-black text-[24px] leading-[32px] xl:text-[54px] xl:leading-[64px] xxl:text-[64px] xxl:leading-[84px] font-semibold">
-              {t('heading-1')}
-            </h1>
-            <p className="text-black text-[14px] leading-[20px] xl:text-[24px] xl:leading-normal xxl:text-[32px] font-medium">
-              {t('text-1')}
-            </p>
+            <h1 className="text-black font-semibold text-[5vw] leading-snug md:text-[2.75vw]">{t('heading-1')}</h1>
+            <p className="text-black font-medium text-[3vw] md:text-[1.75vw]">{t('text-1')}</p>
           </div>
 
           <img
@@ -86,22 +82,14 @@ const Root = () => {
             className="order-3 md:order-4 aspect-square object-cover object-[90%] h-full w-full"
           />
           <div className="order-4 md:order-3 aspect-square bg-[#329DE0] flex flex-col gap-3 lg:gap-5 py-3 px-6 md:pl-[72px] md:pr-[40px] xl:pl-[160px] xl:pr-[80px] justify-center">
-            <h1 className="text-black text-[24px] leading-[32px] xl:text-[54px] xl:leading-[64px] xxl:text-[64px] xxl:leading-[84px] font-semibold">
-              {t('heading-2')}
-            </h1>
-            <p className="text-black text-[14px] leading-[20px] xl:text-[24px] xl:leading-normal xxl:text-[32px] font-medium">
-              {t('text-2')}
-            </p>
+            <h1 className="text-black font-semibold text-[5vw] leading-snug md:text-[2.75vw]">{t('heading-2')}</h1>
+            <p className="text-black font-medium text-[3vw] md:text-[1.75vw]">{t('text-2')}</p>
           </div>
 
           <img src={preLaunchImg3} alt="" className="order-5 aspect-square object-cover object-[10%] h-full w-full" />
           <div className="order-6 aspect-square bg-[#05A8B3] flex flex-col gap-3 lg:gap-5 py-3 px-6 md:pl-[40px] md:pr-[72px] xl:pl-[80px] xl:pr-[160px] justify-center">
-            <h1 className="text-black text-[24px] leading-[32px] xl:text-[54px] xl:leading-[64px] xxl:text-[64px] xxl:leading-[84px] font-semibold">
-              {t('heading-3')}
-            </h1>
-            <p className="text-black text-[14px] leading-[20px] xl:text-[24px] xl:leading-normal xxl:text-[32px] font-medium">
-              {t('text-3')}
-            </p>
+            <h1 className="text-black font-semibold text-[5vw] leading-snug md:text-[2.75vw]">{t('heading-3')}</h1>
+            <p className="text-black font-medium text-[3vw] md:text-[1.75vw]">{t('text-3')}</p>
           </div>
 
           <img
@@ -110,23 +98,15 @@ const Root = () => {
             className="order-7 md:order-8 aspect-square object-cover object-[60%] h-full w-full"
           />
           <div className="order-8 md:order-7 aspect-square bg-[#CD4EB3] flex flex-col gap-3 lg:gap-5 py-3 px-6 md:pl-[72px] md:pr-[40px] xl:pl-[160px] xl:pr-[80px] justify-center">
-            <h1 className="text-black text-[24px] leading-[32px] xl:text-[54px] xl:leading-[64px] xxl:text-[64px] xxl:leading-[84px] font-semibold">
-              {t('heading-4')}
-            </h1>
-            <p className="text-black text-[14px] leading-[20px] xl:text-[24px] xl:leading-normal xxl:text-[32px] font-medium">
-              {t('text-4')}
-            </p>
+            <h1 className="text-black font-semibold text-[5vw] leading-snug md:text-[2.75vw]">{t('heading-4')}</h1>
+            <p className="text-black font-medium text-[3vw] md:text-[1.75vw]">{t('text-4')}</p>
           </div>
 
           <img src={preLaunchImg5} alt="" className="order-9 aspect-square object-cover object-[60%] h-full w-full" />
           <div className="order-10 aspect-square bg-[#A59AB2] flex flex-col gap-3 lg:gap-5 py-3 px-6 md:pl-[40px] md:pr-[72px] xl:pl-[80px] xl:pr-[160px] justify-center">
-            <h1 className="text-black text-[24px] leading-[32px] xl:text-[54px] xl:leading-[64px] xxl:text-[64px] xxl:leading-[84px] font-semibold">
-              {t('heading-5')}
-            </h1>
-            <p className="text-black text-[14px] leading-[20px] xl:text-[24px] xl:leading-normal xxl:text-[32px] font-medium">
-              {t('text-5')}
-            </p>
-            <p className="text-black text-[14px] leading-[20px] xl:text-[24px] xl:leading-normal xxl:text-[32px] font-medium">
+            <h1 className="text-black font-semibold text-[5vw] leading-snug md:text-[2.75vw]">{t('heading-5')}</h1>
+            <p className="text-black font-medium text-[3vw] md:text-[1.75vw]">{t('text-5')}</p>
+            <p className="text-black font-medium text-[3vw] md:text-[1.75vw]">
               {t('text-5-link-text')}:{' '}
               <a href="https://link.webropol.com/s/liity-jod-listalle" target="_blank" className="text-link">
                 https://link.webropol.com/s/liity-jod-listalle
