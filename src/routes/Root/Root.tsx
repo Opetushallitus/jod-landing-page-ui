@@ -3,7 +3,6 @@ import preLaunchImg2 from '@/../assets/pre-launch-2.avif';
 import preLaunchImg3 from '@/../assets/pre-launch-3.avif';
 import preLaunchImg4 from '@/../assets/pre-launch-4.avif';
 import preLaunchImg5 from '@/../assets/pre-launch-5.avif';
-import i18n from '@/i18n/config';
 import {
   LogoEuEn,
   LogoEuFi,
@@ -34,17 +33,12 @@ const Root = () => {
   const { lg } = useMediaQueries();
 
   React.useEffect(() => {
-    document.documentElement.setAttribute('lang', i18n.language);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [i18n.language]);
+    document.documentElement.setAttribute('lang', language);
+    document.title = t('osaamispolku');
+  }, [language, t]);
 
   return (
     <>
-      <title>{t('osaamispolku')}</title>
-      <meta property="og:title" content={t('osaamispolku')} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={`https://osaamispolku.fi/${language}`} />
-      <meta property="og:image" content={preLaunchImg1} />
       <header role="banner">
         <nav role="navigation" className="flex justify-between gap-4 px-5 lg:px-7 py-5 lg:py-[20px]">
           <div className="p2 lg:p-3">
