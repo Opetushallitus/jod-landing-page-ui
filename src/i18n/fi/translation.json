@@ -1,6 +1,70 @@
 {
+  "about-ai": "Tietoa tekoälyn käytöstä",
+  "about-us": "Tietoa palvelusta",
+  "accessibility-statement": "Saavutettavuusseloste",
+  "data-sources": "Datalähteet",
+  "home": {
+    "feedback-call-to-action": "Anna palautetta",
+    "feedback-content": "Haluamme kehittää Osaamispolkua vastaamaan paremmin juuri sinun tarpeita. Anna meille palautetta ja huomiomme sen kehitystyössä.",
+    "feedback-title": "Kerro meille mitä pidit palvelusta!",
+    "hero-button-label": "Tutustu Osaamispolkuun",
+    "hero-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "hero-title": "Tervetuloa Osaamispolkuun!",
+    "hero-url": "/yksilo/fi",
+    "ohjaaja-call-to-action": "Ohjaajan osioon",
+    "ohjaaja-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "ohjaaja-title": "Ohjaajan osio",
+    "osaamispolku-helping-description": "Nam molestie nec tortor. Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam. Donec ipsum, vestibulum ullamcorper venenatis augue. Aliquam tempus nisi in auctor vulputate, erat felis pellentesque augue nec, pellentesque lectus justo nec erat.",
+    "osaamispolku-helping-heading": "Miten Osaamispolku auttaa sinua osana muita palveluita?",
+    "services": {
+      "ohjaus": {
+        "buttonLabel": "Asiakastyön tueksi",
+        "content": "Nam molestie nec tortor. Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam. Donec ipsum, vestibulum ullamcorper venenatis augue.",
+        "title": "Haluatko löytää ohjaustyöhön työkaluja?"
+      },
+      "osaamispolku": {
+        "buttonLabel": "Oma Osaamispolkusi",
+        "content": "Nam molestie nec tortor. Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam. Donec ipsum, vestibulum ullamcorper venenatis augue.",
+        "title": "Haluatko kartoittaa osaamistasi laajemmin?"
+      },
+      "tietopalvelu": {
+        "buttonLabel": "Tietopalveluun",
+        "content": "Nam molestie nec tortor. Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam. Donec ipsum, vestibulum ullamcorper venenatis augue.",
+        "title": "Haluatko tietoa päätöksen teon tueksi työssäsi?"
+      },
+      "title": "Etkö vielä löytänyt etsimääsi?",
+      "tool": {
+        "buttonLabel": "Kohtaanto / työkalu",
+        "content": "Nam molestie nec tortor. Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam. Donec ipsum, vestibulum ullamcorper venenatis augue.",
+        "title": "Haluatko löytää sinulle sopivia mahdollisuuksia nopeasti?"
+      }
+    },
+    "tietopalvelu-call-to-action": "Tietopalveluun",
+    "tietopalvelu-content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "tietopalvelu-title": "Tietopalvelu",
+    "want-to-know-more": "Haluatko tietää lisää Osaamispolusta?",
+    "want-to-know-more-content": "Mietityttääkö tietosuoja tai tekoälyn hyödyntäminen palvelussa? Alta löydät kootusti yleistä tietoa palvelusta ja sen käytöstä.",
+    "why-content": "Nam molestie nec tortor. Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam. Donec ipsum, vestibulum ullamcorper venenatis augue. Aliquam tempus nisi in auctor vulputate, erat felis pellentesque augue nec, tum.",
+    "why-title": "Miksi Osaamispolku on olemassa?"
+  },
   "login": "Kirjaudu sisään",
   "logout": "Kirjaudu ulos",
+  "menu": "Valikko",
+  "open-menu": "Avaa valikko",
   "osaamispolku": "Osaamispolku",
-  "select-language": "Valitse kieli"
+  "privacy-policy-and-cookies": "Tietosuojaseloste ja evästeet",
+  "select-language": "Valitse kieli",
+  "slugs": {
+    "about-ai": "tietoa-tekoalysta",
+    "about-us": "tietoa-palvelusta",
+    "accessibility-statement": "saavutettavuusseloste",
+    "basic-information": "perustiedot",
+    "data-sources": "datalahteet",
+    "privacy-policy": "tietosuojaseloste",
+    "slugs": {
+      "user-guide": {
+        "index": "ohjeet"
+      }
+    }
+  }
 }

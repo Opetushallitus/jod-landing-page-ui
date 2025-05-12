@@ -64,7 +64,7 @@ const Root = () => {
   }, [i18n.language]);
 
   return (
-    <div className="bg-bg-gray">
+    <div className="bg-white">
       <link rel="manifest" href={`/manifest-${language}.json`} crossOrigin="use-credentials" />
       <header role="banner" className="sticky top-0 z-30 print:hidden">
         <SkipLink hash="#jod-main" label={t('skiplinks.main')} />
