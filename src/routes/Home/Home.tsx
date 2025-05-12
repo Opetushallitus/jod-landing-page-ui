@@ -1,73 +1,213 @@
-import { HeroCard, useMediaQueries } from '@jod/design-system';
+import { Button, HeroCard } from '@jod/design-system';
+import { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router';
+import { MdArrowForward } from 'react-icons/md';
+import { Link, NavLink } from 'react-router';
 
-interface CardsProps {
-  className?: string;
-}
-
-const Cards = ({ className = '' }: CardsProps) => {
-  const {
-    t,
-    i18n: { language },
-  } = useTranslation();
+const MainCard = () => {
+  const { t } = useTranslation();
 
   return (
-    <div
-      className={`mx-auto flex max-w-[1140px] flex-col gap-3 sm:gap-11 px-5 sm:px-6 hyphens-auto xl:hyphens-none ${className}`.trim()}
-    >
-      <div className="sm:mb-[40px] max-w-2xl">
-        <HeroCard backgroundColor="#00818AF2" content={t('home.card-1-content')} title={t('home.card-1-title')} />
-      </div>
-      <div className="grid grid-flow-row auto-rows-max grid-cols-1 gap-3 sm:gap-7 md:grid-cols-3">
-        <HeroCard
-          to={`/${language}`}
-          linkComponent={Link}
-          size="sm"
-          textColor="#000"
-          backgroundColor="#339DDFF2"
-          title={t('home.card-2-title')}
-          content={t('home.card-2-content')}
-        />
-        <HeroCard
-          to={`/${language}`}
-          linkComponent={Link}
-          size="sm"
-          textColor="#000"
-          backgroundColor="#CD4EB3F2"
-          title={t('home.card-3-title')}
-          content={t('home.card-3-content')}
-        />
-        <HeroCard
-          to={`/${language}`}
-          linkComponent={Link}
-          size="sm"
-          textColor="#000"
-          backgroundColor="#EE7C45F2"
-          title={t('home.card-4-title')}
-          content={t('home.card-4-content')}
-        />
+    <div className="sm:h-auto mx-auto bg-[url(@/../assets/pre-launch-1.avif)] bg-cover bg-size-[1500px] bg-center bg-[top_-0rem_right_0rem] sm:bg-[top_0rem_left_0rem]">
+      <div className="mx-auto h-[650px] max-w-[1140px] flex flex-row items-center justify-start hyphens-auto grid cols-3 px-5 sm:px-6">
+        <div className="max-w-[716px] col-span-3 sm:col-span-2">
+          <HeroCard
+            backgroundColor="#006db3"
+            content={t('home.hero-content')}
+            title={t('home.hero-title')}
+            buttonLabel={t('home.hero-button-label')}
+            to={t('home.hero-url')}
+            LinkComponent={Link}
+          />
+        </div>
       </div>
     </div>
   );
 };
 
+const SecondaryCard = ({
+  title,
+  content,
+  color,
+  buttonLabel,
+  to,
+  bgImageClassName,
+}: {
+  title: string;
+  content: string;
+  color: string;
+  buttonLabel: string;
+  to: string;
+  bgImageClassName: string;
+}) => {
+  return (
+    <div className={`h-auto ${bgImageClassName} py-8`}>
+      <div className="max-w-[1140px] mx-auto px-5 sm:px-6">
+        <div className="max-w-2xl">
+          <HeroCard
+            backgroundColor={color}
+            content={content}
+            title={title}
+            to={to}
+            LinkComponent={Link}
+            buttonLabel={buttonLabel}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const ServiceBlock = ({
+  title,
+  text,
+  buttonLabel,
+  to,
+}: {
+  title: string;
+  text: string;
+  buttonLabel: string;
+  to: string;
+}) => {
+  return (
+    <div className="max-w-[342px]">
+      <h3 className="text-heading-3-mobile sm:text-heading-3 mb-5">{title}</h3>
+      <p className="text-body-sm-mobile sm:text-body-sm mb-6">{text}</p>
+      <Button
+        variant="accent"
+        label={buttonLabel}
+        icon={<MdArrowForward size={24} />}
+        iconSide="right"
+        // eslint-disable-next-line react/no-unstable-nested-components
+        LinkComponent={({ children }) => <NavLink to={to}>{children}</NavLink>}
+      />
+    </div>
+  );
+};
+
+const Block = ({ title, content, children }: { title: string; content?: string; children?: JSX.Element }) => {
+  return (
+    <div className="mt-10 px-5 sm:px-6 max-w-[1140px] mx-auto mb-8 print:px-0 print:mx-0">
+      <h2 className="text-heading-1-mobile sm:text-heading-1 mb-6">{title}</h2>
+      {content && <p className="text-body-lg-mobile sm:text-body-lg mb-8">{content}</p>}
+      {children}
+    </div>
+  );
+};
+
+const InfoLink = ({ to, label, lang = 'fi' }: { to: string; label: string; lang: string }) => (
+  <Link to={`/${lang}/${to}`} className="flex justify-center gap-4 text-button-md-mobile sm:text-button-md">
+    {label} <MdArrowForward size={24} />
+  </Link>
+);
+
 const Home = () => {
-  const { t } = useTranslation();
-  const { sm } = useMediaQueries();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+  const infoSlug = t('slugs.basic-information');
 
   return (
     <main role="main" className="mx-auto w-full max-w-(--breakpoint-xl)" id="jod-main">
       <title>{t('osaamispolku')}</title>
-      <div className="h-[320px] sm:h-auto mx-auto bg-[url(@/../assets/hero.avif)] bg-[length:auto_680px] bg-[top_-4rem_right_-10rem] sm:bg-[length:auto_auto] sm:bg-[top_-10rem_left_-20rem] sm:py-8">
-        {sm && <Cards />}
-      </div>
-      {!sm && <Cards className="relative -top-11" />}
-      <div className="mx-auto grid w-full max-w-[1140px] grow grid-cols-3 gap-6 px-5 pb-6 pt-8 sm:px-6 print:p-0">
-        <div className="col-span-3 print:col-span-3 flex flex-col gap-8">
-          <div>
-            <h2 className="text-heading-2-mobile sm:text-heading-2 mb-5">Osaamispolku osana palvelurakennetta</h2>
-            <p className="bg-todo h-[328px] flex items-center justify-center rounded">TODO</p>
+      <MainCard />
+
+      <Block title={t('home.osaamispolku-helping-heading')} content={t('home.osaamispolku-helping-description')}>
+        <p className="bg-todo h-[328px] flex items-center justify-center rounded">TODO</p>
+      </Block>
+
+      <SecondaryCard
+        color="#00a8b3"
+        content={t('home.ohjaaja-content')}
+        title={t('home.ohjaaja-title')}
+        to="/ohjaaja/fi"
+        buttonLabel={t('home.ohjaaja-call-to-action')}
+        bgImageClassName=" bg-[url(@/../assets/pre-launch-5.avif)] bg-[top_-4rem_right_-10rem] sm:bg-[top_-10rem_left_-20rem]"
+      />
+      <SecondaryCard
+        color="#cd4eb3"
+        content={t('home.tietopalvelu-content')}
+        title={t('home.tietopalvelu-title')}
+        to="/tietopalvelu/fi"
+        buttonLabel={t('home.tietopalvelu-call-to-action')}
+        bgImageClassName="bg-[url(@/../assets/pre-launch-2.avif)] bg-[length:auto_650px] sm:bg-[length:auto_1000px] bg-[top_-3rem_right_-10rem] sm:bg-[top_-20rem_right_2rem]"
+      />
+
+      <Block title={t('home.services.title')}>
+        <div className="flex gap-7 md:gap-y-11 flex-wrap flex-row">
+          <ServiceBlock
+            title={t('home.services.tool.title')}
+            text={t('home.services.tool.content')}
+            buttonLabel={t('home.services.tool.buttonLabel')}
+            to={`/yksilo/${language}`}
+          />
+          <ServiceBlock
+            title={t('home.services.osaamispolku.title')}
+            text={t('home.services.osaamispolku.content')}
+            buttonLabel={t('home.services.osaamispolku.buttonLabel')}
+            to="#"
+          />
+          <ServiceBlock
+            title={t('home.services.ohjaus.title')}
+            text={t('home.services.ohjaus.content')}
+            buttonLabel={t('home.services.ohjaus.buttonLabel')}
+            to={`/ohjaaja/${language}`}
+          />
+          <ServiceBlock
+            title={t('home.services.tietopalvelu.title')}
+            text={t('home.services.tietopalvelu.content')}
+            buttonLabel={t('home.services.tietopalvelu.buttonLabel')}
+            to={`/tietopalvelu/${language}`}
+          />
+        </div>
+      </Block>
+
+      <Block title={t('home.why-title')} content={t('home.why-content')}></Block>
+
+      <SecondaryCard
+        color="#333333"
+        content={t('home.feedback-content')}
+        title={t('home.feedback-title')}
+        to="#"
+        buttonLabel={t('home.feedback-call-to-action')}
+        bgImageClassName=" bg-[url(@/../assets/home-1.avif)] bg-cover bg-[length:auto_auto] sm:bg-[length:auto_1000px] bg-[top_-0rem_right_-0rem] sm:bg-[top_-21rem_right_0rem]"
+      />
+
+      <div className="flex justify-start text-white bg-[#333] px-5 sm:px-6 py-8">
+        <div className="w-[1092px] mx-auto">
+          <div className="flex flex-col gap-3">
+            <div className="text-heading-2-mobile sm:text-heading-2">{t('home.want-to-know-more')}</div>
+            <p className="text-body-sm-mobile sm:text-body-sm">{t('home.want-to-know-more-content')}</p>
+            <ul className="flex flex-col gap-3 justify-start items-start">
+              <li>
+                <InfoLink
+                  to={`${t('slugs.slugs.user-guide.index')}/${t('slugs.about-us')}`}
+                  label={t('about-us')}
+                  lang={language}
+                />
+              </li>
+              <li>
+                <InfoLink
+                  to={`${infoSlug}/${t('slugs.privacy-policy')}`}
+                  label={t('privacy-policy-and-cookies')}
+                  lang={language}
+                />
+              </li>
+              <li>
+                <InfoLink to={`${infoSlug}/${t('slugs.data-sources')}`} label={t('data-sources')} lang={language} />
+              </li>
+              <li>
+                <InfoLink to={`${infoSlug}/${t('slugs.about-ai')}`} label={t('about-ai')} lang={language} />
+              </li>
+              <li>
+                <InfoLink
+                  to={`${infoSlug}/${t('slugs.accessibility-statement')}`}
+                  label={t('accessibility-statement')}
+                  lang={language}
+                />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
