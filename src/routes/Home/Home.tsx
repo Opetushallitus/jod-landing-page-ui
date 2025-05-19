@@ -109,7 +109,7 @@ const Home = () => {
   const infoSlug = t('slugs.basic-information');
 
   return (
-    <main role="main" className="mx-auto w-full max-w-(--breakpoint-xl)" id="jod-main">
+    <main role="main" className="mx-auto w-full max-w-(--breakpoint-xl) bg-white" id="jod-main">
       <title>{t('osaamispolku')}</title>
       <MainCard />
 
