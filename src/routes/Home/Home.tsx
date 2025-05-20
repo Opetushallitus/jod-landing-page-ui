@@ -4,6 +4,20 @@ import { useTranslation } from 'react-i18next';
 import { MdArrowForward } from 'react-icons/md';
 import { Link, NavLink } from 'react-router';
 
+const ExternalLink = ({
+  children,
+  to,
+  className,
+}: {
+  to: object | string;
+  className?: string;
+  children: React.ReactNode;
+}) => (
+  <a href={to as string} className={className}>
+    {children}
+  </a>
+);
+
 const MainCard = () => {
   const { t } = useTranslation();
 
@@ -17,7 +31,7 @@ const MainCard = () => {
             title={t('home.hero-title')}
             buttonLabel={t('home.hero-button-label')}
             to={t('home.hero-url')}
-            LinkComponent={Link}
+            LinkComponent={ExternalLink}
           />
         </div>
       </div>
@@ -49,7 +63,7 @@ const SecondaryCard = ({
             content={content}
             title={title}
             to={to}
-            LinkComponent={Link}
+            LinkComponent={ExternalLink}
             buttonLabel={buttonLabel}
           />
         </div>
@@ -121,7 +135,7 @@ const Home = () => {
         color="#00a8b3"
         content={t('home.ohjaaja-content')}
         title={t('home.ohjaaja-title')}
-        to="/ohjaaja/fi"
+        to={`/ohjaaja/${language}`}
         buttonLabel={t('home.ohjaaja-call-to-action')}
         bgImageClassName=" bg-[url(@/../assets/pre-launch-5.avif)] bg-[top_-4rem_right_-10rem] sm:bg-[top_-10rem_left_-20rem]"
       />
@@ -129,7 +143,7 @@ const Home = () => {
         color="#cd4eb3"
         content={t('home.tietopalvelu-content')}
         title={t('home.tietopalvelu-title')}
-        to="/tietopalvelu/fi"
+        to={`/tietopalvelu/${language}`}
         buttonLabel={t('home.tietopalvelu-call-to-action')}
         bgImageClassName="bg-[url(@/../assets/pre-launch-2.avif)] bg-[length:auto_650px] sm:bg-[length:auto_1000px] bg-[top_-3rem_right_-10rem] sm:bg-[top_-20rem_right_2rem]"
       />
