@@ -2,7 +2,7 @@ import { Button, HeroCard } from '@jod/design-system';
 import { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
 import { MdArrowForward } from 'react-icons/md';
-import { Link, NavLink } from 'react-router';
+import { Link } from 'react-router';
 
 const ExternalLink = ({
   children,
@@ -93,7 +93,11 @@ const ServiceBlock = ({
         icon={<MdArrowForward size={24} />}
         iconSide="right"
         // eslint-disable-next-line react/no-unstable-nested-components
-        LinkComponent={({ children }) => <NavLink to={to}>{children}</NavLink>}
+        LinkComponent={({ children }) => (
+          <ExternalLink to={to}>
+            <>{children}</>
+          </ExternalLink>
+        )}
       />
     </div>
   );
