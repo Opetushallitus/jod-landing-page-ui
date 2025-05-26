@@ -1,10 +1,10 @@
-import { LanguageMenu } from '@/components';
-import i18n from '@/i18n/config';
+import { LanguageButton } from '@/components';
+import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { Footer, NavigationBar, SkipLink, useMediaQueries } from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { MdClose, MdMenu } from 'react-icons/md';
-import { NavLink, Outlet, ScrollRestoration } from 'react-router';
+import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router';
 
 const NavigationBarItem = (to: string, text: string) => ({
   key: to,
@@ -53,15 +53,18 @@ const Root = () => {
     }
   };
 
-  const changeLanguage = () => {
-    setLangMenuOpen(false);
-    setMegaMenuOpen(false);
+  const langMenuButtonRef = React.useRef<HTMLLIElement>(null);
+  const langMenuRef = useMenuClickHandler(() => setLangMenuOpen(false), langMenuButtonRef);
+
+  const handleBlur = (event: React.FocusEvent<HTMLDivElement>) => {
+    if (langMenuRef.current && !langMenuRef.current.contains(event.relatedTarget as Node)) {
+      setLangMenuOpen(false);
+    }
   };
 
   React.useEffect(() => {
-    document.documentElement.setAttribute('lang', i18n.language);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [i18n.language]);
+    document.documentElement.setAttribute('lang', language);
+  }, [language]);
 
   return (
     <div className="bg-bg-gray">
@@ -104,19 +107,22 @@ const Root = () => {
               </button>
             )
           }
+          languageButtonComponent={
+            <LanguageButton
+              onClick={() => setLangMenuOpen(!langMenuOpen)}
+              langMenuOpen={langMenuOpen}
+              menuRef={langMenuRef}
+              onMenuBlur={handleBlur}
+              onMenuClick={() => setLangMenuOpen(false)}
+            />
+          }
+          refs={{ langMenuButtonRef: langMenuButtonRef }}
           renderLink={({ to, className, children }) => (
-            <NavLink to={to} className={className}>
+            <Link to={to} className={className}>
               {children as React.ReactNode}
-            </NavLink>
+            </Link>
           )}
         />
-        {langMenuOpen && (
-          <div className="relative xl:container mx-auto">
-            <div className="absolute right-[50px] translate-y-7">
-              <LanguageMenu onClick={changeLanguage} />
-            </div>
-          </div>
-        )}
       </header>
       <Outlet />
       <Footer
