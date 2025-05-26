@@ -1,4 +1,4 @@
-import { Button, HeroCard } from '@jod/design-system';
+import { Button, HeroCard, MoreInfo } from '@jod/design-system';
 import { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
 import { MdArrowForward } from 'react-icons/md';
@@ -23,7 +23,7 @@ const MainCard = () => {
 
   return (
     <div className="sm:h-auto mx-auto bg-[url(@/../assets/pre-launch-1.avif)] bg-cover bg-size-[1500px] bg-center bg-[top_-0rem_right_0rem] sm:bg-[top_0rem_left_0rem]">
-      <div className="mx-auto h-[650px] max-w-[1140px] flex flex-row items-center justify-start hyphens-auto grid cols-3 px-5 sm:px-6">
+      <div className="mx-auto h-[650px] max-w-[1092px] flex flex-row items-center justify-start hyphens-auto grid cols-3 px-5 sm:px-6">
         <div className="max-w-[716px] col-span-3 sm:col-span-2">
           <HeroCard
             backgroundColor="#006db3"
@@ -56,9 +56,10 @@ const SecondaryCard = ({
 }) => {
   return (
     <div className={`h-auto ${bgImageClassName} py-8`}>
-      <div className="max-w-[1140px] mx-auto px-5 sm:px-6">
+      <div className="max-w-[1092px] mx-auto px-5 sm:px-6">
         <div className="max-w-2xl">
           <HeroCard
+            size="sm"
             backgroundColor={color}
             content={content}
             title={title}
@@ -105,7 +106,7 @@ const ServiceBlock = ({
 
 const Block = ({ title, content, children }: { title: string; content?: string; children?: JSX.Element }) => {
   return (
-    <div className="mt-10 px-5 sm:px-6 max-w-[1140px] mx-auto mb-8 print:px-0 print:mx-0">
+    <div className="mt-10 px-5 sm:px-6 max-w-[1092px] mx-auto mb-8 print:px-0 print:mx-0">
       <h2 className="text-heading-1-mobile sm:text-heading-1 mb-6">{title}</h2>
       {content && <p className="text-body-lg-mobile sm:text-body-lg mb-8">{content}</p>}
       {children}
@@ -113,18 +114,35 @@ const Block = ({ title, content, children }: { title: string; content?: string; 
   );
 };
 
-const InfoLink = ({ to, label, lang = 'fi' }: { to: string; label: string; lang: string }) => (
-  <Link to={`/${lang}/${to}`} className="flex justify-center gap-4 text-button-md-mobile sm:text-button-md">
-    {label} <MdArrowForward size={24} />
-  </Link>
-);
-
 const Home = () => {
   const {
     t,
     i18n: { language },
   } = useTranslation();
   const infoSlug = t('slugs.basic-information');
+
+  const moreInfoLinks = [
+    {
+      to: `${t('slugs.slugs.user-guide.index')}/${t('slugs.about-us')}`,
+      label: t('about-us'),
+    },
+    {
+      to: `${infoSlug}/${t('slugs.privacy-policy')}`,
+      label: t('privacy-policy-and-cookies'),
+    },
+    {
+      to: `${infoSlug}/${t('slugs.data-sources')}`,
+      label: t('data-sources'),
+    },
+    {
+      to: `${infoSlug}/${t('slugs.about-ai')}`,
+      label: t('about-ai'),
+    },
+    {
+      to: `${infoSlug}/${t('slugs.accessibility-statement')}`,
+      label: t('accessibility-statement'),
+    },
+  ];
 
   return (
     <main role="main" className="mx-auto w-full max-w-(--breakpoint-xl) bg-white" id="jod-main">
@@ -192,43 +210,13 @@ const Home = () => {
         bgImageClassName=" bg-[url(@/../assets/home-1.avif)] bg-cover bg-[length:auto_auto] sm:bg-[length:auto_1000px] bg-[top_-0rem_right_-0rem] sm:bg-[top_-21rem_right_0rem]"
       />
 
-      <div className="flex justify-start text-white bg-[#333] px-5 sm:px-6 py-8">
-        <div className="w-[1092px] mx-auto">
-          <div className="flex flex-col gap-3">
-            <div className="text-heading-2-mobile sm:text-heading-2">{t('home.want-to-know-more')}</div>
-            <p className="text-body-sm-mobile sm:text-body-sm">{t('home.want-to-know-more-content')}</p>
-            <ul className="flex flex-col gap-3 justify-start items-start">
-              <li>
-                <InfoLink
-                  to={`${t('slugs.slugs.user-guide.index')}/${t('slugs.about-us')}`}
-                  label={t('about-us')}
-                  lang={language}
-                />
-              </li>
-              <li>
-                <InfoLink
-                  to={`${infoSlug}/${t('slugs.privacy-policy')}`}
-                  label={t('privacy-policy-and-cookies')}
-                  lang={language}
-                />
-              </li>
-              <li>
-                <InfoLink to={`${infoSlug}/${t('slugs.data-sources')}`} label={t('data-sources')} lang={language} />
-              </li>
-              <li>
-                <InfoLink to={`${infoSlug}/${t('slugs.about-ai')}`} label={t('about-ai')} lang={language} />
-              </li>
-              <li>
-                <InfoLink
-                  to={`${infoSlug}/${t('slugs.accessibility-statement')}`}
-                  label={t('accessibility-statement')}
-                  lang={language}
-                />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <MoreInfo
+        title={t('home.want-to-know-more')}
+        description={t('home.want-to-know-more-content')}
+        language={language}
+        links={moreInfoLinks}
+        LinkComponent={Link}
+      />
     </main>
   );
 };
