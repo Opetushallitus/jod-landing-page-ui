@@ -1,9 +1,10 @@
 import { LanguageButton } from '@/components';
+import { NavMenu } from '@/components/NavMenu/NavMenu';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { Footer, NavigationBar, SkipLink, useMediaQueries } from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { MdClose, MdMenu } from 'react-icons/md';
+import { MdMenu } from 'react-icons/md';
 import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router';
 
 const NavigationBarItem = (to: string, text: string) => ({
@@ -21,9 +22,8 @@ const Root = () => {
     i18n: { language },
   } = useTranslation();
   const { sm } = useMediaQueries();
-  const [megaMenuOpen, setMegaMenuOpen] = React.useState(false);
-  const [userMenuOpen, setUserMenuOpen] = React.useState(false);
   const [langMenuOpen, setLangMenuOpen] = React.useState(false);
+  const [navMenuOpen, setNavMenuOpen] = React.useState(false);
 
   const userGuide = t('slugs.user-guide.index');
   const basicInformation = t('slugs.basic-information');
@@ -35,23 +35,6 @@ const Root = () => {
     NavigationBarItem(`${basicInformation}/${t('slugs.accessibility-statement')}`, t('accessibility-statement')),
     NavigationBarItem(`${basicInformation}/${t('slugs.privacy-policy')}`, t('privacy-policy')),
   ];
-
-  const toggleMenu = (menu: 'mega' | 'user' | 'lang') => () => {
-    setMegaMenuOpen(false);
-    setUserMenuOpen(false);
-    setLangMenuOpen(false);
-    switch (menu) {
-      case 'mega':
-        setMegaMenuOpen(!megaMenuOpen);
-        break;
-      case 'user':
-        setUserMenuOpen(!userMenuOpen);
-        break;
-      case 'lang':
-        setLangMenuOpen(!langMenuOpen);
-        break;
-    }
-  };
 
   const langMenuButtonRef = React.useRef<HTMLLIElement>(null);
   const langMenuRef = useMenuClickHandler(() => setLangMenuOpen(false), langMenuButtonRef);
@@ -78,34 +61,16 @@ const Root = () => {
             srText: t('osaamispolku'),
           }}
           menuComponent={
-            sm ? (
-              <button
-                className="cursor-pointer flex gap-4 justify-center items-center select-none"
-                aria-label={t('open-menu')}
-                onClick={toggleMenu('mega')}
-              >
-                <span className="py-3 pl-3">{t('menu')}</span>
-                <span className="size-7 flex justify-center items-center">
-                  <MdMenu size={24} />
-                </span>
-              </button>
-            ) : (
-              <button
-                className="cursor-pointer flex justify-self-end p-3"
-                aria-label={t('open-menu')}
-                onClick={toggleMenu('mega')}
-              >
-                {megaMenuOpen ? (
-                  <span className="size-7 flex justify-center items-center">
-                    <MdClose size={24} />
-                  </span>
-                ) : (
-                  <span className="size-7 flex justify-center items-center">
-                    <MdMenu size={24} />
-                  </span>
-                )}
-              </button>
-            )
+            <button
+              onClick={() => setNavMenuOpen(!navMenuOpen)}
+              aria-label={t('open-menu')}
+              className="flex gap-2 justify-center items-center select-none cursor-pointer"
+            >
+              <span className="size-7 flex justify-center items-center">
+                <MdMenu size={24} />
+              </span>
+              <span className="py-3 pr-2">{t('menu')}</span>
+            </button>
           }
           languageButtonComponent={
             <LanguageButton
@@ -124,6 +89,7 @@ const Root = () => {
           )}
         />
       </header>
+      <NavMenu open={navMenuOpen} onClose={() => setNavMenuOpen(false)} />
       <Outlet />
       <Footer
         items={footerItems}
