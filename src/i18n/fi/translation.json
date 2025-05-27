@@ -3,6 +3,7 @@
   "about-us": "Tietoa palvelusta",
   "accessibility-statement": "Saavutettavuusseloste",
   "data-sources": "Datalähteet",
+  "front-page": "Etusivu",
   "home": {
     "feedback-call-to-action": "Anna palautetta",
     "feedback-content": "Haluamme kehittää Osaamispolkua vastaamaan paremmin juuri sinun tarpeita. Anna meille palautetta ja huomiomme sen kehitystyössä.",
@@ -50,6 +51,26 @@
   "login": "Kirjaudu sisään",
   "logout": "Kirjaudu ulos",
   "menu": "Valikko",
+  "navigation": {
+    "external": {
+      "ohjaaja": {
+        "description": "Ohjausalasta kiinnostuneille",
+        "label": "Ohjaajan osio",
+        "url": "/ohjaaja/fi"
+      },
+      "osaamispolku": {
+        "description": "Henkilökohtainen osaamispolkusi",
+        "label": "Osaamispolkuni",
+        "url": "/yksilo/fi"
+      },
+      "tietopalvelu": {
+        "description": "Tietoa päätöksentekijöille",
+        "label": "Tietopalvelu",
+        "url": "/tietopalvelu/fi"
+      },
+      "title": "Osaamispolun sisältökokonaisuudet"
+    }
+  },
   "open-menu": "Avaa valikko",
   "osaamispolku": "Osaamispolku",
   "privacy-policy-and-cookies": "Tietosuojaseloste ja evästeet",
