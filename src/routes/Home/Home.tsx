@@ -1,4 +1,4 @@
-import { Button, HeroCard, MoreInfo } from '@jod/design-system';
+import { Button, cx, HeroCard, MoreInfo } from '@jod/design-system';
 import { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
 import { MdArrowForward } from 'react-icons/md';
@@ -57,7 +57,7 @@ const SecondaryCard = ({
   return (
     <div className={`h-auto ${bgImageClassName} py-8`}>
       <div className="max-w-[1092px] mx-auto px-5 sm:px-6">
-        <div className="max-w-2xl">
+        <div className="max-w-[716px]">
           <HeroCard
             size="sm"
             backgroundColor={color}
@@ -78,24 +78,27 @@ const ServiceBlock = ({
   text,
   buttonLabel,
   to,
+  className,
 }: {
   title: string;
   text: string;
   buttonLabel: string;
   to: string;
+  className?: string;
 }) => {
   return (
-    <div className="max-w-[342px]">
+    <div className="w-full">
       <h3 className="text-heading-3-mobile sm:text-heading-3 mb-5">{title}</h3>
       <p className="text-body-sm-mobile sm:text-body-sm mb-6">{text}</p>
       <Button
+        className={cx('active:hover:underline', 'group-focus:underline', className)}
         variant="accent"
         label={buttonLabel}
         icon={<MdArrowForward size={24} />}
         iconSide="right"
         // eslint-disable-next-line react/no-unstable-nested-components
         LinkComponent={({ children }) => (
-          <ExternalLink to={to}>
+          <ExternalLink to={to} className="group focus:outline-hidden">
             <>{children}</>
           </ExternalLink>
         )}
@@ -171,7 +174,7 @@ const Home = () => {
       />
 
       <Block title={t('home.services.title')}>
-        <div className="flex gap-7 md:gap-y-11 flex-wrap flex-row">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-7 sm:gap-y-11">
           <ServiceBlock
             title={t('home.services.tool.title')}
             text={t('home.services.tool.content')}
@@ -189,12 +192,14 @@ const Home = () => {
             text={t('home.services.ohjaus.content')}
             buttonLabel={t('home.services.ohjaus.buttonLabel')}
             to={`/ohjaaja/${language}`}
+            className="bg-secondary-2! active:bg-[#00889b]!"
           />
           <ServiceBlock
             title={t('home.services.tietopalvelu.title')}
             text={t('home.services.tietopalvelu.content')}
             buttonLabel={t('home.services.tietopalvelu.buttonLabel')}
             to={`/tietopalvelu/${language}`}
+            className="bg-secondary-4! active:bg-[#ad3ea3]!"
           />
         </div>
       </Block>
