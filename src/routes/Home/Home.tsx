@@ -1,8 +1,7 @@
-import { Button, cx, HeroCard, MoreInfo } from '@jod/design-system';
+import { Button, cx, HeroCard } from '@jod/design-system';
 import { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
 import { MdArrowForward } from 'react-icons/md';
-import { Link } from 'react-router';
 
 const ExternalLink = ({
   children,
@@ -107,9 +106,21 @@ const ServiceBlock = ({
   );
 };
 
-const Block = ({ title, content, children }: { title: string; content?: string; children?: JSX.Element }) => {
+const Block = ({
+  title,
+  content,
+  children,
+  isLast,
+}: {
+  title: string;
+  content?: string;
+  children?: JSX.Element;
+  isLast?: boolean;
+}) => {
   return (
-    <div className="mt-10 px-5 sm:px-6 max-w-[1092px] mx-auto mb-8 print:px-0 print:mx-0">
+    <div
+      className={`mt-10 px-5 sm:px-6 max-w-[1092px] mx-auto print:px-0 print:mx-0 bg-white ${isLast ? 'pb-8' : 'mb-8'}`}
+    >
       <h2 className="text-heading-1-mobile sm:text-heading-1 mb-6">{title}</h2>
       {content && <p className="text-body-lg-mobile sm:text-body-lg mb-8">{content}</p>}
       {children}
@@ -122,30 +133,6 @@ const Home = () => {
     t,
     i18n: { language },
   } = useTranslation();
-  const infoSlug = t('slugs.basic-information');
-
-  const moreInfoLinks = [
-    {
-      to: `${t('slugs.slugs.user-guide.index')}/${t('slugs.about-us')}`,
-      label: t('about-us'),
-    },
-    {
-      to: `${infoSlug}/${t('slugs.privacy-policy')}`,
-      label: t('privacy-policy-and-cookies'),
-    },
-    {
-      to: `${infoSlug}/${t('slugs.data-sources')}`,
-      label: t('data-sources'),
-    },
-    {
-      to: `${infoSlug}/${t('slugs.about-ai')}`,
-      label: t('about-ai'),
-    },
-    {
-      to: `${infoSlug}/${t('slugs.accessibility-statement')}`,
-      label: t('accessibility-statement'),
-    },
-  ];
 
   return (
     <main role="main" className="mx-auto w-full max-w-(--breakpoint-xl) bg-white" id="jod-main">
@@ -204,24 +191,7 @@ const Home = () => {
         </div>
       </Block>
 
-      <Block title={t('home.why-title')} content={t('home.why-content')}></Block>
-
-      <SecondaryCard
-        color="#333333"
-        content={t('home.feedback-content')}
-        title={t('home.feedback-title')}
-        to="#"
-        buttonLabel={t('home.feedback-call-to-action')}
-        bgImageClassName=" bg-[url(@/../assets/home-1.avif)] bg-cover bg-[length:auto_auto] sm:bg-[length:auto_1000px] bg-[top_-0rem_right_-0rem] sm:bg-[top_-21rem_right_0rem]"
-      />
-
-      <MoreInfo
-        title={t('home.want-to-know-more')}
-        description={t('home.want-to-know-more-content')}
-        language={language}
-        links={moreInfoLinks}
-        LinkComponent={Link}
-      />
+      <Block title={t('home.why-title')} content={t('home.why-content')} isLast={true}></Block>
     </main>
   );
 };
