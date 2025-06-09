@@ -2,8 +2,52 @@
   "about-ai": "Tietoa tekoälyn käytöstä",
   "about-us": "Tietoa palvelusta",
   "accessibility-statement": "Saavutettavuusseloste",
+  "cancel": "Peruuta",
   "copyright": "© JOD 2025. Kaikki oikeudet pidätetään.",
   "data-sources": "Datalähteet",
+  "feedback": {
+    "aihe": {
+      "options": {
+        "option-1": "Palaute",
+        "option-2": "Kehitysehdotus",
+        "option-3": "Tekninen ongelma",
+        "option-4": "Muu asia"
+      },
+      "title": "Mistä haluat antaa palautetta?"
+    },
+    "description": "Anna palautetta palvelusta tai ilmoita teknisestä ongelmasta. Näin autat meitä palveluiden kehittämisessä.",
+    "description-2": "Jos raportoit teknisestä ongelmasta, meitä auttaisi, että kerrot mahdollisimman tarkasti:",
+    "email": "Sähköposti",
+    "email-placeholder": "Syötä sähköpostiosoitteesi tähän",
+    "errors": {
+      "aihe": "Valitse palautteen aihe",
+      "osio": "Valitse palautteen osio",
+      "palaute": "Palautekenttä on pakollinen",
+      "required-sposti": "Sähköposti on pakollinen, jos haluat että sinuun otetaan yhteyttä",
+      "valid-sposti": "Syötä kelvollinen sähköpostiosoite"
+    },
+    "foot-note": "Kun lähetät palautetta, tallennamme palvelun tilatiedon, kuten mistä näkymästä palaute on lähetetty. Tilatietoa ei välitetä eteenpäin kolmansille osapuolille. Palautteita käytetään palvelun kehittämiseen ja vapaaehtoisesti jätettäviä yhteystietoja palautteisiin vastaamiseen. Palautteet ja yhteystiedot poistetaan käytössä olevasta palautejärjestelmästä 12 kuukauden välein. Lue lisää <CustomLink href=\"123546\">tietosuojaselosteestamme</CustomLink>.",
+    "foot-note-link": "/",
+    "osio": {
+      "options": {
+        "option-1": "Osaamispolkuni",
+        "option-2": "Ohjaajan osio",
+        "option-3": "Tietopalvelu",
+        "option-4": "Yleinen palaute"
+      },
+      "title": "Mitä osiota palautteesi koskee?"
+    },
+    "placeholder": "Kirjoita palautteesi tähän",
+    "privacy": "Älä kirjoita palautteeseen henkilökohtaisia tietoja, kuten henkilötunnusta tai terveystietoja. Täytähän kaikki kentät, jotta voimme käsitellä palautteesi.",
+    "questions": {
+      "item-1": "Mitä olit tekemässä, kun ongelma ilmeni? Mikä ei toiminut? Saitko virheilmoituksen? Jos, niin minkälaisen?",
+      "item-2": "Ilmoita ongelman päivämäärä ja kellonaika sekä käyttämäsi laite (tietokone, tabletti, älypuhelin).",
+      "item-3": "Jos mahdollista, ota ongelmasta kuvaruutukaappaus, sillä saatamme pyytää sitä sinulta myöhemmin. Jätä sitä varten yhteystietosi."
+    },
+    "send": "Lähetä palaute",
+    "take-contact": "Haluan, että minuun otetaan tarvittaessa yhteyttä sähköpostitse",
+    "title": "Palautelomake"
+  },
   "footer": {
     "cooperation-title": "Osaamipolku on toteutettu yhteistyössä seuraavien tahojen toimesta.",
     "feedback-button-label": "Anna palautetta",
