@@ -1,4 +1,5 @@
 import { LanguageButton } from '@/components';
+import { FeedbackModal } from '@/components/FeedbackModal/FeedbackModal';
 import { NavMenu } from '@/components/NavMenu/NavMenu';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { Footer, NavigationBar, SkipLink } from '@jod/design-system';
@@ -14,6 +15,7 @@ const Root = () => {
   } = useTranslation();
   const [langMenuOpen, setLangMenuOpen] = React.useState(false);
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);
+  const [feedbackVisible, setFeedbackVisible] = React.useState(false);
 
   const userGuide = t('slugs.user-guide.index');
   const basicInformation = t('slugs.basic-information');
@@ -111,11 +113,13 @@ const Root = () => {
         feedbackTitle={t('footer.feedback-title')}
         feedbackContent={t('footer.feedback-content')}
         feedbackButtonLabel={t('footer.feedback-button-label')}
-        feedbackTo="#"
+        feedbackOnClick={() => setFeedbackVisible(true)}
         feedbackBgImageClassName="bg-[url(@/../assets/home-1.avif)] bg-cover bg-[length:auto_auto] sm:bg-[length:auto_1000px] bg-[top_-0rem_right_-0rem] sm:bg-[top_-21rem_right_0rem]"
-        FeedbackLinkComponent={NavLink}
         copyright={t('copyright')}
       />
+
+      <FeedbackModal isOpen={feedbackVisible} onClose={() => setFeedbackVisible(false)} />
+
       <ScrollRestoration />
     </div>
   );

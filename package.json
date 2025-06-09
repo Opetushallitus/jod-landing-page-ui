@@ -17,14 +17,18 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@hookform/error-message": "^2.0.1",
+    "@hookform/resolvers": "^5.1.0",
     "@jod/design-system": "github:Opetushallitus/jod-design-system#main",
     "i18next": "^23.16.8",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-hook-form": "^7.57.0",
     "react-i18next": "^15.4.0",
     "react-icons": "^5.4.0",
     "react-router": "^7.1.1",
-    "web-vitals": "^4.2.4"
+    "web-vitals": "^4.2.4",
+    "zod": "^3.25.56"
   },
   "devDependencies": {
     "@axe-core/react": "^4.10.1",
