@@ -1,18 +1,35 @@
 import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
 import { langLabels, supportedLanguageCodes } from '@/i18n/config';
-import { ExternalLinkSection, LinkComponent, NavigationMenu } from '@jod/design-system';
+import { ExternalLinkSection, LinkComponent, NavigationMenu, tidyClasses as tc } from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const FrontPageLink = ({ children, className }: LinkComponent) => {
-  // Navigate to the landing page
+  const {
+    i18n: { language },
+  } = useTranslation();
+  // Navigate to the landing page root
   return (
-    <a href="/" className={className}>
+    <NavLink className={({ isActive }) => tc([className, isActive ? 'bg-[#85C4EC]' : ''])} to={`/${language}`}>
       {children}
-    </a>
+    </NavLink>
   );
 };
+
+const LogoLink = ({
+  to,
+  className,
+  children,
+}: {
+  to: object | string;
+  className?: string;
+  children: React.ReactNode;
+}) => (
+  <Link to={to} className={className}>
+    {children}
+  </Link>
+);
 
 const LanguageSelectionLinkComponent = (generateLocalizedPath: (langCode: string) => string, langCode: string) => {
   const LanguageSelectionLink = (props: LinkComponent) => {
@@ -74,6 +91,8 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       menuItems={[]}
       ariaCloseMenu={t('close-menu')}
       openSubMenuLabel={''}
+      logo={{ to: `/${language}`, language, srText: t('osaamispolku') }}
+      logoLink={LogoLink}
       frontPageLinkLabel={t('front-page')}
       onClose={onClose}
       selectedLanguage={language}
