@@ -126,11 +126,9 @@ export const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
               <p>{t('feedback.privacy')}</p>
             </div>
 
-            <h3 className="text-heading-3">{t('feedback.osio.title')}</h3>
             <div>
               <RadioButtonGroup
                 label={t('feedback.osio.title')}
-                hideLabel
                 value={feedbackOsio}
                 onChange={(newValue) => {
                   setFeedbackOsio(newValue);
@@ -145,12 +143,10 @@ export const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
               <FormError name="osio" errors={errors} />
             </div>
 
-            <h3 className="text-heading-3 mt-5">{t('feedback.aihe.title')}</h3>
             <div>
               <RadioButtonGroup
-                className="mb-5"
+                className="mb-5 mt-5"
                 label={t('feedback.aihe.title')}
-                hideLabel
                 value={feedbackAihe}
                 onChange={(newValue) => {
                   setFeedbackAihe(newValue);
