@@ -135,6 +135,9 @@
   "osaamispolku": "Osaamispolku",
   "privacy-policy-and-cookies": "Tietosuojaseloste ja evästeet",
   "select-language": "Valitse kieli",
+  "skiplinks": {
+    "main": "Siirry pääsisältöön"
+  },
   "slugs": {
     "about-ai": "tietoa-tekoalysta",
     "about-us": "tietoa-palvelusta",
