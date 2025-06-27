@@ -75,28 +75,28 @@
     "ohjaaja-call-to-action": "Ohjaajan osioon",
     "ohjaaja-content": "Palvelusta löydät uraohjaustyösi tueksi ajantasaista ja laadukasta tietoa ja menetelmiä ja omaa osaamistasi vahvistavia materiaaleja.",
     "ohjaaja-title": "Ohjaajan osio",
-    "osaamispolku-helping-description": "Nam molestie nec tortor. Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam. Donec ipsum, vestibulum ullamcorper venenatis augue. Aliquam tempus nisi in auctor vulputate, erat felis pellentesque augue nec, pellentesque lectus justo nec erat.",
+    "osaamispolku-helping-description": "Tutki mahdollisuuksiasi, suunnittele polkusi ja luo tulevaisuutesi Osaamispolussasi. Osaamispolku linkittyy Työmarkkinatoriin ja Opintopolkuun joissa voit hakeutua valitsemiisi työ- tai koulutuspaikkoihin. Osaamipolun kautta löydät myös henkilökohtaisia ohjauspalveluita ja tietoa ohjausalasta.",
     "osaamispolku-helping-heading": "Miten Osaamispolku auttaa sinua osana muita palveluita?",
     "services": {
       "ohjaus": {
         "buttonLabel": "Asiakastyön tueksi",
-        "content": "Nam molestie nec tortor. Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam. Donec ipsum, vestibulum ullamcorper venenatis augue.",
+        "content": "Kattavasti ohjaustyössä käytettäviä menetelmiä, eri tilanteisiin.",
         "title": "Haluatko löytää ohjaustyöhön työkaluja?"
       },
       "osaamispolku": {
         "buttonLabel": "Oma Osaamispolkusi",
-        "content": "Nam molestie nec tortor. Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam. Donec ipsum, vestibulum ullamcorper venenatis augue.",
+        "content": "Tunnista vahvuutesi ja kiinnostuksen kohteesi sekä tallenna työ- ja koulutushistoriasi.",
         "title": "Haluatko kartoittaa osaamistasi laajemmin?"
       },
       "tietopalvelu": {
         "buttonLabel": "Tietopalveluun",
-        "content": "Nam molestie nec tortor. Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam. Donec ipsum, vestibulum ullamcorper venenatis augue.",
+        "content": "Tietopalvelu kokoaa yhteen koulutukseen, työmarkkinaan ja osaamiseen liittyvää tietoa työsi tueksi.",
         "title": "Haluatko tietoa päätöksen teon tueksi työssäsi?"
       },
       "title": "Etkö vielä löytänyt etsimääsi?",
       "tool": {
         "buttonLabel": "Kohtaanto / työkalu",
-        "content": "Nam molestie nec tortor. Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam. Donec ipsum, vestibulum ullamcorper venenatis augue.",
+        "content": "Löydä työ- ja koulutusmahdollisuuksia, jotka sopivat juuri sinulle.",
         "title": "Haluatko löytää sinulle sopivia mahdollisuuksia nopeasti?"
       }
     },

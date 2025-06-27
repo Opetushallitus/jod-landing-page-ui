@@ -21,8 +21,8 @@ const MainCard = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="sm:h-auto mx-auto bg-[url(@/../assets/pre-launch-1.avif)] bg-cover bg-size-[1500px] bg-center bg-[top_-0rem_right_0rem] sm:bg-[top_0rem_left_0rem]">
-      <div className="mx-auto h-[650px] max-w-[1092px] flex flex-row items-center justify-start hyphens-auto grid cols-3 px-5 sm:px-6">
+    <div className="sm:h-auto mx-auto bg-[url(@/../assets/landing-page-1.avif)] bg-cover bg-[top_-0rem_right_-25rem] sm:bg-auto sm:bg-[top_-20rem_left_0rem]">
+      <div className="mx-auto h-[650px] max-w-[1092px] flex flex-row items-center justify-start hyphens-auto cols-3 px-5 sm:px-6">
         <div className="max-w-[716px] col-span-3 sm:col-span-2">
           <HeroCard
             backgroundColor="#006db3"
