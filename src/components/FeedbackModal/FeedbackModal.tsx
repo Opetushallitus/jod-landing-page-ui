@@ -168,7 +168,6 @@ export const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
             />
             <FormError name="palaute" errors={errors} />
             <Checkbox
-              variant="bordered"
               ariaLabel={t('feedback.take-contact')}
               label={t('feedback.take-contact')}
               {...methods.register('ottakaaYhteytta')}

@@ -2,11 +2,11 @@ import { LanguageButton } from '@/components';
 import { FeedbackModal } from '@/components/FeedbackModal/FeedbackModal';
 import { NavMenu } from '@/components/NavMenu/NavMenu';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
-import { Footer, NavigationBar, SkipLink } from '@jod/design-system';
+import { Footer, MatomoTracker, NavigationBar, SkipLink } from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { MdMenu } from 'react-icons/md';
-import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router';
+import { Link, NavLink, Outlet, ScrollRestoration, useLocation } from 'react-router';
 
 const Root = () => {
   const {
@@ -16,6 +16,16 @@ const Root = () => {
   const [langMenuOpen, setLangMenuOpen] = React.useState(false);
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);
   const [feedbackVisible, setFeedbackVisible] = React.useState(false);
+  const location = useLocation();
+
+  const hostname = window.location.hostname;
+  const siteId = React.useMemo(() => {
+    if (hostname === 'localhost' || hostname === 'jodkehitys.fi') {
+      return 37;
+    } else if (hostname === 'jodtestaus.fi') {
+      return 38;
+    }
+  }, [hostname]);
 
   const userGuide = t('slugs.user-guide.index');
   const basicInformation = t('slugs.basic-information');
@@ -117,10 +127,11 @@ const Root = () => {
         feedbackBgImageClassName="bg-[url(@/../assets/home-1.avif)] bg-cover bg-[length:auto_auto] sm:bg-[length:auto_1000px] bg-[top_-0rem_right_-0rem] sm:bg-[top_-21rem_right_0rem]"
         copyright={t('copyright')}
       />
-
       <FeedbackModal isOpen={feedbackVisible} onClose={() => setFeedbackVisible(false)} />
-
       <ScrollRestoration />
+      {siteId && (
+        <MatomoTracker trackerUrl="https://analytiikka.opintopolku.fi" siteId={siteId} pathname={location.pathname} />
+      )}
     </div>
   );
 };
