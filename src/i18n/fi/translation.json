@@ -144,9 +144,14 @@
       }
     }
   },
+  "no-match": {
+    "description": "Hakemaasi sivua ei löytynyt.",
+    "title": "Sivua ei löytynyt"
+  },
   "open-menu": "Avaa valikko",
   "osaamispolku": "Osaamispolku",
   "privacy-policy-and-cookies": "Tietosuojaseloste ja evästeet",
+  "return-home": "Palaa etusivulle",
   "select-language": "Valitse kieli",
   "skiplinks": {
     "main": "Siirry pääsisältöön"

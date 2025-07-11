@@ -3,9 +3,9 @@ import { FeedbackModal } from '@/components/FeedbackModal/FeedbackModal';
 import { NavMenu } from '@/components/NavMenu/NavMenu';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { Footer, MatomoTracker, NavigationBar, SkipLink } from '@jod/design-system';
+import { JodMenu } from '@jod/design-system/icons';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { MdMenu } from 'react-icons/md';
 import { Link, NavLink, Outlet, ScrollRestoration, useLocation } from 'react-router';
 
 const Root = () => {
@@ -84,7 +84,7 @@ const Root = () => {
               className="flex gap-2 justify-center items-center select-none cursor-pointer"
             >
               <span className="size-7 flex justify-center items-center">
-                <MdMenu size={24} />
+                <JodMenu />
               </span>
               <span className="py-3 pr-2">{t('menu')}</span>
             </button>
