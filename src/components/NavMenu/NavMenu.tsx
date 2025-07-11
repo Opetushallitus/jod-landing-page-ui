@@ -1,35 +1,30 @@
 import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
 import { langLabels, supportedLanguageCodes } from '@/i18n/config';
-import { ExternalLinkSection, LinkComponent, NavigationMenu, tidyClasses as tc } from '@jod/design-system';
+import { ExternalLinkSection, LinkComponent, MenuSection, NavigationMenu, tidyClasses as tc } from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink } from 'react-router';
 
-const FrontPageLink = ({ children, className }: LinkComponent) => {
+const PortalLink = ({ children, className }: LinkComponent) => {
   const {
     i18n: { language },
   } = useTranslation();
-  // Navigate to the landing page root
+
+  const classes = tc(['ml-3 w-[calc(100%-48px)]!', className]);
   return (
-    <NavLink className={({ isActive }) => tc([className, isActive ? 'bg-[#85C4EC]' : ''])} to={`/${language}`}>
+    <NavLink
+      className={({ isActive }) =>
+        tc([
+          classes,
+          isActive ? 'bg-secondary-3-dark hover:bg-secondary-3-dark! active:bg-secondary-3-dark-2! text-white!' : '',
+        ])
+      }
+      to={`/${language}`}
+    >
       {children}
     </NavLink>
   );
 };
-
-const LogoLink = ({
-  to,
-  className,
-  children,
-}: {
-  to: object | string;
-  className?: string;
-  children: React.ReactNode;
-}) => (
-  <Link to={to} className={className}>
-    {children}
-  </Link>
-);
 
 const LanguageSelectionLinkComponent = (generateLocalizedPath: (langCode: string) => string, langCode: string) => {
   const LanguageSelectionLink = (props: LinkComponent) => {
@@ -55,6 +50,9 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
   }, [generateLocalizedPath]);
 
   const languageSelectionItems = getLanguageSelectionItems();
+  const menuSection: MenuSection = {
+    linkItems: [],
+  };
 
   const externalLinkSections: ExternalLinkSection[] = [
     {
@@ -64,19 +62,32 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
           label: t('navigation.external.osaamispolku.label'),
           url: t('navigation.external.osaamispolku.url'),
           description: t('navigation.external.osaamispolku.description'),
-          accentColor: '#85C4EC',
+          accentColor: '#006DB3',
         },
         {
           label: t('navigation.external.ohjaaja.label'),
           url: t('navigation.external.ohjaaja.url'),
           description: t('navigation.external.ohjaaja.description'),
-          accentColor: '#66CBD1',
+          accentColor: '#00818A',
         },
         {
           label: t('navigation.external.tietopalvelu.label'),
           url: t('navigation.external.tietopalvelu.url'),
           description: t('navigation.external.tietopalvelu.description'),
-          accentColor: '#EBB8E1',
+          accentColor: '#AD4298',
+        },
+      ],
+    },
+    {
+      title: t('navigation.extra.title'),
+      linkItems: [
+        {
+          label: t('navigation.extra.urataidot.label'),
+          url: t('navigation.extra.urataidot.url'),
+        },
+        {
+          label: t('navigation.extra.palveluhakemisto.label'),
+          url: t('navigation.extra.palveluhakemisto.url'),
         },
       ],
     },
@@ -84,20 +95,18 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
 
   return (
     <NavigationMenu
-      open={open}
-      accentColor="#85C4EC"
-      FrontPageLinkComponent={FrontPageLink}
-      backLabel={''}
-      menuItems={[]}
       ariaCloseMenu={t('close-menu')}
-      openSubMenuLabel={''}
-      logo={{ to: `/${language}`, language, srText: t('osaamispolku') }}
-      logoLink={LogoLink}
-      frontPageLinkLabel={t('front-page')}
-      onClose={onClose}
-      selectedLanguage={language}
-      languageSelectionItems={languageSelectionItems}
       externalLinkSections={externalLinkSections}
+      languageSelectionItems={languageSelectionItems}
+      languageSelectionTitle={t('language-selection')}
+      menuSection={menuSection}
+      onClose={onClose}
+      open={open}
+      openSubMenuLabel={''}
+      PortalLinkComponent={PortalLink}
+      portalLinkLabel={t('competency-path-portal')}
+      selectedLanguage={language}
+      serviceVariant="palveluportaali"
     />
   );
 };

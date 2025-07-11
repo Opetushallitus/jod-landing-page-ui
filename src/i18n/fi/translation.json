@@ -3,6 +3,7 @@
   "about-us": "Tietoa palvelusta",
   "accessibility-statement": "Saavutettavuusseloste",
   "cancel": "Peruuta",
+  "competency-path-portal": "Osaamispolkuportaali",
   "copyright": "© JOD 2025. Kaikki oikeudet pidätetään.",
   "data-sources": "Datalähteet",
   "feedback": {
@@ -108,18 +109,19 @@
     "why-content": "Nam molestie nec tortor. Donec placerat leo sit amet velit. Vestibulum id justo ut vitae massa. Proin in dolor mauris consequat aliquam. Donec ipsum, vestibulum ullamcorper venenatis augue. Aliquam tempus nisi in auctor vulputate, erat felis pellentesque augue nec, tum.",
     "why-title": "Miksi Osaamispolku on olemassa?"
   },
+  "language-selection": "Käyttökieli",
   "login": "Kirjaudu sisään",
   "logout": "Kirjaudu ulos",
   "menu": "Valikko",
   "navigation": {
     "external": {
       "ohjaaja": {
-        "description": "Ohjausalasta kiinnostuneille",
+        "description": "Tietoa ohjausalasta kiinnostuneille",
         "label": "Ohjaajan osio",
         "url": "/ohjaaja/fi"
       },
       "osaamispolku": {
-        "description": "Henkilökohtainen osaamispolkusi",
+        "description": "Henkilökohtainen osaamispolku",
         "label": "Osaamispolkuni",
         "url": "/yksilo/fi"
       },
@@ -128,7 +130,18 @@
         "label": "Tietopalvelu",
         "url": "/tietopalvelu/fi"
       },
-      "title": "Osaamispolun sisältökokonaisuudet"
+      "title": "Sisältökokonaisuudet"
+    },
+    "extra": {
+      "palveluhakemisto": {
+        "label": "Palveluhakemisto",
+        "url": "https://www.suomi.fi/palveluhakemisto/osaamispolku"
+      },
+      "title": "Tukea pohdintaan",
+      "urataidot": {
+        "label": "Urataitojen itsearviointi",
+        "url": "/urataidot/fi"
+      }
     }
   },
   "open-menu": "Avaa valikko",
