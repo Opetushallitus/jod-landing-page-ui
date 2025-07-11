@@ -1,7 +1,7 @@
 import { useLoginLink } from '@/hooks/useLoginLink';
+import { JodUser } from '@jod/design-system/icons';
 import { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
-import { MdOutlinePerson } from 'react-icons/md';
 
 export const UserButton = ({ user }: { user: { name: string; component: JSX.ElementType } }) => {
   const { t } = useTranslation();
@@ -28,7 +28,7 @@ export const UserButton = ({ user }: { user: { name: string; component: JSX.Elem
       className="flex h-8 w-8 items-center justify-center rounded-full bg-bg-gray-2"
       aria-label={login.text}
     >
-      <MdOutlinePerson size={24} />
+      <JodUser />
     </a>
   );
 };

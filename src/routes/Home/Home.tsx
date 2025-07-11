@@ -1,7 +1,7 @@
 import { Button, cx, HeroCard } from '@jod/design-system';
+import { JodArrowRight } from '@jod/design-system/icons';
 import { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
-import { MdArrowForward } from 'react-icons/md';
 
 const ExternalLink = ({
   children,
@@ -93,7 +93,7 @@ const ServiceBlock = ({
         className={cx('active:hover:underline', 'group-focus:underline', className)}
         variant="accent"
         label={buttonLabel}
-        icon={<MdArrowForward size={24} />}
+        icon={<JodArrowRight />}
         iconSide="right"
         // eslint-disable-next-line react/no-unstable-nested-components
         LinkComponent={({ children }) => (
