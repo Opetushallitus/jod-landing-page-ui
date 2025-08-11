@@ -52,24 +52,13 @@ export const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
             }
             return true;
           },
-          {
-            message: t('feedback.errors.required-sposti'),
-            path: ['sposti'],
-          },
+          { message: t('feedback.errors.required-sposti'), path: ['sposti'] },
         ),
     ),
-    defaultValues: {
-      osio: '',
-      aihe: '',
-      palaute: '',
-      ottakaaYhteytta: false,
-      sposti: '',
-    },
+    defaultValues: { osio: '', aihe: '', palaute: '', ottakaaYhteytta: false, sposti: '' },
   });
 
-  const { isValid, isLoading, errors } = useFormState({
-    control: methods.control,
-  });
+  const { isValid, isLoading, errors } = useFormState({ control: methods.control });
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onSubmit: FormSubmitHandler<PalauteForm> = async ({ data: _data }) => {
@@ -81,7 +70,6 @@ export const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
   const ottakaaYhteytta = watch('ottakaaYhteytta');
 
   React.useEffect(() => {
-    // eslint-disable-next-line sonarjs/void-use
     void trigger();
   }, [trigger]);
 
