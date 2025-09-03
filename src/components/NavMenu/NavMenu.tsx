@@ -1,6 +1,12 @@
 import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
 import { langLabels, supportedLanguageCodes } from '@/i18n/config';
-import { ExternalLinkSection, LinkComponent, MenuSection, NavigationMenu, tidyClasses as tc } from '@jod/design-system';
+import {
+  type ExternalLinkSection,
+  type LinkComponent,
+  type MenuSection,
+  NavigationMenu,
+  tidyClasses as tc,
+} from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink } from 'react-router';
@@ -10,12 +16,11 @@ const PortalLink = ({ children, className }: LinkComponent) => {
     i18n: { language },
   } = useTranslation();
 
-  const classes = tc(['ml-3 w-[calc(100%-48px)]!', className]);
   return (
     <NavLink
       className={({ isActive }) =>
         tc([
-          classes,
+          className,
           isActive ? 'bg-secondary-3-dark hover:bg-secondary-3-dark! active:bg-secondary-3-dark-2! text-white!' : '',
         ])
       }
