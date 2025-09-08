@@ -34,9 +34,9 @@ const Root = () => {
   const hostname = window.location.hostname;
   const { siteId, agent } = React.useMemo(() => {
     if (hostname === 'osaamispolku.fi') {
-      return { siteId: 38, agent: agents.prod[language as keyof typeof agents.prod] };
+      return { siteId: 36, agent: agents.prod[language as keyof typeof agents.prod] };
     } else if (hostname === 'jodtestaus.fi') {
-      return { siteId: 36, agent: agents.test[language as keyof typeof agents.test] };
+      return { siteId: 38, agent: agents.test[language as keyof typeof agents.test] };
     } else {
       return { siteId: 37, agent: agents.test[language as keyof typeof agents.test] };
     }
@@ -46,26 +46,11 @@ const Root = () => {
   const basicInformation = t('slugs.basic-information');
 
   const moreInfoLinks = [
-    {
-      to: `${userGuide}/${t('slugs.about-us')}`,
-      label: t('about-us'),
-    },
-    {
-      to: `${basicInformation}/${t('slugs.privacy-policy')}`,
-      label: t('privacy-policy-and-cookies'),
-    },
-    {
-      to: `${basicInformation}/${t('slugs.data-sources')}`,
-      label: t('data-sources'),
-    },
-    {
-      to: `${basicInformation}/${t('slugs.about-ai')}`,
-      label: t('about-ai'),
-    },
-    {
-      to: `${basicInformation}/${t('slugs.accessibility-statement')}`,
-      label: t('accessibility-statement'),
-    },
+    { to: `${userGuide}/${t('slugs.about-us')}`, label: t('about-us') },
+    { to: `${basicInformation}/${t('slugs.privacy-policy')}`, label: t('privacy-policy-and-cookies') },
+    { to: `${basicInformation}/${t('slugs.data-sources')}`, label: t('data-sources') },
+    { to: `${basicInformation}/${t('slugs.about-ai')}`, label: t('about-ai') },
+    { to: `${basicInformation}/${t('slugs.accessibility-statement')}`, label: t('accessibility-statement') },
   ];
 
   const langMenuButtonRef = React.useRef<HTMLLIElement>(null);
@@ -87,11 +72,7 @@ const Root = () => {
       <header role="banner" className="sticky top-0 z-30 print:hidden">
         <SkipLink hash="#jod-main" label={t('skiplinks.main')} />
         <NavigationBar
-          logo={{
-            to: `/${language}`,
-            language,
-            srText: t('osaamispolku'),
-          }}
+          logo={{ to: `/${language}`, language, srText: t('osaamispolku') }}
           menuComponent={
             <button
               onClick={() => setNavMenuOpen(!navMenuOpen)}
