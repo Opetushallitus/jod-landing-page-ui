@@ -117,7 +117,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
       onClose={onClose}
       fullWidthContent
       content={
-        <Form id={formId} control={control} onSubmit={onSubmit}>
+        <Form id={formId} control={control} onSubmit={onSubmit} data-testid="feedback-form">
           <h2 className="sm:text-heading-1 text-heading-1-mobile mb-5">Anna palautetta</h2>
           <p className="sm:text-body-md text-body-md-mobile mb-9">
             Anna palautetta palvelusta tai ilmoita teknisestä ongelmasta. Näin autat meitä palveluiden kehittämisessä.
@@ -136,6 +136,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                 value={value}
                 onChange={onChange}
                 className="mb-6"
+                data-testid="feedback-section-group"
               >
                 <RadioButton label="Osaamispolkuni" value="Osaamispolkuni" />
                 <RadioButton label="Ohjaajan osio" value="Ohjaajan osio" />
@@ -153,6 +154,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                 value={value}
                 onChange={onChange}
                 className="mb-6"
+                data-testid="feedback-type-group"
               >
                 <RadioButton label="Kehu" value="Kehu" />
                 <RadioButton label="Kehitysehdotus" value="Kehitysehdotus" />
@@ -161,7 +163,14 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
               </RadioButtonGroup>
             )}
           />
-          <Textarea label="Palaute" {...register('message')} className="mb-9" rows={5} maxLength={MESSAGE_MAX_LENGTH} />
+          <Textarea
+            label="Palaute"
+            {...register('message')}
+            className="mb-9"
+            rows={5}
+            maxLength={MESSAGE_MAX_LENGTH}
+            data-testid="feedback-message"
+          />
           <Controller
             control={control}
             name="wantsContact"
@@ -174,11 +183,18 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                 checked={value}
                 onChange={onChange}
                 className={wantsContact ? 'mb-5' : 'mb-7'}
+                data-testid="feedback-wants-contact"
               />
             )}
           />
           {wantsContact && (
-            <InputField label="Sähköpostiosoite" {...register('email')} className="mb-9" maxLength={EMAIL_MAX_LENGTH} />
+            <InputField
+              label="Sähköpostiosoite"
+              {...register('email')}
+              className="mb-9"
+              maxLength={EMAIL_MAX_LENGTH}
+              data-testid="feedback-email"
+            />
           )}
           <hr className="h-1 bg-border-gray text-border-gray mb-7" />
           <div className="sm:text-body-md text-body-md-mobile">
@@ -241,6 +257,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
               onClose();
             }}
             className="whitespace-nowrap"
+            data-testid="feedback-cancel"
           />
           <Button
             variant="white"
@@ -248,9 +265,11 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
             className="whitespace-nowrap"
             disabled={!isValid || isSubmitting}
             form={formId}
+            data-testid="feedback-submit"
           />
         </div>
       }
+      data-testid="feedback-modal"
     />
   );
 };
