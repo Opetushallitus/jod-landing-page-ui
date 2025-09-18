@@ -1,216 +1,253 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button, Checkbox, InputField, Modal, RadioButton, RadioButtonGroup, Textarea } from '@jod/design-system';
+import { JodOpenInNew } from '@jod/design-system/icons';
 import React from 'react';
-import { Form, FormProvider, FormSubmitHandler, useForm, useFormState } from 'react-hook-form';
-import { Trans, useTranslation } from 'react-i18next';
-import { NavLink } from 'react-router';
+import { Controller, Form, FormSubmitHandler, useForm, useFormState } from 'react-hook-form';
 import { z } from 'zod';
-import { FormError } from '../FormError/FormError';
 
-interface PalauteForm {
-  osio: string;
-  aihe: string;
-  palaute: string;
-  ottakaaYhteytta?: boolean;
-  sposti?: string;
-}
+const DETAILS_MAX_LENGTH = 2048;
+const MESSAGE_MAX_LENGTH = 5000;
+const EMAIL_MAX_LENGTH = 320;
+
+const Feedback = z
+  .object({
+    section: z.enum(['Osaamispolkuni', 'Ohjaajan osio', 'Tietopalvelu', 'Koko palvelu tai muu palaute']),
+    area: z.enum(['Alatunniste', 'Kohtaanto työkalu', 'Työmahdollisuus']),
+    language: z.enum(['fi', 'en', 'sv']),
+    details: z.string().nonempty().max(DETAILS_MAX_LENGTH).optional(),
+    type: z.enum(['Kehu', 'Kehitysehdotus', 'Moite', 'Tekninen vika tai ongelma']),
+    message: z.string().nonempty().max(MESSAGE_MAX_LENGTH),
+    email: z.string().optional(),
+    timestamp: z.iso.datetime().optional(),
+    wantsContact: z.boolean(),
+  })
+  .superRefine((data, ctx) => {
+    if (data.wantsContact) {
+      if (!data.email || data.email.trim().length === 0) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['email'],
+        });
+      } else {
+        const emailSchema = z.email().max(EMAIL_MAX_LENGTH);
+        const result = emailSchema.safeParse(data.email);
+        if (!result.success) {
+          ctx.addIssue({
+            code: 'custom',
+            path: ['email'],
+          });
+        }
+      }
+    }
+  });
+
+type Feedback = z.infer<typeof Feedback>;
 
 export interface FeedbackModalProps {
   isOpen: boolean;
   onClose: () => void;
+  section: Feedback['section'];
+  area: Feedback['area'];
+  language: Feedback['language'];
 }
 
-export const FeedbackModal = ({ isOpen, onClose }: FeedbackModalProps) => {
-  const {
-    t,
-    i18n: { language },
-  } = useTranslation();
+export const FeedbackModal = ({ isOpen, onClose, section, area, language }: FeedbackModalProps) => {
   const formId = React.useId();
-  const [feedbackOsio, setFeedbackOsio] = React.useState<string>('');
-  const [feedbackAihe, setFeedbackAihe] = React.useState<string>('');
 
-  const methods = useForm<PalauteForm>({
-    mode: 'onBlur',
-    resolver: zodResolver(
-      z
-        .object({
-          osio: z.string().min(1, t('feedback.errors.osio')),
-          aihe: z.string().min(1, t('feedback.errors.aihe')),
-          palaute: z.string().min(1, t('feedback.errors.palaute')),
-          ottakaaYhteytta: z.boolean().optional().default(false),
-          sposti: z
-            .union([
-              z.string().length(0, t('feedback.errors.valid-sposti')),
-              z.string().email(t('feedback.errors.valid-sposti')),
-            ])
-            .optional(),
-        })
-        .refine(
-          (data) => {
-            if (data.ottakaaYhteytta) {
-              return data.sposti && data.sposti.trim().length > 0;
-            }
-            return true;
-          },
-          { message: t('feedback.errors.required-sposti'), path: ['sposti'] },
-        ),
-    ),
-    defaultValues: { osio: '', aihe: '', palaute: '', ottakaaYhteytta: false, sposti: '' },
+  const { control, register, watch, reset } = useForm({
+    resolver: zodResolver(Feedback),
+    defaultValues: {
+      section,
+      area,
+      language,
+      type: 'Kehu',
+      wantsContact: false,
+    },
   });
-
-  const { isValid, isLoading, errors } = useFormState({ control: methods.control });
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const onSubmit: FormSubmitHandler<PalauteForm> = async ({ data: _data }) => {
-    // send feedback actually to somewhere
-    onClose();
-  };
-
-  const { watch, setValue, trigger } = methods;
-  const ottakaaYhteytta = watch('ottakaaYhteytta');
+  const { isValid } = useFormState({ control });
+  const wantsContact = watch('wantsContact');
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
 
   React.useEffect(() => {
-    void trigger();
-  }, [trigger]);
+    reset();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [section, area, language]);
 
-  if (isLoading) {
-    return null;
-  }
+  const onSubmit: FormSubmitHandler<Feedback> = async (payload) => {
+    try {
+      setIsSubmitting(true);
+      const { wantsContact, email, ...rest } = payload.data;
+      const body = JSON.stringify({
+        ...rest,
+        email: wantsContact ? email : undefined,
+        details: window.location.href,
+        timestamp: new Date().toISOString(),
+      });
+      const response = await fetch('/api/palaute', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-amz-content-sha256': Array.from(
+            new Uint8Array(await window.crypto.subtle.digest('SHA-256', new TextEncoder().encode(body))),
+          )
+            .map((b) => b.toString(16).padStart(2, '0'))
+            .join(''),
+        },
+        body,
+      });
+
+      if (!response.ok) {
+        throw new Error();
+      }
+
+      reset();
+      onClose();
+      alert('Kiitos palautteestasi! Palautteesi auttaa meitä parantamaan palvelua.');
+
+      // eslint-disable-next-line sonarjs/no-ignored-exceptions, @typescript-eslint/no-unused-vars
+    } catch (error) {
+      setIsSubmitting(false);
+      alert('Palautteen lähettäminen epäonnistui. Yritä uudelleen myöhemmin.');
+    }
+  };
 
   return (
     <Modal
       open={isOpen}
+      onClose={onClose}
       fullWidthContent
       content={
-        <FormProvider {...methods}>
-          <Form
-            id={formId}
-            onSubmit={onSubmit}
-            onKeyDown={(event) => {
-              const target = event.target as HTMLElement;
-              const tagName = target.tagName.toLowerCase();
-              // Allow hyperlink to be navigated with the keyboard
-              if (tagName === 'a') {
-                return;
-              }
-              // Prevent form submission on Enter
-              if (event.key === 'Enter') {
-                event.preventDefault();
-              }
-            }}
-          >
-            <h2 className="mb-4 text-hero-mobile text-black sm:mb-5 sm:text-hero">{t('feedback.title')}</h2>
-            <div className="flex flex-col gap-5 mb-5 text-body-md-mobile sm:text-body-md font-arial">
-              <p>{t('feedback.description')}</p>
-              <div>
-                <p>{t('feedback.description-2')}</p>
-
-                <ol className="list-decimal list-inside">
-                  <li>{t('feedback.questions.item-1')}</li>
-                  <li>{t('feedback.questions.item-2')}</li>
-                  <li>{t('feedback.questions.item-3')}</li>
-                </ol>
-              </div>
-              <p>{t('feedback.privacy')}</p>
-            </div>
-
-            <div>
+        <Form id={formId} control={control} onSubmit={onSubmit}>
+          <h2 className="sm:text-heading-1 text-heading-1-mobile mb-5">Anna palautetta</h2>
+          <p className="sm:text-body-md text-body-md-mobile mb-9">
+            Anna palautetta palvelusta tai ilmoita teknisestä ongelmasta. Näin autat meitä palveluiden kehittämisessä.
+            Jos raportoit häiriötilanteesta, meitä auttaisi, että kerrot siitä mahdollisimman tarkasti.
+            <br />
+            <br />
+            Älä kirjoita palautteeseen henkilökohtaisia tietoja, kuten henkilötunnusta tai terveystietoja. Täytähän
+            kaikki kentät, jotta voimme käsitellä palautteesi.
+          </p>
+          <Controller
+            control={control}
+            name="section"
+            render={({ field: { value, onChange } }) => (
               <RadioButtonGroup
-                label={t('feedback.osio.title')}
-                value={feedbackOsio}
-                onChange={(newValue) => {
-                  setFeedbackOsio(newValue);
-                  methods.setValue('osio', newValue, { shouldValidate: true });
-                }}
+                label="Mitä osiota palautteesi koskee?"
+                value={value}
+                onChange={onChange}
+                className="mb-6"
               >
-                <RadioButton {...methods.register('osio')} label={t('feedback.osio.options.option-1')} value="a" />
-                <RadioButton {...methods.register('osio')} label={t('feedback.osio.options.option-2')} value="b" />
-                <RadioButton {...methods.register('osio')} label={t('feedback.osio.options.option-3')} value="c" />
-                <RadioButton {...methods.register('osio')} label={t('feedback.osio.options.option-4')} value="d" />
+                <RadioButton label="Osaamispolkuni" value="Osaamispolkuni" />
+                <RadioButton label="Ohjaajan osio" value="Ohjaajan osio" />
+                <RadioButton label="Tietopalvelu" value="Tietopalvelu" />
+                <RadioButton label="Koko palvelu tai muu palaute" value="Koko palvelu tai muu palaute" />
               </RadioButtonGroup>
-              <FormError name="osio" errors={errors} />
-            </div>
-
-            <div>
-              <RadioButtonGroup
-                className="mb-5 mt-5"
-                label={t('feedback.aihe.title')}
-                value={feedbackAihe}
-                onChange={(newValue) => {
-                  setFeedbackAihe(newValue);
-                  methods.setValue('aihe', newValue, { shouldValidate: true });
-                }}
-              >
-                <RadioButton {...methods.register('aihe')} label={t('feedback.aihe.options.option-1')} value="a" />
-                <RadioButton {...methods.register('aihe')} label={t('feedback.aihe.options.option-2')} value="b" />
-                <RadioButton {...methods.register('aihe')} label={t('feedback.aihe.options.option-1')} value="c" />
-                <RadioButton {...methods.register('aihe')} label={t('feedback.aihe.options.option-4')} value="d" />
-              </RadioButtonGroup>
-              <FormError name="aihe" errors={errors} />
-            </div>
-
-            <Textarea
-              label={'Palaute'}
-              {...methods.register('palaute' as const)}
-              placeholder={t('feedback.placeholder')}
-            />
-            <FormError name="palaute" errors={errors} />
-            <Checkbox
-              ariaLabel={t('feedback.take-contact')}
-              label={t('feedback.take-contact')}
-              {...methods.register('ottakaaYhteytta')}
-              className="mt-4"
-              checked={ottakaaYhteytta || false}
-              value={String(ottakaaYhteytta)}
-              onChange={(e) => {
-                setValue('ottakaaYhteytta', e.target.checked, { shouldValidate: true });
-
-                if (!e.target.checked) {
-                  setValue('sposti', '', { shouldValidate: true });
-                }
-              }}
-            />
-            {ottakaaYhteytta && (
-              <div className="mt-4">
-                <InputField
-                  label={t('feedback.email')}
-                  placeholder={t('feedback.email-placeholder')}
-                  {...methods.register('sposti')}
-                />
-                <FormError name="sposti" errors={errors} />
-              </div>
             )}
-
-            <p className="mt-5 font-arial">
-              <Trans
-                i18nKey="feedback.foot-note"
-                components={{
-                  CustomLink: (
-                    <NavLink
-                      type="link"
-                      to={`${t('slugs.basic-information')}/${t('slugs.privacy-policy')}`}
-                      lang={language}
-                      key={'privacy-policy-link'}
-                      className="text-button-md hover:underline text-accent"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    />
-                  ),
-                }}
+          />
+          <Controller
+            control={control}
+            name="type"
+            render={({ field: { value, onChange } }) => (
+              <RadioButtonGroup
+                label="Minkälaista palautetta haluat antaa?"
+                value={value}
+                onChange={onChange}
+                className="mb-6"
+              >
+                <RadioButton label="Kehu" value="Kehu" />
+                <RadioButton label="Kehitysehdotus" value="Kehitysehdotus" />
+                <RadioButton label="Moite" value="Moite" />
+                <RadioButton label="Tekninen vika tai ongelma" value="Tekninen vika tai ongelma" />
+              </RadioButtonGroup>
+            )}
+          />
+          <Textarea label="Palaute" {...register('message')} className="mb-9" rows={5} maxLength={MESSAGE_MAX_LENGTH} />
+          <Controller
+            control={control}
+            name="wantsContact"
+            render={({ field: { name, value, onChange } }) => (
+              <Checkbox
+                label="Haluan, että minuun otetaan yhteyttä"
+                ariaLabel="Haluan, että minuun otetaan yhteyttä"
+                name={name}
+                value="yes"
+                checked={value}
+                onChange={onChange}
+                className={wantsContact ? 'mb-5' : 'mb-7'}
               />
+            )}
+          />
+          {wantsContact && (
+            <InputField label="Sähköpostiosoite" {...register('email')} className="mb-9" maxLength={EMAIL_MAX_LENGTH} />
+          )}
+          <hr className="h-1 bg-border-gray text-border-gray mb-7" />
+          <div className="sm:text-body-md text-body-md-mobile">
+            <p>
+              Kun lähetät palautetta, tallennamme palvelun tilatiedon, kuten mistä näkymästä palaute on lähetetty.
+              Tilatietoa ei välitetä eteenpäin kolmansille osapuolille. Palautteita käytetään palvelun kehittämiseen ja
+              vapaaehtoisesti jätettäviä yhteystietoja palautteisiin vastaamiseen.
             </p>
-          </Form>
-        </FormProvider>
+            <br />
+            <p>Palaute käsitellään osiosta riippuen seuraavasti:</p>
+            <ul className="list-disc list-outside ml-7">
+              <li>Osaamispolkuni Opetushallituksessa,</li>
+              <li>Ohjaajan osio KEHA-keskuksessa,</li>
+              <li>Tietopalvelu ja koko palvelu opetus- ja kulttuuriministeriössä.</li>
+            </ul>
+            <br />
+            <p>Lue lisää palautteiden käsittelijöiden tietosuojaseloisteista:</p>
+            <ul className="list-disc list-outside ml-7">
+              <li>
+                <a
+                  href="https://www.oph.fi/fi/tietosuoja"
+                  target="_blank"
+                  className="inline-flex text-accent hover:underline"
+                >
+                  Opetushallituksen tietosuojakäytäntö
+                  <JodOpenInNew />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://tyomarkkinatori.fi/tietoa-palvelusta/tietosuoja-ja-kayttoehdot/tietosuojaselosteet"
+                  target="_blank"
+                  className="inline-flex text-accent hover:underline"
+                >
+                  KEHA-keskuksen asiakas- ja neuvontapalveluiden tietosuojaseloste
+                  <JodOpenInNew />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://okm.fi/tietoa-sivustosta#henkilotiedot"
+                  target="_blank"
+                  className="inline-flex text-accent hover:underline"
+                >
+                  Opetus- ja kulttuuriministeriön tietosuojaseloste
+                  <JodOpenInNew />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </Form>
       }
       footer={
-        <div className="flex justify-end flex-1 gap-3">
-          <Button variant="white" label={t('cancel')} onClick={onClose} className="whitespace-nowrap" />
+        <div className="flex justify-end flex-1 gap-4">
           <Button
-            form={formId}
             variant="white"
-            label={t('feedback.send')}
+            label="Peruuta"
+            onClick={() => {
+              reset();
+              onClose();
+            }}
             className="whitespace-nowrap"
-            disabled={!isValid}
+          />
+          <Button
+            variant="white"
+            label="Lähetä"
+            className="whitespace-nowrap"
+            disabled={!isValid || isSubmitting}
+            form={formId}
           />
         </div>
       }

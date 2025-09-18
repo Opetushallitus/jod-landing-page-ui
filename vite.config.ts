@@ -23,4 +23,13 @@ export default defineConfig({
       },
     ],
   },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://jodkehitys.fi',
+        changeOrigin: true,
+        xfwd: true,
+      },
+    },
+  },
 });

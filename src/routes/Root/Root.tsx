@@ -1,7 +1,7 @@
-import { LanguageButton } from '@/components';
-import { FeedbackModal } from '@/components/FeedbackModal/FeedbackModal';
+import { FeedbackModal, LanguageButton } from '@/components';
 import { NavMenu } from '@/components/NavMenu/NavMenu';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
+import { LangCode } from '@/i18n/config';
 import { Chatbot, Footer, MatomoTracker, NavigationBar, SkipLink } from '@jod/design-system';
 import { JodMenu } from '@jod/design-system/icons';
 import React from 'react';
@@ -134,7 +134,13 @@ const Root = () => {
         feedbackBgImageClassName="bg-[url(@/../assets/home-1.avif)] bg-cover bg-[length:auto_auto] sm:bg-[length:auto_1000px] bg-[top_-0rem_right_-0rem] sm:bg-[top_-21rem_right_0rem]"
         copyright={t('copyright')}
       />
-      <FeedbackModal isOpen={feedbackVisible} onClose={() => setFeedbackVisible(false)} />
+      <FeedbackModal
+        isOpen={feedbackVisible}
+        onClose={() => setFeedbackVisible(false)}
+        section="Koko palvelu tai muu palaute"
+        area="Alatunniste"
+        language={language as LangCode}
+      />
       <ScrollRestoration />
       <MatomoTracker trackerUrl="https://analytiikka.opintopolku.fi" siteId={siteId} pathname={location.pathname} />
     </div>
