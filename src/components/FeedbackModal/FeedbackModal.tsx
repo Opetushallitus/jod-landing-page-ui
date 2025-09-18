@@ -3,6 +3,7 @@ import { Button, Checkbox, InputField, Modal, RadioButton, RadioButtonGroup, Tex
 import { JodOpenInNew } from '@jod/design-system/icons';
 import React from 'react';
 import { Controller, Form, FormSubmitHandler, useForm, useFormState } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 import { z } from 'zod';
 
 const DETAILS_MAX_LENGTH = 2048;
@@ -53,6 +54,7 @@ export interface FeedbackModalProps {
 
 export const FeedbackModal = ({ isOpen, onClose, section, area, language }: FeedbackModalProps) => {
   const formId = React.useId();
+  const { t } = useTranslation();
 
   const { control, register, watch, reset } = useForm({
     resolver: zodResolver(Feedback),
@@ -102,12 +104,12 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
 
       reset();
       onClose();
-      alert('Kiitos palautteestasi! Palautteesi auttaa meitä parantamaan palvelua.');
+      alert(t('feedback.success'));
 
       // eslint-disable-next-line sonarjs/no-ignored-exceptions, @typescript-eslint/no-unused-vars
     } catch (error) {
       setIsSubmitting(false);
-      alert('Palautteen lähettäminen epäonnistui. Yritä uudelleen myöhemmin.');
+      alert(t('feedback.error'));
     }
   };
 
@@ -118,30 +120,28 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
       fullWidthContent
       content={
         <Form id={formId} control={control} onSubmit={onSubmit} data-testid="feedback-form">
-          <h2 className="sm:text-heading-1 text-heading-1-mobile mb-5">Anna palautetta</h2>
+          <h2 className="sm:text-heading-1 text-heading-1-mobile mb-5">{t('feedback.title')}</h2>
           <p className="sm:text-body-md text-body-md-mobile mb-9">
-            Anna palautetta palvelusta tai ilmoita teknisestä ongelmasta. Näin autat meitä palveluiden kehittämisessä.
-            Jos raportoit häiriötilanteesta, meitä auttaisi, että kerrot siitä mahdollisimman tarkasti.
+            {t('feedback.intro-1')} {t('feedback.intro-2')}
             <br />
             <br />
-            Älä kirjoita palautteeseen henkilökohtaisia tietoja, kuten henkilötunnusta tai terveystietoja. Täytähän
-            kaikki kentät, jotta voimme käsitellä palautteesi.
+            {t('feedback.intro-privacy')}
           </p>
           <Controller
             control={control}
             name="section"
             render={({ field: { value, onChange } }) => (
               <RadioButtonGroup
-                label="Mitä osiota palautteesi koskee?"
+                label={t('feedback.section-question')}
                 value={value}
                 onChange={onChange}
                 className="mb-6"
                 data-testid="feedback-section-group"
               >
-                <RadioButton label="Osaamispolkuni" value="Osaamispolkuni" />
-                <RadioButton label="Ohjaajan osio" value="Ohjaajan osio" />
-                <RadioButton label="Tietopalvelu" value="Tietopalvelu" />
-                <RadioButton label="Koko palvelu tai muu palaute" value="Koko palvelu tai muu palaute" />
+                <RadioButton label={t('feedback.sections.osaamispolkuni')} value="Osaamispolkuni" />
+                <RadioButton label={t('feedback.sections.ohjaajan-osio')} value="Ohjaajan osio" />
+                <RadioButton label={t('feedback.sections.tietopalvelu')} value="Tietopalvelu" />
+                <RadioButton label={t('feedback.sections.koko-palvelu')} value="Koko palvelu tai muu palaute" />
               </RadioButtonGroup>
             )}
           />
@@ -150,21 +150,21 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
             name="type"
             render={({ field: { value, onChange } }) => (
               <RadioButtonGroup
-                label="Minkälaista palautetta haluat antaa?"
+                label={t('feedback.type-question')}
                 value={value}
                 onChange={onChange}
                 className="mb-6"
                 data-testid="feedback-type-group"
               >
-                <RadioButton label="Kehu" value="Kehu" />
-                <RadioButton label="Kehitysehdotus" value="Kehitysehdotus" />
-                <RadioButton label="Moite" value="Moite" />
-                <RadioButton label="Tekninen vika tai ongelma" value="Tekninen vika tai ongelma" />
+                <RadioButton label={t('feedback.types.kehu')} value="Kehu" />
+                <RadioButton label={t('feedback.types.kehitysehdotus')} value="Kehitysehdotus" />
+                <RadioButton label={t('feedback.types.moite')} value="Moite" />
+                <RadioButton label={t('feedback.types.vika')} value="Tekninen vika tai ongelma" />
               </RadioButtonGroup>
             )}
           />
           <Textarea
-            label="Palaute"
+            label={t('feedback.message-label')}
             {...register('message')}
             className="mb-9"
             rows={5}
@@ -176,8 +176,8 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
             name="wantsContact"
             render={({ field: { name, value, onChange } }) => (
               <Checkbox
-                label="Haluan, että minuun otetaan yhteyttä"
-                ariaLabel="Haluan, että minuun otetaan yhteyttä"
+                label={t('feedback.wants-contact')}
+                ariaLabel={t('feedback.wants-contact')}
                 name={name}
                 value="yes"
                 checked={value}
@@ -189,7 +189,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
           />
           {wantsContact && (
             <InputField
-              label="Sähköpostiosoite"
+              label={t('feedback.email-label')}
               {...register('email')}
               className="mb-9"
               maxLength={EMAIL_MAX_LENGTH}
@@ -198,48 +198,47 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
           )}
           <hr className="h-1 bg-border-gray text-border-gray mb-7" />
           <div className="sm:text-body-md text-body-md-mobile">
-            <p>
-              Kun lähetät palautetta, tallennamme palvelun tilatiedon, kuten mistä näkymästä palaute on lähetetty.
-              Tilatietoa ei välitetä eteenpäin kolmansille osapuolille. Palautteita käytetään palvelun kehittämiseen ja
-              vapaaehtoisesti jätettäviä yhteystietoja palautteisiin vastaamiseen.
-            </p>
+            <p>{t('feedback.footer-info-1')}</p>
             <br />
-            <p>Palaute käsitellään osiosta riippuen seuraavasti:</p>
+            <p>{t('feedback.footer-info-heading')}</p>
             <ul className="list-disc list-outside ml-7">
-              <li>Osaamispolkuni Opetushallituksessa,</li>
-              <li>Ohjaajan osio KEHA-keskuksessa,</li>
-              <li>Tietopalvelu ja koko palvelu opetus- ja kulttuuriministeriössä.</li>
+              <li>{t('feedback.footer-handled.osaamispolkuni')}</li>
+              <li>{t('feedback.footer-handled.ohjaajan')}</li>
+              <li>{t('feedback.footer-handled.tietopalvelu')}</li>
             </ul>
             <br />
-            <p>Lue lisää palautteiden käsittelijöiden tietosuojaseloisteista:</p>
+            <p>{t('feedback.footer-privacy-heading')}</p>
             <ul className="list-disc list-outside ml-7">
               <li>
                 <a
-                  href="https://www.oph.fi/fi/tietosuoja"
+                  href={t('feedback.linkHrefs.oph')}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex text-accent hover:underline"
                 >
-                  Opetushallituksen tietosuojakäytäntö
+                  {t('feedback.links.oph')}
                   <JodOpenInNew />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://tyomarkkinatori.fi/tietoa-palvelusta/tietosuoja-ja-kayttoehdot/tietosuojaselosteet"
+                  href={t('feedback.linkHrefs.keha')}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex text-accent hover:underline"
                 >
-                  KEHA-keskuksen asiakas- ja neuvontapalveluiden tietosuojaseloste
+                  {t('feedback.links.keha')}
                   <JodOpenInNew />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://okm.fi/tietoa-sivustosta#henkilotiedot"
+                  href={t('feedback.linkHrefs.okm')}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex text-accent hover:underline"
                 >
-                  Opetus- ja kulttuuriministeriön tietosuojaseloste
+                  {t('feedback.links.okm')}
                   <JodOpenInNew />
                 </a>
               </li>
@@ -251,7 +250,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
         <div className="flex justify-end flex-1 gap-4">
           <Button
             variant="white"
-            label="Peruuta"
+            label={t('feedback.cancel')}
             onClick={() => {
               reset();
               onClose();
@@ -261,7 +260,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
           />
           <Button
             variant="white"
-            label="Lähetä"
+            label={t('feedback.submit')}
             className="whitespace-nowrap"
             disabled={!isValid || isSubmitting}
             form={formId}

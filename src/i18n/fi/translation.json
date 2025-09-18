@@ -15,49 +15,6 @@
   "competency-path-portal": "Osaamispolkuportaali",
   "copyright": "© JOD 2025. Kaikki oikeudet pidätetään.",
   "data-sources": "Datalähteet",
-  "feedback": {
-    "aihe": {
-      "options": {
-        "option-1": "Palaute",
-        "option-2": "Kehitysehdotus",
-        "option-3": "Tekninen ongelma",
-        "option-4": "Muu asia"
-      },
-      "title": "Mistä haluat antaa palautetta?"
-    },
-    "description": "Anna palautetta palvelusta tai ilmoita teknisestä ongelmasta. Näin autat meitä palveluiden kehittämisessä.",
-    "description-2": "Jos raportoit teknisestä ongelmasta, meitä auttaisi, että kerrot mahdollisimman tarkasti:",
-    "email": "Sähköposti",
-    "email-placeholder": "Syötä sähköpostiosoitteesi tähän",
-    "errors": {
-      "aihe": "Valitse palautteen aihe",
-      "osio": "Valitse palautteen osio",
-      "palaute": "Palautekenttä on pakollinen",
-      "required-sposti": "Sähköposti on pakollinen, jos haluat että sinuun otetaan yhteyttä",
-      "valid-sposti": "Syötä kelvollinen sähköpostiosoite"
-    },
-    "foot-note": "Kun lähetät palautetta, tallennamme palvelun tilatiedon, kuten mistä näkymästä palaute on lähetetty. Tilatietoa ei välitetä eteenpäin kolmansille osapuolille. Palautteita käytetään palvelun kehittämiseen ja vapaaehtoisesti jätettäviä yhteystietoja palautteisiin vastaamiseen. Palautteet ja yhteystiedot poistetaan käytössä olevasta palautejärjestelmästä 12 kuukauden välein. Lue lisää <CustomLink href=\"123546\">tietosuojaselosteestamme</CustomLink>.",
-    "foot-note-link": "/",
-    "osio": {
-      "options": {
-        "option-1": "Osaamispolkuni",
-        "option-2": "Ohjaajan osio",
-        "option-3": "Tietopalvelu",
-        "option-4": "Yleinen palaute"
-      },
-      "title": "Mitä osiota palautteesi koskee?"
-    },
-    "placeholder": "Kirjoita palautteesi tähän",
-    "privacy": "Älä kirjoita palautteeseen henkilökohtaisia tietoja, kuten henkilötunnusta tai terveystietoja. Täytähän kaikki kentät, jotta voimme käsitellä palautteesi.",
-    "questions": {
-      "item-1": "Mitä olit tekemässä, kun ongelma ilmeni? Mikä ei toiminut? Saitko virheilmoituksen? Jos, niin minkälaisen?",
-      "item-2": "Ilmoita ongelman päivämäärä ja kellonaika sekä käyttämäsi laite (tietokone, tabletti, älypuhelin).",
-      "item-3": "Jos mahdollista, ota ongelmasta kuvaruutukaappaus, sillä saatamme pyytää sitä sinulta myöhemmin. Jätä sitä varten yhteystietosi."
-    },
-    "send": "Lähetä palaute",
-    "take-contact": "Haluan, että minuun otetaan tarvittaessa yhteyttä sähköpostitse",
-    "title": "Palautelomake"
-  },
   "footer": {
     "cooperation-title": "Osaamipolku on toteutettu yhteistyössä seuraavien tahojen toimesta.",
     "feedback-button-label": "Anna palautetta",
@@ -164,6 +121,51 @@
   "select-language": "Valitse kieli",
   "skiplinks": {
     "main": "Siirry pääsisältöön"
+  },
+  "feedback": {
+    "title": "Anna palautetta",
+    "intro-1": "Anna palautetta palvelusta tai ilmoita teknisestä ongelmasta. Näin autat meitä palveluiden kehittämisessä.",
+    "intro-2": "Jos raportoit häiriötilanteesta, meitä auttaisi, että kerrot siitä mahdollisimman tarkasti.",
+    "intro-privacy": "Älä kirjoita palautteeseen henkilökohtaisia tietoja, kuten henkilötunnusta tai terveystietoja. Täytähän kaikki kentät, jotta voimme käsitellä palautteesi.",
+    "section-question": "Mitä osiota palautteesi koskee?",
+    "sections": {
+      "osaamispolkuni": "Osaamispolkuni",
+      "ohjaajan-osio": "Ohjaajan osio",
+      "tietopalvelu": "Tietopalvelu",
+      "koko-palvelu": "Koko palvelu tai muu palaute"
+    },
+    "type-question": "Minkälaista palautetta haluat antaa?",
+    "types": {
+      "kehu": "Kehu",
+      "kehitysehdotus": "Kehitysehdotus",
+      "moite": "Moite",
+      "vika": "Tekninen vika tai ongelma"
+    },
+    "message-label": "Palaute",
+    "wants-contact": "Haluan, että minuun otetaan yhteyttä",
+    "email-label": "Sähköpostiosoite",
+    "footer-info-1": "Kun lähetät palautetta, tallennamme palvelun tilatiedon, kuten mistä näkymästä palaute on lähetetty. Tilatietoa ei välitetä eteenpäin kolmansille osapuolille. Palautteita käytetään palvelun kehittämiseen ja vapaaehtoisesti jätettäviä yhteystietoja palautteisiin vastaamiseen.",
+    "footer-info-heading": "Palaute käsitellään osiosta riippuen seuraavasti:",
+    "footer-handled": {
+      "osaamispolkuni": "Osaamispolkuni Opetushallituksessa,",
+      "ohjaajan": "Ohjaajan osio KEHA-keskuksessa,",
+      "tietopalvelu": "Tietopalvelu ja koko palvelu opetus- ja kulttuuriministeriössä."
+    },
+    "footer-privacy-heading": "Lue lisää palautteiden käsittelijöiden tietosuojaseloisteista:",
+    "links": {
+      "oph": "Opetushallituksen tietosuojakäytäntö",
+      "keha": "KEHA-keskuksen asiakas- ja neuvontapalveluiden tietosuojaseloste",
+      "okm": "Opetus- ja kulttuuriministeriön tietosuojaseloste"
+    },
+    "linkHrefs": {
+      "oph": "https://www.oph.fi/fi/tietosuoja",
+      "keha": "https://tyomarkkinatori.fi/tietoa-palvelusta/tietosuoja-ja-kayttoehdot/tietosuojaselosteet",
+      "okm": "https://okm.fi/tietoa-sivustosta#henkilotiedot"
+    },
+    "submit": "Lähetä",
+    "cancel": "Peruuta",
+    "success": "Kiitos palautteestasi! Palautteesi auttaa meitä parantamaan palvelua.",
+    "error": "Palautteen lähettäminen epäonnistui. Yritä uudelleen myöhemmin."
   },
   "slugs": {
     "about-ai": "tietoa-tekoalysta",
