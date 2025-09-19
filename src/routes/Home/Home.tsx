@@ -21,8 +21,9 @@ const MainCard = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="sm:h-auto mx-auto bg-[url(@/../assets/landing-page-1.avif)] bg-cover bg-[top_-0rem_right_-25rem] sm:bg-auto sm:bg-[top_-20rem_left_0rem]">
-      <div className="mx-auto h-[650px] max-w-[1092px] flex flex-row items-center justify-start hyphens-auto cols-3 px-5 sm:px-6">
+    <div className="sm:h-auto mx-auto bg-cover bg-[url(@/../assets/landing-page-hero.jpg)] xl:bg-[50%_50%] lg:bg-[58.5%_50%] md:bg-[67.3%_50%] sm:bg-[70%_50%] bg-[71.7%_50%]">
+      {/* Hero aspect ratio = ((9 / 21) * 1440px) = 617px */}
+      <div className="sm:h-[617px] h-[calc(100vh-64px)] mx-auto max-w-[1092px] flex flex-row items-center justify-start hyphens-auto cols-3 px-5 sm:px-6">
         <div className="max-w-[716px] col-span-3 sm:col-span-2">
           <HeroCard
             backgroundColor="#006db3"
