@@ -1,7 +1,4 @@
 {
-  "about-ai": "Tietoa tekoälyn käytöstä",
-  "about-us": "Tietoa palvelusta",
-  "accessibility-statement": "Saavutettavuusseloste",
   "cancel": "Peruuta",
   "chatbot": {
     "agent-name": "Neuvontabotti",
@@ -14,7 +11,6 @@
   },
   "competency-path-portal": "Osaamispolkuportaali",
   "copyright": "© JOD 2025. Kaikki oikeudet pidätetään.",
-  "data-sources": "Datalähteet",
   "footer": {
     "cooperation-title": "Osaamipolku on toteutettu yhteistyössä seuraavien tahojen toimesta.",
     "feedback-button-label": "Anna palautetta",
@@ -28,7 +24,14 @@
       "tem-label": "Työ- ja elinkeinoministeriö"
     },
     "more-info-description": "Mietityttääkö tietosuoja tai tekoälyn hyödyntäminen palvelussa? Alta löydät kootusti yleistä tietoa palvelusta ja sen käytöstä.",
-    "more-info-title": "Haluatko tietää lisää Osaamispolusta?"
+    "more-info-title": "Haluatko tietää lisää Osaamispolusta?",
+    "more-info-links": {
+      "about-service": "Tietoa palvelusta",
+      "privacy-and-cookies": "Tietosuojaseloste ja evästeet",
+      "data-sources": "Datalähteet",
+      "ai-usage": "Tietoa tekoälyn käytöstä",
+      "accessibility": "Tietoa saavutettavuudesta"
+    }
   },
   "front-page": "Etusivu",
   "home": {
@@ -116,7 +119,6 @@
   },
   "open-menu": "Avaa valikko",
   "osaamispolku": "Osaamispolku",
-  "privacy-policy-and-cookies": "Tietosuojaseloste ja evästeet",
   "return-home": "Palaa etusivulle",
   "select-language": "Valitse kieli",
   "skiplinks": {
@@ -168,16 +170,10 @@
     "error": "Palautteen lähettäminen epäonnistui. Yritä uudelleen myöhemmin."
   },
   "slugs": {
-    "about-ai": "tietoa-tekoalysta",
-    "about-us": "tietoa-palvelusta",
-    "accessibility-statement": "saavutettavuusseloste",
-    "basic-information": "perustiedot",
+    "about-service": "tietoa-palvelusta",
+    "privacy-and-cookies": "tietosuojaseloste-ja-evasteet",
     "data-sources": "datalahteet",
-    "privacy-policy": "tietosuojaseloste",
-    "slugs": {
-      "user-guide": {
-        "index": "ohjeet"
-      }
-    }
+    "ai-usage": "tietoa-tekoalyn-kaytosta",
+    "accessibility": "tietoa-saavutettavuudesta"
   }
 }

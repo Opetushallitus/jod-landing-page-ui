@@ -2,11 +2,11 @@ import { FeedbackModal, LanguageButton } from '@/components';
 import { NavMenu } from '@/components/NavMenu/NavMenu';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { LangCode } from '@/i18n/config';
-import { Chatbot, Footer, MatomoTracker, NavigationBar, SkipLink } from '@jod/design-system';
+import { Chatbot, Footer, MatomoTracker, NavigationBar, ServiceVariantProvider, SkipLink } from '@jod/design-system';
 import { JodMenu } from '@jod/design-system/icons';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, NavLink, Outlet, ScrollRestoration, useLocation } from 'react-router';
+import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router';
 
 const agents = {
   test: {
@@ -42,16 +42,15 @@ const Root = () => {
     }
   }, [hostname, language]);
 
-  const userGuide = t('slugs.user-guide.index');
-  const basicInformation = t('slugs.basic-information');
-
-  const moreInfoLinks = [
-    { to: `${userGuide}/${t('slugs.about-us')}`, label: t('about-us') },
-    { to: `${basicInformation}/${t('slugs.privacy-policy')}`, label: t('privacy-policy-and-cookies') },
-    { to: `${basicInformation}/${t('slugs.data-sources')}`, label: t('data-sources') },
-    { to: `${basicInformation}/${t('slugs.about-ai')}`, label: t('about-ai') },
-    { to: `${basicInformation}/${t('slugs.accessibility-statement')}`, label: t('accessibility-statement') },
-  ];
+  const moreInfoLinks = ['about-service', 'privacy-and-cookies', 'data-sources', 'ai-usage', 'accessibility'].map(
+    (key) => {
+      const slug = t(`slugs.${key}`);
+      return {
+        href: `/${language}/${slug}`,
+        label: t(`footer.more-info-links.${key}`),
+      };
+    },
+  );
 
   const langMenuButtonRef = React.useRef<HTMLLIElement>(null);
   const langMenuRef = useMenuClickHandler(() => setLangMenuOpen(false), langMenuButtonRef);
@@ -103,7 +102,9 @@ const Root = () => {
         />
       </header>
       <NavMenu open={navMenuOpen} onClose={() => setNavMenuOpen(false)} />
-      <Outlet />
+      <ServiceVariantProvider value="palveluportaali">
+        <Outlet />
+      </ServiceVariantProvider>
       <Chatbot
         agent={agent}
         language={language}
@@ -126,7 +127,6 @@ const Root = () => {
         moreInfoTitle={t('footer.more-info-title')}
         moreInfoDescription={t('footer.more-info-description')}
         moreInfoLinks={moreInfoLinks}
-        MoreInfoLinkComponent={NavLink}
         feedbackTitle={t('footer.feedback-title')}
         feedbackContent={t('footer.feedback-content')}
         feedbackButtonLabel={t('footer.feedback-button-label')}
