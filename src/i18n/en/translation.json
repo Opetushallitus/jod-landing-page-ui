@@ -1,1 +1,18 @@
-{}
+{
+  "footer": {
+    "more-info-links": {
+      "about-service": "About the service",
+      "privacy-and-cookies": "Privacy notice and cookies",
+      "data-sources": "Data sources",
+      "ai-usage": "About the use of AI",
+      "accessibility": "About accessibility"
+    }
+  },
+  "slugs": {
+    "about-service": "about-service",
+    "privacy-and-cookies": "privacy-notice-and-cookies",
+    "data-sources": "data-sources",
+    "ai-usage": "about-the-use-of-ai",
+    "accessibility": "about-accessibility"
+  }
+}

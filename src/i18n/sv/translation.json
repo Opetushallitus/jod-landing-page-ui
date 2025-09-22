@@ -1,1 +1,18 @@
-{}
+{
+  "footer": {
+    "more-info-links": {
+      "about-service": "Om tjänsten",
+      "privacy-and-cookies": "Dataskydd och cookies",
+      "data-sources": "Datakällor",
+      "ai-usage": "Om användningen av AI",
+      "accessibility": "Om tillgänglighet"
+    }
+  },
+  "slugs": {
+    "about-service": "om-tjansten",
+    "privacy-and-cookies": "dataskydd-och-cookies",
+    "data-sources": "datakallor",
+    "ai-usage": "om-anvandningen-av-ai",
+    "accessibility": "om-tillganglighet"
+  }
+}
