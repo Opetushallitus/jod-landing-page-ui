@@ -140,9 +140,10 @@ const Home = () => {
       <title>{t('osaamispolku')}</title>
       <MainCard />
 
-      <Block title={t('home.osaamispolku-helping-heading')} content={t('home.osaamispolku-helping-description')}>
-        <p className="bg-todo h-[328px] flex items-center justify-center rounded">TODO</p>
-      </Block>
+      <Block
+        title={t('home.osaamispolku-helping-heading')}
+        content={t('home.osaamispolku-helping-description')}
+      ></Block>
 
       <SecondaryCard
         color="#00a8b3"
@@ -161,38 +162,36 @@ const Home = () => {
         bgImageClassName="bg-[url(@/../assets/pre-launch-2.avif)] bg-[length:auto_650px] sm:bg-[length:auto_1000px] bg-[top_-3rem_right_-10rem] sm:bg-[top_-20rem_right_2rem]"
       />
 
-      <Block title={t('home.services.title')}>
+      <Block title={t('home.services.title')} isLast={true}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-7 sm:gap-y-11">
           <ServiceBlock
             title={t('home.services.tool.title')}
             text={t('home.services.tool.content')}
             buttonLabel={t('home.services.tool.buttonLabel')}
-            to={`/yksilo/${language}`}
+            to={t('home.services.tool.path', { language })}
           />
           <ServiceBlock
             title={t('home.services.osaamispolku.title')}
             text={t('home.services.osaamispolku.content')}
             buttonLabel={t('home.services.osaamispolku.buttonLabel')}
-            to="#"
+            to={t('home.services.osaamispolku.path', { language })}
           />
           <ServiceBlock
             title={t('home.services.ohjaus.title')}
             text={t('home.services.ohjaus.content')}
             buttonLabel={t('home.services.ohjaus.buttonLabel')}
-            to={`/ohjaaja/${language}`}
+            to={t('home.services.ohjaus.path', { language })}
             className="bg-secondary-2! active:bg-[#00889b]!"
           />
           <ServiceBlock
             title={t('home.services.tietopalvelu.title')}
             text={t('home.services.tietopalvelu.content')}
             buttonLabel={t('home.services.tietopalvelu.buttonLabel')}
-            to={`/tietopalvelu/${language}`}
+            to={t('home.services.tietopalvelu.path', { language })}
             className="bg-secondary-4! active:bg-[#ad3ea3]!"
           />
         </div>
       </Block>
-
-      <Block title={t('home.why-title')} content={t('home.why-content')} isLast={true}></Block>
     </main>
   );
 };
