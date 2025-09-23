@@ -1,7 +1,11 @@
-import { Button, cx, HeroCard } from '@jod/design-system';
-import { JodArrowRight } from '@jod/design-system/icons';
+import betaPlanImageDesktop from '@/../assets/gra_front_timeline_2.svg';
+import betaPlanImageMobile from '@/../assets/gra_front_timeline_mob_2.svg';
+import { getLinkTo } from '@/utils/routeUtils';
+import { Button, cx, HeroCard, tidyClasses as tc, useMediaQueries } from '@jod/design-system';
+import { JodArrowRight, JodOpenInNew } from '@jod/design-system/icons';
 import { JSX } from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
+import { Link } from 'react-router';
 
 const ExternalLink = ({
   children,
@@ -129,21 +133,132 @@ const Block = ({
   );
 };
 
+interface ContainerProps {
+  className?: string;
+  children?: React.ReactNode;
+}
+
+const Content = ({ className = '', title, children }: ContainerProps & { title?: string }) => {
+  const { t } = useTranslation();
+  return (
+    <div className={tc(['mx-auto', 'max-w-[1092px]', 'py-7', 'px-5 sm:px-6', 'flex', 'flex-col', 'gap-7', className])}>
+      {title && <h2 className="text-heading-1">{t(`home.${title}`)}</h2>}
+      {children}
+    </div>
+  );
+};
+
 const Home = () => {
   const {
     t,
     i18n: { language },
   } = useTranslation();
+  const { sm } = useMediaQueries();
 
   return (
     <main role="main" className="mx-auto w-full max-w-(--breakpoint-xl) bg-white" id="jod-main">
       <title>{t('osaamispolku')}</title>
       <MainCard />
 
-      <Block
-        title={t('home.osaamispolku-helping-heading')}
-        content={t('home.osaamispolku-helping-description')}
-      ></Block>
+      <Content title="how-competency-path-helps-you" className="mb-[128px] mt-11">
+        <p className="text-body-lg whitespace-pre-line max-w-[716px]">
+          {t('home.how-competency-path-helps-you-content')}
+        </p>
+        <div className="flex flex-col sm:flex-row gap-7 sm:flex-wrap">
+          <div className="flex flex-col gap-5 md:max-w-[320px]">
+            <div className="md:text-heading-3 text-heading-3-mobile ">
+              {t('home.how-competency-path-helps-you-opintopolku-title')}
+            </div>
+            <div>{t('home.how-competency-path-helps-you-opintopolku-description')}</div>
+            <div className="mt-auto">
+              <Button
+                size="lg"
+                variant="accent"
+                className="mt-5"
+                serviceVariant="yksilo"
+                label={t('home.how-competency-path-helps-you-opintopolku-link')}
+                icon={<JodOpenInNew />}
+                iconSide="right"
+                LinkComponent={getLinkTo(`https://opintopolku.fi/konfo/${language}/`, {
+                  useAnchor: true,
+                  target: '_blank',
+                })}
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-5 md:max-w-[320px]">
+            <div className="sm:text-heading-3 text-heading-3-mobile">
+              {t('home.how-competency-path-helps-you-tmt-title')}
+            </div>
+            <div>{t('home.how-competency-path-helps-you-tmt-description')}</div>
+            <div className="mt-auto">
+              <Button
+                size="lg"
+                variant="accent"
+                className="mt-5"
+                serviceVariant="yksilo"
+                label={t('home.how-competency-path-helps-you-tmt-link')}
+                icon={<JodOpenInNew />}
+                iconSide="right"
+                LinkComponent={getLinkTo(`https://tyomarkkinatori.fi/${language === 'fi' ? '' : language}`, {
+                  useAnchor: true,
+                  target: '_blank',
+                })}
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-5 md:max-w-[320px]">
+            <div className="sm:text-heading-3 text-heading-3-mobile">
+              {t('home.how-competency-path-helps-you-opinfi-title')}
+            </div>
+            <div>{t('home.how-competency-path-helps-you-opinfi-description')}</div>
+            <div className="mt-auto">
+              <Button
+                size="lg"
+                variant="accent"
+                className="mt-5"
+                serviceVariant="yksilo"
+                label={t('home.how-competency-path-helps-you-opinfi-link')}
+                icon={<JodOpenInNew />}
+                iconSide="right"
+                LinkComponent={getLinkTo(`https://opin.fi/${language === 'fi' ? '' : language}`, {
+                  useAnchor: true,
+                  target: '_blank',
+                })}
+              />
+            </div>
+          </div>
+        </div>
+      </Content>
+
+      <Content title="beta">
+        <p className="text-body-lg max-w-[716px]">
+          <Trans
+            i18nKey="home.beta-content"
+            components={{
+              Icon: <JodOpenInNew size={18} className="ml-1" />,
+              CustomLink: (
+                <Link
+                  to="https://wiki.eduuni.fi/x/Ok-bJ"
+                  className="inline-flex underline text-accent items-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              ),
+            }}
+          />
+        </p>
+        <div className="flex justify-center aspect-auto">
+          {
+            <img
+              className="max-w-[372px] sm:max-w-full"
+              src={sm ? betaPlanImageDesktop : betaPlanImageMobile}
+              alt={t('home.beta')}
+            />
+          }
+        </div>
+      </Content>
 
       <SecondaryCard
         color="#00a8b3"
