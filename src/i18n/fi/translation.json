@@ -1,92 +1,5 @@
 {
-  "beta": {
-    "note": {
-      "description": "Kerro mielipiteesi ja auta meitä kehittämään palvelua.",
-      "title": "Kokeile palvelua",
-      "to-feedback": "Siirry kyselyyn"
-    }
-  },
-  "cancel": "Peruuta",
-  "chatbot": {
-    "agent-name": "Neuvontabotti",
-    "error-message": "Tapahtui jokin virhe.",
-    "greeting": "Hei, olen Osaamispolun neuvontabotti.",
-    "header": "Neuvontabotti",
-    "open-window-text": "Kysy neuvoa?",
-    "text-input-placeholder": "Kirjoita kysymyksesi tähän",
-    "waiting-message": "Haetaan tietoa..."
-  },
-  "competency-path-portal": "Osaamispolkuportaali",
-  "copyright": "© JOD 2025. Kaikki oikeudet pidätetään.",
-  "feedback": {
-    "cancel": "Peruuta",
-    "email-label": "Sähköpostiosoite",
-    "error": "Palautteen lähettäminen epäonnistui. Yritä uudelleen myöhemmin.",
-    "footer-handled": {
-      "ohjaajan": "Ohjaajan osio KEHA-keskuksessa,",
-      "osaamispolkuni": "Osaamispolkuni Opetushallituksessa,",
-      "tietopalvelu": "Tietopalvelu ja koko palvelu opetus- ja kulttuuriministeriössä."
-    },
-    "footer-info-1": "Kun lähetät palautetta, tallennamme palvelun tilatiedon, kuten mistä näkymästä palaute on lähetetty. Tilatietoa ei välitetä eteenpäin kolmansille osapuolille. Palautteita käytetään palvelun kehittämiseen ja vapaaehtoisesti jätettäviä yhteystietoja palautteisiin vastaamiseen.",
-    "footer-info-heading": "Palaute käsitellään osiosta riippuen seuraavasti:",
-    "footer-privacy-heading": "Lue lisää palautteiden käsittelijöiden tietosuojaseloisteista:",
-    "intro-1": "Anna palautetta palvelusta tai ilmoita teknisestä ongelmasta. Näin autat meitä palveluiden kehittämisessä.",
-    "intro-2": "Jos raportoit häiriötilanteesta, meitä auttaisi, että kerrot siitä mahdollisimman tarkasti.",
-    "intro-privacy": "Älä kirjoita palautteeseen henkilökohtaisia tietoja, kuten henkilötunnusta tai terveystietoja. Täytähän kaikki kentät, jotta voimme käsitellä palautteesi.",
-    "linkHrefs": {
-      "keha": "https://tyomarkkinatori.fi/tietoa-palvelusta/tietosuoja-ja-kayttoehdot/tietosuojaselosteet",
-      "okm": "https://okm.fi/tietoa-sivustosta#henkilotiedot",
-      "oph": "https://www.oph.fi/fi/tietosuoja"
-    },
-    "links": {
-      "keha": "KEHA-keskuksen asiakas- ja neuvontapalveluiden tietosuojaseloste",
-      "okm": "Opetus- ja kulttuuriministeriön tietosuojaseloste",
-      "oph": "Opetushallituksen tietosuojakäytäntö"
-    },
-    "message-label": "Palaute",
-    "section-question": "Mitä osiota palautteesi koskee?",
-    "sections": {
-      "koko-palvelu": "Koko palvelu tai muu palaute",
-      "ohjaajan-osio": "Ohjaajan osio",
-      "osaamispolkuni": "Osaamispolkuni",
-      "tietopalvelu": "Tietopalvelu"
-    },
-    "submit": "Lähetä",
-    "success": "Kiitos palautteestasi! Palautteesi auttaa meitä parantamaan palvelua.",
-    "title": "Anna palautetta",
-    "type-question": "Minkälaista palautetta haluat antaa?",
-    "types": {
-      "kehitysehdotus": "Kehitysehdotus",
-      "kehu": "Kehu",
-      "moite": "Moite",
-      "vika": "Tekninen vika tai ongelma"
-    },
-    "wants-contact": "Haluan, että minuun otetaan yhteyttä"
-  },
-  "footer": {
-    "cooperation-title": "Osaamipolku on toteutettu yhteistyössä seuraavien tahojen toimesta.",
-    "feedback-button-label": "Anna palautetta",
-    "feedback-content": "Haluamme kehittää Osaamispolkua vastaamaan paremmin juuri sinun tarpeita. Anna meille palautetta ja huomiomme sen kehitystyössä.",
-    "feedback-title": "Kerro meille mitä pidit palvelusta!",
-    "funding-title": "Palvelu on rahoitettu Euroopan RFF-rahoituksella.",
-    "logos": {
-      "keha-label": "KEHA-keskus",
-      "okm-label": "Opetus- ja kulttuuriministeriö",
-      "oph-label": "Opetushallitus",
-      "tem-label": "Työ- ja elinkeinoministeriö"
-    },
-    "more-info-description": "Mietityttääkö tietosuoja tai tekoälyn hyödyntäminen palvelussa? Alta löydät kootusti yleistä tietoa palvelusta ja sen käytöstä.",
-    "more-info-links": {
-      "about-service": "Tietoa palvelusta",
-      "accessibility": "Tietoa saavutettavuudesta",
-      "ai-usage": "Tietoa tekoälyn käytöstä",
-      "data-sources": "Datalähteet",
-      "privacy-and-cookies": "Tietosuojaseloste ja evästeet"
-    },
-    "more-info-title": "Haluatko tietää lisää Osaamispolusta?"
-  },
   "about-service": {
-    "title": "Tietoa palvelusta",
     "intro": "Osaamispolku on koulutus- ja urasuunnittelun, osaamisen kehittämisen ja työllistymisen tueksi tarkoitettu uusi digitaalinen palvelu, joka julkaistaan loppuvuodesta 2025. Osaamispolku on suunnattu ura- ja koulutusvalintoja tekeville, ohjaajille, koulutusorganisaatioille, työelämätoimijoille ja eri hallinnonalojen asiantuntijoille.",
     "sections": [
       {
@@ -119,121 +32,10 @@
           "Osaamispolun kehityksestä vastaa Jatkuvan oppimisen digitaalinen palvelukokonaisuus -hanke, joka on opetus- ja kulttuuriministeriön (OKM), työ- ja elinkeinoministeriön (TEM) yhteishanke vuosina 2021–2025. Kehitystyössä ovat tiiviisti mukana Opetushallitus (OPH), ELY-keskusten kehittämis- ja hallintokeskus (KEHA-keskus), korkeakoulut Digivisio 2030 -hankkeen kautta ja Jatkuvan oppimisen ja työllistymisen keskus (Jotpa). Hankkeen rahoitus tulee EU:n elpymis- ja palautumistukivälineestä (RRF)."
         ]
       }
-    ]
-  },
-  "data-sources": {
-    "title": "Datalähteet",
-    "intro": "Tältä sivulta löydät kaikki Osaamispolku-palvelun eri osioissa hyödynnetyt datan lähteet.",
-    "read-more": "Lue lisää:",
-    "sections": {
-      "vipunen": {
-        "navTitle": "Vipunen",
-        "paragraphs": [
-          "Vipunen on opetushallinnon tilastopalvelu, jonka sisällöstä vastaavat yhdessä opetus- ja kulttuuriministeriö ja Opetushallitus.",
-          "Osaamispolkuni-osio hyödyntää Vipusen tietoja työmahdollisuuksien ja koulutusmahdollisuuksien tilastotiedoissa.",
-          "Tietopalvelu hyödyntää Vipusen tietoja ammattialakohtaisen osaamistarpeen muutoksesta."
-        ],
-        "links": [{ "label": "Vipunen", "href": "https://vipunen.fi/fi-fi" }]
-      },
-      "tyomarkkinatori": {
-        "navTitle": "Työmarkkinatori",
-        "paragraphs": [
-          "Työ- ja elinkeinoministeriö vastaa Työmarkkinatori-palvelusta. Työmarkkinatorissa käyttäjille on tarjolla valmiiksi koottua tietoa ja palveluita työelämän eri tilanteisiin.",
-          "Työmarkkinatorin työllisyys ja tilastot -kokonaisuus sisältää kootusti KEHA-keskuksen julkaisemia arviointeja, selvityksiä, tutkimuksia, tilastoja ja raportteja.",
-          "Osaamispolkuni-osio hyödyntää työmarkkinatorin osaamissuosittelijaa, kansallisesti ylläpidettävää ESCO-osaamis- ja ammattiluokitusta sekä avoimia työpaikkoja.",
-          "Tietopalvelu hyödyntää Työmarkkinatorin tiedoista avoimien työpaikkojen määrää."
-        ],
-        "links": [
-          { "label": "Työmarkkinatori", "href": "https://tyomarkkinatori.fi/henkiloasiakkaat" },
-          {
-            "label": "Työmarkkinatori - Avoimet työpaikat",
-            "href": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat"
-          },
-          {
-            "label": "Työmarkkinatori - Osaamissuosittelija ja kohtaanto",
-            "href": "https://tyomarkkinatori.fi/tietoa-palvelusta/tietoa-tyomarkkinatorista/kohtaanto-ja-osaamissuosittelija-tyomarkkinatorilla"
-          },
-          {
-            "label": "Työmarkkinatori - Työllisyys ja tilastot",
-            "href": "https://tyomarkkinatori.fi/tyollisyys-ja-tilastot"
-          }
-        ]
-      },
-      "tilastokeskus": {
-        "navTitle": "Tilastokeskus",
-        "paragraphs": [
-          "Tilastokeskus esittää tilastotietoa suomalaisen yhteiskunnan eri alueilta.",
-          "Osaamispolkuni-osio hyödyntää tilastokeskuksen tietoja työmahdollisuuksien ja koulutusmahdollisuuksien tilastotiedoissa.",
-          "Tietopalvelu hyödyntää tilastokeskuksen tietoja väestön, opiskelijoiden, työllisten ja työttömien sekä työnhakijoiden tietojen osalta. Tarkastelussa voit hyödyntää useita erilaisia näkökulmia muutosten tarkastelussa.",
-          "Tarkemman erittelyn hyödynnetyistä tiedoista voit löytää Tietopalvelun tietolähteet -sivulta."
-        ],
-        "links": [{ "label": "Tilastokeskus", "href": "https://stat.fi/fi" }]
-      },
-      "opintopolku": {
-        "navTitle": "Opintopolku",
-        "paragraphs": [
-          "Opintopolku sisältää tietoa tutkinnoista, ammateista sekä opiskelusta eri oppilaitoksissa. Opintopolku-portaalia ylläpitää Opetushallitus. Koulutuksen järjestäjät ja korkeakoulut ylläpitävät tietoja koulutuksistaan Opintopolku.fi-palvelussa.",
-          "Yksilön osiossa opintopolusta hyödynnetään koulutustarjonnan tietoja sekä koodistoja.",
-          "Ohjaajan osio: Ohjausalan koulutukset",
-          "Tietopalvelussa opintopolusta hyödynnetään koulutustietoja alueellisesti sekä koodistoja."
-        ],
-        "links": [{ "label": "Opintopolku", "href": "https://opintopolku.fi/" }]
-      },
-      "koto": {
-        "navTitle": "Kotoutuminen (Koto-tietokanta)",
-        "paragraphs": [
-          "Kotoutuminen.fi-verkkopalvelu on suunnattu työssään maahanmuuttaneita kohtaaville, kotoutumisen edistämisen ja pakolaisten vastaanoton toimijoille. Palvelua ylläpitää KEHA-keskus.",
-          "Tietopalvelussa hyödynnetään tästä tietolähteestä maahanmuuttajien työllisyyteen ja yrittäjyyteen liittyviä tietoja."
-        ],
-        "links": [{ "label": "Koto-tietokanta", "href": "https://kotoutuminen.fi/etusivu" }]
-      },
-      "cedefop": {
-        "navTitle": "CEDEFOP Skills Forecast",
-        "paragraphs": [
-          "CEDEFOP Skills Forecast tuottaa kvantitatiivisia arvioita tulevasta työllisyyskehityksestä toimialoittain ja ammattiryhmittäin. Ennusteessa tarkastellaan myös väestön ja työvoiman koulutustason tulevaa kehitystä.",
-          "(Kuvaus sivuilla englanniksi: Cedefop Skill forecast offers quantitative projections of future trends in employment by sector of economic activity and occupational group. Future trends on the level of education of the population and the labour force are also estimated.)",
-          "Tietopalvelu hyödyntää tietoja tulevaisuuden avoimien työpaikkojen kehittymisen osalta ja työllisyyden kasvun tarkastelussa toimialoittain ja ammattiryhmittäin."
-        ],
-        "links": [
-          { "label": "CEDEFOP Skills Forecast", "href": "https://www.cedefop.europa.eu/en/tools/skills-forecast" }
-        ]
-      },
-      "oef": {
-        "navTitle": "Osaamisen ennakointifoorumi",
-        "paragraphs": [
-          "Osaamisen ennakointifoorumi (OEF) on opetus- ja kulttuuriministeriön sekä Opetushallituksen yhteinen ennakoinnin asiantuntijaelin, jonka tehtävänä on edistää koulutuksen ja työelämän välistä vuoropuhelua.",
-          "OEF tuottaa, analysoi ja levittää valtakunnallista ennakointitietoa tulevaisuuden osaamis- ja työvoimatarpeista sekä esittää niiden pohjalta koulutuksen kehittämistarpeita.",
-          "OEF muodostuu ohjausryhmästä ja yhdeksästä eri aloja edustavasta ennakointiryhmästä.",
-          "Tietopalvelu ei suoraan hyödynnä tätä tietolähdettä, mutta tietopalvelun käyttämä Vipunen hyödyntää ennakointiforumin tietoja."
-        ],
-        "links": [
-          {
-            "label": "Osaamisen ennakointifoorumi",
-            "href": "https://www.oph.fi/fi/palvelut/osaamisen-ennakointifoorumi-oef"
-          }
-        ]
-      },
-      "eperusteet": {
-        "navTitle": "ePerusteet",
-        "paragraphs": [
-          "Palvelusta löytyy kaikki valtakunnalliset opetussuunnitelmien, tutkintojen ja koulutusten perusteet varhaiskasvatuksesta vapaaseen sivistystyöhön. Lisäksi palvelusta löytyy muut ajantasaiset Opetushallituksen määräykset ja suositukset. Varhaiskasvatuksen, opetuksen ja koulutuksen järjestäjät voivat julkaista palvelussa myös paikallisia suunnitelmia.",
-          "Osaamispolkuni-osiossa hyödynnetään ePerusteet palvelusta perustietoja koulutustarjonnan osalta.",
-          "Tietopalvelu hyödyntää koulutukseen liittyviä perustietoja koulutustarjonnan osalta."
-        ],
-        "links": [{ "label": "ePerusteet", "href": "https://eperusteet.opintopolku.fi/#/fi" }]
-      },
-      "prh": {
-        "navTitle": "Patentti- ja rekisterihallitus",
-        "paragraphs": [
-          "Patentti- ja rekisterihallitus (PRH) kuuluu työ- ja elinkeinoministeriön (TEM) konserniin ja hallinnoi lakisääteisesti yrityksiin ja yhteisöihin liittyviä rekisteritietoja.",
-          "Tietopalvelu hyödyntää yritysten tietoja, kuten toimialaa."
-        ],
-        "links": [{ "label": "Patentti- ja rekisterihallitus", "href": "https://www.prh.fi/fi/index.html" }]
-      }
-    }
+    ],
+    "title": "Tietoa palvelusta"
   },
   "accessibility": {
-    "title": "Tietoa saavutettavuudesta",
     "intro": "Tämä seloste koskee Osaamispolku.fi-palvelua. Palvelun saavutettavuuden arviointi on vielä kesken.",
     "sections": [
       {
@@ -254,7 +56,8 @@
           "Jos huomaat palvelussa saavutettavuusongelmia, kerro siitä meille. Otamme palautteen huomioon kehityksessä."
         ]
       }
-    ]
+    ],
+    "title": "Tietoa saavutettavuudesta"
   },
   "ai-usage": {
     "ai-methods": {
@@ -356,6 +159,239 @@
       },
       "title": "Miksi tekoälyä käytetään Osaamispolussa?"
     }
+  },
+  "beta": {
+    "note": {
+      "description": "Kerro mielipiteesi ja auta meitä kehittämään palvelua.",
+      "title": "Kokeile palvelua",
+      "to-feedback": "Siirry kyselyyn"
+    }
+  },
+  "cancel": "Peruuta",
+  "chatbot": {
+    "agent-name": "Neuvontabotti",
+    "error-message": "Tapahtui jokin virhe.",
+    "greeting": "Hei, olen Osaamispolun neuvontabotti.",
+    "header": "Neuvontabotti",
+    "open-window-text": "Kysy neuvoa?",
+    "text-input-placeholder": "Kirjoita kysymyksesi tähän",
+    "waiting-message": "Haetaan tietoa..."
+  },
+  "competency-path-portal": "Osaamispolkuportaali",
+  "copyright": "© JOD 2025. Kaikki oikeudet pidätetään.",
+  "data-sources": {
+    "intro": "Tältä sivulta löydät kaikki Osaamispolku-palvelun eri osioissa hyödynnetyt datan lähteet.",
+    "read-more": "Lue lisää:",
+    "sections": {
+      "cedefop": {
+        "links": [
+          {
+            "href": "https://www.cedefop.europa.eu/en/tools/skills-forecast",
+            "label": "CEDEFOP Skills Forecast"
+          }
+        ],
+        "navTitle": "CEDEFOP Skills Forecast",
+        "paragraphs": [
+          "CEDEFOP Skills Forecast tuottaa kvantitatiivisia arvioita tulevasta työllisyyskehityksestä toimialoittain ja ammattiryhmittäin. Ennusteessa tarkastellaan myös väestön ja työvoiman koulutustason tulevaa kehitystä.",
+          "(Kuvaus sivuilla englanniksi: Cedefop Skill forecast offers quantitative projections of future trends in employment by sector of economic activity and occupational group. Future trends on the level of education of the population and the labour force are also estimated.)",
+          "Tietopalvelu hyödyntää tietoja tulevaisuuden avoimien työpaikkojen kehittymisen osalta ja työllisyyden kasvun tarkastelussa toimialoittain ja ammattiryhmittäin."
+        ]
+      },
+      "eperusteet": {
+        "links": [
+          {
+            "href": "https://eperusteet.opintopolku.fi/#/fi",
+            "label": "ePerusteet"
+          }
+        ],
+        "navTitle": "ePerusteet",
+        "paragraphs": [
+          "Palvelusta löytyy kaikki valtakunnalliset opetussuunnitelmien, tutkintojen ja koulutusten perusteet varhaiskasvatuksesta vapaaseen sivistystyöhön. Lisäksi palvelusta löytyy muut ajantasaiset Opetushallituksen määräykset ja suositukset. Varhaiskasvatuksen, opetuksen ja koulutuksen järjestäjät voivat julkaista palvelussa myös paikallisia suunnitelmia.",
+          "Osaamispolkuni-osiossa hyödynnetään ePerusteet palvelusta perustietoja koulutustarjonnan osalta.",
+          "Tietopalvelu hyödyntää koulutukseen liittyviä perustietoja koulutustarjonnan osalta."
+        ]
+      },
+      "koto": {
+        "links": [
+          {
+            "href": "https://kotoutuminen.fi/etusivu",
+            "label": "Koto-tietokanta"
+          }
+        ],
+        "navTitle": "Kotoutuminen (Koto-tietokanta)",
+        "paragraphs": [
+          "Kotoutuminen.fi-verkkopalvelu on suunnattu työssään maahanmuuttaneita kohtaaville, kotoutumisen edistämisen ja pakolaisten vastaanoton toimijoille. Palvelua ylläpitää KEHA-keskus.",
+          "Tietopalvelussa hyödynnetään tästä tietolähteestä maahanmuuttajien työllisyyteen ja yrittäjyyteen liittyviä tietoja."
+        ]
+      },
+      "oef": {
+        "links": [
+          {
+            "href": "https://www.oph.fi/fi/palvelut/osaamisen-ennakointifoorumi-oef",
+            "label": "Osaamisen ennakointifoorumi"
+          }
+        ],
+        "navTitle": "Osaamisen ennakointifoorumi",
+        "paragraphs": [
+          "Osaamisen ennakointifoorumi (OEF) on opetus- ja kulttuuriministeriön sekä Opetushallituksen yhteinen ennakoinnin asiantuntijaelin, jonka tehtävänä on edistää koulutuksen ja työelämän välistä vuoropuhelua.",
+          "OEF tuottaa, analysoi ja levittää valtakunnallista ennakointitietoa tulevaisuuden osaamis- ja työvoimatarpeista sekä esittää niiden pohjalta koulutuksen kehittämistarpeita.",
+          "OEF muodostuu ohjausryhmästä ja yhdeksästä eri aloja edustavasta ennakointiryhmästä.",
+          "Tietopalvelu ei suoraan hyödynnä tätä tietolähdettä, mutta tietopalvelun käyttämä Vipunen hyödyntää ennakointiforumin tietoja."
+        ]
+      },
+      "opintopolku": {
+        "links": [
+          {
+            "href": "https://opintopolku.fi/",
+            "label": "Opintopolku"
+          }
+        ],
+        "navTitle": "Opintopolku",
+        "paragraphs": [
+          "Opintopolku sisältää tietoa tutkinnoista, ammateista sekä opiskelusta eri oppilaitoksissa. Opintopolku-portaalia ylläpitää Opetushallitus. Koulutuksen järjestäjät ja korkeakoulut ylläpitävät tietoja koulutuksistaan Opintopolku.fi-palvelussa.",
+          "Yksilön osiossa opintopolusta hyödynnetään koulutustarjonnan tietoja sekä koodistoja.",
+          "Ohjaajan osio: Ohjausalan koulutukset",
+          "Tietopalvelussa opintopolusta hyödynnetään koulutustietoja alueellisesti sekä koodistoja."
+        ]
+      },
+      "prh": {
+        "links": [
+          {
+            "href": "https://www.prh.fi/fi/index.html",
+            "label": "Patentti- ja rekisterihallitus"
+          }
+        ],
+        "navTitle": "Patentti- ja rekisterihallitus",
+        "paragraphs": [
+          "Patentti- ja rekisterihallitus (PRH) kuuluu työ- ja elinkeinoministeriön (TEM) konserniin ja hallinnoi lakisääteisesti yrityksiin ja yhteisöihin liittyviä rekisteritietoja.",
+          "Tietopalvelu hyödyntää yritysten tietoja, kuten toimialaa."
+        ]
+      },
+      "tilastokeskus": {
+        "links": [
+          {
+            "href": "https://stat.fi/fi",
+            "label": "Tilastokeskus"
+          }
+        ],
+        "navTitle": "Tilastokeskus",
+        "paragraphs": [
+          "Tilastokeskus esittää tilastotietoa suomalaisen yhteiskunnan eri alueilta.",
+          "Osaamispolkuni-osio hyödyntää tilastokeskuksen tietoja työmahdollisuuksien ja koulutusmahdollisuuksien tilastotiedoissa.",
+          "Tietopalvelu hyödyntää tilastokeskuksen tietoja väestön, opiskelijoiden, työllisten ja työttömien sekä työnhakijoiden tietojen osalta. Tarkastelussa voit hyödyntää useita erilaisia näkökulmia muutosten tarkastelussa.",
+          "Tarkemman erittelyn hyödynnetyistä tiedoista voit löytää Tietopalvelun tietolähteet -sivulta."
+        ]
+      },
+      "tyomarkkinatori": {
+        "links": [
+          {
+            "href": "https://tyomarkkinatori.fi/henkiloasiakkaat",
+            "label": "Työmarkkinatori"
+          },
+          {
+            "href": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat",
+            "label": "Työmarkkinatori - Avoimet työpaikat"
+          },
+          {
+            "href": "https://tyomarkkinatori.fi/tietoa-palvelusta/tietoa-tyomarkkinatorista/kohtaanto-ja-osaamissuosittelija-tyomarkkinatorilla",
+            "label": "Työmarkkinatori - Osaamissuosittelija ja kohtaanto"
+          },
+          {
+            "href": "https://tyomarkkinatori.fi/tyollisyys-ja-tilastot",
+            "label": "Työmarkkinatori - Työllisyys ja tilastot"
+          }
+        ],
+        "navTitle": "Työmarkkinatori",
+        "paragraphs": [
+          "Työ- ja elinkeinoministeriö vastaa Työmarkkinatori-palvelusta. Työmarkkinatorissa käyttäjille on tarjolla valmiiksi koottua tietoa ja palveluita työelämän eri tilanteisiin.",
+          "Työmarkkinatorin työllisyys ja tilastot -kokonaisuus sisältää kootusti KEHA-keskuksen julkaisemia arviointeja, selvityksiä, tutkimuksia, tilastoja ja raportteja.",
+          "Osaamispolkuni-osio hyödyntää työmarkkinatorin osaamissuosittelijaa, kansallisesti ylläpidettävää ESCO-osaamis- ja ammattiluokitusta sekä avoimia työpaikkoja.",
+          "Tietopalvelu hyödyntää Työmarkkinatorin tiedoista avoimien työpaikkojen määrää."
+        ]
+      },
+      "vipunen": {
+        "links": [
+          {
+            "href": "https://vipunen.fi/fi-fi",
+            "label": "Vipunen"
+          }
+        ],
+        "navTitle": "Vipunen",
+        "paragraphs": [
+          "Vipunen on opetushallinnon tilastopalvelu, jonka sisällöstä vastaavat yhdessä opetus- ja kulttuuriministeriö ja Opetushallitus.",
+          "Osaamispolkuni-osio hyödyntää Vipusen tietoja työmahdollisuuksien ja koulutusmahdollisuuksien tilastotiedoissa.",
+          "Tietopalvelu hyödyntää Vipusen tietoja ammattialakohtaisen osaamistarpeen muutoksesta."
+        ]
+      }
+    },
+    "title": "Datalähteet"
+  },
+  "feedback": {
+    "cancel": "Peruuta",
+    "email-label": "Sähköpostiosoite",
+    "error": "Palautteen lähettäminen epäonnistui. Yritä uudelleen myöhemmin.",
+    "footer-handled": {
+      "ohjaajan": "Ohjaajan osio KEHA-keskuksessa,",
+      "osaamispolkuni": "Osaamispolkuni Opetushallituksessa,",
+      "tietopalvelu": "Tietopalvelu ja koko palvelu opetus- ja kulttuuriministeriössä."
+    },
+    "footer-info-1": "Kun lähetät palautetta, tallennamme palvelun tilatiedon, kuten mistä näkymästä palaute on lähetetty. Tilatietoa ei välitetä eteenpäin kolmansille osapuolille. Palautteita käytetään palvelun kehittämiseen ja vapaaehtoisesti jätettäviä yhteystietoja palautteisiin vastaamiseen.",
+    "footer-info-heading": "Palaute käsitellään osiosta riippuen seuraavasti:",
+    "footer-privacy-heading": "Lue lisää palautteiden käsittelijöiden tietosuojaseloisteista:",
+    "intro-1": "Anna palautetta palvelusta tai ilmoita teknisestä ongelmasta. Näin autat meitä palveluiden kehittämisessä.",
+    "intro-2": "Jos raportoit häiriötilanteesta, meitä auttaisi, että kerrot siitä mahdollisimman tarkasti.",
+    "intro-privacy": "Älä kirjoita palautteeseen henkilökohtaisia tietoja, kuten henkilötunnusta tai terveystietoja. Täytähän kaikki kentät, jotta voimme käsitellä palautteesi.",
+    "linkHrefs": {
+      "keha": "https://tyomarkkinatori.fi/tietoa-palvelusta/tietosuoja-ja-kayttoehdot/tietosuojaselosteet",
+      "okm": "https://okm.fi/tietoa-sivustosta#henkilotiedot",
+      "oph": "https://www.oph.fi/fi/tietosuoja"
+    },
+    "links": {
+      "keha": "KEHA-keskuksen asiakas- ja neuvontapalveluiden tietosuojaseloste",
+      "okm": "Opetus- ja kulttuuriministeriön tietosuojaseloste",
+      "oph": "Opetushallituksen tietosuojakäytäntö"
+    },
+    "message-label": "Palaute",
+    "section-question": "Mitä osiota palautteesi koskee?",
+    "sections": {
+      "koko-palvelu": "Koko palvelu tai muu palaute",
+      "ohjaajan-osio": "Ohjaajan osio",
+      "osaamispolkuni": "Osaamispolkuni",
+      "tietopalvelu": "Tietopalvelu"
+    },
+    "submit": "Lähetä",
+    "success": "Kiitos palautteestasi! Palautteesi auttaa meitä parantamaan palvelua.",
+    "title": "Anna palautetta",
+    "type-question": "Minkälaista palautetta haluat antaa?",
+    "types": {
+      "kehitysehdotus": "Kehitysehdotus",
+      "kehu": "Kehu",
+      "moite": "Moite",
+      "vika": "Tekninen vika tai ongelma"
+    },
+    "wants-contact": "Haluan, että minuun otetaan yhteyttä"
+  },
+  "footer": {
+    "cooperation-title": "Osaamipolku on toteutettu yhteistyössä seuraavien tahojen toimesta.",
+    "feedback-button-label": "Anna palautetta",
+    "feedback-content": "Haluamme kehittää Osaamispolkua vastaamaan paremmin juuri sinun tarpeita. Anna meille palautetta ja huomiomme sen kehitystyössä.",
+    "feedback-title": "Kerro meille mitä pidit palvelusta!",
+    "funding-title": "Palvelu on rahoitettu Euroopan RFF-rahoituksella.",
+    "logos": {
+      "keha-label": "KEHA-keskus",
+      "okm-label": "Opetus- ja kulttuuriministeriö",
+      "oph-label": "Opetushallitus",
+      "tem-label": "Työ- ja elinkeinoministeriö"
+    },
+    "more-info-description": "Mietityttääkö tietosuoja tai tekoälyn hyödyntäminen palvelussa? Alta löydät kootusti yleistä tietoa palvelusta ja sen käytöstä.",
+    "more-info-links": {
+      "about-service": "Tietoa palvelusta",
+      "accessibility": "Tietoa saavutettavuudesta",
+      "ai-usage": "Tietoa tekoälyn käytöstä",
+      "data-sources": "Datalähteet",
+      "privacy-and-cookies": "Tietosuojaseloste ja evästeet"
+    },
+    "more-info-title": "Haluatko tietää lisää Osaamispolusta?"
   },
   "front-page": "Etusivu",
   "home": {
