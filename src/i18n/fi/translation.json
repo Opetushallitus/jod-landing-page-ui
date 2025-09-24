@@ -86,7 +86,40 @@
     "more-info-title": "Haluatko tietää lisää Osaamispolusta?"
   },
   "about-service": {
-    "title": "Tietoa palvelusta"
+    "title": "Tietoa palvelusta",
+    "intro": "Osaamispolku on koulutus- ja urasuunnittelun, osaamisen kehittämisen ja työllistymisen tueksi tarkoitettu uusi digitaalinen palvelu, joka julkaistaan loppuvuodesta 2025. Osaamispolku on suunnattu ura- ja koulutusvalintoja tekeville, ohjaajille, koulutusorganisaatioille, työelämätoimijoille ja eri hallinnonalojen asiantuntijoille.",
+    "sections": [
+      {
+        "navTitle": "Osaamispolkuni",
+        "paragraphs": [
+          "Osaamispolussani voit kartoittaa omaa osaamistasi, löytää koulutuksia osaamisesi kasvattamiseksi, tutkia työmahdollisuuksia osaamisellasi ja kartoittaa mahdollisuuksia alan vaihtamiseen. Osaamispolkuni on tarkoitettu kaikille käyttäjille."
+        ]
+      },
+      {
+        "navTitle": "Ohjaajan osio",
+        "paragraphs": [
+          "Ohjaajan osiosta löydät uraohjaustyösi tueksi ajantasaista ja laadukasta tietoa ja menetelmiä ja omaa osaamistasi vahvistavia materiaaleja. Ohjaajan osio on tarkoitettu kaikille ohjausalan toimijoille ja ohjaajat voivat työskennellä esimerkiksi oppilaanohjauksessa, uraohjauksessa, koulutuksen tai työvoimahallinnon alalla tai yksityisellä sektorilla."
+        ]
+      },
+      {
+        "navTitle": "Tietopalvelu",
+        "paragraphs": [
+          "Tietopalvelu kokoaa yhteen osaamiseen, työmarkkinaan ja koulutukseen liittyvää tietoa eri tietolähteistä kaikkien käyttöön kuten esimerkiksi koulutusorganisaatioille, työelämätoimijoille ja eri hallinnonalan edustajille."
+        ]
+      },
+      {
+        "navTitle": "Ohjaus- ja neuvontapalveluja",
+        "paragraphs": [
+          "Ohjaus- ja neuvontapalveluista löytyvät palvelut auttavat sinua ura- ja koulutusvaihtoehtoihin liittyvässä pohdinnassa. Voit rajata palveluiden listaa sinua kiinnostavien teemojen ja esimerkiksi asuinpaikkasi perusteella, jotta löydät sinulle parhaiten sopivat palvelut."
+        ]
+      },
+      {
+        "navTitle": "Jatkuvan oppimisen digitaalinen palvelukokonaisuus (JOD) -hanke",
+        "paragraphs": [
+          "Osaamispolun kehityksestä vastaa Jatkuvan oppimisen digitaalinen palvelukokonaisuus -hanke, joka on opetus- ja kulttuuriministeriön (OKM), työ- ja elinkeinoministeriön (TEM) yhteishanke vuosina 2021–2025. Kehitystyössä ovat tiiviisti mukana Opetushallitus (OPH), ELY-keskusten kehittämis- ja hallintokeskus (KEHA-keskus), korkeakoulut Digivisio 2030 -hankkeen kautta ja Jatkuvan oppimisen ja työllistymisen keskus (Jotpa). Hankkeen rahoitus tulee EU:n elpymis- ja palautumistukivälineestä (RRF)."
+        ]
+      }
+    ]
   },
   "data-sources": {
     "title": "Datalähteet",
