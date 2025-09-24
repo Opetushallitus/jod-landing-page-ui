@@ -360,7 +360,7 @@
         "title": "Yhteyshenkilö:"
       },
       "email": {
-        "content": "opetushallitus@oph.fi",
+        "content": "tietosuoja@oph.fi",
         "title": "Sähköposti:"
       },
       "fax": {
@@ -376,7 +376,7 @@
         "title": "Rekisterin nimi:"
       },
       "register-controller": {
-        "content": "Opetushallitus ja Työllisyys-, kehittämis- ja hallintokeskus",
+        "content": "Opetushallitus ja KEHA-keskus",
         "title": "Rekisterinpitäjä:"
       }
     },
@@ -604,7 +604,7 @@
     "storing-time-of-personal-data": {
       "data-subject-rights": {
         "access-personal-data": {
-          "description": "Rekisteröidyllä voi itse päästä henkilötietoihinsa Osaamispolku-palvelun kautta tunnistautumalla omaan osaamisprofiiliin ja/tai ohjaajan työpöydälle.",
+          "description": "Rekisteröidyllä voi itse päästä henkilötietoihinsa Osaamispolku-palvelun kautta tunnistautumalla omaan osaamisprofiiliin ja/tai ohjaajan profiiliin.",
           "title": "Oikeus saada pääsy henkilötietoihin"
         },
         "complaint": {
@@ -612,7 +612,7 @@
           "title": "Oikeus tehdä valitus valvontaviranomaiselle"
         },
         "delete": {
-          "description": "Rekisteröity voi itse poistaa tietonsa Osaamispolku-palvelun kautta tunnistautumalla omaan osaamisprofiiliin ja/tai ohjaajan työpöydälle.",
+          "description": "Rekisteröity voi itse poistaa tietonsa Osaamispolku-palvelun kautta tunnistautumalla omaan osaamisprofiiliin ja/tai ohjaajan profiiliin.",
           "title": "Oikeus tietojen poistamiseen"
         },
         "object": {
@@ -620,7 +620,7 @@
           "title": "Vastustamisoikeus"
         },
         "rectification": {
-          "description": "Rekisteröity voi itse korjata virheelliset tiedot Osaamispolku-palvelun kautta tunnistautumalla omaan osaamisprofiiliin ja/tai ohjaajan työpöydälle, siltä osin kun niitä tallentaa sinne.",
+          "description": "Rekisteröity voi itse korjata virheelliset tiedot Osaamispolku-palvelun kautta tunnistautumalla omaan osaamisprofiiliin ja/tai ohjaajan profiiliin, siltä osin kun niitä tallentaa sinne.",
           "title": "Oikeus tietojen oikaisemiseen"
         },
         "request-of-data": {
