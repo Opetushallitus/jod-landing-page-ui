@@ -178,7 +178,6 @@
     "waiting-message": "Haetaan tietoa..."
   },
   "competency-path-portal": "Osaamispolkuportaali",
-  "copyright": "© JOD 2025. Kaikki oikeudet pidätetään.",
   "data-sources": {
     "intro": "Tältä sivulta löydät kaikki Osaamispolku-palvelun eri osioissa hyödynnetyt datan lähteet.",
     "read-more": "Lue lisää:",
@@ -372,11 +371,12 @@
     "wants-contact": "Haluan, että minuun otetaan yhteyttä"
   },
   "footer": {
-    "cooperation-title": "Osaamipolku on toteutettu yhteistyössä seuraavien tahojen toimesta.",
+    "cooperation-title": "Osaamispolku on toteutettu yhteistyössä seuraavien tahojen toimesta",
+    "copyright": "© Osaamispolku 2025. Kaikki oikeudet pidätetään.",
     "feedback-button-label": "Anna palautetta",
     "feedback-content": "Haluamme kehittää Osaamispolkua vastaamaan paremmin juuri sinun tarpeita. Anna meille palautetta ja huomiomme sen kehitystyössä.",
     "feedback-title": "Kerro meille mitä pidit palvelusta!",
-    "funding-title": "Palvelu on rahoitettu Euroopan RFF-rahoituksella.",
+    "funding-title": "Palvelu on rahoitettu EU:n elpymis- ja palautumistukivälineellä (RRF)",
     "logos": {
       "keha-label": "KEHA-keskus",
       "okm-label": "Opetus- ja kulttuuriministeriö",
