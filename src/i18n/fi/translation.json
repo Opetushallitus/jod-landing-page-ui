@@ -233,7 +233,28 @@
     }
   },
   "accessibility": {
-    "title": "Tietoa saavutettavuudesta"
+    "title": "Tietoa saavutettavuudesta",
+    "intro": "Tämä seloste koskee Osaamispolku.fi-palvelua. Palvelun saavutettavuuden arviointi on vielä kesken.",
+    "sections": [
+      {
+        "navTitle": "Saavutettavuuden tila",
+        "paragraphs": [
+          "Palvelu ei vielä täytä kaikkia saavutettavuusvaatimuksia (WCAG 2.1, tasot A ja AA). Koska kyseessä on beta-versio, kehitystyö jatkuu ja saavutettavuuspuutteita korjataan vaiheittain. Puutteita palvelussa on muun muassa apuvälineitä käytettäessä ja pelkän näppäimistön varassa tapahtuvassa selaamisessa."
+        ]
+      },
+      {
+        "navTitle": "Suunnitellut korjaukset",
+        "paragraphs": [
+          "Saavutettavuuden parantaminen on osa palvelun kehitystä. Tavoitteena on, että palvelu täyttää  saavutettavuusvaatimukset ennen sen varsinaista julkaisua."
+        ]
+      },
+      {
+        "navTitle": "Palautteen antaminen",
+        "paragraphs": [
+          "Jos huomaat palvelussa saavutettavuusongelmia, kerro siitä meille. Otamme palautteen huomioon kehityksessä."
+        ]
+      }
+    ]
   },
   "ai-usage": {
     "ai-methods": {
