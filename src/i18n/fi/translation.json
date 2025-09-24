@@ -89,7 +89,115 @@
     "title": "Tietoa palvelusta"
   },
   "data-sources": {
-    "title": "Datalähteet"
+    "title": "Datalähteet",
+    "intro": "Tältä sivulta löydät kaikki Osaamispolku-palvelun eri osioissa hyödynnetyt datan lähteet.",
+    "read-more": "Lue lisää:",
+    "sections": {
+      "vipunen": {
+        "navTitle": "Vipunen",
+        "paragraphs": [
+          "Vipunen on opetushallinnon tilastopalvelu, jonka sisällöstä vastaavat yhdessä opetus- ja kulttuuriministeriö ja Opetushallitus.",
+          "Osaamispolkuni-osio hyödyntää Vipusen tietoja työmahdollisuuksien ja koulutusmahdollisuuksien tilastotiedoissa.",
+          "Tietopalvelu hyödyntää Vipusen tietoja ammattialakohtaisen osaamistarpeen muutoksesta."
+        ],
+        "links": [{ "label": "Vipunen", "href": "https://vipunen.fi/fi-fi" }]
+      },
+      "tyomarkkinatori": {
+        "navTitle": "Työmarkkinatori",
+        "paragraphs": [
+          "Työ- ja elinkeinoministeriö vastaa Työmarkkinatori-palvelusta. Työmarkkinatorissa käyttäjille on tarjolla valmiiksi koottua tietoa ja palveluita työelämän eri tilanteisiin.",
+          "Työmarkkinatorin työllisyys ja tilastot -kokonaisuus sisältää kootusti KEHA-keskuksen julkaisemia arviointeja, selvityksiä, tutkimuksia, tilastoja ja raportteja.",
+          "Osaamispolkuni-osio hyödyntää työmarkkinatorin osaamissuosittelijaa, kansallisesti ylläpidettävää ESCO-osaamis- ja ammattiluokitusta sekä avoimia työpaikkoja.",
+          "Tietopalvelu hyödyntää Työmarkkinatorin tiedoista avoimien työpaikkojen määrää."
+        ],
+        "links": [
+          { "label": "Työmarkkinatori", "href": "https://tyomarkkinatori.fi/henkiloasiakkaat" },
+          {
+            "label": "Työmarkkinatori - Avoimet työpaikat",
+            "href": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat"
+          },
+          {
+            "label": "Työmarkkinatori - Osaamissuosittelija ja kohtaanto",
+            "href": "https://tyomarkkinatori.fi/tietoa-palvelusta/tietoa-tyomarkkinatorista/kohtaanto-ja-osaamissuosittelija-tyomarkkinatorilla"
+          },
+          {
+            "label": "Työmarkkinatori - Työllisyys ja tilastot",
+            "href": "https://tyomarkkinatori.fi/tyollisyys-ja-tilastot"
+          }
+        ]
+      },
+      "tilastokeskus": {
+        "navTitle": "Tilastokeskus",
+        "paragraphs": [
+          "Tilastokeskus esittää tilastotietoa suomalaisen yhteiskunnan eri alueilta.",
+          "Osaamispolkuni-osio hyödyntää tilastokeskuksen tietoja työmahdollisuuksien ja koulutusmahdollisuuksien tilastotiedoissa.",
+          "Tietopalvelu hyödyntää tilastokeskuksen tietoja väestön, opiskelijoiden, työllisten ja työttömien sekä työnhakijoiden tietojen osalta. Tarkastelussa voit hyödyntää useita erilaisia näkökulmia muutosten tarkastelussa.",
+          "Tarkemman erittelyn hyödynnetyistä tiedoista voit löytää Tietopalvelun tietolähteet -sivulta."
+        ],
+        "links": [{ "label": "Tilastokeskus", "href": "https://stat.fi/fi" }]
+      },
+      "opintopolku": {
+        "navTitle": "Opintopolku",
+        "paragraphs": [
+          "Opintopolku sisältää tietoa tutkinnoista, ammateista sekä opiskelusta eri oppilaitoksissa. Opintopolku-portaalia ylläpitää Opetushallitus. Koulutuksen järjestäjät ja korkeakoulut ylläpitävät tietoja koulutuksistaan Opintopolku.fi-palvelussa.",
+          "Yksilön osiossa opintopolusta hyödynnetään koulutustarjonnan tietoja sekä koodistoja.",
+          "Ohjaajan osio: Ohjausalan koulutukset",
+          "Tietopalvelussa opintopolusta hyödynnetään koulutustietoja alueellisesti sekä koodistoja."
+        ],
+        "links": [{ "label": "Opintopolku", "href": "https://opintopolku.fi/" }]
+      },
+      "koto": {
+        "navTitle": "Kotoutuminen (Koto-tietokanta)",
+        "paragraphs": [
+          "Kotoutuminen.fi-verkkopalvelu on suunnattu työssään maahanmuuttaneita kohtaaville, kotoutumisen edistämisen ja pakolaisten vastaanoton toimijoille. Palvelua ylläpitää KEHA-keskus.",
+          "Tietopalvelussa hyödynnetään tästä tietolähteestä maahanmuuttajien työllisyyteen ja yrittäjyyteen liittyviä tietoja."
+        ],
+        "links": [{ "label": "Koto-tietokanta", "href": "https://kotoutuminen.fi/etusivu" }]
+      },
+      "cedefop": {
+        "navTitle": "CEDEFOP Skills Forecast",
+        "paragraphs": [
+          "CEDEFOP Skills Forecast tuottaa kvantitatiivisia arvioita tulevasta työllisyyskehityksestä toimialoittain ja ammattiryhmittäin. Ennusteessa tarkastellaan myös väestön ja työvoiman koulutustason tulevaa kehitystä.",
+          "(Kuvaus sivuilla englanniksi: Cedefop Skill forecast offers quantitative projections of future trends in employment by sector of economic activity and occupational group. Future trends on the level of education of the population and the labour force are also estimated.)",
+          "Tietopalvelu hyödyntää tietoja tulevaisuuden avoimien työpaikkojen kehittymisen osalta ja työllisyyden kasvun tarkastelussa toimialoittain ja ammattiryhmittäin."
+        ],
+        "links": [
+          { "label": "CEDEFOP Skills Forecast", "href": "https://www.cedefop.europa.eu/en/tools/skills-forecast" }
+        ]
+      },
+      "oef": {
+        "navTitle": "Osaamisen ennakointifoorumi",
+        "paragraphs": [
+          "Osaamisen ennakointifoorumi (OEF) on opetus- ja kulttuuriministeriön sekä Opetushallituksen yhteinen ennakoinnin asiantuntijaelin, jonka tehtävänä on edistää koulutuksen ja työelämän välistä vuoropuhelua.",
+          "OEF tuottaa, analysoi ja levittää valtakunnallista ennakointitietoa tulevaisuuden osaamis- ja työvoimatarpeista sekä esittää niiden pohjalta koulutuksen kehittämistarpeita.",
+          "OEF muodostuu ohjausryhmästä ja yhdeksästä eri aloja edustavasta ennakointiryhmästä.",
+          "Tietopalvelu ei suoraan hyödynnä tätä tietolähdettä, mutta tietopalvelun käyttämä Vipunen hyödyntää ennakointiforumin tietoja."
+        ],
+        "links": [
+          {
+            "label": "Osaamisen ennakointifoorumi",
+            "href": "https://www.oph.fi/fi/palvelut/osaamisen-ennakointifoorumi-oef"
+          }
+        ]
+      },
+      "eperusteet": {
+        "navTitle": "ePerusteet",
+        "paragraphs": [
+          "Palvelusta löytyy kaikki valtakunnalliset opetussuunnitelmien, tutkintojen ja koulutusten perusteet varhaiskasvatuksesta vapaaseen sivistystyöhön. Lisäksi palvelusta löytyy muut ajantasaiset Opetushallituksen määräykset ja suositukset. Varhaiskasvatuksen, opetuksen ja koulutuksen järjestäjät voivat julkaista palvelussa myös paikallisia suunnitelmia.",
+          "Osaamispolkuni-osiossa hyödynnetään ePerusteet palvelusta perustietoja koulutustarjonnan osalta.",
+          "Tietopalvelu hyödyntää koulutukseen liittyviä perustietoja koulutustarjonnan osalta."
+        ],
+        "links": [{ "label": "ePerusteet", "href": "https://eperusteet.opintopolku.fi/#/fi" }]
+      },
+      "prh": {
+        "navTitle": "Patentti- ja rekisterihallitus",
+        "paragraphs": [
+          "Patentti- ja rekisterihallitus (PRH) kuuluu työ- ja elinkeinoministeriön (TEM) konserniin ja hallinnoi lakisääteisesti yrityksiin ja yhteisöihin liittyviä rekisteritietoja.",
+          "Tietopalvelu hyödyntää yritysten tietoja, kuten toimialaa."
+        ],
+        "links": [{ "label": "Patentti- ja rekisterihallitus", "href": "https://www.prh.fi/fi/index.html" }]
+      }
+    }
   },
   "accessibility": {
     "title": "Tietoa saavutettavuudesta"
