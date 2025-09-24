@@ -93,7 +93,7 @@ const AiUsage = () => {
         navTitle: t('ai-usage.ai-methods.title'),
         content: (
           <div>
-            <p className="">{t('ai-usage.ai-methods.description-1')}</p>
+            <p>{t('ai-usage.ai-methods.description-1')}</p>
             <ul className="mt-3 ml-6 mb-3 list-disc">
               <li>{t('ai-usage.ai-methods.list.item-1')}</li>
               <li>{t('ai-usage.ai-methods.list.item-2')}</li>
@@ -101,7 +101,7 @@ const AiUsage = () => {
               <li>{t('ai-usage.ai-methods.list.item-4')}</li>
               <li>{t('ai-usage.ai-methods.list.item-5')}</li>
             </ul>
-            <p className="">{t('ai-usage.ai-methods.description-2')}</p>
+            <p>{t('ai-usage.ai-methods.description-2')}</p>
 
             <InfoBox items={infoBoxItems} />
           </div>
@@ -111,7 +111,7 @@ const AiUsage = () => {
         navTitle: t('ai-usage.security.title'),
         content: (
           <div>
-            <p className="">
+            <p>
               <Trans i18nKey={'ai-usage.security.description-1'} />
             </p>
             <ul className="ml-6 mb-4 list-disc">
@@ -128,7 +128,7 @@ const AiUsage = () => {
         navTitle: t('ai-usage.effect.title'),
         content: (
           <div>
-            <p className="">{t('ai-usage.effect.description')}</p>
+            <p>{t('ai-usage.effect.description')}</p>
             <ul className="ml-6 mb-3 list-disc">
               <li>{t('ai-usage.effect.list.item-1')}</li>
               <li>{t('ai-usage.effect.list.item-2')}</li>
@@ -142,14 +142,14 @@ const AiUsage = () => {
         navTitle: t('ai-usage.functionality-tracking.title'),
         content: (
           <div>
-            <p className="">{t('ai-usage.functionality-tracking.description-1')}</p>
+            <p>{t('ai-usage.functionality-tracking.description-1')}</p>
             <ul className="ml-6 mb-4 list-disc">
               <li>{t('ai-usage.functionality-tracking.list.item-1')}</li>
               <li>{t('ai-usage.functionality-tracking.list.item-2')}</li>
               <li>{t('ai-usage.functionality-tracking.list.item-3')}</li>
               <li>{t('ai-usage.functionality-tracking.list.item-4')}</li>
             </ul>
-            <p className="">{t('ai-usage.functionality-tracking.description-2')}</p>
+            <p>{t('ai-usage.functionality-tracking.description-2')}</p>
           </div>
         ),
       },
