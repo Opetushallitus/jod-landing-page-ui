@@ -11,10 +11,9 @@ const BasicInformation = () => {
   } = useTranslation();
   const { pathname } = useLocation();
 
-  // Build link metadata in a single iterable config and derive stable link components.
   const linkConfigs = React.useMemo(
     () => [
-      { label: 'Tieto palvelusta', slugKey: 'slugs.about-service' },
+      { label: 'Tietoa palvelusta', slugKey: 'slugs.about-service' },
       { label: 'Tietosuojaseloste ja evästeet', slugKey: 'slugs.privacy-and-cookies' },
       { label: 'Datalähteet', slugKey: 'slugs.data-sources' },
       { label: 'Tietoa tekoälyn käytöstä', slugKey: 'slugs.ai-usage' },
