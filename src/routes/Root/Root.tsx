@@ -2,8 +2,19 @@ import { FeedbackModal, LanguageButton } from '@/components';
 import { NavMenu } from '@/components/NavMenu/NavMenu';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import type { LangCode } from '@/i18n/config';
-import { Chatbot, Footer, MatomoTracker, NavigationBar, ServiceVariantProvider, SkipLink } from '@jod/design-system';
-import { JodMenu } from '@jod/design-system/icons';
+import { getLinkTo } from '@/utils/routeUtils';
+import {
+  Button,
+  Chatbot,
+  Footer,
+  MatomoTracker,
+  NavigationBar,
+  NoteStack,
+  ServiceVariantProvider,
+  SkipLink,
+  useNoteStack,
+} from '@jod/design-system';
+import { JodMenu, JodOpenInNew } from '@jod/design-system/icons';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router';
@@ -30,6 +41,7 @@ const Root = () => {
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);
   const [feedbackVisible, setFeedbackVisible] = React.useState(false);
   const location = useLocation();
+  const { addNote, removeNote } = useNoteStack();
 
   const hostname = window.location.hostname;
   const { siteId, agent } = React.useMemo(() => {
@@ -65,6 +77,37 @@ const Root = () => {
     document.documentElement.setAttribute('lang', language);
   }, [language]);
 
+  const [visibleBetaFeedback, setVisibleBetaFeedback] = React.useState(true);
+
+  React.useEffect(() => {
+    if (visibleBetaFeedback) {
+      addNote({
+        title: t('beta.note.title'),
+        description: t('beta.note.description'),
+        variant: 'feedback',
+        onCloseClick: () => {
+          setVisibleBetaFeedback(false);
+          removeNote('beta-feedback');
+        },
+        readMoreComponent: (
+          <Button
+            size="sm"
+            variant="white"
+            label={t('beta.note.to-feedback')}
+            icon={<JodOpenInNew />}
+            iconSide="right"
+            LinkComponent={getLinkTo('https://link.webropolsurveys.com/S/9697D299FF7E5000', {
+              useAnchor: true,
+              target: '_blank',
+            })}
+          />
+        ),
+        permanent: false,
+        id: 'beta-feedback',
+      });
+    }
+  }, [t, addNote, visibleBetaFeedback, removeNote]);
+
   return (
     <div className="bg-bg-gray">
       <link rel="manifest" href={`/manifest-${language}.json`} crossOrigin="use-credentials" />
@@ -98,6 +141,7 @@ const Root = () => {
             </Link>
           )}
         />
+        <NoteStack showAllText={t('show-all')} />
       </header>
       <NavMenu open={navMenuOpen} onClose={() => setNavMenuOpen(false)} />
       <ServiceVariantProvider value="palveluportaali">
