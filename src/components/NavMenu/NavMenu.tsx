@@ -1,9 +1,9 @@
 import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
 import { langLabels, supportedLanguageCodes } from '@/i18n/config';
 import {
+  cx,
   type ExternalLinkSection,
   type LinkComponent,
-  type MenuSection,
   NavigationMenu,
   tidyClasses as tc,
 } from '@jod/design-system';
@@ -16,16 +16,17 @@ const PortalLink = ({ children, className }: LinkComponent) => {
     i18n: { language },
   } = useTranslation();
 
+  const activeClasses = tc([
+    'text-white!',
+    'bg-secondary-gray',
+    'hover:bg-secondary-5-light-3!',
+    'hover:text-black!',
+    'active:bg-primary-gray!',
+    'active:text-white!',
+  ]);
+
   return (
-    <NavLink
-      className={({ isActive }) =>
-        tc([
-          className,
-          isActive ? 'bg-secondary-3-dark hover:bg-secondary-3-dark! active:bg-secondary-3-dark-2! text-white!' : '',
-        ])
-      }
-      to={`/${language}`}
-    >
+    <NavLink className={({ isActive }) => cx(className, { [activeClasses]: isActive })} to={`/${language}`}>
       {children}
     </NavLink>
   );
@@ -55,10 +56,6 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
   }, [generateLocalizedPath]);
 
   const languageSelectionItems = getLanguageSelectionItems();
-  const menuSection: MenuSection = {
-    linkItems: [],
-  };
-
   const externalLinkSections: ExternalLinkSection[] = [
     {
       title: t('navigation.external.title'),
@@ -87,12 +84,12 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       title: t('navigation.extra.title'),
       linkItems: [
         {
-          label: t('navigation.extra.urataidot.label'),
-          url: t('navigation.extra.urataidot.url'),
-        },
-        {
           label: t('navigation.extra.palveluhakemisto.label'),
           url: t('navigation.extra.palveluhakemisto.url'),
+        },
+        {
+          label: t('navigation.extra.urataidot.label'),
+          url: t('navigation.extra.urataidot.url'),
         },
       ],
     },
@@ -104,7 +101,6 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       externalLinkSections={externalLinkSections}
       languageSelectionItems={languageSelectionItems}
       languageSelectionTitle={t('language-selection')}
-      menuSection={menuSection}
       onClose={onClose}
       open={open}
       openSubMenuLabel={''}

@@ -177,7 +177,7 @@
     "text-input-placeholder": "Kirjoita kysymyksesi tähän",
     "waiting-message": "Haetaan tietoa..."
   },
-  "competency-path-portal": "Osaamispolkuportaali",
+  "competency-path-portal": "Osaamispolun etusivu",
   "data-sources": {
     "intro": "Tältä sivulta löydät kaikki Osaamispolku-palvelun eri osioissa hyödynnetyt datan lähteet.",
     "read-more": "Lue lisää:",
@@ -456,7 +456,7 @@
   "navigation": {
     "external": {
       "ohjaaja": {
-        "description": "Tietoa ohjausalasta kiinnostuneille",
+        "description": "Tietoja ja materiaaleja ohjaukseen",
         "label": "Ohjaajan osio",
         "url": "/ohjaaja/fi"
       },
@@ -466,7 +466,7 @@
         "url": "/yksilo/fi"
       },
       "tietopalvelu": {
-        "description": "Tietoa päätöksentekijöille",
+        "description": "Tietoa päätöksenteon tueksi",
         "label": "Tietopalvelu",
         "url": "/tietopalvelu/fi"
       },
@@ -474,10 +474,10 @@
     },
     "extra": {
       "palveluhakemisto": {
-        "label": "Palveluhakemisto",
+        "label": "Ohjaus- ja neuvontapalveluja",
         "url": "https://www.suomi.fi/palveluhakemisto/osaamispolku"
       },
-      "title": "Tukea pohdintaan",
+      "title": "Muuta tukea pohdintaan",
       "urataidot": {
         "label": "Urataitojen itsearviointi",
         "url": "/urataidot/fi"
