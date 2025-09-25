@@ -140,6 +140,9 @@ const Root = () => {
               {children as React.ReactNode}
             </Link>
           )}
+          showServiceBar
+          serviceBarVariant="palveluportaali"
+          serviceBarTitle={t('service-banner')}
         />
         <NoteStack showAllText={t('show-all')} />
       </header>
