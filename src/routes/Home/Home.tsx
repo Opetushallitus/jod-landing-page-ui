@@ -1,9 +1,10 @@
 import betaPlanImageDesktop from '@/../assets/gra_front_timeline_2.svg';
 import betaPlanImageMobile from '@/../assets/gra_front_timeline_mob_2.svg';
+import heroSrc from '@/../assets/landing-page-hero.jpg';
 import { getLinkTo } from '@/utils/routeUtils';
 import { Button, cx, HeroCard, tidyClasses as tc, useMediaQueries } from '@jod/design-system';
 import { JodArrowRight, JodOpenInNew } from '@jod/design-system/icons';
-import { JSX } from 'react';
+import React, { JSX } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 
@@ -24,22 +25,47 @@ const ExternalLink = ({
 const MainCard = () => {
   const { t } = useTranslation();
 
+  const firstCardRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    if (firstCardRef.current) {
+      const resizeObserver = new ResizeObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.target.isSameNode(firstCardRef.current) && firstCardRef.current?.style) {
+            firstCardRef.current.style.marginTop = `-${(2 * entry.contentRect.height) / 3}px`;
+          }
+        }
+      });
+      resizeObserver.observe(firstCardRef.current);
+      return () => resizeObserver.disconnect();
+    }
+  }, []);
+
   return (
-    <div className="sm:h-auto mx-auto bg-cover bg-[url(@/../assets/landing-page-hero.jpg)] xl:bg-[50%_50%] lg:bg-[58.5%_50%] md:bg-[67.3%_50%] sm:bg-[70%_50%] bg-[71.7%_50%]">
+    <>
       {/* Hero aspect ratio = ((9 / 21) * 1440px) = 617px */}
-      <div className="sm:h-[617px] h-[calc(100vh-64px)] mx-auto max-w-[1092px] flex flex-row items-center justify-start hyphens-auto cols-3 px-5 sm:px-6">
-        <div className="max-w-[716px] col-span-3 sm:col-span-2">
-          <HeroCard
-            backgroundColor="#006db3"
-            content={t('home.hero-content')}
-            title={t('home.hero-title')}
-            buttonLabel={t('home.hero-button-label')}
-            to={t('home.hero-url')}
-            LinkComponent={ExternalLink}
-          />
-        </div>
+      <img
+        src={heroSrc}
+        alt=""
+        role="none"
+        className="w-(--breakpoint-xl) sm:h-[617px] h-[calc(100vh-64px)] object-cover xl:object-[50%_50%] lg:object-[58.5%_50%] md:object-[67.3%_50%] sm:object-[70%_50%] object-[71.7%_50%]"
+        data-testid="home-hero"
+      />
+
+      <div
+        className="mx-auto max-w-[1092px] grid grid-cols-1 lg:grid-cols-2 px-5 sm:px-6 xl:px-0 relative"
+        ref={firstCardRef}
+      >
+        <HeroCard
+          backgroundColor="var(--color-secondary-1-dark)"
+          content={t('home.hero-content')}
+          title={t('home.hero-title')}
+          buttonLabel={t('home.hero-button-label')}
+          to={t('home.hero-url')}
+          LinkComponent={ExternalLink}
+        />
       </div>
-    </div>
+    </>
   );
 };
 
@@ -124,7 +150,7 @@ const Block = ({
 }) => {
   return (
     <div
-      className={`mt-10 px-5 sm:px-6 max-w-[1092px] mx-auto print:px-0 print:mx-0 bg-white ${isLast ? 'pb-8' : 'mb-8'}`}
+      className={`mt-10 px-5 sm:px-6 max-w-[1092px] mx-auto print:px-0 print:mx-0 bg-white ${isLast ? 'pb-11' : 'mb-8'}`}
     >
       <h2 className="text-heading-1-mobile sm:text-heading-1 mb-6">{title}</h2>
       {content && <p className="text-body-lg-mobile sm:text-body-lg mb-8">{content}</p>}
@@ -141,8 +167,19 @@ interface ContainerProps {
 const Content = ({ className = '', title, children }: ContainerProps & { title?: string }) => {
   const { t } = useTranslation();
   return (
-    <div className={tc(['mx-auto', 'max-w-[1092px]', 'py-7', 'px-5 sm:px-6', 'flex', 'flex-col', 'gap-7', className])}>
-      {title && <h2 className="text-heading-1">{t(`home.${title}`)}</h2>}
+    <div
+      className={tc([
+        'mx-auto',
+        'max-w-[1092px]',
+        'py-7 lg:py-8',
+        'px-5 sm:px-6 xl:px-0',
+        'flex',
+        'flex-col',
+        'gap-7',
+        className,
+      ])}
+    >
+      {title && <h2 className="text-heading-1 max-w-[716px]">{t(`home.${title}`)}</h2>}
       {children}
     </div>
   );
@@ -160,7 +197,7 @@ const Home = () => {
       <title>{t('osaamispolku')}</title>
       <MainCard />
 
-      <Content title="how-competency-path-helps-you" className="mb-[128px] mt-11">
+      <Content title="how-competency-path-helps-you" className="mt-7 lg:mt-8">
         <p className="text-body-lg whitespace-pre-line max-w-[716px]">
           {t('home.how-competency-path-helps-you-content')}
         </p>
