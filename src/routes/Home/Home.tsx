@@ -269,12 +269,12 @@ const Home = () => {
         bgImageClassName=" bg-[url(@/../assets/pre-launch-5.avif)] bg-[top_-4rem_right_-10rem] sm:bg-[top_-10rem_left_-20rem]"
       />
       <SecondaryCard
-        color="#cd4eb3"
+        color="#AD4298"
         content={t('home.tietopalvelu-content')}
         title={t('home.tietopalvelu-title')}
         to={`/tietopalvelu/${language}`}
         buttonLabel={t('home.tietopalvelu-call-to-action')}
-        bgImageClassName="bg-[url(@/../assets/pre-launch-2.avif)] bg-[length:auto_650px] sm:bg-[length:auto_1000px] bg-[top_-3rem_right_-10rem] sm:bg-[top_-20rem_right_2rem]"
+        bgImageClassName="bg-[url(@/../assets/tietopalvelu.jpg)] bg-cover bg-[50%_50%]"
       />
 
       <Block title={t('home.services.title')} isLast={true}>
