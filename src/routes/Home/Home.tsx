@@ -261,12 +261,12 @@ const Home = () => {
       </Content>
 
       <SecondaryCard
-        color="#00a8b3"
+        color="#00818A"
         content={t('home.ohjaaja-content')}
         title={t('home.ohjaaja-title')}
         to={`/ohjaaja/${language}`}
         buttonLabel={t('home.ohjaaja-call-to-action')}
-        bgImageClassName=" bg-[url(@/../assets/pre-launch-5.avif)] bg-[top_-4rem_right_-10rem] sm:bg-[top_-10rem_left_-20rem]"
+        bgImageClassName=" bg-[url(@/../assets/ohjaaja.jpg)] bg-cover bg-[50%_50%]"
       />
       <SecondaryCard
         color="#AD4298"
