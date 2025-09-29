@@ -3,7 +3,7 @@ import betaPlanImageMobile from '@/../assets/gra_front_timeline_mob_2.svg';
 import heroSrc from '@/../assets/landing-page-hero.jpg';
 import { getLinkTo } from '@/utils/routeUtils';
 import { Button, cx, HeroCard, tidyClasses as tc, useMediaQueries } from '@jod/design-system';
-import { JodArrowRight, JodOpenInNew } from '@jod/design-system/icons';
+import { JodOpenInNew } from '@jod/design-system/icons';
 import React, { JSX } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
@@ -17,7 +17,7 @@ const ExternalLink = ({
   className?: string;
   children: React.ReactNode;
 }) => (
-  <a href={to as string} className={className}>
+  <a href={to as string} className={className} target="_blank" rel="noopener noreferrer">
     {children}
   </a>
 );
@@ -124,14 +124,12 @@ const ServiceBlock = ({
         className={cx('active:hover:underline', 'group-focus:underline', className)}
         variant="accent"
         label={buttonLabel}
-        icon={<JodArrowRight />}
+        icon={<JodOpenInNew />}
         iconSide="right"
-        // eslint-disable-next-line react/no-unstable-nested-components
-        LinkComponent={({ children }) => (
-          <ExternalLink to={to} className="group focus:outline-hidden">
-            <>{children}</>
-          </ExternalLink>
-        )}
+        LinkComponent={getLinkTo(to, {
+          useAnchor: true,
+          target: '_blank',
+        })}
       />
     </div>
   );
@@ -268,6 +266,22 @@ const Home = () => {
           </div>
         </div>
       </Content>
+      <SecondaryCard
+        color="#00818A"
+        content={t('home.ohjaaja-content')}
+        title={t('home.ohjaaja-title')}
+        to={`/ohjaaja/${language}`}
+        buttonLabel={t('home.ohjaaja-call-to-action')}
+        bgImageClassName=" bg-[url(@/../assets/ohjaaja.jpg)] bg-cover bg-[50%_50%]"
+      />
+      <SecondaryCard
+        color="#AD4298"
+        content={t('home.tietopalvelu-content')}
+        title={t('home.tietopalvelu-title')}
+        to={`/tietopalvelu/${language}`}
+        buttonLabel={t('home.tietopalvelu-call-to-action')}
+        bgImageClassName="bg-[url(@/../assets/tietopalvelu.jpg)] bg-cover bg-[50%_50%]"
+      />
 
       <Content title="beta">
         <p className="text-body-lg max-w-[716px]">
@@ -297,23 +311,6 @@ const Home = () => {
         </div>
       </Content>
 
-      <SecondaryCard
-        color="#00818A"
-        content={t('home.ohjaaja-content')}
-        title={t('home.ohjaaja-title')}
-        to={`/ohjaaja/${language}`}
-        buttonLabel={t('home.ohjaaja-call-to-action')}
-        bgImageClassName=" bg-[url(@/../assets/ohjaaja.jpg)] bg-cover bg-[50%_50%]"
-      />
-      <SecondaryCard
-        color="#AD4298"
-        content={t('home.tietopalvelu-content')}
-        title={t('home.tietopalvelu-title')}
-        to={`/tietopalvelu/${language}`}
-        buttonLabel={t('home.tietopalvelu-call-to-action')}
-        bgImageClassName="bg-[url(@/../assets/tietopalvelu.jpg)] bg-cover bg-[50%_50%]"
-      />
-
       <Block title={t('home.services.title')} isLast={true}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-7 sm:gap-y-11">
           <ServiceBlock
@@ -321,12 +318,6 @@ const Home = () => {
             text={t('home.services.tool.content')}
             buttonLabel={t('home.services.tool.buttonLabel')}
             to={t('home.services.tool.path', { language })}
-          />
-          <ServiceBlock
-            title={t('home.services.osaamispolku.title')}
-            text={t('home.services.osaamispolku.content')}
-            buttonLabel={t('home.services.osaamispolku.buttonLabel')}
-            to={t('home.services.osaamispolku.path', { language })}
           />
           <ServiceBlock
             title={t('home.services.ohjaus.title')}
