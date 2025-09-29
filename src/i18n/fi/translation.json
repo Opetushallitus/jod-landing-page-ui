@@ -421,32 +421,26 @@
     "services": {
       "ohjaus": {
         "buttonLabel": "Asiakastyön tueksi",
-        "content": "Kattavasti ohjaustyössä käytettäviä menetelmiä, eri tilanteisiin.",
-        "path": "/ohjaaja/{{language}}",
+        "content": "Eri tietolähteistä koottuja menetelmiä ja materiaaleja ohjaustyöhön.",
+        "path": "/ohjaaja/{{language}}/asiakastyon-tueksi",
         "title": "Haluatko löytää ohjaustyöhön työkaluja?"
       },
-      "osaamispolku": {
-        "buttonLabel": "Oma Osaamispolkusi",
-        "content": "Tunnista vahvuutesi ja kiinnostuksen kohteesi sekä tallenna työ- ja koulutushistoriasi.",
-        "path": "/yksilo/{{language}}/kirjaudu-sisaan",
-        "title": "Haluatko kartoittaa osaamistasi laajemmin?"
-      },
       "tietopalvelu": {
-        "buttonLabel": "Tietopalveluun",
-        "content": "Tietopalvelu kokoaa yhteen koulutukseen, työmarkkinaan ja osaamiseen liittyvää tietoa työsi tueksi.",
-        "path": "/tietopalvelu/{{language}}",
-        "title": "Haluatko tietoa päätöksen teon tueksi työssäsi?"
+        "buttonLabel": "Tietopalvelun sisällöt",
+        "content": "Monipuolista tietoa yritysten ja päätöksentekijöiden käyttöön.",
+        "path": "/tietopalvelu/{{language}}/tietosisallot",
+        "title": "Haluatko tietoa päätöksenteon tueksi työssäsi?"
       },
       "title": "Etkö vielä löytänyt etsimääsi?",
       "tool": {
-        "buttonLabel": "Kohtaanto / työkalu",
+        "buttonLabel": "Löydä mahdollisuuksia",
         "content": "Löydä työ- ja koulutusmahdollisuuksia, jotka sopivat juuri sinulle.",
         "path": "/yksilo/{{language}}/tyokalu",
         "title": "Haluatko löytää sinulle sopivia mahdollisuuksia nopeasti?"
       }
     },
     "tietopalvelu-call-to-action": "Tietopalveluun",
-    "tietopalvelu-content": "Tietopalvelu kokoaa yhteen koulutukseen, työmarkkinaan ja osaamiseen liittyvää tietoa työsi tueksi. Siirry alta tarkastelemaan sinua kiinnostavaa tietokokonaisuutta tarkemmin.",
+    "tietopalvelu-content": "Tietopalvelu kokoaa yhteen koulutukseen, työmarkkinaan ja osaamiseen liittyvää tietoa.",
     "tietopalvelu-title": "Tietopalvelu"
   },
   "language-selection": "Käyttökieli",
