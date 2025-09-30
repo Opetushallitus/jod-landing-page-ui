@@ -1,7 +1,8 @@
 import { type BreadcrumbItem, Breadcrumb as DSBreadCrumb } from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { NavLink, UIMatch, useMatches } from 'react-router';
+import { UIMatch, useMatches } from 'react-router';
+import { BreadcrumbLink } from '../BreadcrumbLink/BreadcrumbLink';
 
 interface YksiloHandle {
   title?: string;
@@ -32,6 +33,12 @@ export const Breadcrumb = () => {
   }, []);
 
   return (
-    <DSBreadCrumb items={items} serviceVariant="palveluportaali" LinkComponent={NavLink} dataTestId="breadcrumb" />
+    <DSBreadCrumb
+      items={items}
+      serviceVariant="palveluportaali"
+      LinkComponent={BreadcrumbLink}
+      dataTestId="breadcrumb"
+      ariaLabel={t('breadcrumb')}
+    />
   );
 };

@@ -167,6 +167,7 @@
       "to-feedback": "Siirry kyselyyn"
     }
   },
+  "breadcrumb": "Murupolku",
   "cancel": "Peruuta",
   "chatbot": {
     "agent-name": "Neuvontabotti",
