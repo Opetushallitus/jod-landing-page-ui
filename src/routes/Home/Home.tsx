@@ -61,6 +61,7 @@ const MainCard = () => {
           content={t('home.hero-content')}
           title={t('home.hero-title')}
           buttonLabel={t('home.hero-button-label')}
+          buttonIcon={<JodOpenInNew />}
           to={t('home.hero-url')}
           LinkComponent={ExternalLink}
         />
@@ -73,6 +74,7 @@ const SecondaryCard = ({
   title,
   content,
   color,
+  buttonIcon,
   buttonLabel,
   to,
   bgImageClassName,
@@ -80,6 +82,7 @@ const SecondaryCard = ({
   title: string;
   content: string;
   color: string;
+  buttonIcon?: JSX.Element;
   buttonLabel: string;
   to: string;
   bgImageClassName: string;
@@ -96,6 +99,7 @@ const SecondaryCard = ({
             to={to}
             LinkComponent={ExternalLink}
             buttonLabel={buttonLabel}
+            buttonIcon={buttonIcon}
           />
         </div>
       </div>
@@ -272,6 +276,7 @@ const Home = () => {
         title={t('home.ohjaaja-title')}
         to={`/ohjaaja/${language}`}
         buttonLabel={t('home.ohjaaja-call-to-action')}
+        buttonIcon={<JodOpenInNew />}
         bgImageClassName=" bg-[url(@/../assets/ohjaaja.jpg)] bg-cover bg-[50%_50%]"
       />
       <SecondaryCard
@@ -279,6 +284,7 @@ const Home = () => {
         content={t('home.tietopalvelu-content')}
         title={t('home.tietopalvelu-title')}
         to={`/tietopalvelu/${language}`}
+        buttonIcon={<JodOpenInNew />}
         buttonLabel={t('home.tietopalvelu-call-to-action')}
         bgImageClassName="bg-[url(@/../assets/tietopalvelu.jpg)] bg-cover bg-[50%_50%]"
       />
