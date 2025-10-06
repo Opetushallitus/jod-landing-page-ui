@@ -26,12 +26,38 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       id-token: write # Needed to interact with GitHub's OIDC Token endpoint
-      contents: read
+      contents: write # Needed to tag the commit
       actions: read
     environment: ${{ inputs.environment }}
     concurrency:
       group: deploy-${{ inputs.environment }}
     steps:
+      - name: Create production tag via GitHub API
+        if: inputs.environment == 'production'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gh
+
+          BASE_VERSION="rel-$(date -u +'%Y%m%d')"
+          COMMIT_SHA="${GITHUB_SHA}"
+
+          VERSION="${BASE_VERSION}-1"
+          i=2
+
+          while gh api repos/${{ github.repository }}/git/ref/tags/$VERSION >/dev/null 2>&1; do
+            VERSION="${BASE_VERSION}-$i"
+            i=$((i+1))
+          done
+
+          echo "Creating tag $VERSION for commit $COMMIT_SHA"
+
+          gh api \
+            repos/${{ github.repository }}/git/refs \
+            -f ref="refs/tags/$VERSION" \
+            -f sha="$COMMIT_SHA"
+
       - name: Download dist artifact
         uses: actions/download-artifact@v4
         with:
