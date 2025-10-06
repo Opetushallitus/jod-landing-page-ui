@@ -1,5 +1,6 @@
 import { FeedbackModal } from '@/components';
 import { NavMenu } from '@/components/NavMenu/NavMenu';
+import { Toaster } from '@/components/Toaster/Toaster';
 import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
 import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { langLabels, supportedLanguageCodes, type LangCode } from '@/i18n/config';
@@ -203,6 +204,7 @@ const Root = () => {
         area="Alatunniste"
         language={language as LangCode}
       />
+      <Toaster />
       <ScrollRestoration />
       <MatomoTracker trackerUrl="https://analytiikka.opintopolku.fi" siteId={siteId} pathname={location.pathname} />
     </div>
