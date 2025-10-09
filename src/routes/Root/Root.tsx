@@ -2,7 +2,6 @@ import { FeedbackModal } from '@/components';
 import { NavMenu } from '@/components/NavMenu/NavMenu';
 import { Toaster } from '@/components/Toaster/Toaster';
 import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
-import { useMenuClickHandler } from '@/hooks/useMenuClickHandler';
 import { langLabels, supportedLanguageCodes, type LangCode } from '@/i18n/config';
 import { getLinkTo } from '@/utils/routeUtils';
 import {
@@ -11,13 +10,14 @@ import {
   Footer,
   LanguageButton,
   MatomoTracker,
+  MenuButton,
   NavigationBar,
   NoteStack,
   ServiceVariantProvider,
   SkipLink,
   useNoteStack,
 } from '@jod/design-system';
-import { JodMenu, JodOpenInNew } from '@jod/design-system/icons';
+import { JodOpenInNew } from '@jod/design-system/icons';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router';
@@ -40,7 +40,6 @@ const Root = () => {
     t,
     i18n: { language },
   } = useTranslation();
-  const [langMenuOpen, setLangMenuOpen] = React.useState(false);
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);
   const [feedbackVisible, setFeedbackVisible] = React.useState(false);
   const location = useLocation();
@@ -66,15 +65,6 @@ const Root = () => {
       };
     },
   );
-
-  const langMenuButtonRef = React.useRef<HTMLLIElement>(null);
-  const langMenuRef = useMenuClickHandler(() => setLangMenuOpen(false), langMenuButtonRef);
-
-  const handleBlur = (event: React.FocusEvent<HTMLDivElement>) => {
-    if (langMenuRef.current && !langMenuRef.current.contains(event.relatedTarget as Node)) {
-      setLangMenuOpen(false);
-    }
-  };
 
   React.useEffect(() => {
     document.documentElement.setAttribute('lang', language);
@@ -119,25 +109,11 @@ const Root = () => {
         <SkipLink hash="#jod-main" label={t('skiplinks.main')} />
         <NavigationBar
           logo={{ to: `/${language}`, language, srText: t('osaamispolku') }}
-          menuComponent={
-            <button
-              onClick={() => setNavMenuOpen(!navMenuOpen)}
-              aria-label={t('open-menu')}
-              className="flex flex-col md:flex-row gap-2 md:gap-3 justify-center items-center select-none cursor-pointer"
-              data-testid="open-nav-menu"
-            >
-              <JodMenu className="mx-auto" />
-              <span className="md:text-[14px] sm:text-[12px] text-[10px]">{t('menu')}</span>
-            </button>
-          }
+          menuComponent={<MenuButton onClick={() => setNavMenuOpen(!navMenuOpen)} label={t('menu')} />}
           languageButtonComponent={
             <LanguageButton
+              serviceVariant="palveluportaali"
               dataTestId="language-button"
-              onClick={() => setLangMenuOpen(!langMenuOpen)}
-              langMenuOpen={langMenuOpen}
-              menuRef={langMenuRef}
-              onMenuBlur={handleBlur}
-              onMenuClick={() => setLangMenuOpen(false)}
               language={language as LangCode}
               supportedLanguageCodes={supportedLanguageCodes}
               generateLocalizedPath={generateLocalizedPath}
@@ -149,7 +125,6 @@ const Root = () => {
               }}
             />
           }
-          refs={{ langMenuButtonRef: langMenuButtonRef }}
           renderLink={({ to, className, children }) => (
             <Link to={to} className={className}>
               {children as React.ReactNode}
