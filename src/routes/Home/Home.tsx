@@ -61,7 +61,7 @@ const MainCard = () => {
           content={t('home.hero-content')}
           title={t('home.hero-title')}
           buttonLabel={t('home.hero-button-label')}
-          buttonIcon={<JodOpenInNew />}
+          buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
           to={t('home.hero-url')}
           LinkComponent={ExternalLink}
         />
@@ -120,6 +120,7 @@ const ServiceBlock = ({
   to: string;
   className?: string;
 }) => {
+  const { t } = useTranslation();
   return (
     <div className="w-full">
       <h3 className="text-heading-3-mobile sm:text-heading-3 mb-5">{title}</h3>
@@ -128,7 +129,7 @@ const ServiceBlock = ({
         className={cx('active:hover:underline', 'group-focus:underline', className)}
         variant="accent"
         label={buttonLabel}
-        icon={<JodOpenInNew />}
+        icon={<JodOpenInNew ariaLabel={t('external-link')} />}
         iconSide="right"
         LinkComponent={getLinkTo(to, {
           useAnchor: true,
@@ -215,7 +216,7 @@ const Home = () => {
                 className="mt-5"
                 serviceVariant="yksilo"
                 label={t('home.how-competency-path-helps-you-opintopolku-link')}
-                icon={<JodOpenInNew />}
+                icon={<JodOpenInNew ariaLabel={t('external-link')} />}
                 iconSide="right"
                 LinkComponent={getLinkTo(`https://opintopolku.fi/konfo/${language}/`, {
                   useAnchor: true,
@@ -237,7 +238,7 @@ const Home = () => {
                 className="mt-5"
                 serviceVariant="yksilo"
                 label={t('home.how-competency-path-helps-you-tmt-link')}
-                icon={<JodOpenInNew />}
+                icon={<JodOpenInNew ariaLabel={t('external-link')} />}
                 iconSide="right"
                 LinkComponent={getLinkTo(`https://tyomarkkinatori.fi/${language === 'fi' ? '' : language}`, {
                   useAnchor: true,
@@ -258,7 +259,7 @@ const Home = () => {
                 className="mt-5"
                 serviceVariant="yksilo"
                 label={t('home.how-competency-path-helps-you-opinfi-link')}
-                icon={<JodOpenInNew />}
+                icon={<JodOpenInNew ariaLabel={t('external-link')} />}
                 iconSide="right"
                 LinkComponent={getLinkTo(`https://opin.fi/${language === 'fi' ? '' : language}`, {
                   useAnchor: true,
@@ -275,7 +276,7 @@ const Home = () => {
         title={t('home.ohjaaja-title')}
         to={`/ohjaaja/${language}`}
         buttonLabel={t('home.ohjaaja-call-to-action')}
-        buttonIcon={<JodOpenInNew />}
+        buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
         bgImageClassName=" bg-[url(@/../assets/ohjaaja.jpg)] bg-cover bg-[50%_50%]"
       />
       <SecondaryCard
@@ -283,7 +284,7 @@ const Home = () => {
         content={t('home.tietopalvelu-content')}
         title={t('home.tietopalvelu-title')}
         to={`/tietopalvelu/${language}`}
-        buttonIcon={<JodOpenInNew />}
+        buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
         buttonLabel={t('home.tietopalvelu-call-to-action')}
         bgImageClassName="bg-[url(@/../assets/tietopalvelu.jpg)] bg-cover bg-[50%_50%]"
       />
@@ -293,7 +294,7 @@ const Home = () => {
           <Trans
             i18nKey="home.beta-content"
             components={{
-              Icon: <JodOpenInNew size={18} className="ml-1" />,
+              Icon: <JodOpenInNew size={18} className="ml-1" ariaLabel={t('external-link')} />,
               CustomLink: (
                 <Link
                   to="https://wiki.eduuni.fi/spaces/JOD/pages/641042258/Osaamispolun+suljettu+betatestaus"
