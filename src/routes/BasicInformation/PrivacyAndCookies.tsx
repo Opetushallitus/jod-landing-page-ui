@@ -11,32 +11,21 @@ import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 import { ArticleSection } from '../types';
 
-interface YksiloLeafItem {
-  key: string;
+interface RegisterContentItem {
   title: string;
+  items?: string[];
 }
 
-interface YksiloGroupItem extends YksiloLeafItem {
-  items: YksiloLeafItem[];
-}
-
-type YksiloItem = YksiloGroupItem;
-
-const RegisterContent = ({ contentKey }: { contentKey: string }) => {
-  const { t } = useTranslation();
-
-  const raw = t(contentKey, { returnObjects: true });
-  const content: YksiloItem[] = Array.isArray(raw) ? (raw as YksiloItem[]) : [];
-
+const RegisterContent = ({ content }: { content: RegisterContentItem[] }) => {
   return (
     <ul className="list-disc list-inside">
       {content.map((item) => (
-        <li key={item.key}>
+        <li key={item.title}>
           <strong>{item.title}</strong>
-          {item.items?.length > 0 && (
+          {item.items && (
             <ul className="ml-5 list-[circle] list-inside">
               {item.items.map((sub) => (
-                <li key={sub.key}>{sub.title}</li>
+                <li key={sub}>{sub}</li>
               ))}
             </ul>
           )}
@@ -49,6 +38,122 @@ const RegisterContent = ({ contentKey }: { contentKey: string }) => {
 const PrivacyAndCookies = () => {
   const { t } = useTranslation();
   const title = t('privacy-policy-and-cookies.title');
+
+  const yksiloRegisterContent: RegisterContentItem[] = React.useMemo(() => {
+    return [
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.birth-year.title'),
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.gender.title'),
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.mother-tongue.title'),
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.home-municipality.title'),
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.email.title'),
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.ui-language.title'),
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.permissions.title'),
+        items: [
+          t(
+            'privacy-policy-and-cookies.register-information-content.yksilo.content.permissions.items.welcome-flow-completed',
+          ),
+          t(
+            'privacy-policy-and-cookies.register-information-content.yksilo.content.permissions.items.data-disclosure-controller',
+          ),
+          t(
+            'privacy-policy-and-cookies.register-information-content.yksilo.content.permissions.items.ai-training-permission',
+          ),
+        ],
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.work-history.title'),
+        items: [
+          t('privacy-policy-and-cookies.register-information-content.yksilo.content.work-history.items.workplace'),
+          t('privacy-policy-and-cookies.register-information-content.yksilo.content.work-history.items.job-role'),
+          t(
+            'privacy-policy-and-cookies.register-information-content.yksilo.content.work-history.items.job-role-competences',
+          ),
+        ],
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.education-history.title'),
+        items: [
+          t('privacy-policy-and-cookies.register-information-content.yksilo.content.education-history.items.provider'),
+          t('privacy-policy-and-cookies.register-information-content.yksilo.content.education-history.items.education'),
+          t(
+            'privacy-policy-and-cookies.register-information-content.yksilo.content.education-history.items.education-competences',
+          ),
+        ],
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.free-time-history.title'),
+        items: [
+          t('privacy-policy-and-cookies.register-information-content.yksilo.content.free-time-history.items.theme'),
+          t('privacy-policy-and-cookies.register-information-content.yksilo.content.free-time-history.items.activity'),
+          t(
+            'privacy-policy-and-cookies.register-information-content.yksilo.content.free-time-history.items.activity-competences',
+          ),
+        ],
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.interests.title'),
+        items: [
+          t('privacy-policy-and-cookies.register-information-content.yksilo.content.interests.items.skills'),
+          t('privacy-policy-and-cookies.register-information-content.yksilo.content.interests.items.occupations'),
+          t('privacy-policy-and-cookies.register-information-content.yksilo.content.interests.items.free-text'),
+        ],
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.other-competences.title'),
+        items: [
+          t('privacy-policy-and-cookies.register-information-content.yksilo.content.other-competences.items.skills'),
+          t('privacy-policy-and-cookies.register-information-content.yksilo.content.other-competences.items.free-text'),
+        ],
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.favorites.title'),
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.goals.title'),
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.plans.title'),
+      },
+    ];
+  }, [t]);
+
+  const ohjaajaRegisterContent: RegisterContentItem[] = React.useMemo(() => {
+    return [
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.ohjaaja.content.workplace-type.title'),
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.ohjaaja.content.interests.title'),
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.ohjaaja.content.permissions.title'),
+        items: [
+          t(
+            'privacy-policy-and-cookies.register-information-content.ohjaaja.content.permissions.items.welcome-flow-completed',
+          ),
+          t(
+            'privacy-policy-and-cookies.register-information-content.ohjaaja.content.permissions.items.data-disclosure-controller',
+          ),
+        ],
+      },
+      {
+        title: t('privacy-policy-and-cookies.register-information-content.ohjaaja.content.favorites.title'),
+      },
+    ];
+  }, [t]);
 
   const privacyPolicySections: ArticleSection[] = React.useMemo(() => {
     return [
@@ -108,15 +213,11 @@ const PrivacyAndCookies = () => {
             <div className="mt-6 flex flex-col gap-2">
               <ArticleAccordion
                 titleText={t('privacy-policy-and-cookies.register-information-content.yksilo.title')}
-                content={
-                  <RegisterContent contentKey="privacy-policy-and-cookies.register-information-content.yksilo.content" />
-                }
+                content={<RegisterContent content={yksiloRegisterContent} />}
               />
               <ArticleAccordion
                 titleText={t('privacy-policy-and-cookies.register-information-content.ohjaaja.title')}
-                content={
-                  <RegisterContent contentKey="privacy-policy-and-cookies.register-information-content.ohjaaja.content" />
-                }
+                content={<RegisterContent content={ohjaajaRegisterContent} />}
               />
             </div>
           </div>
@@ -151,11 +252,7 @@ const PrivacyAndCookies = () => {
                     'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.access-personal-data.title',
                   )}
                   content={
-                    <Trans
-                      i18nKey={
-                        'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.access-personal-data.description'
-                      }
-                    />
+                    <Trans i18nKey="privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.access-personal-data.description" />
                   }
                 />
 
@@ -164,11 +261,7 @@ const PrivacyAndCookies = () => {
                     'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.rectification.title',
                   )}
                   content={
-                    <Trans
-                      i18nKey={
-                        'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.rectification.description'
-                      }
-                    />
+                    <Trans i18nKey="privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.rectification.description" />
                   }
                 />
                 <ArticleAccordion
@@ -176,11 +269,7 @@ const PrivacyAndCookies = () => {
                     'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.delete.title',
                   )}
                   content={
-                    <Trans
-                      i18nKey={
-                        'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.delete.description'
-                      }
-                    />
+                    <Trans i18nKey="privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.delete.description" />
                   }
                 />
                 <ArticleAccordion
@@ -188,11 +277,7 @@ const PrivacyAndCookies = () => {
                     'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.restrict-processing.title',
                   )}
                   content={
-                    <Trans
-                      i18nKey={
-                        'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.restrict-processing.description'
-                      }
-                    />
+                    <Trans i18nKey="privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.restrict-processing.description" />
                   }
                 />
                 <ArticleAccordion
@@ -200,11 +285,7 @@ const PrivacyAndCookies = () => {
                     'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.object.title',
                   )}
                   content={
-                    <Trans
-                      i18nKey={
-                        'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.object.description'
-                      }
-                    />
+                    <Trans i18nKey="privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.object.description" />
                   }
                 />
                 <ArticleAccordion
@@ -212,11 +293,7 @@ const PrivacyAndCookies = () => {
                     'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.transfer.title',
                   )}
                   content={
-                    <Trans
-                      i18nKey={
-                        'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.transfer.description'
-                      }
-                    />
+                    <Trans i18nKey="privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.transfer.description" />
                   }
                 />
                 <ArticleAccordion
@@ -224,11 +301,7 @@ const PrivacyAndCookies = () => {
                     'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.withdraw-consent.title',
                   )}
                   content={
-                    <Trans
-                      i18nKey={
-                        'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.withdraw-consent.description'
-                      }
-                    />
+                    <Trans i18nKey="privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.withdraw-consent.description" />
                   }
                 />
                 <ArticleAccordion
@@ -237,13 +310,13 @@ const PrivacyAndCookies = () => {
                   )}
                   content={
                     <Trans
-                      i18nKey={
-                        'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.request-of-data.description'
-                      }
+                      i18nKey="privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.request-of-data.description"
                       components={{
                         CustomLink: (
                           <Link
-                            to="https://assets.ctfassets.net/4h0h2z8iv5uv/2odzXnRlO1YPgjQjcIOAHu/033736e6a4288f7cf15983a2175f780e/Rekisteritietojen_tarkastuslomake_suomi.pdf"
+                            to={t(
+                              'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.request-of-data.link',
+                            )}
                             className="inline-flex text-accent"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -258,11 +331,7 @@ const PrivacyAndCookies = () => {
                     'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.complaint.title',
                   )}
                   content={
-                    <Trans
-                      i18nKey={
-                        'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.complaint.description'
-                      }
-                    />
+                    <Trans i18nKey="privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.complaint.description" />
                   }
                 />
               </div>
@@ -283,7 +352,7 @@ const PrivacyAndCookies = () => {
         content: <p>{t('privacy-policy-and-cookies.automatic-handling.description')}</p>,
       },
     ];
-  }, [t]);
+  }, [ohjaajaRegisterContent, t, yksiloRegisterContent]);
 
   const cookiesSections: ArticleSection[] = React.useMemo(() => {
     return [

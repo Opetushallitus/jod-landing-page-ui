@@ -22,3 +22,10 @@ export const getLocalizedText = (entry?: Record<string, string | undefined>, lan
   // @ts-expect-error
   entry?.[i18n.options.fallbackLng]?.trim() ??
   '';
+
+export const createBasicArticleSectionData = (navTitle: string, text: string) => {
+  return {
+    navTitle,
+    text,
+  };
+};
