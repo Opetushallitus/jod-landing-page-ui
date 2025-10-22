@@ -293,6 +293,7 @@
     },
     "title": "Datalähteet"
   },
+  "external-link": "Linkki johtaa palvelun ulkopuolelle",
   "feedback": {
     "cancel": "Peruuta",
     "email-label": "Sähköpostiosoite",

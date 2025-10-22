@@ -108,6 +108,7 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       portalLinkLabel={t('competency-path-portal')}
       selectedLanguage={language}
       serviceVariant="palveluportaali"
+      externalLinkIconAriaLabel={t('external-link')}
     />
   );
 };
