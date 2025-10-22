@@ -167,7 +167,6 @@ interface ContainerProps {
 }
 
 const Content = ({ className = '', title, children }: ContainerProps & { title?: string }) => {
-  const { t } = useTranslation();
   return (
     <div
       className={tc([
@@ -181,7 +180,7 @@ const Content = ({ className = '', title, children }: ContainerProps & { title?:
         className,
       ])}
     >
-      {title && <h2 className="text-heading-1 max-w-[716px]">{t(`home.${title}`)}</h2>}
+      {title && <h2 className="text-heading-1 max-w-[716px]">{title}</h2>}
       {children}
     </div>
   );
@@ -199,7 +198,7 @@ const Home = () => {
       <title>{t('osaamispolku')}</title>
       <MainCard />
 
-      <Content title="how-competency-path-helps-you" className="mt-7 lg:mt-8">
+      <Content title={t('home.how-competency-path-helps-you')} className="mt-7 lg:mt-8">
         <p className="text-body-lg whitespace-pre-line max-w-[716px]">
           {t('home.how-competency-path-helps-you-content')}
         </p>
@@ -289,7 +288,7 @@ const Home = () => {
         bgImageClassName="bg-[url(@/../assets/tietopalvelu.jpg)] bg-cover bg-[50%_50%]"
       />
 
-      <Content title="beta">
+      <Content title={t('home.beta')}>
         <p className="text-body-lg max-w-[716px]">
           <Trans
             i18nKey="home.beta-content"

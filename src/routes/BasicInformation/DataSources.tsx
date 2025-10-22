@@ -1,8 +1,7 @@
+import { ArticleSectionNavigation } from '@/components/ArticleSectionNavigation/ArticleSectionNavigation';
 import { IconHeading } from '@/components/IconHeading';
 import { MainLayout } from '@/components/MainLayout/MainLayout';
 import { ScrollHeading } from '@/components/ScrollHeading/ScrollHeading';
-import { getLinkTo } from '@/utils/routeUtils';
-import { MenuSection, PageNavigation } from '@jod/design-system';
 import { JodInfo } from '@jod/design-system/icons';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -13,28 +12,135 @@ const DataSources = () => {
   const title = t('data-sources.title');
 
   const sections: ArticleSection[] = React.useMemo(() => {
-    const baseKey = 'data-sources.sections';
-    const sectionKeys = [
-      'vipunen',
-      'tyomarkkinatori',
-      'tilastokeskus',
-      'opintopolku',
-      'koto',
-      'cedefop',
-      'oef',
-      'eperusteet',
-      'prh',
+    const contents = [
+      getContentData(
+        t('data-sources.sections.vipunen.navTitle'),
+        [
+          t('data-sources.sections.vipunen.paragraph-1'),
+          t('data-sources.sections.vipunen.paragraph-2'),
+          t('data-sources.sections.vipunen.paragraph-3'),
+        ],
+        [
+          getLinkData(
+            t('data-sources.sections.vipunen.links.main.label'),
+            t('data-sources.sections.vipunen.links.main.href'),
+          ),
+        ],
+      ),
+      getContentData(
+        t('data-sources.sections.tyomarkkinatori.navTitle'),
+        [
+          t('data-sources.sections.tyomarkkinatori.paragraph-1'),
+          t('data-sources.sections.tyomarkkinatori.paragraph-2'),
+          t('data-sources.sections.tyomarkkinatori.paragraph-3'),
+          t('data-sources.sections.tyomarkkinatori.paragraph-4'),
+        ],
+        [
+          getLinkData(
+            t('data-sources.sections.tyomarkkinatori.links.main.label'),
+            t('data-sources.sections.tyomarkkinatori.links.main.href'),
+          ),
+          getLinkData(
+            t('data-sources.sections.tyomarkkinatori.links.jobs.label'),
+            t('data-sources.sections.tyomarkkinatori.links.jobs.href'),
+          ),
+          getLinkData(
+            t('data-sources.sections.tyomarkkinatori.links.skills.label'),
+            t('data-sources.sections.tyomarkkinatori.links.skills.href'),
+          ),
+          getLinkData(
+            t('data-sources.sections.tyomarkkinatori.links.statistics.label'),
+            t('data-sources.sections.tyomarkkinatori.links.statistics.href'),
+          ),
+        ],
+      ),
+      getContentData(
+        t('data-sources.sections.tilastokeskus.navTitle'),
+        [
+          t('data-sources.sections.tilastokeskus.paragraph-1'),
+          t('data-sources.sections.tilastokeskus.paragraph-2'),
+          t('data-sources.sections.tilastokeskus.paragraph-3'),
+          t('data-sources.sections.tilastokeskus.paragraph-4'),
+        ],
+        [
+          getLinkData(
+            t('data-sources.sections.tilastokeskus.links.main.label'),
+            t('data-sources.sections.tilastokeskus.links.main.href'),
+          ),
+        ],
+      ),
+      getContentData(
+        t('data-sources.sections.opintopolku.navTitle'),
+        [
+          t('data-sources.sections.opintopolku.paragraph-1'),
+          t('data-sources.sections.opintopolku.paragraph-2'),
+          t('data-sources.sections.opintopolku.paragraph-3'),
+          t('data-sources.sections.opintopolku.paragraph-4'),
+        ],
+        [
+          getLinkData(
+            t('data-sources.sections.opintopolku.links.main.label'),
+            t('data-sources.sections.opintopolku.links.main.href'),
+          ),
+        ],
+      ),
+      getContentData(
+        t('data-sources.sections.koto.navTitle'),
+        [t('data-sources.sections.koto.paragraph-1'), t('data-sources.sections.koto.paragraph-2')],
+        [
+          getLinkData(
+            t('data-sources.sections.koto.links.main.label'),
+            t('data-sources.sections.koto.links.main.href'),
+          ),
+        ],
+      ),
+      getContentData(
+        t('data-sources.sections.cedefop.navTitle'),
+        [
+          t('data-sources.sections.cedefop.paragraph-1'),
+          t('data-sources.sections.cedefop.paragraph-2'),
+          t('data-sources.sections.cedefop.paragraph-3'),
+        ],
+        [
+          getLinkData(
+            t('data-sources.sections.cedefop.links.main.label'),
+            t('data-sources.sections.cedefop.links.main.href'),
+          ),
+        ],
+      ),
+      getContentData(
+        t('data-sources.sections.oef.navTitle'),
+        [
+          t('data-sources.sections.oef.paragraph-1'),
+          t('data-sources.sections.oef.paragraph-2'),
+          t('data-sources.sections.oef.paragraph-3'),
+          t('data-sources.sections.oef.paragraph-4'),
+        ],
+        [getLinkData(t('data-sources.sections.oef.links.main.label'), t('data-sources.sections.oef.links.main.href'))],
+      ),
+      getContentData(
+        t('data-sources.sections.eperusteet.navTitle'),
+        [
+          t('data-sources.sections.eperusteet.paragraph-1'),
+          t('data-sources.sections.eperusteet.paragraph-2'),
+          t('data-sources.sections.eperusteet.paragraph-3'),
+        ],
+        [
+          getLinkData(
+            t('data-sources.sections.eperusteet.links.main.label'),
+            t('data-sources.sections.eperusteet.links.main.href'),
+          ),
+        ],
+      ),
+      getContentData(
+        t('data-sources.sections.prh.navTitle'),
+        [t('data-sources.sections.prh.paragraph-1'), t('data-sources.sections.prh.paragraph-2')],
+        [getLinkData(t('data-sources.sections.prh.links.main.label'), t('data-sources.sections.prh.links.main.href'))],
+      ),
     ];
 
-    return sectionKeys.map<ArticleSection>((key) => {
-      const navTitle = t(`${baseKey}.${key}.navTitle`);
-      const paragraphs = t(`${baseKey}.${key}.paragraphs`, { returnObjects: true }) as unknown as string[];
-      const links = t(`${baseKey}.${key}.links`, { returnObjects: true }) as unknown as {
-        label: string;
-        href: string;
-      }[];
+    return contents.map<ArticleSection>(({ navTitle, paragraphs, links }) => {
       const readMore = t('data-sources.read-more');
-
       return {
         navTitle,
         content: (
@@ -81,19 +187,8 @@ const DataSources = () => {
     });
   }, [t]);
 
-  const navChildren = React.useMemo(() => {
-    const menuSection: MenuSection = {
-      title: t('on-this-page'),
-      linkItems: sections.map((section) => ({
-        label: section.navTitle,
-        LinkComponent: getLinkTo(`#${section.navTitle}`),
-      })),
-    };
-    return <PageNavigation menuSection={menuSection} activeIndicator="dot" className="mb-4" />;
-  }, [t, sections]);
-
   return (
-    <MainLayout navChildren={navChildren}>
+    <MainLayout navChildren={<ArticleSectionNavigation sections={sections} />}>
       <title>{title}</title>
 
       <IconHeading icon={<JodInfo />} title={title} dataTestId="data-sources-title" />
@@ -116,6 +211,14 @@ const DataSources = () => {
       </div>
     </MainLayout>
   );
+};
+
+const getLinkData = (label: string, href: string) => {
+  return { label, href };
+};
+
+const getContentData = (navTitle: string, paragraphs: string[], links: { label: string; href: string }[]) => {
+  return { navTitle, paragraphs, links };
 };
 
 export default DataSources;

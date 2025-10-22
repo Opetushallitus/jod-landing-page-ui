@@ -1,10 +1,9 @@
 import { MainLayout } from '@/components';
 import { ArticleAccordion } from '@/components/ArticleAccordion';
+import { ArticleSectionNavigation } from '@/components/ArticleSectionNavigation/ArticleSectionNavigation';
 import { IconHeading } from '@/components/IconHeading';
 import { InfoBox, InfoboxItem } from '@/components/InfoBox';
 import { ScrollHeading } from '@/components/ScrollHeading/ScrollHeading';
-import { getLinkTo } from '@/utils/routeUtils';
-import { MenuSection, PageNavigation } from '@jod/design-system';
 import { JodAi } from '@jod/design-system/icons';
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
@@ -112,7 +111,7 @@ const AiUsage = () => {
         content: (
           <div>
             <p>
-              <Trans i18nKey={'ai-usage.security.description-1'} />
+              <Trans i18nKey="ai-usage.security.description-1" />
             </p>
             <ul className="ml-6 mb-4 list-disc">
               <li>{t('ai-usage.security.list.item-1')}</li>
@@ -120,7 +119,7 @@ const AiUsage = () => {
               <li>{t('ai-usage.security.list.item-3')}</li>
               <li>{t('ai-usage.security.list.item-4')}</li>
             </ul>
-            <Trans i18nKey={'ai-usage.security.description-2'} />
+            <Trans i18nKey="ai-usage.security.description-2" />
           </div>
         ),
       },
@@ -157,26 +156,15 @@ const AiUsage = () => {
         navTitle: t('ai-usage.limitation-of-liability.title'),
         content: (
           <p>
-            <Trans i18nKey={'ai-usage.limitation-of-liability.description'} />
+            <Trans i18nKey="ai-usage.limitation-of-liability.description" />
           </p>
         ),
       },
     ];
   }, [t, infoBoxItems]);
 
-  const navChildren = React.useMemo(() => {
-    const menuSection: MenuSection = {
-      title: t('on-this-page'),
-      linkItems: sections.map((section) => ({
-        label: section.navTitle,
-        LinkComponent: getLinkTo(`#${section.navTitle}`),
-      })),
-    };
-    return <PageNavigation menuSection={menuSection} activeIndicator="dot" className="mb-4" />;
-  }, [t, sections]);
-
   return (
-    <MainLayout navChildren={navChildren}>
+    <MainLayout navChildren={<ArticleSectionNavigation sections={sections} />}>
       <title>{title}</title>
 
       <IconHeading icon={<JodAi />} title={title} dataTestId="about-ai-title" />
