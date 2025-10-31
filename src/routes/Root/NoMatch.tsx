@@ -17,7 +17,11 @@ const NoMatch = () => {
         serviceVariant="palveluportaali"
         variant="accent"
         /* eslint-disable-next-line react/no-unstable-nested-components */
-        LinkComponent={({ children }: { children: React.ReactNode }) => <a href="/">{children}</a>}
+        linkComponent={({ children, className }) => (
+          <a href="/" className={className}>
+            {children}
+          </a>
+        )}
       />
     </main>
   );
