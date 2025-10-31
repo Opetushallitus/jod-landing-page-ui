@@ -63,7 +63,7 @@ const MainCard = () => {
           buttonLabel={t('home.hero-button-label')}
           buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
           to={t('home.hero-url')}
-          LinkComponent={ExternalLink}
+          linkComponent={ExternalLink}
         />
       </div>
     </>
@@ -97,7 +97,7 @@ const SecondaryCard = ({
             content={content}
             title={title}
             to={to}
-            LinkComponent={ExternalLink}
+            linkComponent={ExternalLink}
             buttonLabel={buttonLabel}
             buttonIcon={buttonIcon}
           />
@@ -131,7 +131,7 @@ const ServiceBlock = ({
         label={buttonLabel}
         icon={<JodOpenInNew ariaLabel={t('external-link')} />}
         iconSide="right"
-        LinkComponent={getLinkTo(to, {
+        linkComponent={getLinkTo(to, {
           useAnchor: true,
           target: '_blank',
         })}
@@ -218,7 +218,7 @@ const Home = () => {
                 label={t('home.how-competency-path-helps-you-opintopolku-link')}
                 icon={<JodOpenInNew ariaLabel={t('external-link')} />}
                 iconSide="right"
-                LinkComponent={getLinkTo(`https://opintopolku.fi/konfo/${language}/`, {
+                linkComponent={getLinkTo(`https://opintopolku.fi/konfo/${language}/`, {
                   useAnchor: true,
                   target: '_blank',
                 })}
@@ -240,7 +240,7 @@ const Home = () => {
                 label={t('home.how-competency-path-helps-you-tmt-link')}
                 icon={<JodOpenInNew ariaLabel={t('external-link')} />}
                 iconSide="right"
-                LinkComponent={getLinkTo(`https://tyomarkkinatori.fi/${language === 'fi' ? '' : language}`, {
+                linkComponent={getLinkTo(`https://tyomarkkinatori.fi/${language === 'fi' ? '' : language}`, {
                   useAnchor: true,
                   target: '_blank',
                 })}
@@ -261,7 +261,7 @@ const Home = () => {
                 label={t('home.how-competency-path-helps-you-opinfi-link')}
                 icon={<JodOpenInNew ariaLabel={t('external-link')} />}
                 iconSide="right"
-                LinkComponent={getLinkTo(`https://opin.fi/${language === 'fi' ? '' : language}`, {
+                linkComponent={getLinkTo(`https://opin.fi/${language === 'fi' ? '' : language}`, {
                   useAnchor: true,
                   target: '_blank',
                 })}
