@@ -191,7 +191,7 @@ const DataSources = () => {
     <MainLayout navChildren={<ArticleSectionNavigation sections={sections} />}>
       <title>{title}</title>
 
-      <IconHeading icon={<JodInfo />} title={title} dataTestId="data-sources-title" />
+      <IconHeading icon={<JodInfo />} title={title} testId="data-sources-title" />
 
       <div className="font-arial">
         <div className="flex flex-col mb-7">

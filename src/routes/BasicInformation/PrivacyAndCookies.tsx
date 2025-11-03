@@ -478,7 +478,7 @@ const PrivacyAndCookies = () => {
     <MainLayout navChildren={navChildren}>
       <title>{title}</title>
 
-      <IconHeading icon={<JodInfo />} title={title} dataTestId="privacy-policy-title" />
+      <IconHeading icon={<JodInfo />} title={title} testId="privacy-policy-title" />
 
       <InfoBox items={infoBoxItems} className="mb-8" />
 
