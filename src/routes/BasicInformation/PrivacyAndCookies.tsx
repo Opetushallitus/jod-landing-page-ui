@@ -439,7 +439,7 @@ const PrivacyAndCookies = () => {
       title: t('on-this-page'),
       linkItems: allSections.map((section) => ({
         label: section.navTitle,
-        LinkComponent: getLinkTo(`#${section.navTitle}`),
+        linkComponent: getLinkTo(`#${section.navTitle}`),
       })),
     };
     return <PageNavigation menuSection={menuSection} activeIndicator="dot" className={'mb-4'} />;

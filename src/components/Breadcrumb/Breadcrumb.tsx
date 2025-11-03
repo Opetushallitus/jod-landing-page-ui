@@ -36,7 +36,7 @@ export const Breadcrumb = () => {
     <DSBreadCrumb
       items={items}
       serviceVariant="palveluportaali"
-      LinkComponent={BreadcrumbLink}
+      linkComponent={BreadcrumbLink}
       dataTestId="breadcrumb"
       ariaLabel={t('breadcrumb')}
     />
