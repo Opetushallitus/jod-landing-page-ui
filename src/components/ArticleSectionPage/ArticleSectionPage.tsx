@@ -16,7 +16,7 @@ export const ArticleSectionPage = ({ title, intro, sections }: ArticleSectionPag
     <MainLayout navChildren={<ArticleSectionNavigation sections={sections} />}>
       <title>{title}</title>
 
-      <IconHeading icon={<JodInfo />} title={title} dataTestId="about-service-title" />
+      <IconHeading icon={<JodInfo />} title={title} testId="about-service-title" />
 
       <div className="font-arial">
         <div className="flex flex-col mb-7">

@@ -167,7 +167,7 @@ const AiUsage = () => {
     <MainLayout navChildren={<ArticleSectionNavigation sections={sections} />}>
       <title>{title}</title>
 
-      <IconHeading icon={<JodAi />} title={title} dataTestId="about-ai-title" />
+      <IconHeading icon={<JodAi />} title={title} testId="about-ai-title" />
 
       <div className="font-arial">
         {sections.map((section) => (
