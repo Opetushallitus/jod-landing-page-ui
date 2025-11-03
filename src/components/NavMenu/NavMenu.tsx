@@ -104,7 +104,7 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       onClose={onClose}
       open={open}
       openSubMenuLabel={''}
-      PortalLinkComponent={PortalLink}
+      portalLinkComponent={PortalLink}
       portalLinkLabel={t('competency-path-portal')}
       selectedLanguage={language}
       serviceVariant="palveluportaali"
