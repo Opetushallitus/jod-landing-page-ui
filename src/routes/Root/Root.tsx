@@ -91,6 +91,7 @@ const Root = () => {
       addNote({
         title: t('beta.note.title'),
         description: t('beta.note.description'),
+        ariaClose: t('note.close'),
         variant: 'feedback',
         onCloseClick: () => {
           setVisibleBetaFeedback(false);
