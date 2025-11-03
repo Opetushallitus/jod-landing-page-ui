@@ -60,6 +60,7 @@ const MainCard = () => {
           backgroundColor="var(--color-secondary-1-dark)"
           content={t('home.hero-content')}
           title={t('home.hero-title')}
+          titleLevel={1}
           buttonLabel={t('home.hero-button-label')}
           buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
           to={t('home.hero-url')}
