@@ -5,7 +5,7 @@ import { InfoBox, InfoboxItem } from '@/components/InfoBox';
 import { ScrollHeading } from '@/components/ScrollHeading/ScrollHeading';
 import { getLinkTo } from '@/utils/routeUtils';
 import { MenuSection, PageNavigation } from '@jod/design-system';
-import { JodInfo } from '@jod/design-system/icons';
+import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
@@ -317,11 +317,12 @@ const PrivacyAndCookies = () => {
                             to={t(
                               'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.request-of-data.link',
                             )}
-                            className="inline-flex text-accent"
+                            className="inline-flex text-accent hover:underline"
                             target="_blank"
                             rel="noopener noreferrer"
                           />
                         ),
+                        Icon: <JodOpenInNew ariaLabel={t('external-link')} />,
                       }}
                     />
                   }
@@ -400,7 +401,7 @@ const PrivacyAndCookies = () => {
               CustomLink1: (
                 <Link
                   to="https://www.microsoft.com/en-us/privacy/privacystatement"
-                  className="inline-flex text-accent"
+                  className="inline-flex text-accent hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 />
@@ -408,11 +409,12 @@ const PrivacyAndCookies = () => {
               CustomLink2: (
                 <Link
                   to="https://policies.google.com/privacy"
-                  className="inline-flex text-accent"
+                  className="inline-flex text-accent hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 />
               ),
+              Icon: <JodOpenInNew ariaLabel={t('external-link')} />,
             }}
           />
         ),
