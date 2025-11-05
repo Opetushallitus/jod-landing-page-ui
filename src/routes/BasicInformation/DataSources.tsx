@@ -2,7 +2,7 @@ import { ArticleSectionNavigation } from '@/components/ArticleSectionNavigation/
 import { IconHeading } from '@/components/IconHeading';
 import { MainLayout } from '@/components/MainLayout/MainLayout';
 import { ScrollHeading } from '@/components/ScrollHeading/ScrollHeading';
-import { JodInfo } from '@jod/design-system/icons';
+import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { ArticleSection } from '../types';
@@ -160,9 +160,10 @@ const DataSources = () => {
                         href={l.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-accent hover:underline"
+                        className="inline-flex text-accent hover:underline"
                       >
                         {l.label}
+                        <JodOpenInNew ariaLabel={t('external-link')} />
                       </a>
                     </li>
                   ))}
@@ -175,9 +176,10 @@ const DataSources = () => {
                   href={links[0].href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-accent hover:underline"
+                  className="inline-flex text-accent hover:underline"
                 >
                   {links[0].label}
+                  <JodOpenInNew ariaLabel={t('external-link')} />
                 </a>
               </p>
             )}
