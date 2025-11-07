@@ -2,13 +2,15 @@ import { ArticleSectionNavigation } from '@/components/ArticleSectionNavigation/
 import { IconHeading } from '@/components/IconHeading';
 import { MainLayout } from '@/components/MainLayout/MainLayout';
 import { ScrollHeading } from '@/components/ScrollHeading/ScrollHeading';
+import { useMediaQueries } from '@jod/design-system';
 import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { ArticleSection } from '../types';
+import type { ArticleSection } from '../types';
 
 const DataSources = () => {
   const { t } = useTranslation();
+  const { lg } = useMediaQueries();
   const title = t('data-sources.title');
 
   const sections: ArticleSection[] = React.useMemo(() => {
@@ -191,8 +193,12 @@ const DataSources = () => {
 
   return (
     <MainLayout navChildren={<ArticleSectionNavigation sections={sections} />}>
+      {!lg && (
+        <div className="mb-8">
+          <ArticleSectionNavigation sections={sections} activeIndicator="dot" collapsed />
+        </div>
+      )}
       <title>{title}</title>
-
       <IconHeading icon={<JodInfo />} title={title} testId="data-sources-title" />
 
       <div className="font-arial">

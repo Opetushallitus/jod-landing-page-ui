@@ -4,12 +4,12 @@ import { IconHeading } from '@/components/IconHeading';
 import { InfoBox, InfoboxItem } from '@/components/InfoBox';
 import { ScrollHeading } from '@/components/ScrollHeading/ScrollHeading';
 import { getLinkTo } from '@/utils/routeUtils';
-import { MenuSection, PageNavigation } from '@jod/design-system';
+import { type MenuSection, PageNavigation, useMediaQueries } from '@jod/design-system';
 import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
-import { ArticleSection } from '../types';
+import type { ArticleSection } from '../types';
 
 interface RegisterContentItem {
   title: string;
@@ -37,6 +37,7 @@ const RegisterContent = ({ content }: { content: RegisterContentItem[] }) => {
 
 const PrivacyAndCookies = () => {
   const { t } = useTranslation();
+  const { lg } = useMediaQueries();
   const title = t('privacy-policy-and-cookies.title');
 
   const yksiloRegisterContent: RegisterContentItem[] = React.useMemo(() => {
@@ -434,18 +435,24 @@ const PrivacyAndCookies = () => {
     ];
   }, [t]);
 
-  const navChildren = React.useMemo(() => {
-    const allSections = [...privacyPolicySections, ...cookiesSections];
-
-    const menuSection: MenuSection = {
+  const allSections = React.useMemo(
+    () => [...privacyPolicySections, ...cookiesSections],
+    [privacyPolicySections, cookiesSections],
+  );
+  const menuSection: MenuSection = React.useMemo(
+    () => ({
       title: t('on-this-page'),
       linkItems: allSections.map((section) => ({
         label: section.navTitle,
         linkComponent: getLinkTo(`#${section.navTitle}`),
       })),
-    };
-    return <PageNavigation menuSection={menuSection} activeIndicator="dot" className={'mb-4'} />;
-  }, [t, privacyPolicySections, cookiesSections]);
+    }),
+    [t, allSections],
+  );
+  const navChildren = React.useMemo(
+    () => <PageNavigation menuSection={menuSection} activeIndicator="dot" className="mb-4" />,
+    [menuSection],
+  );
 
   const infoBoxItems: InfoboxItem[] = React.useMemo(() => {
     return [
@@ -478,10 +485,13 @@ const PrivacyAndCookies = () => {
 
   return (
     <MainLayout navChildren={navChildren}>
+      {!lg && (
+        <div className="mb-8">
+          <PageNavigation menuSection={menuSection} collapsed />
+        </div>
+      )}
       <title>{title}</title>
-
       <IconHeading icon={<JodInfo />} title={title} testId="privacy-policy-title" />
-
       <InfoBox items={infoBoxItems} className="mb-8" />
 
       <div className="font-arial">

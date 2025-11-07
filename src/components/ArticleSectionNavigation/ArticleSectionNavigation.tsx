@@ -1,10 +1,18 @@
-import { ArticleSection } from '@/routes/types';
+import type { ArticleSection } from '@/routes/types';
 import { getLinkTo } from '@/utils/routeUtils';
-import { MenuSection, PageNavigation } from '@jod/design-system';
+import { type MenuSection, PageNavigation } from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-export const ArticleSectionNavigation = ({ sections }: { sections: ArticleSection[] }) => {
+export const ArticleSectionNavigation = ({
+  sections,
+  collapsed,
+  activeIndicator,
+}: {
+  sections: ArticleSection[];
+  collapsed?: boolean;
+  activeIndicator?: React.ComponentProps<typeof PageNavigation>['activeIndicator'];
+}) => {
   const { t } = useTranslation();
 
   return React.useMemo(() => {
@@ -15,6 +23,13 @@ export const ArticleSectionNavigation = ({ sections }: { sections: ArticleSectio
         linkComponent: getLinkTo(`#${section.navTitle}`),
       })),
     };
-    return <PageNavigation menuSection={menuSection} activeIndicator="dot" className="mb-4" />;
-  }, [t, sections]);
+    return (
+      <PageNavigation
+        menuSection={menuSection}
+        activeIndicator={activeIndicator}
+        className="mb-4"
+        collapsed={collapsed}
+      />
+    );
+  }, [t, sections, collapsed, activeIndicator]);
 };
