@@ -4,13 +4,15 @@ import { ArticleSectionNavigation } from '@/components/ArticleSectionNavigation/
 import { IconHeading } from '@/components/IconHeading';
 import { InfoBox, InfoboxItem } from '@/components/InfoBox';
 import { ScrollHeading } from '@/components/ScrollHeading/ScrollHeading';
+import { useMediaQueries } from '@jod/design-system';
 import { JodAi } from '@jod/design-system/icons';
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
-import { ArticleSection } from '../types';
+import type { ArticleSection } from '../types';
 
 const AiUsage = () => {
   const { t } = useTranslation();
+  const { lg } = useMediaQueries();
   const title = t('ai-usage.title');
 
   const infoBoxItems: InfoboxItem[] = React.useMemo(() => {
@@ -165,8 +167,12 @@ const AiUsage = () => {
 
   return (
     <MainLayout navChildren={<ArticleSectionNavigation sections={sections} />}>
+      {!lg && (
+        <div className="mb-8">
+          <ArticleSectionNavigation sections={sections} activeIndicator="dot" collapsed />
+        </div>
+      )}
       <title>{title}</title>
-
       <IconHeading icon={<JodAi />} title={title} testId="about-ai-title" />
 
       <div className="font-arial">

@@ -1,4 +1,5 @@
-import { type ArticleSection } from '@/routes/types';
+import type { ArticleSection } from '@/routes/types';
+import { useMediaQueries } from '@jod/design-system';
 import { JodInfo } from '@jod/design-system/icons';
 import { ArticleSectionNavigation } from '../ArticleSectionNavigation/ArticleSectionNavigation';
 import { IconHeading } from '../IconHeading';
@@ -12,10 +13,15 @@ interface ArticleSectionPageProps {
 }
 
 export const ArticleSectionPage = ({ title, intro, sections }: ArticleSectionPageProps) => {
+  const { lg } = useMediaQueries();
   return (
     <MainLayout navChildren={<ArticleSectionNavigation sections={sections} />}>
+      {!lg && (
+        <div className="mb-8">
+          <ArticleSectionNavigation sections={sections} activeIndicator="dot" collapsed />
+        </div>
+      )}
       <title>{title}</title>
-
       <IconHeading icon={<JodInfo />} title={title} testId="about-service-title" />
 
       <div className="font-arial">
