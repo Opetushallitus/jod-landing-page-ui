@@ -5,15 +5,11 @@
   "privacy-policy-and-cookies": {
     "storing-time-of-personal-data": {
       "data-subject-rights": {
-        "request-of-data": {
-          "description": "Rekisteröidyllä on oikeus pyytää rekisterinpitäjää toimeenpanemaan yllä olevat oikeudet siltä osin, kun ei itse pysty niitä täyttämään Osaamispolku-palvelua käyttämällä. <br/><br/>Pyyntö tulee osoittaa kirjallisesti Opetushallitukselle osoitteeseen Opetushallitus, Hakaniemenranta 6, PL 380, 00531 Helsinki. Pyyntöön tulee rekisteröidyn liittää tietojen etsimiseen tarvittavat tiedot (Nimi ja henkilötunnus). Lue ja täytä <CustomLink>tarkastuspyyntölomake<Icon/></CustomLink>."
-        }
+        "request-of-data": {}
       }
     }
   },
   "privacy-cookies": {
-    "3rd-party": {
-      "description": "Osaamispolussa on käytössä kolmansien osapuolien sovelluksia, kuten YouTube ja Power BI, jotka latautuvat näiden palveluiden omilta palvelimilta. YouTubea käytetään Osaamispolun ohjaajan kokonaisuuden videoissa. Power BI:tä käytetään raporttinäkymien tuottamiseen tietopalvelussa. Kolmannen osapuolen evästeitä käytetään anonyymisti sivustolle upotettujen sovellusten toiminnan varmistamiseen ja käyttäjäkokemuksen parantamiseen. <br/><br/>Jos et käytä ulkopuolisten palveluntarjoajien sisältöä, mitään kolmannen osapuolen evästeitä ei asenneta laitteellesi. <br/><br/>Kolmannen osapuolen tarjoamiin palveluihin tai kolmannen osapuolen välittämiin sovelluksiin sovelletaan kyseisen kolmannen osapuolen käyttö- ja muita ehtoja. <br/><br/>Lisätietoja: <br/><CustomLink1>Microsoft (Power BI)<Icon/></CustomLink1> <CustomLink2>Google (YouTube)<Icon/></CustomLink2>"
-    }
+    "3rd-party": {}
   }
 }

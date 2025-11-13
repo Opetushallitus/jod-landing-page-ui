@@ -90,7 +90,7 @@ const SecondaryCard = ({
 }) => {
   return (
     <div className={`h-auto ${bgImageClassName} py-8`}>
-      <div className="max-w-[1092px] mx-auto px-5 sm:px-6">
+      <div className="max-w-[1092px] mx-auto px-5 sm:px-6 xl:px-0">
         <div className="max-w-[716px]">
           <HeroCard
             size="sm"
@@ -123,20 +123,24 @@ const ServiceBlock = ({
 }) => {
   const { t } = useTranslation();
   return (
-    <div className="w-full">
-      <h3 className="text-heading-3-mobile sm:text-heading-3 mb-5">{title}</h3>
-      <p className="text-body-sm-mobile sm:text-body-sm mb-6">{text}</p>
-      <Button
-        className={cx('active:hover:underline', 'group-focus:underline', className)}
-        variant="accent"
-        label={buttonLabel}
-        icon={<JodOpenInNew ariaLabel={t('external-link')} />}
-        iconSide="right"
-        linkComponent={getLinkTo(to, {
-          useAnchor: true,
-          target: '_blank',
-        })}
-      />
+    <div className="w-full h-full flex flex-col justify-between">
+      <div>
+        <h3 className="text-heading-3-mobile sm:text-heading-3 mb-5">{title}</h3>
+        <p className="text-body-sm-mobile sm:text-body-sm mb-6">{text}</p>
+      </div>
+      <div>
+        <Button
+          className={cx('active:hover:underline', 'group-focus:underline', className)}
+          variant="accent"
+          label={buttonLabel}
+          icon={<JodOpenInNew ariaLabel={t('external-link')} />}
+          iconSide="right"
+          linkComponent={getLinkTo(to, {
+            useAnchor: true,
+            target: '_blank',
+          })}
+        />
+      </div>
     </div>
   );
 };
@@ -202,28 +206,15 @@ const Home = () => {
 
       <Content title={t('home.how-competency-path-helps-you')} className="mt-7 lg:mt-8">
         <p className="text-body-lg whitespace-pre-line max-w-[716px]">
-          {t('home.how-competency-path-helps-you-content')}
+          <Trans i18nKey="home.how-competency-path-helps-you-content" />
         </p>
         <div className="flex flex-col sm:flex-row gap-7 sm:flex-wrap">
           <div className="flex flex-col gap-5 md:max-w-[320px]">
             <div className="md:text-heading-3 text-heading-3-mobile ">
               {t('home.how-competency-path-helps-you-opintopolku-title')}
             </div>
-            <div>{t('home.how-competency-path-helps-you-opintopolku-description')}</div>
-            <div className="mt-auto">
-              <Button
-                size="lg"
-                variant="accent"
-                className="mt-5"
-                serviceVariant="yksilo"
-                label={t('home.how-competency-path-helps-you-opintopolku-link')}
-                icon={<JodOpenInNew ariaLabel={t('external-link')} />}
-                iconSide="right"
-                linkComponent={getLinkTo(`https://opintopolku.fi/konfo/${language}/`, {
-                  useAnchor: true,
-                  target: '_blank',
-                })}
-              />
+            <div>
+              <Trans i18nKey="home.how-competency-path-helps-you-opintopolku-description" />
             </div>
           </div>
 
@@ -231,21 +222,8 @@ const Home = () => {
             <div className="sm:text-heading-3 text-heading-3-mobile">
               {t('home.how-competency-path-helps-you-tmt-title')}
             </div>
-            <div>{t('home.how-competency-path-helps-you-tmt-description')}</div>
-            <div className="mt-auto">
-              <Button
-                size="lg"
-                variant="accent"
-                className="mt-5"
-                serviceVariant="yksilo"
-                label={t('home.how-competency-path-helps-you-tmt-link')}
-                icon={<JodOpenInNew ariaLabel={t('external-link')} />}
-                iconSide="right"
-                linkComponent={getLinkTo(`https://tyomarkkinatori.fi/${language === 'fi' ? '' : language}`, {
-                  useAnchor: true,
-                  target: '_blank',
-                })}
-              />
+            <div>
+              <Trans i18nKey="home.how-competency-path-helps-you-tmt-description" />
             </div>
           </div>
           <div className="flex flex-col gap-5 md:max-w-[320px]">
@@ -253,47 +231,56 @@ const Home = () => {
               {t('home.how-competency-path-helps-you-opinfi-title')}
             </div>
             <div>{t('home.how-competency-path-helps-you-opinfi-description')}</div>
-            <div className="mt-auto">
-              <Button
-                size="lg"
-                variant="accent"
-                className="mt-5"
-                serviceVariant="yksilo"
-                label={t('home.how-competency-path-helps-you-opinfi-link')}
-                icon={<JodOpenInNew ariaLabel={t('external-link')} />}
-                iconSide="right"
-                linkComponent={getLinkTo(`https://opin.fi/${language === 'fi' ? '' : language}`, {
-                  useAnchor: true,
-                  target: '_blank',
-                })}
-              />
-            </div>
           </div>
         </div>
       </Content>
-      <SecondaryCard
-        color="#00818A"
-        content={t('home.ohjaaja-content')}
-        title={t('home.ohjaaja-title')}
-        to={`/ohjaaja/${language}`}
-        buttonLabel={t('home.ohjaaja-call-to-action')}
-        buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
-        bgImageClassName=" bg-[url(@/../assets/ohjaaja.jpg)] bg-cover bg-[50%_50%]"
-      />
-      <SecondaryCard
-        color="#AD4298"
-        content={t('home.tietopalvelu-content')}
-        title={t('home.tietopalvelu-title')}
-        to={`/tietopalvelu/${language}`}
-        buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
-        buttonLabel={t('home.tietopalvelu-call-to-action')}
-        bgImageClassName="bg-[url(@/../assets/tietopalvelu.jpg)] bg-cover bg-[50%_50%]"
-      />
+      <div className="mt-8">
+        <h2 className="mb-8 mx-auto max-w-[1092px] px-5 sm:px-6 xl:px-0 text-heading-1">{t('home.sections-title')}</h2>
+        <SecondaryCard
+          color="#004e82"
+          content={t('home.osaamispolkuni-content')}
+          title={t('home.osaamispolkuni-title')}
+          to={`/yksilo/${language}`}
+          buttonLabel={t('home.osaamispolkuni-call-to-action')}
+          buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
+          bgImageClassName=" bg-[url(@/../assets/osaamispolkuni.jpg)] bg-cover bg-[50%_50%]"
+        />
+        <SecondaryCard
+          color="#00818A"
+          content={t('home.ohjaaja-content')}
+          title={t('home.ohjaaja-title')}
+          to={`/ohjaaja/${language}`}
+          buttonLabel={t('home.ohjaaja-call-to-action')}
+          buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
+          bgImageClassName=" bg-[url(@/../assets/ohjaaja.jpg)] bg-cover bg-[50%_50%]"
+        />
+        <SecondaryCard
+          color="#AD4298"
+          content={t('home.tietopalvelu-content')}
+          title={t('home.tietopalvelu-title')}
+          to={`/tietopalvelu/${language}`}
+          buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
+          buttonLabel={t('home.tietopalvelu-call-to-action')}
+          bgImageClassName="bg-[url(@/../assets/tietopalvelu.jpg)] bg-cover bg-[50%_50%]"
+        />
+      </div>
 
       <Content title={t('home.beta')}>
         <p className="text-body-lg max-w-[716px]">
+          <p>{t('home.beta-content-1')}</p>
+        </p>
+        <div className="flex justify-center aspect-auto">
+          {
+            <img
+              className="max-w-[372px] sm:max-w-full"
+              src={sm ? betaPlanImageDesktop : betaPlanImageMobile}
+              alt={t('home.beta')}
+            />
+          }
+        </div>
+        <div className="max-w-[716px]">
           <Trans
-            i18nKey="home.beta-content"
+            i18nKey="home.beta-content-2"
             components={{
               Icon: <JodOpenInNew size={18} className="ml-1" ariaLabel={t('external-link')} />,
               CustomLink: (
@@ -306,20 +293,11 @@ const Home = () => {
               ),
             }}
           />
-        </p>
-        <div className="flex justify-center aspect-auto">
-          {
-            <img
-              className="max-w-[372px] sm:max-w-full"
-              src={sm ? betaPlanImageDesktop : betaPlanImageMobile}
-              alt={t('home.beta')}
-            />
-          }
         </div>
       </Content>
 
       <Block title={t('home.services.title')} isLast={true}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-7 sm:gap-y-11">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-7 sm:gap-y-11 mb-11 sm:mb-[176px]">
           <ServiceBlock
             title={t('home.services.tool.title')}
             text={t('home.services.tool.content')}
