@@ -129,7 +129,9 @@ const AiUsage = () => {
         navTitle: t('ai-usage.effect.title'),
         content: (
           <div>
-            <p>{t('ai-usage.effect.description')}</p>
+            <p>
+              <Trans i18nKey="ai-usage.effect.description" />
+            </p>
             <ul className="ml-6 mb-3 list-disc">
               <li>{t('ai-usage.effect.list.item-1')}</li>
               <li>{t('ai-usage.effect.list.item-2')}</li>

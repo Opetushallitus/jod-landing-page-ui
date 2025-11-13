@@ -1,33 +1,46 @@
 import { BasicArticleSectionContent } from '@/components/ArticleSectionContent/BasicArticleSectionContent';
 import { ArticleSectionPage } from '@/components/ArticleSectionPage/ArticleSectionPage';
-import { createBasicArticleSectionData } from '@/utils';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { ArticleSection } from '../types';
 
+const createArticleSectionData = (navTitle: string, text: React.ReactNode) => {
+  return {
+    navTitle,
+    text,
+  };
+};
 const Accessibility = () => {
   const { t } = useTranslation();
 
   const sections: ArticleSection[] = React.useMemo(() => {
     return [
-      createBasicArticleSectionData(
+      createArticleSectionData(
         t('accessibility.sections.status.navTitle'),
         t('accessibility.sections.status.description'),
       ),
-      createBasicArticleSectionData(
+      createArticleSectionData(
+        t('accessibility.sections.missing.navTitle'),
+        <Trans i18nKey="accessibility.sections.missing.description" />,
+      ),
+      createArticleSectionData(
         t('accessibility.sections.planned-fixes.navTitle'),
         t('accessibility.sections.planned-fixes.description'),
       ),
-      createBasicArticleSectionData(
+      createArticleSectionData(
+        t('accessibility.sections.updates.navTitle'),
+        t('accessibility.sections.updates.description'),
+      ),
+      createArticleSectionData(
         t('accessibility.sections.feedback.navTitle'),
-        t('accessibility.sections.feedback.description'),
+        <Trans i18nKey="accessibility.sections.feedback.description" />,
       ),
     ].map((item) => {
       const { navTitle, text } = item;
 
       return {
         navTitle,
-        content: <BasicArticleSectionContent key={text.slice(0, 25)} text={text} />,
+        content: <BasicArticleSectionContent key={navTitle} text={text} />,
       };
     });
   }, [t]);

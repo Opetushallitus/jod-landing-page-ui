@@ -43,6 +43,9 @@ const PrivacyAndCookies = () => {
   const yksiloRegisterContent: RegisterContentItem[] = React.useMemo(() => {
     return [
       {
+        title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.hetu.title'),
+      },
+      {
         title: t('privacy-policy-and-cookies.register-information-content.yksilo.content.birth-year.title'),
       },
       {
