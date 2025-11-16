@@ -12,7 +12,6 @@ import {
   MatomoTracker,
   MenuButton,
   NavigationBar,
-  NoteStack,
   ServiceVariantProvider,
   SkipLink,
   useNoteStack,
@@ -35,6 +34,38 @@ const agents = {
   },
 };
 
+const useAddBetaFeedbackNote = () => {
+  const { t } = useTranslation();
+  const { addPermanentNote } = useNoteStack();
+  const notesInitializedRef = React.useRef(false);
+
+  React.useEffect(() => {
+    if (notesInitializedRef.current) {
+      return;
+    }
+    addPermanentNote({
+      title: t('beta.note.title'),
+      description: t('beta.note.description'),
+      variant: 'feedback',
+      readMoreComponent: (
+        <Button
+          size="sm"
+          variant="white"
+          label={t('beta.note.to-feedback')}
+          icon={<JodOpenInNew ariaLabel={t('external-link')} />}
+          iconSide="right"
+          linkComponent={getLinkTo('https://link.webropolsurveys.com/S/F27EA876E86B2D74', {
+            useAnchor: true,
+            target: '_blank',
+          })}
+          className="whitespace-nowrap"
+        />
+      ),
+    });
+    notesInitializedRef.current = true;
+  }, [addPermanentNote, t]);
+};
+
 const Root = () => {
   const {
     t,
@@ -43,7 +74,6 @@ const Root = () => {
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);
   const [feedbackVisible, setFeedbackVisible] = React.useState(false);
   const location = useLocation();
-  const { addNote, removeNote } = useNoteStack();
 
   const hostname = window.location.hostname;
   const { siteId, agent } = React.useMemo(() => {
@@ -83,38 +113,9 @@ const Root = () => {
     document.documentElement.setAttribute('lang', language);
   }, [language]);
 
-  const [visibleBetaFeedback, setVisibleBetaFeedback] = React.useState(true);
   const { generateLocalizedPath } = useLocalizedRoutes();
 
-  React.useEffect(() => {
-    if (visibleBetaFeedback) {
-      addNote({
-        title: t('beta.note.title'),
-        description: t('beta.note.description'),
-        ariaClose: t('note.close'),
-        variant: 'feedback',
-        onCloseClick: () => {
-          setVisibleBetaFeedback(false);
-          removeNote('beta-feedback');
-        },
-        readMoreComponent: (
-          <Button
-            size="sm"
-            variant="white"
-            label={t('beta.note.to-feedback')}
-            icon={<JodOpenInNew ariaLabel={t('external-link')} />}
-            iconSide="right"
-            linkComponent={getLinkTo('https://link.webropolsurveys.com/S/F27EA876E86B2D74', {
-              useAnchor: true,
-              target: '_blank',
-            })}
-          />
-        ),
-        permanent: false,
-        id: 'beta-feedback',
-      });
-    }
-  }, [t, addNote, visibleBetaFeedback, removeNote]);
+  useAddBetaFeedbackNote();
 
   return (
     <div className="bg-bg-gray">
@@ -144,11 +145,13 @@ const Root = () => {
               {children as React.ReactNode}
             </Link>
           )}
-          showServiceBar
           serviceBarVariant="palveluportaali"
           serviceBarTitle={t('service-banner')}
+          translations={{
+            showAllNotesLabel: t('show-all'),
+            ariaLabelCloseNote: t('note.close'),
+          }}
         />
-        <NoteStack showAllText={t('show-all')} />
       </header>
       <NavMenu open={navMenuOpen} onClose={() => setNavMenuOpen(false)} />
       <ServiceVariantProvider value="palveluportaali">
