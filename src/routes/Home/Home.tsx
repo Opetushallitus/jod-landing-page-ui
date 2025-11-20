@@ -22,7 +22,10 @@ const ExternalLink = ({
 );
 
 const MainCard = () => {
-  const { t } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
 
   const firstCardRef = React.useRef<HTMLDivElement>(null);
 
@@ -62,7 +65,7 @@ const MainCard = () => {
           titleLevel={1}
           buttonLabel={t('home.hero-button-label')}
           buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
-          to={t('home.hero-url')}
+          to={`/yksilo/${language}`}
           linkComponent={ExternalLink}
         />
       </div>
@@ -292,20 +295,20 @@ const Home = () => {
             title={t('home.services.tool.title')}
             text={t('home.services.tool.content')}
             buttonLabel={t('home.services.tool.buttonLabel')}
-            to={t('home.services.tool.path', { language })}
+            to={`/yksilo/${language}/${t('home.services.tool.path')}`}
           />
           <ServiceBlock
             title={t('home.services.ohjaus.title')}
             text={t('home.services.ohjaus.content')}
             buttonLabel={t('home.services.ohjaus.buttonLabel')}
-            to={t('home.services.ohjaus.path', { language })}
+            to={`/ohjaaja/${language}/${t('home.services.ohjaus.path')}`}
             className="bg-secondary-2! active:bg-[#00889b]!"
           />
           <ServiceBlock
             title={t('home.services.tietopalvelu.title')}
             text={t('home.services.tietopalvelu.content')}
             buttonLabel={t('home.services.tietopalvelu.buttonLabel')}
-            to={t('home.services.tietopalvelu.path', { language })}
+            to={`/tietopalvelu/${language}/${t('home.services.tietopalvelu.path')}`}
             className="bg-secondary-4! active:bg-[#ad3ea3]!"
           />
         </div>
