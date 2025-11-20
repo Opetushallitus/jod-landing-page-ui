@@ -378,7 +378,6 @@
     "hero-button-label": "Öppna Min kompetensstig\n",
     "hero-content": "Kartlägg dina intressen och dina kompetenser och hitta din utbildnings- eller karriärmöjlighet i Komp betensstigen. Min kompetensstig stöder dig när du söker riktning för dina förmågor och din passion. Du kanske får upp ögonen för helt överraskande möjligheter.\n",
     "hero-title": "I Kompetensstigen hittar du dina utbildnings- och karriärmöjligheter",
-    "hero-url": "/individ/sv",
     "how-competency-path-helps-you": "Hur hjälper Kompetensstigen dig som en del av andra tjänster?",
     "how-competency-path-helps-you-content": "Kompetensstigen, Studieinfo, Jobbmarknaden och Opin.fi bildar tillsammans en tjänstehelhet som stöder lärande, karriärplanering och jobbsökning i olika livssituationer. Varje tjänst spelar sin egen roll, men tillsammans erbjuder de dig en tydlig stig för utvecklingen av din kompetens och din karriär.<br/><br/>Om du letar efter en riktning eller din egen stig kan du identifiera dina egna styrkor och intressen i Kompetensstigen och hitta utbildnings- och karriärmöjligheter som är lämpliga för dem. När du har utrett hur du vill gå vidare, hjälper Studieinfo, Jobbmarknaden och Opin.fi dig att söka dig till dem.",
     "how-competency-path-helps-you-opinfi-description": "Opin.fi är finländska universitets och yrkeshögskolors gemensamma tjänst där öppna studier är lätt tillgängliga för dig.",
@@ -398,20 +397,20 @@
       "ohjaus": {
         "buttonLabel": "Till stöd för kundarbetet",
         "content": "I avsnittet Till stöd för kundarbetet hittar du material som du kan använda i ditt eget vägledningsarbete. Avsnittet innehåller till exempel verktyg som du kan använda i vägledningssituationer eller ge som en självständig uppgift till dem som behöver vägledning. \n",
-        "path": "/vagledare/{{language}}/till-stod-for-kundarbetet",
+        "path": "till-stod-for-kundarbetet",
         "title": "Vill du hitta verktyg för vägledningsarbetet?"
       },
       "tietopalvelu": {
         "buttonLabel": "Informationstjänstens innehåll",
         "content": "På den här sidan hittar du en översikt över informationstjänstens samtliga rapportsidor. Du kan filtrera listan med hjälp av nyckelord och gå vidare till det informationsinnehåll som intresserar dig.\n",
-        "path": "/informationstjanst/{{language}}/informationsinnehall",
+        "path": "informationsinnehall",
         "title": "Vill du ha information som stöd för beslutsfattandet i ditt arbete?"
       },
       "title": "Hittar du inte det du söker?",
       "tool": {
         "buttonLabel": "Hitta möjligheter\t",
         "content": "Berätta vad du kan och vad du är intresserad av och välj lämpliga kompetenser. Hitta lämpliga arbets- och utbildningsmöjligheter utifrån dem.\n",
-        "path": "/idivid/{{language}}/verktyg",
+        "path": "verktyg",
         "title": "Vill du snabbt hitta möjligheter som passar dig?"
       }
     },
@@ -426,30 +425,26 @@
     "external": {
       "ohjaaja": {
         "description": "Information och material för vägledning",
-        "label": "Vägledar-delen",
-        "url": "/vagledare/sv"
+        "label": "Vägledar-delen"
       },
       "osaamispolku": {
         "description": "Personlig kompetensstig",
-        "label": "Min kompetensstig",
-        "url": "/individ/sv"
+        "label": "Min kompetensstig"
       },
       "tietopalvelu": {
         "description": "Information till stöd för beslutsfattande",
-        "label": "Informationstjänst",
-        "url": "/informationstjanst/sv"
+        "label": "Informationstjänst"
       },
       "title": "Uppsättningar av innehåll"
     },
     "extra": {
       "palveluhakemisto": {
         "label": "Väglednings- och rådgivningstjänster",
-        "url": "https://www.suomi.fi/palveluhakemisto/osaamispolku"
+        "url": "https://www.suomi.fi/amne/vaglednings-och-radgivningstjanster/service"
       },
       "title": "Annat stöd för reflektion",
       "urataidot": {
-        "label": "Självutvärdering av karriärkompetens",
-        "url": "/karriarkompetens/sv"
+        "label": "Självutvärdering av karriärkompetens"
       }
     }
   },

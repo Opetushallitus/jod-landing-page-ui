@@ -62,19 +62,19 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       linkItems: [
         {
           label: t('navigation.external.osaamispolku.label'),
-          url: t('navigation.external.osaamispolku.url'),
+          url: `/yksilo/${language}`,
           description: t('navigation.external.osaamispolku.description'),
           accentColor: '#006DB3',
         },
         {
           label: t('navigation.external.ohjaaja.label'),
-          url: t('navigation.external.ohjaaja.url'),
+          url: `/ohjaaja/${language}`,
           description: t('navigation.external.ohjaaja.description'),
           accentColor: '#00818A',
         },
         {
           label: t('navigation.external.tietopalvelu.label'),
-          url: t('navigation.external.tietopalvelu.url'),
+          url: `/tietopalvelu/${language}`,
           description: t('navigation.external.tietopalvelu.description'),
           accentColor: '#AD4298',
         },
@@ -89,7 +89,7 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
         },
         {
           label: t('navigation.extra.urataidot.label'),
-          url: t('navigation.extra.urataidot.url'),
+          url: `/urataidot/${language}`,
         },
       ],
     },

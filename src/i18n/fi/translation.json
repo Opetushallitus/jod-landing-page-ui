@@ -378,7 +378,6 @@
     "hero-button-label": "Siirry Osaamispolkuuni\n",
     "hero-content": "Kartoita kiinnostuksesi ja osaamisesi – ja löydä koulutus- tai uramahdollisuutesi Osaamispolustani. Osaamispolkuni tukee, kun haet suuntaa kyvyillesi ja intohimollesi. Silmäsi saattavat avautua yllättävillekin mahdollisuuksille.\n",
     "hero-title": "Osaamispolusta löydät koulutus- ja uramahdollisuutesi",
-    "hero-url": "/yksilo/fi",
     "how-competency-path-helps-you": "Miten Osaamispolku auttaa sinua osana muita palveluita?",
     "how-competency-path-helps-you-content": "Osaamispolku, Opintopolku, Työmarkkinatori ja Opin.fi muodostavat yhdessä palvelukokonaisuuden, joka tukee oppimista, urasuunnittelua ja työnhakua eri elämäntilanteissa. Jokaisella palvelulla on oma roolinsa, mutta yhdessä ne tarjoavat sinulle selkeän polun osaamisesi ja urasi kehittämiseen. <br/><br/>Jos etsit suuntaa tai omaa polkuasi, Osaamispolussa voit tunnistaa omat vahvuudet ja kiinnostukseksi sekä löytää niihin sopivia koulutus- ja uramahdollisuuksia. Kun olet selvittänyt miten haluat edetä, Opintopolku, Työmarkkinatori ja Opin.fi auttavat sinua hakeutumaan niihin.",
     "how-competency-path-helps-you-opinfi-description": "Opin.fi on suomalaisten yliopistojen ja ammattikorkeakoulujen yhteinen palvelu, jossa avoimet opinnot ovat helposti saatavillasi.",
@@ -398,20 +397,20 @@
       "ohjaus": {
         "buttonLabel": "Asiakastyön tueksi",
         "content": "Asiakastyön tueksi osiosta löydät materiaaleja, joita voit hyödyntää omassa ohjaustyössäsi. Osiossa on esimerkiksi työkaluja, joita voit käyttää ohjaustilanteissa tai antaa ohjattaville itsenäisesti tehtäväksi. \n",
-        "path": "/ohjaaja/{{language}}/asiakastyon-tueksi",
+        "path": "asiakastyon-tueksi",
         "title": "Haluatko löytää ohjaustyöhön työkaluja?"
       },
       "tietopalvelu": {
         "buttonLabel": "Tietopalvelun sisällöt",
         "content": "Tältä sivulta näet kokonaiskuvan kaikista tietopalvelun raporttisivuista. Voit suodattaa listausta avainsanojen avulla ja siirtyä sinua kiinnostavan tietosisällön pariin.\n",
-        "path": "/tietopalvelu/{{language}}/tietosisallot",
+        "path": "tietosisallot",
         "title": "Haluatko tietoa päätöksenteon tueksi työssäsi?"
       },
       "title": "Etkö löydä vielä etsimääsi?",
       "tool": {
         "buttonLabel": "Löydä mahdollisuuksia\t",
         "content": "Kerro, mitä osaat ja mistä olet kiinnostunut, ja valitse niihin sopivia osaamisia. Löydä niiden perusteella sinulle sopivia työ- ja koulutusmahdollisuuksia.\n",
-        "path": "/yksilo/{{language}}/tyokalu",
+        "path": "tyokalu",
         "title": "Haluatko löytää sinulle sopivia mahdollisuuksia nopeasti?"
       }
     },
@@ -426,18 +425,15 @@
     "external": {
       "ohjaaja": {
         "description": "Tietoja ja materiaaleja ohjaukseen",
-        "label": "Ohjaajan osio",
-        "url": "/ohjaaja/fi"
+        "label": "Ohjaajan osio"
       },
       "osaamispolku": {
         "description": "Henkilökohtainen osaamispolku",
-        "label": "Osaamispolkuni",
-        "url": "/yksilo/fi"
+        "label": "Osaamispolkuni"
       },
       "tietopalvelu": {
         "description": "Tietoa päätöksenteon tueksi",
-        "label": "Tietopalvelu",
-        "url": "/tietopalvelu/fi"
+        "label": "Tietopalvelu"
       },
       "title": "Sisältökokonaisuudet"
     },
@@ -448,8 +444,7 @@
       },
       "title": "Muuta tukea pohdintaan",
       "urataidot": {
-        "label": "Urataitojen itsearviointi",
-        "url": "/urataidot/fi"
+        "label": "Urataitojen itsearviointi"
       }
     }
   },
