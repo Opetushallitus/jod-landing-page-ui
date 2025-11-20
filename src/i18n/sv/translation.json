@@ -392,7 +392,6 @@
     "ohjaaja-title": "Vägledar-delen",
     "osaamispolkuni-call-to-action": "Min kompetensstig",
     "osaamispolkuni-content": "Kartlägg dina intressen och kompetenser och hitta utbildnings- och karriärmöjligheter. Genom att logga in på Min kompetensstig kan du skapa din egen kompetensprofil och spara dina uppgifter för senare bruk.",
-    "osaamispolkuni-description": "Kartlägg dina intressen och kompetenser och hitta utbildnings- och karriärmöjligheter. Genom att logga in på Min kompetensstig kan du skapa din egen kompetensprofil och spara dina uppgifter för senare bruk.",
     "osaamispolkuni-title": "Min kompetensstig",
     "sections-title": "Kompetensstigen består av tre delar:",
     "services": {
@@ -552,7 +551,8 @@
       "title": "Information om överföringen av uppgifter till tredje land och om skyddsåtgärder som vidtas"
     },
     "intro": {
-      "title": "Inledning"
+      "title": "Inledning",
+      "description": "\"Denna dataskyddsbeskrivning beskriver hur personuppgifter behandlas i tjänsten Kompetensstigen. Beskrivningen förklarar också vilka rättigheter de registrerade personerna har och hur dessa rättigheter kan utövas. Som registrerade räknas personer som har skapat en kompetensprofil och personer som är inloggade i vägledarens profil. <br/><br/>Dataskyddsbeskrivningen uppdateras regelbundet. Du hittar alltid den aktuella versionen på denna sida.\"\n"
     },
     "obligation-to-provide": {
       "description": "Uppgifter lagras i den nationella informationsresursen för kompetenser och behandlas på grundval av lagen om den nationella informationsresursen för kompetenser.",
@@ -740,6 +740,5 @@
     "ai-usage": "information-om-anvandningen-av-artificiell-intelligens",
     "data-sources": "datakallor",
     "privacy-and-cookies": "dataskyddsbeskrivning-och-cookies"
-  },
-  "undefined": "Telefonväxel: 029 534 5000"
+  }
 }
