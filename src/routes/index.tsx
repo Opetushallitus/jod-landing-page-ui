@@ -71,6 +71,10 @@ const rootRoute: RouteObject = {
     ...dataSources,
     ...aiUsage,
     ...accessibility,
+    {
+      path: '*',
+      element: <NoMatch />,
+    },
   ],
 };
 
@@ -80,5 +84,4 @@ export const routes: RouteObject[] = [
     loader: () => replace(`/${i18n.language}`),
   },
   rootRoute,
-  { path: '*', element: <NoMatch /> },
 ];
