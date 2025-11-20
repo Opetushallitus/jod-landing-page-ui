@@ -1,8 +1,7 @@
-import betaPlanImageDesktop from '@/../assets/gra_front_timeline_2.svg';
-import betaPlanImageMobile from '@/../assets/gra_front_timeline_mob_2.svg';
 import heroSrc from '@/../assets/landing-page-hero.jpg';
+import { TimelineImage } from '@/components/TimelineImage';
 import { getLinkTo } from '@/utils/routeUtils';
-import { Button, cx, HeroCard, tidyClasses as tc, useMediaQueries } from '@jod/design-system';
+import { Button, cx, HeroCard, tidyClasses as tc } from '@jod/design-system';
 import { JodOpenInNew } from '@jod/design-system/icons';
 import React, { JSX } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
@@ -197,7 +196,6 @@ const Home = () => {
     t,
     i18n: { language },
   } = useTranslation();
-  const { sm } = useMediaQueries();
 
   return (
     <main role="main" className="mx-auto w-full max-w-(--breakpoint-xl) bg-white" id="jod-main">
@@ -269,15 +267,7 @@ const Home = () => {
         <p className="text-body-lg max-w-[716px]">
           <p>{t('home.beta-content-1')}</p>
         </p>
-        <div className="flex justify-center aspect-auto">
-          {
-            <img
-              className="max-w-[372px] sm:max-w-full"
-              src={sm ? betaPlanImageDesktop : betaPlanImageMobile}
-              alt={t('home.beta')}
-            />
-          }
-        </div>
+        <TimelineImage />
         <div className="max-w-[716px]">
           <Trans
             i18nKey="home.beta-content-2"
