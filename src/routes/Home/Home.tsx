@@ -188,7 +188,7 @@ const Content = ({ className = '', title, children }: ContainerProps & { title?:
         className,
       ])}
     >
-      {title && <h2 className="text-heading-1 max-w-[716px]">{title}</h2>}
+      {title && <h2 className="sm:text-heading-1 text-heading-1-mobile max-w-[716px]">{title}</h2>}
       {children}
     </div>
   );
@@ -267,9 +267,7 @@ const Home = () => {
       </div>
 
       <Content title={t('home.beta')}>
-        <p className="text-body-lg max-w-[716px]">
-          <p>{t('home.beta-content-1')}</p>
-        </p>
+        <p className="text-body-lg max-w-[716px]">{t('home.beta-content-1')}</p>
         <TimelineImage />
         <div className="max-w-[716px]">
           <Trans
