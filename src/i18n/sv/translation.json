@@ -1,13 +1,13 @@
 {
   "about-service": {
-    "intro": "Kompetensstigen är en ny digital tjänst till stöd för planering av utbildning och karriär, kompetensutveckling och sysselsättning och kommer att lanseras i början av 2026. Kompetensstigen riktar sig till personer som planerar sin karriär och utbildning, vägledare, utbildningsorganisationer, arbetslivsaktörer och experter inom olika förvaltningsområden.",
+    "intro": "Kompetensstigen är en ny digital tjänst som är avsedd som stöd för planering av utbildning och karriär, kompetensutveckling och sysselsättning. Tjänsten kommer att lanseras i början av 2026. Kompetensstigen riktar sig till personer som planerar sin karriär och utbildning, vägledare, utbildningsorganisationer, arbetslivsaktörer och experter inom olika förvaltningsområden.",
     "sections": {
       "advisor-section": {
         "description": "I avsnittet för vägledare hittar du aktuell och högklassig information och metoder som stöd för ditt karriärvägledningsarbete och material som stärker din egen kompetens. Vägledarens avsnitt är avsett för alla aktörer inom vägledningsbranschen och vägledarna kan arbeta till exempel inom elevhandledning, karriärvägledning, utbildning eller arbetskraftsförvaltning eller inom den privata sektorn.",
         "navTitle": "Vägledar-delen"
       },
       "guidance-and-counseling": {
-        "description": "Tjänsterna som du kan hitta i väglednings- och rådgivningstjänster hjälper dig att fundera på dina karriär- och utbildningsalternativ. Du kan begränsa listan över tjänster enligt teman som intresserar dig och till exempel din bostadsort för att hitta de tjänster som passar dig bäst.",
+        "description": "De tjänster som finns i väglednings- och rådgivningstjänsterna hjälper dig att fundera på dina karriär- och utbildningsalternativ. Du kan avgränsa listan över tjänster enligt teman som intresserar dig och till exempel din bostadsort, så att du hittar de tjänster som passar dig bäst.",
         "navTitle": "Väglednings- och rådgivningstjänster"
       },
       "info-service": {
@@ -15,11 +15,11 @@
         "navTitle": "Informationstjänst"
       },
       "jod-project": {
-        "description": "För utvecklingen av Kompetensstigen ansvarar projektet Digitala servicehelheten för kontinuerligt lärande, som är ett samprojekt mellan undervisnings- och kulturministeriet och arbets- och näringsministeriet åren 2021–2025. Utbildningsstyrelsen , NTM-centralernas utvecklings- och förvaltningscentral (UF-centret), högskolorna genom projektet Digivision 2030 och Servicecentret för kontinuerligt lärande och sysselsättning deltar intensivt i utvecklingsarbetet. Projektet finansieras av EU:s facilitet för återhämtning och resiliens (RRF).",
+        "description": "För utvecklingen av Kompetensstigen ansvarar projektet Digitala servicehelheten för kontinuerligt lärande, som är ett samprojekt mellan undervisnings- och kulturministeriet och arbets- och näringsministeriet åren 2021–2025. Utbildningsstyrelsen, NTM-centralernas utvecklings- och förvaltningscentral, högskolorna genom projektet Digivision 2030 och Servicecentret för kontinuerligt lärande och sysselsättning deltar intensivt i utvecklingsarbetet. Projektet finansieras av EU:s facilitet för återhämtning och resiliens (RRF).",
         "navTitle": "Projektet Digitala servicehelheten för kontinuerligt lärande"
       },
       "my-path": {
-        "description": "I Min kompetensstig kan du kartlägga din egen kompetens, hitta utbildningar för att öka din kompetens, undersöka karriärmöjligheter med din kompetens och kartlägga möjligheter att byta bransch. Min kompetensstig är avsedd för alla användare.",
+        "description": "I Min kompetensstig kan du kartlägga ditt eget kunnande, hitta utbildningar för att öka ditt kunnande, undersöka karriärmöjligheter med ditt kunnande och kartlägga möjligheter att byta bransch. Min kompetensstig är avsedd för alla användare.",
         "navTitle": "Min kompetensstig"
       }
     },
@@ -61,9 +61,9 @@
       "description-2": "Verktyg, mallar och metoder används på Amazon Web Services (AWS) molnplattformen. AWS upprätthåller vår privata infrastruktur och största delen av samtalsloggarna, som omfattar meddelanden, samtalsämne, tidsstämplar och telemetridata.",
       "list": {
         "item-1": "maskininlärningsmodeller för identifiering av kompetenser (bland annat TFIDF och FinBERT)",
-        "item-2": "klusteralgoritmer (DBSCAN och KMeans) för gruppering av platsannonser och utbildningsutbud till arbets- och utbildningsmöjligheter",
+        "item-2": "klusteralgoritmer (DBSCAN och KMeans) för gruppering av arbetsplatsannonser och utbildningsutbud till arbets- och utbildningsmöjligheter",
         "item-3": "generativ artificiell intelligens (Claude 3.5 Sonnet) för att producera beskrivningar och sammanfattningar",
-        "item-4": "rekommendationsalgoritmer som kopplar kompetenser och intressen till utbildnings- och karriärmöjligheter",
+        "item-4": "rekommendationsalgoritmer som kombinerar kompetenser och intressen till utbildnings- och karriärmöjligheter",
         "item-5": "en diskuterande intressekartläggare som använder språkmodeller (Claude 3.5 Sonnet) för att föra en diskussion och RAG-funktionalitet (Retrieval-Augmented Generation) för att hantera och använda olika hjälpmedel och material som stöd för vägledningsarbetet och kartläggningsarbetet under diskussionen."
       },
       "title": "Vilka AI-metoder används?"
@@ -90,7 +90,7 @@
       "title": "Hur övervakas funktionaliteten av artificiell intelligens?"
     },
     "limitation-of-liability": {
-      "description": "Kompetensstigens AI-funktioner, såsom diskuterande kartläggare, rekommendationsalgoritmer och innehållsproduktion, utvecklas och övervakas av människor. Artificiell intelligens fungerar dock delvis automatiskt och varje interaktion, produkt eller förslag har inte kontrollerats separat av en människa. <br/><br/>Trots att vi ständigt strävar efter att förbättra kvaliteten på och tillförlitligheten hos artificiell intelligens kan dess svar ibland vara inexakta, bristfälliga eller innehålla felaktig information. Artificiell intelligens ersätter inte expertens bedömning och det innehåll som den producerar representerar inte nödvändigtvis myndigheternas officiella åsikt. <br/><br/>Artificiell intelligens används i Kompetensstigen i första hand som samtalspartner och som stöd för förslag, inte som beslutsfattare. Det är användarens ansvar att bedöma och vid behov komplettera den information som hen får innan beslut fattas. <br/><br/>Tjänsten utvecklas kontinuerligt och AI-funktionerna kan ibland ändras eller vara ur bruk utan separat meddelande om saken.",
+      "description": "Kompetensstigens AI-funktioner, såsom diskuterande kartläggare, rekommendationsalgoritmer och innehållsproduktion, utvecklas och övervakas av människor. Artificiell intelligens fungerar dock delvis automatiskt och varje interaktion, produkt eller förslag har inte kontrollerats separat av en människa. <br/><br/>Trots att vi ständigt strävar efter att förbättra artificiella inteligensens kvaliteten och tillförlitligheten kan dess svar ibland vara inexakta, bristfälliga eller innehålla felaktig information. Artificiell intelligens ersätter inte expertens bedömning och det innehåll som den producerar representerar inte nödvändigtvis myndigheternas officiella åsikt. <br/><br/>Artificiell intelligens används i Kompetensstigen i första hand som samtalspartner och som stöd för förslag, inte som beslutsfattare. Det är användarens ansvar att bedöma och vid behov komplettera den information som hen fått innan beslut fattas. <br/><br/>Tjänsten utvecklas kontinuerligt och AI-funktionerna kan ibland ändras eller vara ur bruk utan separat meddelande om saken.",
       "title": "Ansvarsbegränsning"
     },
     "security": {
@@ -106,11 +106,11 @@
     },
     "title": "Information om användningen av artificiell intelligens",
     "why-ai": {
-      "description": "Kompetensstigen utnyttjar artificiell intelligens för att stödja individers utbildnings- och karriärval. Syftet är att erbjuda användaren skräddarsydda förslag på utbildnings- och karriärmöjligheter baserat på användarens kompetens, intressen och bakgrundsinformation.",
+      "description": "Kompetensstigen utnyttjar artificiell intelligens för att stödja individers utbildnings- och karriärval. Syftet är att erbjuda användaren skräddarsydda förslag till utbildnings- och karriärmöjligheter baserat på användarens kompetens, intressen och bakgrundsinformation.",
       "possibilities": {
         "item-1": {
-          "description": "Artificiell intelligens jämför ord och meningar med kända färdigheter och föreslår dem som passar bäst. <br/><br/>Artificiell intelligens används också för att identifiera kompetenser från platsannonstexter och utbildningsutbudets beskrivningar, om dessa inte redan beskriver de färdigheter som krävs eller som arbetet/utbildningen producerar.",
-          "title": "Identifiering av kompetenser från texter som användaren tillhandahållit (till exempel CV och utbildningsinformation)"
+          "description": "Artificiell intelligens jämför ord och meningar med kända färdigheter och föreslår dem som passar bäst. <br/><br/>Artificiell intelligens används också för att identifiera kompetenser från arbetsplatsannonstexter och utbildningsutbudets beskrivningar, om dessa inte redan beskriver de färdigheter som krävs eller som arbetet/utbildningen producerar.",
+          "title": "Identifiering av kompetenser från texter som användaren har överlåtit (till exempel CV och utbildningsinformation)"
         },
         "item-2": {
           "education": {
@@ -123,10 +123,10 @@
             },
             "title": "Utbildningsmöjligheter"
           },
-          "title": "Skapande av karriär- och utbildningsmöjligheter genom att gruppera Jobbmarknadens platsannonser och Studieinfos utbildningsutbud",
+          "title": "Skapande av karriär- och utbildningsmöjligheter genom att gruppera Jobbmarknadens arbetsplatsannonser och Studieinfos utbildningsutbud",
           "work": {
-            "description-1": "Artificiell intelligens läser Jobbmarknadens platsannonser och söker information från dem, såsom:",
-            "description-2": "Sedan grupperar den annonserna så att liknande arbetstillfällen är i samma grupp. På så sätt skapas karriärmöjligheter, det vill säga grupper av samma typer av arbete. <br/><br/>Om annonsen inte innehåller tillräckligt med information kommer den att utelämnas. <br/><br/>I slutet av processen sparar den artificiella intelligensen grupperna och gör sammanfattningar av dem som sedan används i rekommendationerna.",
+            "description-1": "Artificiell intelligens läser Jobbmarknadens arbetsplatsannonser och söker information från dem, såsom:",
+            "description-2": "Sedan grupperar den annonserna så att liknande arbeten gruperas i samma grupp. På så sätt skapas karriärmöjligheter, det vill säga grupper av samma typer av arbete. <br/><br/>Om annonsen inte innehåller tillräckligt med information, utelämnas den. <br/><br/>I slutet av processen sparar den artificiella intelligensen grupperna och gör sammanfattningar av dem som sedan används i rekommendationerna.",
             "list": {
               "item-1": "vilka färdigheter som behövs i arbetet",
               "item-2": "vilken typ av tillstånd eller körkort som krävs",
@@ -136,7 +136,7 @@
           }
         },
         "item-3": {
-          "description": "Rekommendationsmotorn fungerar som en smart sökmotor. Användaren berättar vilka färdigheter hen har och vad hen är intresserad av. Artificiell intelligens jämför dem med uppgifter om arbetstillfällen och utbildningar och ger en lista över lämpliga alternativ.",
+          "description": "Rekommendationsmotorn fungerar som en smart sökmotor. Användaren berättar vilka färdigheter hen har och vad hen är intresserad av. Artificiell intelligens jämför dem med uppgifter om arbetsplatser och utbildningar och ger en lista över lämpliga alternativ.",
           "title": "Produktion av rekommendationer (individuella rekommendationer för utbildnings- och karriärmöjligheter baserat på de uppgifter du har matat in)"
         },
         "item-4": {
@@ -144,7 +144,7 @@
           "title": "Diskussionshjälp för att kartlägga intressen"
         },
         "item-5": {
-          "description": "Artificiell intelligens skriver sammanfattningar av arbets- och utbildningsmöjligheter baserat på deras underliggande platsannonser, yrkeskunskap och beskrivningarna av utbildningarna i utbildningsutbudet för att göra dem lättare för användaren att förstå. Eventuella personuppgifter tas bort från bakgrundsmaterialet. <br/><br/>Artificiell intelligens översätter texterna den skrivit till svenska och engelska. ",
+          "description": "Artificiell intelligens skriver sammanfattningar av arbets- och utbildningsmöjligheter baserat på deras underliggande arbetsplatsannonser, yrkeskunskap och beskrivningarna av utbildningarna i utbildningsutbudet för att göra dem lättare för användaren att förstå. Eventuella personuppgifter tas bort från bakgrundsmaterialet. <br/><br/>Artificiell intelligens översätter texterna den skrivit till svenska och engelska. ",
           "title": "Produktion och översättning av innehåll till olika språk (särskilt i arbets- och utbildningsmöjligheter)"
         },
         "title": "Artificiell intelligens möjliggör:"
@@ -196,8 +196,8 @@
           }
         },
         "navTitle": "eGrunder",
-        "paragraph-1": "I tjänsten finns alla nationella grunder för läroplaner, examina och utbildningar, från småbarnspedagogiken till fritt bildningsarbete. Dessutom hittar du i tjänsten Utbildningsstyrelsens andra aktuella föreskrifter och rekommendationer. Anordnare av småbarnspedagogik, undervisning och utbildning kan också publicera lokala planer i tjänsten.",
-        "paragraph-2": "I avsnittet Min kompetensstig utnyttjas grundläggande information om utbildningsutbudet från tjänsten eGrunder.",
+        "paragraph-1": "I tjänsten finns alla nationella grunder för läroplaner, examina och utbildningar, från småbarnspedagogik till fritt bildningsarbete. Dessutom hittar du i tjänsten Utbildningsstyrelsens andra aktuella bestämmelser och rekommendationer. Anordnare av småbarnspedagogik, undervisning och utbildning kan också publicera lokala planer i tjänsten.",
+        "paragraph-2": "I Min kompetensstig-delen utnyttjas grundläggande information om utbildningsutbudet från tjänsten eGrunder.",
         "paragraph-3": "Informationstjänsten utnyttjar grundläggande utbildningsinformation i fråga om utbildningsutbudet."
       },
       "koto": {
@@ -257,7 +257,7 @@
         },
         "navTitle": "Statistikcentralen",
         "paragraph-1": "Statistikcentralen presenterar statistikuppgifter från olika områden i det finländska samhället.",
-        "paragraph-2": "Avsnittet Min kompetensstig använder Statistikcentralens uppgifter i statistiken över karriärmöjligheter och utbildningsmöjligheter.",
+        "paragraph-2": "Min kompetensstig-delen använder Statistikcentralens uppgifter i statistiken över karriärmöjligheter och utbildningsmöjligheter.",
         "paragraph-3": "Informationstjänsten utnyttjar Statistikcentralens uppgifter om befolkningen, studerande, sysselsatta och arbetslösa samt arbetssökande. I granskningen kan du utnyttja flera olika perspektiv för att undersöka förändringar.",
         "paragraph-4": "En närmare specifikation av de utnyttjade uppgifterna finns på sidan Informationstjänstens informationskällor."
       },
@@ -282,8 +282,8 @@
         },
         "navTitle": "Jobbmarknaden",
         "paragraph-1": "Arbets- och näringsministeriet ansvarar för Jobbmarknaden-tjänsten. På Jobbmarknaden erbjuds användarna färdigt sammanställd information och tjänster för olika situationer i arbetslivet.",
-        "paragraph-2": "Jobbmarknadens helhet Sysselsättning och statistik innehåller bedömningar, utredningar, undersökningar, statistik och rapporter som publicerats av UF-centret.",
-        "paragraph-3": "Avsnittet Min kompetensstig utnyttjar Jobbmarknadens kompetensrekommenderare, den nationellt upprätthållna ESCO-kompetens- och yrkesklassificeringen samt lediga jobb.",
+        "paragraph-2": "Jobbmarknadens Sysselsättning och statistik-helhet innehåller bedömningar, utredningar, undersökningar, statistik och rapporter som publicerats av UF-centret.",
+        "paragraph-3": "Min kompetensstig-delen utnyttjar Jobbmarknadens kompetensrekommenderare, den nationellt upprätthållna ESCO-kompetens- och yrkesklassificeringen samt lediga jobb.",
         "paragraph-4": "Informationstjänsten utnyttjar Jobbmarknadens uppgifter om antalet lediga jobb."
       },
       "vipunen": {
@@ -295,7 +295,7 @@
         },
         "navTitle": "Vipunen",
         "paragraph-1": "Vipunen är undervisningsförvaltningens statistiktjänst. Undervisnings- och kulturministeriet och Utbildningsstyrelsen svarar gemensamt för dess innehåll.",
-        "paragraph-2": "Avsnittet Min kompetensstig utnyttjar Vipunens uppgifter i statistiken över karriärmöjligheter och utbildningsmöjligheter.",
+        "paragraph-2": "Min kompetensstig-delen utnyttjar Vipunens uppgifter i statistiken över karriärmöjligheter och utbildningsmöjligheter.",
         "paragraph-3": "Informationstjänsten utnyttjar Vipunens uppgifter om förändringar i det yrkesområdesspecifika kompetensbehovet.B14B142:B158"
       }
     },
@@ -307,12 +307,12 @@
     "email-label": "E-postadress",
     "error": "Det gick inte att skicka respons. Försök på nytt senare.",
     "footer-handled": {
-      "ohjaajan": "Vägledarens avsnitt på UF-centret,",
+      "ohjaajan": "Vägledarens del på UF-centret,",
       "osaamispolkuni": "Min kompetensstig i Utbildningsstyrelsen,",
       "tietopalvelu": "Informationstjänsten, hela tjänsten och annan respons hos undervisnings- och kulturministeriet."
     },
-    "footer-info-1": "När du skickar respons sparar vi tjänstens statusinformation, till exempel från vilken vy responsen har skickats. Statusinformationen vidarebefordras inte till tredje part. Respons används för utveckling av tjänsten och frivilligt lämnade kontaktuppgifter används för att svara på respons.",
-    "footer-info-heading": "Beroende på avsnitt behandlas respons på följande sätt:",
+    "footer-info-1": "När du skickar respons sparar vi tjänstens statusinformation, till exempel från vilken vy responsen har skickats. Statusinformationen vidarebefordras inte till tredje parter. Responsen används för utveckling av tjänsten och frivilligt lämnade kontaktuppgifter används för att svara på responsen.",
+    "footer-info-heading": "Beroende på delen behandlas responsen på följande sätt:",
     "footer-privacy-heading": "Läs mer i responshanterarnas dataskyddsbeskrivningar:",
     "intro-1": "Ge respons om tjänsten eller rapportera ett tekniskt problem. På så sätt hjälper du oss i utvecklingen av tjänsterna.",
     "intro-2": "Om du rapporterar en störning skulle det hjälpa oss om du berättar om den så noggrant som möjligt.",
@@ -328,7 +328,7 @@
       "oph": "Utbildningsstyrelsens integritetspolicy"
     },
     "message-label": "Respons",
-    "section-question": "Vilket avsnitt gäller din respons?",
+    "section-question": "Vilken del gäller din respons?",
     "sections": {
       "koko-palvelu": "Hela tjänsten eller annan respons",
       "ohjaajan-osio": "Vägledar-delen",
@@ -370,24 +370,24 @@
     },
     "more-info-title": "Vill du veta mer om Kompetensstigen?"
   },
-  "front-page": "Ingångssida",
+  "front-page": "Framsida",
   "home": {
     "beta": "Kompetensstigen är i betatestningsfasen fram till slutet av 2025",
     "beta-content-1": "Välkommen att prova betaversionen av Kompetensstigen. Vi utvecklar kontinuerligt Kompetensstigens funktioner samt kvaliteten på de resultat och förslag som artificiell intelligens erbjuder dig. Du kan hjälpa oss i utvecklingsarbetet genom att använda tjänsten och ge respons. Låt oss tillsammans utveckla Kompetensstigen till den bästa tjänsten för dig!",
     "beta-content-2": "Den officiella användningen av Kompetensstigen inleds i början av 2026. Vi strävar efter att bevara de kompetensprofiler som skapats i betatestningsfasen och deras uppgifter i tjänsten när den officiella användningen börjar. <br/><br/>Läs mer <CustomLink>om aktuella ärenden och betafasen<Icon></Icon></CustomLink> — här berättar vi om nyheter, nya och planerade funkt bioner och ändringar som genomförs i Kompetensstigen under slutet av året.",
     "hero-button-label": "Öppna Min kompetensstig\n",
-    "hero-content": "Kartlägg dina intressen och dina kompetenser och hitta din utbildnings- eller karriärmöjlighet i Komp betensstigen. Min kompetensstig stöder dig när du söker riktning för dina förmågor och din passion. Du kanske får upp ögonen för helt överraskande möjligheter.\n",
+    "hero-content": "Kartlägg dina intressen och ditt kunnande och hitta din utbildnings- eller karriärmöjligheter i Kompetensstigen. Min kompetensstig stöder dig när du söker riktning för dina förmågor och din passion. Dina ögon kan öppna sig för överraskande möjligheter.\n",
     "hero-title": "I Kompetensstigen hittar du dina utbildnings- och karriärmöjligheter",
     "how-competency-path-helps-you": "Hur hjälper Kompetensstigen dig som en del av andra tjänster?",
-    "how-competency-path-helps-you-content": "Kompetensstigen, Studieinfo, Jobbmarknaden och Opin.fi bildar tillsammans en tjänstehelhet som stöder lärande, karriärplanering och jobbsökning i olika livssituationer. Varje tjänst spelar sin egen roll, men tillsammans erbjuder de dig en tydlig stig för utvecklingen av din kompetens och din karriär.<br/><br/>Om du letar efter en riktning eller din egen stig kan du identifiera dina egna styrkor och intressen i Kompetensstigen och hitta utbildnings- och karriärmöjligheter som är lämpliga för dem. När du har utrett hur du vill gå vidare, hjälper Studieinfo, Jobbmarknaden och Opin.fi dig att söka dig till dem.",
-    "how-competency-path-helps-you-opinfi-description": "Opin.fi är finländska universitets och yrkeshögskolors gemensamma tjänst där öppna studier är lätt tillgängliga för dig.",
+    "how-competency-path-helps-you-content": "Kompetensstigen, Studieinfo, Jobbmarknaden och Opin.fi bildar tillsammans en tjänstehelhet som stöder lärande, karriärplanering och arbetssökning i olika livssituationer. Varje tjänst spelar sin egen roll, men tillsammans erbjuder de dig en tydlig stig för utvecklingen av ditt kunnande och din karriär.<br/><br/>Om du letar efter en riktning eller din egen stig kan du identifiera dina egna styrkor och intressen i Kompetensstigen och hitta utbildnings- och karriärmöjligheter som är lämpliga för dem. När du har utrett hur du vill gå vidare, hjälper Studieinfo, Jobbmarknaden och Opin.fi dig att söka dig till dem.",
+    "how-competency-path-helps-you-opinfi-description": "Opin.fi är en tjänst som på ett och samma ställe samlar utbudet av öppna studier vid finländska universitet och yrkeshögskolor. Tjänsten är avsedd för alla som vill utveckla sina kunskaper och färdigheter – hitta kompletterande utbildningar och nya färdigheter eller bekanta sig med högskolestudier.  ",
     "how-competency-path-helps-you-opinfi-title": "Opin.fi",
     "how-competency-path-helps-you-opintopolku-description": "Studieinfo erbjuder omfattande information om utbildningar och ansökningstjänster för olika utbildningsnivåer.<br/><br/>Från utbildningsmöjligheterna i Kompetensstigen kan du förflytta dig till Studieinfo för att bekanta dig närmare med utbildningar och söka dig till dem. När du loggar in på Min kompetensstig kan du importera din studiehistorik till din kompetensprofil.",
     "how-competency-path-helps-you-opintopolku-title": "Studieinfo",
-    "how-competency-path-helps-you-tmt-description": "Jobbmarknaden samlar ihop lediga jobb och stöder arbetssökningen och karriärplaneringen.<br/><br/>Från Kompetensstigens karriärmöjligheter kan du förflytta dig till Jobbmarknaden för att bekanta dig med och söka lediga jobb. I framtiden kan du också överföra dina uppgifter mellan Kompetensstigen och Jobbmarknaden. ",
+    "how-competency-path-helps-you-tmt-description": "Jobbmarknaden samlar ihop lediga jobb och stöder arbetssökningen och karriärplaneringen.<br/><br/>Från Kompetensstigens karriärmöjligheter kan du förflytta dig till Jobbmarknaden för att bekanta dig med och söka lediga jobb. I framtiden kan du också överföra dina uppgifter mellan Kompetensstigen och Jobbmarknaden.",
     "how-competency-path-helps-you-tmt-title": "Jobbmarknaden",
     "ohjaaja-call-to-action": "Till vägledar-delen",
-    "ohjaaja-content": "I avsnittet för vägledare hittar du aktuell och högklassig information och metoder som stöd för ditt karriärvägledningsarbete och material som stärker din egen vägledningskompetens.\n",
+    "ohjaaja-content": "I vägledar-delen hittar du aktuell och högklassig information och metoder som stöd för ditt karriärvägledningsarbete och material som stärker din egen vägledningskompetens.\n",
     "ohjaaja-title": "Vägledar-delen",
     "osaamispolkuni-call-to-action": "Min kompetensstig",
     "osaamispolkuni-content": "Kartlägg dina intressen och kompetenser och hitta utbildnings- och karriärmöjligheter. Genom att logga in på Min kompetensstig kan du skapa din egen kompetensprofil och spara dina uppgifter för senare bruk.",
@@ -396,20 +396,20 @@
     "services": {
       "ohjaus": {
         "buttonLabel": "Till stöd för kundarbetet",
-        "content": "I avsnittet Till stöd för kundarbetet hittar du material som du kan använda i ditt eget vägledningsarbete. Avsnittet innehåller till exempel verktyg som du kan använda i vägledningssituationer eller ge som en självständig uppgift till dem som behöver vägledning. \n",
+        "content": "I Till stöd för kundarbetet-delen hittar du material som du kan använda i ditt eget vägledningsarbete. Delen innehåller till exempel verktyg som du kan använda i vägledningssituationer eller ge som en självständig uppgift till dem som behöver vägledning.\n",
         "path": "till-stod-for-kundarbetet",
         "title": "Vill du hitta verktyg för vägledningsarbetet?"
       },
       "tietopalvelu": {
         "buttonLabel": "Informationstjänstens innehåll",
-        "content": "På den här sidan hittar du en översikt över informationstjänstens samtliga rapportsidor. Du kan filtrera listan med hjälp av nyckelord och gå vidare till det informationsinnehåll som intresserar dig.\n",
+        "content": "På den här sidan hittar du en översikt över informationstjänstens samtliga rapportsidor. Du kan filtrera listan med hjälp av nyckelord och gå till det informationsinnehåll som intresserar dig.\n",
         "path": "informationsinnehall",
         "title": "Vill du ha information som stöd för beslutsfattandet i ditt arbete?"
       },
       "title": "Hittar du inte det du söker?",
       "tool": {
         "buttonLabel": "Hitta möjligheter\t",
-        "content": "Berätta vad du kan och vad du är intresserad av och välj lämpliga kompetenser. Hitta lämpliga arbets- och utbildningsmöjligheter utifrån dem.\n",
+        "content": "Berätta vad du kan och vad du är intresserad av och välj kompetenser som lämpar sig för dem. Hitta lämpliga arbets- och utbildningsmöjligheter utifrån dem.\n",
         "path": "verktyg",
         "title": "Vill du snabbt hitta möjligheter som passar dig?"
       }
@@ -444,7 +444,7 @@
       },
       "title": "Annat stöd för reflektion",
       "urataidot": {
-        "label": "Självutvärdering av karriärkompetens"
+        "label": "Verktyget Karriärkompetenser"
       }
     }
   },
@@ -456,7 +456,7 @@
   "osaamispolku": "Kompetensstigen",
   "privacy-cookies": {
     "3rd-party": {
-      "description": "Kompetensstigen använder applikationer från tredje part, såsom YouTube och Power BI, som laddas ner från dessa tjänsters egna servrar. YouTube används i videorna i Kompetensstigens helhet för vägledare. Power BI används för att producera rapportvyer i informationstjänsten. Tredjepartscookies används anonymt för att säkerställa funktionen av applikationer som är inbäddade på webbplatsen och för att förbättra användarupplevelsen. <br/><br/>Inga tredjepartscookies kommer att installeras på din enhet om du inte använder innehåll från externa tjänsteleverantörer. <br/><br/>Tredjepartstjänster eller applikationer som tillhandahålls av tredje part omfattas av respektive tredje parts användarvillkor och andra villkor. <br/><br/>Mer information: <br/><CustomLink1>Microsoft (Power BI)</CustomLink1> <CustomLink2>Google (YouTube)</CustomLink2>",
+      "description": "Kompetensstigen använder applikationer från tredje parter, såsom YouTube och Power BI, som laddas ner från dessa tjänsters egna servrar. YouTube används i videorna i Kompetensstigens helhet för vägledare. Power BI används för att producera rapportvyer i informationstjänsten. Tredjepartscookies används anonymt för att säkerställa funktionen av applikationer som är inbäddade på webbplatsen och för att förbättra användarupplevelsen. <br/><br/>Inga tredjepartscookies kommer att installeras på din enhet om du inte använder innehåll från externa tjänsteleverantörer. <br/><br/>Tredjepartstjänster eller applikationer som tillhandahålls av tredje parter omfattas av respektive tredje parts användarvillkor och andra villkor. <br/><br/>Mer information: <br/><CustomLink1>Microsoft (Power BI)</CustomLink1> <CustomLink2>Google (YouTube)</CustomLink2>",
       "title": "Kompetensstigens tredjepartscookies"
     },
     "blocking": {
@@ -546,15 +546,14 @@
       "title": "Information om överföringen av uppgifter till tredje land och om skyddsåtgärder som vidtas"
     },
     "intro": {
-      "title": "Inledning",
-      "description": "\"Denna dataskyddsbeskrivning beskriver hur personuppgifter behandlas i tjänsten Kompetensstigen. Beskrivningen förklarar också vilka rättigheter de registrerade personerna har och hur dessa rättigheter kan utövas. Som registrerade räknas personer som har skapat en kompetensprofil och personer som är inloggade i vägledarens profil. <br/><br/>Dataskyddsbeskrivningen uppdateras regelbundet. Du hittar alltid den aktuella versionen på denna sida.\"\n"
+      "title": "Inledning"
     },
     "obligation-to-provide": {
-      "description": "Uppgifter lagras i den nationella informationsresursen för kompetenser och behandlas på grundval av lagen om den nationella informationsresursen för kompetenser.",
-      "title": "Skyldighet att tillhandahålla personuppgifter"
+      "description": "Uppgifter lagras i den nationella informationsresursen för kompetenser och behandlas med stöd av lagen om den nationella informationsresursen för kompetenser.",
+      "title": "Skyldighet att ge personuppgifter"
     },
     "recipients-of-personal-data": {
-      "description": "En person kan fritt se, använda och administrera sina egna uppgifter som hen sparat i informationsresursen för kompetenser. Personen kan också själv bestämma till vem uppgifterna överlämnas. <br/><br/>Till skillnad från vad som föreskrivs i lagen om offentlighet i myndigheternas verksamhet och i andra lagar kan Utbildningsstyrelsen endast överlämna uppgifter om personen eller dennes lagliga företrädare har gett sitt samtycke till detta. <br/><br/>Samtycke kan ges till att uppgifter i informationsresursen för kompetenser överlämnas till myndighet eller annan aktör för personens egna syften, även utan hinder från sekretessbestämmelserna. <br/><br/>Dessutom kan samtycke ges till att uppgifter lämnas ut för bedömning, utveckling, annan uppföljning, vägledning och planering av undervisning, utbildning och kompetens. I detta fall får endast nödvändiga uppgifter lämnas ut utan hinder från sekretessbestämmelserna. <br/><br/>Det samtycke som avses i denna paragraf kan ges och när som helst återkallas via tjänsten. Samtycket ska ges frivilligt och uttryckligen, och personen som ger samtycket ska vara medveten om för vilka syften uppgifterna kan användas och överlämnas. Samtycket och meddelandet om att samtycket återkallas ska sparas lika länge som de uppgifter som kan kopplas till personen. <br/><br/>Vad som föreskrivs i 1 mom. om undantag från lagen om offentlighet i myndigheternas verksamhet och andra lagar gäller dock inte utlämnande av uppgifter för arkiveringsändamål enligt allmänt intresse, vetenskapliga och historiska forskningsändamål eller statistiska syften.",
+      "description": "En person kan fritt se, använda och administrera sina egna uppgifter som hen sparat i informationsresursen för kompetenser. Personen kan också själv bestämma till vem uppgifterna överlämnas. <br/><br/>Till skillnad från vad som föreskrivs i lagen om offentlighet i myndigheternas verksamhet och i andra lagar kan Utbildningsstyrelsen endast överlämna uppgifter om personen eller dennes lagliga företrädare har gett sitt samtycke till detta. <br/><br/>Samtycke kan ges till att uppgifter i informationsresursen för kompetenser överlämnas till en myndighet eller en annan aktör för personens egna syften, även utan hinder från sekretessbestämmelserna. <br/><br/>Dessutom kan samtycke ges till att uppgifter överlämnas för bedömning, utveckling, annan uppföljning, vägledning och planering av undervisning, utbildning och kompetens. I detta fall får endast nödvändiga uppgifter överlämnas utan hinder från sekretessbestämmelserna. <br/><br/>Det samtycke som avses i denna paragraf kan ges och när som helst återkallas via tjänsten. Samtycket ska ges frivilligt och uttryckligen, och personen som ger samtycket ska vara medveten om för vilka syften uppgifterna kan användas och överlämnas. Samtycket och meddelandet om att samtycket återkallas ska sparas lika länge som de uppgifter som kan kopplas till personen. <br/><br/>Vad som föreskrivs i 1 mom. om undantag från lagen om offentlighet i myndigheternas verksamhet och andra lagar gäller dock inte överlämnande av uppgifter enligt allmänt intresse för arkiveringsändamål, vetenskapliga och historiska forskningsändamål eller statistiska syften.",
       "title": "Mottagare eller grupper av mottagare av personuppgifter"
     },
     "register-controller": {
@@ -571,7 +570,7 @@
       "title": "Den personuppgiftsansvarige"
     },
     "register-information-content": {
-      "description": "Personen får spara sådana uppgifter om sig själv i informationsresursen för kompetenser som personen själv frivilligt beslutar att spara. Informationen ska relatera till personens utbildnings- och arbetshistorik, kompetenser och planer och mål gällande utbildning, karriär och kompetens. <br/><br/>Ingen sekretessbelagd information eller uppgifter som hör till särskilda kategorier av personuppgifter får ges till informationsresursen. Personen får dock, om hen så önskar, ge till informationsresursen uppgifter om sitt lärdomsprov och sin vetenskapliga forskning, psykologiska test och lämplighetsprov som hen har genomgått, intyg som hen har fått från en läroanstalt, deltagande i föreningsverksamhet, fritidsintressen och andra liknande uppgifter, om sådana uppgifter är nödvändiga för hens utbildnings- och arbetshistorik, kompetenser och planer och mål i anslutning till utbildning, karriär och kompetens. <br/><br/>Utbildningsstyrelsen får dessutom spara val som gäller tjänstens funktioner och uppgifter om personens geografiska område, ålder och språk i informationsresursen.",
+      "description": "Personen får spara sådana uppgifter om sig själv i informationsresursen för kompetenser som personen själv frivilligt beslutar att spara. Informationen ska relatera till personens utbildnings- och arbetshistorik, kunnande och planer och mål gällande utbildning, karriär och kompetens. <br/><br/>Ingen sekretessbelagd information eller uppgifter som hör till särskilda kategorier av personuppgifter får ges till informationsresursen. Personen får dock, om hen så önskar, ge till informationsresursen uppgifter om sitt lärdomsprov och sin vetenskapliga forskning, psykologiska test och lämplighetsprov som hen har genomgått, intyg som hen har fått från en läroanstalt, deltagande i föreningsverksamhet, fritidsintressen och andra liknande uppgifter, om sådana uppgifter är nödvändiga för hens utbildnings- och arbetshistorik, kompetenser och planer och mål i anslutning till utbildning, karriär och kompetens. <br/><br/>Utbildningsstyrelsen får dessutom spara val som gäller tjänstens funktioner och uppgifter om personens geografiska område, ålder och språk i informationsresursen.",
       "ohjaaja": {
         "content": {
           "favorites": {
@@ -647,9 +646,9 @@
           "other-competences": {
             "items": {
               "free-text": "fritt formulerad beskrivning av den egna kompetensen",
-              "skills": "kompetenser"
+              "skills": "kunskaper"
             },
-            "title": "Övriga kompetenser"
+            "title": "Övriga kunskaper"
           },
           "permissions": {
             "items": {
@@ -674,7 +673,7 @@
             "title": "Arbetshistorik"
           }
         },
-        "title": "1:a kategorin av personuppgifter: Individer"
+        "title": "Personuppgiftsgrupp 1: individer"
       }
     },
     "storing-time-of-personal-data": {
