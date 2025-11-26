@@ -142,7 +142,7 @@ const Root = () => {
       <ServiceVariantProvider value="palveluportaali">
         <Outlet />
       </ServiceVariantProvider>
-      <Chatbot lang={language} environment={hostname === 'osaamispolku.fi' ? 'PROD' : 'TST'} />
+      <Chatbot />
       <Footer
         language={language}
         okmLabel={t('footer.logos.okm-label')}
