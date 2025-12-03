@@ -160,7 +160,7 @@ const Block = ({
 }) => {
   return (
     <div
-      className={`mt-10 px-5 sm:px-6 max-w-[1092px] mx-auto print:px-0 print:mx-0 bg-white ${isLast ? 'pb-11' : 'mb-8'}`}
+      className={`mt-10 px-5 sm:px-6 xl:px-0 max-w-[1092px] mx-auto print:px-0 print:mx-0 bg-white ${isLast ? 'pb-11' : 'mb-8'}`}
     >
       <h2 className="text-heading-1-mobile sm:text-heading-1 mb-6">{title}</h2>
       {content && <p className="text-body-lg-mobile sm:text-body-lg mb-8">{content}</p>}
