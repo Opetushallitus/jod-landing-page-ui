@@ -1,18 +1,67 @@
 {
   "footer": {
+    "feedback-button-label": "Give feedback",
+    "feedback-content": "We want to develop Competency Path to better meet your specific needs. Give us your feedback to support our development work.",
+    "feedback-title": "Tell us what you thought about the service!",
+    "more-info-description": "Below you will find general and up-to-date information about the service.",
     "more-info-links": {
       "about-service": "About the service",
-      "privacy-and-cookies": "Privacy notice and cookies",
-      "data-sources": "Data sources",
-      "ai-usage": "About the use of AI",
-      "accessibility": "About accessibility"
-    }
+      "accessibility": "Accessibility statement",
+      "ai-usage": "About the use of artificial intelligence ",
+      "data-sources": "Sources of data",
+      "privacy-and-cookies": "Privacy policy and cookies"
+    },
+    "more-info-title": "Do you want to know more about Competency Path?"
   },
+  "home": {
+    "hero-button-label": "Go to Competency Path",
+    "hero-content": "Map out your interests and competence. Use them to find options that suit you. Competency Path supports you in finding a direction for your skills and passions. It may open your eyes to unexpected possibilities.",
+    "hero-title": "Competency Path - find your own direction",
+    "how-competency-path-helps-you": "How does Competency Path help you as part of other services?",
+    "how-competency-path-helps-you-content": "Competency Path, Studyinfo, Job Market and Opin.fi form a service package that supports learning, career planning and job search in different life situations. Each service has its own role, but together they provide you with a clear path for your competence and career development.<br/><br/>If you are looking for a direction or your own path, Competency Path allows you to identify your strengths and interests and find suitable training and career opportunities. Once you have found out how you want to proceed, Studyinfo, Job Market and Opin.fi will help you to apply for them.",
+    "how-competency-path-helps-you-opinfi-description": "Opin.fi is a service that brings together the open courses offered by Finnish universities and universities of applied sciences in one place.<br/><br/>Opin.fi is aimed at everyone who wants to develop their skills - looking for supplementary education and new skills or getting acquainted with higher education studies. ",
+    "how-competency-path-helps-you-opinfi-title": "Opin.fi",
+    "how-competency-path-helps-you-opintopolku-description": "The Study Path provides comprehensive information on education opportunities and application services for different levels of education.<br/><br/>Once you have found an interesting education opportunity in Competency Path, you can go to Studyinfo to learn more and apply for training. When you log in to your competence profile in My Competency Path, you can import your education history from Studyinfo.",
+    "how-competency-path-helps-you-opintopolku-title": "Studyinfo",
+    "how-competency-path-helps-you-tmt-description": "Job Market brings together vacancies and provides support in job search and career planning.<br/><br/>Once you have found an interesting job opportunity in Competency Path, you can go to Job Market to explore and apply for vacancies. You can also transfer your information between your My Competency Path competence profile and Job Market job search profile.",
+    "how-competency-path-helps-you-tmt-title": "Job Market",
+    "ohjaaja-call-to-action": "Guidance practitioner section",
+    "ohjaaja-content": "In the guidance practitioner section, you will find up-to-date high-quality information and methods as well as materials to strengthen your own guidance competence.",
+    "ohjaaja-title": "Guidance practitioner section",
+    "osaamispolkuni-call-to-action": "My Competency Path",
+    "osaamispolkuni-content": "Map out your interests and competencies, and find study or career opportunities By logging in to My Competency Path, you can create your own competence profile and save your information for later use.",
+    "osaamispolkuni-title": "My Competency Path",
+    "sections-title": "What makes up Competency Path?",
+    "services": {
+      "ohjaus": {
+        "buttonLabel": "To support customer work",
+        "content": "Use the materials in your guidance work. Find tools that you can use in guidance situations or give the guidance recipient to do independently.",
+        "path": "to-support-customer-work",
+        "title": "Tools for guidance work"
+      },
+      "tietopalvelu": {
+        "buttonLabel": "Contents of the information service",
+        "content": "Explore the overview of the contents of the information service. You can filter the list by keywords and navigate to the information content that interests you.",
+        "title": "Up-to-date information to support decision-making"
+      },
+      "title": "Didn't find what you were looking for?",
+      "tool": {
+        "buttonLabel": "Find opportunities",
+        "content": "Tell us what you know and what you are interested in and select the competencies that match them. Find suitable education and employment opportunities based on them.",
+        "path": "tool",
+        "title": "Quickly find suitable opportunities"
+      }
+    },
+    "tietopalvelu-call-to-action": "Information service",
+    "tietopalvelu-content": "The information service compiles information related to education, the labour market and competence to support decision-making. You can view the data sets that interest you from different perspectives using different filters.",
+    "tietopalvelu-title": "Information service"
+  },
+  "osaamispolku": "Competency Path",
   "slugs": {
     "about-service": "about-service",
-    "privacy-and-cookies": "privacy-notice-and-cookies",
-    "data-sources": "data-sources",
+    "accessibility": "about-accessibility",
     "ai-usage": "about-the-use-of-ai",
-    "accessibility": "about-accessibility"
+    "data-sources": "data-sources",
+    "privacy-and-cookies": "privacy-notice-and-cookies"
   }
 }
