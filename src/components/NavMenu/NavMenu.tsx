@@ -109,6 +109,8 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       selectedLanguage={language}
       serviceVariant="palveluportaali"
       externalLinkIconAriaLabel={t('external-link')}
+      ariaLabel={t('navigation-menu')}
+      navigationAriaLabel={t('main-navigation')}
     />
   );
 };
