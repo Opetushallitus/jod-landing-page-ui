@@ -47,6 +47,14 @@ const useAddBetaFeedbackNote = () => {
       ),
       isCollapsed: false,
     }));
+    addTemporaryNote(() => ({
+      id: 'maintenance-warning-note',
+      title: 'Käyttökatko',
+      description:
+        'Osaamispolkuni -osio on pois käytöstä keskiviikkona 21.1.2026 klo 12-14 huoltotoimenpiteiden vuoksi. Pahoittelemme häiriötä!',
+      variant: 'warning',
+      isCollapsed: false,
+    }));
   }, [addTemporaryNote, t]);
 };
 
