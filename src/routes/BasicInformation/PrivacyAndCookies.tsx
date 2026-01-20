@@ -356,6 +356,10 @@ const PrivacyAndCookies = () => {
         navTitle: t('privacy-policy-and-cookies.automatic-handling.title'),
         content: <p>{t('privacy-policy-and-cookies.automatic-handling.description')}</p>,
       },
+      {
+        navTitle: t('privacy-policy-and-cookies.chatbot.title'),
+        content: <p>{t('privacy-policy-and-cookies.chatbot.description')}</p>,
+      },
     ];
   }, [ohjaajaRegisterContent, t, yksiloRegisterContent]);
 
