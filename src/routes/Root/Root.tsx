@@ -132,7 +132,6 @@ const Root = () => {
           serviceBarVariant="palveluportaali"
           serviceBarTitle={t('service-banner')}
           translations={{
-            versionLabel: t('version'),
             showAllNotesLabel: t('show-all'),
             ariaLabelCloseNote: t('note.close'),
           }}
