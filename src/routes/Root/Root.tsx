@@ -49,9 +49,8 @@ const useAddBetaFeedbackNote = () => {
     }));
     addTemporaryNote(() => ({
       id: 'maintenance-warning-note',
-      title: 'Käyttökatko',
-      description:
-        'Osaamispolkuni -osio on pois käytöstä keskiviikkona 21.1.2026 klo 12-14 huoltotoimenpiteiden vuoksi. Pahoittelemme häiriötä!',
+      title: t('maintenance.note.title'),
+      description: t('maintenance.note.description'),
       variant: 'warning',
       isCollapsed: false,
     }));
