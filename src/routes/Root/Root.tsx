@@ -47,13 +47,6 @@ const useAddBetaFeedbackNote = () => {
       ),
       isCollapsed: false,
     }));
-    addTemporaryNote(() => ({
-      id: 'maintenance-warning-note',
-      title: t('maintenance.note.title'),
-      description: t('maintenance.note.description'),
-      variant: 'warning',
-      isCollapsed: false,
-    }));
   }, [addTemporaryNote, t]);
 };
 

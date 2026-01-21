@@ -410,12 +410,6 @@
   },
   "language-selection": "Käyttökieli",
   "login": "Kirjaudu sisään",
-  "maintenance": {
-    "note": {
-      "description": "Osaamispolkuni -osio on pois käytöstä keskiviikkona 21.1.2026 klo 12-14 huoltotoimenpiteiden vuoksi. Pahoittelemme häiriötä!",
-      "title": "Käyttökatko"
-    }
-  },
   "menu": "Valikko",
   "navigation": {
     "external": {
