@@ -33,11 +33,11 @@ const AiUsage = () => {
       {
         navTitle: t('ai-usage.why-ai.title'),
         content: (
-          <div>
+          <div className="max-w-full">
             <p className="mb-6 text-body-lg-mobile sm:text-body-lg">{t('ai-usage.why-ai.description')}</p>
             <p className="mb-5 text-body-md-mobile sm:text-body-md">{t('ai-usage.why-ai.possibilities.title')}</p>
 
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               <ArticleAccordion
                 titleText={t('ai-usage.why-ai.possibilities.item-1.title')}
                 content={<Trans i18nKey="ai-usage.why-ai.possibilities.item-1.description" />}
