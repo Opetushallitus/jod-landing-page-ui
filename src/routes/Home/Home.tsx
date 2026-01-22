@@ -2,6 +2,15 @@ import heroSrc1 from '@/../assets/landing-page-hero-1.jpg';
 import heroSrc2 from '@/../assets/landing-page-hero-2.jpg';
 import heroSrc3 from '@/../assets/landing-page-hero-3.jpg';
 import heroSrc4 from '@/../assets/landing-page-hero-4.jpg';
+import {
+  LogoOpinfi,
+  LogoOpintopolkuEn,
+  LogoOpintopolkuFi,
+  LogoOpintopolkuSv,
+  LogoTyomarkkinatoriEn,
+  LogoTyomarkkinatoriFi,
+  LogoTyomarkkinatoriSv,
+} from '@/components/Logos';
 import { getLinkTo } from '@/utils/routeUtils';
 import { Button, cx, HeroCard, tidyClasses as tc } from '@jod/design-system';
 import { JodOpenInNew } from '@jod/design-system/icons';
@@ -221,6 +230,55 @@ const Home = () => {
     i18n: { language },
   } = useTranslation();
 
+  const opintopolkuLogo = React.useMemo(() => {
+    switch (language) {
+      case 'sv':
+        return (
+          <LogoOpintopolkuSv
+            aria-label={t('home.how-competency-path-helps-you-opintopolku-title')}
+            className="h-7 max-w-full"
+          />
+        );
+      case 'en':
+        return (
+          <LogoOpintopolkuEn
+            aria-label={t('home.how-competency-path-helps-you-opintopolku-title')}
+            className="h-7 max-w-full"
+          />
+        );
+      default:
+        return (
+          <LogoOpintopolkuFi aria-label={t('home.how-competency-path-helps-you-opintopolku-title')} className="h-7" />
+        );
+    }
+  }, [language, t]);
+
+  const tmtLogo = React.useMemo(() => {
+    switch (language) {
+      case 'sv':
+        return (
+          <LogoTyomarkkinatoriSv
+            aria-label={t('home.how-competency-path-helps-you-tmt-title')}
+            className="h-10 max-w-full"
+          />
+        );
+      case 'en':
+        return (
+          <LogoTyomarkkinatoriEn
+            aria-label={t('home.how-competency-path-helps-you-tmt-title')}
+            className="h-10 max-w-full"
+          />
+        );
+      default:
+        return (
+          <LogoTyomarkkinatoriFi
+            aria-label={t('home.how-competency-path-helps-you-tmt-title')}
+            className="h-10 max-w-full"
+          />
+        );
+    }
+  }, [language, t]);
+
   return (
     <main role="main" className="mx-auto w-full max-w-(--breakpoint-xl) bg-white" id="jod-main">
       <title>{t('osaamispolku')}</title>
@@ -234,9 +292,7 @@ const Home = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-7 sm:flex-wrap mt-6">
           <div className="flex flex-col gap-5 md:max-w-[320px]">
-            <div className="md:text-heading-3 text-heading-3-mobile ">
-              {t('home.how-competency-path-helps-you-opintopolku-title')}
-            </div>
+            <div className="h-[70px] flex flex-col justify-center items-start">{opintopolkuLogo}</div>
             <div>
               <Trans
                 i18nKey="home.competency-path-help.opintopolku.text-1"
@@ -256,9 +312,7 @@ const Home = () => {
             <div>{t('home.competency-path-help.opintopolku.text-2')}</div>
           </div>
           <div className="flex flex-col gap-5 md:max-w-[320px]">
-            <div className="sm:text-heading-3 text-heading-3-mobile">
-              {t('home.how-competency-path-helps-you-tmt-title')}
-            </div>
+            <div className="h-[70px] flex flex-col justify-center items-start">{tmtLogo}</div>
             <div>
               <Trans
                 i18nKey="home.competency-path-help.tyomarkkinatori.text-1"
@@ -278,8 +332,11 @@ const Home = () => {
             <div>{t('home.competency-path-help.tyomarkkinatori.text-2')}</div>
           </div>
           <div className="flex flex-col gap-5 md:max-w-[320px]">
-            <div className="sm:text-heading-3 text-heading-3-mobile">
-              {t('home.how-competency-path-helps-you-opinfi-title')}
+            <div className="h-[70px] flex flex-col justify-center items-start">
+              <LogoOpinfi
+                aria-label={t('home.how-competency-path-helps-you-opinfi-title')}
+                className="h-6 max-w-full"
+              />
             </div>
             <div>
               <Trans
