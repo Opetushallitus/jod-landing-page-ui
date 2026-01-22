@@ -152,13 +152,6 @@
       "title": "Miksi tekoälyä käytetään Osaamispolussa?"
     }
   },
-  "beta": {
-    "note": {
-      "description": "Kerro mielipiteesi ja auta meitä kehittämään palvelua.",
-      "title": "Kokeile palvelua",
-      "to-feedback": "Siirry kyselyyn"
-    }
-  },
   "breadcrumb": "Murupolku",
   "close-menu": "Sulje valikko",
   "competency-path-portal": "Osaamispolun etusivu",

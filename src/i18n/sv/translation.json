@@ -152,13 +152,6 @@
       "title": "Varför används artificiell intelligens i Kompetensstigen?"
     }
   },
-  "beta": {
-    "note": {
-      "description": "Berätta vad du tycker och hjälp oss att förbättra tjänsten.",
-      "title": "Prova tjänsten",
-      "to-feedback": "Öppna enkäten"
-    }
-  },
   "breadcrumb": "Synlig sökväg",
   "close-menu": "Stäng menyn",
   "competency-path-portal": "Kompetensstigens startsida",
