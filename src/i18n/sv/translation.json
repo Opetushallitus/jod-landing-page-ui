@@ -334,7 +334,6 @@
     "cooperation-title": "Kompetensstigen har genomförts i samarbete mellan följande parter:",
     "copyright": "© Kompetensstigen 2026. Alla rättigheter förbehålls.",
     "feedback-button-label": "Ge respons",
-    "feedback-content": "Vi vill utveckla Kompetensstigen så att den bättre motsvarar just dina behov. Ge oss respons, vi beaktar den i utvecklingsarbetet.",
     "feedback-title": "Berätta vad du tyckte om tjänsten!",
     "funding-title": "Finansieringen av tjänsten kommer från EU:s facilitet för återhämtning och resiliens (RRF).",
     "logos": {
@@ -343,7 +342,6 @@
       "oph-label": "Utbildningsstyrelsen",
       "tem-label": "Arbets- och näringsministeriet"
     },
-    "more-info-description": "Funderar du på dataskyddet eller hur artificiell intelligens används i tjänsten? Nedan hittar du allmän information om tjänsten och dess användning.",
     "more-info-links": {
       "about-service": "Information om tjänsten",
       "accessibility": "Tillgänglighetsutlåtande",
@@ -355,19 +353,10 @@
   },
   "front-page": "Framsida",
   "home": {
-    "beta": "Kompetensstigen är i betatestningsfasen fram till slutet av 2025",
-    "beta-content-1": "Välkommen att prova betaversionen av Kompetensstigen. Vi utvecklar kontinuerligt Kompetensstigens funktioner samt kvaliteten på de resultat och förslag som artificiell intelligens erbjuder dig. Du kan hjälpa oss i utvecklingsarbetet genom att använda tjänsten och ge respons. Låt oss tillsammans utveckla Kompetensstigen till den bästa tjänsten för dig!",
-    "beta-content-2": "Den officiella användningen av Kompetensstigen inleds i början av 2026. Vi strävar efter att bevara de kompetensprofiler som skapats i betatestningsfasen och deras uppgifter i tjänsten när den officiella användningen börjar. <br/><br/>Läs mer <CustomLink>om aktuella ärenden och betafasen<Icon></Icon></CustomLink> — här berättar vi om nyheter, nya och planerade funkt bioner och ändringar som genomförs i Kompetensstigen under slutet av året.",
-    "hero-button-label": "Öppna Min kompetensstig\n",
-    "hero-content": "Kartlägg dina intressen och ditt kunnande och hitta din utbildnings- eller karriärmöjligheter i Kompetensstigen. Min kompetensstig stöder dig när du söker riktning för dina förmågor och din passion. Dina ögon kan öppna sig för överraskande möjligheter.\n",
-    "hero-title": "I Kompetensstigen hittar du dina utbildnings- och karriärmöjligheter",
     "how-competency-path-helps-you": "Hur hjälper Kompetensstigen dig som en del av andra tjänster?",
     "how-competency-path-helps-you-content": "Kompetensstigen, Studieinfo, Jobbmarknaden och Opin.fi bildar tillsammans en tjänstehelhet som stöder lärande, karriärplanering och arbetssökning i olika livssituationer. Varje tjänst spelar sin egen roll, men tillsammans erbjuder de dig en tydlig stig för utvecklingen av ditt kunnande och din karriär.<br/><br/>Om du letar efter en riktning eller din egen stig kan du identifiera dina egna styrkor och intressen i Kompetensstigen och hitta utbildnings- och karriärmöjligheter som är lämpliga för dem. När du har utrett hur du vill gå vidare, hjälper Studieinfo, Jobbmarknaden och Opin.fi dig att söka dig till dem.",
-    "how-competency-path-helps-you-opinfi-description": "Opin.fi är en tjänst som på ett och samma ställe samlar utbudet av öppna studier vid finländska universitet och yrkeshögskolor. Tjänsten är avsedd för alla som vill utveckla sina kunskaper och färdigheter – hitta kompletterande utbildningar och nya färdigheter eller bekanta sig med högskolestudier.  ",
     "how-competency-path-helps-you-opinfi-title": "Opin.fi",
-    "how-competency-path-helps-you-opintopolku-description": "Studieinfo erbjuder omfattande information om utbildningar och ansökningstjänster för olika utbildningsnivåer.<br/><br/>Från utbildningsmöjligheterna i Kompetensstigen kan du förflytta dig till Studieinfo för att bekanta dig närmare med utbildningar och söka dig till dem. När du loggar in på Min kompetensstig kan du importera din studiehistorik till din kompetensprofil.",
     "how-competency-path-helps-you-opintopolku-title": "Studieinfo",
-    "how-competency-path-helps-you-tmt-description": "Jobbmarknaden samlar ihop lediga jobb och stöder arbetssökningen och karriärplaneringen.<br/><br/>Från Kompetensstigens karriärmöjligheter kan du förflytta dig till Jobbmarknaden för att bekanta dig med och söka lediga jobb. I framtiden kan du också överföra dina uppgifter mellan Kompetensstigen och Jobbmarknaden.",
     "how-competency-path-helps-you-tmt-title": "Jobbmarknaden",
     "ohjaaja-call-to-action": "Till vägledar-delen",
     "ohjaaja-content": "I vägledar-delen hittar du aktuell och högklassig information och metoder som stöd för ditt karriärvägledningsarbete och material som stärker din egen vägledningskompetens.\n",
@@ -375,26 +364,21 @@
     "osaamispolkuni-call-to-action": "Min kompetensstig",
     "osaamispolkuni-content": "Kartlägg dina intressen och kompetenser och hitta utbildnings- och karriärmöjligheter. Genom att logga in på Min kompetensstig kan du skapa din egen kompetensprofil och spara dina uppgifter för senare bruk.",
     "osaamispolkuni-title": "Min kompetensstig",
-    "sections-title": "Kompetensstigen består av tre delar:",
     "services": {
       "ohjaus": {
         "buttonLabel": "Till stöd för kundarbetet",
         "content": "I Till stöd för kundarbetet-delen hittar du material som du kan använda i ditt eget vägledningsarbete. Delen innehåller till exempel verktyg som du kan använda i vägledningssituationer eller ge som en självständig uppgift till dem som behöver vägledning.\n",
-        "path": "till-stod-for-kundarbetet",
-        "title": "Vill du hitta verktyg för vägledningsarbetet?"
+        "path": "till-stod-for-kundarbetet"
       },
       "tietopalvelu": {
         "buttonLabel": "Informationstjänstens innehåll",
         "content": "På den här sidan hittar du en översikt över informationstjänstens samtliga rapportsidor. Du kan filtrera listan med hjälp av nyckelord och gå till det informationsinnehåll som intresserar dig.\n",
-        "path": "informationsinnehall",
-        "title": "Vill du ha information som stöd för beslutsfattandet i ditt arbete?"
+        "path": "informationsinnehall"
       },
-      "title": "Hittar du inte det du söker?",
       "tool": {
         "buttonLabel": "Hitta möjligheter\t",
         "content": "Berätta vad du kan och vad du är intresserad av och välj kompetenser som lämpar sig för dem. Hitta lämpliga arbets- och utbildningsmöjligheter utifrån dem.\n",
-        "path": "verktyg",
-        "title": "Vill du snabbt hitta möjligheter som passar dig?"
+        "path": "verktyg"
       }
     },
     "tietopalvelu-call-to-action": "Till informationstjänst",

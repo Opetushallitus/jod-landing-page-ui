@@ -334,7 +334,6 @@
     "cooperation-title": "Osaamispolku on toteutettu yhteistyössä seuraavien tahojen toimesta:",
     "copyright": "© Osaamispolku 2026. Kaikki oikeudet pidätetään.",
     "feedback-button-label": "Anna palautetta",
-    "feedback-content": "Haluamme kehittää Osaamispolkua vastaamaan paremmin juuri sinun tarpeitasi. Anna meille palautetta ja huomioimme sen kehitystyössä.",
     "feedback-title": "Kerro meille, mitä pidit palvelusta!",
     "funding-title": "Palvelu on rahoitettu EU:n elpymis- ja palautumistukivälineellä (RRF).",
     "logos": {
@@ -343,7 +342,6 @@
       "oph-label": "Opetushallitus",
       "tem-label": "Työ- ja elinkeinoministeriö"
     },
-    "more-info-description": "Mietityttääkö tietosuoja tai tekoälyn hyödyntäminen palvelussa? Alta löydät kootusti yleistä tietoa palvelusta ja sen käytöstä.",
     "more-info-links": {
       "about-service": "Tietoa palvelusta",
       "accessibility": "Saavutettavuusseloste",
@@ -355,19 +353,10 @@
   },
   "front-page": "Etusivu",
   "home": {
-    "beta": "Osaamispolku on betatestausvaiheessa vuoden 2025 loppuun",
-    "beta-content-1": "Tervetuloa kokeilemaan Osaamispolun beta-versiota. Kehitämme Osaamispolun toiminnallisuuksia sekä tekoälyn sinulle tarjoamien tulosten ja ehdotusten laatua jatkuvasti. Voit auttaa meitä kehitystyössä käyttämällä palvelua ja antamalla palautetta. Kehitetään Osaamispolusta yhdessä paras palvelu juuri sinulle!",
-    "beta-content-2": "Osaamispolun virallinen käyttö alkaa vuoden 2026 alussa. Pyrimme säilyttämään Beta-testausvaiheessa luodut osaamisprofiilit ja niiden tiedot palvelussa virallisen käytön alkaessa. <br/><br/>Lue lisää <CustomLink>ajankohtaisista asioista ja beta-vaiheesta<Icon></Icon></CustomLink> — kerromme täällä uutisista, uusista ja suunnitteilla olevista toiminnallisuuksista sekä Osaamispolkuun loppuvuoden aikana tulevista muutoksista.",
-    "hero-button-label": "Siirry Osaamispolkuuni\n",
-    "hero-content": "Kartoita kiinnostuksesi ja osaamisesi – ja löydä koulutus- tai työmahdollisuutesi Osaamispolustani. Osaamispolkuni tukee, kun haet suuntaa kyvyillesi ja intohimollesi. Silmäsi saattavat avautua yllättävillekin mahdollisuuksille.\n",
-    "hero-title": "Osaamispolusta löydät koulutus- ja työmahdollisuutesi",
     "how-competency-path-helps-you": "Miten Osaamispolku auttaa sinua osana muita palveluita?",
     "how-competency-path-helps-you-content": "Osaamispolku, Opintopolku, Työmarkkinatori ja Opin.fi muodostavat yhdessä palvelukokonaisuuden, joka tukee oppimista, urasuunnittelua ja työnhakua eri elämäntilanteissa. Jokaisella palvelulla on oma roolinsa, mutta yhdessä ne tarjoavat sinulle selkeän polun osaamisesi ja urasi kehittämiseen.<br/><br/>Jos etsit suuntaa tai omaa polkuasi, Osaamispolussa voit tunnistaa omat vahvuudet ja kiinnostukseksi sekä löytää niihin sopivia koulutus- ja työmahdollisuuksia. Kun olet selvittänyt miten haluat edetä, Opintopolku, Työmarkkinatori ja Opin.fi auttavat sinua hakeutumaan niihin.",
-    "how-competency-path-helps-you-opinfi-description": "Opin.fi on palvelu, joka kokoaa suomalaisten yliopistojen ja ammattikorkeakoulujen avoimet opintotarjonnat yhteen paikkaan. Palvelu on tarkoitettu kaikille, jotka haluavat kehittää osaamistaan – etsiä täydentävää koulutusta ja uusia taitoja tai tutustumista korkeakouluopintoihin.  ",
     "how-competency-path-helps-you-opinfi-title": "Opin.fi",
-    "how-competency-path-helps-you-opintopolku-description": "Opintopolku tarjoaa kattavat tiedot koulutuksista ja hakupalvelut eri koulutusasteille.<br/><br/>Osaamispolun koulutusmahdollisuuksista voit siirtyä Opintopolkuun tutustumaan tarkemmin ja hakeutumaan koulutuksiin. Kirjautuessasi Osaamispolkuuni voit tuoda opintohistoriasi osaamisprofiililisi.",
     "how-competency-path-helps-you-opintopolku-title": "Opintopolku",
-    "how-competency-path-helps-you-tmt-description": "Työmarkkinatori kokoaa yhteen avoimet työpaikat ja tukee työnhakua sekä urasuunnittelua.<br/><br/>Osaamispolun työmahdollisuuksista voit siirtyä Työmarkkinatorille tutustumaan ja hakemaan avoimia työpaikkoja. Tulevaisuudessa voit myös siirtää tietojasi Osaamispolun ja Työmarkkinatorin välillä.",
     "how-competency-path-helps-you-tmt-title": "Työmarkkinatori",
     "ohjaaja-call-to-action": "Ohjaajan osioon",
     "ohjaaja-content": "Ohjaajan osiosta löydät uraohjaustyösi tueksi ajantasaista laadukasta tietoa ja menetelmiä sekä omaa ohjausosaamistasi vahvistavia materiaaleja.\n",
@@ -375,26 +364,21 @@
     "osaamispolkuni-call-to-action": "Osaamispolkuni",
     "osaamispolkuni-content": "Kartoita kiinnostuksesi ja osaamisesi, sekä löydä koulutus- ja työmahdollisuuksia. Kirjautumalla Osaamispolkuuni voit luoda oman osaamisprofiilisi ja tallentaa tietosi myöhempää käyttöä varten.",
     "osaamispolkuni-title": "Osaamispolkuni",
-    "sections-title": "Osaamispolku koostuu kolmesta osiosta:",
     "services": {
       "ohjaus": {
         "buttonLabel": "Asiakastyön tueksi",
         "content": "Asiakastyön tueksi osiosta löydät materiaaleja, joita voit hyödyntää omassa ohjaustyössäsi. Osiossa on esimerkiksi työkaluja, joita voit käyttää ohjaustilanteissa tai antaa ohjattaville itsenäisesti tehtäväksi. \n",
-        "path": "asiakastyon-tueksi",
-        "title": "Haluatko löytää ohjaustyöhön työkaluja?"
+        "path": "asiakastyon-tueksi"
       },
       "tietopalvelu": {
         "buttonLabel": "Tietopalvelun sisällöt",
         "content": "Tältä sivulta näet kokonaiskuvan kaikista tietopalvelun raporttisivuista. Voit suodattaa listausta avainsanojen avulla ja siirtyä sinua kiinnostavan tietosisällön pariin.\n",
-        "path": "tietosisallot",
-        "title": "Haluatko tietoa päätöksenteon tueksi työssäsi?"
+        "path": "tietosisallot"
       },
-      "title": "Etkö löydä vielä etsimääsi?",
       "tool": {
         "buttonLabel": "Löydä mahdollisuuksia\t",
         "content": "Kerro, mitä osaat ja mistä olet kiinnostunut, ja valitse niihin sopivia osaamisia. Löydä niiden perusteella sinulle sopivia työ- ja koulutusmahdollisuuksia.\n",
-        "path": "tyokalu",
-        "title": "Haluatko löytää sinulle sopivia mahdollisuuksia nopeasti?"
+        "path": "tyokalu"
       }
     },
     "tietopalvelu-call-to-action": "Tietopalveluun",

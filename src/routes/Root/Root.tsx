@@ -116,11 +116,11 @@ const Root = () => {
         cooperationTitle={t('footer.cooperation-title')}
         fundingTitle={t('footer.funding-title')}
         moreInfoTitle={t('footer.more-info-title')}
-        moreInfoDescription={t('footer.more-info-description')}
+        moreInfoDescription={t('footer.more-info.description')}
         moreInfoLinks={moreInfoLinks}
         moreInfoComponent={Link}
         feedbackTitle={t('footer.feedback-title')}
-        feedbackContent={t('footer.feedback-content')}
+        feedbackContent={t('footer.feedback.content')}
         feedbackButtonLabel={t('footer.feedback-button-label')}
         feedbackOnClick={() => setFeedbackVisible(true)}
         feedbackBgImageClassName="bg-[url(@/../assets/feedback.jpg)] bg-cover bg-[50%_50%]"
