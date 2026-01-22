@@ -1,4 +1,60 @@
 {
+  "footer": {
+    "feedback": {
+      "content": "Haluamme kehittää Osaamispolkua vastaamaan paremmin juuri sinun tarpeitasi. Anna meille palautetta kehitystyömme tukemiseksi."
+    },
+    "more-info": {
+      "description": "Alta löydät yleistä ja ajankohtaista tietoa palvelusta."
+    }
+  },
+  "home": {
+    "competency-path-help": {
+      "opinfi": {
+        "text-1": "<CustomLink>Opin.fi<Icon></Icon></CustomLink> on palvelu, joka kokoaa suomalaisten yliopistojen ja ammattikorkeakoulujen avoimet opintotarjonnat yhteen paikkaan.",
+        "text-2": "Opin.fi on tarkoitettu kaikille, jotka haluavat kehittää osaamistaan – etsiä täydentävää koulutusta, hankkia uusia taitoja tai tutustua korkeakouluopintoihin.",
+        "url": "https://opin.fi/fi"
+      },
+      "opintopolku": {
+        "text-1": "<CustomLink>Opintopolku<Icon></Icon></CustomLink> tarjoaa kattavat tiedot koulutuksista ja hakupalvelut eri koulutusasteille.",
+        "text-2": "Kun olet löytänyt Osaamispolussa mielenkiintoisen koulutusmahdollisuuden, voit siirtyä Opintopolkuun tutustumaan tarkemmin ja hakeutumaan koulutuksiin. Kirjautuessasi Osaamispolussani osaamisprofiiliisi voit tuoda Opintopolusta koulutushistoriasi.",
+        "url": "https://opintopolku.fi/konfo/fi/"
+      },
+      "tyomarkkinatori": {
+        "text-1": "<CustomLink>Työmarkkinatori<Icon></Icon></CustomLink> kokoaa yhteen avoimet työpaikat ja tukee työnhaussa sekä urasuunnittelussa.",
+        "text-2": "Kun olet löytänyt Osaamispolussa mielenkiintoisen työmahdollisuuden, voit siirtyä Työmarkkinatorille tutustumaan ja hakemaan avoimia työpaikkoja. Voit myös siirtää tietojasi Osaamispolkuni osaamisprofiiliisi ja Työmarkkinatorin työnhakuprofiilin välillä.",
+        "url": "https://tyomarkkinatori.fi/"
+      }
+    },
+    "hero": {
+      "content": "Kartoita kiinnostuksesi ja osaamisesi. Löydä niiden perusteella sinulle sopivia vaihtoehtoja. Osaamispolkuni tukee, kun haet suuntaa kyvyillesi ja intohimoillesi. Silmäsi saattavat avautua yllättävillekin mahdollisuuksille.",
+      "link-text": "Siirry Osaamispolkuuni",
+      "title": "Osaamispolku - löydä oma suuntasi"
+    },
+    "palvelut": {
+      "ohjaus": {
+        "title": "Työkaluja ohjaustyöhön"
+      },
+      "tietopalvelu": {
+        "title": "Ajankohtaista tietoa päätöksenteon tueksi"
+      },
+      "title": "Etkö löytänyt etsimääsi?",
+      "tool": {
+        "title": "Sopivia mahdollisuuksia nopeasti"
+      }
+    },
+    "personal-guidance": {
+      "content": "Ohjaus- ja neuvontapalveluista löytyvät palvelut auttavat sinua työ- ja koulutusvaihtoehtoihin liittyvässä pohdinnassa. Rajaa palveluiden listaa sinua kiinnostavien teemojen ja esimerkiksi asuinpaikkasi perusteella, jotta löydät sinulle parhaiten sopivat palvelut.",
+      "link-text": "Siirry Ohjaus- ja neuvontapalveluihin",
+      "title": "Tarvitsetko henkilökohtaista ohjausta?"
+    },
+    "sections": {
+      "title": "Mistä Osaamispolku muodostuu?"
+    },
+    "welcome": {
+      "content": "Osaamispolku-palvelu on julkaistu. Palvelua kehitetään edelleen käyttäjäpalautteen pohjalta. Toiminnot voivat muuttua ja uusia ominaisuuksia tulee lisää säännöllisesti – kiitos kun olet mukana matkassa!",
+      "title": "Tervetuloa Osaamispolkuun!"
+    }
+  },
   "main-navigation": "Päänavigaatio",
   "navigation-menu": "Valikko",
   "no-match": {
@@ -11,8 +67,8 @@
   },
   "privacy-policy-and-cookies": {
     "chatbot": {
-      "title": "Osaamispolun neuvontabotti",
-      "description": "Osaamispolku-palvelussa toimivan Neuvontabotin keskusteluhistoriaan tallennetaan käyttäjän kirjoittamat hakusanat ja -lauseet. Neuvontabotin hallintakäyttöliittymän käyttäjät ja palvelun ylläpitäjät näkevät Neuvontabotin keskusteluhistorian kirjautumalla kaksivaiheisen kirjautumisen kautta hallintakäyttöliittymään. Keskusteluihin ei tallennu henkilötietoja, sillä sovellus maskaa henkilötiedot maskausalgoritmin avulla. Maskausalgoritmi tunnistaa vakiomuotoiset ja teknisesti mallinnettavissa olevat henkilötiedot. Palvelun käyttäjien ei tule kirjoittaa henkilötietojaan Osaamispolun Neuvontbottiin. Tästä ohjeistetaan käyttäjiä Neuvontabotin tervehdystekstissä. Keskusteluja säilytetään järjestelmässä enintään 24 kuukautta tai palvelun sopimuksen voimassaolon ajan."
+      "description": "Osaamispolku-palvelussa toimivan Neuvontabotin keskusteluhistoriaan tallennetaan käyttäjän kirjoittamat hakusanat ja -lauseet. Neuvontabotin hallintakäyttöliittymän käyttäjät ja palvelun ylläpitäjät näkevät Neuvontabotin keskusteluhistorian kirjautumalla kaksivaiheisen kirjautumisen kautta hallintakäyttöliittymään. Keskusteluihin ei tallennu henkilötietoja, sillä sovellus maskaa henkilötiedot maskausalgoritmin avulla. Maskausalgoritmi tunnistaa vakiomuotoiset ja teknisesti mallinnettavissa olevat henkilötiedot. Palvelun käyttäjien ei tule kirjoittaa henkilötietojaan Osaamispolun Neuvontbottiin. Tästä ohjeistetaan käyttäjiä Neuvontabotin tervehdystekstissä. Keskusteluja säilytetään järjestelmässä enintään 24 kuukautta tai palvelun sopimuksen voimassaolon ajan.",
+      "title": "Osaamispolun neuvontabotti"
     }
   }
 }

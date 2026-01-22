@@ -2,7 +2,6 @@ import heroSrc1 from '@/../assets/landing-page-hero-1.jpg';
 import heroSrc2 from '@/../assets/landing-page-hero-2.jpg';
 import heroSrc3 from '@/../assets/landing-page-hero-3.jpg';
 import heroSrc4 from '@/../assets/landing-page-hero-4.jpg';
-import { TimelineImage } from '@/components/TimelineImage';
 import { getLinkTo } from '@/utils/routeUtils';
 import { Button, cx, HeroCard, tidyClasses as tc } from '@jod/design-system';
 import { JodOpenInNew } from '@jod/design-system/icons';
@@ -71,10 +70,10 @@ const MainCard = () => {
       >
         <HeroCard
           backgroundColor="var(--color-secondary-1-dark)"
-          content={t('home.hero-content')}
-          title={t('home.hero-title')}
+          content={t('home.hero.content')}
+          title={t('home.hero.title')}
           titleLevel={1}
-          buttonLabel={t('home.hero-button-label')}
+          buttonLabel={t('home.hero.link-text')}
           buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
           to={`/yksilo/${language}`}
           linkComponent={ExternalLink}
@@ -171,7 +170,7 @@ const Block = ({
 }) => {
   return (
     <div
-      className={`mt-10 px-5 sm:px-6 xl:px-0 max-w-[1092px] mx-auto print:px-0 print:mx-0 bg-white ${isLast ? 'pb-11' : 'mb-8'}`}
+      className={`sm:pt-5 mt-11 px-5 sm:px-6 xl:px-0 max-w-[1092px] mx-auto print:px-0 print:mx-0 bg-white ${isLast ? 'pb-11' : 'mb-8'}`}
     >
       <h2 className="text-heading-1-mobile sm:text-heading-1 mb-6">{title}</h2>
       {content && <p className="text-body-lg-mobile sm:text-body-lg mb-8">{content}</p>}
@@ -183,23 +182,34 @@ const Block = ({
 interface ContainerProps {
   className?: string;
   children?: React.ReactNode;
+  /** For the css-classname */
+  headingLevel?: 1 | 2;
+  verticalPaddingClass?: string;
 }
 
-const Content = ({ className = '', title, children }: ContainerProps & { title?: string }) => {
+const Content = ({
+  className = '',
+  title,
+  children,
+  headingLevel = 1,
+  verticalPaddingClass = 'py-7 lg:py-8',
+}: ContainerProps & { title?: string }) => {
+  const headingClass = `sm:text-heading-${headingLevel} text-heading-${headingLevel}-mobile`;
+
   return (
     <div
       className={tc([
         'mx-auto',
         'max-w-[1092px]',
-        'py-7 lg:py-8',
+        verticalPaddingClass,
         'px-5 sm:px-6 xl:px-0',
         'flex',
         'flex-col',
-        'gap-7',
+        'gap-5 sm:gap-6',
         className,
       ])}
     >
-      {title && <h2 className="sm:text-heading-1 text-heading-1-mobile max-w-[716px]">{title}</h2>}
+      {title && <h2 className={`${headingClass} max-w-[716px]`}>{title}</h2>}
       {children}
     </div>
   );
@@ -215,39 +225,84 @@ const Home = () => {
     <main role="main" className="mx-auto w-full max-w-(--breakpoint-xl) bg-white" id="jod-main">
       <title>{t('osaamispolku')}</title>
       <MainCard />
-
-      <Content title={t('home.how-competency-path-helps-you')} className="mt-7 lg:mt-8">
+      <Content title={t('home.welcome.title')} className="mt-7 lg:mt-8" verticalPaddingClass="pt-7 lg:pt-8">
+        <p className="text-body-lg whitespace-pre-line max-w-[716px]">{t('home.welcome.content')}</p>
+      </Content>
+      <Content title={t('home.how-competency-path-helps-you')} className="" headingLevel={2}>
         <p className="text-body-lg whitespace-pre-line max-w-[716px]">
           <Trans i18nKey="home.how-competency-path-helps-you-content" />
         </p>
-        <div className="flex flex-col sm:flex-row gap-7 sm:flex-wrap">
+        <div className="flex flex-col sm:flex-row gap-7 sm:flex-wrap mt-6">
           <div className="flex flex-col gap-5 md:max-w-[320px]">
             <div className="md:text-heading-3 text-heading-3-mobile ">
               {t('home.how-competency-path-helps-you-opintopolku-title')}
             </div>
             <div>
-              <Trans i18nKey="home.how-competency-path-helps-you-opintopolku-description" />
+              <Trans
+                i18nKey="home.competency-path-help.opintopolku.text-1"
+                components={{
+                  Icon: <JodOpenInNew size={18} className="ml-1" ariaLabel={t('external-link')} />,
+                  CustomLink: (
+                    <Link
+                      to={t('home.competency-path-help.opintopolku.url')}
+                      className="inline-flex underline text-accent items-center"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
+                  ),
+                }}
+              />
             </div>
+            <div>{t('home.competency-path-help.opintopolku.text-2')}</div>
           </div>
-
           <div className="flex flex-col gap-5 md:max-w-[320px]">
             <div className="sm:text-heading-3 text-heading-3-mobile">
               {t('home.how-competency-path-helps-you-tmt-title')}
             </div>
             <div>
-              <Trans i18nKey="home.how-competency-path-helps-you-tmt-description" />
+              <Trans
+                i18nKey="home.competency-path-help.tyomarkkinatori.text-1"
+                components={{
+                  Icon: <JodOpenInNew size={18} className="ml-1" ariaLabel={t('external-link')} />,
+                  CustomLink: (
+                    <Link
+                      to={t('home.competency-path-help.tyomarkkinatori.url')}
+                      className="inline-flex underline text-accent items-center"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
+                  ),
+                }}
+              />
             </div>
+            <div>{t('home.competency-path-help.tyomarkkinatori.text-2')}</div>
           </div>
           <div className="flex flex-col gap-5 md:max-w-[320px]">
             <div className="sm:text-heading-3 text-heading-3-mobile">
               {t('home.how-competency-path-helps-you-opinfi-title')}
             </div>
-            <div>{t('home.how-competency-path-helps-you-opinfi-description')}</div>
+            <div>
+              <Trans
+                i18nKey="home.competency-path-help.opinfi.text-1"
+                components={{
+                  Icon: <JodOpenInNew size={18} className="ml-1" ariaLabel={t('external-link')} />,
+                  CustomLink: (
+                    <Link
+                      to={t('home.competency-path-help.opinfi.url')}
+                      className="inline-flex underline text-accent items-center"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
+                  ),
+                }}
+              />
+            </div>
+            <div>{t('home.competency-path-help.opinfi.text-2')}</div>
           </div>
         </div>
       </Content>
       <div className="mt-8">
-        <h2 className="mb-8 mx-auto max-w-[1092px] px-5 sm:px-6 xl:px-0 text-heading-1">{t('home.sections-title')}</h2>
+        <h2 className="mb-8 mx-auto max-w-[1092px] px-5 sm:px-6 xl:px-0 text-heading-1">{t('home.sections.title')}</h2>
         <SecondaryCard
           color="#004e82"
           content={t('home.osaamispolkuni-content')}
@@ -277,44 +332,23 @@ const Home = () => {
         />
       </div>
 
-      <Content title={t('home.beta')}>
-        <p className="text-body-lg max-w-[716px]">{t('home.beta-content-1')}</p>
-        <TimelineImage />
-        <div className="max-w-[716px]">
-          <Trans
-            i18nKey="home.beta-content-2"
-            components={{
-              Icon: <JodOpenInNew size={18} className="ml-1" ariaLabel={t('external-link')} />,
-              CustomLink: (
-                <Link
-                  to="https://wiki.eduuni.fi/spaces/JOD/pages/641042258/Osaamispolun+suljettu+betatestaus"
-                  className="inline-flex underline text-accent items-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-              ),
-            }}
-          />
-        </div>
-      </Content>
-
-      <Block title={t('home.services.title')} isLast={true}>
+      <Block title={t('home.palvelut.title')} isLast={true}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-7 sm:gap-y-11 mb-11 sm:mb-[176px]">
           <ServiceBlock
-            title={t('home.services.tool.title')}
+            title={t('home.palvelut.tool.title')}
             text={t('home.services.tool.content')}
             buttonLabel={t('home.services.tool.buttonLabel')}
             to={`/yksilo/${language}/${t('home.services.tool.path')}`}
           />
           <ServiceBlock
-            title={t('home.services.ohjaus.title')}
+            title={t('home.palvelut.ohjaus.title')}
             text={t('home.services.ohjaus.content')}
             buttonLabel={t('home.services.ohjaus.buttonLabel')}
             to={`/ohjaaja/${language}/${t('home.services.ohjaus.path')}`}
             className="bg-secondary-2! active:bg-[#00889b]!"
           />
           <ServiceBlock
-            title={t('home.services.tietopalvelu.title')}
+            title={t('home.palvelut.tietopalvelu.title')}
             text={t('home.services.tietopalvelu.content')}
             buttonLabel={t('home.services.tietopalvelu.buttonLabel')}
             to={`/tietopalvelu/${language}/${t('home.services.tietopalvelu.path')}`}
@@ -322,6 +356,16 @@ const Home = () => {
           />
         </div>
       </Block>
+
+      <SecondaryCard
+        color="#00818A"
+        content={t('home.personal-guidance.content')}
+        title={t('home.personal-guidance.title')}
+        to={t('navigation.extra.palveluhakemisto.url')}
+        buttonLabel={t('home.personal-guidance.link-text')}
+        buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
+        bgImageClassName=" bg-[url(@/../assets/palveluhakemisto.jpg)] bg-cover bg-[50%_50%]"
+      />
     </main>
   );
 };

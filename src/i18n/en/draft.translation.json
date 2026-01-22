@@ -1,4 +1,60 @@
 {
+  "footer": {
+    "feedback": {
+      "content": "We want to develop Competency Path to better meet your specific needs. Give us your feedback to support our development work."
+    },
+    "more-info": {
+      "description": "Below you will find general and up-to-date information about the service."
+    }
+  },
+  "home": {
+    "competency-path-help": {
+      "opinfi": {
+        "text-1": "<CustomLink>Opin.fi<Icon></Icon></CustomLink> is a service that brings together the open courses offered by Finnish universities and universities of applied sciences in one place.",
+        "text-2": "Opin.fi is aimed at everyone who wants to develop their skills - looking for supplementary education and new skills or getting acquainted with higher education studies.",
+        "url": "https://opin.fi/en"
+      },
+      "opintopolku": {
+        "text-1": "<CustomLink>Studyinfo<Icon></Icon></CustomLink> provides comprehensive information on education opportunities and application services for different levels of education.",
+        "text-2": "Once you have found an interesting education opportunity in Competency Path, you can go to Studyinfo to learn more and apply for training. When you log in to your competence profile in My Competency Path, you can import your education history from Studyinfo.",
+        "url": "https://opintopolku.fi/konfo/en"
+      },
+      "tyomarkkinatori": {
+        "text-1": "<CustomLink>Job Market<Icon></Icon></CustomLink> brings together vacancies and provides support in job search and career planning.",
+        "text-2": "Once you have found an interesting job opportunity in Competency Path, you can go to Job Market to explore and apply for vacancies. You can also transfer your information between your My Competency Path competence profile and Job Market job search profile.",
+        "url": "https://tyomarkkinatori.fi/en"
+      }
+    },
+    "hero": {
+      "content": "Map out your interests and competence. Use them to find options that suit you. Competency Path supports you in finding a direction for your skills and passions. It may open your eyes to unexpected possibilities.",
+      "link-text": "Go to Competency Path",
+      "title": "Competency Path - find your own direction"
+    },
+    "palvelut": {
+      "ohjaus": {
+        "title": "Tools for guidance work"
+      },
+      "tietopalvelu": {
+        "title": "Up-to-date information to support decision-making"
+      },
+      "title": "Didn't find what you were looking for?",
+      "tool": {
+        "title": "Quickly find suitable opportunities"
+      }
+    },
+    "personal-guidance": {
+      "content": "The services found under guidance and counselling services help you consider your work and education options. Narrow the list of services based on themes that interest you and, for example, where you live to find the most suitable services for you.",
+      "link-text": "Go to Guidance and counseling services",
+      "title": "Do you need personal guidance?"
+    },
+    "sections": {
+      "title": "What makes up Competency Path?"
+    },
+    "welcome": {
+      "content": "Competency Path service has been launched. The service is continuously developed based on user feedback. Features may change and new functionalities will be added regularly – thank you for being part of the journey!",
+      "title": "Welcome to Competency Path!"
+    }
+  },
   "main-navigation": "Main navigation",
   "navigation-menu": "Menu",
   "no-match": {
@@ -11,8 +67,8 @@
   },
   "privacy-policy-and-cookies": {
     "chatbot": {
-      "title": "Competence Path advisory bot",
-      "description": "In the Competence Path service, the search terms and phrases entered by the user are stored in the conversation history of the Advisory Bot. Users of the Advisory Bot's administration interface and service administrators can view the Advisory Bot's conversation history by logging into the administration interface with two-factor authentication. No personal data is stored in the conversations, as the application masks personal data using a masking algorithm. The masking algorithm recognizes standardized and technically modelable personal data. Users of the service should not enter their personal data into the Competence Path Advisory Bot. Users are informed of this in the greeting text of the Advisory Bot. Conversations are stored in the system for a maximum of 24 months or for the duration of the service agreement."
+      "description": "In the Competence Path service, the search terms and phrases entered by the user are stored in the conversation history of the Advisory Bot. Users of the Advisory Bot's administration interface and service administrators can view the Advisory Bot's conversation history by logging into the administration interface with two-factor authentication. No personal data is stored in the conversations, as the application masks personal data using a masking algorithm. The masking algorithm recognizes standardized and technically modelable personal data. Users of the service should not enter their personal data into the Competence Path Advisory Bot. Users are informed of this in the greeting text of the Advisory Bot. Conversations are stored in the system for a maximum of 24 months or for the duration of the service agreement.",
+      "title": "Competence Path advisory bot"
     }
   }
 }
