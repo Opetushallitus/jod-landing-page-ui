@@ -353,37 +353,17 @@
   },
   "front-page": "Framsida",
   "home": {
-    "how-competency-path-helps-you": "Hur hjälper Kompetensstigen dig som en del av andra tjänster?",
-    "how-competency-path-helps-you-content": "Kompetensstigen, Studieinfo, Jobbmarknaden och Opin.fi bildar tillsammans en tjänstehelhet som stöder lärande, karriärplanering och arbetssökning i olika livssituationer. Varje tjänst spelar sin egen roll, men tillsammans erbjuder de dig en tydlig stig för utvecklingen av ditt kunnande och din karriär.<br/><br/>Om du letar efter en riktning eller din egen stig kan du identifiera dina egna styrkor och intressen i Kompetensstigen och hitta utbildnings- och karriärmöjligheter som är lämpliga för dem. När du har utrett hur du vill gå vidare, hjälper Studieinfo, Jobbmarknaden och Opin.fi dig att söka dig till dem.",
     "how-competency-path-helps-you-opinfi-title": "Opin.fi",
     "how-competency-path-helps-you-opintopolku-title": "Studieinfo",
     "how-competency-path-helps-you-tmt-title": "Jobbmarknaden",
-    "ohjaaja-call-to-action": "Till vägledar-delen",
-    "ohjaaja-content": "I vägledar-delen hittar du aktuell och högklassig information och metoder som stöd för ditt karriärvägledningsarbete och material som stärker din egen vägledningskompetens.\n",
-    "ohjaaja-title": "Vägledar-delen",
-    "osaamispolkuni-call-to-action": "Min kompetensstig",
-    "osaamispolkuni-content": "Kartlägg dina intressen och kompetenser och hitta utbildnings- och karriärmöjligheter. Genom att logga in på Min kompetensstig kan du skapa din egen kompetensprofil och spara dina uppgifter för senare bruk.",
-    "osaamispolkuni-title": "Min kompetensstig",
     "services": {
       "ohjaus": {
-        "buttonLabel": "Till stöd för kundarbetet",
-        "content": "I Till stöd för kundarbetet-delen hittar du material som du kan använda i ditt eget vägledningsarbete. Delen innehåller till exempel verktyg som du kan använda i vägledningssituationer eller ge som en självständig uppgift till dem som behöver vägledning.\n",
         "path": "till-stod-for-kundarbetet"
       },
-      "tietopalvelu": {
-        "buttonLabel": "Informationstjänstens innehåll",
-        "content": "På den här sidan hittar du en översikt över informationstjänstens samtliga rapportsidor. Du kan filtrera listan med hjälp av nyckelord och gå till det informationsinnehåll som intresserar dig.\n",
-        "path": "informationsinnehall"
-      },
       "tool": {
-        "buttonLabel": "Hitta möjligheter\t",
-        "content": "Berätta vad du kan och vad du är intresserad av och välj kompetenser som lämpar sig för dem. Hitta lämpliga arbets- och utbildningsmöjligheter utifrån dem.\n",
         "path": "verktyg"
       }
-    },
-    "tietopalvelu-call-to-action": "Till informationstjänst",
-    "tietopalvelu-content": "Informationstjänsten sammanställer uppgifter om utbildning, arbetsmarknaden och kompetens som stöd för beslutsfattandet. Du kan granska de informationshelheter som intresserar dig ur olika perspektiv med hjälp av olika filter.\n",
-    "tietopalvelu-title": "Informationstjänst"
+    }
   },
   "language-selection": "Språk",
   "login": "Logga in",

@@ -23,6 +23,11 @@
         "text-1": "<CustomLink>Jobbmarknaden<Icon></Icon></CustomLink> samlar lediga jobb och stöder dig i arbetssökningen och karriärplaneringen.",
         "text-2": "När du har hittat en intressant arbetsmöjlighet i Kompetensstigen kan du gå till Jobbmarknaden för att läsa mer och söka lediga jobb. Du kan också överföra dina uppgifter mellan kompetensprofilen i Min kompetensstig och jobbsökningsprofilen på Jobbmarknaden.",
         "url": "https://tyomarkkinatori.fi/sv/"
+      },
+      "you": {
+        "text-1": "Kompetensstigen, Studieinfo, Jobbmarknaden och Opin.fi bildar tillsammans en tjänstehelhet som stöder lärande, karriärplanering och jobbsökning i olika livssituationer. Varje tjänst spelar sin egen roll, men tillsammans erbjuder de dig en tydlig stig för utvecklingen av din kompetens och din karriär.",
+        "text-2": "Om du letar efter en riktning eller din egen stig kan du identifiera dina egna styrkor och intressen i Kompetensstigen och hitta utbildnings- och jobbmöjligheter som är lämpliga för dem. När du har utrett hur du vill gå vidare, hjälper Studieinfo, Jobbmarknaden och Opin.fi dig att söka dig till dem.",
+        "title": "Hur hjälper Kompetensstigen dig som en del av andra tjänster?"
       }
     },
     "hero": {
@@ -32,13 +37,20 @@
     },
     "palvelut": {
       "ohjaus": {
+        "content": "Använd materialet i ditt vägledningsarbete. Hitta verktyg som du kan använda i vägledningssituationer eller ge som en självständig uppgift till dem som behöver vägledning.",
+        "link-text": "Till stöd för kundarbetet",
         "title": "Verktyg för vägledningsarbetet"
       },
       "tietopalvelu": {
+        "content": "Se en helhetsbild över Informationstjänstens innehåll. Du kan filtrera listan med hjälp av nyckelord och gå vidare till det informationsinnehåll som intresserar dig.",
+        "link-text": "Informationstjänstens innehåll",
+        "path": "informationsinnehall",
         "title": "Aktuell information som stöd för beslutsfattandet"
       },
       "title": "Hittade du inte det du letade efter?",
       "tool": {
+        "content": "Berätta vad du kan och vad du är intresserad av och välj kompetenser som lämpar sig för dem. Hitta lämpliga utbildnings- och arbetsmöjligheter utifrån dem.",
+        "link-text": "Hitta möjligheter",
         "title": "Lämpliga möjligheter snabbt"
       }
     },
@@ -48,6 +60,21 @@
       "title": "Behöver du personlig vägledning?"
     },
     "sections": {
+      "ohjaaja": {
+        "content": "I vägledar-delen hittar du aktuell och högklassig information och metoder som stöd för ditt vägledningsarbete och material som stärker din egen vägledningskompetens.",
+        "link-text": "Vägledar-delen",
+        "title": "Vägledar-delen"
+      },
+      "osaamispolku": {
+        "content": "Kartlägg dina intressen och kompetenser och hitta utbildnings- och jobbmöjligheter. Genom att logga in på Min kompetensstig kan du skapa din egen kompetensprofil och spara dina uppgifter för senare bruk.",
+        "link-text": "Min kompetensstig",
+        "title": "Min kompetensstig"
+      },
+      "tietopalvelu": {
+        "content": "Informationstjänsten sammanställer uppgifter om utbildning, arbetsmarknaden och kompetens som stöd för beslutsfattandet. Du kan granska de informationshelheter som intresserar dig ur olika perspektiv med hjälp av olika filter.",
+        "link-text": "Informationstjänst",
+        "title": "Informationstjänst"
+      },
       "title": "Vad ingår i Kompetensstigen?"
     },
     "welcome": {
