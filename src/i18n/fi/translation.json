@@ -353,37 +353,17 @@
   },
   "front-page": "Etusivu",
   "home": {
-    "how-competency-path-helps-you": "Miten Osaamispolku auttaa sinua osana muita palveluita?",
-    "how-competency-path-helps-you-content": "Osaamispolku, Opintopolku, Työmarkkinatori ja Opin.fi muodostavat yhdessä palvelukokonaisuuden, joka tukee oppimista, urasuunnittelua ja työnhakua eri elämäntilanteissa. Jokaisella palvelulla on oma roolinsa, mutta yhdessä ne tarjoavat sinulle selkeän polun osaamisesi ja urasi kehittämiseen.<br/><br/>Jos etsit suuntaa tai omaa polkuasi, Osaamispolussa voit tunnistaa omat vahvuudet ja kiinnostukseksi sekä löytää niihin sopivia koulutus- ja työmahdollisuuksia. Kun olet selvittänyt miten haluat edetä, Opintopolku, Työmarkkinatori ja Opin.fi auttavat sinua hakeutumaan niihin.",
     "how-competency-path-helps-you-opinfi-title": "Opin.fi",
     "how-competency-path-helps-you-opintopolku-title": "Opintopolku",
     "how-competency-path-helps-you-tmt-title": "Työmarkkinatori",
-    "ohjaaja-call-to-action": "Ohjaajan osioon",
-    "ohjaaja-content": "Ohjaajan osiosta löydät uraohjaustyösi tueksi ajantasaista laadukasta tietoa ja menetelmiä sekä omaa ohjausosaamistasi vahvistavia materiaaleja.\n",
-    "ohjaaja-title": "Ohjaajan osio",
-    "osaamispolkuni-call-to-action": "Osaamispolkuni",
-    "osaamispolkuni-content": "Kartoita kiinnostuksesi ja osaamisesi, sekä löydä koulutus- ja työmahdollisuuksia. Kirjautumalla Osaamispolkuuni voit luoda oman osaamisprofiilisi ja tallentaa tietosi myöhempää käyttöä varten.",
-    "osaamispolkuni-title": "Osaamispolkuni",
     "services": {
       "ohjaus": {
-        "buttonLabel": "Asiakastyön tueksi",
-        "content": "Asiakastyön tueksi osiosta löydät materiaaleja, joita voit hyödyntää omassa ohjaustyössäsi. Osiossa on esimerkiksi työkaluja, joita voit käyttää ohjaustilanteissa tai antaa ohjattaville itsenäisesti tehtäväksi. \n",
         "path": "asiakastyon-tueksi"
       },
-      "tietopalvelu": {
-        "buttonLabel": "Tietopalvelun sisällöt",
-        "content": "Tältä sivulta näet kokonaiskuvan kaikista tietopalvelun raporttisivuista. Voit suodattaa listausta avainsanojen avulla ja siirtyä sinua kiinnostavan tietosisällön pariin.\n",
-        "path": "tietosisallot"
-      },
       "tool": {
-        "buttonLabel": "Löydä mahdollisuuksia\t",
-        "content": "Kerro, mitä osaat ja mistä olet kiinnostunut, ja valitse niihin sopivia osaamisia. Löydä niiden perusteella sinulle sopivia työ- ja koulutusmahdollisuuksia.\n",
         "path": "tyokalu"
       }
-    },
-    "tietopalvelu-call-to-action": "Tietopalveluun",
-    "tietopalvelu-content": "Tietopalvelu kokoaa yhteen koulutukseen, työmarkkinaan ja osaamiseen liittyvää tietoa päätöksenteon tueksi. Voit tarkastella sinua kiinnostavia tietokokonaisuuksia eri näkökulmista erilaisten suodattimien avulla.\n",
-    "tietopalvelu-title": "Tietopalvelu"
+    }
   },
   "language-selection": "Käyttökieli",
   "login": "Kirjaudu sisään",

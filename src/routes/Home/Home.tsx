@@ -73,20 +73,19 @@ const MainCard = () => {
         data-testid="home-hero"
       />
 
-      <div
-        className="mx-auto max-w-[1092px] grid grid-cols-1 lg:grid-cols-2 px-5 sm:px-6 xl:px-0 relative"
-        ref={firstCardRef}
-      >
-        <HeroCard
-          backgroundColor="var(--color-secondary-1-dark)"
-          content={t('home.hero.content')}
-          title={t('home.hero.title')}
-          titleLevel={1}
-          buttonLabel={t('home.hero.link-text')}
-          buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
-          to={`/yksilo/${language}`}
-          linkComponent={ExternalLink}
-        />
+      <div className="mx-auto max-w-[1092px] px-5 sm:px-6 xl:px-0 relative" ref={firstCardRef}>
+        <div className="max-w-[716px]">
+          <HeroCard
+            backgroundColor="var(--color-secondary-1-dark)"
+            content={t('home.hero.content')}
+            title={t('home.hero.title')}
+            titleLevel={1}
+            buttonLabel={t('home.hero.link-text')}
+            buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
+            to={`/yksilo/${language}`}
+            linkComponent={ExternalLink}
+          />
+        </div>
       </div>
     </>
   );
@@ -286,10 +285,11 @@ const Home = () => {
       <Content title={t('home.welcome.title')} className="mt-7 lg:mt-8" verticalPaddingClass="pt-7 lg:pt-8">
         <p className="text-body-lg whitespace-pre-line max-w-[716px]">{t('home.welcome.content')}</p>
       </Content>
-      <Content title={t('home.how-competency-path-helps-you')} className="" headingLevel={2}>
-        <p className="text-body-lg whitespace-pre-line max-w-[716px]">
-          <Trans i18nKey="home.how-competency-path-helps-you-content" />
-        </p>
+      <Content title={t('home.competency-path-help.you.title')} headingLevel={2}>
+        <div className="text-body-lg whitespace-pre-line max-w-[716px] flex flex-col sm:gap-6 gap-5">
+          <p>{t('home.competency-path-help.you.text-1')}</p>
+          <p>{t('home.competency-path-help.you.text-2')}</p>
+        </div>
         <div className="flex flex-col sm:flex-row gap-7 sm:flex-wrap mt-6">
           <div className="flex flex-col gap-5 md:max-w-[320px]">
             <div className="h-[70px] flex flex-col justify-center items-start">{opintopolkuLogo}</div>
@@ -359,32 +359,34 @@ const Home = () => {
         </div>
       </Content>
       <div className="mt-8">
-        <h2 className="mb-8 mx-auto max-w-[1092px] px-5 sm:px-6 xl:px-0 text-heading-1">{t('home.sections.title')}</h2>
+        <h2 className="mb-8 mx-auto max-w-[1092px] px-5 sm:px-6 xl:px-0 text-heading-2 sm:text-heading-1">
+          {t('home.sections.title')}
+        </h2>
         <SecondaryCard
           color="#004e82"
-          content={t('home.osaamispolkuni-content')}
-          title={t('home.osaamispolkuni-title')}
+          content={t('home.sections.osaamispolku.content')}
+          title={t('home.sections.osaamispolku.title')}
           to={`/yksilo/${language}`}
-          buttonLabel={t('home.osaamispolkuni-call-to-action')}
+          buttonLabel={t('home.sections.osaamispolku.link-text')}
           buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
           bgImageClassName=" bg-[url(@/../assets/osaamispolkuni.jpg)] bg-cover bg-[50%_50%]"
         />
         <SecondaryCard
           color="#00818A"
-          content={t('home.ohjaaja-content')}
-          title={t('home.ohjaaja-title')}
+          content={t('home.sections.ohjaaja.content')}
+          title={t('home.sections.ohjaaja.title')}
           to={`/ohjaaja/${language}`}
-          buttonLabel={t('home.ohjaaja-call-to-action')}
+          buttonLabel={t('home.sections.ohjaaja.link-text')}
           buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
           bgImageClassName=" bg-[url(@/../assets/ohjaaja.jpg)] bg-cover bg-[50%_50%]"
         />
         <SecondaryCard
           color="#AD4298"
-          content={t('home.tietopalvelu-content')}
-          title={t('home.tietopalvelu-title')}
+          content={t('home.sections.tietopalvelu.content')}
+          title={t('home.sections.tietopalvelu.title')}
           to={`/tietopalvelu/${language}`}
           buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
-          buttonLabel={t('home.tietopalvelu-call-to-action')}
+          buttonLabel={t('home.sections.tietopalvelu.link-text')}
           bgImageClassName="bg-[url(@/../assets/tietopalvelu.jpg)] bg-cover bg-[50%_50%]"
         />
       </div>
@@ -393,22 +395,22 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-7 sm:gap-y-11 mb-11 sm:mb-[176px]">
           <ServiceBlock
             title={t('home.palvelut.tool.title')}
-            text={t('home.services.tool.content')}
-            buttonLabel={t('home.services.tool.buttonLabel')}
+            text={t('home.palvelut.tool.content')}
+            buttonLabel={t('home.palvelut.tool.link-text')}
             to={`/yksilo/${language}/${t('home.services.tool.path')}`}
           />
           <ServiceBlock
             title={t('home.palvelut.ohjaus.title')}
-            text={t('home.services.ohjaus.content')}
-            buttonLabel={t('home.services.ohjaus.buttonLabel')}
+            text={t('home.palvelut.ohjaus.content')}
+            buttonLabel={t('home.palvelut.ohjaus.link-text')}
             to={`/ohjaaja/${language}/${t('home.services.ohjaus.path')}`}
             className="bg-secondary-2! active:bg-[#00889b]!"
           />
           <ServiceBlock
             title={t('home.palvelut.tietopalvelu.title')}
-            text={t('home.services.tietopalvelu.content')}
-            buttonLabel={t('home.services.tietopalvelu.buttonLabel')}
-            to={`/tietopalvelu/${language}/${t('home.services.tietopalvelu.path')}`}
+            text={t('home.palvelut.tietopalvelu.content')}
+            buttonLabel={t('home.palvelut.tietopalvelu.link-text')}
+            to={`/tietopalvelu/${language}/${t('home.palvelut.tietopalvelu.path')}`}
             className="bg-secondary-4! active:bg-[#ad3ea3]!"
           />
         </div>

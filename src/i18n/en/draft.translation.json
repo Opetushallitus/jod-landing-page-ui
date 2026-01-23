@@ -23,6 +23,11 @@
         "text-1": "<CustomLink>Job Market<Icon></Icon></CustomLink> brings together vacancies and provides support in job search and career planning.",
         "text-2": "Once you have found an interesting job opportunity in Competency Path, you can go to Job Market to explore and apply for vacancies. You can also transfer your information between your My Competency Path competence profile and Job Market job search profile.",
         "url": "https://tyomarkkinatori.fi/en"
+      },
+      "you": {
+        "text-1": "Competency Path, Studyinfo, Job Market and Opin.fi form a service package that supports learning, career planning and job search in different life situations. Each service has its own role, but together they provide you with a clear path for your competence and career development.",
+        "text-2": "If you are looking for a direction or your own path, Competency Path allows you to identify your strengths and interests and find suitable training and career opportunities. Once you have found out how you want to proceed, Studyinfo, Job Market and Opin.fi will help you to apply for them.",
+        "title": "How does Competency Path help you as part of other services?"
       }
     },
     "hero": {
@@ -32,13 +37,20 @@
     },
     "palvelut": {
       "ohjaus": {
+        "content": "Use the materials in your guidance work. Find tools that you can use in guidance situations or give the guidance recipient to do independently.",
+        "link-text": "To support customer work",
         "title": "Tools for guidance work"
       },
       "tietopalvelu": {
+        "content": "Explore the overview of the contents of the information service. You can filter the list by keywords and navigate to the information content that interests you.",
+        "link-text": "Contents of the information service",
+        "path": "all-reports",
         "title": "Up-to-date information to support decision-making"
       },
       "title": "Didn't find what you were looking for?",
       "tool": {
+        "content": "Tell us what you know and what you are interested in and select the competencies that match them. Find suitable education and employment opportunities based on them.",
+        "link-text": "Find opportunities",
         "title": "Quickly find suitable opportunities"
       }
     },
@@ -48,6 +60,21 @@
       "title": "Do you need personal guidance?"
     },
     "sections": {
+      "ohjaaja": {
+        "content": "In the guidance practitioner section, you will find up-to-date high-quality information and methods as well as materials to strengthen your own guidance competence.",
+        "link-text": "Guidance practitioner section",
+        "title": "Guidance practitioner section"
+      },
+      "osaamispolku": {
+        "content": "Map out your interests and competencies, and find study or career opportunities By logging in to My Competency Path, you can create your own competence profile and save your information for later use.",
+        "link-text": "My Competency Path",
+        "title": "My Competency Path"
+      },
+      "tietopalvelu": {
+        "content": "The information service compiles information related to education, the labour market and competence to support decision-making. You can view the data sets that interest you from different perspectives using different filters.",
+        "link-text": "Information service",
+        "title": "Information service"
+      },
       "title": "What makes up Competency Path?"
     },
     "welcome": {
