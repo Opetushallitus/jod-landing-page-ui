@@ -88,16 +88,6 @@
       "title": "Tervetuloa Osaamispolkuun!"
     }
   },
-  "main-navigation": "Päänavigaatio",
-  "navigation-menu": "Valikko",
-  "no-match": {
-    "description": "Etsimääsi sivua ei löytynyt tai linkki on vanhentunut. Tarkista osoite, avaa valikko tai siirry etusivulle.",
-    "go-home": "Siirry etusivulle",
-    "title": "Hups! Sivua ei löytynyt"
-  },
-  "note": {
-    "close": "Sulje"
-  },
   "privacy-policy-and-cookies": {
     "chatbot": {
       "description": "Osaamispolku-palvelussa toimivan Neuvontabotin keskusteluhistoriaan tallennetaan käyttäjän kirjoittamat hakusanat ja -lauseet. Neuvontabotin hallintakäyttöliittymän käyttäjät ja palvelun ylläpitäjät näkevät Neuvontabotin keskusteluhistorian kirjautumalla kaksivaiheisen kirjautumisen kautta hallintakäyttöliittymään. Keskusteluihin ei tallennu henkilötietoja, sillä sovellus maskaa henkilötiedot maskausalgoritmin avulla. Maskausalgoritmi tunnistaa vakiomuotoiset ja teknisesti mallinnettavissa olevat henkilötiedot. Palvelun käyttäjien ei tule kirjoittaa henkilötietojaan Osaamispolun Neuvontbottiin. Tästä ohjeistetaan käyttäjiä Neuvontabotin tervehdystekstissä. Keskusteluja säilytetään järjestelmässä enintään 24 kuukautta tai palvelun sopimuksen voimassaolon ajan.",

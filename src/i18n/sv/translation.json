@@ -279,7 +279,7 @@
         "navTitle": "Vipunen",
         "paragraph-1": "Vipunen är undervisningsförvaltningens statistiktjänst. Undervisnings- och kulturministeriet och Utbildningsstyrelsen svarar gemensamt för dess innehåll.",
         "paragraph-2": "Min kompetensstig-delen utnyttjar Vipunens uppgifter i statistiken över karriärmöjligheter och utbildningsmöjligheter.",
-        "paragraph-3": "Informationstjänsten utnyttjar Vipunens uppgifter om förändringar i det yrkesområdesspecifika kompetensbehovet."
+        "paragraph-3": "Informationstjänsten utnyttjar Vipunens uppgifter om förändringar i det yrkesområdesspecifika kompetensbehovet.B14B142:B158"
       }
     },
     "title": "Datakällor"
@@ -367,6 +367,7 @@
   },
   "language-selection": "Språk",
   "login": "Logga in",
+  "main-navigation": "Huvudmenyn",
   "menu": "Meny",
   "navigation": {
     "external": {
@@ -395,9 +396,14 @@
       }
     }
   },
+  "navigation-menu": "Meny",
   "no-match": {
     "description": "Sidan du sökte hittades inte.",
+    "go-home": "Gå till startsidan",
     "title": "Sidan kunde inte hittas"
+  },
+  "note": {
+    "close": "Stäng"
   },
   "on-this-page": "På denna sida",
   "osaamispolku": "Kompetensstigen",
@@ -493,6 +499,7 @@
       "title": "Information om överföringen av uppgifter till tredje land och om skyddsåtgärder som vidtas"
     },
     "intro": {
+      "description": "Denna dataskyddsbeskrivning beskriver hur personuppgifter behandlas i tjänsten Kompetensstigen. Beskrivningen förklarar också vilka rättigheter de registrerade personerna har och hur dessa rättigheter kan utövas. Som registrerade räknas personer som har skapat en kompetensprofil och personer som är inloggade på vägledarens skrivbord. <br/><br/>Dataskyddsbeskrivningen uppdateras regelbundet. Du hittar alltid den aktuella versionen på denna sida",
       "title": "Inledning"
     },
     "obligation-to-provide": {

@@ -88,16 +88,6 @@
       "title": "Welcome to Competency Path!"
     }
   },
-  "main-navigation": "Main navigation",
-  "navigation-menu": "Menu",
-  "no-match": {
-    "description": "The page you are looking for could not be found or the link is outdated. Please check the address, open the menu, or go to the homepage.",
-    "go-home": "Go to homepage",
-    "title": "Oops! Page not found"
-  },
-  "note": {
-    "close": "Close"
-  },
   "privacy-policy-and-cookies": {
     "chatbot": {
       "description": "In the Competence Path service, the search terms and phrases entered by the user are stored in the conversation history of the Advisory Bot. Users of the Advisory Bot's administration interface and service administrators can view the Advisory Bot's conversation history by logging into the administration interface with two-factor authentication. No personal data is stored in the conversations, as the application masks personal data using a masking algorithm. The masking algorithm recognizes standardized and technically modelable personal data. Users of the service should not enter their personal data into the Competence Path Advisory Bot. Users are informed of this in the greeting text of the Advisory Bot. Conversations are stored in the system for a maximum of 24 months or for the duration of the service agreement.",

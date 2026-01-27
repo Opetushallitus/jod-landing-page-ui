@@ -1,18 +1,691 @@
 {
+  "about-service": {
+    "intro": "Competency Path is a new digital service to support education and career planning, competence development and employment. It will be launched in early 2026. Competency Path is aimed at individuals who are making career and study choices, guidance practitioners, training and education organisations, employers and experts from various administrative sectors.",
+    "sections": {
+      "advisor-section": {
+        "description": "In the guidance practitioner section, you will find up-to-date high-quality information and methods to support your career guidance work as well as materials to strengthen your own competence. The guidance practitioner section is intended for all operators in the guidance sector. Guidance practitioners can work, for example, in student and career guidance as well as in the education, labour administration or the private sector.",
+        "navTitle": "Guidance practitioner section"
+      },
+      "guidance-and-counseling": {
+        "description": "The services found under guidance and counselling services help you consider your career and education choices. You can narrow the list of services based on themes that interest you and, for example, where you live to find the most suitable services for you.",
+        "navTitle": "Guidance and counselling services"
+      },
+      "info-service": {
+        "description": "The information service compiles information related to competence, the labour market and education from different sources for use by a wide range of users, including educational organisations, working life actors and representatives of different administrative sectors.",
+        "navTitle": "Information service"
+      },
+      "jod-project": {
+        "description": "The development of Competency Path is the responsibility of \"digital service package for continuous learning\", which is a joint project between the Ministry of Education and Culture and the Ministry of Economic Affairs and Employment from 2021 to 2025. The Finnish National Agency for Education, the Centre for Economic Development, Transport and the Environment, higher educations institutions through the Digivision 2030 project and the Service Centre for Continuous Learning and Employment are closely involved in the development work. The project is funded by the EU’s Recovery and Resilience Facility (RRF).",
+        "navTitle": "Digital service package for continuous learning (JOD) project"
+      },
+      "my-path": {
+        "description": "In My Competency Path, you can map out your own competence, find education to increase your competence, explore career opportunities with your competence and map out opportunities to change occupation. My Competency Path is intended for all users.",
+        "navTitle": "My Competency Path"
+      }
+    },
+    "title": "About the service"
+  },
+  "accessibility": {
+    "intro": "This Statement applies to the beta version of the Osaamispolku.fi service. The development of the service continues and the assessment of accessibility is still ongoing.",
+    "sections": {
+      "feedback": {
+        "description": "If you notice accessibility issues in the service, please let us know. We will take the feedback into account in development. Email: jod@gov.fi. If you notice any accessibility issues on the website, please contact us first. It may take up to 14 days for us to respond. If you are not satisfied with our reply or if you do not receive any response within two weeks, you can submit a notification here.<br/><br/> Contact information of the supervisory authority: <br/><br/>Finnish Transport and Communications Agency Traficom<br/>Digital accessibility monitoring, P.O. Box 320<br/>00059 TRAFICOM<br/>https://www.saavutettavuusvaatimukset.fi/en<br/>saavutettavuus(at)traficom.fi<br/>Telephone number, switchboard: +358 (0)29 534 5000",
+        "navTitle": "Giving feedback"
+      },
+      "missing": {
+        "description": "1. The pages contain individual header-like texts which have not yet been marked as a header for assistive technology users. This can slow down browsing if the user is used to navigating the pages mainly by headers. WCAG 1.3.1 Info and Relationships (A)<br/>2. The website has texts and form controls which stand out from the background with poor contrast. WCAG 1.4.3 Contrast (Minimum) (A), 1.4.11 Non-text Contrast (AA)<br/>3. The service offers instructions which appear when the user hovers the mouse over the help icon. It is not yet possible to view the instructions using only the keyboard or a screen reader. WCAG 2.1.1 Keyboard. (A)<br/>4. A pop-up date picker can be used to set the date. However, a day that is already selected in the date picker is not announced by the screen reader. It can also be difficult to distinguish it visually. WCAG 1.4.1 Use of Colour (A), 4.1.2 Name, Role, Value (AA)<br/>5. There are clickable boxes in different parts of the service which act like a link. There are still shortcomings related to the screens and the carousels built from them, which affect those using the service with a screen reader and keyboard. For example, boxes may contain arbitrary text alternatives, their reading order may be inconsistent and the user may not be informed that the area to be clicked on is a link. WCAG 1.3.1 Info and Relationships (A)<br/>6. The pages have names for assistive techonology programs, which are always in English regardless of the language of the page. WCAG 1.1.1 Non-text Content<br/>7. Advisory bot. There are technical flaws in the advisory bot, which affect users of assistive technology programs in particular. The browser alignment may not be transferred to the chat when it opens. In addition, the 'like' buttons in connection with the advisory bot’s responses do not convey to the screen reader whether the button is selected or not.<br/>8. The pages have navigation areas and dialogues which have not yet been labelled for the assistive technology programs. WCAG 1.3.1 Info and Relationships (A)<br/>9. The text size of pages cannot be enlarged independently of the zoom level of the page. The user needs to enlarge the page responsively using the zoom level of the browser. WCAG 1.4.4 Resize Text (AA)<br/>10. The content of the Competency Path's information service consists partly of Power BI embed reports, which require a lot of skill when used with a screen reader. The reports also include parts which are not accessible. During development, accessibility shortcomings have been fixed as far as possible. The aim of the further development of the service is to offer an alternative way of presenting information for key content.",
+        "navTitle": "Key accessibility shortcomings (4 November 2025)"
+      },
+      "planned-fixes": {
+        "description": "Improving accessibility is part of service development. The aim is for the service to meet the accessibility requirements stated in the legislation before its actual publication.",
+        "navTitle": "Planned improvements"
+      },
+      "status": {
+        "description": "The service does not meet all accessibility requirements (WCAG 2.1, levels A and AA). As this is a beta version, the development work will continue and the accessibility shortcomings will be fixed gradually. There are shortcomings in the service, for example, when using assistive technology and browsing only with the keyboard.",
+        "navTitle": "Accessibility status"
+      },
+      "updates": {
+        "description": "This Statement was prepared on 4 November 2025. The next update will be in January 2026. It is possible that the service will have new accessibility shortcomings during the development phase. The aforementioned accessibility shortcomings may also be fixed before the Accessibility Statement is updated.",
+        "navTitle": "Updates to the Accessibility Statement"
+      }
+    },
+    "title": "Accessibility Statement"
+  },
+  "ai-usage": {
+    "ai-methods": {
+      "data-location": "Location of data:",
+      "data-location-eu": "EU",
+      "data-preservation-time": "Data storage period:",
+      "data-preservation-time-until-delete": "Until the data is deleted",
+      "description-1": "The following methods and components are used in the service:",
+      "description-2": "The tools, templates and methods are used on the Amazon Web Services (AWS) cloud platform. AWS maintains our private infrastructure and the majority of chat logs, which include messages, chat topics, time stamps, and telemetry data.",
+      "list": {
+        "item-1": "machine learning models for identifying competences (e.g. TFIDF and FinBERT)",
+        "item-2": "clustering algorithms (DBSCAN and KMeans) for grouping job advertisements and education offering into job and education opportunities",
+        "item-3": "generative AI (Claude 3.5 Sonnet) to produce captions and summaries",
+        "item-4": "recommendation algorithms that combine competences and interests with education and career opportunities",
+        "item-5": "conversational interest surveyor which uses language models (Claude 3.5 Sonnet) to conduct a discussion and the RAG functionality (Retrieval-Augmented Generation) to manage and use various aids and materials that support guidance and surveying work to promote the discussion."
+      },
+      "title": "Which AI methods are used?"
+    },
+    "effect": {
+      "description": "AI acts as an assistive tool, not a decision-maker. <br/><br/>The user receives:",
+      "list": {
+        "item-1": "proposals, no binding recommendations",
+        "item-2": "an opportunity to edit and delete their own data",
+        "item-3": "career planning support",
+        "item-4": "a multilingual interface for automatic content generation and translation."
+      },
+      "title": "How does AI affect the user?"
+    },
+    "functionality-tracking": {
+      "description-1": "The following are used in service development:",
+      "description-2": "The aim is to ensure that AI operates reliably, transparently and equally.",
+      "list": {
+        "item-1": "evaluation metrics (e.g. F1 score and Jaccard index)",
+        "item-2": "exchange of information with the experts and expert assessments in different fields",
+        "item-3": "user feedback and test data",
+        "item-4": "version management and automatic tests."
+      },
+      "title": "How is the functionality of AI monitored?"
+    },
+    "limitation-of-liability": {
+      "description": "The AI functionalities of Competency Path, such as conversational surveyors, recommendation algorithms and content production, are developed and monitored by humans. However, AI works partly automatically, and not every interaction, output or suggestion is separately checked by a human. <br/><br/>Although we continuously strive to improve the quality and reliability of AI, the answers it provides can sometimes be inaccurate, incomplete or contain incorrect information. AI does not replace an expert’s assessment, and the content it produces does not necessarily represent the official view of the authorities. <br/><br/>AI is primarily used in Competency Path as a discussion partner and to support proposals, not as a decision-maker. The user is responsible for evaluating and, if necessary, supplementing the information received before making decisions. <br/><br/>The service is continuously developed, and the AI functionalities may change or become unavailable from time to time without separate notice.",
+      "title": "Limitation of liability"
+    },
+    "security": {
+      "description-1": "The use of AI is based on the EU’s AI Act (Regulation EU 2024/1689) and the General Data Protection Regulation (GDPR). <br/><br/>In the service:",
+      "description-2": "The service does not make automated decisions and is not classified as a high-risk AI system. <br/><br/>Read more about the processing of your data in the privacy policy",
+      "list": {
+        "item-1": "The user can use the service anonymously.",
+        "item-2": "Personal data is only processed on a legal basis, but the user has the right to freely manage their own data.",
+        "item-3": "Logged-in users have the right to prohibit the use of their personal data for AI development.",
+        "item-4": "The data may be anonymised for research and development purposes."
+      },
+      "title": "How has the information security and data protection been taken into account?"
+    },
+    "title": "About the use of artificial intelligence",
+    "why-ai": {
+      "description": "Competency Path uses AI to support individuals’ study and career choices. The aim is to provide the user with tailored suggestions regarding education and career opportunities on the basis of their competences, interests and background information.",
+      "possibilities": {
+        "item-1": {
+          "description": "AI compares the words and expressions with identified skills and suggests the best matches. <br/><br/>Artificial intelligence is also used to identify comptences from job advertisement texts and education offering descriptions if these do not already describe the required skills or skills produced by work/education.",
+          "title": "Identifying competences from user-entered text (e.g. CV and educational information)"
+        },
+        "item-2": {
+          "education": {
+            "description-1": "Artificial intelligence processes the education data of Competency Path and groups the educations according to:",
+            "description-2": "Artificial intelligence condenses long education descriptions into clear summaries. This makes it easier for the user to understand what the education contains.",
+            "list": {
+              "item-1": "what skills are learned in the education",
+              "item-2": "whether the education leads to a degree or not",
+              "item-3": "which field of education it belongs to."
+            },
+            "title": "Education opportunities"
+          },
+          "title": "Creating career and education opportunities by grouping job advertisements on Job Market and the education offering of Competency Path",
+          "work": {
+            "description-1": "AI reads job advertisements in Job Market and reviews them in order to search for information, such as:",
+            "description-2": "It then groups the advertisements so that similar jobs end up in the same group. This creates career opportunities, i.e. groups of similar jobs. <br/><br/>If the advertisement does not contain enough information, it will be omitted. <br/><br/>Finally, AI saves the groups and summarises them to be used in the recommendations.",
+            "list": {
+              "item-1": "what skills are needed in the job",
+              "item-2": "what kind of permits or driving licences are required",
+              "item-3": "which professions are mentioned in the advertisement."
+            },
+            "title": "Career opportunities"
+          }
+        },
+        "item-3": {
+          "description": "The referral engine works like a smart search engine. The user reports what skills they have and what interests them. Artificial intelligence compares this data with data on jobs and education and provides a list of suitable options.",
+          "title": "Generation of recommendations (individual recommendations for education and career opportunities based on your input)"
+        },
+        "item-4": {
+          "description": "Artificial intelligence can also talk with the user and help them find their own interests as well as provides discussion and reflection assistance when the user reviews their interests. It understands the user's messages and responds to them effectively. The conversational interest surveyor can use various guidance materials and data.",
+          "title": "Supportive discussion for surveying the interests"
+        },
+        "item-5": {
+          "description": "Artificial intelligence writes summaries of work and education opportunities based on the underlying job advertisements, professional information and descriptions in the education offering, so that the user can easily understand them. Any personal data will be deleted from the background material. <br/><br/>AI translates the texts it has produced into Swedish and English.",
+          "title": "Producing content and translating content into different languages (especially in work and education opportunities)"
+        },
+        "title": "Artificial intelligence enables:"
+      },
+      "title": "Why are cookies used in Competency Path?"
+    }
+  },
+  "breadcrumb": "Trail of breadcrumbs",
+  "close-menu": "Close the menu",
+  "competency-path-portal": "Competency Path frontpage",
+  "data-sources": {
+    "intro": "On this page, you can find all data sources used in the different sections of the Competency Path service.",
+    "read-more": "Read more:",
+    "sections": {
+      "cedefop": {
+        "links": {
+          "main": {
+            "href": "https://www.cedefop.europa.eu/en/tools/skills-forecast",
+            "label": "CEDEFOP Skills Forecast"
+          }
+        },
+        "navTitle": "CEDEFOP Skills Forecast",
+        "paragraph-1": "CEDEFOP Skills Forecast offers quantitative projections of future trends in employment by sector of economic activity and occupational group. Future trends in the level of education of the population and the workforce are also estimated.",
+        "paragraph-2": "(Description on the website in English: Cedefop Skill forecast offers quantitative projections of future trends in employment by sector of economic activity and occupational group. Future trends in the level of education of the population and the workforce are also estimated.)",
+        "paragraph-3": "The information service uses data with respect to the development of future job vacancies and in the review of employment growth by sector of economic activity and occupational group."
+      },
+      "eperusteet": {
+        "links": {
+          "main": {
+            "href": "https://eperusteet.opintopolku.fi/#/fi",
+            "label": "eRequirements"
+          }
+        },
+        "navTitle": "eRequirements",
+        "paragraph-1": "The service contains all national core curricula, qualification and education requirements from early childhood education to liberal adult education. In addition, the service contains other up-to-date regulations and recommendations of the Finnish National Agency for Education. Organisers of early childhood education, teaching and education can also publish local plans in the service.",
+        "paragraph-2": "The My Competency Path section uses basic information from the eRequirements service with respect to the education offering.",
+        "paragraph-3": "The information service uses basic information related to education with respect to the education offering."
+      },
+      "koto": {
+        "links": {
+          "main": {
+            "href": "https://kotoutuminen.fi/etusivu",
+            "label": "Koto integration database"
+          }
+        },
+        "navTitle": "Integration (Koto database)",
+        "paragraph-1": "The Kotoutuminen.fi online service is intended for employees who encounter immigrants in their work, promote integration and work with refugee reception. The service is maintained by the KEHA Centre.",
+        "paragraph-2": "The information service uses data related to the employment and entrepreneurship of immigrants from this information source."
+      },
+      "oef": {
+        "links": {
+          "main": {
+            "href": "https://www.oph.fi/fi/palvelut/osaamisen-ennakointifoorumi-oef",
+            "label": "Competence Foresight Forum"
+          }
+        },
+        "navTitle": "Competence Foresight Forum",
+        "paragraph-1": "The Competence Foresight Forum (OEF) is a joint expert body of the Ministry of Education and Culture and the Finnish National Board of Education. Its task is to promote dialogue between the education sector and working life.",
+        "paragraph-2": "OEF produces, analyses and disseminates national forecast information on future skills and labour needs and proposes development needs for education based on this.",
+        "paragraph-3": "OEF consists of a steering group and nine foresight groups representing different sectors.",
+        "paragraph-4": "The information service does not directly use this data source. However, the information service utilises the Vipunen statistics service which uses the data from the Foresight Forum."
+      },
+      "opintopolku": {
+        "links": {
+          "main": {
+            "href": "https://opintopolku.fi/",
+            "label": "Studyinfo"
+          }
+        },
+        "navTitle": "Studyinfo",
+        "paragraph-1": "Studyinfo contains information on degrees, occupations and studying in different educational institutions. The Studyinfo portal is maintained by the Finnish National Agency for Education. Education organisers and higher education institutions maintain information about their educations in the Opintopolku.fi service.",
+        "paragraph-2": "The Personal section uses the education offering information and code sets of the Studyinfo.",
+        "paragraph-3": "Guidance practitioner section: Education in the field of guidance",
+        "paragraph-4": "The information service uses regional educational information and code sets of Studyinfo."
+      },
+      "prh": {
+        "links": {
+          "main": {
+            "href": "https://www.prh.fi/fi/index.html",
+            "label": "Finnish Patent and Registration Office"
+          }
+        },
+        "navTitle": "Finnish Patent and Registration Office",
+        "paragraph-1": "The Finnish Patent and Registration Office (PRH) is part of the Ministry of Economic Affairs and Employment (MEAE) group and legally administers register data related to companies and organisations.",
+        "paragraph-2": "The information service uses company data, such as the company's field of operation."
+      },
+      "tilastokeskus": {
+        "links": {
+          "main": {
+            "href": "https://stat.fi/fi",
+            "label": "Statistics Finland"
+          }
+        },
+        "navTitle": "Statistics Finland",
+        "paragraph-1": "Statistics Finland presents statistical data from different areas of Finnish society.",
+        "paragraph-2": "The My Competency Path section uses Statistics Finland’s data in the statistics of career and education opportunities.",
+        "paragraph-3": "The information service uses the data of Statistics Finland with respect to the population, students, employed and unemployed persons and jobseekers. In the review, you can use several different perspectives to analyse changes.",
+        "paragraph-4": "You can find a more detailed specification of the data used on the information service’s Information sources page."
+      },
+      "tyomarkkinatori": {
+        "links": {
+          "jobs": {
+            "href": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat",
+            "label": "Job Market – Vacancies"
+          },
+          "main": {
+            "href": "https://tyomarkkinatori.fi/henkiloasiakkaat",
+            "label": "Job Market"
+          },
+          "skills": {
+            "href": "https://tyomarkkinatori.fi/tietoa-palvelusta/tietoa-tyomarkkinatorista/kohtaanto-ja-osaamissuosittelija-tyomarkkinatorilla",
+            "label": "Job Market - Competence referral and matching"
+          },
+          "statistics": {
+            "href": "https://tyomarkkinatori.fi/tyollisyys-ja-tilastot",
+            "label": "Job Market - Employment and statistics"
+          }
+        },
+        "navTitle": "Job Market",
+        "paragraph-1": "The Ministry of Economic Affairs and Employment is responsible for the Job Market service. Job Market offers users information and services for different working life situations.",
+        "paragraph-2": "The Employment and statistics section of Job Market includes assessments, reports, surveys, statistics and reports published by the KEHA Centre.",
+        "paragraph-3": "The My Competency Path section utilises the competence referral tool of Job Market, the nationally maintained ESCO competence and occupational classification and vacancies.",
+        "paragraph-4": "The information service utilises information regarding the number of Job Market's vacancies."
+      },
+      "vipunen": {
+        "links": {
+          "main": {
+            "href": "https://vipunen.fi/fi-fi",
+            "label": "Vipunen"
+          }
+        },
+        "navTitle": "Vipunen",
+        "paragraph-1": "Vipunen is the statistics service of the educational administration, the content of which is the joint responsibility of the Ministry of Education and Culture and the Finnish National Agency for Education.",
+        "paragraph-2": "The My Competency Path section uses Vipunen’s data in the statistics of career and education opportunities.",
+        "paragraph-3": "The information service uses Vipunen’s information on changes in occupational sector-specific competence needs.B14B142:B158"
+      }
+    },
+    "title": "Sources of data"
+  },
+  "external-link": "The link leads outside the service",
+  "feedback": {
+    "cancel": "Cancel",
+    "email-label": "Email address",
+    "error": "Failed to send feedback. Please try again later.",
+    "footer-handled": {
+      "ohjaajan": "Guidance practitioners section at the KEHA centre,",
+      "osaamispolkuni": "My Competency Path at the Finnish National Agency for Education,",
+      "tietopalvelu": "Information service, entire service and other feedback at the Ministry of Education and Culture."
+    },
+    "footer-info-1": "When you send feedback, we save the service status information, such as the view from which the feedback was sent. Status information will not be disclosed to third parties. Feedback is used for service development and voluntarily provided contact information is used to respond to feedback.",
+    "footer-info-heading": "Depending on the section, the feedback is processed as follows:",
+    "footer-privacy-heading": "Read more in the privacy statements of the feedback processors:",
+    "intro-1": "Please provide feedback on the service or report a technical problem. This way, you will help us in service development.",
+    "intro-2": "If you report an incident, it would help us if you were as specific as possible.",
+    "intro-privacy": "Do not enter any personal information, such as personal identity number or health information, in the feedback. Please fill in all the fields so that we can process your feedback.",
+    "linkHrefs": {
+      "keha": "https://tyomarkkinatori.fi/tietoa-palvelusta/tietosuoja-ja-kayttoehdot/tietosuojaselosteet",
+      "okm": "https://okm.fi/tietoa-sivustosta#henkilotiedot",
+      "oph": "https://www.oph.fi/fi/tietosuoja"
+    },
+    "links": {
+      "keha": "KEHA Centre's customer and advisory services privacy statement",
+      "okm": "Ministry of Education and Culture's privacy statement",
+      "oph": "Finnish National Agency for Education’s data protection policy"
+    },
+    "message-label": "Feedback",
+    "section-question": "Which section does your feedback concern?",
+    "sections": {
+      "koko-palvelu": "Entire service or other feedback",
+      "ohjaajan-osio": "Guidance practitioner section",
+      "osaamispolkuni": "My Competency Path",
+      "tietopalvelu": "Information service"
+    },
+    "submit": "Submit",
+    "success": "Thank you for your feedback! Your feedback will help us to improve the service.",
+    "title": "Give feedback",
+    "type-question": "What kind of feedback would you like to give?",
+    "types": {
+      "kehitysehdotus": "Development proposal",
+      "kehu": "Praise",
+      "moite": "Complaint",
+      "vika": "Technical fault or problem"
+    },
+    "wants-contact": "I want to be contacted, if necessary, through email."
+  },
   "footer": {
+    "cooperation-title": "Competency Path has been implemented in cooperation by the following parties:",
+    "copyright": "© Competency Path 2026. All rights reserved.",
+    "feedback-button-label": "Give feedback",
+    "feedback-title": "Tell us what you thought about the service!",
+    "funding-title": "The project is funded by the EU’s Recovery and Resilience Facility (RRF).",
+    "logos": {
+      "keha-label": "KEHA Centre",
+      "okm-label": "Ministry of Education and Culture",
+      "oph-label": "Finnish National Agency for Education",
+      "tem-label": "Ministry of Economic Affairs and Employment"
+    },
     "more-info-links": {
       "about-service": "About the service",
-      "privacy-and-cookies": "Privacy notice and cookies",
-      "data-sources": "Data sources",
-      "ai-usage": "About the use of AI",
-      "accessibility": "About accessibility"
+      "accessibility": "Accessibility Statement",
+      "ai-usage": "About the use of artificial intelligence",
+      "data-sources": "Sources of data",
+      "privacy-and-cookies": "Privacy policy and cookies"
+    },
+    "more-info-title": "Do you want to know more about Competency Path?"
+  },
+  "front-page": "Front page",
+  "home": {
+    "how-competency-path-helps-you-opinfi-title": "Opin.fi",
+    "how-competency-path-helps-you-opintopolku-title": "Studyinfo",
+    "how-competency-path-helps-you-tmt-title": "Job Market",
+    "services": {
+      "ohjaus": {
+        "path": "To support customer work"
+      },
+      "tool": {
+        "path": "tool"
+      }
     }
+  },
+  "language-selection": "Language of use",
+  "login": "Log in",
+  "main-navigation": "Main navigation",
+  "menu": "Menu",
+  "navigation": {
+    "external": {
+      "ohjaaja": {
+        "description": "Information and materials for guidance",
+        "label": "Guidance practitioner section"
+      },
+      "osaamispolku": {
+        "description": "Personal Competency Path",
+        "label": "My Competency Path"
+      },
+      "tietopalvelu": {
+        "description": "Information to support decision-making",
+        "label": "Information service"
+      },
+      "title": "Content entities"
+    },
+    "extra": {
+      "palveluhakemisto": {
+        "label": "Guidance and counselling services",
+        "url": "https://www.suomi.fi/topic/guidance-and-counselling-services"
+      },
+      "title": "Other support for reflection",
+      "urataidot": {
+        "label": "Self-assessment of career skills"
+      }
+    }
+  },
+  "navigation-menu": "Menu",
+  "no-match": {
+    "description": "The page you are looking for could not be found or the link has expired. Check the address, open the menu or go to the front page.",
+    "go-home": "Go to the front page",
+    "title": "Oops! Page not found"
+  },
+  "note": {
+    "close": "Close"
+  },
+  "on-this-page": "On this page",
+  "osaamispolku": "Competency Path",
+  "privacy-cookies": {
+    "3rd-party": {
+      "description": "Competency Path uses third-party applications, such as YouTube and Power BI, which are downloaded from the servers of these services. YouTube is used in the videos of the Competency Path's Guidance practitioner section. Power BI is used to produce report views in the information service. Third-party cookies are used anonymously to ensure the functionality of the applications embedded on the website and to improve the user experience. <br/><br/>If you do not use content from third-party service providers, no third-party cookies will be installed on your device. <br/><br/>Services provided by a third party or applications provided by a third party are subject to the terms of use and other conditions of that third party. <br/><br/>Further information: <br/><CustomLink1>Microsoft (Power BI)</CustomLink1> <CustomLink2>Google (YouTube)</CustomLink2>",
+      "title": "Competency Path's third-party cookies"
+    },
+    "blocking": {
+      "description": "Most modern browsers allow you to completely block cookies from being installed on your device, but you may have to adjust some settings each time you visit the website/page. Some services and functionalities may not work properly (e.g. login).",
+      "title": "How to block cookies"
+    },
+    "possession": {
+      "description": "You can freely manage and/or delete cookies. Instructions are available, for example, at aboutcookies.org.",
+      "title": "Managing the use of cookies"
+    },
+    "site-specific": {
+      "description": "You can manage website-specific cookies in your browser’s privacy and cookie settings.",
+      "title": "Managing website-specific cookies"
+    },
+    "title": "Cookies",
+    "what": {
+      "description-1": "Cookies are small text files that a website stores on your computer or mobile device. They contain a unique, anonymous identifier that allows the online service to identify the different browsers visiting the website. The information collected by cookies cannot be used to identify individual users. The Finnish National Agency for Education requires that you accept the use of cookies in order to use the Competency Path service. <br/><br/>The cookies include:",
+      "description-2": "The purpose of cookies is to maintain certain user preferences for a certain period of time. In this way, you do not need to make the same selections again when you move from one page to another during the same session. Cookies can also be used to collect anonymous information about how users interact with the website. This information cannot be used to identify individual users.",
+      "list": {
+        "item-1": "First-party cookies come directly from the website you are visiting. Only this website can read them.",
+        "item-2": "In addition, the website may use third-party services which install their own cookies. These are called third-party cookies.",
+        "item-3": "Persistent cookies are cookies that are stored on your computer and are not automatically deleted when you close your browser. Session cookies, on the other hand, are deleted at the end of the session."
+      },
+      "title": "What are cookies?"
+    },
+    "what-for": {
+      "description-1": "The following first-party cookies are used in Competency Path. Their purpose is to enable you to use the website:",
+      "description-2": "Matomo is used for Competency Path's website analytics. Cookies are used to track the user experience on the website. The user data is anonymous – the collected data cannot be used to identify the user personally. <br/><br/>This information will also not be shared with any third party or used for any other purpose.",
+      "list": {
+        "item-1": "authentication cookies are stored on your device when you log in to the competence profile or the guidance practitioner's desktop using Suomi.fi authentication,",
+        "item-2": "technical cookies."
+      },
+      "title": "What are cookies used for in Competency Path?"
+    }
+  },
+  "privacy-policy-and-cookies": {
+    "acquiring": {
+      "description": "When a person registers for the service, their personal data is retrieved from the population information system maintained by the Digital and Population Data Services Agency.",
+      "title": "Where is personal data obtained from?"
+    },
+    "automatic-handling": {
+      "description": "The data provided by the person and stored as well as the restrictions chosen by the person may be processed in the manner referred to in Article 22(1) of the General Data Protection Regulation only automatically for the purpose of mapping and presenting education and career opportunities. Such processing requires that the user chooses to use automatic processing for this purpose in the service. Before making the choice, the Finnish National Agency for Education must clearly inform the user of the automatic processing in the service. In connection with the opportunity presented to the user, the service must provide the user with information on how their information and the restrictions they have chosen have been taken into account.",
+      "title": "Automated data processing and its effects"
+    },
+    "data-handling-use": {
+      "description": "The purpose of the national competence database is to enable individuals to store and maintain information about their own competence and interests and plans related to their career and education. The competence database is part of a digital service (hereinafter referred to as \"the Service\") which is intended to support the users in choosing education, entering the job market, making related transitions, maintaining their own competence and utilising their own education and career information. <br/><br/>In addition, the purpose of the database is to create a knowledge base for maintaining the situational picture of teaching, education, guidance and competence as well as supporting their development and anticipation.",
+      "legal-basis": {
+        "list": {
+          "item-1": "Laki valtakunnallisesta osaamistietovarannosta 1449/2025 (Act on the National Competence Database)",
+          "item-2": "Laki Opetushallituksesta 508/2025 (Act on the Finnish National Agency for Education)",
+          "item-3": "Laki elinvoimakeskuksista sekä Työllisyys-, kehittämis- ja hallintokeskuksesta 531/2025 (Act on Economic Development Centres and the Employment, Administration and Development Agency)",
+          "item-4": "Act on the National Registers of Education Records, Qualifications and Degrees 884/2017",
+          "item-5": "Laki työvoimapalveluiden järjestämisestä 380/2023 (Act on the Organisation of Employment Services)"
+        },
+        "title": "Legal basis"
+      },
+      "title": "Purpose of processing personal data"
+    },
+    "info": {
+      "contact": {
+        "content": "Riku Hanhinen",
+        "title": "Contact person:"
+      },
+      "email": {
+        "content": "tietosuoja@oph.fi",
+        "title": "Email:"
+      },
+      "fax": {
+        "content": "+358 (0)29 533 1035",
+        "title": "Fax"
+      },
+      "phone": {
+        "content": "+358 (0)29 533 1000",
+        "title": "Switchboard:"
+      },
+      "register": {
+        "content": "National competence database",
+        "title": "Name of data file:"
+      },
+      "register-controller": {
+        "content": "Finnish National Agency for Education and KEHA Centre",
+        "title": "Controller:"
+      }
+    },
+    "info-about-3rd-country": {
+      "description": "The data is stored in the data centres of the Amazon Web Services provider in the EU. The data is not transferred outside the European Union or the European Economic Area.",
+      "title": "Information on data transfers to third countries and information on the safeguards used"
+    },
+    "intro": {
+      "description": "This privacy policy describes how personal data is processed in the Competency Path service. It also explains what rights data subjects have and how they can exercise their rights. The persons registered are those who have created the competence profile and those who are logged in to the guidance practitioner's desktop. <br/><br/>The privacy policy is updated regularly. You can always find the latest version on this page",
+      "title": "Introduction"
+    },
+    "obligation-to-provide": {
+      "description": "The data is stored and processed in the national competence database on the basis of the Act on the National Competence Database.",
+      "title": "Obligation to provide personal data"
+    },
+    "recipients-of-personal-data": {
+      "description": "The person can view, use and manage their own data stored in the competence database freely. The person may also decide to whom the data is disclosed. <br/><br/>By way of derogation from the provisions of the Act on the Openness of Government Activities and elsewhere in the legislation, the Finnish National Agency for Education may disclose information only if the person or their legal representative has given their consent. <br/><br/>Consent can be given to the disclosure of information in the competence database to an authority or other party for the person’s own purposes, even without prejudice to the confidentiality provisions. <br/><br/>In addition, it is possible to give consent to disclose information for the assessment, development, other monitoring, control and guidance of teaching, education and competence. In this case, notwithstanding the confidentiality provisions, only necessary information may be disclosed. <br/><br/>The consent referred to in this section can be given and withdrawn at any time through the Service. Consent must be given voluntarily and explicitly and informed of the purposes for which the data may be used and disclosed. The consent and the notification of its withdrawal must be stored for as long as the data that can be linked to the person. <br/><br/>However, what is provided for in subsection 1 about deviating from of the Act on the Openness of Government Activities and other legislation does not apply to the disclosure of information for archiving purposes which are in the public interest, scientific and historical research purposes or statistical purposes.",
+      "title": "Recipients or recipient groups of personal data"
+    },
+    "register-controller": {
+      "description-1": "The joint controllers of the database are the Finnish National Agency for Education and the Employment, Development and Administrative Centre (KEHA Centre). <br/><br/>The Finnish National Agency for Education is responsible for the rights of the data subjects laid down in Regulation (EU) 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation, GDPR) and other responsibilities of the controller, unless these are provided for in this section as joint responsibilities of both joint controllers. <br/><br/>The joint controllers determine together the purposes and means of the processing of personal data as referred to in Article 4(7) and Article 26. In addition, the joint controllers are jointly responsible for the following GDPR obligations:",
+      "description-2": "In addition, the joint controllers are jointly responsible for the special rules of procedure, the preparation of a data protection impact assessment and other procedural and organisational measures referred to in section 6, subsection 2, points 9–11 of the Data Protection Act (1050/2018).",
+      "list": {
+        "item-1": "obligation to demonstrate referred to in Article 5(2);",
+        "item-2": "lawfulness of the processing referred to in Article 6;",
+        "item-3": "assessment of the data subject’s need for identification in accordance with Article 11 and other legislation;",
+        "item-4": "general obligations of the controller and processor pursuant to chapter 4, section 1;",
+        "item-5": "notification obligations in respect of data breaches referred to in Articles 33 to 34; and",
+        "item-6": "data protection impact assessment and prior consultation in accordance with chapter 4, section 3."
+      },
+      "title": "Controller"
+    },
+    "register-information-content": {
+      "description": "The person may save their information in the competence database which the person voluntarily decides to save. The information must be related to the person's education and work history as well as the person's plans and goals related to their competence, education and career. <br/><br/>Confidential information or information belonging to special categories of personal data may not be entered to the database. However, the person may, if they wish, enter to the database information about their thesis and scientific research, the psychological test and aptitude test they have undergone, certificates they have received from an educational institution, participation in association activities, leisure activities and other similar information, if such information is essential for their plans and objectives related to their educational and employment history, competence and education, career and skills . <br/><br/>In addition, the Finnish National Agency for Education may save the selections concerning the functionalities of the Service and information about the person’s geographical area, age and language in the database.",
+      "ohjaaja": {
+        "content": {
+          "favorites": {
+            "title": "Favourites"
+          },
+          "interests": {
+            "title": "Interests"
+          },
+          "permissions": {
+            "items": {
+              "data-disclosure-controller": "Permission for the disclosure of personal data to the controller",
+              "welcome-flow-completed": "Completion of Welcome Path"
+            },
+            "title": "Permit information"
+          },
+          "workplace-type": {
+            "title": "Type of workplace"
+          }
+        },
+        "title": "Personal data category 2: Guidance practitioners"
+      },
+      "title": "Data content of the register/categories of personal data to be processed",
+      "yksilo": {
+        "content": {
+          "birth-year": {
+            "title": "Year of birth"
+          },
+          "education-history": {
+            "items": {
+              "education": "Education of each education organiser",
+              "education-competences": "Competencies related to each education",
+              "provider": "Education organiser"
+            },
+            "title": "Education history"
+          },
+          "email": {
+            "title": "Email address"
+          },
+          "favorites": {
+            "title": "Favourites"
+          },
+          "free-time-history": {
+            "items": {
+              "activity": "Recreational activity for each theme",
+              "activity-competences": "Competencies related to each activity",
+              "theme": "Recreational activity theme"
+            },
+            "title": "Recreational activity history"
+          },
+          "gender": {
+            "title": "Gender"
+          },
+          "goals": {
+            "title": "Goals"
+          },
+          "hetu": {
+            "title": "Personal identity number"
+          },
+          "home-municipality": {
+            "title": "Place of residence"
+          },
+          "interests": {
+            "items": {
+              "free-text": "free-word description of personal interests",
+              "occupations": "professions",
+              "skills": "competencies"
+            },
+            "title": "Interests"
+          },
+          "mother-tongue": {
+            "title": "Native language"
+          },
+          "other-competences": {
+            "items": {
+              "free-text": "free-word description of one’s own competences",
+              "skills": "competencies"
+            },
+            "title": "Other competencies"
+          },
+          "permissions": {
+            "items": {
+              "ai-training-permission": "Permission for training AI in the use of personal data",
+              "data-disclosure-controller": "Permission for the disclosure of personal data to the controller",
+              "welcome-flow-completed": "Completion of Welcome Path"
+            },
+            "title": "Permit information"
+          },
+          "plans": {
+            "title": "Education and career plan paths"
+          },
+          "ui-language": {
+            "title": "Language of the service use"
+          },
+          "work-history": {
+            "items": {
+              "job-role": "Job description at each workplace",
+              "job-role-competences": "Competencies related to each job description",
+              "workplace": "Job"
+            },
+            "title": "Work history"
+          }
+        },
+        "title": "Personal data category 1: Individuals"
+      }
+    },
+    "storing-time-of-personal-data": {
+      "data-subject-rights": {
+        "access-personal-data": {
+          "description": "The data subject can access their personal data through the Competency Path service by identifying themself through their own competence profile and/or guidance practitioner profile.",
+          "title": "The right to access your personal data"
+        },
+        "complaint": {
+          "description": "The data subject has the right to lodge a complaint with a supervisory authority, in particular in the Member State of their habitual residence or where their place of work is located or where the alleged breach of the GDPR has taken place.",
+          "title": "Right to lodge a complaint with a supervisory authority"
+        },
+        "delete": {
+          "description": "The data subject can delete their data themself through the Competency Path service by logging in to their own competence profile and/or the guidance practitioner profile.",
+          "title": "The right to erasure"
+        },
+        "object": {
+          "description": "When the processing of the personal data in question is based on Article 6(1)(c) GDPR (legal obligation), the data subject does not have the right to object to the processing of their data.",
+          "title": "Right to object"
+        },
+        "rectification": {
+          "description": "The data subject can correct incorrect information through the Competency Path service by logging in to their own competence profile and/or the guidance practitioner profile, to the extent that they are saved there by the data subject.",
+          "title": "Right to rectification"
+        },
+        "request-of-data": {
+          "description": "The data subject has the right to request the controller to enforce the above rights to the extent that they cannot fulfil them themself using the Competency Path service. <br/><br/>The request must be addressed in writing to the Finnish National Agency for Education, Hakaniemenranta 6, P.O. Box 380, 00531 Helsinki, Finland. The data subject must attach the information required for searching for information (name and personal identity number) to the request. Read and complete <CustomLink>the access request form</CustomLink>.",
+          "link": "https://assets.ctfassets.net/4h0h2z8iv5uv/2odzXnRlO1YPgjQjcIOAHu/033736e6a4288f7cf15983a2175f780e/Rekisteritietojen_tarkastuslomake_suomi.pdf",
+          "title": "Duties of the controller upon the request of the data subject"
+        },
+        "restrict-processing": {
+          "description": "The data subject can manage the restriction of data processing themself through the Competency Path service by logging in to their own competence profile and/or the guidance practitioner's desktop. <br/><br/>The data provided or stored by the person or the restrictions chosen by the person may be processed, at the separate request of the person or their legal representative, solely for automated processing referred to in Article 22(1) of the General Data Protection Regulation in order to offer the person education and career options in the Service referred to in this Act. The data subject must be clearly informed of the processing before making a request. <br/><br/>The person has the right to receive support for competence development and career and study guidance referred to in subsection 1 above from the Service also anonymously or without storing their data in the competence database.",
+          "title": "Right to restriction of processing"
+        },
+        "title": "Rights of the data subject",
+        "transfer": {
+          "description": "The data subject can transfer their data through the Competency Path service by identifying themself in their own competence profile. <br/><br/>At the request of a person, their data must be disclosed to the competence database, without prejudice to the confidentiality provisions, from the records and data repositories referred to in the National Registers of Education Records, Qualifications and Degrees (884/2017). In addition, at the request of the person, their information must be disclosed, notwithstanding the confidentiality provisions, between the competence profile and the job search profile on the service platform referred to in chapter 14 of the Act on the Organisation of Employment Services (380/2023).",
+          "title": "Right to data portability from one system to another"
+        },
+        "withdraw-consent": {
+          "description": "Consent regarding the competence database can be given and withdrawn at any time through the Service. <br/><br/>The consent must indicate that it has been given voluntarily and explicitly and that the person is aware of the purposes for which competence data may be used and disclosed. It must also become clear from the consent that it has not been given in a labour administration customer service situation or in an official procedure. The consent of the custodian or other legal representative is also required for the use and disclosure of the information of a minor child. <br/><br/>The consent and the notification of its withdrawal must be stored for as long as the data that can be linked to the person.",
+          "title": "Information on the right to withdraw consent"
+        }
+      },
+      "description": "The information in the competence database is stored until the person deletes their information from the Service. <br/><br/>However, the Finnish National Agency for Education and the Employment, Development and Administrative Centre may establish another retention period for data on the grounds referred to in section 21, subsection 1 of the Act on Information Management in Public Administration (906/2019).",
+      "title": "Personal data retention period"
+    },
+    "title": "Privacy policy and cookies"
+  },
+  "service-banner": "Service package",
+  "show-all": "Show all",
+  "skiplinks": {
+    "main": "Go to main content"
   },
   "slugs": {
     "about-service": "about-service",
-    "privacy-and-cookies": "privacy-notice-and-cookies",
-    "data-sources": "data-sources",
+    "accessibility": "about-accessibility",
     "ai-usage": "about-the-use-of-ai",
-    "accessibility": "about-accessibility"
+    "data-sources": "data-sources",
+    "privacy-and-cookies": "privacy-notice-and-cookies"
   }
 }
