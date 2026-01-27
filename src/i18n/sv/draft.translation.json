@@ -88,24 +88,12 @@
       "title": "Välkommen till Kompetensstigen!"
     }
   },
-  "main-navigation": "Huvudnavigering",
-  "navigation-menu": "Meny",
-  "no-match": {
-    "description": "Sidan du söker kunde inte hittas eller länken är föråldrad. Kontrollera adressen, öppna menyn eller gå till startsidan.",
-    "go-home": "Gå till startsidan",
-    "title": "Hoppsan! Sidan hittades inte"
-  },
-  "note": {
-    "close": "Stäng"
-  },
   "privacy-policy-and-cookies": {
     "chatbot": {
       "description": "I tjänsten Kompetensstigen lagras sökord och -fraser som användaren skriver in i Rådgivningsbotens konversationshistorik. Användare av Rådgivningsbottens administrationsgränssnitt och tjänstens administratörer kan se Rådgivningsbottens konversationshistorik genom att logga in på administrationsgränssnittet med tvåfaktorsautentisering. Inga personuppgifter lagras i konversationerna, eftersom applikationen maskerar personuppgifter med hjälp av en maskeringsalgoritm. Maskeringsalgoritmen känner igen standardiserade och tekniskt modellerbara personuppgifter. Tjänstens användare bör inte skriva in sina personuppgifter i Kompetensstigens Rådgivningsbot. Användarna informeras om detta i Rådgivningsbottens hälsningstext. Konversationer sparas i systemet i högst 24 månader eller under tjänstens avtals giltighetstid.",
       "title": "Kompetensstigens rådgivningsbot"
     },
-    "intro": {
-      "description": "I denna integritetspolicy beskrivs hur personuppgifter behandlas i tjänsten Kompetensstigen. Policyn förklarar också vilka rättigheter de registrerade personerna har och hur dessa rättigheter kan utövas. Registrerade är de personer som har skapat en kompetensprofil samt de personer som har loggat in på handledarens arbetsyta. <br/><br/>Integritetspolicyn uppdateras regelbundet. Den aktuella versionen finns alltid på denna sida."
-    }
+    "intro": {}
   },
   "required": "obligatorisk"
 }
