@@ -7,7 +7,9 @@
   },
   "footer": {
     "feedback": {
-      "content": "We want to develop Competency Path to better meet your specific needs. Give us your feedback to support our development work."
+      "button-text": "Give feedback",
+      "content": "We want to develop Competency Path to better meet your specific needs. Give us your feedback to support our development work.",
+      "title": "Tell us what you thought about the service!"
     },
     "more-info": {
       "description": "Below you will find general and up-to-date information about the service."
@@ -63,7 +65,7 @@
     "personal-guidance": {
       "content": "The services found under guidance and counselling services help you consider your work and education options. Narrow the list of services based on themes that interest you and, for example, where you live to find the most suitable services for you.",
       "link-text": "Go to Guidance and counseling services",
-      "title": "Do you need personal guidance?"
+      "title": "Guidance and advisory services"
     },
     "sections": {
       "ohjaaja": {
@@ -84,7 +86,7 @@
       "title": "What makes up Competency Path?"
     },
     "welcome": {
-      "content": "Competency Path service has been launched. The service is continuously developed based on user feedback. Features may change and new functionalities will be added regularly – thank you for being part of the journey!",
+      "content": "The Competency Path service is moving from the open testing phase to production! The service is still in its early stages and we are actively developing it based on user feedback. The functions may change and new features are added regularly - thank you for being with us!",
       "title": "Welcome to Competency Path!"
     }
   },

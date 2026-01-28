@@ -119,9 +119,9 @@ const Root = () => {
         moreInfoDescription={t('footer.more-info.description')}
         moreInfoLinks={moreInfoLinks}
         moreInfoComponent={Link}
-        feedbackTitle={t('footer.feedback-title')}
+        feedbackTitle={t('footer.feedback.title')}
         feedbackContent={t('footer.feedback.content')}
-        feedbackButtonLabel={t('footer.feedback-button-label')}
+        feedbackButtonLabel={t('footer.feedback.button-text')}
         feedbackOnClick={() => setFeedbackVisible(true)}
         feedbackBgImageClassName="bg-[url(@/../assets/feedback.jpg)] bg-cover bg-[50%_50%]"
         copyright={t('footer.copyright')}
