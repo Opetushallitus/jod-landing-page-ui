@@ -7,7 +7,9 @@
   },
   "footer": {
     "feedback": {
-      "content": "Vi vill utveckla Kompetensstigen så att den bättre motsvarar just dina behov. Ge oss respons för att stödja vårt utvecklingsarbete."
+      "button-text": "Ge respons",
+      "content": "Vi vill utveckla Kompetensstigen så att den bättre motsvarar just dina behov. Ge oss respons för att stödja vårt utvecklingsarbete.",
+      "title": "Berätta vad du tyckte om tjänsten!"
     },
     "more-info": {
       "description": "Nedan hittar du allmän och aktuell information om tjänsten."
@@ -63,7 +65,7 @@
     "personal-guidance": {
       "content": "Tjänsterna som du kan hitta i väglednings- och rådgivningstjänsterna hjälper dig att fundera på dina arbets- och utbildningsalternativ. Begränsa listan över tjänster enligt teman som intresserar dig och till exempel din bostadsort för att hitta de tjänster som passar dig bäst.",
       "link-text": "Gå till Väglednings- och rådgivningstjänster",
-      "title": "Behöver du personlig vägledning?"
+      "title": "Väglednings- och rådgivningstjänster"
     },
     "sections": {
       "ohjaaja": {
@@ -84,7 +86,7 @@
       "title": "Vad ingår i Kompetensstigen?"
     },
     "welcome": {
-      "content": "Kompetensstigen-tjänsten har lanserats. Tjänsten utvecklas kontinuerligt baserat på användarfeedback. Funktioner kan förändras och nya funktioner kommer att läggas till regelbundet – tack för att du är med på resan!",
+      "content": "Tjänsten Kompetensstigen övergår från den öppna testfasen till lansering! Tjänsten är fortfarande i ett tidigt skede och vi utvecklar den aktivt utifrån respons från användarna. Funktionerna kan ändras och nya funktioner kommer regelbundet – tack för att du är med på resan!",
       "title": "Välkommen till Kompetensstigen!"
     }
   },

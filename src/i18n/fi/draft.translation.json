@@ -7,7 +7,9 @@
   },
   "footer": {
     "feedback": {
-      "content": "Haluamme kehittää Osaamispolkua vastaamaan paremmin juuri sinun tarpeitasi. Anna meille palautetta kehitystyömme tukemiseksi."
+      "button-text": "Anna palautetta",
+      "content": "Haluamme kehittää Osaamispolkua vastaamaan paremmin juuri sinun tarpeitasi. Anna meille palautetta kehitystyömme tukemiseksi.",
+      "title": "Kerro meille, mitä pidit palvelusta!"
     },
     "more-info": {
       "description": "Alta löydät yleistä ja ajankohtaista tietoa palvelusta."
@@ -63,7 +65,7 @@
     "personal-guidance": {
       "content": "Ohjaus- ja neuvontapalveluista löytyvät palvelut auttavat sinua työ- ja koulutusvaihtoehtoihin liittyvässä pohdinnassa. Rajaa palveluiden listaa sinua kiinnostavien teemojen ja esimerkiksi asuinpaikkasi perusteella, jotta löydät sinulle parhaiten sopivat palvelut.",
       "link-text": "Siirry Ohjaus- ja neuvontapalveluihin",
-      "title": "Tarvitsetko henkilökohtaista ohjausta?"
+      "title": "Ohjaus- ja neuvontapalveluja"
     },
     "sections": {
       "ohjaaja": {
@@ -84,7 +86,7 @@
       "title": "Mistä Osaamispolku muodostuu?"
     },
     "welcome": {
-      "content": "Osaamispolku-palvelu on julkaistu. Palvelua kehitetään edelleen käyttäjäpalautteen pohjalta. Toiminnot voivat muuttua ja uusia ominaisuuksia tulee lisää säännöllisesti – kiitos kun olet mukana matkassa!",
+      "content": "Osaamispolku-palvelu siirtyy avoimesta testausvaiheesta julkaisuun! Palvelu on edelleen alkuvaiheessa, ja kehitämme sitä aktiivisesti käyttäjäpalautteen pohjalta. Toiminnot voivat muuttua ja uusia ominaisuuksia tulee lisää säännöllisesti – kiitos kun olet mukana matkassa!",
       "title": "Tervetuloa Osaamispolkuun!"
     }
   },
