@@ -38,7 +38,7 @@ export const Breadcrumb = () => {
       serviceVariant="palveluportaali"
       linkComponent={BreadcrumbLink}
       testId="breadcrumb"
-      ariaLabel={t('breadcrumb')}
+      ariaLabel={t('common:breadcrumb')}
     />
   );
 };

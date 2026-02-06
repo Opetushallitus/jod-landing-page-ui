@@ -8,8 +8,8 @@ import { NoMatch, Root } from './Root';
 import loader from './Root/loader';
 
 const aboutService: RouteObject[] = supportedLanguageCodes.map((lng) => ({
-  id: `{slugs.about-service}|${lng}`,
-  path: i18n.t('slugs.about-service', { lng }),
+  id: `{common:slugs.about-service}|${lng}`,
+  path: i18n.t('common:slugs.about-service', { lng }),
   element: <AboutService />,
   handle: {
     title: i18n.t('about-service.title', { lng }),
@@ -17,8 +17,8 @@ const aboutService: RouteObject[] = supportedLanguageCodes.map((lng) => ({
 }));
 
 const privacyAndCookies: RouteObject[] = supportedLanguageCodes.map((lng) => ({
-  id: `{slugs.privacy-and-cookies}|${lng}`,
-  path: i18n.t('slugs.privacy-and-cookies', { lng }),
+  id: `{common:slugs.privacy-and-cookies}|${lng}`,
+  path: i18n.t('common:slugs.privacy-and-cookies', { lng }),
   element: <PrivacyAndCookies />,
   handle: {
     title: i18n.t('privacy-policy-and-cookies.title', { lng }),
@@ -26,8 +26,8 @@ const privacyAndCookies: RouteObject[] = supportedLanguageCodes.map((lng) => ({
 }));
 
 const dataSources: RouteObject[] = supportedLanguageCodes.map((lng) => ({
-  id: `{slugs.data-sources}|${lng}`,
-  path: i18n.t('slugs.data-sources', { lng }),
+  id: `{common:slugs.data-sources}|${lng}`,
+  path: i18n.t('common:slugs.data-sources', { lng }),
   element: <DataSources />,
   handle: {
     title: i18n.t('data-sources.title', { lng }),
@@ -35,8 +35,8 @@ const dataSources: RouteObject[] = supportedLanguageCodes.map((lng) => ({
 }));
 
 const aiUsage: RouteObject[] = supportedLanguageCodes.map((lng) => ({
-  id: `{slugs.ai-usage}|${lng}`,
-  path: i18n.t('slugs.ai-usage', { lng }),
+  id: `{common:slugs.ai-usage}|${lng}`,
+  path: i18n.t('common:slugs.ai-usage', { lng }),
   element: <AiUsage />,
   handle: {
     title: i18n.t('ai-usage.title', { lng }),
@@ -44,8 +44,8 @@ const aiUsage: RouteObject[] = supportedLanguageCodes.map((lng) => ({
 }));
 
 const accessibility: RouteObject[] = supportedLanguageCodes.map((lng) => ({
-  id: `{slugs.accessibility}|${lng}`,
-  path: i18n.t('slugs.accessibility', { lng }),
+  id: `{common:slugs.accessibility}|${lng}`,
+  path: i18n.t('common:slugs.accessibility', { lng }),
   element: <Accessibility />,
   handle: {
     title: i18n.t('accessibility.title', { lng }),

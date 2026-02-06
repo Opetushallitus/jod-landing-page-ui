@@ -39,6 +39,11 @@
       "status": {
         "description": "Webbplatsen uppfyller lagens tillgänglighetskrav enligt WCAG 2.1 nivå AA, med följande identifierade brister:",
         "item-1": "På sidorna finns enskilda rubrikliknande texter som ännu inte har markerats som rubriker för personer som använder hjälpmedel. Detta kan göra det långsammare att bläddra om användaren är van vid att navigera på sidor huvudsakligen med hjälp av rubriker. WCAG 1.3.1 Information och relationer (A)",
+        "item-10": "Min Kompetensstig: Fältet för e postadress i inställningarna saknar namn för hjälpmedel. WCAG 4.1.2 Namn, roll, värde",
+        "item-11": "Datum kan väljas i en popup kalender. Det förvalda datumet exponeras inte för hjälpmedel och kan även vara visuellt svårt att urskilja. WCAG 1.4.1 Färganvändning (A); 4.1.2 Namn, roll, värde (AA)",
+        "item-12": "I olika delar av tjänsten finns klickbara rutor som fungerar som länkar. Rutorna och de karuseller de bildar innehåller fortsatt brister som påverkar tangentbords- och skärmläsaranvändare. Exempelvis kan rutorna ha godtyckliga textalternativ, inkonsekvent läsordning eller sakna information om att området är klickbart.WCAG 1.3.1 Information och relationer (A)",
+        "item-13": "Rådgivningsboten: När chat-fönstret öppnas visas meddelandet \"Ange inte personuppgifter i rådgivningsboten\". Meddelandet kan stängas med en kryssknapp vars namn för hjälpmedel alltid är på engelska: \"close alert\". WCAG 1.1.1 Icke textuellt innehåll",
+        "item-14": "Innehållet i Kompetensstigens informationstjänst består delvis av inbäddade Power BI-rapporter, vars användning med skärmläsare kräver mycket skicklighet. Rapporterna har också delar som inte är tillgängliga. Under utvecklingen har tillgänglighetsbrister åtgärdats i så stor utsträckning som möjligt. Vid vidareutvecklingen av tjänsten strävar vi efter att erbjuda ett alternativt sätt att presentera information för det centrala innehållet.",
         "item-2": "Vissa huvudrubriker använder textfärger som inte uppnår tillräcklig kontrast. WCAG 1.4.3 Kontrast (minimum)",
         "item-3": "Användaren kan inte ändra storlek eller rad-/teckenmellanrum för allt textinnehåll enligt tillgänglighetskraven. Sidorna är dock responsiva, vilket gör att visningen kan förstoras med webbläsarens zoomfunktion. WCAG 1.4.4 Textstorlek; 1.4.12 Textavstånd",
         "item-4": "Individens kompetensprofil: Tabellinformation kan redigeras med knappar placerade i tabellcellerna. Dessa knappar innehåller fortfarande onödiga attribut för hjälpmedel som hänför sig till tidigare tooltip-funktioner, även om sådana texter inte längre används. WCAG 1.3.1 Information och relationer",
@@ -47,11 +52,6 @@
         "item-7": "I individens kompetensprofil visas intressen i listor. När ett enskilt intresse fokuseras med tangentbord eller mus visas ytterligare information i en popup-bubbla. Denna tilläggsinformation kan varken läsas med skärmläsare eller visas i pekläge. WCAG 1.3.1 Information och relationer",
         "item-8": "Vissa rubriker har klickbara ikoner som öppnar en popup-bubbla med mer information. Innehållet kan vara svårt för hjälpmedelsanvändare att läsa eftersom det ligger på en annan plats i läsordningen. Ikonen saknar dessutom korrekt knapp roll, och länkar i popupen kan inte fokuseras eller aktiveras med tangentbord. WCAG 1.3.1; 2.1.1 Tangentbord",
         "item-9": "Vägledar-delen: Undersidorna innehåller en navigation med rubriken ”I denna sektion”. Den har en lista med länkar som kan öppnas och stängas. Knappen som öppnar listan saknar namn för hjälpmedel. WCAG 4.1.2 Namn, roll, värde",
-        "item-10": "Min Kompetensstig: Fältet för e postadress i inställningarna saknar namn för hjälpmedel. WCAG 4.1.2 Namn, roll, värde",
-        "item-11": "Datum kan väljas i en popup kalender. Det förvalda datumet exponeras inte för hjälpmedel och kan även vara visuellt svårt att urskilja. WCAG 1.4.1 Färganvändning (A); 4.1.2 Namn, roll, värde (AA)",
-        "item-12": "I olika delar av tjänsten finns klickbara rutor som fungerar som länkar. Rutorna och de karuseller de bildar innehåller fortsatt brister som påverkar tangentbords- och skärmläsaranvändare. Exempelvis kan rutorna ha godtyckliga textalternativ, inkonsekvent läsordning eller sakna information om att området är klickbart.WCAG 1.3.1 Information och relationer (A)",
-        "item-13": "Rådgivningsboten: När chat-fönstret öppnas visas meddelandet \"Ange inte personuppgifter i rådgivningsboten\". Meddelandet kan stängas med en kryssknapp vars namn för hjälpmedel alltid är på engelska: \"close alert\". WCAG 1.1.1 Icke textuellt innehåll",
-        "item-14": "Innehållet i Kompetensstigens informationstjänst består delvis av inbäddade Power BI-rapporter, vars användning med skärmläsare kräver mycket skicklighet. Rapporterna har också delar som inte är tillgängliga. Under utvecklingen har tillgänglighetsbrister åtgärdats i så stor utsträckning som möjligt. Vid vidareutvecklingen av tjänsten strävar vi efter att erbjuda ett alternativt sätt att presentera information för det centrala innehållet.",
         "navTitle": "Tillgänglighetens status"
       },
       "updates": {
@@ -162,9 +162,6 @@
       "title": "Varför används artificiell intelligens i Kompetensstigen?"
     }
   },
-  "breadcrumb": "Synlig sökväg",
-  "close-menu": "Stäng menyn",
-  "competency-path-portal": "Kompetensstigens startsida",
   "data-sources": {
     "intro": "På den här sidan hittar du alla datakällor som har använts i olika delar av tjänsten Kompetensstigen.",
     "read-more": "Läs mer:",
@@ -294,76 +291,80 @@
     },
     "title": "Datakällor"
   },
-  "external-link": "Länken leder dig utanför tjänsten",
-  "feedback": {
-    "cancel": "Avbryt",
-    "email-label": "E-postadress",
-    "error": "Det gick inte att skicka respons. Försök på nytt senare.",
-    "footer-handled": {
-      "ohjaajan": "Vägledarens del på UF-centret,",
-      "osaamispolkuni": "Min kompetensstig i Utbildningsstyrelsen,",
-      "tietopalvelu": "Informationstjänsten, hela tjänsten och annan respons hos undervisnings- och kulturministeriet."
-    },
-    "footer-info-1": "När du skickar respons sparar vi tjänstens statusinformation, till exempel från vilken vy responsen har skickats. Statusinformationen vidarebefordras inte till tredje parter. Responsen används för utveckling av tjänsten och frivilligt lämnade kontaktuppgifter används för att svara på responsen.",
-    "footer-info-heading": "Beroende på delen behandlas responsen på följande sätt:",
-    "footer-privacy-heading": "Läs mer i responshanterarnas dataskyddsbeskrivningar:",
-    "intro-1": "Ge respons om tjänsten eller rapportera ett tekniskt problem. På så sätt hjälper du oss i utvecklingen av tjänsterna.",
-    "intro-2": "Om du rapporterar en störning skulle det hjälpa oss om du berättar om den så noggrant som möjligt.",
-    "intro-privacy": "Skriv inga personuppgifter i din respons, såsom personbeteckning eller hälsouppgifter. Vänligen fyll i alla fält så att vi kan behandla din respons.",
-    "linkHrefs": {
-      "keha": "https://tyomarkkinatori.fi/sv/information-om-tjansten/dataskydds-och-registerbeskrivning-och-anvandarvillkor/dataskyddsbeskrivningar",
-      "okm": "https://okm.fi/sv/information-om-webbtjanst",
-      "oph": "https://www.oph.fi/sv/integritetspolicy"
-    },
-    "links": {
-      "keha": "Dataskyddsbeskrivning för UF-centrets kund- och rådgivningstjänster",
-      "okm": "Undervisnings- och kulturministeriets dataskyddsbeskrivning",
-      "oph": "Utbildningsstyrelsens integritetspolicy"
-    },
-    "message-label": "Respons",
-    "section-question": "Vilken del gäller din respons?",
-    "sections": {
-      "koko-palvelu": "Hela tjänsten eller annan respons",
-      "ohjaajan-osio": "Vägledar-delen",
-      "osaamispolkuni": "Min kompetensstig",
-      "tietopalvelu": "Informationstjänst"
-    },
-    "submit": "Skicka",
-    "success": "Tack för din respons! Din respons hjälper oss att förbättra tjänsten.",
-    "title": "Ge respons",
-    "type-question": "Vilken typ av respons vill du ge?",
-    "types": {
-      "kehitysehdotus": "Utvecklingsförslag",
-      "kehu": "Beröm",
-      "moite": "Kritik",
-      "vika": "Tekniskt fel eller problem"
-    },
-    "wants-contact": "Jag vill vid behov bli kontaktad per e-post."
-  },
-  "footer": {
-    "cooperation-title": "Kompetensstigen har genomförts i samarbete mellan följande parter:",
-    "copyright": "© Kompetensstigen 2026. Alla rättigheter förbehålls.",
-    "funding-title": "Finansieringen av tjänsten kommer från EU:s facilitet för återhämtning och resiliens (RRF).",
-    "logos": {
-      "keha-label": "UF-centret",
-      "okm-label": "Undervisnings- och kulturministeriet",
-      "oph-label": "Utbildningsstyrelsen",
-      "tem-label": "Arbets- och näringsministeriet"
-    },
-    "more-info-links": {
-      "about-service": "Information om tjänsten",
-      "accessibility": "Tillgänglighetsutlåtande",
-      "ai-usage": "Information om användningen av artificiell intelligens",
-      "data-sources": "Datakällor",
-      "privacy-and-cookies": "Dataskyddsbeskrivning och cookies"
-    },
-    "more-info-title": "Vill du veta mer om Kompetensstigen?"
-  },
   "front-page": "Framsida",
   "home": {
+    "competency-path-help": {
+      "opinfi": {
+        "text-1": "<CustomLink>Opin.fi<Icon></Icon></CustomLink> är en tjänst som på ett och samma ställe samlar utbudet av öppna studier vid finländska universitet och yrkeshögskolor.",
+        "text-2": "Opin.fi är avsedd för alla som vill utveckla sina kunskaper och färdigheter – hitta kompletterande utbildningar och nya färdigheter eller bekanta sig med högskolestudier.",
+        "url": "https://opin.fi/sv"
+      },
+      "opintopolku": {
+        "text-1": "<CustomLink>Studieinfo<Icon></Icon></CustomLink> erbjuder omfattande information om utbildningar och ansökningstjänster för olika utbildningsnivåer.",
+        "text-2": "När du har hittat en intressant utbildningsmöjlighet i Kompetensstigen kan du gå till Studieinfo för att läsa mer och ansöka till utbildningen. När du loggar in i Min kompetensstig kan du importera din utbildningshistorik till din kompetensprofil från Studieinfo.",
+        "url": "https://opintopolku.fi/konfo/sv/"
+      },
+      "tyomarkkinatori": {
+        "text-1": "<CustomLink>Jobbmarknaden<Icon></Icon></CustomLink> samlar lediga jobb och stöder dig i arbetssökningen och karriärplaneringen.",
+        "text-2": "När du har hittat en intressant arbetsmöjlighet i Kompetensstigen kan du gå till Jobbmarknaden för att läsa mer och söka lediga jobb. Du kan också överföra dina uppgifter mellan kompetensprofilen i Min kompetensstig och jobbsökningsprofilen på Jobbmarknaden.",
+        "url": "https://tyomarkkinatori.fi/sv/"
+      },
+      "you": {
+        "text-1": "Kompetensstigen, Studieinfo, Jobbmarknaden och Opin.fi bildar tillsammans en tjänstehelhet som stöder lärande, karriärplanering och jobbsökning i olika livssituationer. Varje tjänst spelar sin egen roll, men tillsammans erbjuder de dig en tydlig stig för utvecklingen av din kompetens och din karriär.",
+        "text-2": "Om du letar efter en riktning eller din egen stig kan du identifiera dina egna styrkor och intressen i Kompetensstigen och hitta utbildnings- och jobbmöjligheter som är lämpliga för dem. När du har utrett hur du vill gå vidare, hjälper Studieinfo, Jobbmarknaden och Opin.fi dig att söka dig till dem.",
+        "title": "Hur hjälper Kompetensstigen dig som en del av andra tjänster?"
+      }
+    },
+    "hero": {
+      "content": "Kartlägg dina intressen och din kompetens. Hitta lämpliga alternativ utifrån dem. Min kompetensstig stöder dig när du söker en riktning för dina förmågor och din passion. Dina ögon kan öppna sig för överraskande möjligheter.",
+      "link-text": "Öppna Min kompetensstig",
+      "title": "Kompetensstigen – hitta din riktning"
+    },
     "how-competency-path-helps-you-opinfi-title": "Opin.fi",
     "how-competency-path-helps-you-opintopolku-title": "Studieinfo",
     "how-competency-path-helps-you-tmt-title": "Jobbmarknaden",
+    "palvelut": {
+      "ohjaus": {
+        "content": "Använd materialet i ditt vägledningsarbete. Hitta verktyg som du kan använda i vägledningssituationer eller ge som en självständig uppgift till dem som behöver vägledning.",
+        "link-text": "Till stöd för kundarbetet",
+        "title": "Verktyg för vägledningsarbetet"
+      },
+      "tietopalvelu": {
+        "content": "Se en helhetsbild över Informationstjänstens innehåll. Du kan filtrera listan med hjälp av nyckelord och gå vidare till det informationsinnehåll som intresserar dig.",
+        "link-text": "Informationstjänstens innehåll",
+        "path": "informationsinnehall",
+        "title": "Aktuell information som stöd för beslutsfattandet"
+      },
+      "title": "Hittade du inte det du letade efter?",
+      "tool": {
+        "content": "Berätta vad du kan och vad du är intresserad av och välj kompetenser som lämpar sig för dem. Hitta lämpliga utbildnings- och arbetsmöjligheter utifrån dem.",
+        "link-text": "Hitta möjligheter",
+        "title": "Lämpliga möjligheter snabbt"
+      }
+    },
+    "personal-guidance": {
+      "content": "Tjänsterna som du kan hitta i väglednings- och rådgivningstjänsterna hjälper dig att fundera på dina arbets- och utbildningsalternativ. Begränsa listan över tjänster enligt teman som intresserar dig och till exempel din bostadsort för att hitta de tjänster som passar dig bäst.",
+      "link-text": "Gå till Väglednings- och rådgivningstjänster",
+      "title": "Väglednings- och rådgivningstjänster"
+    },
+    "sections": {
+      "ohjaaja": {
+        "content": "I vägledar-delen hittar du aktuell och högklassig information och metoder som stöd för ditt vägledningsarbete och material som stärker din egen vägledningskompetens.",
+        "link-text": "Vägledar-delen",
+        "title": "Vägledar-delen"
+      },
+      "osaamispolku": {
+        "content": "Kartlägg dina intressen och kompetenser och hitta utbildnings- och jobbmöjligheter. Genom att logga in på Min kompetensstig kan du skapa din egen kompetensprofil och spara dina uppgifter för senare bruk.",
+        "link-text": "Min kompetensstig",
+        "title": "Min kompetensstig"
+      },
+      "tietopalvelu": {
+        "content": "Informationstjänsten sammanställer uppgifter om utbildning, arbetsmarknaden och kompetens som stöd för beslutsfattandet. Du kan granska de informationshelheter som intresserar dig ur olika perspektiv med hjälp av olika filter.",
+        "link-text": "Informationstjänst",
+        "title": "Informationstjänst"
+      },
+      "title": "Vad ingår i Kompetensstigen?"
+    },
     "services": {
       "ohjaus": {
         "path": "till-stod-for-kundarbetet"
@@ -371,47 +372,13 @@
       "tool": {
         "path": "verktyg"
       }
-    }
-  },
-  "language-selection": "Språk",
-  "login": "Logga in",
-  "main-navigation": "Huvudmenyn",
-  "menu": "Meny",
-  "navigation": {
-    "external": {
-      "ohjaaja": {
-        "description": "Information och material för vägledning",
-        "label": "Vägledar-delen"
-      },
-      "osaamispolku": {
-        "description": "Personlig kompetensstig",
-        "label": "Min kompetensstig"
-      },
-      "tietopalvelu": {
-        "description": "Information till stöd för beslutsfattande",
-        "label": "Informationstjänst"
-      },
-      "title": "Uppsättningar av innehåll"
     },
-    "extra": {
-      "palveluhakemisto": {
-        "label": "Väglednings- och rådgivningstjänster",
-        "url": "https://www.suomi.fi/amne/vaglednings-och-radgivningstjanster"
-      },
-      "title": "Annat stöd för reflektion"
+    "welcome": {
+      "content": "Tjänsten Kompetensstigen övergår från den öppna testfasen till lansering! Tjänsten är fortfarande i ett tidigt skede och vi utvecklar den aktivt utifrån respons från användarna. Funktionerna kan ändras och nya funktioner kommer regelmässigt – tack för att du är med på resan!",
+      "title": "Välkommen till Kompetensstigen!"
     }
-  },
-  "navigation-menu": "Meny",
-  "no-match": {
-    "description": "Sidan du sökte hittades inte.",
-    "go-home": "Gå till startsidan",
-    "title": "Sidan kunde inte hittas"
-  },
-  "note": {
-    "close": "Stäng"
   },
   "on-this-page": "På denna sida",
-  "osaamispolku": "Kompetensstigen",
   "privacy-cookies": {
     "3rd-party": {
       "description": "Kompetensstigen använder applikationer från tredje parter, såsom YouTube och Power BI, som laddas ner från dessa tjänsters egna servrar. YouTube används i videorna i Kompetensstigens helhet för vägledare. Power BI används för att producera rapportvyer i informationstjänsten. Tredjepartscookies används anonymt för att säkerställa funktionen av applikationer som är inbäddade på webbplatsen och för att förbättra användarupplevelsen. <br/><br/>Inga tredjepartscookies kommer att installeras på din enhet om du inte använder innehåll från externa tjänsteleverantörer. <br/><br/>Tredjepartstjänster eller applikationer som tillhandahålls av tredje parter omfattas av respektive tredje parts användarvillkor och andra villkor. <br/><br/>Mer information: <br/><CustomLink1>Microsoft (Power BI)</CustomLink1> <CustomLink2>Google (YouTube)</CustomLink2>",
@@ -459,6 +426,10 @@
       "description": "Uppgifter som lämnats och sparats av personen och de begränsningar som hen valt får behandlas på det sätt som avses i artikel 22.1 i den allmänna dataskyddsförordningen endast automatiskt för att kartlägga och presentera utbildnings- och karriärmöjligheter. Sådan behandling förutsätter att personen väljer att utnyttja automatisk behandling för detta syfte i tjänsten. Innan valet görs ska Utbildningsstyrelsen tydligt meddela personen om den automatiska behandlingen i tjänsten. I samband med möjligheten som presenteras för personen ska hen i tjänsten få information om hur hens uppgifter och de begränsningar som hen valt har beaktats.",
       "title": "Automatisk behandling av uppgifter och dess effekter"
     },
+    "chatbot": {
+      "description": "I tjänsten Kompetensstigen lagras sökord och -fraser som användaren skriver in i Rådgivningsbotens konversationshistorik. Användare av Rådgivningsbottens administrationsgränssnitt och tjänstens administratörer kan se Rådgivningsbottens konversationshistorik genom att logga in på administrationsgränssnittet med tvåfaktorsautentisering. Inga personuppgifter lagras i konversationerna, eftersom applikationen maskerar personuppgifter med hjälp av en maskeringsalgoritm. Maskeringsalgoritmen känner igen standardiserade och tekniskt modellerbara personuppgifter. Tjänstens användare bör inte skriva in sina personuppgifter i Kompetensstigens Rådgivningsbot. Användarna informeras om detta i Rådgivningsbottens hälsningstext. Konversationer sparas i systemet i högst 24 månader eller under tjänstens avtals giltighetstid.",
+      "title": "Kompetensstigens rådgivningsbot"
+    },
     "data-handling-use": {
       "description": "Syftet med den nationella informationsresursen för kompetenser är att göra det möjligt för personer att spara och upprätthålla information om sin egen kompetens och om sina intressen och planer i anknytning till arbetskarriär och utbildning. Informationsresursen för kompetenser är en del av den digitala tjänsten, nedan tjänsten, vars syfte är att stödja personer i att söka sig till utbildning och arbetslivet, i övergångar i anslutning till utbildning och arbetsliv, i att upprätthålla den egna kompetensen och i att utnyttja de egna utbildnings- och karriäruppgifterna. <br/><br/>Dessutom är syftet med informationsresursen att tillhandahålla en kunskapsbas för att upprätthålla lägesbilden för undervisning, utbildning, vägledning och kompetens och för att stödja deras utveckling samt prognostisering.",
       "legal-basis": {
@@ -472,6 +443,10 @@
         "title": "Rättslig grund"
       },
       "title": "Syftet med behandlingen av personuppgifter"
+    },
+    "info-about-3rd-country": {
+      "description": "Uppgifterna lagras i serverhallar hos tjänsteleverantören Amazon Web Services inom EU. Uppgifterna överförs inte till länder utanför EU eller Europeiska ekonomiska samarbetsområdet.",
+      "title": "Information om överföringen av uppgifter till tredje land och om skyddsåtgärder som vidtas"
     },
     "info": {
       "contact": {
@@ -498,10 +473,6 @@
         "content": "Utbildningsstyrelsen och UF-centret",
         "title": "Den personuppgiftsansvarige:"
       }
-    },
-    "info-about-3rd-country": {
-      "description": "Uppgifterna lagras i serverhallar hos tjänsteleverantören Amazon Web Services inom EU. Uppgifterna överförs inte till länder utanför EU eller Europeiska ekonomiska samarbetsområdet.",
-      "title": "Information om överföringen av uppgifter till tredje land och om skyddsåtgärder som vidtas"
     },
     "intro": {
       "description": "Denna dataskyddsbeskrivning beskriver hur personuppgifter behandlas i tjänsten Kompetensstigen. Beskrivningen förklarar också vilka rättigheter de registrerade personerna har och hur dessa rättigheter kan utövas. Som registrerade räknas personer som har skapat en kompetensprofil och personer som är inloggade på vägledarens skrivbord. <br/><br/>Dataskyddsbeskrivningen uppdateras regelbundet. Du hittar alltid den aktuella versionen på denna sida",
@@ -681,16 +652,5 @@
     },
     "title": "Dataskyddsbeskrivning och cookies"
   },
-  "service-banner": "Tjänstehelhet",
-  "show-all": "Visa alla",
-  "skiplinks": {
-    "main": "Gå till huvudinnehållet"
-  },
-  "slugs": {
-    "about-service": "information-om-tjansten",
-    "accessibility": "information-om-tillganglighet",
-    "ai-usage": "information-om-anvandningen-av-artificiell-intelligens",
-    "data-sources": "datakallor",
-    "privacy-and-cookies": "dataskyddsbeskrivning-och-cookies"
-  }
+  "service-banner": "Tjänstehelhet"
 }

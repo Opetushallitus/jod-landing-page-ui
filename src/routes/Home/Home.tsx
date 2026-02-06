@@ -87,7 +87,7 @@ const MainCard = () => {
             title={t('home.hero.title')}
             titleLevel={1}
             buttonLabel={t('home.hero.link-text')}
-            buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
+            buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
             to={`/yksilo/${language}`}
             linkComponent={ExternalLink}
           />
@@ -159,7 +159,7 @@ const ServiceBlock = ({
           className={cx('active:hover:underline', 'group-focus:underline', className)}
           variant="accent"
           label={buttonLabel}
-          icon={<JodOpenInNew ariaLabel={t('external-link')} />}
+          icon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
           iconSide="right"
           linkComponent={getLinkTo(to, {
             useAnchor: true,
@@ -286,7 +286,7 @@ const Home = () => {
 
   return (
     <main role="main" className="mx-auto w-full max-w-(--breakpoint-xl) bg-white" id="jod-main">
-      <title>{t('osaamispolku')}</title>
+      <title>{t('common:osaamispolku')}</title>
       <MainCard />
       <Content title={t('home.welcome.title')} className="mt-7 lg:mt-8" verticalPaddingClass="pt-7 lg:pt-8">
         <p className="text-body-lg whitespace-pre-line max-w-[716px]">{t('home.welcome.content')}</p>
@@ -303,7 +303,7 @@ const Home = () => {
               <Trans
                 i18nKey="home.competency-path-help.opintopolku.text-1"
                 components={{
-                  Icon: <JodOpenInNew size={18} className="ml-1" ariaLabel={t('external-link')} />,
+                  Icon: <JodOpenInNew size={18} className="ml-1" ariaLabel={t('common:external-link')} />,
                   CustomLink: (
                     <Link
                       to={t('home.competency-path-help.opintopolku.url')}
@@ -323,7 +323,7 @@ const Home = () => {
               <Trans
                 i18nKey="home.competency-path-help.tyomarkkinatori.text-1"
                 components={{
-                  Icon: <JodOpenInNew size={18} className="ml-1" ariaLabel={t('external-link')} />,
+                  Icon: <JodOpenInNew size={18} className="ml-1" ariaLabel={t('common:external-link')} />,
                   CustomLink: (
                     <Link
                       to={t('home.competency-path-help.tyomarkkinatori.url')}
@@ -348,7 +348,7 @@ const Home = () => {
               <Trans
                 i18nKey="home.competency-path-help.opinfi.text-1"
                 components={{
-                  Icon: <JodOpenInNew size={18} className="ml-1" ariaLabel={t('external-link')} />,
+                  Icon: <JodOpenInNew size={18} className="ml-1" ariaLabel={t('common:external-link')} />,
                   CustomLink: (
                     <Link
                       to={t('home.competency-path-help.opinfi.url')}
@@ -374,7 +374,7 @@ const Home = () => {
           title={t('home.sections.osaamispolku.title')}
           to={`/yksilo/${language}`}
           buttonLabel={t('home.sections.osaamispolku.link-text')}
-          buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
+          buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
           bgImageClassName=" bg-[url(@/../assets/osaamispolkuni.jpg)] bg-cover bg-[50%_50%]"
         />
         <SecondaryCard
@@ -383,7 +383,7 @@ const Home = () => {
           title={t('home.sections.ohjaaja.title')}
           to={`/ohjaaja/${language}`}
           buttonLabel={t('home.sections.ohjaaja.link-text')}
-          buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
+          buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
           bgImageClassName=" bg-[url(@/../assets/ohjaaja.jpg)] bg-cover bg-[50%_50%]"
         />
         <SecondaryCard
@@ -391,7 +391,7 @@ const Home = () => {
           content={t('home.sections.tietopalvelu.content')}
           title={t('home.sections.tietopalvelu.title')}
           to={`/tietopalvelu/${language}`}
-          buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
+          buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
           buttonLabel={t('home.sections.tietopalvelu.link-text')}
           bgImageClassName="bg-[url(@/../assets/tietopalvelu.jpg)] bg-cover bg-[50%_50%]"
         />
@@ -426,9 +426,9 @@ const Home = () => {
         color="#00818A"
         content={t('home.personal-guidance.content')}
         title={t('home.personal-guidance.title')}
-        to={t('navigation.extra.palveluhakemisto.url')}
+        to={t('common:navigation.extra.palveluhakemisto.url')}
         buttonLabel={t('home.personal-guidance.link-text')}
-        buttonIcon={<JodOpenInNew ariaLabel={t('external-link')} />}
+        buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
         bgImageClassName=" bg-[url(@/../assets/palveluhakemisto.jpg)] bg-cover bg-[50%_50%]"
       />
     </main>
