@@ -12,7 +12,7 @@ import {
   LogoTyomarkkinatoriSv,
 } from '@/components/Logos';
 import { getLinkTo } from '@/utils/routeUtils';
-import { Button, cx, HeroCard, tidyClasses as tc } from '@jod/design-system';
+import { Button, cx, HeroCard, tidyClasses as tc, useMediaQueries } from '@jod/design-system';
 import { JodOpenInNew } from '@jod/design-system/icons';
 import React, { JSX } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
@@ -38,6 +38,8 @@ const MainCard = () => {
     i18n: { language },
   } = useTranslation();
 
+  const { sm } = useMediaQueries();
+
   const firstCardRef = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
@@ -57,10 +59,14 @@ const MainCard = () => {
   // Rotate hero image weekly
   const heroSrc = React.useMemo(() => {
     const heroImages = [heroSrc1, heroSrc2, heroSrc3, heroSrc4];
-    // eslint-disable-next-line react-hooks/purity
     const weekNumber = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000));
     return heroImages[weekNumber % heroImages.length];
   }, []);
+
+  const heroHeight = React.useMemo(() => {
+    return window.innerHeight - 68;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [window.innerWidth]);
 
   return (
     <>
@@ -69,10 +75,10 @@ const MainCard = () => {
         src={heroSrc}
         alt=""
         role="none"
-        className="w-(--breakpoint-xl) sm:h-[617px] h-[calc(100vh-64px)] object-cover xl:object-[50%_50%] lg:object-[58.5%_50%] md:object-[67.3%_50%] sm:object-[70%_50%] object-[71.7%_50%]"
+        className="w-(--breakpoint-xl) sm:h-[617px] object-cover xl:object-[50%_50%] lg:object-[58.5%_50%] md:object-[67.3%_50%] sm:object-[70%_50%] object-[71.7%_50%] pointer-events-none select-none touch-none"
+        style={sm ? undefined : { height: heroHeight }}
         data-testid="home-hero"
       />
-
       <div className="mx-auto max-w-[1092px] px-5 sm:px-6 xl:px-0 relative" ref={firstCardRef}>
         <div className="max-w-[716px]">
           <HeroCard
