@@ -1,16 +1,10 @@
 import { BasicArticleSectionContent } from '@/components/ArticleSectionContent/BasicArticleSectionContent';
 import { ArticleSectionPage } from '@/components/ArticleSectionPage/ArticleSectionPage';
+import { createArticleSectionData } from '@/utils';
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { ArticleSection } from '../types';
 
-const createArticleSectionData = (navTitle: string, text: React.ReactNode, onlyText: boolean = true) => {
-  return {
-    navTitle,
-    text,
-    onlyText,
-  };
-};
 const Accessibility = () => {
   const { t } = useTranslation();
 

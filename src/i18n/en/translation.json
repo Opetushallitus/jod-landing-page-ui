@@ -1,9 +1,9 @@
 {
   "about-service": {
-    "intro": "Competency Path is a new digital service to support education and career planning, competence development and employment. It will be launched in early 2026. Competency Path is aimed at individuals who are making career and study choices, guidance practitioners, training and education organisations, employers and experts from various administrative sectors.",
+    "intro": "Competency Path is a new digital service to support education and career planning, competence development and employment. Competency Path is aimed at all individuals who are making career and study choices, guidance practitioners, training and education organisations, employers and experts from various administrative sectors.",
     "sections": {
       "advisor-section": {
-        "description": "In the guidance practitioner section, you will find up-to-date high-quality information and methods to support your career guidance work as well as materials to strengthen your own competence. The guidance practitioner section is intended for all operators in the guidance sector. Guidance practitioners can work, for example, in student and career guidance as well as in the education, labour administration or the private sector.",
+        "description": "In the guidance practitioner section, you will find up-to-date high-quality information and methods to support your career guidance work as well as materials to strengthen your own competence. The guidance practitioner section is intended for all professionals in the guidance sector. Guidance practitioners can work, for example, in student and career guidance as well as in the education, labour administration or the private sector.",
         "navTitle": "Guidance practitioner section"
       },
       "guidance-and-counseling": {
@@ -15,7 +15,7 @@
         "navTitle": "Information service"
       },
       "jod-project": {
-        "description": "The development of Competency Path is the responsibility of \"digital service package for continuous learning\", which is a joint project between the Ministry of Education and Culture and the Ministry of Economic Affairs and Employment from 2021 to 2025. The Finnish National Agency for Education, the Centre for Economic Development, Transport and the Environment, higher educations institutions through the Digivision 2030 project and the Service Centre for Continuous Learning and Employment are closely involved in the development work. The project is funded by the EU’s Recovery and Resilience Facility (RRF).",
+        "description": "The development of Competency Path was the responsibility of \"digital service package for continuous learning\", which was a joint project between the Ministry of Education and Culture and the Ministry of Economic Affairs and Employment from 2021 to 2025. The Finnish National Agency for Education, KEHA Centre, higher educations institutions through the Digivision 2030 project and the Service Centre for Continuous Learning and Employment were closely involved in the development work. The project was funded by the EU’s Recovery and Resilience Facility (RRF). <br><br> The service is managed by the Ministry of Education and Culture, the Ministry of Economic Affairs and Employment, the Finnish National Agency for Education, and the KEHA Centre.",
         "navTitle": "Digital service package for continuous learning (JOD) project"
       },
       "my-path": {
@@ -26,7 +26,7 @@
     "title": "About the service"
   },
   "accessibility": {
-    "intro": "This accessibility statement applies to the Osaamispolku.fi service. The statement explains how this online service complies with the accessibility requirements set by law",
+    "intro": "This accessibility statement applies to the Osaamispolku.fi service. The statement explains how this online service complies with the accessibility requirements set by law.",
     "sections": {
       "feedback": {
         "description": "If you notice accessibility issues in the service, please let us know. We will take the feedback into account in development. Email: jod@gov.fi. If you notice any accessibility issues on the website, please contact us first. It may take up to 14 days for us to respond. If you are not satisfied with our reply or if you do not receive any response within two weeks, you can submit a notification here.<br/><br/> Contact information of the supervisory authority: <br/><br/>Finnish Transport and Communications Agency Traficom<br/>Digital accessibility monitoring, P.O. Box 320<br/>00059 TRAFICOM<br/>https://www.saavutettavuusvaatimukset.fi/en<br/>saavutettavuus(at)traficom.fi<br/>Telephone number, switchboard: +358 (0)29 534 5000",

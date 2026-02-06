@@ -1,9 +1,9 @@
 {
   "about-service": {
-    "intro": "Kompetensstigen är en ny digital tjänst som är avsedd som stöd för planering av utbildning och karriär, kompetensutveckling och sysselsättning. Tjänsten kommer att lanseras i början av 2026. Kompetensstigen riktar sig till personer som planerar sin karriär och utbildning, vägledare, utbildningsorganisationer, arbetslivsaktörer och experter inom olika förvaltningsområden.",
+    "intro": "Kompetensstigen är en ny digital tjänst som är avsedd som stöd för planering av utbildning och karriär, kompetensutveckling och sysselsättning. Kompetensstigen riktar sig till alla personer som planerar sin karriär och utbildning, vägledare, utbildningsorganisationer, arbetslivsaktörer och experter inom olika förvaltningsområden.",
     "sections": {
       "advisor-section": {
-        "description": "I avsnittet för vägledare hittar du aktuell och högklassig information och metoder som stöd för ditt karriärvägledningsarbete och material som stärker din egen kompetens. Vägledarens avsnitt är avsett för alla aktörer inom vägledningsbranschen och vägledarna kan arbeta till exempel inom elevhandledning, karriärvägledning, utbildning eller arbetskraftsförvaltning eller inom den privata sektorn.",
+        "description": "I avsnittet för vägledare hittar du aktuell och högklassig information och metoder som stöd för ditt karriärvägledningsarbete och material som stärker din egen kompetens. Vägledarens avsnitt är avsett för alla experter inom vägledningsbranschen. Vägledarna kan arbeta till exempel inom elevhandledning, karriärvägledning, utbildning eller arbetskraftsförvaltning eller inom den privata sektorn.",
         "navTitle": "Vägledar-delen"
       },
       "guidance-and-counseling": {
@@ -15,7 +15,7 @@
         "navTitle": "Informationstjänst"
       },
       "jod-project": {
-        "description": "För utvecklingen av Kompetensstigen ansvarar projektet Digitala servicehelheten för kontinuerligt lärande, som är ett samprojekt mellan undervisnings- och kulturministeriet och arbets- och näringsministeriet åren 2021–2025. Utbildningsstyrelsen, NTM-centralernas utvecklings- och förvaltningscentral, högskolorna genom projektet Digivision 2030 och Servicecentret för kontinuerligt lärande och sysselsättning deltar intensivt i utvecklingsarbetet. Projektet finansieras av EU:s facilitet för återhämtning och resiliens (RRF).",
+        "description": "För utvecklingen av Kompetensstigen ansvararade projektet Digitala servicehelheten för kontinuerligt lärande, som var ett samprojekt mellan undervisnings- och kulturministeriet och arbets- och näringsministeriet åren 2021–2025. Utbildningsstyrelsen, UF-centret, högskolorna genom projektet Digivision 2030 och Servicecentret för kontinuerligt lärande och sysselsättning deltog intensivt i utvecklingsarbetet. Projektet finansierades av EU:s facilitet för återhämtning och resiliens (RRF). <br><br>Tjänsten ansvaras av undervisnings- och kulturministeriet, arbets- och näringsministeriet, Utbildningsstyrelsen och UF centret.",
         "navTitle": "Projektet Digitala servicehelheten för kontinuerligt lärande"
       },
       "my-path": {
@@ -30,7 +30,7 @@
     "sections": {
       "feedback": {
         "description": "Om du upptäcker tillgänglighetsproblem i tjänsten, berätta om det för oss. Vi tar hänsyn till responsen i utvecklingen. E-post: jod@gov.fi <br/>Om du upptäcker tillgänglighetsproblem på webbplatsen, kontakta oss först. Det kan ta upp till 14 dagar innan du får svar. Om du inte är nöjd med det svar du får eller inte får något svar alls inom två veckor, kan du göra en anmälan här. <br/><br/>Tillsynsmyndighetens kontaktuppgifter: <br/><br/>Transport- och kommunikationsverket Traficom<br/>Tillsynen över digital tillgänglighet PB 320<br/>00059 TRAFICOM<br/>www.tillganglighetskrav.fi<br/>saavutettavuus(at)traficom.fi<br/>Telefonväxel: 029 534 5000",
-        "navTitle": "Har du märkt tillgänglighetsproblem"
+        "navTitle": "Har du märkt tillgänglighetsproblem?"
       },
       "planned-fixes": {
         "description": "Identifierade tillgänglighetsbrister kommer att åtgärdas fortlöpande under våren 2026. Listan i detta utlåtande uppdateras allt eftersom bristerna korrigeras.",

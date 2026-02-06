@@ -1,8 +1,8 @@
 import { BasicArticleSectionContent } from '@/components/ArticleSectionContent/BasicArticleSectionContent';
 import { ArticleSectionPage } from '@/components/ArticleSectionPage/ArticleSectionPage';
-import { createBasicArticleSectionData } from '@/utils';
+import { createArticleSectionData } from '@/utils';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { ArticleSection } from '../types';
 
 const AboutService = () => {
@@ -10,32 +10,32 @@ const AboutService = () => {
 
   const sections: ArticleSection[] = React.useMemo(() => {
     return [
-      createBasicArticleSectionData(
+      createArticleSectionData(
         t('about-service.sections.my-path.navTitle'),
         t('about-service.sections.my-path.description'),
       ),
-      createBasicArticleSectionData(
+      createArticleSectionData(
         t('about-service.sections.advisor-section.navTitle'),
         t('about-service.sections.advisor-section.description'),
       ),
-      createBasicArticleSectionData(
+      createArticleSectionData(
         t('about-service.sections.info-service.navTitle'),
         t('about-service.sections.info-service.description'),
       ),
-      createBasicArticleSectionData(
+      createArticleSectionData(
         t('about-service.sections.guidance-and-counseling.navTitle'),
         t('about-service.sections.guidance-and-counseling.description'),
       ),
-      createBasicArticleSectionData(
+      createArticleSectionData(
         t('about-service.sections.jod-project.navTitle'),
-        t('about-service.sections.jod-project.description'),
+        <Trans i18nKey="about-service.sections.jod-project.description" />,
       ),
     ].map((item) => {
       const { navTitle, text } = item;
 
       return {
         navTitle,
-        content: <BasicArticleSectionContent key={text.slice(0, 25)} text={text} />,
+        content: <BasicArticleSectionContent key={navTitle} text={text} />,
       };
     });
   }, [t]);
