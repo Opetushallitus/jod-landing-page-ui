@@ -1,9 +1,9 @@
 {
   "about-service": {
-    "intro": "Osaamispolku on koulutus- ja urasuunnittelun, osaamisen kehittämisen ja työllistymisen tueksi tarkoitettu uusi digitaalinen palvelu, joka julkaistaan alkuvuodesta 2026. Osaamispolku on suunnattu työ- ja koulutusvalintoja tekeville, ohjaajille, koulutusorganisaatioille, työelämätoimijoille ja eri hallinnonalojen asiantuntijoille.",
+    "intro": "Osaamispolku on koulutus- ja urasuunnittelun, osaamisen kehittämisen ja työllistymisen tueksi tarkoitettu uusi digitaalinen palvelu. Osaamispolku on suunnattu kaikille työ- ja koulutusvalintoja tekeville, ohjaajille, koulutusorganisaatioille, työelämätoimijoille ja eri hallinnonalojen asiantuntijoille.",
     "sections": {
       "advisor-section": {
-        "description": "Ohjaajan osiosta löydät uraohjaustyösi tueksi ajantasaista ja laadukasta tietoa ja menetelmiä ja omaa osaamistasi vahvistavia materiaaleja. Ohjaajan osio on tarkoitettu kaikille ohjausalan toimijoille ja ohjaajat voivat työskennellä esimerkiksi oppilaanohjauksessa, uraohjauksessa, koulutuksen tai työvoimahallinnon alalla tai yksityisellä sektorilla.",
+        "description": "Ohjaajan osiosta löydät uraohjaustyösi tueksi ajantasaista ja laadukasta tietoa ja menetelmiä ja omaa osaamistasi vahvistavia materiaaleja. Ohjaajan osio on tarkoitettu kaikille ohjausalan ammattilaisille. Ohjaajat voivat työskennellä esimerkiksi oppilaanohjauksessa, uraohjauksessa, koulutuksen tai työvoimahallinnon alalla tai yksityisellä sektorilla.",
         "navTitle": "Ohjaajan osio"
       },
       "guidance-and-counseling": {
@@ -15,7 +15,7 @@
         "navTitle": "Tietopalvelu"
       },
       "jod-project": {
-        "description": "Osaamispolun kehityksestä vastaa Jatkuvan oppimisen digitaalinen palvelukokonaisuus -hanke, joka on opetus- ja kulttuuriministeriön, työ- ja elinkeinoministeriön yhteishanke vuosina 2021–2025. Kehitystyössä ovat tiiviisti mukana Opetushallitus, ELY-keskusten kehittämis- ja hallintokeskus, korkeakoulut Digivisio 2030 -hankkeen kautta ja Jatkuvan oppimisen ja työllistymisen keskus. Hankkeen rahoitus tulee EU:n elpymis- ja palautumistukivälineestä (RRF).",
+        "description": "Osaamispolun kehityksestä vastasi Jatkuvan oppimisen digitaalinen palvelukokonaisuus -hanke, joka oli opetus- ja kulttuuriministeriön, työ- ja elinkeinoministeriön yhteishanke vuosina 2021–2025. Kehitystyössä olivat tiiviisti mukana Opetushallitus, KEHA-keskus, korkeakoulut Digivisio 2030 -hankkeen kautta ja Jatkuvan oppimisen ja työllistymisen keskus. Hankkeen rahoitus tuli EU:n elpymis- ja palautumistukivälineestä (RRF). <br><br>Palvelusta vastaavat opetus- ja kulttuuriministeriö, työ- ja elinkeinoministeriö, Opetushallitus ja KEHA-keskus.",
         "navTitle": "Jatkuvan oppimisen digitaalinen palvelukokonaisuus (JOD) -hanke"
       },
       "my-path": {
