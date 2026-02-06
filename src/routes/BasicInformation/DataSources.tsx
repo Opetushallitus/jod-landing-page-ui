@@ -165,7 +165,7 @@ const DataSources = () => {
                         className="inline-flex text-accent hover:underline"
                       >
                         {l.label}
-                        <JodOpenInNew ariaLabel={t('external-link')} />
+                        <JodOpenInNew ariaLabel={t('common:external-link')} />
                       </a>
                     </li>
                   ))}
@@ -181,7 +181,7 @@ const DataSources = () => {
                   className="inline-flex text-accent hover:underline"
                 >
                   {links[0].label}
-                  <JodOpenInNew ariaLabel={t('external-link')} />
+                  <JodOpenInNew ariaLabel={t('common:external-link')} />
                 </a>
               </p>
             )}

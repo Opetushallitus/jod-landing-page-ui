@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 export const UserButton = ({ user }: { user: { name: string; component: JSX.ElementType } }) => {
   const { t } = useTranslation();
   const loginLink = useLoginLink();
-  const login = { url: loginLink, text: t('login') };
+  const login = { url: loginLink, text: t('common:login') };
   const initials = user?.name
     .split(' ')
     .map((part) => part[0])

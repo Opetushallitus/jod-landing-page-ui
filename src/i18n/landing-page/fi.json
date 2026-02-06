@@ -39,6 +39,11 @@
       "status": {
         "description": "Verkkosivusto täyttää lain asettamat saavutettavuusvaatimukset WCAG 2.1 -tason AA mukaisesti seuraavin havaituin puuttein:",
         "item-1": "Sivuilla on yksittäisiä otsikkomaisia tekstejä, joita ei ole vielä merkitty otsikoksi apuvälinekäyttäjälle. Tämä voi hidastaa selaamista, jos käyttäjä on tottunut liikkumaan sivuilla pääosin otsikoiden varassa. WCAG 1.3.1 Informaatio ja suhteet (A)",
+        "item-10": "Yksilön osio: Asetuksissa oleva sähköpostikenttä on nimetön apuvälineohjelmille. WCAG 4.1.2 Nimi, rooli, arvo",
+        "item-11": "Päivämäärän asettamiseen voi käyttää esiin ponnahtavaa päivyridialogia. Päivyrissä jo valittuna oleva päivä ei kuitenkaan paljastu apuvälineohjelmille. Sitä voi olla myös hankala erottaa visuaalisesti. WCAG 1.4.1 Värien käyttö (A), 4.1.2 Nimi, rooli, arvo (AA)",
+        "item-12": "Palvelun eri osissa on klikattavia ruutuja, jotka toimivat linkin tavoin. Ruutuihin ja niistä rakentuviin 'karuselleihin' liittyy vielä puutteita, jotka vaikuttavat ruudunlukuohjelman ja näppäimistön avulla palvelussa toimiviin käyttäjiin. Ruuduissa voi esimerkiksi olla mielivaltaisia tekstivastineita, niiden lukemisjärjestys voi olla epäjohdonmukainen ja käyttäjä ei välttämättä saa tietoa, että klikattava alue on linkki. WCAG 1.3.1 Informaatio ja suhteet (A)",
+        "item-13": "Neuvontabotti: Avatussa chat-ikkunassa on aluksi ilmoitus \"Älä syötä henkilötietojasi neuvontabotille\". Ilmoituksen voi poistaa ruksipainikkeesta. Painikkeen apuvälineohjelmalle välittyvä nimi on aina englanniksi, \"close alert\". WCAG 1.1.1 Ei-tekstimuotoinen sisältö",
+        "item-14": "Osaamispolun Tietopalvelun sisältö koostuu osin Power BI -raporttiupotteista, joiden käyttäminen ruudunlukuohjelmalla vaatii paljon taitoa. Raporteissa on myös osia, jotka eivät ole saavutettavia. Kehityksen aikana saavutettavuuspuutteita on korjattu niin paljon kuin mahdollista. Palvelun jatkokehityksessä pyritään tarjoamaan vaihtoehtoinen tiedon esitystapa keskeisille sisällöille.",
         "item-2": "Joissakin pääotsikoissa käytetään tekstissä väriä, joka ei erotu riittävällä kontarstilla. WCAG 1.4.3 Kontrasti (minimi)",
         "item-3": "Käyttäjä ei voi muuttaa palvelun kaikkien tekstisisältöjen kokoa ja välistyksiä saavutettavuusvaatimusten mukaisesti. Sivut ovat kuitenkin responsiivisia, joten näkymän suurennus onnistuu selaimen zoomaustoiminnoilla. WCAG 1.4.4 Tekstin koon muuttaminen, 1.4.12 Tekstin välistys",
         "item-4": "Yksilön Osaamisprofiili: Taulukon tietoja voi muokata painikkeista, jotka löytyvät taulukon soluista. Painikkeisiin on jäänyt apuvälineelle paljastuvia, turhia määrityksiä, jotka liittyvät ns. tooltip-selitteen näyttämiseen. Tällaista tooltip-tekstiä ei enää ole. WCAG 1.3.1 Informaatio ja suhteet",
@@ -47,11 +52,6 @@
         "item-7": "Yksilön Osaamisprofiilissa kiinnostukset esitetään listoina, joissa aina yksittäisen kiinnostuksen voi kohdistaa näppäimistöllä tai hiirellä, jolloin kiinnostuksesta näytetään lisätietoa ns. popup-kuplassa. Lisätietoa ei voi kuitenkaan lukea ruudunlukuohjelman avulla tai tuoda näkyviin kosketuskäytössä. WCAG 1.3.1 Informaatio ja suhteet",
         "item-8": "Joidenkin otsikoiden yhteydessä on klikattavia kuvakkeita, jotka avaavat ns. popup-kuplan, joka näyttää lisätietoja. Kuplan sisältö voi olla vaikea lukea apuvälineohjelmalla, sillä se sijaitsee lukemisjärjestyksessä eri kohtaa sivua, kuin itse kuvake. Kuvakkeelta puuttuu myös oikea, apuvälineohjelmalle välittyvä painikerooli. Lisäksi jos kuplan sisällä on linkki, ei linkkiä voi kohdistaa ja aktivoida näppäimistöselauksessa. WCAG 1.3.1 Informaatio ja suhteet, 2.1.1 Näppäimistö",
         "item-9": "Ohjaajan osio: Alasivuilla on navigaatio, joka on otsikoitu \"Tässä osiossa\". Se sisältää avattavan ja suljettavan listan linkkejä. Painike, josta listan voi avata, on nimetön apuvälineohjelmille. WCAG 4.1.2 Nimi, rooli, arvo",
-        "item-10": "Yksilön osio: Asetuksissa oleva sähköpostikenttä on nimetön apuvälineohjelmille. WCAG 4.1.2 Nimi, rooli, arvo",
-        "item-11": "Päivämäärän asettamiseen voi käyttää esiin ponnahtavaa päivyridialogia. Päivyrissä jo valittuna oleva päivä ei kuitenkaan paljastu apuvälineohjelmille. Sitä voi olla myös hankala erottaa visuaalisesti. WCAG 1.4.1 Värien käyttö (A), 4.1.2 Nimi, rooli, arvo (AA)",
-        "item-12": "Palvelun eri osissa on klikattavia ruutuja, jotka toimivat linkin tavoin. Ruutuihin ja niistä rakentuviin 'karuselleihin' liittyy vielä puutteita, jotka vaikuttavat ruudunlukuohjelman ja näppäimistön avulla palvelussa toimiviin käyttäjiin. Ruuduissa voi esimerkiksi olla mielivaltaisia tekstivastineita, niiden lukemisjärjestys voi olla epäjohdonmukainen ja käyttäjä ei välttämättä saa tietoa, että klikattava alue on linkki. WCAG 1.3.1 Informaatio ja suhteet (A)",
-        "item-13": "Neuvontabotti: Avatussa chat-ikkunassa on aluksi ilmoitus \"Älä syötä henkilötietojasi neuvontabotille\". Ilmoituksen voi poistaa ruksipainikkeesta. Painikkeen apuvälineohjelmalle välittyvä nimi on aina englanniksi, \"close alert\". WCAG 1.1.1 Ei-tekstimuotoinen sisältö",
-        "item-14": "Osaamispolun Tietopalvelun sisältö koostuu osin Power BI -raporttiupotteista, joiden käyttäminen ruudunlukuohjelmalla vaatii paljon taitoa. Raporteissa on myös osia, jotka eivät ole saavutettavia. Kehityksen aikana saavutettavuuspuutteita on korjattu niin paljon kuin mahdollista. Palvelun jatkokehityksessä pyritään tarjoamaan vaihtoehtoinen tiedon esitystapa keskeisille sisällöille.",
         "navTitle": "Saavutettavuuden tila"
       },
       "updates": {
@@ -162,9 +162,6 @@
       "title": "Miksi tekoälyä käytetään Osaamispolussa?"
     }
   },
-  "breadcrumb": "Murupolku",
-  "close-menu": "Sulje valikko",
-  "competency-path-portal": "Osaamispolun etusivu",
   "data-sources": {
     "intro": "Tältä sivulta löydät kaikki Osaamispolku-palvelun eri osioissa hyödynnetyt datan lähteet.",
     "read-more": "Lue lisää:",
@@ -294,76 +291,80 @@
     },
     "title": "Datalähteet"
   },
-  "external-link": "Linkki johtaa palvelun ulkopuolelle",
-  "feedback": {
-    "cancel": "Peruuta",
-    "email-label": "Sähköpostiosoite",
-    "error": "Palautteen lähettäminen epäonnistui. Yritä myöhemmin uudelleen.",
-    "footer-handled": {
-      "ohjaajan": "Ohjaajan osio KEHA-keskuksessa,",
-      "osaamispolkuni": "Osaamispolkuni Opetushallituksessa,",
-      "tietopalvelu": "Tietopalvelu, koko palvelu ja muu palaute opetus- ja kulttuuriministeriössä."
-    },
-    "footer-info-1": "Kun lähetät palautetta, tallennamme palvelun tilatiedon, kuten mistä näkymästä palaute on lähetetty. Tilatietoa ei välitetä eteenpäin kolmansille osapuolille. Palautteita käytetään palvelun kehittämiseen ja vapaaehtoisesti jätettäviä yhteystietoja palautteisiin vastaamiseen.",
-    "footer-info-heading": "Palaute käsitellään osiosta riippuen seuraavasti:",
-    "footer-privacy-heading": "Lue lisää palautteiden käsittelijöiden tietosuojaseloisteista:",
-    "intro-1": "Anna palautetta palvelusta tai ilmoita teknisestä ongelmasta. Näin autat meitä palveluiden kehittämisessä.",
-    "intro-2": "Jos raportoit häiriötilanteesta, meitä auttaisi, että kerrot siitä mahdollisimman tarkasti.",
-    "intro-privacy": "Älä kirjoita palautteeseen henkilökohtaisia tietoja, kuten esimerkiksi henkilötunnusta tai terveystietoja. Täytäthän kaikki kentät, jotta voimme käsitellä palautteesi.",
-    "linkHrefs": {
-      "keha": "https://tyomarkkinatori.fi/tietoa-palvelusta/tietosuoja-ja-kayttoehdot/tietosuojaselosteet",
-      "okm": "https://okm.fi/tietoa-sivustosta#henkilotiedot",
-      "oph": "https://www.oph.fi/fi/tietosuoja"
-    },
-    "links": {
-      "keha": "KEHA-keskuksen Asiakas- ja neuvontapalveluiden tietosuojaseloste",
-      "okm": "Opetus- ja kulttuuriministeriön tietosuojaseloste",
-      "oph": "Opetushallituksen tietosuojakäytäntö"
-    },
-    "message-label": "Palaute",
-    "section-question": "Mitä osiota palautteesi koskee?",
-    "sections": {
-      "koko-palvelu": "Koko palvelu tai muu palaute",
-      "ohjaajan-osio": "Ohjaajan osio",
-      "osaamispolkuni": "Osaamispolkuni",
-      "tietopalvelu": "Tietopalvelu"
-    },
-    "submit": "Lähetä",
-    "success": "Kiitos palautteestasi! Palautteesi auttaa meitä parantamaan palvelua.",
-    "title": "Anna palautetta",
-    "type-question": "Minkälaista palautetta haluat antaa?",
-    "types": {
-      "kehitysehdotus": "Kehitysehdotus",
-      "kehu": "Kehu",
-      "moite": "Moite",
-      "vika": "Tekninen vika tai ongelma"
-    },
-    "wants-contact": "Haluan, että minuun otetaan tarvittaessa yhteyttä sähköpostitse."
-  },
-  "footer": {
-    "cooperation-title": "Osaamispolku on toteutettu yhteistyössä seuraavien tahojen toimesta:",
-    "copyright": "© Osaamispolku 2026. Kaikki oikeudet pidätetään.",
-    "funding-title": "Palvelu on rahoitettu EU:n elpymis- ja palautumistukivälineellä (RRF).",
-    "logos": {
-      "keha-label": "KEHA-keskus",
-      "okm-label": "Opetus- ja kulttuuriministeriö",
-      "oph-label": "Opetushallitus",
-      "tem-label": "Työ- ja elinkeinoministeriö"
-    },
-    "more-info-links": {
-      "about-service": "Tietoa palvelusta",
-      "accessibility": "Saavutettavuusseloste",
-      "ai-usage": "Tietoa tekoälyn käytöstä",
-      "data-sources": "Datalähteet",
-      "privacy-and-cookies": "Tietosuojaseloste ja evästeet"
-    },
-    "more-info-title": "Haluatko tietää lisää Osaamispolusta?"
-  },
   "front-page": "Etusivu",
   "home": {
+    "competency-path-help": {
+      "opinfi": {
+        "text-1": "<CustomLink>Opin.fi<Icon></Icon></CustomLink> on palvelu, joka kokoaa suomalaisten yliopistojen ja ammattikorkeakoulujen avoimet opintotarjonnat yhteen paikkaan.",
+        "text-2": "Opin.fi on tarkoitettu kaikille, jotka haluavat kehittää osaamistaan – etsiä täydentävää koulutusta, hankkia uusia taitoja tai tutustua korkeakouluopintoihin.",
+        "url": "https://opin.fi/fi"
+      },
+      "opintopolku": {
+        "text-1": "<CustomLink>Opintopolku<Icon></Icon></CustomLink> tarjoaa kattavat tiedot koulutuksista ja hakupalvelut eri koulutusasteille.",
+        "text-2": "Kun olet löytänyt Osaamispolussa mielenkiintoisen koulutusmahdollisuuden, voit siirtyä Opintopolkuun tutustumaan tarkemmin ja hakeutumaan koulutuksiin. Kirjautuessasi Osaamispolussani osaamisprofiiliisi voit tuoda Opintopolusta koulutushistoriasi.",
+        "url": "https://opintopolku.fi/konfo/fi/"
+      },
+      "tyomarkkinatori": {
+        "text-1": "<CustomLink>Työmarkkinatori<Icon></Icon></CustomLink> kokoaa yhteen avoimet työpaikat ja tukee työnhaussa sekä urasuunnittelussa.",
+        "text-2": "Kun olet löytänyt Osaamispolussa mielenkiintoisen työmahdollisuuden, voit siirtyä Työmarkkinatorille tutustumaan ja hakemaan avoimia työpaikkoja. Voit myös siirtää tietojasi Osaamispolkuni osaamisprofiiliisi ja Työmarkkinatorin työnhakuprofiilin välillä.",
+        "url": "https://tyomarkkinatori.fi/"
+      },
+      "you": {
+        "text-1": "Osaamispolku, Opintopolku, Työmarkkinatori ja Opin.fi muodostavat yhdessä palvelukokonaisuuden, joka tukee oppimista, urasuunnittelua ja työnhakua eri elämäntilanteissa. Jokaisella palvelulla on oma roolinsa, mutta yhdessä ne tarjoavat sinulle selkeän polun osaamisesi ja urasi kehittämiseen.",
+        "text-2": "Jos etsit suuntaa tai omaa polkuasi, Osaamispolussa voit tunnistaa omat vahvuutesi ja kiinnostukseksi sekä löytää niihin sopivia koulutus- ja työmahdollisuuksia. Kun olet selvittänyt, miten haluat edetä, Opintopolku, Työmarkkinatori ja Opin.fi auttavat sinua hakeutumaan niihin.",
+        "title": "Miten Osaamispolku auttaa sinua osana muita palveluita?"
+      }
+    },
+    "hero": {
+      "content": "Kartoita kiinnostuksesi ja osaamisesi. Löydä niiden perusteella sinulle sopivia vaihtoehtoja. Osaamispolkuni tukee, kun haet suuntaa kyvyillesi ja intohimoillesi. Silmäsi saattavat avautua yllättävillekin mahdollisuuksille.",
+      "link-text": "Siirry Osaamispolkuuni",
+      "title": "Osaamispolku - löydä oma suuntasi"
+    },
     "how-competency-path-helps-you-opinfi-title": "Opin.fi",
     "how-competency-path-helps-you-opintopolku-title": "Opintopolku",
     "how-competency-path-helps-you-tmt-title": "Työmarkkinatori",
+    "palvelut": {
+      "ohjaus": {
+        "content": "Hyödynnä materiaaleja ohjaustyössäsi. Löydä työkaluja, joita voit käyttää ohjaustilanteissa tai antaa ohjattaville itsenäisesti tehtäväksi.",
+        "link-text": "Asiakastyön tueksi",
+        "title": "Työkaluja ohjaustyöhön"
+      },
+      "tietopalvelu": {
+        "content": "Tutustu Tietopalvelun sisältöjen kokonaiskuvaan. Voit suodattaa listausta avainsanojen avulla ja siirtyä sinua kiinnostavan tietosisällön pariin.",
+        "link-text": "Tietopalvelun sisällöt",
+        "path": "kaikki-raportit",
+        "title": "Ajankohtaista tietoa päätöksenteon tueksi"
+      },
+      "title": "Etkö löytänyt etsimääsi?",
+      "tool": {
+        "content": "Kerro, mitä osaat ja mistä olet kiinnostunut, ja valitse niihin sopivia osaamisia. Löydä niiden perusteella sinulle sopivia koulutus- ja työmahdollisuuksia.",
+        "link-text": "Löydä mahdollisuuksia",
+        "title": "Sopivia mahdollisuuksia nopeasti"
+      }
+    },
+    "personal-guidance": {
+      "content": "Ohjaus- ja neuvontapalveluista löytyvät palvelut auttavat sinua työ- ja koulutusvaihtoehtoihin liittyvässä pohdinnassa. Rajaa palveluiden listaa sinua kiinnostavien teemojen ja esimerkiksi asuinpaikkasi perusteella, jotta löydät sinulle parhaiten sopivat palvelut.",
+      "link-text": "Siirry Ohjaus- ja neuvontapalveluihin",
+      "title": "Ohjaus- ja neuvontapalveluja"
+    },
+    "sections": {
+      "ohjaaja": {
+        "content": "Ohjaajan osiosta löydät ohjaustyösi tueksi ajantasaista laadukasta tietoa ja menetelmiä sekä omaa ohjausosaamistasi vahvistavia materiaaleja.",
+        "link-text": "Ohjaajan osio",
+        "title": "Ohjaajan osio"
+      },
+      "osaamispolku": {
+        "content": "Kartoita kiinnostuksesi ja osaamisesi sekä löydä koulutus- ja työmahdollisuuksia. Kirjautumalla Osaamispolkuuni voit luoda oman osaamisprofiiliisi ja tallentaa tietosi myöhempää käyttöä varten.",
+        "link-text": "Osaamispolkuni",
+        "title": "Osaamispolkuni"
+      },
+      "tietopalvelu": {
+        "content": "Tietopalvelu kokoaa yhteen koulutukseen, työmarkkinoihin ja osaamiseen liittyvää tietoa päätöksenteon tueksi. Voit tarkastella sinua kiinnostavia tietokokonaisuuksia eri näkökulmista erilaisten suodattimien avulla.",
+        "link-text": "Tietopalvelu",
+        "title": "Tietopalvelu"
+      },
+      "title": "Mistä Osaamispolku muodostuu?"
+    },
     "services": {
       "ohjaus": {
         "path": "asiakastyon-tueksi"
@@ -371,47 +372,13 @@
       "tool": {
         "path": "tyokalu"
       }
-    }
-  },
-  "language-selection": "Käyttökieli",
-  "login": "Kirjaudu sisään",
-  "main-navigation": "Päänavigaatio",
-  "menu": "Valikko",
-  "navigation": {
-    "external": {
-      "ohjaaja": {
-        "description": "Tietoja ja materiaaleja ohjaukseen",
-        "label": "Ohjaajan osio"
-      },
-      "osaamispolku": {
-        "description": "Henkilökohtainen osaamispolku",
-        "label": "Osaamispolkuni"
-      },
-      "tietopalvelu": {
-        "description": "Tietoa päätöksenteon tueksi",
-        "label": "Tietopalvelu"
-      },
-      "title": "Sisältökokonaisuudet"
     },
-    "extra": {
-      "palveluhakemisto": {
-        "label": "Ohjaus- ja neuvontapalveluja",
-        "url": "https://www.suomi.fi/aihe/ohjaus-ja-neuvontapalveluja"
-      },
-      "title": "Muuta tukea pohdintaan"
+    "welcome": {
+      "content": "Osaamispolku-palvelu siirtyy avoimesta testausvaiheesta julkaisuun! Palvelu on edelleen alkuvaiheessa, ja kehitämme sitä aktiivisesti käyttäjäpalautteen pohjalta. Toiminnot voivat muuttua ja uusia ominaisuuksia tulee lisää säännöllisesti – kiitos kun olet mukana matkassa!",
+      "title": "Tervetuloa Osaamispolkuun!"
     }
-  },
-  "navigation-menu": "Valikko",
-  "no-match": {
-    "description": "Etsimääsi sivua ei löytynyt tai linkki on vanhentunut. Tarkista osoite, avaa valikko tai siirry etusivulle.",
-    "go-home": "Siirry etusivulle",
-    "title": "Hups! Sivua ei löytynyt"
-  },
-  "note": {
-    "close": "Sulje"
   },
   "on-this-page": "Tällä sivulla",
-  "osaamispolku": "Osaamispolku",
   "privacy-cookies": {
     "3rd-party": {
       "description": "Osaamispolussa on käytössä kolmansien osapuolien sovelluksia, kuten YouTube ja Power BI, jotka latautuvat näiden palveluiden omilta palvelimilta. YouTubea käytetään Osaamispolun ohjaajan kokonaisuuden videoissa. Power BI:tä käytetään raporttinäkymien tuottamiseen tietopalvelussa. Kolmannen osapuolen evästeitä käytetään anonyymisti sivustolle upotettujen sovellusten toiminnan varmistamiseen ja käyttäjäkokemuksen parantamiseen. <br/><br/>Jos et käytä ulkopuolisten palveluntarjoajien sisältöä, mitään kolmannen osapuolen evästeitä ei asenneta laitteellesi. <br/><br/>Kolmannen osapuolen tarjoamiin palveluihin tai kolmannen osapuolen välittämiin sovelluksiin sovelletaan kyseisen kolmannen osapuolen käyttö- ja muita ehtoja. <br/><br/>Lisätietoja: <br/><CustomLink1>Microsoft (Power BI)</CustomLink1> <CustomLink2>Google (YouTube)</CustomLink2>",
@@ -459,6 +426,10 @@
       "description": "Henkilön antamia ja tallentamia tietoja ja hänen valitsemiaan rajauksia saadaan käsitellä yleisen tietosuoja-asetuksen 22 artiklan 1 kohdassa tarkoitetulla tavalla pelkästään automaattisesti koulutus- ja työmahdollisuuksien kartoittamiseksi ja esittämiseksi. Tällainen käsittely edellyttää, että henkilö valitsee palvelussa automaattisen käsittelyn hyödyntämisen tähän tarkoitukseen. Ennen valinnan tekemistä Opetushallituksen on selkeästi ilmoitettava automaattisesta käsittelystä henkilölle palvelussa. Henkilölle esitettävän mahdollisuuden yhteydessä hänelle on palvelussa annettava tietoa siitä, miten siinä on huomioitu hänen tietojaan ja valitsemiaan rajauksia.",
       "title": "Automaattinen tietojen käsittely ja sen vaikutukset"
     },
+    "chatbot": {
+      "description": "Osaamispolku-palvelussa toimivan Neuvontabotin keskusteluhistoriaan tallennetaan käyttäjän kirjoittamat hakusanat ja -lauseet. Neuvontabotin hallintakäyttöliittymän käyttäjät ja palvelun ylläpitäjät näkevät Neuvontabotin keskusteluhistorian kirjautumalla kaksivaiheisen kirjautumisen kautta hallintakäyttöliittymään. Keskusteluihin ei tallennu henkilötietoja, sillä sovellus maskaa henkilötiedot maskausalgoritmin avulla. Maskausalgoritmi tunnistaa vakiomuotoiset ja teknisesti mallinnettavissa olevat henkilötiedot. Palvelun käyttäjien ei tule kirjoittaa henkilötietojaan Osaamispolun Neuvontbottiin. Tästä ohjeistetaan käyttäjiä Neuvontabotin tervehdystekstissä. Keskusteluja säilytetään järjestelmässä enintään 24 kuukautta tai palvelun sopimuksen voimassaolon ajan.",
+      "title": "Osaamispolun neuvontabotti"
+    },
     "data-handling-use": {
       "description": "Valtakunnallisen osaamistietovarannon tarkoituksena on mahdollistaa henkilöiden tallentaa ja ylläpitää tietoa omasta osaamisestaan ja työuraan ja koulutukseen liittyvistä kiinnostuksenkohteistaan ja suunnitelmistaan. Osaamistietovaranto on osa digitaalista palvelua, jäljempänä palvelu, jonka tarkoitus on tukea henkilöitä koulutukseen ja työelämään hakeutumisessa, niihin liittyvissä siirtymissä, oman osaamisen ylläpitämisessä sekä omien koulutus- ja uratietojen hyödyntämisessä. <br/><br/>Lisäksi tietovarannon tarkoituksena on tarjota tietopohjaa opetuksen, koulutuksen, ohjauksen ja osaamisen tilannekuvan ylläpitämiseksi ja niiden kehittämisen ja ennakoinnin tueksi.",
       "legal-basis": {
@@ -472,6 +443,10 @@
         "title": "Oikeusperuste"
       },
       "title": "Henkilötietojen käsittelyn tarkoitus"
+    },
+    "info-about-3rd-country": {
+      "description": "Tietoja säilytetään Amazon Web Services- palveluntarjoajan konesaleissa EU-alueella. Tietoja ei siirretä EU:n tai Euroopan talousalueen ulkopuolelle.",
+      "title": "Tiedot tietojen siirrosta kolmansiin maihin ja tiedot käytettävistä suojatoimista"
     },
     "info": {
       "contact": {
@@ -498,10 +473,6 @@
         "content": "Opetushallitus ja KEHA-keskus",
         "title": "Rekisterinpitäjä:"
       }
-    },
-    "info-about-3rd-country": {
-      "description": "Tietoja säilytetään Amazon Web Services- palveluntarjoajan konesaleissa EU-alueella. Tietoja ei siirretä EU:n tai Euroopan talousalueen ulkopuolelle.",
-      "title": "Tiedot tietojen siirrosta kolmansiin maihin ja tiedot käytettävistä suojatoimista"
     },
     "intro": {
       "description": "Tässä tietosuojaselosteessa kuvataan, miten henkilötietoja käsitellään Osaamispolku-palvelussa. Selosteessa kerrotaan myös, mitä oikeuksia rekisteröidyillä henkilöillä on ja miten oikeuksia voi käyttää. Rekisteröityjä ovat osaamisprofiilin tehneet henkilöt sekä ohjaajan työpöydälle kirjautuneet henkilöt. <br/><br/>Tietosuojaselostetta päivitetään säännöllisesti. Ajankohtainen versio löytyy aina tältä sivulta",
@@ -681,16 +652,5 @@
     },
     "title": "Tietosuojaseloste ja evästeet"
   },
-  "service-banner": "Palvelukokonaisuus",
-  "show-all": "Näytä kaikki",
-  "skiplinks": {
-    "main": "Siirry pääsisältöön"
-  },
-  "slugs": {
-    "about-service": "tietoa-palvelusta",
-    "accessibility": "tietoa-saavutettavuudesta",
-    "ai-usage": "tietoa-tekoalyn-kaytosta",
-    "data-sources": "datalahteet",
-    "privacy-and-cookies": "tietosuojaseloste-ja-evasteet"
-  }
+  "service-banner": "Palvelukokonaisuus"
 }

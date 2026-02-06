@@ -10,7 +10,7 @@ const NoMatch = () => {
     i18n: { language },
   } = useTranslation();
 
-  const title = t('no-match.title');
+  const title = t('common:no-match.title');
 
   return (
     <>
@@ -24,9 +24,9 @@ const NoMatch = () => {
               bgClassName="bg-secondary-gray"
               textClassName="text-secondary-gray"
             />
-            <p className="text-body-lg mb-11">{t('no-match.description')}</p>
+            <p className="text-body-lg mb-11">{t('common:no-match.description')}</p>
             <Button
-              label={t('no-match.go-home')}
+              label={t('common:no-match.go-home')}
               serviceVariant="palveluportaali"
               variant="accent"
               /* eslint-disable-next-line react/no-unstable-nested-components */

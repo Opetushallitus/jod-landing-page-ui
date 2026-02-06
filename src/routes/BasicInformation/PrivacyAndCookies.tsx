@@ -326,7 +326,7 @@ const PrivacyAndCookies = () => {
                             rel="noopener noreferrer"
                           />
                         ),
-                        Icon: <JodOpenInNew ariaLabel={t('external-link')} />,
+                        Icon: <JodOpenInNew ariaLabel={t('common:external-link')} />,
                       }}
                     />
                   }
@@ -422,7 +422,7 @@ const PrivacyAndCookies = () => {
                   rel="noopener noreferrer"
                 />
               ),
-              Icon: <JodOpenInNew ariaLabel={t('external-link')} />,
+              Icon: <JodOpenInNew ariaLabel={t('common:external-link')} />,
             }}
           />
         ),

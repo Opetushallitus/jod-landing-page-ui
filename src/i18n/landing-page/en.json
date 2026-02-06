@@ -39,6 +39,11 @@
       "status": {
         "description": "The Competency Path service meets the legal accessibility requirements according to WCAG 2.1 Level AA, with the following identified issues:",
         "item-1": "The pages contain individual header-like texts which have not yet been marked as a header for assistive technology users. This can slow down browsing if the user is used to navigating the pages mainly by headers. WCAG 1.3.1 Info and Relationships (A)",
+        "item-10": "Personal Competency Path: The email field in the Settings view is unnamed for assistive technologies.WCAG 4.1.2 Name, Role, Value",
+        "item-11": "A pop up calendar dialog can be used to select a date. The currently selected date is not exposed to assistive technologies and may also be visually difficult to distinguish. WCAG 1.4.1 Use of Color (A); 4.1.2 Name, Role, Value (AA)",
+        "item-12": "There are clickable tiles in various parts of the service that function like links. These tiles and the carousels formed from them still contain issues that affect users navigating by keyboard or screen reader. For example, the tiles may have arbitrary text alternatives, inconsistent reading order, and users may not receive information that the clickable area is a link. WCAG 1.3.1 Info and Relationships (A)",
+        "item-13": "Advisory bot. When the chat window opens, it first displays a message: \"Do not enter personal information into the support bot\". This message can be dismissed with a close button. The name of this button exposed to assistive technologies is always in English: \"close alert\". WCAG 1.1.1 Non text Content",
+        "item-14": "The content of the Competency Path's information service consists partly of Power BI embed reports, which require a lot of skill when used with a screen reader. The reports also include parts which are not accessible. During development, accessibility shortcomings have been fixed as far as possible. The aim of the further development of the service is to offer an alternative way of presenting information for key content",
         "item-2": "Some main headings use text color that does not meet the required contrast level. WCAG 1.4.3 Contrast (Minimum)",
         "item-3": "Users cannot adjust the size and spacing of all text content in the service according to accessibility requirements. However, the pages are responsive, so view enlargement is possible using the browser’s zoom functions. WCAG 1.4.4 Resize Text; 1.4.12 Text Spacing",
         "item-4": "Personal Competency Path: Table data can be edited with buttons located in table cells. These buttons still contain unnecessary assistive technology attributes related to tooltip display, even though tooltips are no longer used. WCAG 1.3.1 Info and Relationships",
@@ -47,11 +52,6 @@
         "item-7": "In the Competence Profile, interests are shown as lists. When a specific interest is focused with a keyboard or mouse, additional information appears in a popup bubble. This information cannot be read with a screen reader or accessed in touch use. WCAG 1.3.1 Info and Relationships",
         "item-8": "Some headings have clickable icons that open a popup bubble showing additional information. The popup content may be difficult for assistive technology users to read because it appears in a different location in the reading order. The icon also lacks a correct button role, and if the popup contains a link, it cannot be focused or activated using the keyboard. WCAG 1.3.1 Info and Relationships; 2.1.1 Keyboard",
         "item-9": "Guidance practioner section: Subpages contain navigation titled “In this section” with an expandable list of links. The button that opens this list is unnamed for assistive technologies. WCAG 4.1.2 Name, Role, Value",
-        "item-10": "Personal Competency Path: The email field in the Settings view is unnamed for assistive technologies.WCAG 4.1.2 Name, Role, Value",
-        "item-11": "A pop up calendar dialog can be used to select a date. The currently selected date is not exposed to assistive technologies and may also be visually difficult to distinguish. WCAG 1.4.1 Use of Color (A); 4.1.2 Name, Role, Value (AA)",
-        "item-12": "There are clickable tiles in various parts of the service that function like links. These tiles and the carousels formed from them still contain issues that affect users navigating by keyboard or screen reader. For example, the tiles may have arbitrary text alternatives, inconsistent reading order, and users may not receive information that the clickable area is a link. WCAG 1.3.1 Info and Relationships (A)",
-        "item-13": "Advisory bot. When the chat window opens, it first displays a message: \"Do not enter personal information into the support bot\". This message can be dismissed with a close button. The name of this button exposed to assistive technologies is always in English: \"close alert\". WCAG 1.1.1 Non text Content",
-        "item-14": "The content of the Competency Path's information service consists partly of Power BI embed reports, which require a lot of skill when used with a screen reader. The reports also include parts which are not accessible. During development, accessibility shortcomings have been fixed as far as possible. The aim of the further development of the service is to offer an alternative way of presenting information for key content",
         "navTitle": "Accessibility status"
       },
       "updates": {
@@ -162,9 +162,6 @@
       "title": "Why are cookies used in Competency Path?"
     }
   },
-  "breadcrumb": "Trail of breadcrumbs",
-  "close-menu": "Close the menu",
-  "competency-path-portal": "Competency Path frontpage",
   "data-sources": {
     "intro": "On this page, you can find all data sources used in the different sections of the Competency Path service.",
     "read-more": "Read more:",
@@ -294,76 +291,80 @@
     },
     "title": "Sources of data"
   },
-  "external-link": "The link leads outside the service",
-  "feedback": {
-    "cancel": "Cancel",
-    "email-label": "Email address",
-    "error": "Failed to send feedback. Please try again later.",
-    "footer-handled": {
-      "ohjaajan": "Guidance practitioners section at the KEHA centre,",
-      "osaamispolkuni": "My Competency Path at the Finnish National Agency for Education,",
-      "tietopalvelu": "Information service, entire service and other feedback at the Ministry of Education and Culture."
-    },
-    "footer-info-1": "When you send feedback, we save the service status information, such as the view from which the feedback was sent. Status information will not be disclosed to third parties. Feedback is used for service development and voluntarily provided contact information is used to respond to feedback.",
-    "footer-info-heading": "Depending on the section, the feedback is processed as follows:",
-    "footer-privacy-heading": "Read more in the privacy statements of the feedback processors:",
-    "intro-1": "Please provide feedback on the service or report a technical problem. This way, you will help us in service development.",
-    "intro-2": "If you report an incident, it would help us if you were as specific as possible.",
-    "intro-privacy": "Do not enter any personal information, such as personal identity number or health information, in the feedback. Please fill in all the fields so that we can process your feedback.",
-    "linkHrefs": {
-      "keha": "https://tyomarkkinatori.fi/tietoa-palvelusta/tietosuoja-ja-kayttoehdot/tietosuojaselosteet",
-      "okm": "https://okm.fi/tietoa-sivustosta#henkilotiedot",
-      "oph": "https://www.oph.fi/fi/tietosuoja"
-    },
-    "links": {
-      "keha": "KEHA Centre's customer and advisory services privacy statement",
-      "okm": "Ministry of Education and Culture's privacy statement",
-      "oph": "Finnish National Agency for Education’s data protection policy"
-    },
-    "message-label": "Feedback",
-    "section-question": "Which section does your feedback concern?",
-    "sections": {
-      "koko-palvelu": "Entire service or other feedback",
-      "ohjaajan-osio": "Guidance practitioner section",
-      "osaamispolkuni": "My Competency Path",
-      "tietopalvelu": "Information service"
-    },
-    "submit": "Submit",
-    "success": "Thank you for your feedback! Your feedback will help us to improve the service.",
-    "title": "Give feedback",
-    "type-question": "What kind of feedback would you like to give?",
-    "types": {
-      "kehitysehdotus": "Development proposal",
-      "kehu": "Praise",
-      "moite": "Complaint",
-      "vika": "Technical fault or problem"
-    },
-    "wants-contact": "I want to be contacted, if necessary, through email."
-  },
-  "footer": {
-    "cooperation-title": "Competency Path has been implemented in cooperation by the following parties:",
-    "copyright": "© Competency Path 2026. All rights reserved.",
-    "funding-title": "The project is funded by the EU’s Recovery and Resilience Facility (RRF).",
-    "logos": {
-      "keha-label": "KEHA Centre",
-      "okm-label": "Ministry of Education and Culture",
-      "oph-label": "Finnish National Agency for Education",
-      "tem-label": "Ministry of Economic Affairs and Employment"
-    },
-    "more-info-links": {
-      "about-service": "About the service",
-      "accessibility": "Accessibility Statement",
-      "ai-usage": "About the use of artificial intelligence",
-      "data-sources": "Sources of data",
-      "privacy-and-cookies": "Privacy policy and cookies"
-    },
-    "more-info-title": "Do you want to know more about Competency Path?"
-  },
   "front-page": "Front page",
   "home": {
+    "competency-path-help": {
+      "opinfi": {
+        "text-1": "<CustomLink>Opin.fi<Icon></Icon></CustomLink> is a service that brings together the open courses offered by Finnish universities and universities of applied sciences in one place.",
+        "text-2": "Opin.fi is aimed at everyone who wants to develop their skills - looking for supplementary education and new skills or getting acquainted with higher education studies.",
+        "url": "https://opin.fi/en"
+      },
+      "opintopolku": {
+        "text-1": "<CustomLink>Studyinfo<Icon></Icon></CustomLink> provides comprehensive information on education opportunities and application services for different levels of education.",
+        "text-2": "Once you have found an interesting education opportunity in Competency Path, you can go to Studyinfo to learn more and apply for training. When you log in to your competence profile in My Competency Path, you can import your education history from Studyinfo.",
+        "url": "https://opintopolku.fi/konfo/en"
+      },
+      "tyomarkkinatori": {
+        "text-1": "<CustomLink>Job Market<Icon></Icon></CustomLink> brings together vacancies and provides support in job search and career planning.",
+        "text-2": "Once you have found an interesting job opportunity in Competency Path, you can go to Job Market to explore and apply for vacancies. You can also transfer your information between your My Competency Path competence profile and Job Market job search profile.",
+        "url": "https://tyomarkkinatori.fi/en"
+      },
+      "you": {
+        "text-1": "Competency Path, Studyinfo, Job Market and Opin.fi form a service package that supports learning, career planning and job search in different life situations. Each service has its own role, but together they provide you with a clear path for your competence and career development.",
+        "text-2": "If you are looking for a direction or your own path, Competency Path allows you to identify your strengths and interests and find suitable training and career opportunities. Once you have found out how you want to proceed, Studyinfo, Job Market and Opin.fi will help you to apply for them.",
+        "title": "How does Competency Path help you as part of other services?"
+      }
+    },
+    "hero": {
+      "content": "Map out your interests and competence. Use them to find options that suit you. Competency Path supports you in finding a direction for your skills and passions. It may open your eyes to unexpected possibilities.",
+      "link-text": "Go to Competency Path",
+      "title": "Competency Path - find your own direction"
+    },
     "how-competency-path-helps-you-opinfi-title": "Opin.fi",
     "how-competency-path-helps-you-opintopolku-title": "Studyinfo",
     "how-competency-path-helps-you-tmt-title": "Job Market",
+    "palvelut": {
+      "ohjaus": {
+        "content": "Use the materials in your guidance work. Find tools that you can use in guidance situations or give the guidance recipient to do independently.",
+        "link-text": "To support customer work",
+        "title": "Tools for guidance work"
+      },
+      "tietopalvelu": {
+        "content": "Explore the overview of the contents of the information service. You can filter the list by keywords and navigate to the information content that interests you.",
+        "link-text": "Contents of the information service",
+        "path": "all-reports",
+        "title": "Up-to-date information to support decision-making"
+      },
+      "title": "Didn't find what you were looking for?",
+      "tool": {
+        "content": "Tell us what you know and what you are interested in and select the competencies that match them. Find suitable education and employment opportunities based on them.",
+        "link-text": "Find opportunities",
+        "title": "Quickly find suitable opportunities"
+      }
+    },
+    "personal-guidance": {
+      "content": "The services found under guidance and counselling services help you consider your work and education options. Narrow the list of services based on themes that interest you and, for example, where you live to find the most suitable services for you.",
+      "link-text": "Go to Guidance and counseling services",
+      "title": "Guidance and advisory services"
+    },
+    "sections": {
+      "ohjaaja": {
+        "content": "In the guidance practitioner section, you will find up-to-date high-quality information and methods as well as materials to strengthen your own guidance competence.",
+        "link-text": "Guidance practitioner section",
+        "title": "Guidance practitioner section"
+      },
+      "osaamispolku": {
+        "content": "Map out your interests and competencies, and find study or career opportunities By logging in to My Competency Path, you can create your own competence profile and save your information for later use.",
+        "link-text": "My Competency Path",
+        "title": "My Competency Path"
+      },
+      "tietopalvelu": {
+        "content": "The information service compiles information related to education, the labour market and competence to support decision-making. You can view the data sets that interest you from different perspectives using different filters.",
+        "link-text": "Information service",
+        "title": "Information service"
+      },
+      "title": "What makes up Competency Path?"
+    },
     "services": {
       "ohjaus": {
         "path": "to-support-customer-work"
@@ -371,47 +372,13 @@
       "tool": {
         "path": "tool"
       }
-    }
-  },
-  "language-selection": "Language of use",
-  "login": "Log in",
-  "main-navigation": "Main navigation",
-  "menu": "Menu",
-  "navigation": {
-    "external": {
-      "ohjaaja": {
-        "description": "Information and materials for guidance",
-        "label": "Guidance practitioner section"
-      },
-      "osaamispolku": {
-        "description": "Personal Competency Path",
-        "label": "My Competency Path"
-      },
-      "tietopalvelu": {
-        "description": "Information to support decision-making",
-        "label": "Information service"
-      },
-      "title": "Content entities"
     },
-    "extra": {
-      "palveluhakemisto": {
-        "label": "Guidance and counselling services",
-        "url": "https://www.suomi.fi/topic/guidance-and-counselling-services"
-      },
-      "title": "Other support for reflection"
+    "welcome": {
+      "content": "The Competency Path service is moving from the open testing phase to production! The service is still in its early stages and we are actively developing it based on user feedback. The functions may change and new features are added regularly - thank you for being with us!",
+      "title": "Welcome to Competency Path!"
     }
-  },
-  "navigation-menu": "Menu",
-  "no-match": {
-    "description": "The page you are looking for could not be found or the link has expired. Check the address, open the menu or go to the front page.",
-    "go-home": "Go to the front page",
-    "title": "Oops! Page not found"
-  },
-  "note": {
-    "close": "Close"
   },
   "on-this-page": "On this page",
-  "osaamispolku": "Competency Path",
   "privacy-cookies": {
     "3rd-party": {
       "description": "Competency Path uses third-party applications, such as YouTube and Power BI, which are downloaded from the servers of these services. YouTube is used in the videos of the Competency Path's Guidance practitioner section. Power BI is used to produce report views in the information service. Third-party cookies are used anonymously to ensure the functionality of the applications embedded on the website and to improve the user experience. <br/><br/>If you do not use content from third-party service providers, no third-party cookies will be installed on your device. <br/><br/>Services provided by a third party or applications provided by a third party are subject to the terms of use and other conditions of that third party. <br/><br/>Further information: <br/><CustomLink1>Microsoft (Power BI)</CustomLink1> <CustomLink2>Google (YouTube)</CustomLink2>",
@@ -459,6 +426,10 @@
       "description": "The data provided by the person and stored as well as the restrictions chosen by the person may be processed in the manner referred to in Article 22(1) of the General Data Protection Regulation only automatically for the purpose of mapping and presenting education and career opportunities. Such processing requires that the user chooses to use automatic processing for this purpose in the service. Before making the choice, the Finnish National Agency for Education must clearly inform the user of the automatic processing in the service. In connection with the opportunity presented to the user, the service must provide the user with information on how their information and the restrictions they have chosen have been taken into account.",
       "title": "Automated data processing and its effects"
     },
+    "chatbot": {
+      "description": "In the Competence Path service, the search terms and phrases entered by the user are stored in the conversation history of the Advisory Bot. Users of the Advisory Bot's administration interface and service administrators can view the Advisory Bot's conversation history by logging into the administration interface with two-factor authentication. No personal data is stored in the conversations, as the application masks personal data using a masking algorithm. The masking algorithm recognizes standardized and technically modelable personal data. Users of the service should not enter their personal data into the Competence Path Advisory Bot. Users are informed of this in the greeting text of the Advisory Bot. Conversations are stored in the system for a maximum of 24 months or for the duration of the service agreement.",
+      "title": "Competence Path advisory bot"
+    },
     "data-handling-use": {
       "description": "The purpose of the national competence database is to enable individuals to store and maintain information about their own competence and interests and plans related to their career and education. The competence database is part of a digital service (hereinafter referred to as \"the Service\") which is intended to support the users in choosing education, entering the job market, making related transitions, maintaining their own competence and utilising their own education and career information. <br/><br/>In addition, the purpose of the database is to create a knowledge base for maintaining the situational picture of teaching, education, guidance and competence as well as supporting their development and anticipation.",
       "legal-basis": {
@@ -472,6 +443,10 @@
         "title": "Legal basis"
       },
       "title": "Purpose of processing personal data"
+    },
+    "info-about-3rd-country": {
+      "description": "The data is stored in the data centres of the Amazon Web Services provider in the EU. The data is not transferred outside the European Union or the European Economic Area.",
+      "title": "Information on data transfers to third countries and information on the safeguards used"
     },
     "info": {
       "contact": {
@@ -498,10 +473,6 @@
         "content": "Finnish National Agency for Education and KEHA Centre",
         "title": "Controller:"
       }
-    },
-    "info-about-3rd-country": {
-      "description": "The data is stored in the data centres of the Amazon Web Services provider in the EU. The data is not transferred outside the European Union or the European Economic Area.",
-      "title": "Information on data transfers to third countries and information on the safeguards used"
     },
     "intro": {
       "description": "This privacy policy describes how personal data is processed in the Competency Path service. It also explains what rights data subjects have and how they can exercise their rights. The persons registered are those who have created the competence profile and those who are logged in to the guidance practitioner's desktop. <br/><br/>The privacy policy is updated regularly. You can always find the latest version on this page",
@@ -681,16 +652,5 @@
     },
     "title": "Privacy policy and cookies"
   },
-  "service-banner": "Service package",
-  "show-all": "Show all",
-  "skiplinks": {
-    "main": "Go to main content"
-  },
-  "slugs": {
-    "about-service": "about-service",
-    "accessibility": "about-accessibility",
-    "ai-usage": "about-the-use-of-ai",
-    "data-sources": "data-sources",
-    "privacy-and-cookies": "privacy-notice-and-cookies"
-  }
+  "service-banner": "Service package"
 }
