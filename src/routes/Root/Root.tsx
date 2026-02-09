@@ -3,7 +3,10 @@ import { NavMenu } from '@/components/NavMenu/NavMenu';
 import { Toaster } from '@/components/Toaster/Toaster';
 import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
 import { langLabels, supportedLanguageCodes, type LangCode } from '@/i18n/config';
+import { getNotifications } from '@/utils/notifications';
+import { getLinkTo } from '@/utils/routeUtils';
 import {
+  Button,
   Chatbot,
   Footer,
   LanguageButton,
@@ -12,6 +15,7 @@ import {
   NavigationBar,
   ServiceVariantProvider,
   SkipLink,
+  useNoteStack,
 } from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -25,6 +29,7 @@ const Root = () => {
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);
   const [feedbackVisible, setFeedbackVisible] = React.useState(false);
   const location = useLocation();
+  const { addTemporaryNote } = useNoteStack();
 
   const hostname = window.location.hostname;
   const { siteId } = React.useMemo(() => {
@@ -65,6 +70,29 @@ const Root = () => {
   }, [language]);
 
   const { generateLocalizedPath } = useLocalizedRoutes();
+
+  React.useEffect(() => {
+    getNotifications().forEach((notification) => {
+      addTemporaryNote(() => ({
+        id: notification.id,
+        title: notification.title[language as LangCode],
+        description: notification.description[language as LangCode],
+        variant: notification.variant,
+        readMoreComponent: notification.link ? (
+          <Button
+            size="sm"
+            variant="white"
+            label={notification.link.label[language as LangCode]}
+            linkComponent={getLinkTo(notification.link.url[language as LangCode], {
+              useAnchor: true,
+              target: '_blank',
+            })}
+          />
+        ) : undefined,
+        isCollapsed: false,
+      }));
+    });
+  }, [addTemporaryNote, t, language]);
 
   return (
     <div className="bg-bg-gray">

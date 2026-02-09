@@ -111,9 +111,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
       // Wait a moment before showing success message
       await new Promise((resolve) => setTimeout(resolve, 50));
       toast.success(t('feedback.success'));
-
-      // eslint-disable-next-line sonarjs/no-ignored-exceptions, @typescript-eslint/no-unused-vars
-    } catch (error) {
+    } catch (_) {
       setIsSubmitting(false);
       toast.error(t('feedback.error'));
     }

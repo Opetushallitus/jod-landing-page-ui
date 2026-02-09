@@ -5,8 +5,16 @@ import { Metric } from 'web-vitals';
 import './i18n/config';
 import './index.css';
 import { routes } from './routes';
+import { loadNotifications } from './utils/notifications';
 
 const router = createBrowserRouter(routes);
+
+try {
+  await loadNotifications();
+} catch (_) {
+  // It's safe to ignore this error.
+  // If notification loading fails, the app will continue to work without notifications.
+}
 
 const root = createRoot(document.getElementById('root')!);
 
