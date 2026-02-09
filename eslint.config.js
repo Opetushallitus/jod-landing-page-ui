@@ -27,7 +27,20 @@ export default tseslint.config(
     rules: {
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          args: 'all',
+          argsIgnorePattern: '^_',
+          caughtErrors: 'all',
+          caughtErrorsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          ignoreRestSiblings: true,
+        },
+      ],
       '@singlestore/react-hooks-disable-import/react-hooks-disable-import': 'error',
+      'sonarjs/no-ignored-exceptions': 'off',
       'react/no-unstable-nested-components': 'warn',
       'react/no-array-index-key': 'warn',
     },
