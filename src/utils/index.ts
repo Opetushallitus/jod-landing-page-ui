@@ -23,10 +23,16 @@ export const getLocalizedText = (entry?: Record<string, string | undefined>, lan
   entry?.[i18n.options.fallbackLng]?.trim() ??
   '';
 
-export const createArticleSectionData = (navTitle: string, text: React.ReactNode, onlyText: boolean = true) => {
+export const createArticleSectionData = (
+  navTitle: string,
+  text: React.ReactNode,
+  onlyText: boolean = true,
+  showNavTitle: boolean = true,
+) => {
   return {
     navTitle,
     text,
     onlyText,
+    showNavTitle,
   };
 };
