@@ -31,11 +31,12 @@ const AboutService = () => {
         <Trans i18nKey="about-service.sections.jod-project.description" />,
       ),
     ].map((item) => {
-      const { navTitle, text } = item;
+      const { navTitle, text, showNavTitle } = item;
 
       return {
         navTitle,
         content: <BasicArticleSectionContent key={navTitle} text={text} />,
+        showNavTitle,
       };
     });
   }, [t]);

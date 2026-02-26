@@ -10,13 +10,14 @@ interface ArticleSectionPageProps {
   title: string;
   intro: string;
   sections: ArticleSection[];
+  hideNavigation?: boolean;
 }
 
-export const ArticleSectionPage = ({ title, intro, sections }: ArticleSectionPageProps) => {
+export const ArticleSectionPage = ({ title, intro, sections, hideNavigation }: ArticleSectionPageProps) => {
   const { lg } = useMediaQueries();
   return (
-    <MainLayout navChildren={<ArticleSectionNavigation sections={sections} />}>
-      {!lg && (
+    <MainLayout navChildren={!hideNavigation && <ArticleSectionNavigation sections={sections} />}>
+      {!lg && !hideNavigation && (
         <div className="mb-8">
           <ArticleSectionNavigation sections={sections} activeIndicator="dot" collapsed />
         </div>
@@ -31,11 +32,13 @@ export const ArticleSectionPage = ({ title, intro, sections }: ArticleSectionPag
 
         {sections.map((section) => (
           <div key={section.navTitle} className="flex flex-col mb-7">
-            <ScrollHeading
-              title={section.navTitle}
-              heading="h2"
-              className="text-heading-2-mobile sm:text-heading-2 font-poppins mb-3"
-            />
+            {section.showNavTitle ? (
+              <ScrollHeading
+                title={section.navTitle}
+                heading="h2"
+                className="text-heading-2-mobile sm:text-heading-2 font-poppins mb-3"
+              />
+            ) : null}
             <div className="flex flex-row justify-between">{section.content}</div>
           </div>
         ))}

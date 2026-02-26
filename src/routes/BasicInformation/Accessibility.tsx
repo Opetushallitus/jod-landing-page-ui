@@ -47,11 +47,12 @@ const Accessibility = () => {
         <Trans i18nKey="accessibility.sections.feedback.description" />,
       ),
     ].map((item) => {
-      const { navTitle, text } = item;
+      const { navTitle, text, showNavTitle } = item;
 
       return {
         navTitle,
         content: <BasicArticleSectionContent key={navTitle} text={text} onlyText={item.onlyText} />,
+        showNavTitle,
       };
     });
   }, [t]);
