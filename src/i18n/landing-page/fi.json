@@ -1,27 +1,27 @@
 {
   "about-guidance": {
-    "title": "Osaamispolku tuo ohjaustyön ammattilaisen työkalut yhteen paikkaan",
     "intro": "Opinto- ja uraohjauksella on tärkeä tehtävä eri elämänvaiheissa olevien ihmisten tukemisessa. Osaamispolku-palvelu tarjoaa runsaasti työkaluja arjen ohjaustilanteisiin ja ohjaajan omaan ammatilliseen kehittymiseen. Palvelusta löydät myös ohjaustyössä tarvittavaa ajankohtaista tietoa työmarkkinoista, koulutuksesta ja osaamistarpeista. Lue lisää, mitä Osaamispolku voi tarjota sinulle, ohjaustyön ammattilainen!",
     "sections": {
       "1": {
         "description": "Laadukkaan ohjauksen merkitys korostuu erityisesti silloin, kun ihminen on valintojen äärellä. Koulutukseen hakeutuminen, työuran suunnan muuttaminen, työttömyys tai seuraavan askeleen pohtiminen uralla ovat hetkiä, joissa moni toivoo saavansa tukea mahdollisuuksien tunnistamiseen ja vaihtoehtojen jäsentelyyn ennen päätöksentekoa.<br/><br/>Osaamispolku on kaikille avoin ja maksuton palvelu, joka on kehitetty tukemaan eri elämänvaiheissa olevia ihmisiä koulutus- ja työvaihtoehtojen tunnistamisessa. Ohjaustyön ammattilaisille Osaamispolku tarjoaa välineitä ja menetelmiä arjen asiakastyöhön sekä materiaaleja, joiden avulla voi kehittää omaa ohjausosaamistaan. Löydät palvelusta myös luotettavaa tilasto- ja ennakointitietoa, jota voit hyödyntää työssäsi.<br/><br/> – Ohjaus liittyy pääsääntöisesti erilaisiin uraan liittyviin valintatilanteisiin, joita kohtaamme elämän varrella. Erityisen merkityksellisiä ovat vaiheet, joissa siirrytään esimerkiksi opinnoista työelämään tai etsitään uutta suuntaa uralla vaikka alanvaihdon kautta. Osaamispolussa on otettu huomioon sekä erilaiset elämän taitekohdat että moninaiset ohjaustilanteet, kertoo erityisasiantuntija <strong>Jenni Larjomaa</strong> opetus- ja kulttuuriministeriöstä. "
       },
       "2": {
-        "navTitle": "Työkaluja arjen ohjaustilanteisiin",
-        "description": "Osaamispolussa on ohjaustyön ammattilaisille suunnattu osio, josta löytyy materiaaleja sekä yksilö- että ryhmäohjaukseen. Näitä ovat esimerkiksi sisällöt oppitunteihin, ohjaajan kanssa tehtävät harjoitukset sekä tehtävät itsenäiseen työskentelyyn. Aiheita ovat muun muassa urasuunnittelutaidot, osaamisen tunnistaminen, itsetuntemus ja työnhaku.<br/><br/> – Kokonaisuus on rakennettu sellaiseksi, että ohjaaja löytää helposti oikeat työkalut ja materiaalit tilanteen mukaan. Voit etsiä sopivan harjoituksen seuraavaan asiakastapaamiseen tai syventyä laajempiin sisältöihin oman osaamisesi vahvistamiseksi, valottaa KEHA-keskuksessa kehittämisasiantuntijana työskentelevä <strong>Kirsti Karjalainen</strong>.<br/><br/> Ohjaajan kannattaa tutustua myös Oma osaamispolku -osioon, jonne ohjattava voi luoda osaamisprofiilin. Palvelu tarjoaa asiakkaalle myös koulutus- ja työvaihtoehtoja hänen osaamistensa ja kiinnostustensa pohjalta.<br/><br/> – Oman osaamisen tunnistaminen ja sanoittaminen on usein vaikeaa. Se on kuitenkin uraohjauksen ydintä. Ohjaaja voi olla se taho, joka auttaa tekemään osaamisen näkyväksi. Osaamispolun monipuoliset kartoitustyökalut tukevat tässä erinomaisesti, Larjomaa korostaa."
+        "description": "Osaamispolussa on ohjaustyön ammattilaisille suunnattu osio, josta löytyy materiaaleja sekä yksilö- että ryhmäohjaukseen. Näitä ovat esimerkiksi sisällöt oppitunteihin, ohjaajan kanssa tehtävät harjoitukset sekä tehtävät itsenäiseen työskentelyyn. Aiheita ovat muun muassa urasuunnittelutaidot, osaamisen tunnistaminen, itsetuntemus ja työnhaku.<br/><br/> – Kokonaisuus on rakennettu sellaiseksi, että ohjaaja löytää helposti oikeat työkalut ja materiaalit tilanteen mukaan. Voit etsiä sopivan harjoituksen seuraavaan asiakastapaamiseen tai syventyä laajempiin sisältöihin oman osaamisesi vahvistamiseksi, valottaa KEHA-keskuksessa kehittämisasiantuntijana työskentelevä <strong>Kirsti Karjalainen</strong>.<br/><br/> Ohjaajan kannattaa tutustua myös Oma osaamispolku -osioon, jonne ohjattava voi luoda osaamisprofiilin. Palvelu tarjoaa asiakkaalle myös koulutus- ja työvaihtoehtoja hänen osaamistensa ja kiinnostustensa pohjalta.<br/><br/> – Oman osaamisen tunnistaminen ja sanoittaminen on usein vaikeaa. Se on kuitenkin uraohjauksen ydintä. Ohjaaja voi olla se taho, joka auttaa tekemään osaamisen näkyväksi. Osaamispolun monipuoliset kartoitustyökalut tukevat tässä erinomaisesti, Larjomaa korostaa.",
+        "navTitle": "Työkaluja arjen ohjaustilanteisiin"
       },
       "3": {
-        "navTitle": "Kehitä osaamistasi – vahvista ohjauksen vaikuttavuutta",
-        "description": "Ohjaustyö kehittyy jatkuvasti. Työelämä muuttuu ja ohjattavien tilanteet moninaistuvat. Osaamispolkuun on koottu ohjaajille tietoa ohjausalan täydennyskoulutuksista ja verkkokursseista. Palvelu tarjoaa runsaasti myös julkaisuja ja itseopiskelumateriaaleja.<br/><br/> – Voit syventää osaamistasi esimerkiksi monikulttuurisessa ohjauksessa, esteettömyydessä tai elinikäisen ohjauksen ajankohtaisissa teemoissa. Käytössäsi on myös työkaluja ja testejä oman ohjausosaamisen arvioimiseen, Karjalainen kertoo.<br/><br/> Larjomaa suositteleekin tutustumaan <Link href='https://osaamispolku.fi/ohjaaja/fi/ohjaajan-tietosisallot/elinikaisen-ohjauksen-kasikirja' target='_blank'>Elinikäisen ohjauksen käsikirjaan</Link>.<br/><br/>  – Käsikirja avaa uusia näkökulmia siihen, mitä ohjaustyö tänä päivänä on, kokoaa yhteen viime vuosien kehittämistyötä ja avaa, miksi elinikäinen ohjaus on keskeisessä roolissa erilaisissa valintatilanteissa, Larjomaa vinkkaa.<br/><br/> Karjalainen jatkaa: <br/><br/>– Kun materiaalit löytyvät helposti yhdestä paikasta, ohjaajien mahdollisuudet kehittää omaa osaamistaan paranevat. Ohjattaville tämä näkyy entistä laadukkaampana ohjauksena.<br/><br/> Voit hyödyntää ohjaustyössäsi myös Osaamispolun Tietopalvelua, josta löydät ajantasaista tilasto- ja ennakointitietoa osaamisesta, työmarkkinoista ja koulutuksesta.<br/><br/> – Tietopalvelua voi hyödyntää ohjaustilanteissa esimerkiksi silloin, kun tarkastellaan alueellisia osaamistarpeita tai työmarkkinoiden näkymiä, Larjomaa toteaa."
+        "description": "Ohjaustyö kehittyy jatkuvasti. Työelämä muuttuu ja ohjattavien tilanteet moninaistuvat. Osaamispolkuun on koottu ohjaajille tietoa ohjausalan täydennyskoulutuksista ja verkkokursseista. Palvelu tarjoaa runsaasti myös julkaisuja ja itseopiskelumateriaaleja.<br/><br/> – Voit syventää osaamistasi esimerkiksi monikulttuurisessa ohjauksessa, esteettömyydessä tai elinikäisen ohjauksen ajankohtaisissa teemoissa. Käytössäsi on myös työkaluja ja testejä oman ohjausosaamisen arvioimiseen, Karjalainen kertoo.<br/><br/> Larjomaa suositteleekin tutustumaan <Link href='https://osaamispolku.fi/ohjaaja/fi/ohjaajan-tietosisallot/elinikaisen-ohjauksen-kasikirja' target='_blank'>Elinikäisen ohjauksen käsikirjaan</Link>.<br/><br/>  – Käsikirja avaa uusia näkökulmia siihen, mitä ohjaustyö tänä päivänä on, kokoaa yhteen viime vuosien kehittämistyötä ja avaa, miksi elinikäinen ohjaus on keskeisessä roolissa erilaisissa valintatilanteissa, Larjomaa vinkkaa.<br/><br/> Karjalainen jatkaa: <br/><br/>– Kun materiaalit löytyvät helposti yhdestä paikasta, ohjaajien mahdollisuudet kehittää omaa osaamistaan paranevat. Ohjattaville tämä näkyy entistä laadukkaampana ohjauksena.<br/><br/> Voit hyödyntää ohjaustyössäsi myös Osaamispolun Tietopalvelua, josta löydät ajantasaista tilasto- ja ennakointitietoa osaamisesta, työmarkkinoista ja koulutuksesta.<br/><br/> – Tietopalvelua voi hyödyntää ohjaustilanteissa esimerkiksi silloin, kun tarkastellaan alueellisia osaamistarpeita tai työmarkkinoiden näkymiä, Larjomaa toteaa.",
+        "navTitle": "Kehitä osaamistasi – vahvista ohjauksen vaikuttavuutta"
       },
       "4": {
-        "navTitle": "Kohti laadukkaampaa ja yhdenvertaisempaa ohjausta",
-        "description": "– Osaamispolun tavoite on, että yhä useampi ihminen – elämäntilanteesta riippumatta – saa tukea oman suuntansa löytämiseen. Samalla haluamme vahvistaa ohjauksen laatua ja yhdenvertaisuutta, Larjomaa sanoo.<br/><br/> Palvelu on kehitetty tiiviissä yhteistyössä ohjaajien kanssa, ja sisältöjen kokoamisessa on hyödynnetty Ohjausosuuskunta Oten laajaa selvitystyötä. Osaamispolkua kehitetään edelleen käyttäjäpalautteen pohjalta. Kirjautuneet ohjausalan ammattilaiset voivat kommentoida sisältöjä ja ehdottaa uusia materiaaleja Osaamispolkuun."
+        "description": "– Osaamispolun tavoite on, että yhä useampi ihminen – elämäntilanteesta riippumatta – saa tukea oman suuntansa löytämiseen. Samalla haluamme vahvistaa ohjauksen laatua ja yhdenvertaisuutta, Larjomaa sanoo.<br/><br/> Palvelu on kehitetty tiiviissä yhteistyössä ohjaajien kanssa, ja sisältöjen kokoamisessa on hyödynnetty Ohjausosuuskunta Oten laajaa selvitystyötä. Osaamispolkua kehitetään edelleen käyttäjäpalautteen pohjalta. Kirjautuneet ohjausalan ammattilaiset voivat kommentoida sisältöjä ja ehdottaa uusia materiaaleja Osaamispolkuun.",
+        "navTitle": "Kohti laadukkaampaa ja yhdenvertaisempaa ohjausta"
       },
       "5": {
         "description": "Tutustu Osaamispolkuun: <List><ListItem><Link href=\"https://osaamispolku.fi/ohjaaja/fi\" target=\"_blank\">Ohjaajan osio</Link></ListItem><ListItem><Link href=\"https://osaamispolku.fi/fi\" target=\"_blank\">Osaamispolun pääsivu</Link></ListItem></List><br/><br/> <i>Osaamispolku-palvelu on julkaistu tammikuussa 2026. Palvelu toimii suomeksi, ruotsiksi ja englanniksi. Osaamispolusta vastaavat opetus- ja kulttuuriministeriö, työ- ja elinkeinoministeriö, Opetushallitus ja KEHA-keskus.</i>"
       }
-    }
+    },
+    "title": "Osaamispolku tuo ohjaustyön ammattilaisen työkalut yhteen paikkaan"
   },
   "about-service": {
     "intro": "Osaamispolku on koulutus- ja urasuunnittelun, osaamisen kehittämisen ja työllistymisen tueksi tarkoitettu uusi digitaalinen palvelu. Osaamispolku on suunnattu kaikille työ- ja koulutusvalintoja tekeville, ohjaajille, koulutusorganisaatioille, työelämätoimijoille ja eri hallinnonalojen asiantuntijoille.",
@@ -43,8 +43,8 @@
         "navTitle": "Jatkuvan oppimisen digitaalinen palvelukokonaisuus (JOD) -hanke"
       },
       "my-path": {
-        "description": "Osaamispolussani voit kartoittaa omaa osaamistasi, löytää koulutuksia osaamisesi kasvattamiseksi, tutkia työmahdollisuuksia osaamisellasi ja kartoittaa mahdollisuuksia alan vaihtamiseen. Osaamispolkuni on tarkoitettu kaikille käyttäjille.",
-        "navTitle": "Osaamispolkuni"
+        "description": "Oma Osaamispolussa voit kartoittaa omaa osaamistasi, löytää koulutuksia osaamisesi kasvattamiseksi, tutkia työmahdollisuuksia osaamisellasi ja kartoittaa mahdollisuuksia alan vaihtamiseen. Oma Osaamispolku on tarkoitettu kaikille käyttäjille.",
+        "navTitle": "Oma Osaamispolku"
       }
     },
     "title": "Tietoa palvelusta"
@@ -211,7 +211,7 @@
         },
         "navTitle": "ePerusteet",
         "paragraph-1": "Palvelusta löytyy kaikki valtakunnalliset opetussuunnitelmien, tutkintojen ja koulutusten perusteet varhaiskasvatuksesta vapaaseen sivistystyöhön. Lisäksi palvelusta löytyy muut ajantasaiset Opetushallituksen määräykset ja suositukset. Varhaiskasvatuksen, opetuksen ja koulutuksen järjestäjät voivat julkaista palvelussa myös paikallisia suunnitelmia.",
-        "paragraph-2": "Osaamispolkuni-osiossa hyödynnetään ePerusteet palvelusta perustietoja koulutustarjonnan osalta.",
+        "paragraph-2": "Oma Osaamispolku -osiossa hyödynnetään ePerusteet palvelusta perustietoja koulutustarjonnan osalta.",
         "paragraph-3": "Tietopalvelu hyödyntää koulutukseen liittyviä perustietoja koulutustarjonnan osalta."
       },
       "koto": {
@@ -271,7 +271,7 @@
         },
         "navTitle": "Tilastokeskus",
         "paragraph-1": "Tilastokeskus esittää tilastotietoa suomalaisen yhteiskunnan eri alueilta.",
-        "paragraph-2": "Osaamispolkuni-osio hyödyntää tilastokeskuksen tietoja työmahdollisuuksien ja koulutusmahdollisuuksien tilastotiedoissa.",
+        "paragraph-2": "Oma Osaamispolku -osio hyödyntää tilastokeskuksen tietoja työmahdollisuuksien ja koulutusmahdollisuuksien tilastotiedoissa.",
         "paragraph-3": "Tietopalvelu hyödyntää tilastokeskuksen tietoja väestön, opiskelijoiden, työllisten ja työttömien sekä työnhakijoiden tietojen osalta. Tarkastelussa voit hyödyntää useita erilaisia näkökulmia muutosten tarkastelussa.",
         "paragraph-4": "Tarkemman erittelyn hyödynnetyistä tiedoista voit löytää Tietopalvelun tietolähteet -sivulta."
       },
@@ -297,7 +297,7 @@
         "navTitle": "Työmarkkinatori",
         "paragraph-1": "Työ- ja elinkeinoministeriö vastaa Työmarkkinatori-palvelusta. Työmarkkinatorissa käyttäjille on tarjolla valmiiksi koottua tietoa ja palveluita työelämän eri tilanteisiin.",
         "paragraph-2": "Työmarkkinatorin työllisyys ja tilastot -kokonaisuus sisältää kootusti KEHA-keskuksen julkaisemia arviointeja, selvityksiä, tutkimuksia, tilastoja ja raportteja.",
-        "paragraph-3": "Osaamispolkuni-osio hyödyntää työmarkkinatorin osaamissuosittelijaa, kansallisesti ylläpidettävää ESCO-osaamis- ja ammattiluokitusta sekä avoimia työpaikkoja.",
+        "paragraph-3": "Oma Osaamispolku -osio hyödyntää työmarkkinatorin osaamissuosittelijaa, kansallisesti ylläpidettävää ESCO-osaamis- ja ammattiluokitusta sekä avoimia työpaikkoja.",
         "paragraph-4": "Tietopalvelu hyödyntää Työmarkkinatorin tiedoista avoimien työpaikkojen määrää."
       },
       "vipunen": {
@@ -309,7 +309,7 @@
         },
         "navTitle": "Vipunen",
         "paragraph-1": "Vipunen on opetushallinnon tilastopalvelu, jonka sisällöstä vastaavat yhdessä opetus- ja kulttuuriministeriö ja Opetushallitus.",
-        "paragraph-2": "Osaamispolkuni-osio hyödyntää Vipusen tietoja työmahdollisuuksien ja koulutusmahdollisuuksien tilastotiedoissa.",
+        "paragraph-2": "Oma Osaamispolku -osio hyödyntää Vipusen tietoja työmahdollisuuksien ja koulutusmahdollisuuksien tilastotiedoissa.",
         "paragraph-3": "Tietopalvelu hyödyntää Vipusen tietoja ammattialakohtaisen osaamistarpeen muutoksesta."
       }
     },
@@ -325,12 +325,12 @@
       },
       "opintopolku": {
         "text-1": "<CustomLink>Opintopolku<Icon></Icon></CustomLink> tarjoaa kattavat tiedot koulutuksista ja hakupalvelut eri koulutusasteille.",
-        "text-2": "Kun olet löytänyt Osaamispolussa mielenkiintoisen koulutusmahdollisuuden, voit siirtyä Opintopolkuun tutustumaan tarkemmin ja hakeutumaan koulutuksiin. Kirjautuessasi Osaamispolussani osaamisprofiiliisi voit tuoda Opintopolusta koulutushistoriasi.",
+        "text-2": "Kun olet löytänyt Oma Osaamispolussa mielenkiintoisen koulutusmahdollisuuden, voit siirtyä Opintopolkuun tutustumaan tarkemmin ja hakeutumaan koulutuksiin. Kirjautuessasi Oma Osaamispolun osaamisprofiiliisi voit tuoda Opintopolusta koulutushistoriasi.",
         "url": "https://opintopolku.fi/konfo/fi/"
       },
       "tyomarkkinatori": {
         "text-1": "<CustomLink>Työmarkkinatori<Icon></Icon></CustomLink> kokoaa yhteen avoimet työpaikat ja tukee työnhaussa sekä urasuunnittelussa.",
-        "text-2": "Kun olet löytänyt Osaamispolussa mielenkiintoisen työmahdollisuuden, voit siirtyä Työmarkkinatorille tutustumaan ja hakemaan avoimia työpaikkoja. Voit myös siirtää tietojasi Osaamispolkuni osaamisprofiiliisi ja Työmarkkinatorin työnhakuprofiilin välillä.",
+        "text-2": "Kun olet löytänyt Oma Osaamispolussa mielenkiintoisen työmahdollisuuden, voit siirtyä Työmarkkinatorille tutustumaan ja hakemaan avoimia työpaikkoja. Voit myös siirtää tietojasi Oma Osaamispolun osaamisprofiiliisi ja Työmarkkinatorin työnhakuprofiilin välillä.",
         "url": "https://tyomarkkinatori.fi/"
       },
       "you": {
@@ -340,8 +340,8 @@
       }
     },
     "hero": {
-      "content": "Kartoita kiinnostuksesi ja osaamisesi. Löydä niiden perusteella sinulle sopivia vaihtoehtoja. Osaamispolkuni tukee, kun haet suuntaa kyvyillesi ja intohimoillesi. Silmäsi saattavat avautua yllättävillekin mahdollisuuksille.",
-      "link-text": "Siirry Osaamispolkuuni",
+      "content": "Kartoita kiinnostuksesi ja osaamisesi. Löydä niiden perusteella sinulle sopivia vaihtoehtoja. Oma Osaamispolku tukee, kun haet suuntaa kyvyillesi ja intohimoillesi. Silmäsi saattavat avautua yllättävillekin mahdollisuuksille.",
+      "link-text": "Siirry Omaan Osaamispolkuun",
       "title": "Osaamispolku - löydä oma suuntasi"
     },
     "how-competency-path-helps-you-opinfi-title": "Opin.fi",
@@ -378,9 +378,9 @@
         "title": "Ohjaajan osio"
       },
       "osaamispolku": {
-        "content": "Kartoita kiinnostuksesi ja osaamisesi sekä löydä koulutus- ja työmahdollisuuksia. Kirjautumalla Osaamispolkuuni voit luoda oman osaamisprofiiliisi ja tallentaa tietosi myöhempää käyttöä varten.",
-        "link-text": "Osaamispolkuni",
-        "title": "Osaamispolkuni"
+        "content": "Kartoita kiinnostuksesi ja osaamisesi sekä löydä koulutus- ja työmahdollisuuksia. Kirjautumalla Omaan osaamispolkuun voit luoda oman osaamisprofiiliisi ja tallentaa tietosi myöhempää käyttöä varten.",
+        "link-text": "Oma Osaamispolku",
+        "title": "Oma Osaamispolku"
       },
       "tietopalvelu": {
         "content": "Tietopalvelu kokoaa yhteen koulutukseen, työmarkkinoihin ja osaamiseen liittyvää tietoa päätöksenteon tueksi. Voit tarkastella sinua kiinnostavia tietokokonaisuuksia eri näkökulmista erilaisten suodattimien avulla.",
