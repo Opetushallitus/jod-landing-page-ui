@@ -318,6 +318,17 @@
   "front-page": "Etusivu",
   "home": {
     "competency-path-help": {
+      "situation": {
+        "title": "Miten Osaamispolku auttaa sinua eri tilanteissa?",
+        "accordion-1-title": "Haluan löytää uuden suunnan",
+        "accordion-1-text": "Onneksi olkoon, olet oikeassa paikassa! Osaamispolku tarjoaa sinulle erilaisia tapoja hahmottaa osaamistasi ja mahdollisuuksiasi. Osaamispolussa voit tallentaa osaamiseen liittyviä tietojasi ja löytää niiden perusteella sinulle parhaiten sopivia työ- ja koulutusmahdollisuuksia. Mahdollisuuksissa esitellään oleellisimpia tietoja sinulle päätöksenteon tueksi. Jos kaipaat henkilökohtaista ohjausta, olemme koonneet ohjausta tuottavat tahot ohjaus- ja neuvontapalvelut hakemistoksi.",
+        "accordion-2-title": "Haluan löytää työpaikan",
+        "accordion-2-text": "Osaamispolku auttaa sinua osaamistesi ja kiinnostustesi sanoittamisessa ja tunnistamisessa, ja ehdottaa niiden perusteella sinulle sopivia mahdollisuuksia. Löydät ammateista ja muista työmahdollisuuksista kootusti tietoa. Kun olet löytänyt Osaamispolussa mielenkiintoisen työmahdollisuuden, voit siirtyä Työmarkkinatorille tutustumaan ja hakemaan avoimia työpaikkoja. Voit myös siirtää tietojasi Osaamispolkuni osaamisprofiiliisi ja Työmarkkinatorin työnhakuprofiilin välillä.",
+        "accordion-3-title": "Haluan opiskelemaan",
+        "accordion-3-text": "Osaamispolku auttaa sinua osaamistesi ja kiinnostustesi sanoittamisessa ja tunnistamisessa, ja ehdottaa niiden perusteella sinulle sopivia mahdollisuuksia. Kun olet löytänyt Osaamispolussa mielenkiintoisen koulutusmahdollisuuden, voit siirtyä Opintopolkuun tutustumaan tarkemmin ja hakeutumaan koulutuksiin. Kirjautuessasi Osaamispolkuun voit tuoda Opintopolusta koulutushistoriasi osaamisprofiiliisi.",
+        "accordion-4-title": "Haluan ymmärtää mitä osaan",
+        "accordion-4-text": "Osaamispolku auttaa sinua sanoittamaan ja tunnistamaan työ- ja koulutushistoriasi kautta kertyneen osaamisen. Osaamista kertyy myös vapaa-ajan toiminnoista, joten muista täyttää myös ne osaamisprofiilisi. Osaamisprofiilin tietoja voit hyödyntää mahdollisuuksien löytämiseen. Voit hyödyntää osaamisprofiilia myös tietojesi jakamiseen haluamallesi taholle. Voit myös siirtää tietojasi Osaamispolkuni osaamisprofiiliisi ja Työmarkkinatorin työnhakuprofiilin välillä."
+      },
       "opinfi": {
         "text-1": "<CustomLink>Opin.fi<Icon></Icon></CustomLink> on palvelu, joka kokoaa suomalaisten yliopistojen ja ammattikorkeakoulujen avoimet opintotarjonnat yhteen paikkaan.",
         "text-2": "Opin.fi on tarkoitettu kaikille, jotka haluavat kehittää osaamistaan – etsiä täydentävää koulutusta, hankkia uusia taitoja tai tutustua korkeakouluopintoihin.",
@@ -369,21 +380,21 @@
     "personal-guidance": {
       "content": "Ohjaus- ja neuvontapalveluista löytyvät palvelut auttavat sinua työ- ja koulutusvaihtoehtoihin liittyvässä pohdinnassa. Rajaa palveluiden listaa sinua kiinnostavien teemojen ja esimerkiksi asuinpaikkasi perusteella, jotta löydät sinulle parhaiten sopivat palvelut.",
       "link-text": "Siirry Ohjaus- ja neuvontapalveluihin",
-      "title": "Ohjaus- ja neuvontapalveluja"
+      "title": "Tarvitsetko henkilökohtaista ohjausta?"
     },
     "sections": {
       "ohjaaja": {
-        "content": "Ohjaajan osiosta löydät ohjaustyösi tueksi ajantasaista laadukasta tietoa ja menetelmiä sekä omaa ohjausosaamistasi vahvistavia materiaaleja.",
+        "content": "Ohjaustyön tueksi ajantasaista tietoa ja menetelmiä sekä ohjausosaamistasi vahvistavia materiaaleja",
         "link-text": "Ohjaajan osio",
         "title": "Ohjaajan osio"
       },
       "osaamispolku": {
-        "content": "Kartoita kiinnostuksesi ja osaamisesi sekä löydä koulutus- ja työmahdollisuuksia. Kirjautumalla Oma Osaamispolku -osioon voit luoda oman osaamisprofiiliisi ja tallentaa tietosi myöhempää käyttöä varten.",
-        "link-text": "Oma Osaamispolku",
-        "title": "Oma Osaamispolku"
+        "content": "Omien kiinnostusten ja osaamisten kartoittamista sekä tietoa koulutus- ja työmahdollisuuksista",
+        "link-text": "Osaamispolkuni",
+        "title": "Osaamispolkuni"
       },
       "tietopalvelu": {
-        "content": "Tietopalvelu kokoaa yhteen koulutukseen, työmarkkinoihin ja osaamiseen liittyvää tietoa päätöksenteon tueksi. Voit tarkastella sinua kiinnostavia tietokokonaisuuksia eri näkökulmista erilaisten suodattimien avulla.",
+        "content": "Koulutukseen, työmarkkinoihin ja osaamiseen liittyvää tietoa kootusti päätöksenteon tueksi",
         "link-text": "Tietopalvelu",
         "title": "Tietopalvelu"
       },
@@ -398,7 +409,7 @@
       }
     },
     "welcome": {
-      "content": "Osaamispolku-palvelu siirtyy avoimesta testausvaiheesta julkaisuun! Palvelu on edelleen alkuvaiheessa, ja kehitämme sitä aktiivisesti käyttäjäpalautteen pohjalta. Toiminnot voivat muuttua ja uusia ominaisuuksia tulee lisää säännöllisesti – kiitos kun olet mukana matkassa!",
+      "content": "Osaamispolku-palvelu on julkaistu. Palvelua kehitetään edelleen käyttäjäpalautteen pohjalta. Toiminnot voivat muuttua ja uusia ominaisuuksia tulee lisää säännöllisesti – kiitos kun olet mukana matkassa!",
       "title": "Tervetuloa Osaamispolkuun!"
     }
   },
