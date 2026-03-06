@@ -318,17 +318,6 @@
   "front-page": "Framsida",
   "home": {
     "competency-path-help": {
-      "situation": {
-        "title": "Hur hjälper Kompetensstigen dig i olika situationer?",
-        "accordion-1-title": "Jag vill hitta en ny riktning",
-        "accordion-1-text": "Grattis, du är på rätt plats! Kompetensstigen erbjuder dig olika sätt att förstå din kompetens och dina möjligheter. I Kompetensstigen kan du spara information om din kompetens och hitta de bästa arbets- och utbildningsmöjligheterna baserat på den. Möjligheterna presenterar de viktigaste uppgifterna för att stödja ditt beslutsfattande. Om du behöver personlig vägledning har vi sammanställt en lista över vägledande och rådgivande tjänster.",
-        "accordion-2-title": "Jag vill hitta ett jobb",
-        "accordion-2-text": "Kompetensstigen hjälper dig att formulera och identifiera dina kompetenser och intressen och föreslår möjligheter baserat på dem. Du hittar information om yrken och andra arbetsmöjligheter på ett samlat sätt. När du har hittat en intressant arbetsmöjlighet i Kompetensstigen kan du gå till Arbetsmarknadstorget för att utforska och ansöka om lediga jobb. Du kan också överföra din information mellan din kompetensprofil i Kompetensstigen och din jobbsökarprofil på Arbetsmarknadstorget.",
-        "accordion-3-title": "Jag vill studera",
-        "accordion-3-text": "Kompetensstigen hjälper dig att formulera och identifiera dina kompetenser och intressen och föreslår möjligheter baserat på dem. När du har hittat en intressant utbildningsmöjlighet i Kompetensstigen kan du gå till Studieinfo för att läsa mer och ansöka till utbildningen. När du loggar in i Kompetensstigen kan du importera din utbildningshistorik till din kompetensprofil från Studieinfo.",
-        "accordion-4-title": "Jag vill förstå vad jag kan",
-        "accordion-4-text": "Kompetensstigen hjälper dig att formulera och identifiera kompetenser som du har utvecklat genom arbets- och utbildningshistorik. Kompetenser kan också utvecklas genom fritidsaktiviteter, så kom ihåg att fylla i även dessa i din kompetensprofil. Informationen i kompetensprofilen kan användas för att hitta möjligheter. Du kan också använda kompetensprofilen för att dela din information med önskad part. Du kan också överföra din information mellan din kompetensprofil i Kompetensstigen och din jobbsökarprofil på Arbetsmarknadstorget."
-      },
       "opinfi": {
         "text-1": "<CustomLink>Opin.fi<Icon></Icon></CustomLink> är en tjänst som på ett och samma ställe samlar utbudet av öppna studier vid finländska universitet och yrkeshögskolor.",
         "text-2": "Opin.fi är avsedd för alla som vill utveckla sina kunskaper och färdigheter – hitta kompletterande utbildningar och nya färdigheter eller bekanta sig med högskolestudier.",
@@ -338,6 +327,17 @@
         "text-1": "<CustomLink>Studieinfo<Icon></Icon></CustomLink> erbjuder omfattande information om utbildningar och ansökningstjänster för olika utbildningsnivåer.",
         "text-2": "När du har hittat en intressant utbildningsmöjlighet i Min Kompetensstigen kan du gå till Studieinfo för att läsa mer och ansöka till utbildningen. När du loggar in i Min kompetensstig kan du importera din utbildningshistorik till din kompetensprofil från Studieinfo.",
         "url": "https://opintopolku.fi/konfo/sv/"
+      },
+      "situation": {
+        "accordion-1-text": "Grattis, du är på rätt plats! Kompetensstigen erbjuder dig olika sätt att förstå din kompetens och dina möjligheter. I Kompetensstigen kan du spara information om din kompetens och hitta de bästa arbets- och utbildningsmöjligheterna baserat på den. Möjligheterna presenterar de viktigaste uppgifterna för att stödja ditt beslutsfattande. Om du behöver personlig vägledning har vi sammanställt en lista över vägledande och rådgivande tjänster.",
+        "accordion-1-title": "Jag vill hitta en ny riktning",
+        "accordion-2-text": "Kompetensstigen hjälper dig att formulera och identifiera dina kompetenser och intressen och föreslår möjligheter baserat på dem. Du hittar information om yrken och andra arbetsmöjligheter på ett samlat sätt. När du har hittat en intressant arbetsmöjlighet i Kompetensstigen kan du gå till Arbetsmarknadstorget för att utforska och ansöka om lediga jobb. Du kan också överföra din information mellan din kompetensprofil i Kompetensstigen och din jobbsökarprofil på Arbetsmarknadstorget.",
+        "accordion-2-title": "Jag vill hitta ett jobb",
+        "accordion-3-text": "Kompetensstigen hjälper dig att formulera och identifiera dina kompetenser och intressen och föreslår möjligheter baserat på dem. När du har hittat en intressant utbildningsmöjlighet i Kompetensstigen kan du gå till Studieinfo för att läsa mer och ansöka till utbildningen. När du loggar in i Kompetensstigen kan du importera din utbildningshistorik till din kompetensprofil från Studieinfo.",
+        "accordion-3-title": "Jag vill studera",
+        "accordion-4-text": "Kompetensstigen hjälper dig att formulera och identifiera kompetenser som du har utvecklat genom arbets- och utbildningshistorik. Kompetenser kan också utvecklas genom fritidsaktiviteter, så kom ihåg att fylla i även dessa i din kompetensprofil. Informationen i kompetensprofilen kan användas för att hitta möjligheter. Du kan också använda kompetensprofilen för att dela din information med önskad part. Du kan också överföra din information mellan din kompetensprofil i Kompetensstigen och din jobbsökarprofil på Arbetsmarknadstorget.",
+        "accordion-4-title": "Jag vill förstå vad jag kan",
+        "title": "Hur hjälper Kompetensstigen dig i olika situationer?"
       },
       "tyomarkkinatori": {
         "text-1": "<CustomLink>Jobbmarknaden<Icon></Icon></CustomLink> samlar lediga jobb och stöder dig i arbetssökningen och karriärplaneringen.",
@@ -394,7 +394,7 @@
         "title": "Min kompetensstig"
       },
       "tietopalvelu": {
-        "content": "Samlad information om utbildning, arbetsmarknaden och kompetens som stöd för beslutsfattandet.",
+        "content": "Samlad information om utbildning, arbetsmarknaden och kompetens som stöd för beslutsfattandet",
         "link-text": "Informationstjänst",
         "title": "Informationstjänst"
       },

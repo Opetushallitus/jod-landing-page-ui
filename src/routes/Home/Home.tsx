@@ -274,7 +274,7 @@ const Home = () => {
           title={t('home.sections.osaamispolku.title')}
           size="sm"
           titleLevel={2}
-          linkComponent={Link}
+          linkComponent={ExternalLink}
           buttonLabel={t('home.sections.osaamispolku.link-text')}
           buttonVariant="white"
           to={`/yksilo/${language}`}
@@ -286,7 +286,7 @@ const Home = () => {
           title={t('home.sections.ohjaaja.title')}
           size="sm"
           titleLevel={2}
-          linkComponent={Link}
+          linkComponent={ExternalLink}
           to={`/ohjaaja/${language}`}
           buttonLabel={t('home.sections.ohjaaja.link-text')}
           buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
@@ -298,7 +298,7 @@ const Home = () => {
           to={`/tietopalvelu/${language}`}
           size="sm"
           titleLevel={2}
-          linkComponent={Link}
+          linkComponent={ExternalLink}
           buttonLabel={t('home.sections.tietopalvelu.link-text')}
           buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
         />
@@ -380,7 +380,7 @@ const Home = () => {
             content={t('home.personal-guidance.content')}
             title={t('home.personal-guidance.title')}
             to={t('common:navigation.extra.palveluhakemisto.url')}
-            linkComponent={Link}
+            linkComponent={ExternalLink}
             buttonLabel={t('home.personal-guidance.link-text')}
             buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
             titleLevel={2}

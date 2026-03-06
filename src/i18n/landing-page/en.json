@@ -318,17 +318,6 @@
   "front-page": "Front page",
   "home": {
     "competency-path-help": {
-      "situation": {
-        "title": "How My Competency Path helps you in different situations",
-        "accordion-1-title": "I want to find a new direction",
-        "accordion-1-text": "Congratulations, you are in the right place! My Competency Path offers you various ways to understand your skills and opportunities. In My Competency Path, you can save information related to your skills and find the best suitable work and education opportunities based on them. The opportunities present essential information to support your decision-making. If you need personal guidance, we have compiled a directory of guidance and advisory services.",
-        "accordion-2-title": "I want to find a job",
-        "accordion-2-text": "My Competency Path helps you articulate and recognize your skills and interests, and suggests suitable opportunities based on them. You can find comprehensive information about professions and other job opportunities. When you find an interesting job opportunity in My Competency Path, you can go to the Job Market to explore and apply for open positions. You can also transfer your information between your My Competency Path competency profile and the Job Market's job seeker profile.",
-        "accordion-3-title": "I want to study",
-        "accordion-3-text": "My Competency Path helps you articulate and recognize your skills and interests, and suggests suitable opportunities based on them. When you find an interesting education opportunity in My Competency Path, you can go to Studyinfo to learn more and apply for training. When you log in to your competence profile in My Competency Path, you can import your education history from Studyinfo.",
-        "accordion-4-title": "I want to understand what I know",
-        "accordion-4-text": "My Competency Path helps you articulate and recognize the skills you have acquired through your work and education history. Skills are also gained from leisure activities, so remember to fill in those in your competence profile as well. You can use the information in your competence profile to find opportunities. You can also use your competence profile to share your information with the desired party. You can also transfer your information between your My Competency Path competence profile and the Job Market's job seeker profile."
-      },
       "opinfi": {
         "text-1": "<CustomLink>Opin.fi<Icon></Icon></CustomLink> is a service that brings together the open courses offered by Finnish universities and universities of applied sciences in one place.",
         "text-2": "Opin.fi is aimed at everyone who wants to develop their skills - looking for supplementary education and new skills or getting acquainted with higher education studies.",
@@ -338,6 +327,17 @@
         "text-1": "<CustomLink>Studyinfo<Icon></Icon></CustomLink> provides comprehensive information on education opportunities and application services for different levels of education.",
         "text-2": "Once you have found an interesting education opportunity in My Competency Path, you can go to Studyinfo to learn more and apply for training. When you log in to your competence profile in My Competency Path, you can import your education history from Studyinfo.",
         "url": "https://opintopolku.fi/konfo/en"
+      },
+      "situation": {
+        "accordion-1-text": "Congratulations, you are in the right place! My Competency Path offers you various ways to understand your skills and opportunities. In My Competency Path, you can save information related to your skills and find the best suitable work and education opportunities based on them. The opportunities present essential information to support your decision-making. If you need personal guidance, we have compiled a directory of guidance and advisory services.",
+        "accordion-1-title": "I want to find a new direction",
+        "accordion-2-text": "My Competency Path helps you articulate and recognize your skills and interests, and suggests suitable opportunities based on them. You can find comprehensive information about professions and other job opportunities. When you find an interesting job opportunity in My Competency Path, you can go to the Job Market to explore and apply for open positions. You can also transfer your information between your My Competency Path competency profile and the Job Market's job seeker profile.",
+        "accordion-2-title": "I want to find a job",
+        "accordion-3-text": "My Competency Path helps you articulate and recognize your skills and interests, and suggests suitable opportunities based on them. When you find an interesting education opportunity in My Competency Path, you can go to Studyinfo to learn more and apply for training. When you log in to your competence profile in My Competency Path, you can import your education history from Studyinfo.",
+        "accordion-3-title": "I want to study",
+        "accordion-4-text": "My Competency Path helps you articulate and recognize the skills you have acquired through your work and education history. Skills are also gained from leisure activities, so remember to fill in those in your competence profile as well. You can use the information in your competence profile to find opportunities. You can also use your competence profile to share your information with the desired party. You can also transfer your information between your My Competency Path competence profile and the Job Market's job seeker profile.",
+        "accordion-4-title": "I want to understand what I know",
+        "title": "How My Competency Path helps you in different situations"
       },
       "tyomarkkinatori": {
         "text-1": "<CustomLink>Job Market<Icon></Icon></CustomLink> brings together vacancies and provides support in job search and career planning.",
@@ -394,7 +394,7 @@
         "title": "My Competency Path"
       },
       "tietopalvelu": {
-        "content": "The information service compiles information related to education, the labour market and competence to support decision-making. You can view the data sets that interest you from different perspectives using different filters.",
+        "content": "Compiled information related to education, the job market, and skills to support decision-making",
         "link-text": "Information service",
         "title": "Information service"
       },
