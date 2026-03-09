@@ -13,7 +13,10 @@ const useTypedMatches = () => useMatches() as UIMatch<unknown, YksiloHandle>[];
 
 export const Breadcrumb = () => {
   const matches = useTypedMatches();
-  const { t } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
   const [items, setItems] = React.useState<BreadcrumbItem[]>([]);
 
   React.useEffect(() => {
@@ -23,14 +26,12 @@ export const Breadcrumb = () => {
       validMatches.map((match) => {
         const isRoot = match.id === 'root';
         return {
-          label: isRoot ? t('front-page') : match.handle?.title || '',
+          label: isRoot ? t('front-page', { lng: language }) : match.handle?.title || '',
           to: match.pathname,
         };
       }),
     );
-    // Breadcrumb only needs to be initialized once per page load.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [language, matches, t]);
 
   return (
     <DSBreadCrumb
