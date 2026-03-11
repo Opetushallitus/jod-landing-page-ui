@@ -65,6 +65,21 @@ const Root = () => {
     },
   ];
 
+  const socialMedia: React.ComponentProps<typeof Footer>['socialMedia'] = {
+    facebook: {
+      href: 'https://www.facebook.com/osaamispolku',
+      label: t('common:footer.social-media.facebook'),
+    },
+    instagram: {
+      href: 'https://www.instagram.com/osaamispolku/',
+      label: t('common:footer.social-media.instagram'),
+    },
+    linkedin: {
+      href: 'https://www.linkedin.com/company/osaamispolku',
+      label: t('common:footer.social-media.linkedin'),
+    },
+  };
+
   React.useEffect(() => {
     document.documentElement.setAttribute('lang', language);
   }, [language]);
@@ -153,6 +168,7 @@ const Root = () => {
         feedbackOnClick={() => setFeedbackVisible(true)}
         feedbackBgImageClassName="bg-[url(@/../assets/feedback.jpg)] bg-cover bg-[50%_50%]"
         copyright={t('common:footer.copyright')}
+        socialMedia={socialMedia}
         externalLinkIconAriaLabel={t('common:external-link')}
         testId="footer"
       />
