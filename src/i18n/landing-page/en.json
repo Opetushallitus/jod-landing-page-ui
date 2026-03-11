@@ -489,7 +489,7 @@
         "title": "Contact person:"
       },
       "email": {
-        "content": "tietosuoja@oph.fi",
+        "content": "tietosuoja@oph.fi or tietosuoja.keha@ely-keskus.fi",
         "title": "Email:"
       },
       "fax": {
@@ -497,7 +497,7 @@
         "title": "Fax"
       },
       "phone": {
-        "content": "+358 (0)29 533 1000",
+        "content": "+358 (0)29 533 1000 or +358 (0)295 020 000",
         "title": "Switchboard:"
       },
       "register": {
