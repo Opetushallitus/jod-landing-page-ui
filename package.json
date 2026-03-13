@@ -41,7 +41,7 @@
     "@lavamoat/allow-scripts": "^3.4.1",
     "@lavamoat/preinstall-always-fail": "^2.1.1",
     "@singlestore/eslint-plugin-react-hooks-disable-import": "^1.0.2",
-    "@tailwindcss/vite": "^4.1.18",
+    "@tailwindcss/vite": "^4.2.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@tolgee/cli": "^2.15.1",
