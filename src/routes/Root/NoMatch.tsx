@@ -29,7 +29,6 @@ const NoMatch = () => {
               label={t('common:no-match.go-home')}
               serviceVariant="palveluportaali"
               variant="accent"
-              /* eslint-disable-next-line react/no-unstable-nested-components */
               linkComponent={({ children, className }) => (
                 <Link to={`/${language}`} className={className}>
                   {children}
