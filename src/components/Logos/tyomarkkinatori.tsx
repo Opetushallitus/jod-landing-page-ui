@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { SVGProps } from 'react';
 import { JSX } from 'react/jsx-runtime';
 

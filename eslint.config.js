@@ -6,27 +6,37 @@ import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import sonarjs from 'eslint-plugin-sonarjs';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
-  { ignores: ['dist', 'scripts/**'] },
-  { files: ['**/*.{ts,tsx}'] },
-  { languageOptions: { ecmaVersion: 2020, globals: globals.browser } },
-  sonarjs.configs.recommended,
-  jsxA11y.flatConfigs.recommended,
-  js.configs.recommended,
-  ...tseslint.configs.recommended,
+export default defineConfig([
+  globalIgnores(['dist', 'scripts']),
   {
+    files: ['**/*.{ts,tsx}'],
     plugins: {
-      react: react,
-      'react-hooks': reactHooks,
-      'react-refresh': reactRefresh,
       '@singlestore/react-hooks-disable-import': singlestoreReactHooksDisableImport,
     },
+    extends: [
+      js.configs.recommended,
+      tseslint.configs.recommended,
+      sonarjs.configs.recommended,
+      jsxA11y.flatConfigs.recommended,
+      react.configs.flat.recommended,
+      react.configs.flat['jsx-runtime'],
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
     rules: {
-      ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
@@ -41,8 +51,6 @@ export default tseslint.config(
       ],
       '@singlestore/react-hooks-disable-import/react-hooks-disable-import': 'error',
       'sonarjs/no-ignored-exceptions': 'off',
-      'react/no-unstable-nested-components': 'warn',
-      'react/no-array-index-key': 'warn',
     },
   },
   // Do not allow process.env in client code, as it is not replaced by Vite and will cause errors in the browser. Use import.meta.env instead.
@@ -71,4 +79,4 @@ export default tseslint.config(
     },
   },
   eslintConfigPrettier,
-);
+]);
