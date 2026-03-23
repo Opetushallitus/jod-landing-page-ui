@@ -1,7 +1,9 @@
-import { useLoginLink } from '@/hooks/useLoginLink';
-import { JodUser } from '@jod/design-system/icons';
 import { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
+
+import { JodUser } from '@jod/design-system/icons';
+
+import { useLoginLink } from '@/hooks/useLoginLink';
 
 export const UserButton = ({ user }: { user: { name: string; component: JSX.ElementType } }) => {
   const { t } = useTranslation();

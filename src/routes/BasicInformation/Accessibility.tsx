@@ -1,8 +1,10 @@
+import React from 'react';
+import { Trans, useTranslation } from 'react-i18next';
+
 import { BasicArticleSectionContent } from '@/components/ArticleSectionContent/BasicArticleSectionContent';
 import { ArticleSectionPage } from '@/components/ArticleSectionPage/ArticleSectionPage';
 import { createArticleSectionData } from '@/utils';
-import React from 'react';
-import { Trans, useTranslation } from 'react-i18next';
+
 import { ArticleSection } from '../types';
 
 const Accessibility = () => {
@@ -14,7 +16,7 @@ const Accessibility = () => {
         t('accessibility.sections.status.navTitle'),
         <>
           <p>{t('accessibility.sections.status.description')}</p>
-          <ol className="ml-7 mt-4 mb-2 list-decimal flex flex-col gap-5">
+          <ol className="mt-4 mb-2 ml-7 flex list-decimal flex-col gap-5">
             <li>{t('accessibility.sections.status.item-1')}</li>
             <li>{t('accessibility.sections.status.item-2')}</li>
             <li>{t('accessibility.sections.status.item-3')}</li>

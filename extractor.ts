@@ -1,5 +1,7 @@
-import type { ExtractedKey, ExtractionResult, ExtractOptions, Warning } from '@tolgee/cli/extractor';
 import path from 'node:path';
+
+import type { ExtractedKey, ExtractionResult, ExtractOptions, Warning } from '@tolgee/cli/extractor';
+
 import {
   extractStaticKeys as extractStaticKeysShared,
   getPluralVariants,

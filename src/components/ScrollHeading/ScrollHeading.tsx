@@ -1,5 +1,6 @@
-import { tidyClasses as tc, useNoteStack } from '@jod/design-system';
 import { JSX } from 'react';
+
+import { cx, useNoteStack } from '@jod/design-system';
 
 export interface ScrollHeadingProps {
   title: string;
@@ -15,7 +16,7 @@ export const ScrollHeading = ({ title, heading, className, appendix }: ScrollHea
   const scrollMarginTop = `${64 + 4 + permanentNotesHeight + 64}px`;
 
   return (
-    <div className={tc(`flex gap-3 ${className}`)}>
+    <div className={cx('flex gap-3', className)}>
       <HeadingTag
         id={title}
         className="text-pretty hyphens-auto"

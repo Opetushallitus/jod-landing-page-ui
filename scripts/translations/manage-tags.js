@@ -25,6 +25,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+
 import { extractStaticKeys, getBaseKey, isPluralKey } from './translation-utils.js';
 
 const __filename = fileURLToPath(import.meta.url);

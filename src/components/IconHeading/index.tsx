@@ -14,17 +14,17 @@ export const IconHeading = ({
   textClassName = 'text-secondary-1-dark-2',
 }: IconHeadingProps) => {
   return (
-    <div className="mb-6 sm:mb-8 flex gap-x-4 items-center">
+    <div className="mb-6 flex items-center gap-x-4 sm:mb-8">
       {icon && (
         <span
-          className={`flex items-center justify-center size-9 aspect-square rounded-full text-white ${bgClassName}`}
+          className={`flex aspect-square size-9 items-center justify-center rounded-full text-white ${bgClassName}`}
         >
           {icon}
         </span>
       )}
       <h1
         data-testid={testId}
-        className={`text-hero-mobile sm:text-hero hyphens-auto text-pretty break-words ${textClassName}`}
+        className={`text-hero-mobile text-pretty break-words hyphens-auto sm:text-hero ${textClassName}`}
       >
         {title}
       </h1>
