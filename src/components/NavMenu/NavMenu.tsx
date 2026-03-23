@@ -1,29 +1,25 @@
-import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
-import { langLabels, supportedLanguageCodes } from '@/i18n/config';
-import {
-  cx,
-  type ExternalLinkSection,
-  type LinkComponent,
-  NavigationMenu,
-  tidyClasses as tc,
-} from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink } from 'react-router';
+
+import { cx, type ExternalLinkSection, type LinkComponent, NavigationMenu } from '@jod/design-system';
+
+import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
+import { langLabels, supportedLanguageCodes } from '@/i18n/config';
 
 const PortalLink = ({ children, className }: LinkComponent) => {
   const {
     i18n: { language },
   } = useTranslation();
 
-  const activeClasses = tc([
+  const activeClasses = cx(
     'text-white!',
     'bg-secondary-gray',
     'hover:bg-secondary-5-light-3!',
     'hover:text-black!',
     'active:bg-primary-gray!',
     'active:text-white!',
-  ]);
+  );
 
   return (
     <NavLink className={({ isActive }) => cx(className, { [activeClasses]: isActive })} to={`/${language}`}>

@@ -1,11 +1,14 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+import { useMediaQueries } from '@jod/design-system';
+import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
+
 import { ArticleSectionNavigation } from '@/components/ArticleSectionNavigation/ArticleSectionNavigation';
 import { IconHeading } from '@/components/IconHeading';
 import { MainLayout } from '@/components/MainLayout/MainLayout';
 import { ScrollHeading } from '@/components/ScrollHeading/ScrollHeading';
-import { useMediaQueries } from '@jod/design-system';
-import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+
 import type { ArticleSection } from '../types';
 
 const DataSources = () => {
@@ -202,16 +205,16 @@ const DataSources = () => {
       <IconHeading icon={<JodInfo />} title={title} testId="data-sources-title" />
 
       <div className="font-arial">
-        <div className="flex flex-col mb-7">
+        <div className="mb-7 flex flex-col">
           <p className="text-body-lg-mobile sm:text-body-lg">{t('data-sources.intro')}</p>
         </div>
 
         {sections.map((section) => (
-          <div key={section.navTitle} className="flex flex-col mb-7">
+          <div key={section.navTitle} className="mb-7 flex flex-col">
             <ScrollHeading
               title={section.navTitle}
               heading="h2"
-              className="text-heading-2-mobile sm:text-heading-2 font-poppins mb-3"
+              className="mb-3 font-poppins text-heading-2-mobile sm:text-heading-2"
             />
             <div className="flex flex-row justify-between">{section.content}</div>
           </div>

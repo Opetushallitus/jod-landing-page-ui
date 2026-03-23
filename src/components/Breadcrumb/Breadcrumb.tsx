@@ -1,7 +1,9 @@
-import { type BreadcrumbItem, Breadcrumb as DSBreadCrumb } from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { UIMatch, useMatches } from 'react-router';
+
+import { type BreadcrumbItem, Breadcrumb as DSBreadCrumb } from '@jod/design-system';
+
 import { BreadcrumbLink } from '../BreadcrumbLink/BreadcrumbLink';
 
 interface YksiloHandle {

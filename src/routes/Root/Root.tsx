@@ -1,10 +1,7 @@
-import { FeedbackModal } from '@/components';
-import { NavMenu } from '@/components/NavMenu/NavMenu';
-import { Toaster } from '@/components/Toaster/Toaster';
-import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
-import { langLabels, supportedLanguageCodes, type LangCode } from '@/i18n/config';
-import { getNotifications } from '@/utils/notifications';
-import { getLinkTo } from '@/utils/routeUtils';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router';
+
 import {
   Button,
   Chatbot,
@@ -17,9 +14,14 @@ import {
   SkipLink,
   useNoteStack,
 } from '@jod/design-system';
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router';
+
+import { FeedbackModal } from '@/components';
+import { NavMenu } from '@/components/NavMenu/NavMenu';
+import { Toaster } from '@/components/Toaster/Toaster';
+import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
+import { langLabels, supportedLanguageCodes, type LangCode } from '@/i18n/config';
+import { getNotifications } from '@/utils/notifications';
+import { getLinkTo } from '@/utils/routeUtils';
 
 const Root = () => {
   const {

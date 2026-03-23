@@ -2,10 +2,12 @@ import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import { Metric } from 'web-vitals';
+
 import './i18n/config';
-import './index.css';
 import { routes } from './routes';
 import { loadNotifications } from './utils/notifications';
+
+import './index.css';
 
 const router = createBrowserRouter(routes);
 
@@ -19,6 +21,7 @@ try {
 const root = createRoot(document.getElementById('root')!);
 
 if (import.meta.env.NODE_ENV !== 'production') {
+  // oxlint-disable-next-line typescript/no-floating-promises
   import('web-vitals').then((vitals) => {
     const warnOnlyNegativeMetrics = (metric: Metric) => {
       if (metric.rating !== 'good') {
@@ -31,7 +34,9 @@ if (import.meta.env.NODE_ENV !== 'production') {
     vitals.onLCP(warnOnlyNegativeMetrics);
     vitals.onTTFB(warnOnlyNegativeMetrics);
   });
+  // oxlint-disable-next-line typescript/no-floating-promises
   import('@axe-core/react').then((axe) => {
+    // oxlint-disable-next-line typescript/no-floating-promises
     axe.default(React, root, 1000);
   });
 }

@@ -1,13 +1,16 @@
+import React from 'react';
+import { Trans, useTranslation } from 'react-i18next';
+
+import { useMediaQueries } from '@jod/design-system';
+import { JodAi } from '@jod/design-system/icons';
+
 import { MainLayout } from '@/components';
 import { ArticleAccordion } from '@/components/ArticleAccordion';
 import { ArticleSectionNavigation } from '@/components/ArticleSectionNavigation/ArticleSectionNavigation';
 import { IconHeading } from '@/components/IconHeading';
 import { InfoBox, InfoboxItem } from '@/components/InfoBox';
 import { ScrollHeading } from '@/components/ScrollHeading/ScrollHeading';
-import { useMediaQueries } from '@jod/design-system';
-import { JodAi } from '@jod/design-system/icons';
-import React from 'react';
-import { Trans, useTranslation } from 'react-i18next';
+
 import type { ArticleSection } from '../types';
 
 const AiUsage = () => {
@@ -51,7 +54,7 @@ const AiUsage = () => {
                       <Trans i18nKey="ai-usage.why-ai.possibilities.item-2.work.title" />
                     </p>
                     <p>{t('ai-usage.why-ai.possibilities.item-2.work.description-1')}</p>
-                    <ul className="ml-6 mb-4 list-disc">
+                    <ul className="mb-4 ml-6 list-disc">
                       <li>{t('ai-usage.why-ai.possibilities.item-2.work.list.item-1')}</li>
                       <li>{t('ai-usage.why-ai.possibilities.item-2.work.list.item-2')}</li>
                       <li>{t('ai-usage.why-ai.possibilities.item-2.work.list.item-3')}</li>
@@ -62,7 +65,7 @@ const AiUsage = () => {
                       <Trans i18nKey="ai-usage.why-ai.possibilities.item-2.education.title" />
                     </p>
                     <p>{t('ai-usage.why-ai.possibilities.item-2.education.description-1')}</p>
-                    <ul className="ml-6 mb-3 list-disc">
+                    <ul className="mb-3 ml-6 list-disc">
                       <li>{t('ai-usage.why-ai.possibilities.item-2.education.list.item-1')}</li>
                       <li>{t('ai-usage.why-ai.possibilities.item-2.education.list.item-2')}</li>
                       <li>{t('ai-usage.why-ai.possibilities.item-2.education.list.item-3')}</li>
@@ -95,7 +98,7 @@ const AiUsage = () => {
         content: (
           <div>
             <p>{t('ai-usage.ai-methods.description-1')}</p>
-            <ul className="mt-3 ml-6 mb-3 list-disc">
+            <ul className="mt-3 mb-3 ml-6 list-disc">
               <li>{t('ai-usage.ai-methods.list.item-1')}</li>
               <li>{t('ai-usage.ai-methods.list.item-2')}</li>
               <li>{t('ai-usage.ai-methods.list.item-3')}</li>
@@ -115,7 +118,7 @@ const AiUsage = () => {
             <p>
               <Trans i18nKey="ai-usage.security.description-1" />
             </p>
-            <ul className="ml-6 mb-4 list-disc">
+            <ul className="mb-4 ml-6 list-disc">
               <li>{t('ai-usage.security.list.item-1')}</li>
               <li>{t('ai-usage.security.list.item-2')}</li>
               <li>{t('ai-usage.security.list.item-3')}</li>
@@ -132,7 +135,7 @@ const AiUsage = () => {
             <p>
               <Trans i18nKey="ai-usage.effect.description" />
             </p>
-            <ul className="ml-6 mb-3 list-disc">
+            <ul className="mb-3 ml-6 list-disc">
               <li>{t('ai-usage.effect.list.item-1')}</li>
               <li>{t('ai-usage.effect.list.item-2')}</li>
               <li>{t('ai-usage.effect.list.item-3')}</li>
@@ -146,7 +149,7 @@ const AiUsage = () => {
         content: (
           <div>
             <p>{t('ai-usage.functionality-tracking.description-1')}</p>
-            <ul className="ml-6 mb-4 list-disc">
+            <ul className="mb-4 ml-6 list-disc">
               <li>{t('ai-usage.functionality-tracking.list.item-1')}</li>
               <li>{t('ai-usage.functionality-tracking.list.item-2')}</li>
               <li>{t('ai-usage.functionality-tracking.list.item-3')}</li>
@@ -179,11 +182,11 @@ const AiUsage = () => {
 
       <div className="font-arial">
         {sections.map((section) => (
-          <div key={section.navTitle} className="flex flex-col mb-7">
+          <div key={section.navTitle} className="mb-7 flex flex-col">
             <ScrollHeading
               title={section.navTitle}
               heading="h2"
-              className={`text-heading-2-mobile sm:text-heading-2 font-poppins ${(section.showNavTitle ?? true) ? 'mb-3' : 'text-transparent text-[0px] size-0'}`}
+              className={`font-poppins text-heading-2-mobile sm:text-heading-2 ${(section.showNavTitle ?? true) ? 'mb-3' : 'size-0 text-[0px] text-transparent'}`}
             />
             <div className="flex flex-row justify-between">{section.content}</div>
           </div>
