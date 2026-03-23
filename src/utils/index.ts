@@ -18,7 +18,6 @@ export const getNestedProperty = <T>(obj: T, path: string) => {
  */
 export const getLocalizedText = (entry?: Record<string, string | undefined>, lang = i18n.language) =>
   entry?.[lang]?.trim() ??
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-expect-error
   entry?.[i18n.options.fallbackLng]?.trim() ??
   '';

@@ -1,6 +1,8 @@
-import i18n, { supportedLanguageCodes } from '@/i18n/config';
 import { NoteStackProvider } from '@jod/design-system';
 import { RouteObject, replace } from 'react-router';
+
+import i18n, { supportedLanguageCodes } from '@/i18n/config';
+
 import { AboutService, AiUsage, DataSources, PrivacyAndCookies } from './BasicInformation';
 import AboutGuidance from './BasicInformation/AboutGuidance';
 import Accessibility from './BasicInformation/Accessibility';

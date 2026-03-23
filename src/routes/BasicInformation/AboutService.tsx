@@ -1,8 +1,10 @@
+import React from 'react';
+import { Trans, useTranslation } from 'react-i18next';
+
 import { BasicArticleSectionContent } from '@/components/ArticleSectionContent/BasicArticleSectionContent';
 import { ArticleSectionPage } from '@/components/ArticleSectionPage/ArticleSectionPage';
 import { createArticleSectionData } from '@/utils';
-import React from 'react';
-import { Trans, useTranslation } from 'react-i18next';
+
 import { ArticleSection } from '../types';
 
 const AboutService = () => {

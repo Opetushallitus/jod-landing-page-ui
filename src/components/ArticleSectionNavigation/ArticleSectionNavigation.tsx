@@ -1,8 +1,9 @@
-import type { ArticleSection } from '@/routes/types';
-import { getLinkTo } from '@/utils/routeUtils';
 import { type MenuSection, PageNavigation } from '@jod/design-system';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+
+import type { ArticleSection } from '@/routes/types';
+import { getLinkTo } from '@/utils/routeUtils';
 
 export const ArticleSectionNavigation = ({
   sections,

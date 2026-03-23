@@ -1,14 +1,16 @@
+import { type MenuSection, PageNavigation, useMediaQueries } from '@jod/design-system';
+import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
+import React from 'react';
+import { Trans, useTranslation } from 'react-i18next';
+import { Link } from 'react-router';
+
 import { MainLayout } from '@/components';
 import { ArticleAccordion } from '@/components/ArticleAccordion';
 import { IconHeading } from '@/components/IconHeading';
 import { InfoBox, InfoboxItem } from '@/components/InfoBox';
 import { ScrollHeading } from '@/components/ScrollHeading/ScrollHeading';
 import { getLinkTo } from '@/utils/routeUtils';
-import { type MenuSection, PageNavigation, useMediaQueries } from '@jod/design-system';
-import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
-import React from 'react';
-import { Trans, useTranslation } from 'react-i18next';
-import { Link } from 'react-router';
+
 import type { ArticleSection } from '../types';
 
 interface RegisterContentItem {
@@ -18,12 +20,12 @@ interface RegisterContentItem {
 
 const RegisterContent = ({ content }: { content: RegisterContentItem[] }) => {
   return (
-    <ul className="list-disc list-inside">
+    <ul className="list-inside list-disc">
       {content.map((item) => (
         <li key={item.title}>
           <strong>{item.title}</strong>
           {item.items && (
-            <ul className="ml-5 list-[circle] list-inside">
+            <ul className="ml-5 list-inside list-[circle]">
               {item.items.map((sub) => (
                 <li key={sub}>{sub}</li>
               ))}
@@ -176,7 +178,7 @@ const PrivacyAndCookies = () => {
             <p>
               <Trans i18nKey="privacy-policy-and-cookies.register-controller.description-1" />
             </p>
-            <ol className="ml-6 mb-4 list-decimal">
+            <ol className="mb-4 ml-6 list-decimal">
               <li>{t('privacy-policy-and-cookies.register-controller.list.item-1')}</li>
               <li>{t('privacy-policy-and-cookies.register-controller.list.item-2')}</li>
               <li>{t('privacy-policy-and-cookies.register-controller.list.item-3')}</li>
@@ -194,10 +196,10 @@ const PrivacyAndCookies = () => {
           <div>
             <Trans i18nKey="privacy-policy-and-cookies.data-handling-use.description" />
 
-            <h3 className="mt-6 mb-3 text-heading-3-mobile sm:text-heading-3">
+            <h3 className="text-heading-3-mobile sm:text-heading-3 mt-6 mb-3">
               {t('privacy-policy-and-cookies.data-handling-use.legal-basis.title')}
             </h3>
-            <ul className="ml-6 mb-4 list-disc">
+            <ul className="mb-4 ml-6 list-disc">
               <li>{t('privacy-policy-and-cookies.data-handling-use.legal-basis.list.item-1')}</li>
               <li>{t('privacy-policy-and-cookies.data-handling-use.legal-basis.list.item-2')}</li>
               <li>{t('privacy-policy-and-cookies.data-handling-use.legal-basis.list.item-3')}</li>
@@ -247,7 +249,7 @@ const PrivacyAndCookies = () => {
               <Trans i18nKey="privacy-policy-and-cookies.storing-time-of-personal-data.description" />
             </p>
             <div>
-              <h3 className="font-poppins mt-6 mb-3 text-heading-3-mobile sm:text-heading-3">
+              <h3 className="font-poppins text-heading-3-mobile sm:text-heading-3 mt-6 mb-3">
                 {t('privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.title')}
               </h3>
               <div className="flex flex-col gap-2">
@@ -321,7 +323,7 @@ const PrivacyAndCookies = () => {
                             to={t(
                               'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.request-of-data.link',
                             )}
-                            className="inline-flex text-accent hover:underline"
+                            className="text-accent inline-flex hover:underline"
                             target="_blank"
                             rel="noopener noreferrer"
                           />
@@ -376,7 +378,7 @@ const PrivacyAndCookies = () => {
             <p>
               <Trans i18nKey="privacy-cookies.what.description-1" />
             </p>
-            <ul className="ml-5 my-4 list-disc">
+            <ul className="my-4 ml-5 list-disc">
               <li>{t('privacy-cookies.what.list.item-1')}</li>
               <li>{t('privacy-cookies.what.list.item-2')}</li>
               <li>{t('privacy-cookies.what.list.item-3')}</li>
@@ -390,7 +392,7 @@ const PrivacyAndCookies = () => {
         content: (
           <div>
             <p>{t('privacy-cookies.what-for.description-1')}</p>
-            <ul className="ml-5 my-4 list-disc">
+            <ul className="my-4 ml-5 list-disc">
               <li>{t('privacy-cookies.what-for.list.item-1')}</li>
               <li>{t('privacy-cookies.what-for.list.item-2')}</li>
             </ul>
@@ -409,7 +411,7 @@ const PrivacyAndCookies = () => {
               CustomLink1: (
                 <Link
                   to="https://www.microsoft.com/en-us/privacy/privacystatement"
-                  className="inline-flex text-accent hover:underline"
+                  className="text-accent inline-flex hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 />
@@ -417,7 +419,7 @@ const PrivacyAndCookies = () => {
               CustomLink2: (
                 <Link
                   to="https://policies.google.com/privacy"
-                  className="inline-flex text-accent hover:underline"
+                  className="text-accent inline-flex hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 />
@@ -503,22 +505,22 @@ const PrivacyAndCookies = () => {
 
       <div className="font-arial">
         {privacyPolicySections.map((section) => (
-          <div key={section.navTitle} className="flex flex-col mb-8">
+          <div key={section.navTitle} className="mb-8 flex flex-col">
             <ScrollHeading
               title={section.navTitle}
               heading="h2"
-              className={`text-heading-2-mobile sm:text-heading-2 font-poppins ${(section.showNavTitle ?? true) ? 'mb-3' : 'text-transparent text-[0px] size-0'}`}
+              className={`text-heading-2-mobile sm:text-heading-2 font-poppins ${(section.showNavTitle ?? true) ? 'mb-3' : 'size-0 text-[0px] text-transparent'}`}
             />
             <div className="flex flex-col justify-between">{section.content}</div>
           </div>
         ))}
 
         {cookiesSections.map((section) => (
-          <div key={section.navTitle} className="flex flex-col mb-8">
+          <div key={section.navTitle} className="mb-8 flex flex-col">
             <ScrollHeading
               title={section.navTitle}
               heading="h2"
-              className={`text-heading-2-mobile sm:text-heading-2 font-poppins ${(section.showNavTitle ?? true) ? 'mb-3' : 'text-transparent text-[0px] size-0'}`}
+              className={`text-heading-2-mobile sm:text-heading-2 font-poppins ${(section.showNavTitle ?? true) ? 'mb-3' : 'size-0 text-[0px] text-transparent'}`}
             />
             <div className="flex flex-col justify-between">{section.content}</div>
           </div>

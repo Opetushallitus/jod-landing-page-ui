@@ -74,7 +74,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
 
   React.useEffect(() => {
     reset();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // oxlint-disable-next-line eslint-plugin-react-hooks/exhaustive-deps
   }, [section, area, language]);
 
   const onSubmit: FormSubmitHandler<Feedback> = async (payload) => {
@@ -213,25 +213,25 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
               />
             </div>
           )}
-          <hr className="h-1 bg-border-gray text-border-gray mb-7" />
+          <hr className="bg-border-gray text-border-gray mb-7 h-1" />
           <div className="sm:text-body-md text-body-md-mobile">
             <p>{t('common:feedback.footer-info-1')}</p>
             <br />
             <p>{t('common:feedback.footer-info-heading')}</p>
-            <ul className="list-disc list-outside ml-7">
+            <ul className="ml-7 list-outside list-disc">
               <li>{t('common:feedback.footer-handled.osaamispolkuni')}</li>
               <li>{t('common:feedback.footer-handled.ohjaajan')}</li>
               <li>{t('common:feedback.footer-handled.tietopalvelu')}</li>
             </ul>
             <br />
             <p>{t('common:feedback.footer-privacy-heading')}</p>
-            <ul className="list-disc list-outside ml-7">
+            <ul className="ml-7 list-outside list-disc">
               <li>
                 <a
                   href={t('common:feedback.linkHrefs.oph')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex text-accent hover:underline"
+                  className="text-accent inline-flex hover:underline"
                 >
                   {t('common:feedback.links.oph')}
                   <JodOpenInNew ariaLabel={t('common:external-link')} />
@@ -242,7 +242,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                   href={t('common:feedback.linkHrefs.keha')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex text-accent hover:underline"
+                  className="text-accent inline-flex hover:underline"
                 >
                   {t('common:feedback.links.keha')}
                   <JodOpenInNew ariaLabel={t('common:external-link')} />
@@ -253,7 +253,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                   href={t('common:feedback.linkHrefs.okm')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex text-accent hover:underline"
+                  className="text-accent inline-flex hover:underline"
                 >
                   {t('common:feedback.links.okm')}
                   <JodOpenInNew ariaLabel={t('common:external-link')} />
@@ -264,7 +264,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
         </Form>
       }
       footer={
-        <div className="flex justify-end flex-1 gap-4">
+        <div className="flex flex-1 justify-end gap-4">
           <Button
             variant="white"
             label={t('common:feedback.cancel')}

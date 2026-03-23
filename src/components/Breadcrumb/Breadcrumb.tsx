@@ -2,6 +2,7 @@ import { type BreadcrumbItem, Breadcrumb as DSBreadCrumb } from '@jod/design-sys
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { UIMatch, useMatches } from 'react-router';
+
 import { BreadcrumbLink } from '../BreadcrumbLink/BreadcrumbLink';
 
 interface YksiloHandle {

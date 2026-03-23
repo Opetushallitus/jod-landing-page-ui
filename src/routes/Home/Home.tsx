@@ -1,3 +1,9 @@
+import { Accordion, HeroCard, tidyClasses as tc, useMediaQueries } from '@jod/design-system';
+import { JodBuild, JodCertificate, JodFavs, JodOpenInNew, JodQuestionMark } from '@jod/design-system/icons';
+import React from 'react';
+import { Trans, useTranslation } from 'react-i18next';
+import { Link } from 'react-router';
+
 import heroSrc1 from '@/../assets/landing-page-hero-1.jpg';
 import heroSrc2 from '@/../assets/landing-page-hero-2.jpg';
 import heroSrc3 from '@/../assets/landing-page-hero-3.jpg';
@@ -11,11 +17,6 @@ import {
   LogoTyomarkkinatoriFi,
   LogoTyomarkkinatoriSv,
 } from '@/components/Logos';
-import { Accordion, HeroCard, tidyClasses as tc, useMediaQueries } from '@jod/design-system';
-import { JodBuild, JodCertificate, JodFavs, JodOpenInNew, JodQuestionMark } from '@jod/design-system/icons';
-import React from 'react';
-import { Trans, useTranslation } from 'react-i18next';
-import { Link } from 'react-router';
 
 const ExternalLink = ({
   children,
@@ -64,7 +65,7 @@ const MainCard = () => {
 
   const heroHeight = React.useMemo(() => {
     return window.innerHeight - 68;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // oxlint-disable-next-line eslint-plugin-react-hooks/exhaustive-deps
   }, [window.innerWidth]);
 
   return (
@@ -74,11 +75,11 @@ const MainCard = () => {
         src={heroSrc}
         alt=""
         role="none"
-        className="w-(--breakpoint-xl) sm:h-[617px] object-cover xl:object-[50%_50%] lg:object-[58.5%_50%] md:object-[67.3%_50%] sm:object-[70%_50%] object-[71.7%_50%] pointer-events-none select-none touch-none"
+        className="pointer-events-none w-(--breakpoint-xl) touch-none object-cover object-[71.7%_50%] select-none sm:h-[617px] sm:object-[70%_50%] md:object-[67.3%_50%] lg:object-[58.5%_50%] xl:object-[50%_50%]"
         style={sm ? undefined : { height: heroHeight }}
         data-testid="home-hero"
       />
-      <div className="mx-auto max-w-[1092px] px-5 sm:px-6 xl:px-0 relative" ref={firstCardRef}>
+      <div className="relative mx-auto max-w-[1092px] px-5 sm:px-6 xl:px-0" ref={firstCardRef}>
         <div className="max-w-[716px]">
           <HeroCard
             backgroundColor="var(--color-secondary-1-dark-2)"
@@ -145,7 +146,7 @@ const HomeAccordion = ({ title, content, icon, isOpen, setIsOpen }: HomeAccordio
   const triggerId = React.useId();
   const contentId = `${triggerId}-panel`;
   return (
-    <div className="shadow-[0_2px_8px_rgba(0,0,0,0.15)] bg-white py-3 px-4 flex items-center gap-4 w-full sm:max-w-[717px]">
+    <div className="flex w-full items-center gap-4 bg-white px-4 py-3 shadow-[0_2px_8px_rgba(0,0,0,0.15)] sm:max-w-[717px]">
       <Accordion
         ariaLabel={title}
         triggerId={triggerId}
@@ -154,8 +155,8 @@ const HomeAccordion = ({ title, content, icon, isOpen, setIsOpen }: HomeAccordio
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         title={
-          <div className="flex gap-4 items-center">
-            <div className="bg-secondary-gray size-7 flex items-center justify-center text-white rounded-full">
+          <div className="flex items-center gap-4">
+            <div className="bg-secondary-gray flex size-7 items-center justify-center rounded-full text-white">
               {icon}
             </div>
             {title}
@@ -163,7 +164,7 @@ const HomeAccordion = ({ title, content, icon, isOpen, setIsOpen }: HomeAccordio
         }
         className="w-full"
       >
-        <section id={contentId} className="font-arial text-body-md-mobile sm:text-body-md ml-[44px] mb-6 mt-3">
+        <section id={contentId} className="font-arial text-body-md-mobile sm:text-body-md mt-3 mb-6 ml-[44px]">
           {content}
         </section>
       </Accordion>
@@ -233,7 +234,7 @@ const Home = () => {
       <title>{t('common:osaamispolku')}</title>
       <MainCard />
       <Content title={t('home.welcome.title')} className="mt-7 lg:mt-8" verticalPaddingClass="pt-7 lg:pt-8">
-        <p className="text-body-lg whitespace-pre-line max-w-[716px]">{t('home.welcome.content')}</p>
+        <p className="text-body-lg max-w-[716px] whitespace-pre-line">{t('home.welcome.content')}</p>
       </Content>
       <Content title={t('home.competency-path-help.situation.title')} headingLevel={2}>
         <div className="flex flex-col gap-3">
@@ -267,7 +268,7 @@ const Home = () => {
           />
         </div>
       </Content>
-      <Content className="gap-7 grid lg:grid-cols-3 grid-cols-1">
+      <Content className="grid grid-cols-1 gap-7 lg:grid-cols-3">
         <HeroCard
           backgroundColor="var(--color-secondary-1-dark-2)"
           content={t('home.sections.osaamispolku.content')}
@@ -304,13 +305,13 @@ const Home = () => {
         />
       </Content>
       <Content title={t('home.competency-path-help.you.title')} headingLevel={2} headingClassName="max-w-[748px]!">
-        <div className="text-body-lg whitespace-pre-line max-w-[748px] flex flex-col sm:gap-6 gap-5">
+        <div className="text-body-lg flex max-w-[748px] flex-col gap-5 whitespace-pre-line sm:gap-6">
           <p>{t('home.competency-path-help.you.text-1')}</p>
           <p>{t('home.competency-path-help.you.text-2')}</p>
         </div>
-        <div className="flex flex-col sm:flex-row gap-7 sm:flex-wrap mt-6">
+        <div className="mt-6 flex flex-col gap-7 sm:flex-row sm:flex-wrap">
           <div className="flex flex-col gap-5 md:max-w-[320px]">
-            <div className="h-[70px] flex flex-col justify-center items-start">{opintopolkuLogo}</div>
+            <div className="flex h-[70px] flex-col items-start justify-center">{opintopolkuLogo}</div>
             <div>
               <Trans
                 i18nKey="home.competency-path-help.opintopolku.text-1"
@@ -319,7 +320,7 @@ const Home = () => {
                   CustomLink: (
                     <Link
                       to={t('home.competency-path-help.opintopolku.url')}
-                      className="inline-flex underline text-accent items-center"
+                      className="text-accent inline-flex items-center underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     />
@@ -329,7 +330,7 @@ const Home = () => {
             </div>
           </div>
           <div className="flex flex-col gap-5 md:max-w-[320px]">
-            <div className="h-[70px] flex flex-col justify-center items-start">{tmtLogo}</div>
+            <div className="flex h-[70px] flex-col items-start justify-center">{tmtLogo}</div>
             <div>
               <Trans
                 i18nKey="home.competency-path-help.tyomarkkinatori.text-1"
@@ -338,7 +339,7 @@ const Home = () => {
                   CustomLink: (
                     <Link
                       to={t('home.competency-path-help.tyomarkkinatori.url')}
-                      className="inline-flex underline text-accent items-center"
+                      className="text-accent inline-flex items-center underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     />
@@ -348,7 +349,7 @@ const Home = () => {
             </div>
           </div>
           <div className="flex flex-col gap-5 md:max-w-[320px]">
-            <div className="h-[70px] flex flex-col justify-center items-start">
+            <div className="flex h-[70px] flex-col items-start justify-center">
               <LogoOpinfi
                 aria-label={t('home.how-competency-path-helps-you-opinfi-title')}
                 className="h-6 max-w-full"
@@ -362,7 +363,7 @@ const Home = () => {
                   CustomLink: (
                     <Link
                       to={t('home.competency-path-help.opinfi.url')}
-                      className="inline-flex underline text-accent items-center"
+                      className="text-accent inline-flex items-center underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     />
@@ -375,7 +376,7 @@ const Home = () => {
       </Content>
 
       <Content className="mb-11">
-        <div className="max-w-[716px] mb-11">
+        <div className="mb-11 max-w-[716px]">
           <HeroCard
             content={t('home.personal-guidance.content')}
             title={t('home.personal-guidance.title')}

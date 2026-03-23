@@ -1,5 +1,3 @@
-import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
-import { langLabels, supportedLanguageCodes } from '@/i18n/config';
 import {
   cx,
   type ExternalLinkSection,
@@ -10,6 +8,9 @@ import {
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink } from 'react-router';
+
+import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
+import { langLabels, supportedLanguageCodes } from '@/i18n/config';
 
 const PortalLink = ({ children, className }: LinkComponent) => {
   const {

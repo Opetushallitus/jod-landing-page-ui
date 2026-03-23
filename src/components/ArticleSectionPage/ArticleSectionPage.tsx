@@ -1,6 +1,8 @@
-import type { ArticleSection } from '@/routes/types';
 import { useMediaQueries } from '@jod/design-system';
 import { JodInfo } from '@jod/design-system/icons';
+
+import type { ArticleSection } from '@/routes/types';
+
 import { ArticleSectionNavigation } from '../ArticleSectionNavigation/ArticleSectionNavigation';
 import { IconHeading } from '../IconHeading';
 import { MainLayout } from '../MainLayout/MainLayout';
@@ -26,12 +28,12 @@ export const ArticleSectionPage = ({ title, intro, sections, hideNavigation }: A
       <IconHeading icon={<JodInfo />} title={title} testId="about-service-title" />
 
       <div className="font-arial">
-        <div className="flex flex-col mb-7">
+        <div className="mb-7 flex flex-col">
           <p className="text-body-lg-mobile sm:text-body-lg">{intro}</p>
         </div>
 
         {sections.map((section) => (
-          <div key={section.navTitle} className="flex flex-col mb-7">
+          <div key={section.navTitle} className="mb-7 flex flex-col">
             {section.showNavTitle ? (
               <ScrollHeading
                 title={section.navTitle}

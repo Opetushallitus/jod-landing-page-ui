@@ -1,9 +1,11 @@
+import React from 'react';
+import { Trans, useTranslation } from 'react-i18next';
+
 import articleImageSrc from '@/../assets/landing-page-osaamispolku-ohjaajille.jpg';
 import { BasicArticleSectionContent } from '@/components/ArticleSectionContent/BasicArticleSectionContent';
 import { ArticleSectionPage } from '@/components/ArticleSectionPage/ArticleSectionPage';
 import { createArticleSectionData } from '@/utils';
-import React from 'react';
-import { Trans, useTranslation } from 'react-i18next';
+
 import { ArticleSection } from '../types';
 
 const AboutGuidance = () => {
@@ -22,8 +24,8 @@ const AboutGuidance = () => {
         t('about-guidance.sections.3.navTitle'),
         <Trans
           i18nKey="about-guidance.sections.3.description"
-          // eslint-disable-next-line jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content
-          components={{ Link: <a className="inline-flex text-accent hover:underline"></a> }}
+          // oxlint-disable-next-line jsx_a11y/anchor-has-content, jsx_a11y/anchor-is-valid
+          components={{ Link: <a className="text-accent inline-flex hover:underline"></a> }}
         />,
       ),
       createArticleSectionData(
@@ -35,10 +37,10 @@ const AboutGuidance = () => {
         <Trans
           i18nKey="about-guidance.sections.5.description"
           components={{
-            List: <ul className="list-disc list-outside ml-7 mt-4"></ul>,
+            List: <ul className="mt-4 ml-7 list-outside list-disc"></ul>,
             ListItem: <li></li>,
-            // eslint-disable-next-line jsx-a11y/anchor-is-valid, jsx-a11y/anchor-has-content
-            Link: <a className="inline-flex text-accent hover:underline"></a>,
+            // oxlint-disable-next-line jsx_a11y/anchor-has-content, jsx_a11y/anchor-is-valid
+            Link: <a className="text-accent inline-flex hover:underline"></a>,
           }}
         />,
         false,

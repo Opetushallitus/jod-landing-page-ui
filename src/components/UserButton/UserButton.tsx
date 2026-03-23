@@ -1,7 +1,8 @@
-import { useLoginLink } from '@/hooks/useLoginLink';
 import { JodUser } from '@jod/design-system/icons';
 import { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
+
+import { useLoginLink } from '@/hooks/useLoginLink';
 
 export const UserButton = ({ user }: { user: { name: string; component: JSX.ElementType } }) => {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ export const UserButton = ({ user }: { user: { name: string; component: JSX.Elem
 
   return user ? (
     <user.component
-      className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary-3 text-black select-none"
+      className="bg-secondary-3 flex h-8 w-8 items-center justify-center rounded-full text-black select-none"
       role="img"
       title={user.name}
     >
@@ -25,7 +26,7 @@ export const UserButton = ({ user }: { user: { name: string; component: JSX.Elem
   ) : (
     <a
       href={login.url}
-      className="flex h-8 w-8 items-center justify-center rounded-full bg-bg-gray-2"
+      className="bg-bg-gray-2 flex h-8 w-8 items-center justify-center rounded-full"
       aria-label={login.text}
     >
       <JodUser />

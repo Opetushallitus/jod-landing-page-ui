@@ -1,5 +1,6 @@
 import { Toast } from '@jod/design-system';
 import { Toast as ReactHotToast, useToaster } from 'react-hot-toast/headless';
+
 import './toaster.css';
 
 type SafeToast = Omit<ReactHotToast, 'message'> & { message: string };

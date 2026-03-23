@@ -20,7 +20,7 @@ export const InfoBox = ({ items, className = '' }: InfoBoxProps) => {
       ])}
     >
       <JodInfo className="text-secondary-1-dark-2" />
-      <div className="flex-1 flex flex-col">
+      <div className="flex flex-1 flex-col">
         {items.map((item) => (
           <div key={item.label} className="flex gap-2">
             <span>{item.label}</span>
