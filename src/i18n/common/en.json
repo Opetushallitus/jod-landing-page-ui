@@ -4,16 +4,16 @@
   "close-menu": "Close the menu",
   "competency-path-portal": "Front page of Competency Path",
   "delete": "Delete",
-  "error-boundary": {
-    "session-expired": "Your session has expired. You must log in to the service again or use the service without logging in.",
-    "title": "An error occurred",
-    "unexpected": "An unexpected error occurred. This may be due to a loss of network connection or a service error."
-  },
   "error": {
     "form": {
       "email": "Check the email address",
       "required": "Mandatory field"
     }
+  },
+  "error-boundary": {
+    "session-expired": "Your session has expired. You must log in to the service again or use the service without logging in.",
+    "title": "An error occurred",
+    "unexpected": "An unexpected error occurred. This may be due to a loss of network connection or a service error."
   },
   "external-link": "The link leads outside the service",
   "feedback": {
@@ -62,7 +62,7 @@
     "wants-contact": "I want to be contacted."
   },
   "footer": {
-    "cooperation-title": "The Competency Path has been implemented in cooperation by the following parties",
+    "cooperation-title": "The Competency Path service has been jointly implemented by",
     "copyright": "© Competency Path 2026. All rights reserved.",
     "feedback-button-label": "Give feedback",
     "feedback-content": "We want to develop Competency Path to better meet your specific needs. Give us feedback and we will take it into account in our development work.",
@@ -94,6 +94,7 @@
   "logout": "Log out",
   "main-navigation": "Main navigation",
   "menu": "Menu",
+  "more-info": "More information",
   "navigation": {
     "external": {
       "ohjaaja": {
