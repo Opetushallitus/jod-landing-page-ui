@@ -18,7 +18,7 @@ export const UserButton = ({ user }: { user: { name: string; component: JSX.Elem
 
   return user ? (
     <user.component
-      className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary-3 text-black select-none"
+      className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary-3 text-primary-gray select-none"
       role="img"
       title={user.name}
     >

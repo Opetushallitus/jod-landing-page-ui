@@ -16,7 +16,7 @@ const PortalLink = ({ children, className }: LinkComponent) => {
     'text-white!',
     'bg-secondary-gray',
     'hover:bg-secondary-5-light-3!',
-    'hover:text-black!',
+    'hover:text-primary-gray!',
     'active:bg-primary-gray!',
     'active:text-white!',
   );
