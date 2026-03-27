@@ -9,6 +9,8 @@ import https from 'node:https';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { getTolgeeConfigPathFromScriptsDir, readAndValidateTolgeeConfig } from './tolgee-config.js';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const TOLGEE_CDN_URL = `https://cdn.tolg.ee/eb78073ba177782fd1ea2ffac4c1577b`;
@@ -49,6 +51,7 @@ function fetchFromUrl(url) {
           return;
         }
 
+        response.setEncoding('utf-8');
         let data = '';
         response.on('data', (chunk) => {
           data += chunk;
@@ -83,21 +86,13 @@ async function downloadFile(url, outputPath) {
 }
 
 /**
- * Get namespaces from i18n directory
- */
-function getNamespaces() {
-  const items = fs.readdirSync(I18N_DIR, { withFileTypes: true });
-  return items.filter((item) => item.isDirectory()).map((item) => item.name);
-}
-
-/**
  * Main function
  */
 async function main() {
   console.log('🌐 Fetching latest translations from Tolgee CDN...');
 
-  const namespaces = getNamespaces();
-  console.log(`📁 Found namespaces: ${namespaces.join(', ')}\n`);
+  const { projectNamespaces: namespaces } = readAndValidateTolgeeConfig(getTolgeeConfigPathFromScriptsDir());
+  console.log(`📁 Namespaces (from .tolgeerc.json pull.namespaces): ${namespaces.join(', ')}\n`);
 
   let hasErrors = false;
   let totalDownloaded = 0;

@@ -43,7 +43,7 @@
         "navTitle": "Projektet Digitala servicehelheten för kontinuerligt lärande"
       },
       "my-path": {
-        "description": "I Min kompetensstig kan du kartlägga ditt eget kunnande, hitta utbildningar för att öka ditt kunnande, undersöka karriärmöjligheter med ditt kunnande och kartlägga möjligheter att byta bransch. Min kompetensstig är avsedd för alla användare.",
+        "description": "Min kompetensstig hjälper dig att reflektera över dina egna kunskaper och din framtid. Du kan enkelt och överskådligt kartlägga dina färdigheter, styrkor och intressen, och få en bättre förståelse för vad du kan och vilka möjligheter du kan dra nytta av dina kunskaper. Tjänsten öppnar möjligheter framför dig som du kanske inte har tänkt på tidigare.\n<br> <br>\nNär du använder tjänsten hittar du snabbt utbildnings- och jobbalternativ som passar dig samt olika stigar som du kan följa mot dina mål. Du kan bläddra bland alternativen utan att logga in, men genom att logga in får du tillgång till din egen kompetensprofil där du kan spara din arbetslivshistoria, utbildning, intressen och mål. Du ser allt väsentligt på ett och samma ställe och kan följa din egen utveckling tydligt. Din kompetensprofil utvecklas med dig och hjälper dig att göra djärvare och mer välgrundade val.\n<br> <br>\nOm du behöver stöd i beslutsfattande guidar tjänsten dig enkelt till väglednings- och rådgivningstjänster, så att du inte behöver fundera över saker ensam. Du kan söka hjälp baserat på till exempel ditt bostadsområde eller situation och hitta en lämplig organisation för att stödja dina yrkesval. På så sätt får du både verktyg och stöd för att bygga din egen stig – vare sig du letar efter en ny riktning, överväger en karriärväxling eller strävar efter nya möjligheter i arbetslivet.",
         "navTitle": "Min kompetensstig"
       }
     },
@@ -329,13 +329,13 @@
         "url": "https://opintopolku.fi/konfo/sv/"
       },
       "situation": {
-        "accordion-1-text": "Grattis, du är på rätt plats! Kompetensstigen erbjuder dig olika sätt att förstå din kompetens och dina möjligheter. I Kompetensstigen kan du spara information om din kompetens och hitta de bästa arbets- och utbildningsmöjligheterna baserat på den. Möjligheterna presenterar de viktigaste uppgifterna för att stödja ditt beslutsfattande. Om du behöver personlig vägledning har vi sammanställt en lista över vägledande och rådgivande tjänster.",
+        "accordion-1-text": "Kompetensstigen erbjuder olika sätt att identifiera dina kompetenser och visualisera dina möjligheter. Du kan spara information relaterad till dina kompetenser i tjänsten och få förslag på arbets- och utbildningsalternativ som passar dig. Om du behöver personlig vägledning, utforska rådgivnings- och vägledningstjänsterna.",
         "accordion-1-title": "Jag vill hitta en ny riktning",
-        "accordion-2-text": "Kompetensstigen hjälper dig att formulera och identifiera dina kompetenser och intressen och föreslår möjligheter baserat på dem. Du hittar information om yrken och andra arbetsmöjligheter på ett samlat sätt. När du har hittat en intressant arbetsmöjlighet i Kompetensstigen kan du gå till Arbetsmarknadstorget för att utforska och ansöka om lediga jobb. Du kan också överföra din information mellan din kompetensprofil i Kompetensstigen och din jobbsökarprofil på Arbetsmarknadstorget.",
+        "accordion-2-text": "Kompetensstigen hjälper dig att identifiera dina kompetenser och intressen och föreslår lämpliga alternativ baserat på dem. Du hittar information om yrken och olika arbetsuppgifter. Om du vill kan du gå till Jobbmarkanaden för att utforska dem mer i detalj och söka lediga jobb. Du kan också överföra din information mellan kompetensprofilen i Min Kompetensstigen och jobbsökningsprofilen i Jobbmarknaden.",
         "accordion-2-title": "Jag vill hitta ett jobb",
-        "accordion-3-text": "Kompetensstigen hjälper dig att formulera och identifiera dina kompetenser och intressen och föreslår möjligheter baserat på dem. När du har hittat en intressant utbildningsmöjlighet i Kompetensstigen kan du gå till Studieinfo för att läsa mer och ansöka till utbildningen. När du loggar in i Kompetensstigen kan du importera din utbildningshistorik till din kompetensprofil från Studieinfo.",
+        "accordion-3-text": "Kompetensstigen hjälper dig att identifiera dina kompetenser och intressen samt föreslår utbildningsmöjligheter som passar dig baserat på dessa. När du hittar en intressant utbildningsmöjlighet i Kompetensstigen kan du gå vidare till Studieinfo för att läsa mer och skicka in din ansökan.",
         "accordion-3-title": "Jag vill studera",
-        "accordion-4-text": "Kompetensstigen hjälper dig att formulera och identifiera kompetenser som du har utvecklat genom arbets- och utbildningshistorik. Kompetenser kan också utvecklas genom fritidsaktiviteter, så kom ihåg att fylla i även dessa i din kompetensprofil. Informationen i kompetensprofilen kan användas för att hitta möjligheter. Du kan också använda kompetensprofilen för att dela din information med önskad part. Du kan också överföra din information mellan din kompetensprofil i Kompetensstigen och din jobbsökarprofil på Arbetsmarknadstorget.",
+        "accordion-4-text": "Kompetensstigen hjälper dig att identifiera den kompetens du har samlat på dig genom din arbets- och utbildningshistorik. Du kan importera tidigare utbildningsuppgifter till Kompetensstigen från Min Studieinfo och arbetslivshistorik från Jobbmarknads jobbsökningsprofil. Du kan även inkludera kompetens du har fått på fritiden i din kompetensprofil. Att skapa en kompetensprofil gör all din kompetens synlig. Du kan om du vill dela den information som sparats i kompetensprofilen vidare.",
         "accordion-4-title": "Jag vill förstå vad jag kan",
         "title": "Hur hjälper Kompetensstigen dig i olika situationer?"
       },
@@ -345,13 +345,13 @@
         "url": "https://tyomarkkinatori.fi/sv/"
       },
       "you": {
-        "text-1": "Kompetensstigen, Studieinfo, Jobbmarknaden och Opin.fi bildar tillsammans en tjänstehelhet som stöder lärande, karriärplanering och jobbsökning i olika livssituationer. Varje tjänst spelar sin egen roll, men tillsammans erbjuder de dig en tydlig stig för utvecklingen av din kompetens och din karriär.",
-        "text-2": "Om du letar efter en riktning eller din egen stig kan du identifiera dina egna styrkor och intressen i Kompetensstigen och hitta utbildnings- och jobbmöjligheter som är lämpliga för dem. När du har utrett hur du vill gå vidare, hjälper Studieinfo, Jobbmarknaden och Opin.fi dig att söka dig till dem.",
+        "text-1": "Kompetensstigen, Studieinfo, Jobbmarknaden och Opin.fi utgör en tjänstehelhet som stöder lärande, karriärplanering och jobbsökande i olika livssituationer. Tillsammans erbjuder dessa tjänster dig en väg för att utveckla din kompetens och karriär.",
+        "text-2": "I Kompetensstigen kan du identifiera dina egna kompetenser och intressen samt hitta lämpliga utbildnings- och arbetsmöjligheter för dem. När du känner din väg, Studieinfo, Jobbmarknaden och Opin.fi hjälper dig framåt.",
         "title": "Hur hjälper Kompetensstigen dig som en del av andra tjänster?"
       }
     },
     "hero": {
-      "content": "Kartlägg dina intressen och din kompetens. Hitta lämpliga alternativ utifrån dem. Min kompetensstig stöder dig när du söker en riktning för dina förmågor och din passion. Dina ögon kan öppna sig för överraskande möjligheter.",
+      "content": "Identifiera dina färdigheter och intressen. Din Kompetensstig föreslår lämpliga alternativ baserat på dem och kan öppna dörrar till överraskande möjligheter.",
       "link-text": "Öppna Min kompetensstig",
       "title": "Kompetensstigen – hitta din riktning"
     },
@@ -384,7 +384,7 @@
     },
     "sections": {
       "ohjaaja": {
-        "content": "För att stödja vägledningsarbete, aktuell information och metoder samt material som stärker din vägledningskompetens",
+        "content": "För att stödja vägledningsarbete, aktuell information och metoder samt material som stärker vägledningskompetens",
         "link-text": "Vägledar-delen",
         "title": "Vägledar-delen"
       },
@@ -687,7 +687,7 @@
     },
     "title": "Dataskyddsbeskrivning och cookies"
   },
-  "service-banner": "Tjänstehelhet",
+  "service-banner": "Kompetensstigens ingångssida",
   "slugs": {
     "about-guidance": "kompetensstig-for-vagledare"
   }

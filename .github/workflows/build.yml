@@ -32,6 +32,9 @@ jobs:
       - name: Run Oxfmt
         run: npx oxfmt --no-error-on-unmatched-pattern --check
 
+      - name: Run Translations check
+        run: npm run translations:check
+
       - name: Run Vitest unit tests
         run: npx vitest --coverage.enabled true
 
