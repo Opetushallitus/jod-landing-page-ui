@@ -43,7 +43,7 @@
         "navTitle": "Digital service package for continuous learning (JOD) project"
       },
       "my-path": {
-        "description": "In My Competency Path, you can map out your own competence, find education to increase your competence, explore career opportunities with your competence and map out opportunities to change occupation. My Competency Path is intended for all users.",
+        "description": "My Competency Path helps you pause to focus on your own skills and future. You can map your skills, strengths, and interests clearly and easily, gaining a better understanding of what you know and how your skills might be utilized. The service opens up possibilities you may not have considered before. \n<br> <br> \nWhen you use the service, you quickly find suitable training and job opportunities, as well as different paths to follow towards your goals. You can browse options without logging in, but by logging in, you access your personal competency profile where you can save your work history, education, interests, and goals. You see everything essential in one place and can clearly track your progress. Your competency profile develops with you and helps you make bolder and more informed choices. \n<br> <br>\nIf you need support for decision-making, the service easily guides you to counseling and advisory services, so you don't have to ponder things alone. You can seek assistance based on, for example, your residence or situation and find a suitable entity to spar with your career choices. This way you get both tools and support for building your own path, whether you are looking for a new direction, considering a career change, or pursuing new opportunities in working life.",
         "navTitle": "My Competency Path"
       }
     },
@@ -329,13 +329,13 @@
         "url": "https://opintopolku.fi/konfo/en"
       },
       "situation": {
-        "accordion-1-text": "Congratulations, you are in the right place! My Competency Path offers you various ways to understand your skills and opportunities. In My Competency Path, you can save information related to your skills and find the best suitable work and education opportunities based on them. The opportunities present essential information to support your decision-making. If you need personal guidance, we have compiled a directory of guidance and advisory services.",
+        "accordion-1-text": "Competency Path offers various ways to identify your skills and understand your opportunities. You can save your skill-related information in the service and receive suggestions for suitable job and training options. If you need personal guidance, explore coaching and consulting services.",
         "accordion-1-title": "I want to find a new direction",
-        "accordion-2-text": "My Competency Path helps you articulate and recognize your skills and interests, and suggests suitable opportunities based on them. You can find comprehensive information about professions and other job opportunities. When you find an interesting job opportunity in My Competency Path, you can go to the Job Market to explore and apply for open positions. You can also transfer your information between your My Competency Path competency profile and the Job Market's job seeker profile.",
+        "accordion-2-text": "Competency Path helps you identify your skills and interests and suggests suitable options based on them. You will find information about professions and various job tasks. If you wish, you can move to the Job Market Finland to explore them further and apply for open positions. You can also transfer your information between the competence profile in My Competency Path and the job search profile in Job Market Finland.",
         "accordion-2-title": "I want to find a job",
-        "accordion-3-text": "My Competency Path helps you articulate and recognize your skills and interests, and suggests suitable opportunities based on them. When you find an interesting education opportunity in My Competency Path, you can go to Studyinfo to learn more and apply for training. When you log in to your competence profile in My Competency Path, you can import your education history from Studyinfo.",
+        "accordion-3-text": "Competency Path helps you identify your skills and interests and suggests suitable educational opportunities based on them. When you find an interesting educational opportunity in Competency Path, you can proceed to Studyinfo to learn more about it and to submit an application.",
         "accordion-3-title": "I want to study",
-        "accordion-4-text": "My Competency Path helps you articulate and recognize the skills you have acquired through your work and education history. Skills are also gained from leisure activities, so remember to fill in those in your competence profile as well. You can use the information in your competence profile to find opportunities. You can also use your competence profile to share your information with the desired party. You can also transfer your information between your My Competency Path competence profile and the Job Market's job seeker profile.",
+        "accordion-4-text": "Competency Path helps you recognize the skills accumulated from your work and educational history. You can import your previous educational information from My Studyinfo and your work history details from the Job Market Finland job applicant profile into Competency Path. You can also add skills gained during your free time to your competency profile. Creating a competency profile showcases all of your skills. If you wish, you can share the information saved in your competency profile with others.",
         "accordion-4-title": "I want to understand what I know",
         "title": "How My Competency Path helps you in different situations"
       },
@@ -345,13 +345,13 @@
         "url": "https://tyomarkkinatori.fi/en"
       },
       "you": {
-        "text-1": "Competency Path, Studyinfo, Job Market and Opin.fi form a service package that supports learning, career planning and job search in different life situations. Each service has its own role, but together they provide you with a clear path for your competence and career development.",
-        "text-2": "If you are looking for a direction or your own path, Competency Path allows you to identify your strengths and interests and find suitable training and career opportunities. Once you have found out how you want to proceed, Studyinfo, Job Market and Opin.fi will help you to apply for them.",
+        "text-1": "Competency Path, Studyinfo, Job Market Finland and Opin.fi form a service package that supports learning, career planning, and job searching in various life situations. Together, these services offer you a path for developing your competencies and career.",
+        "text-2": "In the Competency Path, you can identify your skills and interests and find suitable educational and job opportunities for them. Once you know your direction, Studyinfo, Job Market Finland, and Opin.fi will assist you moving forward.",
         "title": "How does Competency Path help you as part of other services?"
       }
     },
     "hero": {
-      "content": "Map out your interests and competence. Use them to find options that suit you. Competency Path supports you in finding a direction for your skills and passions. It may open your eyes to unexpected possibilities.",
+      "content": "Identify your skills and interests. Your Competence Path will suggest options that are suitable for you and can open doors to unexpected opportunities.",
       "link-text": "Go to Competency Path",
       "title": "Competency Path - find your own direction"
     },
@@ -384,7 +384,7 @@
     },
     "sections": {
       "ohjaaja": {
-        "content": "To support guidance work, up-to-date information and methods as well as materials to strengthen your guidance competence",
+        "content": "To support guidance work, up-to-date information and methods as well as materials to strengthen guidance competence",
         "link-text": "Guidance practitioner section",
         "title": "Guidance practitioner section"
       },
@@ -687,7 +687,7 @@
     },
     "title": "Privacy policy and cookies"
   },
-  "service-banner": "Service package",
+  "service-banner": "Front page of Competency Path",
   "slugs": {
     "about-guidance": "osaamispolku-ohjaajille"
   }
