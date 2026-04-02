@@ -114,6 +114,7 @@ const AboutIndividuals = () => {
         showNavTitle,
       };
     });
+    // oxlint-disable-next-line eslint-plugin-react-hooks/exhaustive-deps
   }, [t]);
 
   return (
