@@ -6,6 +6,7 @@ import i18n, { supportedLanguageCodes } from '@/i18n/config';
 
 import { AboutService, AiUsage, DataSources, PrivacyAndCookies } from './BasicInformation';
 import AboutGuidance from './BasicInformation/AboutGuidance';
+import AboutIndividuals from './BasicInformation/AboutIndividuals';
 import Accessibility from './BasicInformation/Accessibility';
 import { Home } from './Home';
 import { NoMatch, Root } from './Root';
@@ -28,6 +29,14 @@ const aboutService: RouteObject[] = supportedLanguageCodes.map((lng) => ({
       element: <AboutGuidance />,
       handle: {
         title: i18n.t('about-guidance.title', { lng }),
+      },
+    },
+    {
+      id: `{slugs.about-individuals}|${lng}`,
+      path: i18n.t('slugs.about-individuals', { lng }),
+      element: <AboutIndividuals />,
+      handle: {
+        title: i18n.t('about-individuals.title', { lng }),
       },
     },
   ],
