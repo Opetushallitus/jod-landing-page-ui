@@ -23,6 +23,58 @@
     },
     "title": "Osaamispolku tuo ohjaustyön ammattilaisen työkalut yhteen paikkaan"
   },
+  "about-individuals": {
+    "intro": "Osaamispolku on uusi, maksuton verkkopalvelu, joka tukee urasuunnittelua, osaamisen kehittämistä ja työnhakua eri elämäntilanteissa. Osaamispolkuun kannattaa tutustua, kun pohdit omaa suuntaasi koulutukseen, uravalintoihin tai työllistymiseen liittyen.",
+    "sections": {
+      "1": {
+        "description": "<p>Urapolut ovat yhä moninaisempia, ja aiempaa useammat tekevät isoja suunnanmuutoksia työuransa aikana. Myös osaamisvaatimukset ovat jatkuvassa muutoksessa. Osaamispolku on kehitetty tukemaan jokaista työelämän muutoksissa.</p><br>– Osaamispolku auttaa pohtimaan työuraa suunnitelmallisesti. Voit hahmottaa tilannettasi ja vaihtoehtojasi, olit sitten hakemassa töitä, suunnittelemassa alanvaihtoa tai kartoittamassa osaamisen kehittämiseen liittyviä tarpeitasi. Omaa suuntaansa pohtivalle nuorelle Osaamispolku tarjoaa kattavasti tietoa eri ammateista ja koulutusaloista, kuvaa työ- ja elinkeinoministeriön johtava asiantuntija <strong>Tiina Salminen</strong>."
+      },
+      "2": {
+        "description": "<p>Osaamispolusta löytyy työkaluja osaamisen kartoittamiseen, kiinnostusten tunnistamiseen sekä koulutus- ja urapolkujen suunnitteluun. Osaamispolku auttaa muodostamaan selkeän kokonaiskuvan, jossa oma osaaminen ja mielekkäät suunnat yhdistyvät ajantasaiseen tietoon työmarkkinoiden ja eri alojen näkymistä.</p><br><p>– Osaamispolun tärkein tehtävä on tukea ihmistä tekemään tietoisia valintoja opiskelun, työn ja oman osaamisen kehittämisen suhteen. On tunnistettu, että isojakin päätöksiä saatetaan joutua tekemään puutteellisen tiedon pohjalta. Esimerkiksi mielikuvat uramahdollisuuksista ja koulutuspoluista perustuvat usein tämän hetken tarjontaan – eivät siihen, mitä mahdollisuuksia ylipäänsä on olemassa, sanoo opetus- ja kulttuuriministeriön erityisasiantuntija <strong>Tomi Kytölä</strong>.</p><br><p>Osaamispolusta on hyötyä erityisesti silloin, kun on jonkinlaisen valintatilanteen edessä, eikä ole vielä ihan varma, mihin suuntaan kannattaisi lähteä. Palvelun kartoitustyökaluista voi olla apua ennen kuin siirtyy hakemaan työ- tai opiskelupaikkaa. Palvelu ei ota kantaa siihen, mihin suuntaan pitäisi lähteä, vaan tarjoaa tietoa päätöksenteon tueksi.</p><br><p>– Osaamispolku ei tee päätöksiä käyttäjän puolesta. Tavoitteena on, että jokainen pystyisi tekemään opintoihin ja työuraan liittyviä valintoja, jotka perustuvat riittävään kokonaiskuvaan ja vastaavat kunkin omia tavoitteita, Kytölä täydentää.</p>",
+        "navTitle": "Tee valintoja tiedon, älä arvailun varassa"
+      },
+      "3": {
+        "description": "<p>Mitä Osaamispolku tarjoaa peruskoulun tai toisen asteen opinnot pian päättävälle? Palvelu voi laajentaa näkökulmaa tuttujen ammattien ulkopuolelle ja auttaa löytämään kiinnostavia vaihtoehtoja, joista ei ole ennen kuullutkaan.</p><br><p>– Sen sijaan, että mielessä olisi ne 50 tuttua ammattia, huomaakin, että vaihtoehtoja on satoja tai jopa tuhansia. Koulutussivustot näyttävät tämänhetkisen tarjonnan, mutta Osaamispolusta voi tutkia vaihtoehtoja vielä laajemmin, Kytölä sanoo.</p>",
+        "navTitle": "Koulutusta ja ammattia pohtiva nuori: vaihtoehtoja on enemmän kuin arvaat"
+      },
+      "4": {
+        "description": "<p>Työnhakijalle Osaamispolku tarjoaa tilannekuvaa siitä, mitä nykyisellä osaamisella voi tehdä, ja mitä uusia mahdollisuuksia ehkä avautuu, jos osaamistaan kehittää. Palvelu voi myös auttaa näkemään oman osaamisensa uudessa valossa.</p><br><p>– Osaamispolku voi auttaa näkemään esimerkiksi sen, että työkokemuksen lisäksi harrastusten tai vapaaehtoistoiminnan kautta kertynyt osaaminen on arvokasta. Työnhakijalle Osaamispolku voi avata myös uusia näkökulmia sen suhteen, millaisia työpaikkoja omalla taustalla voisi hakea. Lisäksi osaamisprofiiliin voi koota tietoja hyödynnettäväksi työnhaussa, Salminen sanoo.</p><br><p>Kirjautuneena käyttäjänä tietoja voi siirtää Osaamispolun, Opintopolun ja Työmarkkinatorin välillä. Varsinaiset työhakemukset tehdään Työmarkkinatorissa tai muilla työnhakusivustoilla.</p>",
+        "navTitle": "Näe työnhaku uudessa valossa"
+      },
+      "5": {
+        "description": "<p>Alanvaihtoa suunnittelevalle Osaamispolku voi konkretisoida, mitä muutos tarkoittaisi taloudellisesti ja ammatillisesti. Palvelusta löydät tiedot muun muassa eri alojen palkkatasosta, osaamisvaatimuksista ja työllisyysnäkymistä.</p><br><p>– Osaamispolku auttaa arvioimaan eri näkökulmista, mitä alanvaihto tarkoittaisi käytännössä. Jos olet esimerkiksi ollut kovapalkkaisessa työssä ja vaihdat alaa, mitä se merkitsee taloudellisesti? Saat myös tietoa siitä, missä päin Suomea eri osaamisille on kysyntää, Kytölä kertoo.</p>",
+        "navTitle": "Haaveesta harkituksi päätökseksi – mitä alanvaihto tarkoittaisi?"
+      },
+      "6": {
+        "description": "Osaamispolussa voi tarkastella muun muassa eri ammattien palkkatasoa, työllisyysnäkymiä ja osaamisvaatimuksia sekä pohtia, millaisen koulutuksen kautta alalle voisi työllistyä."
+      },
+      "7": {
+        "description": "<p>Työssä olevalle Osaamispolku toimii ennakoinnin apuvälineenä. Se voi auttaa jäsentämään, mitä oman alan kasvu tai supistuminen tarkoittaa työllisyysnäkymien ja osaamisvaatimusten näkökulmasta.</p><br><p>– Osaamispolun tarjoama tieto työmarkkinoista auttaa parhaassa tapauksessa ennakoimaan omalla alalla tapahtuvia muutoksia. Se voi herätellä esimerkiksi pohtimaan, miten omaa osaamista kannattaisi päivittää, jotta varmistaisi kiinnostavuutensa työnantajien silmissä myös tulevaisuudessa, Kytölä sanoo.</p>",
+        "navTitle": "Pysy mukana työelämän muutoksessa"
+      },
+      "8": {
+        "description": "<p>Osaamispolku, Työmarkkinatori, Opintopolku ja Opin.fi muodostavat yhdessä palvelukokonaisuuden, joka tukee oppimista, urasuunnittelua ja työllistymistä eri elämäntilanteissa.</p><br><p>Osaamispolun rooli on auttaa hahmottamaan mahdollisia suuntia ja seuraavia askelia. Se on erityisesti suunnittelun työkalu: kun sopiva vaihtoehto löytyy, käyttäjä voi seuraavaksi siirtyä muihin palveluihin, jotka tarjoavat hakutoiminnot ja viralliset asiointikanavat. Osaamispolun päämääränä on sujuvoittaa siirtymiä työn, koulutuksen ja osaamisen kehittämisen välillä sekä koota yhteen hajallaan oleva tieto eri palveluista.</p>",
+        "navTitle": "Sujuvampia siirtymiä työn ja koulutuksen välillä"
+      },
+      "9": {
+        "description": "<p>Osaamispolku on maksuton ja avoimesti käytettävissä verkossa osoitteessa osaamispolku.fi. Palvelu on julkaistu suomeksi, ruotsiksi ja englanniksi. Voit tutustua palveluun helposti kirjautumatta ja kirjautua myöhemmin, jolloin tietosi tallentuvat ja voit päivittää niitä. Osaamispolkuun luodusta profiilista voi siirtää tietoja esimerkiksi Työmarkkinatorin työnhakuprofiiliin. Käyttäjä hallinnoi itse omia tietojaan ja päättää niiden siirtämisestä ja käytöstä. Tiedot säilyvät käyttäjän hallinnassa ja ovat hyödynnettävissä koko elämän ajan.</p>",
+        "navTitle": "Näin pääset alkuun"
+      },
+      "10": {
+        "description": "<List><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/tyokalu\" target=\"_blank\"><strong>Löydä mahdollisuuksia</strong></Link>: Yhdistä osaamisesi ja kiinnostuksenkohteesi, ja saat selville, millaiset koulutukset ja/tai työtehtävät voisivat sopia sinulle. Voit myös tutkia suoraan kiinnostavia koulutuksia ja aloja palkkatietoineen ja työllisyysnäkymineen.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/kirjaudu-sisaan\" target=\"_blank\"><strong>Luo oma osaamisprofiili</strong></Link>: Tallenna työ- ja koulutushistoriasi sekä saavutuksesi omaan osaamisprofiiliisi. Voit hyödyntää tietoja Osaamispolussa sopivien koulutus- ja työmahdollisuuksien etsimisessä sekä työnhaussa. Lisäksi voit asettaa tavoitteita ja suunnitella polkuja niiden saavuttamiseksi. Päätät itse, miten ja missä tietojasi käytetään ja kenelle niitä jaat.</ListItem><ListItem><Link href=\"https://www.suomi.fi/aihe/ohjaus-ja-neuvontapalveluja\" target=\"_blank\"><strong>Ohjaus- ja neuvontapalvelut</strong></Link>: Tutustu kunnassasi tarjolla oleviin uraohjaus- ja neuvontapalveluihin.<ListItem><Link href=\"https://osaamispolku.fi/tietopalvelu/fi\" target=\"_blank\"><strong>Tietopalvelu</strong></Link>: Löydät luotettavaa ja ajantasaista tilastotietoa työmarkkinoista, koulutuksesta ja osaamisesta kattavasti Osaamispolun Tietopalvelusta.</List>",
+        "navTitle": "Miksi kokeilla Osaamispolkua?"
+      },
+      "11": {
+        "description": "<p>Kokeile miltä sinun Osaamispolkusi voisi näyttää – osaamisesi ja kiinnostuksesi saattavat avata yllättäviäkin mahdollisuuksia!</p><br><p>Tutustu Osaamispolkuun: <Link href=\"https://osaamispolku.fi\" target=\"_blank\">osaamispolku.fi</Link></p>",
+        "navTitle": "Kokeile Osaamispolkua"
+      },
+      "12": {
+        "description": "<p>Seuraa Osaamispolkua somessa:</p><List><ListItem><Link href=\"https://www.facebook.com/osaamispolku\" target=\"_blank\">Facebook</Link></ListItem><ListItem>Instagram <Link href=\"https://www.instagram.com/osaamispolku\" target=\"_blank\"> @osaamispolku</Link></ListItem><ListItem><Link href=\"https://www.linkedin.com/company/osaamispolku/\" target=\"_blank\">LinkedIn</Link></ListItem></List>",
+        "navTitle": "Seuraa somessa"
+      }
+    },
+    "title": "Osaamispolku tukee oman suunnan löytämisessä"
+  },
   "about-service": {
     "intro": "Competency Path is a new digital service to support education and career planning, competence development and employment. Competency Path is aimed at all individuals who are making career and study choices, guidance practitioners, training and education organisations, employers and experts from various administrative sectors.",
     "sections": {
@@ -689,6 +741,7 @@
   },
   "service-banner": "Front page of Competency Path",
   "slugs": {
-    "about-guidance": "osaamispolku-ohjaajille"
+    "about-guidance": "osaamispolku-ohjaajille",
+    "about-individuals": "osaamispolku-yksiloille"
   }
 }
