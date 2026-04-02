@@ -1,10 +1,12 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import { Link, Outlet, ScrollRestoration, useLocation } from "react-router";
 
 import {
   Button,
   Chatbot,
+  CookieConsentGuard,
+  CookieConsentProvider,
   Footer,
   LanguageButton,
   MatomoTracker,
@@ -12,16 +14,17 @@ import {
   NavigationBar,
   ServiceVariantProvider,
   SkipLink,
+  useCookieConsent,
   useNoteStack,
-} from '@jod/design-system';
+} from "@jod/design-system";
 
-import { FeedbackModal } from '@/components';
-import { NavMenu } from '@/components/NavMenu/NavMenu';
-import { Toaster } from '@/components/Toaster/Toaster';
-import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
-import { langLabels, supportedLanguageCodes, type LangCode } from '@/i18n/config';
-import { getNotifications } from '@/utils/notifications';
-import { getLinkTo } from '@/utils/routeUtils';
+import { FeedbackModal } from "@/components";
+import { NavMenu } from "@/components/NavMenu/NavMenu";
+import { Toaster } from "@/components/Toaster/Toaster";
+import { useLocalizedRoutes } from "@/hooks/useLocalizedRoutes";
+import { langLabels, supportedLanguageCodes, type LangCode } from "@/i18n/config";
+import { getNotifications } from "@/utils/notifications";
+import { getLinkTo } from "@/utils/routeUtils";
 
 const Root = () => {
   const {
@@ -35,9 +38,9 @@ const Root = () => {
 
   const hostname = window.location.hostname;
   const { siteId } = React.useMemo(() => {
-    if (hostname === 'osaamispolku.fi') {
+    if (hostname === "osaamispolku.fi") {
       return { siteId: 36 };
-    } else if (hostname === 'jodtestaus.fi') {
+    } else if (hostname === "jodtestaus.fi") {
       return { siteId: 38 };
     } else {
       return { siteId: 37 };
@@ -46,44 +49,44 @@ const Root = () => {
 
   const moreInfoLinks = [
     {
-      href: `/${language}/${t('common:slugs.about-service')}`,
-      label: t('common:footer.more-info-links.about-service'),
+      href: `/${language}/${t("common:slugs.about-service")}`,
+      label: t("common:footer.more-info-links.about-service"),
     },
     {
-      href: `/${language}/${t('common:slugs.privacy-and-cookies')}`,
-      label: t('common:footer.more-info-links.privacy-and-cookies'),
+      href: `/${language}/${t("common:slugs.privacy-and-cookies")}`,
+      label: t("common:footer.more-info-links.privacy-and-cookies"),
     },
     {
-      href: `/${language}/${t('common:slugs.data-sources')}`,
-      label: t('common:footer.more-info-links.data-sources'),
+      href: `/${language}/${t("common:slugs.data-sources")}`,
+      label: t("common:footer.more-info-links.data-sources"),
     },
     {
-      href: `/${language}/${t('common:slugs.ai-usage')}`,
-      label: t('common:footer.more-info-links.ai-usage'),
+      href: `/${language}/${t("common:slugs.ai-usage")}`,
+      label: t("common:footer.more-info-links.ai-usage"),
     },
     {
-      href: `/${language}/${t('common:slugs.accessibility')}`,
-      label: t('common:footer.more-info-links.accessibility'),
+      href: `/${language}/${t("common:slugs.accessibility")}`,
+      label: t("common:footer.more-info-links.accessibility"),
     },
   ];
 
-  const socialMedia: React.ComponentProps<typeof Footer>['socialMedia'] = {
+  const socialMedia: React.ComponentProps<typeof Footer>["socialMedia"] = {
     facebook: {
-      href: 'https://www.facebook.com/osaamispolku',
-      label: t('common:footer.social-media.facebook'),
+      href: "https://www.facebook.com/osaamispolku",
+      label: t("common:footer.social-media.facebook"),
     },
     instagram: {
-      href: 'https://www.instagram.com/osaamispolku/',
-      label: t('common:footer.social-media.instagram'),
+      href: "https://www.instagram.com/osaamispolku/",
+      label: t("common:footer.social-media.instagram"),
     },
     linkedin: {
-      href: 'https://www.linkedin.com/company/osaamispolku',
-      label: t('common:footer.social-media.linkedin'),
+      href: "https://www.linkedin.com/company/osaamispolku",
+      label: t("common:footer.social-media.linkedin"),
     },
   };
 
   React.useEffect(() => {
-    document.documentElement.setAttribute('lang', language);
+    document.documentElement.setAttribute("lang", language);
   }, [language]);
 
   const { generateLocalizedPath } = useLocalizedRoutes();
@@ -102,7 +105,7 @@ const Root = () => {
             label={notification.link.label[language as LangCode]}
             linkComponent={getLinkTo(notification.link.url[language as LangCode], {
               useAnchor: true,
-              target: '_blank',
+              target: "_blank",
             })}
           />
         ) : undefined,
@@ -111,14 +114,16 @@ const Root = () => {
     });
   }, [addTemporaryNote, t, language]);
 
+  const { open: openCookieConsent } = useCookieConsent();
+
   return (
     <div className="bg-bg-gray text-primary-gray">
       <link rel="manifest" href={`/manifest-${language}.json`} crossOrigin="use-credentials" />
       <header role="banner" className="sticky top-0 z-30 print:hidden">
-        <SkipLink hash="#jod-main" label={t('common:skiplinks.main')} />
+        <SkipLink hash="#jod-main" label={t("common:skiplinks.main")} />
         <NavigationBar
-          logo={{ to: `/${language}`, language, srText: t('common:osaamispolku') }}
-          menuComponent={<MenuButton onClick={() => setNavMenuOpen(!navMenuOpen)} label={t('common:menu')} />}
+          logo={{ to: `/${language}`, language, srText: t("common:osaamispolku") }}
+          menuComponent={<MenuButton onClick={() => setNavMenuOpen(!navMenuOpen)} label={t("common:menu")} />}
           languageButtonComponent={
             <LanguageButton
               serviceVariant="palveluportaali"
@@ -128,9 +133,9 @@ const Root = () => {
               generateLocalizedPath={generateLocalizedPath}
               linkComponent={Link}
               translations={{
-                fi: { change: 'Vaihda kieli.', label: langLabels.fi },
-                sv: { change: 'Andra språk.', label: langLabels.sv },
-                en: { change: 'Change language.', label: langLabels.en },
+                fi: { change: "Vaihda kieli.", label: langLabels.fi },
+                sv: { change: "Andra språk.", label: langLabels.sv },
+                en: { change: "Change language.", label: langLabels.en },
               }}
             />
           }
@@ -140,10 +145,10 @@ const Root = () => {
             </Link>
           )}
           serviceBarVariant="palveluportaali"
-          serviceBarTitle={t('service-banner')}
+          serviceBarTitle={t("service-banner")}
           translations={{
-            showAllNotesLabel: t('common:show-all'),
-            ariaLabelCloseNote: t('common:note.close'),
+            showAllNotesLabel: t("common:show-all"),
+            ariaLabelCloseNote: t("common:note.close"),
           }}
         />
       </header>
@@ -154,25 +159,27 @@ const Root = () => {
       <Chatbot />
       <Footer
         language={language}
-        okmLabel={t('common:footer.logos.okm-label')}
-        temLabel={t('common:footer.logos.tem-label')}
-        ophLabel={t('common:footer.logos.oph-label')}
-        kehaLabel={t('common:footer.logos.keha-label')}
-        cooperationTitle={t('common:footer.cooperation-title')}
-        fundingTitle={t('common:footer.funding-title')}
-        moreInfoTitle={t('common:footer.more-info-title')}
-        moreInfoDescription={t('common:footer.more-info-description')}
+        okmLabel={t("common:footer.logos.okm-label")}
+        temLabel={t("common:footer.logos.tem-label")}
+        ophLabel={t("common:footer.logos.oph-label")}
+        kehaLabel={t("common:footer.logos.keha-label")}
+        cooperationTitle={t("common:footer.cooperation-title")}
+        fundingTitle={t("common:footer.funding-title")}
+        moreInfoTitle={t("common:footer.more-info-title")}
+        moreInfoDescription={t("common:footer.more-info-description")}
         moreInfoLinks={moreInfoLinks}
         moreInfoComponent={Link}
-        feedbackTitle={t('common:footer.feedback-title')}
-        feedbackContent={t('common:footer.feedback-content')}
-        feedbackButtonLabel={t('common:footer.feedback-button-label')}
+        feedbackTitle={t("common:footer.feedback-title")}
+        feedbackContent={t("common:footer.feedback-content")}
+        feedbackButtonLabel={t("common:footer.feedback-button-label")}
         feedbackOnClick={() => setFeedbackVisible(true)}
         feedbackBgImageClassName="bg-[url(@/../assets/feedback.jpg)] bg-cover bg-[50%_50%]"
-        copyright={t('common:footer.copyright')}
+        copyright={t("common:footer.copyright")}
         socialMedia={socialMedia}
-        externalLinkIconAriaLabel={t('common:external-link')}
+        externalLinkIconAriaLabel={t("common:external-link")}
         testId="footer"
+        cookieSettingsLabel={t("common:footer.cookie-settings-label")}
+        onCookieSettingsClick={() => openCookieConsent()}
       />
       <FeedbackModal
         isOpen={feedbackVisible}
@@ -183,9 +190,45 @@ const Root = () => {
       />
       <Toaster />
       <ScrollRestoration />
-      <MatomoTracker trackerUrl="https://analytiikka.opintopolku.fi" siteId={siteId} pathname={location.pathname} />
+      <CookieConsentGuard categories={["statistics"]}>
+        <MatomoTracker trackerUrl="https://analytiikka.opintopolku.fi" siteId={siteId} pathname={location.pathname} />
+      </CookieConsentGuard>
     </div>
   );
 };
 
-export default Root;
+const RootWithCookieConsentProvider = () => {
+  const { t } = useTranslation();
+
+  return (
+    <CookieConsentProvider
+      serviceVariant="palveluportaali"
+      translations={{
+        guard: {
+          buttonLabel: t("common:cookie-consent.guard.buttonLabel"),
+          description: t("common:cookie-consent.guard.description"),
+          title: t("common:cookie-consent.guard.title"),
+        },
+        modal: {
+          acceptAllLabel: t("common:cookie-consent.modal.acceptAllLabel"),
+          cookiesCategoriesNecessary: t("common:cookie-consent.modal.cookiesCategoriesNecessary"),
+          cookiesCategoriesAnalytics: t("common:cookie-consent.modal.cookiesCategoriesAnalytics"),
+          cookiesCategoriesThirdParty: t("common:cookie-consent.modal.cookiesCategoriesThirdParty"),
+          cookieCategoriesLabel: t("common:cookie-consent.modal.cookieCategoriesLabel"),
+          currentSelectionLabel: t("common:cookie-consent.modal.currentSelectionLabel"),
+          declineOptionalLabel: t("common:cookie-consent.modal.declineOptionalLabel"),
+          description: t("common:cookie-consent.modal.description"),
+          hereLabel: t("common:cookie-consent.modal.hereLabel"),
+          name: t("common:cookie-consent.modal.name"),
+          readMoreHref: t("common:cookie-consent.modal.readMoreHref"),
+          readMoreLabel: t("common:cookie-consent.modal.readMoreLabel"),
+          title: t("common:cookie-consent.modal.title"),
+        },
+      }}
+    >
+      <Root />
+    </CookieConsentProvider>
+  );
+};
+
+export default RootWithCookieConsentProvider;
