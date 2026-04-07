@@ -61,16 +61,18 @@
         "navTitle": "Näin pääset alkuun"
       },
       "10": {
-        "description": "<List><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/tyokalu\" target=\"_blank\"><strong>Löydä mahdollisuuksia</strong></Link>: Yhdistä osaamisesi ja kiinnostuksenkohteesi, ja saat selville, millaiset koulutukset ja/tai työtehtävät voisivat sopia sinulle. Voit myös tutkia suoraan kiinnostavia koulutuksia ja aloja palkkatietoineen ja työllisyysnäkymineen.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/kirjaudu-sisaan\" target=\"_blank\"><strong>Luo oma osaamisprofiili</strong></Link>: Tallenna työ- ja koulutushistoriasi sekä saavutuksesi omaan osaamisprofiiliisi. Voit hyödyntää tietoja Osaamispolussa sopivien koulutus- ja työmahdollisuuksien etsimisessä sekä työnhaussa. Lisäksi voit asettaa tavoitteita ja suunnitella polkuja niiden saavuttamiseksi. Päätät itse, miten ja missä tietojasi käytetään ja kenelle niitä jaat.</ListItem><ListItem><Link href=\"https://www.suomi.fi/aihe/ohjaus-ja-neuvontapalveluja\" target=\"_blank\"><strong>Ohjaus- ja neuvontapalvelut</strong></Link>: Tutustu kunnassasi tarjolla oleviin uraohjaus- ja neuvontapalveluihin.<ListItem><Link href=\"https://osaamispolku.fi/tietopalvelu/fi\" target=\"_blank\"><strong>Tietopalvelu</strong></Link>: Löydät luotettavaa ja ajantasaista tilastotietoa työmarkkinoista, koulutuksesta ja osaamisesta kattavasti Osaamispolun Tietopalvelusta.</List>",
+        "description": "<List><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/tyokalu\" target=\"_blank\"><strong>Löydä mahdollisuuksia</strong></Link>: Yhdistä osaamisesi ja kiinnostuksenkohteesi, ja saat selville, millaiset koulutukset ja/tai työtehtävät voisivat sopia sinulle. Voit myös tutkia suoraan kiinnostavia koulutuksia ja aloja palkkatietoineen ja työllisyysnäkymineen.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/kirjaudu-sisaan\" target=\"_blank\"><strong>Luo oma osaamisprofiili</strong></Link>: Tallenna työ- ja koulutushistoriasi sekä saavutuksesi omaan osaamisprofiiliisi. Voit hyödyntää tietoja Osaamispolussa sopivien koulutus- ja työmahdollisuuksien etsimisessä sekä työnhaussa. Lisäksi voit asettaa tavoitteita ja suunnitella polkuja niiden saavuttamiseksi. Päätät itse, miten ja missä tietojasi käytetään ja kenelle niitä jaat.</ListItem><ListItem><Link href=\"https://www.suomi.fi/aihe/ohjaus-ja-neuvontapalveluja\" target=\"_blank\"><strong>Ohjaus- ja neuvontapalvelut</strong></Link>: Tutustu kunnassasi tarjolla oleviin uraohjaus- ja neuvontapalveluihin.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/tietopalvelu/fi\" target=\"_blank\"><strong>Tietopalvelu</strong></Link>: Löydät luotettavaa ja ajantasaista tilastotietoa työmarkkinoista, koulutuksesta ja osaamisesta kattavasti Osaamispolun Tietopalvelusta.</ListItem></List>",
         "navTitle": "Miksi kokeilla Osaamispolkua?"
       },
       "11": {
-        "description": "<p>Kokeile miltä sinun Osaamispolkusi voisi näyttää – osaamisesi ja kiinnostuksesi saattavat avata yllättäviäkin mahdollisuuksia!</p><br><p>Tutustu Osaamispolkuun: <Link href=\"https://osaamispolku.fi\" target=\"_blank\">osaamispolku.fi</Link></p>",
-        "navTitle": "Kokeile Osaamispolkua"
+        "description": "<p>Kokeile miltä sinun Osaamispolkusi voisi näyttää – osaamisesi ja kiinnostuksesi saattavat avata yllättäviäkin mahdollisuuksia!</p><br><p>Tutustu Osaamispolkuun: <Link href=\"https://osaamispolku.fi\" target=\"_blank\">osaamispolku.fi</Link></p>"
       },
       "12": {
         "description": "<p>Seuraa Osaamispolkua somessa:</p><List><ListItem><Link href=\"https://www.facebook.com/osaamispolku\" target=\"_blank\">Facebook</Link></ListItem><ListItem>Instagram <Link href=\"https://www.instagram.com/osaamispolku\" target=\"_blank\"> @osaamispolku</Link></ListItem><ListItem><Link href=\"https://www.linkedin.com/company/osaamispolku/\" target=\"_blank\">LinkedIn</Link></ListItem></List>",
         "navTitle": "Seuraa somessa"
+      },
+      "13": {
+        "description": "<i>Osaamispolku-palvelu on julkaistu tammikuussa 2026. Palvelu toimii suomeksi, ruotsiksi ja englanniksi. Osaamispolusta vastaavat opetus- ja kulttuuriministeriö, työ- ja elinkeinoministeriö, Opetushallitus ja KEHA-keskus.</i>"
       }
     },
     "title": "Osaamispolku tukee oman suunnan löytämisessä"
