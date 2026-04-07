@@ -14,19 +14,19 @@ const AboutService = () => {
     return [
       createArticleSectionData(
         t('about-service.sections.my-path.navTitle'),
-        t('about-service.sections.my-path.description'),
+        <Trans i18nKey="about-service.sections.my-path.description" />,
       ),
       createArticleSectionData(
         t('about-service.sections.advisor-section.navTitle'),
-        t('about-service.sections.advisor-section.description'),
+        <Trans i18nKey="about-service.sections.advisor-section.description" />,
       ),
       createArticleSectionData(
         t('about-service.sections.info-service.navTitle'),
-        t('about-service.sections.info-service.description'),
+        <Trans i18nKey="about-service.sections.info-service.description" />,
       ),
       createArticleSectionData(
         t('about-service.sections.guidance-and-counseling.navTitle'),
-        t('about-service.sections.guidance-and-counseling.description'),
+        <Trans i18nKey="about-service.sections.guidance-and-counseling.description" />,
       ),
       createArticleSectionData(
         t('about-service.sections.jod-project.navTitle'),
