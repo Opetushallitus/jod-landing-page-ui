@@ -69,17 +69,17 @@ const AboutIndividuals = () => {
         <Trans
           i18nKey="about-individuals.sections.10.description"
           components={{
-            List: <ul className="mt-4 ml-7 list-outside list-disc"></ul>,
+            List: <ol className="mt-4 ml-7 list-outside list-decimal"></ol>,
             ListItem: <li></li>,
             // oxlint-disable-next-line jsx_a11y/anchor-has-content, jsx_a11y/anchor-is-valid
             Link: <a className="inline-flex text-accent hover:underline"></a>,
           }}
         />,
-        true,
         false,
+        true,
       ),
       createArticleSectionData(
-        t('about-individuals.sections.11.navTitle'),
+        '11',
         <Trans
           i18nKey="about-individuals.sections.11.description"
           components={{
@@ -87,6 +87,8 @@ const AboutIndividuals = () => {
             Link: <a className="inline-flex text-accent hover:underline"></a>,
           }}
         />,
+        true,
+        false,
       ),
       createArticleSectionData(
         '12',
@@ -102,6 +104,7 @@ const AboutIndividuals = () => {
         true,
         false,
       ),
+      createArticleSectionData('13', <Trans i18nKey="about-individuals.sections.13.description" />, true, false),
     ].map((item) => {
       const { navTitle, text, onlyText, showNavTitle } = item;
 
