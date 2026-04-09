@@ -26,6 +26,19 @@
   "about-individuals": {
     "intro": "Osaamispolku on uusi, maksuton verkkopalvelu, joka tukee urasuunnittelua, osaamisen kehittämistä ja työnhakua eri elämäntilanteissa. Osaamispolkuun kannattaa tutustua, kun pohdit omaa suuntaasi koulutukseen, uravalintoihin tai työllistymiseen liittyen.",
     "sections": {
+      "10": {
+        "description": "<List><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/tyokalu\" target=\"_blank\"><strong>Löydä mahdollisuuksia</strong></Link>: Yhdistä osaamisesi ja kiinnostuksenkohteesi, ja saat selville, millaiset koulutukset ja/tai työtehtävät voisivat sopia sinulle. Voit myös tutkia suoraan kiinnostavia koulutuksia ja aloja palkkatietoineen ja työllisyysnäkymineen.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/kirjaudu-sisaan\" target=\"_blank\"><strong>Luo oma osaamisprofiili</strong></Link>: Tallenna työ- ja koulutushistoriasi sekä saavutuksesi omaan osaamisprofiiliisi. Voit hyödyntää tietoja Osaamispolussa sopivien koulutus- ja työmahdollisuuksien etsimisessä sekä työnhaussa. Lisäksi voit asettaa tavoitteita ja suunnitella polkuja niiden saavuttamiseksi. Päätät itse, miten ja missä tietojasi käytetään ja kenelle niitä jaat.</ListItem><ListItem><Link href=\"https://www.suomi.fi/aihe/ohjaus-ja-neuvontapalveluja\" target=\"_blank\"><strong>Ohjaus- ja neuvontapalvelut</strong></Link>: Tutustu kunnassasi tarjolla oleviin uraohjaus- ja neuvontapalveluihin.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/tietopalvelu/fi\" target=\"_blank\"><strong>Tietopalvelu</strong></Link>: Löydät luotettavaa ja ajantasaista tilastotietoa työmarkkinoista, koulutuksesta ja osaamisesta kattavasti Osaamispolun Tietopalvelusta.</ListItem></List>",
+        "navTitle": "Miksi kokeilla Osaamispolkua?"
+      },
+      "11": {
+        "description": "<p>Kokeile miltä sinun Osaamispolkusi voisi näyttää – osaamisesi ja kiinnostuksesi saattavat avata yllättäviäkin mahdollisuuksia!</p><br><p>Tutustu Osaamispolkuun: <Link href=\"https://osaamispolku.fi\" target=\"_blank\">osaamispolku.fi</Link></p>"
+      },
+      "12": {
+        "description": "<p>Seuraa Osaamispolkua somessa:</p><List><ListItem><Link href=\"https://www.facebook.com/osaamispolku\" target=\"_blank\">Facebook</Link></ListItem><ListItem>Instagram <Link href=\"https://www.instagram.com/osaamispolku\" target=\"_blank\"> @osaamispolku</Link></ListItem><ListItem><Link href=\"https://www.linkedin.com/company/osaamispolku/\" target=\"_blank\">LinkedIn</Link></ListItem></List>"
+      },
+      "13": {
+        "description": "<i>Osaamispolku-palvelu on julkaistu tammikuussa 2026. Palvelu toimii suomeksi, ruotsiksi ja englanniksi. Osaamispolusta vastaavat opetus- ja kulttuuriministeriö, työ- ja elinkeinoministeriö, Opetushallitus ja KEHA-keskus.</i>"
+      },
       "1": {
         "description": "<p>Urapolut ovat yhä moninaisempia, ja aiempaa useammat tekevät isoja suunnanmuutoksia työuransa aikana. Myös osaamisvaatimukset ovat jatkuvassa muutoksessa. Osaamispolku on kehitetty tukemaan jokaista työelämän muutoksissa.</p><br>– Osaamispolku auttaa pohtimaan työuraa suunnitelmallisesti. Voit hahmottaa tilannettasi ja vaihtoehtojasi, olit sitten hakemassa töitä, suunnittelemassa alanvaihtoa tai kartoittamassa osaamisen kehittämiseen liittyviä tarpeitasi. Omaa suuntaansa pohtivalle nuorelle Osaamispolku tarjoaa kattavasti tietoa eri ammateista ja koulutusaloista, kuvaa työ- ja elinkeinoministeriön johtava asiantuntija <strong>Tiina Salminen</strong>."
       },
@@ -59,20 +72,6 @@
       "9": {
         "description": "<p>Osaamispolku on maksuton ja avoimesti käytettävissä verkossa osoitteessa osaamispolku.fi. Palvelu on julkaistu suomeksi, ruotsiksi ja englanniksi. Voit tutustua palveluun helposti kirjautumatta ja kirjautua myöhemmin, jolloin tietosi tallentuvat ja voit päivittää niitä. Osaamispolkuun luodusta profiilista voi siirtää tietoja esimerkiksi Työmarkkinatorin työnhakuprofiiliin. Käyttäjä hallinnoi itse omia tietojaan ja päättää niiden siirtämisestä ja käytöstä. Tiedot säilyvät käyttäjän hallinnassa ja ovat hyödynnettävissä koko elämän ajan.</p>",
         "navTitle": "Näin pääset alkuun"
-      },
-      "10": {
-        "description": "<List><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/tyokalu\" target=\"_blank\"><strong>Löydä mahdollisuuksia</strong></Link>: Yhdistä osaamisesi ja kiinnostuksenkohteesi, ja saat selville, millaiset koulutukset ja/tai työtehtävät voisivat sopia sinulle. Voit myös tutkia suoraan kiinnostavia koulutuksia ja aloja palkkatietoineen ja työllisyysnäkymineen.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/kirjaudu-sisaan\" target=\"_blank\"><strong>Luo oma osaamisprofiili</strong></Link>: Tallenna työ- ja koulutushistoriasi sekä saavutuksesi omaan osaamisprofiiliisi. Voit hyödyntää tietoja Osaamispolussa sopivien koulutus- ja työmahdollisuuksien etsimisessä sekä työnhaussa. Lisäksi voit asettaa tavoitteita ja suunnitella polkuja niiden saavuttamiseksi. Päätät itse, miten ja missä tietojasi käytetään ja kenelle niitä jaat.</ListItem><ListItem><Link href=\"https://www.suomi.fi/aihe/ohjaus-ja-neuvontapalveluja\" target=\"_blank\"><strong>Ohjaus- ja neuvontapalvelut</strong></Link>: Tutustu kunnassasi tarjolla oleviin uraohjaus- ja neuvontapalveluihin.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/tietopalvelu/fi\" target=\"_blank\"><strong>Tietopalvelu</strong></Link>: Löydät luotettavaa ja ajantasaista tilastotietoa työmarkkinoista, koulutuksesta ja osaamisesta kattavasti Osaamispolun Tietopalvelusta.</ListItem></List>",
-        "navTitle": "Miksi kokeilla Osaamispolkua?"
-      },
-      "11": {
-        "description": "<p>Kokeile miltä sinun Osaamispolkusi voisi näyttää – osaamisesi ja kiinnostuksesi saattavat avata yllättäviäkin mahdollisuuksia!</p><br><p>Tutustu Osaamispolkuun: <Link href=\"https://osaamispolku.fi\" target=\"_blank\">osaamispolku.fi</Link></p>"
-      },
-      "12": {
-        "description": "<p>Seuraa Osaamispolkua somessa:</p><List><ListItem><Link href=\"https://www.facebook.com/osaamispolku\" target=\"_blank\">Facebook</Link></ListItem><ListItem>Instagram <Link href=\"https://www.instagram.com/osaamispolku\" target=\"_blank\"> @osaamispolku</Link></ListItem><ListItem><Link href=\"https://www.linkedin.com/company/osaamispolku/\" target=\"_blank\">LinkedIn</Link></ListItem></List>",
-        "navTitle": "Seuraa somessa"
-      },
-      "13": {
-        "description": "<i>Osaamispolku-palvelu on julkaistu tammikuussa 2026. Palvelu toimii suomeksi, ruotsiksi ja englanniksi. Osaamispolusta vastaavat opetus- ja kulttuuriministeriö, työ- ja elinkeinoministeriö, Opetushallitus ja KEHA-keskus.</i>"
       }
     },
     "title": "Osaamispolku tukee oman suunnan löytämisessä"
@@ -97,6 +96,67 @@
         "navTitle": "Digital service package for continuous learning (JOD) project"
       },
       "my-path": {
+        "image": {
+          "tell-about-skills": "I share my skills and interests",
+          "service-helps-with-ai": "The service helps you map your interests and skills with AI.",
+          "choose-interests-and-skills": "Choose interests and skills that suit you from the options.",
+          "professions": "Professions",
+          "other-work-opportunities": "Other work opportunities",
+          "degrees": "Degrees",
+          "other-education": "Other education",
+          "enter-your-info": "Enter your information",
+          "service-suggests-opportunities": "The service suggests suitable opportunities for you",
+          "content-created-with-ai": "Content is created with AI.",
+          "career-info": "Career information",
+          "job-postings": "Job postings",
+          "education-options": "Education options",
+          "tooltip-service-helps-with-ai": {
+            "title": "Mapping interests and skills",
+            "paragraph-1": "The AI identifies skills and areas of interest from text you enter and other information (CV, education details).",
+            "paragraph-2": "The AI can also converse with you and help identify suitable skills and areas of interest."
+          },
+          "tooltip-choose-interests-and-skills": {
+            "title": "Choose interests and skills",
+            "paragraph-1": "Choose the interests and skills that suit you from the options offered by the AI. Your selections serve as the basis for the search.",
+            "paragraph-2": "Run the search, after which you will receive job and education opportunities that you can browse."
+          },
+          "tooltip-professions": {
+            "title": "Professions",
+            "paragraph-1": "A profession is a whole that describes the tasks, skills and responsibilities involved in a job. Many professions require training, but some can also be learned through practical work.",
+            "paragraph-2": "The Profession information in Competency Path comes from the Profession information data of the Työmarkkinatori. The information has not been processed with AI."
+          },
+          "tooltip-other-work-opportunities": {
+            "title": "Other work opportunity",
+            "paragraph-1": "Other work opportunities are AI-compiled groupings of jobs that require similar skills and qualities.",
+            "paragraph-2": "The AI reads job advertisements from Työmarkkinatori and identifies the required skills, licences, driving licences and mentioned professions. Advertisements with sufficient information are grouped into work opportunities based on their content."
+          },
+          "tooltip-degrees": {
+            "title": "Degrees",
+            "paragraph-1": "A degree is an official competence package defined and regulated by the Finnish National Agency for Education. Only official education providers can award degrees.",
+            "paragraph-2": "The Degree information in Competency Path comes from the Education provision data of Opintopolku. The AI groups the education programmes according to the skills learned in them and the field of education and official degree classification to which they belong."
+          },
+          "tooltip-other-education": {
+            "title": "Other education",
+            "paragraph-1": "Other education refers to education that does not lead to a degree. It can develop skills for working life or for personal needs.",
+            "paragraph-2": "The Other education information comes from the Education provision data of Opintopolku. The AI groups the education programmes based on the skills learned and the field of education."
+          },
+          "tooltip-content-created-with-ai": {
+            "title": "Content created with AI",
+            "item-1-bold": "Skills are identified",
+            "item-1-text": "from job advertisements on Työmarkkinatori and education provision descriptions on Competency Path.",
+            "item-2-bold": "Job and education opportunities are created",
+            "item-2-text": "by grouping job advertisements from Työmarkkinatori and education provision from Opintopolku.",
+            "item-3-bold": "The AI writes summaries of job and education opportunities",
+            "item-3-text": "based on the underlying job advertisements, profession information and education descriptions in the education provision. Personal data is removed from the source material.",
+            "item-4-bold": "The AI translates the texts it writes into Swedish and English",
+            "note": "Note! Content produced by AI may contain errors."
+          }
+        },
+        "data-sources": {
+          "title": "Data sources",
+          "description": "My Competency Path information comes from the profession data and job advertisements on Työmarkkinatori, as well as the education provision from Opintopolku. The AI creates job and education opportunities in My Competency Path based on this data.",
+          "read-more-link": "Read more about the use of AI in Competency Path"
+        },
         "description": "My Competency Path helps you pause to focus on your own skills and future. You can map your skills, strengths, and interests clearly and easily, gaining a better understanding of what you know and how your skills might be utilized. The service opens up possibilities you may not have considered before. \n<br> <br> \nWhen you use the service, you quickly find suitable training and job opportunities, as well as different paths to follow towards your goals. You can browse options without logging in, but by logging in, you access your personal competency profile where you can save your work history, education, interests, and goals. You see everything essential in one place and can clearly track your progress. Your competency profile develops with you and helps you make bolder and more informed choices. \n<br> <br>\nIf you need support for decision-making, the service easily guides you to counseling and advisory services, so you don't have to ponder things alone. You can seek assistance based on, for example, your residence or situation and find a suitable entity to spar with your career choices. This way you get both tools and support for building your own path, whether you are looking for a new direction, considering a career change, or pursuing new opportunities in working life.",
         "navTitle": "My Competency Path"
       }
