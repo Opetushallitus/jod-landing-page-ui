@@ -157,12 +157,13 @@ const HomeAccordion = ({ title, content, icon, isOpen, setIsOpen }: HomeAccordio
         setIsOpen={setIsOpen}
         title={
           <div className="flex items-center gap-4">
-            <div className="flex size-7 items-center justify-center rounded-full bg-secondary-gray text-white">
+            <div className="flex size-7 shrink-0 items-center justify-center rounded-full bg-secondary-gray text-white">
               {icon}
             </div>
             {title}
           </div>
         }
+        ellipsis={false}
         className="w-full"
       >
         <section id={contentId} className="mt-3 mb-6 ml-[44px] font-arial text-body-md-mobile sm:text-body-md">
