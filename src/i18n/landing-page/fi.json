@@ -26,6 +26,9 @@
   "about-individuals": {
     "intro": "Osaamispolku on uusi, maksuton verkkopalvelu, joka tukee urasuunnittelua, osaamisen kehittämistä ja työnhakua eri elämäntilanteissa. Osaamispolkuun kannattaa tutustua, kun pohdit omaa suuntaasi koulutukseen, uravalintoihin tai työllistymiseen liittyen.",
     "sections": {
+      "1": {
+        "description": "<p>Urapolut ovat yhä moninaisempia, ja aiempaa useammat tekevät isoja suunnanmuutoksia työuransa aikana. Myös osaamisvaatimukset ovat jatkuvassa muutoksessa. Osaamispolku on kehitetty tukemaan jokaista työelämän muutoksissa.</p><br>– Osaamispolku auttaa pohtimaan työuraa suunnitelmallisesti. Voit hahmottaa tilannettasi ja vaihtoehtojasi, olit sitten hakemassa töitä, suunnittelemassa alanvaihtoa tai kartoittamassa osaamisen kehittämiseen liittyviä tarpeitasi. Omaa suuntaansa pohtivalle nuorelle Osaamispolku tarjoaa kattavasti tietoa eri ammateista ja koulutusaloista, kuvaa työ- ja elinkeinoministeriön johtava asiantuntija <strong>Tiina Salminen</strong>."
+      },
       "10": {
         "description": "<List><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/tyokalu\" target=\"_blank\"><strong>Löydä mahdollisuuksia</strong></Link>: Yhdistä osaamisesi ja kiinnostuksenkohteesi, ja saat selville, millaiset koulutukset ja/tai työtehtävät voisivat sopia sinulle. Voit myös tutkia suoraan kiinnostavia koulutuksia ja aloja palkkatietoineen ja työllisyysnäkymineen.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/kirjaudu-sisaan\" target=\"_blank\"><strong>Luo oma osaamisprofiili</strong></Link>: Tallenna työ- ja koulutushistoriasi sekä saavutuksesi omaan osaamisprofiiliisi. Voit hyödyntää tietoja Osaamispolussa sopivien koulutus- ja työmahdollisuuksien etsimisessä sekä työnhaussa. Lisäksi voit asettaa tavoitteita ja suunnitella polkuja niiden saavuttamiseksi. Päätät itse, miten ja missä tietojasi käytetään ja kenelle niitä jaat.</ListItem><ListItem><Link href=\"https://www.suomi.fi/aihe/ohjaus-ja-neuvontapalveluja\" target=\"_blank\"><strong>Ohjaus- ja neuvontapalvelut</strong></Link>: Tutustu kunnassasi tarjolla oleviin uraohjaus- ja neuvontapalveluihin.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/tietopalvelu/fi\" target=\"_blank\"><strong>Tietopalvelu</strong></Link>: Löydät luotettavaa ja ajantasaista tilastotietoa työmarkkinoista, koulutuksesta ja osaamisesta kattavasti Osaamispolun Tietopalvelusta.</ListItem></List>",
         "navTitle": "Miksi kokeilla Osaamispolkua?"
@@ -39,9 +42,6 @@
       },
       "13": {
         "description": "<i>Osaamispolku-palvelu on julkaistu tammikuussa 2026. Palvelu toimii suomeksi, ruotsiksi ja englanniksi. Osaamispolusta vastaavat opetus- ja kulttuuriministeriö, työ- ja elinkeinoministeriö, Opetushallitus ja KEHA-keskus.</i>"
-      },
-      "1": {
-        "description": "<p>Urapolut ovat yhä moninaisempia, ja aiempaa useammat tekevät isoja suunnanmuutoksia työuransa aikana. Myös osaamisvaatimukset ovat jatkuvassa muutoksessa. Osaamispolku on kehitetty tukemaan jokaista työelämän muutoksissa.</p><br>– Osaamispolku auttaa pohtimaan työuraa suunnitelmallisesti. Voit hahmottaa tilannettasi ja vaihtoehtojasi, olit sitten hakemassa töitä, suunnittelemassa alanvaihtoa tai kartoittamassa osaamisen kehittämiseen liittyviä tarpeitasi. Omaa suuntaansa pohtivalle nuorelle Osaamispolku tarjoaa kattavasti tietoa eri ammateista ja koulutusaloista, kuvaa työ- ja elinkeinoministeriön johtava asiantuntija <strong>Tiina Salminen</strong>."
       },
       "2": {
         "description": "<p>Osaamispolusta löytyy työkaluja osaamisen kartoittamiseen, kiinnostusten tunnistamiseen sekä koulutus- ja urapolkujen suunnitteluun. Osaamispolku auttaa muodostamaan selkeän kokonaiskuvan, jossa oma osaaminen ja mielekkäät suunnat yhdistyvät ajantasaiseen tietoon työmarkkinoiden ja eri alojen näkymistä.</p><br><p>– Osaamispolun tärkein tehtävä on tukea ihmistä tekemään tietoisia valintoja opiskelun, työn ja oman osaamisen kehittämisen suhteen. On tunnistettu, että isojakin päätöksiä saatetaan joutua tekemään puutteellisen tiedon pohjalta. Esimerkiksi mielikuvat uramahdollisuuksista ja koulutuspoluista perustuvat usein tämän hetken tarjontaan – eivät siihen, mitä mahdollisuuksia ylipäänsä on olemassa, sanoo opetus- ja kulttuuriministeriön erityisasiantuntija <strong>Tomi Kytölä</strong>.</p><br><p>Osaamispolusta on hyötyä erityisesti silloin, kun on jonkinlaisen valintatilanteen edessä, eikä ole vielä ihan varma, mihin suuntaan kannattaisi lähteä. Palvelun kartoitustyökaluista voi olla apua ennen kuin siirtyy hakemaan työ- tai opiskelupaikkaa. Palvelu ei ota kantaa siihen, mihin suuntaan pitäisi lähteä, vaan tarjoaa tietoa päätöksenteon tueksi.</p><br><p>– Osaamispolku ei tee päätöksiä käyttäjän puolesta. Tavoitteena on, että jokainen pystyisi tekemään opintoihin ja työuraan liittyviä valintoja, jotka perustuvat riittävään kokonaiskuvaan ja vastaavat kunkin omia tavoitteita, Kytölä täydentää.</p>",
@@ -150,7 +150,7 @@
             "title": "Muu koulutus"
           },
           "tooltip-other-work-opportunities": {
-            "paragraph-1": "Muut työmahdollisuudet ovat tekoäly kokoamia ryhmittelyjä töistä, joissa vaaditaan samanlaisia osaamisia ja ominaisuuksia.",
+            "paragraph-1": "Muut työmahdollisuudet ovat tekoälyn kokoamia ryhmittelyjä töistä, joissa vaaditaan samanlaisia osaamisia ja ominaisuuksia.",
             "paragraph-2": "Tekoäly lukee Työmarkkinatorin työpaikkailmoituksia ja tunnistaa niistä tarvittavat taidot, luvat, ajokortit ja mainitut ammatit. Ilmoitukset, joissa on riittävästi tietoa, ryhmitellään sisällön perusteella työmahdollisuuksiksi.",
             "title": "Muu työmahdollisuus"
           },
@@ -215,11 +215,11 @@
       "description-1": "Palvelussa käytetään seuraavia menetelmiä ja komponentteja:",
       "description-2": "Työkaluja, malleja ja menetelmiä käytetään Amazon Web Services (AWS) pilvialustalla. AWS ylläpitää yksityistä infrastruktuuriamme ja suurinta osaa keskustelulokeista, jotka sisältävät viestit, keskustelun aiheen, aikaleimat ja telemetriatietoja.",
       "list": {
-        "item-1": "koneoppimismallit osaamisten tunnistamiseen (mm. TFIDF ja FinBERT)",
-        "item-2": "klusterointialgoritmit (DBSCAN ja KMeans) työpaikkailmoitusten ja koulutustarjonnan ryhmittelyyn työ- ja koulutusmahdollisuuksiksi",
-        "item-3": "generatiivinen tekoäly (Claude 3.5 Sonnet) tuottamaan kuvaustekstejä ja tiivistelmiä",
-        "item-4": "suosittelualgoritmit, jotka yhdistävät osaamiset ja kiinnostukset koulutus- ja työmahdollisuuksiin",
-        "item-5": "keskusteleva kiinnostusten kartoittaja, joka hyödyntää kielimalleja (Claude 3.5 Sonnet) keskustelun käymiseksi ja RAG-toiminnallisuutta (Retrieval-Augmented Generation) erilaisten ohjaustyötä ja kartoitustyötä tukevien apuvälineiden ja materiaalien hallitsemiseksi ja käyttämiseksi keskutelun tukena."
+        "item-1": "koneoppimismallit osaamisten tunnistamiseen (mm. TF-IDF ja FinBERT)",
+        "item-2": "klusterointialgoritmit (mm. DBSCAN ja KMeans) työpaikkailmoitusten ja koulutustarjonnan ryhmittelyyn työ- ja koulutusmahdollisuuksiksi",
+        "item-3": "generatiivinen tekoäly tuottamaan kuvaustekstejä ja tiivistelmiä sekä tarjoamaan keskustelevaa kartoitusapua osaamisen ja kiinnostusten kohteiden kartoittamiseen (Claude Sonnet 4.5)",
+        "item-4": "suosittelualgoritmit (mm. logistinen regressio ja StandardScaler), jotka yhdistävät osaamiset ja kiinnostukset koulutus- ja työmahdollisuuksiin",
+        "item-5": "keskusteleva kiinnostusten kartoittaja, joka hyödyntää kielimalleja (Claude Haiku 3) keskustelun käymiseksi ja RAG-toiminnallisuutta (Retrieval-Augmented Generation) erilaisten ohjaustyötä ja kartoitustyötä tukevien apuvälineiden ja materiaalien hallitsemiseksi ja käyttämiseksi keskutelun tukena."
       },
       "title": "Mitä tekoälymenetelmiä käytetään?"
     },
@@ -295,8 +295,8 @@
           "title": "Suosittelujen tuottamisen (yksilölliset suositukset koulutus- ja työmahdollisuuksiksi perustuen syöttämiisi tietoihisi)"
         },
         "item-4": {
-          "description": "Tekoäly voi myös keskustella käyttäjän kanssa ja auttaa häntä löytämään sopivia vaihtoehtoja kiinnostuksen kohteiksi sekä antaa keskustelu- ja pohdinta-apua kiinnostusten kohteiden mietintään. Se ymmärtää käyttäjän kirjoittamia viestejä ja vastaa niihin hyödyllisesti. Keskusteleva kiinnostusten kartoittaja voi käyttää apuna erilaisia ohjausalan materiaaleja ja tietoja.",
-          "title": "Keskusteluapua kiinnostuksen kartoittamiseksi"
+          "description": "Tekoäly voi myös keskustella käyttäjän kanssa ja auttaa häntä löytämään sopivia vaihtoehtoja kiinnostuksen kohteiksi ja osaamisiksi sekä antaa keskustelu- ja pohdinta-apua kiinnostusten kohteiden ja omien osaamisten mietintään. Se ymmärtää käyttäjän kirjoittamia viestejä ja vastaa niihin hyödyllisesti. Keskusteleva kiinnostusten kartoittaja voi käyttää apuna erilaisia ohjausalan materiaaleja ja tietoja ammateista ja osaamisista.",
+          "title": "Keskusteluapua kiinnostuksien ja osaamisten kartoittamiseksi"
         },
         "item-5": {
           "description": "Tekoäly kirjoittaa tiivistelmiä työ- ja koulutusmahdollisuuksista perustuen niiden taustalla oleviin työpaikkailmoituksiin, ammattitietoon sekä koulutustarjonnassa oleviin koulutusten kuvauksiin, jotta ne ovat helpommin ymmärrettäviä käyttäjälle. Tausta-aineistoista siivotaan pois mahdolliset henkilötiedot. <br/><br/>Tekoäly kääntää kirjoittamansa tekstit ruotsiksi ja englanniksi. ",
@@ -600,10 +600,6 @@
       },
       "title": "Henkilötietojen käsittelyn tarkoitus"
     },
-    "info-about-3rd-country": {
-      "description": "Tietoja säilytetään Amazon Web Services- palveluntarjoajan konesaleissa EU-alueella. Tietoja ei siirretä EU:n tai Euroopan talousalueen ulkopuolelle.",
-      "title": "Tiedot tietojen siirrosta kolmansiin maihin ja tiedot käytettävistä suojatoimista"
-    },
     "info": {
       "contact": {
         "content": "Riku Hanhinen",
@@ -629,6 +625,10 @@
         "content": "Opetushallitus ja KEHA-keskus",
         "title": "Rekisterinpitäjä:"
       }
+    },
+    "info-about-3rd-country": {
+      "description": "Tietoja säilytetään Amazon Web Services- palveluntarjoajan konesaleissa EU-alueella. Tietoja ei siirretä EU:n tai Euroopan talousalueen ulkopuolelle.",
+      "title": "Tiedot tietojen siirrosta kolmansiin maihin ja tiedot käytettävistä suojatoimista"
     },
     "intro": {
       "description": "Tässä tietosuojaselosteessa kuvataan, miten henkilötietoja käsitellään Osaamispolku-palvelussa. Selosteessa kerrotaan myös, mitä oikeuksia rekisteröidyillä henkilöillä on ja miten oikeuksia voi käyttää. Rekisteröityjä ovat osaamisprofiilin tehneet henkilöt sekä ohjaajan työpöydälle kirjautuneet henkilöt. <br/><br/>Tietosuojaselostetta päivitetään säännöllisesti. Ajankohtainen versio löytyy aina tältä sivulta",

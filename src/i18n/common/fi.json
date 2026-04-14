@@ -20,22 +20,22 @@
       "hereLabel": "täältä",
       "name": "Evästeasetukset",
       "readMoreHref": "/fi/tietosuojaseloste-ja-evasteet",
-      "readMoreLabel": "Lue lisää evästeistämme ja tietosuojakäytännöistämme",
+      "readMoreLabel": "Lue lisää evästeistämme ja tietosuojakäytännöistämme.",
       "statisticsDescription": "Seuraamme palvelun kävijämääriä Matomon avulla. Tähän ei kysytä erikseen suostumusta.",
       "title": "Käytämme evästeitä"
     }
   },
   "delete": "Poista",
-  "error-boundary": {
-    "session-expired": "Istuntosi on vanhentunut. Sinun täytyy kirjautua palveluun uudelleen tai käyttää palvelua ilman kirjautumista.",
-    "title": "Tapahtui virhe",
-    "unexpected": "Tapahtui odottamaton virhe. Tämä voi johtua verkkoyhteyden katkeamisesta tai palvelun virheestä."
-  },
   "error": {
     "form": {
       "email": "Tarkista sähköpostiosoite",
       "required": "Pakollinen kenttä"
     }
+  },
+  "error-boundary": {
+    "session-expired": "Istuntosi on vanhentunut. Sinun täytyy kirjautua palveluun uudelleen tai käyttää palvelua ilman kirjautumista.",
+    "title": "Tapahtui virhe",
+    "unexpected": "Tapahtui odottamaton virhe. Tämä voi johtua verkkoyhteyden katkeamisesta tai palvelun virheestä."
   },
   "external-link": "Linkki johtaa palvelun ulkopuolelle",
   "feedback": {

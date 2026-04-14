@@ -26,6 +26,9 @@
   "about-individuals": {
     "intro": "Osaamispolku on uusi, maksuton verkkopalvelu, joka tukee urasuunnittelua, osaamisen kehittämistä ja työnhakua eri elämäntilanteissa. Osaamispolkuun kannattaa tutustua, kun pohdit omaa suuntaasi koulutukseen, uravalintoihin tai työllistymiseen liittyen.",
     "sections": {
+      "1": {
+        "description": "<p>Urapolut ovat yhä moninaisempia, ja aiempaa useammat tekevät isoja suunnanmuutoksia työuransa aikana. Myös osaamisvaatimukset ovat jatkuvassa muutoksessa. Osaamispolku on kehitetty tukemaan jokaista työelämän muutoksissa.</p><br>– Osaamispolku auttaa pohtimaan työuraa suunnitelmallisesti. Voit hahmottaa tilannettasi ja vaihtoehtojasi, olit sitten hakemassa töitä, suunnittelemassa alanvaihtoa tai kartoittamassa osaamisen kehittämiseen liittyviä tarpeitasi. Omaa suuntaansa pohtivalle nuorelle Osaamispolku tarjoaa kattavasti tietoa eri ammateista ja koulutusaloista, kuvaa työ- ja elinkeinoministeriön johtava asiantuntija <strong>Tiina Salminen</strong>."
+      },
       "10": {
         "description": "<List><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/tyokalu\" target=\"_blank\"><strong>Löydä mahdollisuuksia</strong></Link>: Yhdistä osaamisesi ja kiinnostuksenkohteesi, ja saat selville, millaiset koulutukset ja/tai työtehtävät voisivat sopia sinulle. Voit myös tutkia suoraan kiinnostavia koulutuksia ja aloja palkkatietoineen ja työllisyysnäkymineen.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/kirjaudu-sisaan\" target=\"_blank\"><strong>Luo oma osaamisprofiili</strong></Link>: Tallenna työ- ja koulutushistoriasi sekä saavutuksesi omaan osaamisprofiiliisi. Voit hyödyntää tietoja Osaamispolussa sopivien koulutus- ja työmahdollisuuksien etsimisessä sekä työnhaussa. Lisäksi voit asettaa tavoitteita ja suunnitella polkuja niiden saavuttamiseksi. Päätät itse, miten ja missä tietojasi käytetään ja kenelle niitä jaat.</ListItem><ListItem><Link href=\"https://www.suomi.fi/aihe/ohjaus-ja-neuvontapalveluja\" target=\"_blank\"><strong>Ohjaus- ja neuvontapalvelut</strong></Link>: Tutustu kunnassasi tarjolla oleviin uraohjaus- ja neuvontapalveluihin.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/tietopalvelu/fi\" target=\"_blank\"><strong>Tietopalvelu</strong></Link>: Löydät luotettavaa ja ajantasaista tilastotietoa työmarkkinoista, koulutuksesta ja osaamisesta kattavasti Osaamispolun Tietopalvelusta.</ListItem></List>",
         "navTitle": "Miksi kokeilla Osaamispolkua?"
@@ -39,9 +42,6 @@
       },
       "13": {
         "description": "<i>Osaamispolku-palvelu on julkaistu tammikuussa 2026. Palvelu toimii suomeksi, ruotsiksi ja englanniksi. Osaamispolusta vastaavat opetus- ja kulttuuriministeriö, työ- ja elinkeinoministeriö, Opetushallitus ja KEHA-keskus.</i>"
-      },
-      "1": {
-        "description": "<p>Urapolut ovat yhä moninaisempia, ja aiempaa useammat tekevät isoja suunnanmuutoksia työuransa aikana. Myös osaamisvaatimukset ovat jatkuvassa muutoksessa. Osaamispolku on kehitetty tukemaan jokaista työelämän muutoksissa.</p><br>– Osaamispolku auttaa pohtimaan työuraa suunnitelmallisesti. Voit hahmottaa tilannettasi ja vaihtoehtojasi, olit sitten hakemassa töitä, suunnittelemassa alanvaihtoa tai kartoittamassa osaamisen kehittämiseen liittyviä tarpeitasi. Omaa suuntaansa pohtivalle nuorelle Osaamispolku tarjoaa kattavasti tietoa eri ammateista ja koulutusaloista, kuvaa työ- ja elinkeinoministeriön johtava asiantuntija <strong>Tiina Salminen</strong>."
       },
       "2": {
         "description": "<p>Osaamispolusta löytyy työkaluja osaamisen kartoittamiseen, kiinnostusten tunnistamiseen sekä koulutus- ja urapolkujen suunnitteluun. Osaamispolku auttaa muodostamaan selkeän kokonaiskuvan, jossa oma osaaminen ja mielekkäät suunnat yhdistyvät ajantasaiseen tietoon työmarkkinoiden ja eri alojen näkymistä.</p><br><p>– Osaamispolun tärkein tehtävä on tukea ihmistä tekemään tietoisia valintoja opiskelun, työn ja oman osaamisen kehittämisen suhteen. On tunnistettu, että isojakin päätöksiä saatetaan joutua tekemään puutteellisen tiedon pohjalta. Esimerkiksi mielikuvat uramahdollisuuksista ja koulutuspoluista perustuvat usein tämän hetken tarjontaan – eivät siihen, mitä mahdollisuuksia ylipäänsä on olemassa, sanoo opetus- ja kulttuuriministeriön erityisasiantuntija <strong>Tomi Kytölä</strong>.</p><br><p>Osaamispolusta on hyötyä erityisesti silloin, kun on jonkinlaisen valintatilanteen edessä, eikä ole vielä ihan varma, mihin suuntaan kannattaisi lähteä. Palvelun kartoitustyökaluista voi olla apua ennen kuin siirtyy hakemaan työ- tai opiskelupaikkaa. Palvelu ei ota kantaa siihen, mihin suuntaan pitäisi lähteä, vaan tarjoaa tietoa päätöksenteon tueksi.</p><br><p>– Osaamispolku ei tee päätöksiä käyttäjän puolesta. Tavoitteena on, että jokainen pystyisi tekemään opintoihin ja työuraan liittyviä valintoja, jotka perustuvat riittävään kokonaiskuvaan ja vastaavat kunkin omia tavoitteita, Kytölä täydentää.</p>",
@@ -215,11 +215,11 @@
       "description-1": "The following methods and components are used in the service:",
       "description-2": "The tools, templates and methods are used on the Amazon Web Services (AWS) cloud platform. AWS maintains our private infrastructure and the majority of chat logs, which include messages, chat topics, time stamps, and telemetry data.",
       "list": {
-        "item-1": "machine learning models for identifying competences (e.g. TFIDF and FinBERT)",
-        "item-2": "clustering algorithms (DBSCAN and KMeans) for grouping job advertisements and education offering into job and education opportunities",
-        "item-3": "generative AI (Claude 3.5 Sonnet) to produce captions and summaries",
-        "item-4": "recommendation algorithms that combine competences and interests with education and career opportunities",
-        "item-5": "conversational interest surveyor which uses language models (Claude 3.5 Sonnet) to conduct a discussion and the RAG functionality (Retrieval-Augmented Generation) to manage and use various aids and materials that support guidance and surveying work to promote the discussion."
+        "item-1": "machine learning models for identifying competences (e.g. TF-IDF and FinBERT)",
+        "item-2": "clustering algorithms (e.g. DBSCAN and KMeans) for grouping job advertisements and education offering into job and education opportunities",
+        "item-3": "Generative AI for producing descriptions and summaries and providing conversational mapping assistance for assessing skills and interests (Claude Sonnet 4.5)",
+        "item-4": "recommendation algorithms (e.g. logistic regression and StandardScaler) that combine competences and interests with education and career opportunities",
+        "item-5": "conversational interest surveyor which uses language models (Claude 3 Haiku) to conduct a discussion and the RAG functionality (Retrieval-Augmented Generation) to manage and use various aids and materials that support guidance and surveying work to promote the discussion."
       },
       "title": "Which AI methods are used?"
     },
@@ -295,8 +295,8 @@
           "title": "Generation of recommendations (individual recommendations for education and career opportunities based on your input)"
         },
         "item-4": {
-          "description": "Artificial intelligence can also talk with the user and help them find their own interests as well as provides discussion and reflection assistance when the user reviews their interests. It understands the user's messages and responds to them effectively. The conversational interest surveyor can use various guidance materials and data.",
-          "title": "Supportive discussion for surveying the interests"
+          "description": "Artificial intelligence can also interact with the user and help them find suitable options for interests and skills, as well as provide discussion and reflection assistance for considering interests and personal skills. It understands the messages written by the user and responds to them usefully. A conversational interest mapper can use various guidance materials and information about professions and skills as support.",
+          "title": "Conversation help for mapping interests and skills"
         },
         "item-5": {
           "description": "Artificial intelligence writes summaries of work and education opportunities based on the underlying job advertisements, professional information and descriptions in the education offering, so that the user can easily understand them. Any personal data will be deleted from the background material. <br/><br/>AI translates the texts it has produced into Swedish and English.",
@@ -600,10 +600,6 @@
       },
       "title": "Purpose of processing personal data"
     },
-    "info-about-3rd-country": {
-      "description": "The data is stored in the data centres of the Amazon Web Services provider in the EU. The data is not transferred outside the European Union or the European Economic Area.",
-      "title": "Information on data transfers to third countries and information on the safeguards used"
-    },
     "info": {
       "contact": {
         "content": "Riku Hanhinen",
@@ -629,6 +625,10 @@
         "content": "Finnish National Agency for Education and KEHA Centre",
         "title": "Controller:"
       }
+    },
+    "info-about-3rd-country": {
+      "description": "The data is stored in the data centres of the Amazon Web Services provider in the EU. The data is not transferred outside the European Union or the European Economic Area.",
+      "title": "Information on data transfers to third countries and information on the safeguards used"
     },
     "intro": {
       "description": "This privacy policy describes how personal data is processed in the Competency Path service. It also explains what rights data subjects have and how they can exercise their rights. The persons registered are those who have created the competence profile and those who are logged in to the guidance practitioner's desktop. <br/><br/>The privacy policy is updated regularly. You can always find the latest version on this page",
