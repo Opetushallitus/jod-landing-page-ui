@@ -34,7 +34,8 @@
         "description": "<p>Kokeile miltä sinun Osaamispolkusi voisi näyttää – osaamisesi ja kiinnostuksesi saattavat avata yllättäviäkin mahdollisuuksia!</p><br><p>Tutustu Osaamispolkuun: <Link href=\"https://osaamispolku.fi\" target=\"_blank\">osaamispolku.fi</Link></p>"
       },
       "12": {
-        "description": "<p>Seuraa Osaamispolkua somessa:</p><List><ListItem><Link href=\"https://www.facebook.com/osaamispolku\" target=\"_blank\">Facebook</Link></ListItem><ListItem>Instagram <Link href=\"https://www.instagram.com/osaamispolku\" target=\"_blank\"> @osaamispolku</Link></ListItem><ListItem><Link href=\"https://www.linkedin.com/company/osaamispolku/\" target=\"_blank\">LinkedIn</Link></ListItem></List>"
+        "description": "<p>Seuraa Osaamispolkua somessa:</p><List><ListItem><Link href=\"https://www.facebook.com/osaamispolku\" target=\"_blank\">Facebook</Link></ListItem><ListItem>Instagram <Link href=\"https://www.instagram.com/osaamispolku\" target=\"_blank\"> @osaamispolku</Link></ListItem><ListItem><Link href=\"https://www.linkedin.com/company/osaamispolku/\" target=\"_blank\">LinkedIn</Link></ListItem></List>",
+        "navTitle": "Seuraa somessa"
       },
       "13": {
         "description": "<i>Osaamispolku-palvelu on julkaistu tammikuussa 2026. Palvelu toimii suomeksi, ruotsiksi ja englanniksi. Osaamispolusta vastaavat opetus- ja kulttuuriministeriö, työ- ja elinkeinoministeriö, Opetushallitus ja KEHA-keskus.</i>"
@@ -96,52 +97,32 @@
         "navTitle": "Jatkuvan oppimisen digitaalinen palvelukokonaisuus (JOD) -hanke"
       },
       "my-path": {
+        "data-sources": {
+          "description": "Oma Osaamispolun tiedot ovat peräisin Työmarkkinatorin ammattitiedoista ja työpaikkailmoituksista, sekä Opintopolun koulutustarjonnasta. Näistä luodaan työ ja koulutusmahdollisuuksia Oma Osaamispolkuun tekoälyn avulla.",
+          "read-more-link": "Lue lisää tekoälyn käytöstä Osaamispolussa",
+          "title": "Tietolähteet"
+        },
+        "description": "Oma Osaamispolku auttaa sinua pysähtymään oman osaamisesi ja tulevaisuutesi äärelle. Voit kartoittaa taitosi, vahvuutesi ja kiinnostuksesi selkeästi ja helposti, ja saat paremman käsityksen siitä, mitä osaat ja mihin kaikkeen voisit osaamistasi hyödyntää. Palvelu avaa eteesi mahdollisuuksia, joita et ehkä ole aiemmin tullut edes ajatelleeksi. \n<br> <br> \nKun käytät palvelua, löydät nopeasti sinulle sopivia koulutus‑ ja työvaihtoehtoja sekä eri polkuja, joita voit seurata kohti tavoitteitasi. Voit selata vaihtoehtoja ilman kirjautumista, mutta kirjautumalla saat käyttöösi oman osaamisprofiilisi, johon voit tallentaa työhistoriasi, koulutuksesi, kiinnostuksesi ja tavoitteesi. Näet kaiken oleellisen yhdessä paikassa ja pystyt seuraamaan omaa etenemistäsi selkeästi. Osaamisprofiilisi kehittyy mukanasi ja auttaa sinua tekemään rohkeampia ja perustellumpia valintoja. \n<br> <br>\nJos kaipaat tukea päätöksentekoon, palvelu ohjaa sinut helposti ohjaus‑ ja neuvontapalveluihin, jotta et joudu miettimään asioita yksin. Voit etsiä apua esimerkiksi asuinpaikkasi tai tilanteesi perusteella ja löytää sinulle sopivan tahon sparraamaan uravalintojasi. Näin saat sekä työkaluja että tukea oman polkusi rakentamiseen – olit sitten etsimässä uutta suuntaa, harkitsemassa alanvaihtoa tai tavoittelemassa uusia mahdollisuuksia työelämässä.",
         "image": {
-          "tell-about-skills": "Kerron osaamisestani ja kiinnostuksistani",
-          "service-helps-with-ai": "Palvelu tukee sinua kiinnostusten ja osaamisten kartoittamisessa tekoälyn avulla.",
-          "choose-interests-and-skills": "Valitse vaihtoehdoista sinulle sopivat kiinnostukset ja osaamiset.",
-          "professions": "Ammatit",
-          "other-work-opportunities": "Muut työmahdollisuudet",
-          "degrees": "Tutkinnot",
-          "other-education": "Muu koulutus",
-          "enter-your-info": "Syötä tietosi",
-          "service-suggests-opportunities": "Palvelu ehdottaa sinulle sopivia mahdollisuuksia",
-          "content-created-with-ai": "Sisältöä luodaan tekoälyn avulla.",
           "career-info": "Ammattitieto",
-          "job-postings": "Työpaikkailmoitukset",
+          "choose-interests-and-skills": "Valitse vaihtoehdoista sinulle sopivat kiinnostukset ja osaamiset.",
+          "content-created-with-ai": "Sisältöä luodaan tekoälyn avulla.",
+          "degrees": "Tutkinnot",
           "education-options": "Koulutustarjonta",
-          "tooltip-service-helps-with-ai": {
-            "title": "Kiinnostusten ja osaamisten kartoittaminen",
-            "paragraph-1": "Tekoäly tunnistaa syöttämästäsi tekstistä ja muista tiedoista (CV, koulutustiedot) osaamisia ja kiinnostuksen kohteita.",
-            "paragraph-2": "Tekoäly voi myös keskustella kanssasi ja auttaa näin tunnistamaan sopivia osaamisia ja kiinnostuksenkohteita."
-          },
+          "enter-your-info": "Syötä tietosi",
+          "job-postings": "Työpaikkailmoitukset",
+          "other-education": "Muu koulutus",
+          "other-work-opportunities": "Muut työmahdollisuudet",
+          "professions": "Ammatit",
+          "service-helps-with-ai": "Palvelu tukee sinua kiinnostusten ja osaamisten kartoittamisessa tekoälyn avulla.",
+          "service-suggests-opportunities": "Palvelu ehdottaa sinulle sopivia mahdollisuuksia",
+          "tell-about-skills": "Kerron osaamisestani ja kiinnostuksistani",
           "tooltip-choose-interests-and-skills": {
-            "title": "Valitse kiinnostukset ja osaamiset",
             "paragraph-1": "Valitse tekoälyn tarjoamista vaihtoehdoista itsellesi sopivat kiinnostukset ja osaamiset. Valintasi toimivat haun pohjana.",
-            "paragraph-2": "Suorita haku, jonka jälkeen saat tulokseksi työ- ja koulutusmahdollisuuksia, joita voit selailla."
-          },
-          "tooltip-professions": {
-            "title": "Ammatit",
-            "paragraph-1": "Ammatti on kokonaisuus, joka kuvaa työhön kuuluvat tehtävät, taidot ja vastuut. Moniin ammatteihin vaaditaan koulutus, mutta osa on opittavissa myös käytännön työssä.",
-            "paragraph-2": "Osaamispolun Ammatti-tieto on peräisin Työmarkkinatorin Ammattitieto-datasta. Tietoa ei ole käsitelty tekoälyllä."
-          },
-          "tooltip-other-work-opportunities": {
-            "title": "Muu työmahdollisuus",
-            "paragraph-1": "Muut työmahdollisuudet ovat tekoäly kokoamia ryhmittelyjä töistä, joissa vaaditaan samanlaisia osaamisia ja ominaisuuksia.",
-            "paragraph-2": "Tekoäly lukee Työmarkkinatorin työpaikkailmoituksia ja tunnistaa niistä tarvittavat taidot, luvat, ajokortit ja mainitut ammatit. Ilmoitukset, joissa on riittävästi tietoa, ryhmitellään sisällön perusteella työmahdollisuuksiksi."
-          },
-          "tooltip-degrees": {
-            "title": "Tutkinnot",
-            "paragraph-1": "Tutkinto on Opetushallituksen määrittelemä ja säätelemä virallinen osaamiskokonaisuus. Vain viralliset koulutuksen järjestäjät voivat myöntää tutkintoja.",
-            "paragraph-2": "Osaamispolun Tutkinto-tieto on peräisin Opintopolun Koulutustarjonta-datasta. Tekoäly ryhmittelee koulutukset sen mukaan, mitä taitoja niissä opitaan ja mihin koulutusalaan ja viralliseen tutkintoluokitukseen ne kuuluvat."
-          },
-          "tooltip-other-education": {
-            "title": "Muu koulutus",
-            "paragraph-1": "Muu koulutus tarkoittaa koulutusta, joka ei johda tutkintoon. Se voi kehittää osaamista esimerkiksi työelämää varten tai henkilökohtaisiin tarpeisiin.",
-            "paragraph-2": "Muu koulutus-tieto on peräisin Opintopolun Koulutustarjonta-datasta. Tekoäly ryhmittelee koulutukset opittavien taitojen ja koulutusalan perusteella."
+            "paragraph-2": "Suorita haku, jonka jälkeen saat tulokseksi työ- ja koulutusmahdollisuuksia, joita voit selailla.",
+            "title": "Valitse kiinnostukset ja osaamiset"
           },
           "tooltip-content-created-with-ai": {
-            "title": "Tekoälyn avulla luotu sisältö",
             "item-1-bold": "Osaamisia tunnistetaan",
             "item-1-text": "Työmarkkinatorin työpaikkailmoituksista ja Osaamispolun koulutustarjonta -kuvauksista.",
             "item-2-bold": "Työ- ja koulutusmahdollisuuksia luodaan",
@@ -149,15 +130,35 @@
             "item-3-bold": "Tekoäly kirjoittaa tiivistelmiä työ- ja koulutusmahdollisuuksista",
             "item-3-text": "perustuen niiden taustalla oleviin työpaikkailmoituksiin, ammattitietoon sekä koulutustarjonnassa oleviin koulutusten kuvauksiin. Tausta-aineistoista siivotaan pois mahdolliset henkilötiedot.",
             "item-4-bold": "Tekoäly kääntää kirjoittamansa tekstit ruotsiksi ja englanniksi",
-            "note": "Huom! Tekoälyllä tuotettu sisältö saattaa sisältää virheitä."
+            "note": "Huom! Tekoälyllä tuotettu sisältö saattaa sisältää virheitä.",
+            "title": "Tekoälyn avulla luotu sisältö"
+          },
+          "tooltip-degrees": {
+            "paragraph-1": "Tutkinto on Opetushallituksen määrittelemä ja säätelemä virallinen osaamiskokonaisuus. Vain viralliset koulutuksen järjestäjät voivat myöntää tutkintoja.",
+            "paragraph-2": "Osaamispolun Tutkinto-tieto on peräisin Opintopolun Koulutustarjonta-datasta. Tekoäly ryhmittelee koulutukset sen mukaan, mitä taitoja niissä opitaan ja mihin koulutusalaan ja viralliseen tutkintoluokitukseen ne kuuluvat.",
+            "title": "Tutkinnot"
+          },
+          "tooltip-other-education": {
+            "paragraph-1": "Muu koulutus tarkoittaa koulutusta, joka ei johda tutkintoon. Se voi kehittää osaamista esimerkiksi työelämää varten tai henkilökohtaisiin tarpeisiin.",
+            "paragraph-2": "Muu koulutus-tieto on peräisin Opintopolun Koulutustarjonta-datasta. Tekoäly ryhmittelee koulutukset opittavien taitojen ja koulutusalan perusteella.",
+            "title": "Muu koulutus"
+          },
+          "tooltip-other-work-opportunities": {
+            "paragraph-1": "Muut työmahdollisuudet ovat tekoäly kokoamia ryhmittelyjä töistä, joissa vaaditaan samanlaisia osaamisia ja ominaisuuksia.",
+            "paragraph-2": "Tekoäly lukee Työmarkkinatorin työpaikkailmoituksia ja tunnistaa niistä tarvittavat taidot, luvat, ajokortit ja mainitut ammatit. Ilmoitukset, joissa on riittävästi tietoa, ryhmitellään sisällön perusteella työmahdollisuuksiksi.",
+            "title": "Muu työmahdollisuus"
+          },
+          "tooltip-professions": {
+            "paragraph-1": "Ammatti on kokonaisuus, joka kuvaa työhön kuuluvat tehtävät, taidot ja vastuut. Moniin ammatteihin vaaditaan koulutus, mutta osa on opittavissa myös käytännön työssä.",
+            "paragraph-2": "Osaamispolun Ammatti-tieto on peräisin Työmarkkinatorin Ammattitieto-datasta. Tietoa ei ole käsitelty tekoälyllä.",
+            "title": "Ammatit"
+          },
+          "tooltip-service-helps-with-ai": {
+            "paragraph-1": "Tekoäly tunnistaa syöttämästäsi tekstistä ja muista tiedoista (CV, koulutustiedot) osaamisia ja kiinnostuksen kohteita.",
+            "paragraph-2": "Tekoäly voi myös keskustella kanssasi ja auttaa näin tunnistamaan sopivia osaamisia ja kiinnostuksenkohteita.",
+            "title": "Kiinnostusten ja osaamisten kartoittaminen"
           }
         },
-        "data-sources": {
-          "title": "Tietolähteet",
-          "description": "Oma Osaamispolun tiedot ovat peräisin Työmarkkinatorin ammattitiedoista ja työpaikkailmoituksista, sekä Opintopolun koulutustarjonnasta. Näistä luodaan työ ja koulutusmahdollisuuksia Oma Osaamispolkuun tekoälyn avulla.",
-          "read-more-link": "Lue lisää tekoälyn käytöstä Osaamispolussa"
-        },
-        "description": "Oma Osaamispolku auttaa sinua pysähtymään oman osaamisesi ja tulevaisuutesi äärelle. Voit kartoittaa taitosi, vahvuutesi ja kiinnostuksesi selkeästi ja helposti, ja saat paremman käsityksen siitä, mitä osaat ja mihin kaikkeen voisit osaamistasi hyödyntää. Palvelu avaa eteesi mahdollisuuksia, joita et ehkä ole aiemmin tullut edes ajatelleeksi. \n<br> <br> \nKun käytät palvelua, löydät nopeasti sinulle sopivia koulutus‑ ja työvaihtoehtoja sekä eri polkuja, joita voit seurata kohti tavoitteitasi. Voit selata vaihtoehtoja ilman kirjautumista, mutta kirjautumalla saat käyttöösi oman osaamisprofiilisi, johon voit tallentaa työhistoriasi, koulutuksesi, kiinnostuksesi ja tavoitteesi. Näet kaiken oleellisen yhdessä paikassa ja pystyt seuraamaan omaa etenemistäsi selkeästi. Osaamisprofiilisi kehittyy mukanasi ja auttaa sinua tekemään rohkeampia ja perustellumpia valintoja. \n<br> <br>\nJos kaipaat tukea päätöksentekoon, palvelu ohjaa sinut helposti ohjaus‑ ja neuvontapalveluihin, jotta et joudu miettimään asioita yksin. Voit etsiä apua esimerkiksi asuinpaikkasi tai tilanteesi perusteella ja löytää sinulle sopivan tahon sparraamaan uravalintojasi. Näin saat sekä työkaluja että tukea oman polkusi rakentamiseen – olit sitten etsimässä uutta suuntaa, harkitsemassa alanvaihtoa tai tavoittelemassa uusia mahdollisuuksia työelämässä.",
         "navTitle": "Oma Osaamispolku"
       }
     },

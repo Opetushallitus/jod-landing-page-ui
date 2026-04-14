@@ -34,7 +34,8 @@
         "description": "<p>Testa Kompetensstigen och hitta din väg framåt — dina kompetenser och intressen kan leda dig till nya, spännande möjligheter!</p><br><p>Utforska Kompetensstigen: <Link href=\"https://osaamispolku.fi/sv\" target=\"_blank\">osaamispolku.fi</Link></p>"
       },
       "12": {
-        "description": "<p>Följ Kompetensstigen på sociala medier:</p><List><ListItem><Link href=\"https://www.facebook.com/osaamispolku\" target=\"_blank\">Facebook</Link></ListItem><ListItem>Instagram <Link href=\"https://www.instagram.com/osaamispolku\" target=\"_blank\"> @osaamispolku</Link></ListItem><ListItem><Link href=\"https://www.linkedin.com/company/osaamispolku/\" target=\"_blank\">LinkedIn</Link></ListItem></List>"
+        "description": "<p>Följ Kompetensstigen på sociala medier:</p><List><ListItem><Link href=\"https://www.facebook.com/osaamispolku\" target=\"_blank\">Facebook</Link></ListItem><ListItem>Instagram <Link href=\"https://www.instagram.com/osaamispolku\" target=\"_blank\"> @osaamispolku</Link></ListItem><ListItem><Link href=\"https://www.linkedin.com/company/osaamispolku/\" target=\"_blank\">LinkedIn</Link></ListItem></List>",
+        "navTitle": "Seuraa somessa"
       },
       "13": {
         "description": "<i>Kompetensstigen lanserades i januari 2026. Tjänsten är tillgänglig på finska, svenska och engelska. Kompetensstigen drivs av undervisnings- och kulturministeriet, arbets- och näringsministeriet, utbildningsstyrelsen och UF-centret.</i>"
@@ -96,52 +97,32 @@
         "navTitle": "Projektet Digitala servicehelheten för kontinuerligt lärande"
       },
       "my-path": {
+        "data-sources": {
+          "description": "Min kompetensstig information kommer från yrkesdata och jobbannonser på Työmarkkinatori, samt utbildningserbjudanden från Opintopolku. AI:n skapar arbets- och utbildningsmöjligheter i Min kompetensstig baserat på denna data.",
+          "read-more-link": "Läs mer om användningen av AI i Kompetensstigen",
+          "title": "Datakällor"
+        },
+        "description": "Min kompetensstig hjälper dig att reflektera över dina egna kunskaper och din framtid. Du kan enkelt och överskådligt kartlägga dina färdigheter, styrkor och intressen, och få en bättre förståelse för vad du kan och vilka möjligheter du kan dra nytta av dina kunskaper. Tjänsten öppnar möjligheter framför dig som du kanske inte har tänkt på tidigare.\n<br> <br>\nNär du använder tjänsten hittar du snabbt utbildnings- och jobbalternativ som passar dig samt olika stigar som du kan följa mot dina mål. Du kan bläddra bland alternativen utan att logga in, men genom att logga in får du tillgång till din egen kompetensprofil där du kan spara din arbetslivshistoria, utbildning, intressen och mål. Du ser allt väsentligt på ett och samma ställe och kan följa din egen utveckling tydligt. Din kompetensprofil utvecklas med dig och hjälper dig att göra djärvare och mer välgrundade val.\n<br> <br>\nOm du behöver stöd i beslutsfattande guidar tjänsten dig enkelt till väglednings- och rådgivningstjänster, så att du inte behöver fundera över saker ensam. Du kan söka hjälp baserat på till exempel ditt bostadsområde eller situation och hitta en lämplig organisation för att stödja dina yrkesval. På så sätt får du både verktyg och stöd för att bygga din egen stig – vare sig du letar efter en ny riktning, överväger en karriärväxling eller strävar efter nya möjligheter i arbetslivet.",
         "image": {
-          "tell-about-skills": "Jag berättar om mina kunskaper och intressen",
-          "service-helps-with-ai": "Tjänsten hjälper dig att kartlägga intressen och kunskaper med hjälp av AI.",
-          "choose-interests-and-skills": "Välj de intressen och kunskaper som passar dig bland alternativen.",
-          "professions": "Yrken",
-          "other-work-opportunities": "Andra arbetsmöjligheter",
-          "degrees": "Examina",
-          "other-education": "Övrig utbildning",
-          "enter-your-info": "Ange dina uppgifter",
-          "service-suggests-opportunities": "Tjänsten föreslår lämpliga möjligheter för dig",
-          "content-created-with-ai": "Innehåll skapas med hjälp av AI.",
           "career-info": "Yrkesinformation",
-          "job-postings": "Jobbmeddelanden",
+          "choose-interests-and-skills": "Välj de intressen och kunskaper som passar dig bland alternativen.",
+          "content-created-with-ai": "Innehåll skapas med hjälp av AI.",
+          "degrees": "Examina",
           "education-options": "Utbildningsutbud",
-          "tooltip-service-helps-with-ai": {
-            "title": "Kartläggning av intressen och kunskaper",
-            "paragraph-1": "AI:n identifierar kunskaper och intressen från den text du anger och annan information (CV, utbildningsuppgifter).",
-            "paragraph-2": "AI:n kan också kommunicera med dig och hjälpa dig att identifiera lämpliga kunskaper och intressen."
-          },
+          "enter-your-info": "Ange dina uppgifter",
+          "job-postings": "Jobbmeddelanden",
+          "other-education": "Övrig utbildning",
+          "other-work-opportunities": "Andra arbetsmöjligheter",
+          "professions": "Yrken",
+          "service-helps-with-ai": "Tjänsten hjälper dig att kartlägga intressen och kunskaper med hjälp av AI.",
+          "service-suggests-opportunities": "Tjänsten föreslår lämpliga möjligheter för dig",
+          "tell-about-skills": "Jag berättar om mina kunskaper och intressen",
           "tooltip-choose-interests-and-skills": {
-            "title": "Välj intressen och kunskaper",
             "paragraph-1": "Välj de intressen och kunskaper som passar dig bland de alternativ som AI:n erbjuder. Dina val används som grund för sökningen.",
-            "paragraph-2": "Utför sökningen, varefter du får arbets- och utbildningsmöjligheter som du kan bläddra igenom."
-          },
-          "tooltip-professions": {
-            "title": "Yrken",
-            "paragraph-1": "Ett yrke är en helhet som beskriver de uppgifter, färdigheter och ansvar som ingår i ett arbete. Många yrken kräver utbildning, men en del kan också läras in genom praktiskt arbete.",
-            "paragraph-2": "Yrkesuppgifterna i Kompetensstigen hämtas från Yrkesdata i Tjänsten Arbetsmarknaden. Uppgifterna har inte behandlats med AI."
-          },
-          "tooltip-other-work-opportunities": {
-            "title": "Annan arbetsmöjlighet",
-            "paragraph-1": "Andra arbetsmöjligheter är AI-sammanställda grupperingar av jobb som kräver liknande kunskaper och egenskaper.",
-            "paragraph-2": "AI:n läser jobbannonser från Tjänsten Arbetsmarknaden och identifierar erforderliga färdigheter, tillstånd, körkort och nämnda yrken. Annonser med tillräcklig information grupperas till arbetsmöjligheter baserat på innehållet."
-          },
-          "tooltip-degrees": {
-            "title": "Examina",
-            "paragraph-1": "En examen är ett officiellt kompetenspaket som definieras och regleras av Utbildningsstyrelsen. Endast officiella utbildningsanordnare kan bevilja examina.",
-            "paragraph-2": "Examensuppgifterna i Kompetensstigen hämtas från utbildningsutbudsdata i Studieinfo. AI:n grupperar utbildningarna enligt vilka färdigheter de lär ut och vilket utbildningsområde och vilken officiell examensklassificering de tillhör."
-          },
-          "tooltip-other-education": {
-            "title": "Övrig utbildning",
-            "paragraph-1": "Övrig utbildning avser utbildning som inte leder till en examen. Den kan utveckla kompetens för arbetslivet eller för personliga behov.",
-            "paragraph-2": "Information om övrig utbildning hämtas från utbildningsutbudsdata i Studieinfo. AI:n grupperar utbildningarna baserat på inlärda färdigheter och utbildningsområde."
+            "paragraph-2": "Utför sökningen, varefter du får arbets- och utbildningsmöjligheter som du kan bläddra igenom.",
+            "title": "Välj intressen och kunskaper"
           },
           "tooltip-content-created-with-ai": {
-            "title": "Innehåll skapat med AI",
             "item-1-bold": "Kunskaper identifieras",
             "item-1-text": "från jobbannonser på Tjänsten Arbetsmarknaden och utbildningsbeskrivningar i Kompetensstigen.",
             "item-2-bold": "Arbets- och utbildningsmöjligheter skapas",
@@ -149,15 +130,35 @@
             "item-3-bold": "AI skriver sammanfattningar av arbets- och utbildningsmöjligheter",
             "item-3-text": "baserat på de underliggande jobban nonserna, yrkesinformationen och utbildningsbeskrivningarna i utbildningsutbudet. Personuppgifter tas bort från källmaterialet.",
             "item-4-bold": "AI översätter de texter den skriver till svenska och engelska",
-            "note": "Obs! Innehåll som producerats av AI kan innehålla fel."
+            "note": "Obs! Innehåll som producerats av AI kan innehålla fel.",
+            "title": "Innehåll skapat med AI"
+          },
+          "tooltip-degrees": {
+            "paragraph-1": "En examen är ett officiellt kompetenspaket som definieras och regleras av Utbildningsstyrelsen. Endast officiella utbildningsanordnare kan bevilja examina.",
+            "paragraph-2": "Examensuppgifterna i Kompetensstigen hämtas från utbildningsutbudsdata i Studieinfo. AI:n grupperar utbildningarna enligt vilka färdigheter de lär ut och vilket utbildningsområde och vilken officiell examensklassificering de tillhör.",
+            "title": "Examina"
+          },
+          "tooltip-other-education": {
+            "paragraph-1": "Övrig utbildning avser utbildning som inte leder till en examen. Den kan utveckla kompetens för arbetslivet eller för personliga behov.",
+            "paragraph-2": "Information om övrig utbildning hämtas från utbildningsutbudsdata i Studieinfo. AI:n grupperar utbildningarna baserat på inlärda färdigheter och utbildningsområde.",
+            "title": "Övrig utbildning"
+          },
+          "tooltip-other-work-opportunities": {
+            "paragraph-1": "Andra arbetsmöjligheter är AI-sammanställda grupperingar av jobb som kräver liknande kunskaper och egenskaper.",
+            "paragraph-2": "AI:n läser jobbannonser från Tjänsten Arbetsmarknaden och identifierar erforderliga färdigheter, tillstånd, körkort och nämnda yrken. Annonser med tillräcklig information grupperas till arbetsmöjligheter baserat på innehållet.",
+            "title": "Annan arbetsmöjlighet"
+          },
+          "tooltip-professions": {
+            "paragraph-1": "Ett yrke är en helhet som beskriver de uppgifter, färdigheter och ansvar som ingår i ett arbete. Många yrken kräver utbildning, men en del kan också läras in genom praktiskt arbete.",
+            "paragraph-2": "Yrkesuppgifterna i Kompetensstigen hämtas från Yrkesdata i Tjänsten Arbetsmarknaden. Uppgifterna har inte behandlats med AI.",
+            "title": "Yrken"
+          },
+          "tooltip-service-helps-with-ai": {
+            "paragraph-1": "AI:n identifierar kunskaper och intressen från den text du anger och annan information (CV, utbildningsuppgifter).",
+            "paragraph-2": "AI:n kan också kommunicera med dig och hjälpa dig att identifiera lämpliga kunskaper och intressen.",
+            "title": "Kartläggning av intressen och kunskaper"
           }
         },
-        "data-sources": {
-          "title": "Datakällor",
-          "description": "Min kompetensstig information kommer från yrkesdata och jobbannonser på Työmarkkinatori, samt utbildningserbjudanden från Opintopolku. AI:n skapar arbets- och utbildningsmöjligheter i Min kompetensstig baserat på denna data.",
-          "read-more-link": "Läs mer om användningen av AI i Kompetensstigen"
-        },
-        "description": "Min kompetensstig hjälper dig att reflektera över dina egna kunskaper och din framtid. Du kan enkelt och överskådligt kartlägga dina färdigheter, styrkor och intressen, och få en bättre förståelse för vad du kan och vilka möjligheter du kan dra nytta av dina kunskaper. Tjänsten öppnar möjligheter framför dig som du kanske inte har tänkt på tidigare.\n<br> <br>\nNär du använder tjänsten hittar du snabbt utbildnings- och jobbalternativ som passar dig samt olika stigar som du kan följa mot dina mål. Du kan bläddra bland alternativen utan att logga in, men genom att logga in får du tillgång till din egen kompetensprofil där du kan spara din arbetslivshistoria, utbildning, intressen och mål. Du ser allt väsentligt på ett och samma ställe och kan följa din egen utveckling tydligt. Din kompetensprofil utvecklas med dig och hjälper dig att göra djärvare och mer välgrundade val.\n<br> <br>\nOm du behöver stöd i beslutsfattande guidar tjänsten dig enkelt till väglednings- och rådgivningstjänster, så att du inte behöver fundera över saker ensam. Du kan söka hjälp baserat på till exempel ditt bostadsområde eller situation och hitta en lämplig organisation för att stödja dina yrkesval. På så sätt får du både verktyg och stöd för att bygga din egen stig – vare sig du letar efter en ny riktning, överväger en karriärväxling eller strävar efter nya möjligheter i arbetslivet.",
         "navTitle": "Min kompetensstig"
       }
     },
