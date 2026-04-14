@@ -37,7 +37,7 @@ const AiUsage = () => {
         navTitle: t('ai-usage.why-ai.title'),
         content: (
           <div className="max-w-full">
-            <p className="mb-6 text-body-lg-mobile sm:text-body-lg">{t('ai-usage.why-ai.description')}</p>
+            <p className="mb-7 text-body-lg-mobile sm:text-body-lg">{t('ai-usage.why-ai.description')}</p>
             <p className="mb-5 text-body-md-mobile sm:text-body-md">{t('ai-usage.why-ai.possibilities.title')}</p>
 
             <div className="flex flex-col gap-2">
@@ -50,7 +50,7 @@ const AiUsage = () => {
                 titleText={t('ai-usage.why-ai.possibilities.item-2.title')}
                 content={
                   <>
-                    <p className="mb-3 font-poppins text-heading-5">
+                    <p className="mb-5 font-poppins text-heading-5 sm:mb-3">
                       <Trans i18nKey="ai-usage.why-ai.possibilities.item-2.work.title" />
                     </p>
                     <p>{t('ai-usage.why-ai.possibilities.item-2.work.description-1')}</p>
@@ -61,7 +61,7 @@ const AiUsage = () => {
                     </ul>
                     <Trans i18nKey="ai-usage.why-ai.possibilities.item-2.work.description-2" />
 
-                    <p className="mt-4 mb-3 font-poppins text-heading-5">
+                    <p className="mt-8 mb-5 font-poppins text-heading-5 sm:mt-7 sm:mb-3">
                       <Trans i18nKey="ai-usage.why-ai.possibilities.item-2.education.title" />
                     </p>
                     <p>{t('ai-usage.why-ai.possibilities.item-2.education.description-1')}</p>
@@ -96,9 +96,9 @@ const AiUsage = () => {
       {
         navTitle: t('ai-usage.ai-methods.title'),
         content: (
-          <div>
-            <p>{t('ai-usage.ai-methods.description-1')}</p>
-            <ul className="mt-3 mb-3 ml-6 list-disc">
+          <div className="[&_p]:mt-6 [&_p]:first:mt-0 sm:[&_p]:mt-5">
+            {t('ai-usage.ai-methods.description-1')}
+            <ul className="mt-3 mb-5 ml-6 list-disc sm:mb-4">
               <li>{t('ai-usage.ai-methods.list.item-1')}</li>
               <li>{t('ai-usage.ai-methods.list.item-2')}</li>
               <li>{t('ai-usage.ai-methods.list.item-3')}</li>
@@ -114,11 +114,10 @@ const AiUsage = () => {
       {
         navTitle: t('ai-usage.security.title'),
         content: (
-          <div>
-            <p>
-              <Trans i18nKey="ai-usage.security.description-1" />
-            </p>
-            <ul className="mb-4 ml-6 list-disc">
+          <div className="[&_p]:mt-6 [&_p]:first:mt-0 sm:[&_p]:mt-5">
+            <Trans i18nKey="ai-usage.security.description-1" />
+
+            <ul className="mt-3 ml-6 list-disc">
               <li>{t('ai-usage.security.list.item-1')}</li>
               <li>{t('ai-usage.security.list.item-2')}</li>
               <li>{t('ai-usage.security.list.item-3')}</li>
@@ -131,11 +130,10 @@ const AiUsage = () => {
       {
         navTitle: t('ai-usage.effect.title'),
         content: (
-          <div>
-            <p>
-              <Trans i18nKey="ai-usage.effect.description" />
-            </p>
-            <ul className="mb-3 ml-6 list-disc">
+          <div className="[&_p]:mt-6 [&_p]:first:mt-0 sm:[&_p]:mt-5">
+            <Trans i18nKey="ai-usage.effect.description" />
+
+            <ul className="mt-3 ml-6 list-disc">
               <li>{t('ai-usage.effect.list.item-1')}</li>
               <li>{t('ai-usage.effect.list.item-2')}</li>
               <li>{t('ai-usage.effect.list.item-3')}</li>
@@ -147,24 +145,24 @@ const AiUsage = () => {
       {
         navTitle: t('ai-usage.functionality-tracking.title'),
         content: (
-          <div>
-            <p>{t('ai-usage.functionality-tracking.description-1')}</p>
-            <ul className="mb-4 ml-6 list-disc">
+          <div className="[&_p]:mt-6 [&_p]:first:mt-0 sm:[&_p]:mt-5">
+            {t('ai-usage.functionality-tracking.description-1')}
+            <ul className="mt-3 ml-6 list-disc">
               <li>{t('ai-usage.functionality-tracking.list.item-1')}</li>
               <li>{t('ai-usage.functionality-tracking.list.item-2')}</li>
               <li>{t('ai-usage.functionality-tracking.list.item-3')}</li>
               <li>{t('ai-usage.functionality-tracking.list.item-4')}</li>
             </ul>
-            <p>{t('ai-usage.functionality-tracking.description-2')}</p>
+            {t('ai-usage.functionality-tracking.description-2')}
           </div>
         ),
       },
       {
         navTitle: t('ai-usage.limitation-of-liability.title'),
         content: (
-          <p>
+          <div className="[&_p]:mt-6 [&_p]:first:mt-0 sm:[&_p]:mt-5">
             <Trans i18nKey="ai-usage.limitation-of-liability.description" />
-          </p>
+          </div>
         ),
       },
     ];
@@ -180,15 +178,17 @@ const AiUsage = () => {
       <title>{title}</title>
       <IconHeading icon={<JodAi />} title={title} testId="about-ai-title" />
 
-      <div className="font-arial">
+      <div>
         {sections.map((section) => (
-          <div key={section.navTitle} className="mb-7 flex flex-col">
+          <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
             <ScrollHeading
               title={section.navTitle}
               heading="h2"
               className={`font-poppins text-heading-2-mobile sm:text-heading-2 ${(section.showNavTitle ?? true) ? 'mb-3' : 'size-0 text-[0px] text-transparent'}`}
             />
-            <div className="flex flex-row justify-between">{section.content}</div>
+            <div className="flex flex-row justify-between font-arial text-body-md-mobile sm:text-body-md">
+              {section.content}
+            </div>
           </div>
         ))}
       </div>

@@ -14,7 +14,7 @@ export const IconHeading = ({
   textClassName = 'text-secondary-1-dark-2',
 }: IconHeadingProps) => {
   return (
-    <div className="mb-6 flex items-center gap-x-4 sm:mb-8">
+    <div className="mb-6 flex items-center gap-x-4 sm:mb-6">
       {icon && (
         <span
           className={`flex aspect-square size-9 items-center justify-center rounded-full text-white ${bgClassName}`}

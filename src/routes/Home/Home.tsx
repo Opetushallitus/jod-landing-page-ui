@@ -236,7 +236,9 @@ const Home = () => {
       <title>{t('common:osaamispolku')}</title>
       <MainCard />
       <Content title={t('home.welcome.title')} className="mt-7 lg:mt-8" verticalPaddingClass="pt-7 lg:pt-8">
-        <p className="max-w-[716px] text-body-lg whitespace-pre-line">{t('home.welcome.content')}</p>
+        <p className="max-w-[716px] text-body-lg-mobile whitespace-pre-line sm:text-body-lg">
+          {t('home.welcome.content')}
+        </p>
       </Content>
       <Content title={t('home.competency-path-help.situation.title')} headingLevel={2}>
         <div className="flex flex-col gap-3">
@@ -307,11 +309,11 @@ const Home = () => {
         />
       </Content>
       <Content title={t('home.competency-path-help.you.title')} headingLevel={2} headingClassName="max-w-[748px]!">
-        <div className="flex max-w-[748px] flex-col gap-5 text-body-lg whitespace-pre-line sm:gap-6">
+        <div className="flex max-w-[748px] flex-col gap-5 text-body-lg-mobile whitespace-pre-line sm:gap-6 sm:text-body-lg">
           <p>{t('home.competency-path-help.you.text-1')}</p>
           <p>{t('home.competency-path-help.you.text-2')}</p>
         </div>
-        <div className="mt-6 flex flex-col gap-7 sm:flex-row sm:flex-wrap">
+        <div className="mt-6 flex flex-col gap-7 font-arial text-body-md-mobile sm:flex-row sm:flex-wrap sm:text-body-md">
           <div className="flex flex-col gap-5 md:max-w-[320px]">
             <div className="flex h-[70px] flex-col items-start justify-center">{opintopolkuLogo}</div>
             <div>
