@@ -2,12 +2,30 @@ import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 
+import { Button } from '@jod/design-system';
+import { JodOpenInNew } from '@jod/design-system/icons';
+
 import { BasicArticleSectionContent } from '@/components/ArticleSectionContent/BasicArticleSectionContent';
 import { ArticleSectionPage } from '@/components/ArticleSectionPage/ArticleSectionPage';
 import { createArticleSectionData } from '@/utils';
 
 import { ArticleSection } from '../types';
 import { MyPathImage } from './MyPathImage';
+
+const ExternalLink = ({ children, className }: { children: React.ReactNode; className?: string }) => {
+  const { t } = useTranslation();
+
+  return (
+    <a
+      href={t('about-service.sections.guidelines.linkUrl')}
+      className={className}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
+  );
+};
 
 const AboutService = () => {
   const {
@@ -50,6 +68,19 @@ const AboutService = () => {
       createArticleSectionData(
         t('about-service.sections.guidance-and-counseling.navTitle'),
         <Trans i18nKey="about-service.sections.guidance-and-counseling.description" />,
+      ),
+      createArticleSectionData(
+        t('about-service.sections.guidelines.navTitle'),
+        <div className="flex flex-col gap-5">
+          <Trans i18nKey="about-service.sections.guidelines.description" />
+          <Button
+            label={t('about-service.sections.guidelines.linkLabel')}
+            iconSide="right"
+            icon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
+            linkComponent={ExternalLink}
+            className="w-fit"
+          />
+        </div>,
       ),
       createArticleSectionData(
         t('about-service.sections.jod-project.navTitle'),

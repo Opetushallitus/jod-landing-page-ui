@@ -88,6 +88,12 @@
         "description": "De tjänster som finns i väglednings- och rådgivningstjänsterna hjälper dig att fundera på dina karriär- och utbildningsalternativ. Du kan avgränsa listan över tjänster enligt teman som intresserar dig och till exempel din bostadsort, så att du hittar de tjänster som passar dig bäst.",
         "navTitle": "Väglednings- och rådgivningstjänster"
       },
+      "guidelines": {
+        "description": "Utforska de gemensamma riktlinjerna för att använda information i JOD-tjänster. Riktlinjerna hjälper dig att använda informationen som tillhandahålls av tjänsterna effektivt för olika ändamål.",
+        "linkLabel": "Gå till riktlinjer",
+        "linkUrl": "/tietopalvelu/sv/anvisningar-for-dataanvandare",
+        "navTitle": "Riktlinjer för informationsanvändare"
+      },
       "info-service": {
         "description": "Informationstjänsten sammanställer information om kompetens, arbetsmarknad och utbildning från olika informationskällor till allas förfogande, till exempel för utbildningsorganisationer, arbetslivsaktörer och representanter för olika förvaltningsområden.",
         "navTitle": "Informationstjänst"

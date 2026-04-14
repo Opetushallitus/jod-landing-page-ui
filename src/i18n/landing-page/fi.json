@@ -88,6 +88,12 @@
         "description": "Ohjaus- ja neuvontapalveluista löytyvät palvelut auttavat sinua työ- ja koulutusvaihtoehtoihin liittyvässä pohdinnassa. Voit rajata palveluiden listaa sinua kiinnostavien teemojen ja esimerkiksi asuinpaikkasi perusteella, jotta löydät sinulle parhaiten sopivat palvelut.",
         "navTitle": "Ohjaus- ja neuvontapalveluja"
       },
+      "guidelines": {
+        "description": "Tutustu JOD-palveluiden yhteisiin ohjeisiin tiedon hyödyntämisestä. Ohjeet auttavat sinua käyttämään palveluiden tarjoamaa tietoa tehokkaasti eri käyttötarkoituksiin.",
+        "linkLabel": "Siirry ohjeisiin",
+        "linkUrl": "/tietopalvelu/fi/ohjeita-tiedon-hyodyntajille",
+        "navTitle": "Ohjeita tiedon hyödyntäjille"
+      },
       "info-service": {
         "description": "Tietopalvelu kokoaa yhteen osaamiseen, työmarkkinaan ja koulutukseen liittyvää tietoa eri tietolähteistä kaikkien käyttöön kuten esimerkiksi koulutusorganisaatioille, työelämätoimijoille ja eri hallinnonalan edustajille.",
         "navTitle": "Tietopalvelu"
