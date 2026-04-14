@@ -88,6 +88,12 @@
         "description": "The services found under guidance and counselling services help you consider your career and education choices. You can narrow the list of services based on themes that interest you and, for example, where you live to find the most suitable services for you.",
         "navTitle": "Guidance and counselling services"
       },
+      "guidelines": {
+        "description": "Explore the common guidelines for utilizing information in JOD services. The guidelines help you use the information provided by the services effectively for different purposes.",
+        "linkLabel": "Go to guidelines",
+        "linkUrl": "/tietopalvelu/en/instructions-for-users-of-information",
+        "navTitle": "Guidelines for information users"
+      },
       "info-service": {
         "description": "The information service compiles information related to competence, the labour market and education from different sources for use by a wide range of users, including educational organisations, working life actors and representatives of different administrative sectors.",
         "navTitle": "Information service"
