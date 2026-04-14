@@ -26,6 +26,9 @@
   "about-individuals": {
     "intro": "Kompetensstigen är en ny, kostnadsfri webbtjänst som hjälper dig med karriärplanering, kompetensutveckling och arbetssökande oavsett var du befinner dig i ditt arbetsliv. Det är värt att testa Kompetensstigen för alla som funderar på sin väg framåt — oavsett om det handlar om utbildning, karriärval eller anställning.",
     "sections": {
+      "1": {
+        "description": "<p>Idag finns det allt fler karriärvägar att välja mellan, och fler än någonsin gör stora förändringar under sitt arbetsliv. Kompetenskraven genomgår dessutom konstant förändring. Kompetensstigen har utvecklats för att fungera som ett stöd för att hantera förändringar i arbetslivet.</p><br>– Kompetensstigen finns till för att hjälpa människor att planera sin karriär på ett strukturerat sätt. Använd tjänsten för att skapa en tydligare bild av din situation och dina valmöjligheter, oavsett om du är arbetssökande, planerar ett karriärbyte, eller om du vill kartlägga dina behov av kompetensutveckling. För unga människor som funderar över sin framtid samlar Kompetensstigen en stor mängd information om olika yrken och utbildningsområden, säger <strong>Tiina Salminen,</strong> senior specialist på arbets- och näringsministeriet."
+      },
       "10": {
         "description": "<List><ListItem><Link href=\"https://osaamispolku.fi/yksilo/sv/verktyg\" target=\"_blank\"><strong>Upptäck nya möjligheter:</strong></Link> Sammanställ dina kompetenser och intressen för att se vilka utbildningar eller jobb som kan passa dig. Du kan dessutom utforska utbildningar och yrkesområden direkt, inklusive löneinformation och prognoser för sysselsättning.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/yksilo/sv/logga-in\" target=\"_blank\"><strong>Skapa din egen kompetensprofil:</strong></Link> Spara din arbetslivserfarenhet, din utbildningsbakgrund och dina prestationer i din kompetensprofil. Du kan använda informationen för att hitta passande jobb- och studiemöjligheter i Kompetensstigen, samt när du söker jobb. Du kan även sätta upp mål och planera vägar för att nå dem. Du bestämmer hur och var informationen används, och vem den delas med.</ListItem><ListItem><Link href=\"https://www.suomi.fi/amne/vaglednings-och-radgivningstjanster\" target=\"_blank\"><strong>Studie- och yrkesvägledare:</strong></Link> Se vilka vägledningstjänster som finns tillgängliga i din kommun.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/tietopalvelu/sv\" target=\"_blank\"><strong>Informationstjänsten:</strong></Link> Kompetensstigens informationstjänst ger dig ett brett utbud av pålitlig och aktuell statistik kring arbetsmarknad, utbildning och kompetens.</ListItem></List>",
         "navTitle": "Varför ska du testa Kompetensstigen?"
@@ -39,9 +42,6 @@
       },
       "13": {
         "description": "<i>Kompetensstigen lanserades i januari 2026. Tjänsten är tillgänglig på finska, svenska och engelska. Kompetensstigen drivs av undervisnings- och kulturministeriet, arbets- och näringsministeriet, utbildningsstyrelsen och UF-centret.</i>"
-      },
-      "1": {
-        "description": "<p>Idag finns det allt fler karriärvägar att välja mellan, och fler än någonsin gör stora förändringar under sitt arbetsliv. Kompetenskraven genomgår dessutom konstant förändring. Kompetensstigen har utvecklats för att fungera som ett stöd för att hantera förändringar i arbetslivet.</p><br>– Kompetensstigen finns till för att hjälpa människor att planera sin karriär på ett strukturerat sätt. Använd tjänsten för att skapa en tydligare bild av din situation och dina valmöjligheter, oavsett om du är arbetssökande, planerar ett karriärbyte, eller om du vill kartlägga dina behov av kompetensutveckling. För unga människor som funderar över sin framtid samlar Kompetensstigen en stor mängd information om olika yrken och utbildningsområden, säger <strong>Tiina Salminen,</strong> senior specialist på arbets- och näringsministeriet."
       },
       "2": {
         "description": "<p>Kompetensstigen ger dig verktyg för att kartlägga kompetenser och intressen, samt planera utbildnings- och karriärvägar. Tjänsten hjälper dig att skapa en tydlig bild som kopplar samman din kompetens och dina möjliga vägar framåt med aktuell arbetsmarknadsinformation.</p><br><p>– Kompetensstigens viktigaste uppgift är att fungera som ett stöd som hjälper människor att fatta väl underbyggda beslut kring utbildning, jobb och kompetensutveckling. Vi vet att till och med avgörande beslut ibland tas baserat på bristande information. Många ser exempelvis bara de karriärmöjligheter eller utbildningar som är tillgängliga just nu – inte det breda utbud av möjligheter som faktiskt finns där, säger <strong>Tomi Kytölä,</strong> senior specialist på undervisnings- och kulturministeriet.</p><br><p>Kompetensstigen är extra användbar för dig som står inför ett vägval och är osäker på ditt beslut. Kartläggningsverktygen kan vara ett bra stöd innan du börjar söka jobb eller utbildningar. Tjänsten tar inte själva besluten, men den hjälper dig med information som fungerar som ett stöd i processen.</p><br><p>– Kompetensstigen tar inte besluten åt dig. Målet är att alla ska kunna ta väl underbyggda karriär- och utbildningsbeslut baserat på ett tillräckligt bra underlag som speglar personliga målsättningar, tillägger Kytölä.</p>",
@@ -215,11 +215,11 @@
       "description-1": "Följande metoder och komponenter används i tjänsten:",
       "description-2": "Verktyg, mallar och metoder används på Amazon Web Services (AWS) molnplattformen. AWS upprätthåller vår privata infrastruktur och största delen av samtalsloggarna, som omfattar meddelanden, samtalsämne, tidsstämplar och telemetridata.",
       "list": {
-        "item-1": "maskininlärningsmodeller för identifiering av kompetenser (bland annat TFIDF och FinBERT)",
-        "item-2": "klusteralgoritmer (DBSCAN och KMeans) för gruppering av arbetsplatsannonser och utbildningsutbud till arbets- och utbildningsmöjligheter",
-        "item-3": "generativ artificiell intelligens (Claude 3.5 Sonnet) för att producera beskrivningar och sammanfattningar",
-        "item-4": "rekommendationsalgoritmer som kombinerar kompetenser och intressen till utbildnings- och karriärmöjligheter",
-        "item-5": "en diskuterande intressekartläggare som använder språkmodeller (Claude 3.5 Sonnet) för att föra en diskussion och RAG-funktionalitet (Retrieval-Augmented Generation) för att hantera och använda olika hjälpmedel och material som stöd för vägledningsarbetet och kartläggningsarbetet under diskussionen."
+        "item-1": "maskininlärningsmodeller för identifiering av kompetenser (bland annat TF-IDF och FinBERT)",
+        "item-2": "klusteralgoritmer (bland annat DBSCAN och KMeans) för gruppering av arbetsplatsannonser och utbildningsutbud till arbets- och utbildningsmöjligheter",
+        "item-3": "generativ artificiell intelligens för att skapa beskrivande texter och sammanfattningar samt erbjuda konversationsstöd för att kartlägga kompetenser och intressen (Claude Sonnet 4.5)",
+        "item-4": "rekommendationsalgoritmer (bland annat logistisk regression och StandardScaler) som kombinerar kompetenser och intressen till utbildnings- och karriärmöjligheter",
+        "item-5": "en diskuterande intressekartläggare som använder språkmodeller (Claude 3 Haiku) för att föra en diskussion och RAG-funktionalitet (Retrieval-Augmented Generation) för att hantera och använda olika hjälpmedel och material som stöd för vägledningsarbetet och kartläggningsarbetet under diskussionen."
       },
       "title": "Vilka AI-metoder används?"
     },
@@ -295,8 +295,8 @@
           "title": "Produktion av rekommendationer (individuella rekommendationer för utbildnings- och karriärmöjligheter baserat på de uppgifter du har matat in)"
         },
         "item-4": {
-          "description": "Artificiell intelligens kan också diskutera med användaren och hjälpa hen att hitta lämpliga alternativ för intressen samt ge diskussions- och reflektionshjälp för funderingar över intressen. Den förstår meddelanden som användaren skrivit och svarar på dem på ett användbart sätt. En diskuterande intressekartläggare kan använda olika material och information om vägledningsbranschen som hjälp.",
-          "title": "Diskussionshjälp för att kartlägga intressen"
+          "description": "AI kan också samtala med användaren och hjälpa denna att hitta lämpliga alternativ till intresseområden och kompetenser samt ge stöd för samtal och reflektion kring intresseområden och egna kompetenser. Det förstår användarens skrivna meddelanden och svarar användbart på dem. Den samtalsbaserade intressekartläggaren kan använda sig av olika vägledningsmaterial och uppgifter om yrken och kompetenser.",
+          "title": "Diskussionshjälp för att kartlägga intressen och kunskaper"
         },
         "item-5": {
           "description": "Artificiell intelligens skriver sammanfattningar av arbets- och utbildningsmöjligheter baserat på deras underliggande arbetsplatsannonser, yrkeskunskap och beskrivningarna av utbildningarna i utbildningsutbudet för att göra dem lättare för användaren att förstå. Eventuella personuppgifter tas bort från bakgrundsmaterialet. <br/><br/>Artificiell intelligens översätter texterna den skrivit till svenska och engelska. ",
@@ -600,10 +600,6 @@
       },
       "title": "Syftet med behandlingen av personuppgifter"
     },
-    "info-about-3rd-country": {
-      "description": "Uppgifterna lagras i serverhallar hos tjänsteleverantören Amazon Web Services inom EU. Uppgifterna överförs inte till länder utanför EU eller Europeiska ekonomiska samarbetsområdet.",
-      "title": "Information om överföringen av uppgifter till tredje land och om skyddsåtgärder som vidtas"
-    },
     "info": {
       "contact": {
         "content": "Riku Hanhinen",
@@ -629,6 +625,10 @@
         "content": "Utbildningsstyrelsen och UF-centret",
         "title": "Den personuppgiftsansvarige:"
       }
+    },
+    "info-about-3rd-country": {
+      "description": "Uppgifterna lagras i serverhallar hos tjänsteleverantören Amazon Web Services inom EU. Uppgifterna överförs inte till länder utanför EU eller Europeiska ekonomiska samarbetsområdet.",
+      "title": "Information om överföringen av uppgifter till tredje land och om skyddsåtgärder som vidtas"
     },
     "intro": {
       "description": "Denna dataskyddsbeskrivning beskriver hur personuppgifter behandlas i tjänsten Kompetensstigen. Beskrivningen förklarar också vilka rättigheter de registrerade personerna har och hur dessa rättigheter kan utövas. Som registrerade räknas personer som har skapat en kompetensprofil och personer som är inloggade på vägledarens skrivbord. <br/><br/>Dataskyddsbeskrivningen uppdateras regelbundet. Du hittar alltid den aktuella versionen på denna sida",

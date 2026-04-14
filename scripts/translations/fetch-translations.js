@@ -18,12 +18,38 @@ const I18N_DIR = path.resolve(__dirname, '../..', 'src', 'i18n');
 const LANGUAGES = ['en', 'fi', 'sv'];
 
 /**
+ * Serialize JSON with keys sorted lexicographically to match VS Code's lexicographic sort behaviour.
+ */
+function sortedJsonStringify(value, indent = 2) {
+  function serialize(val, depth) {
+    if (val === null || typeof val !== 'object') return JSON.stringify(val);
+
+    const pad = ' '.repeat(indent * depth);
+    const innerPad = ' '.repeat(indent * (depth + 1));
+
+    if (Array.isArray(val)) {
+      if (val.length === 0) return '[]';
+      const items = val.map((item) => `${innerPad}${serialize(item, depth + 1)}`);
+      return `[\n${items.join(',\n')}\n${pad}]`;
+    }
+
+    const keys = Object.keys(val).sort();
+    if (keys.length === 0) return '{}';
+    const entries = keys.map((key) => `${innerPad}${JSON.stringify(key)}: ${serialize(val[key], depth + 1)}`);
+    return `{\n${entries.join(',\n')}\n${pad}}`;
+  }
+
+  return serialize(value, 0);
+}
+
+/**
  * Write data to file
  */
 function writeToFile(outputPath, data) {
   return new Promise((resolve, reject) => {
+    const parsed = JSON.parse(data);
     // Ensure file ends with exactly one newline (Prettier requirement)
-    const formattedData = data.trimEnd() + '\n';
+    const formattedData = sortedJsonStringify(parsed) + '\n';
 
     fs.writeFile(outputPath, formattedData, 'utf-8', (err) => {
       if (err) {

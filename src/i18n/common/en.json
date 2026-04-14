@@ -20,22 +20,22 @@
       "hereLabel": "here",
       "name": "Cookie settings",
       "readMoreHref": "/en/privacy-notice-and-cookies",
-      "readMoreLabel": "Read more about our cookies and privacy practices",
+      "readMoreLabel": "Read more about our cookies and privacy practices.",
       "statisticsDescription": "We use Matomo to track the number of visitors to the service. This does not require separate consent.",
       "title": "We use cookies"
     }
   },
   "delete": "Delete",
-  "error-boundary": {
-    "session-expired": "Your session has expired. You must log in to the service again or use the service without logging in.",
-    "title": "An error occurred",
-    "unexpected": "An unexpected error occurred. This may be due to a loss of network connection or a service error."
-  },
   "error": {
     "form": {
       "email": "Check the email address",
       "required": "Mandatory field"
     }
+  },
+  "error-boundary": {
+    "session-expired": "Your session has expired. You must log in to the service again or use the service without logging in.",
+    "title": "An error occurred",
+    "unexpected": "An unexpected error occurred. This may be due to a loss of network connection or a service error."
   },
   "external-link": "The link leads outside the service",
   "feedback": {
