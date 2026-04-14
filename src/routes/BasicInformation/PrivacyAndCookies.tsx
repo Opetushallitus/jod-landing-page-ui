@@ -504,26 +504,30 @@ const PrivacyAndCookies = () => {
       <IconHeading icon={<JodInfo />} title={title} testId="privacy-policy-title" />
       <InfoBox items={infoBoxItems} className="mb-8" />
 
-      <div className="font-arial">
+      <div>
         {privacyPolicySections.map((section) => (
-          <div key={section.navTitle} className="mb-8 flex flex-col">
+          <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
             <ScrollHeading
               title={section.navTitle}
               heading="h2"
               className={`font-poppins text-heading-2-mobile sm:text-heading-2 ${(section.showNavTitle ?? true) ? 'mb-3' : 'size-0 text-[0px] text-transparent'}`}
             />
-            <div className="flex flex-col justify-between">{section.content}</div>
+            <div className="font-arial text-body-md-mobile sm:text-body-md [&_p]:mb-6 [&_p]:last:mb-0 sm:[&_p]:mb-5">
+              {section.content}
+            </div>
           </div>
         ))}
 
         {cookiesSections.map((section) => (
-          <div key={section.navTitle} className="mb-8 flex flex-col">
+          <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
             <ScrollHeading
               title={section.navTitle}
               heading="h2"
               className={`font-poppins text-heading-2-mobile sm:text-heading-2 ${(section.showNavTitle ?? true) ? 'mb-3' : 'size-0 text-[0px] text-transparent'}`}
             />
-            <div className="flex flex-col justify-between">{section.content}</div>
+            <div className="font-arial text-body-md-mobile sm:text-body-md [&_p]:mb-6 [&_p]:last:mb-0 sm:[&_p]:mb-5">
+              {section.content}
+            </div>
           </div>
         ))}
       </div>

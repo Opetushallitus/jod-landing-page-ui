@@ -5,5 +5,5 @@ export const BasicArticleSectionContent = ({
   text: React.ReactNode;
   onlyText?: boolean;
 }) => {
-  return <div>{onlyText ? <p className="mb-4 last:mb-0">{text}</p> : text}</div>;
+  return onlyText ? <p className="mb-4 last:mb-0">{text}</p> : text;
 };

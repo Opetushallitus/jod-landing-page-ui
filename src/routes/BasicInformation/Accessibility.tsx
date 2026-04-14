@@ -38,11 +38,11 @@ const Accessibility = () => {
 
       createArticleSectionData(
         t('accessibility.sections.planned-fixes.navTitle'),
-        t('accessibility.sections.planned-fixes.description'),
+        <Trans i18nKey="accessibility.sections.planned-fixes.description" />,
       ),
       createArticleSectionData(
         t('accessibility.sections.updates.navTitle'),
-        t('accessibility.sections.updates.description'),
+        <Trans i18nKey="accessibility.sections.updates.description" />,
       ),
       createArticleSectionData(
         t('accessibility.sections.feedback.navTitle'),

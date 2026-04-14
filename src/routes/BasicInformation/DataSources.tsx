@@ -149,15 +149,15 @@ const DataSources = () => {
       return {
         navTitle,
         content: (
-          <div>
+          <>
             {paragraphs.map((p) => (
-              <p key={p.slice(0, 25)} className="mb-4 last:mb-0">
+              <p key={p.slice(0, 25)} className="mt-6 first:mt-0 sm:mt-5">
                 {p}
               </p>
             ))}
             {links?.length > 1 ? (
               <>
-                <p className="mb-2">{readMore}</p>
+                <p className="mt-6 mb-2 sm:mt-5">{readMore}</p>
                 <ul className="ml-6 list-disc">
                   {links.map((l) => (
                     <li key={l.href}>
@@ -175,7 +175,7 @@ const DataSources = () => {
                 </ul>
               </>
             ) : (
-              <p className="mb-2">
+              <p className="mt-6 mb-2 sm:mt-5">
                 {readMore}{' '}
                 <a
                   href={links[0].href}
@@ -188,7 +188,7 @@ const DataSources = () => {
                 </a>
               </p>
             )}
-          </div>
+          </>
         ),
       };
     });
@@ -204,19 +204,19 @@ const DataSources = () => {
       <title>{title}</title>
       <IconHeading icon={<JodInfo />} title={title} testId="data-sources-title" />
 
-      <div className="font-arial">
+      <div>
         <div className="mb-7 flex flex-col">
           <p className="text-body-lg-mobile sm:text-body-lg">{t('data-sources.intro')}</p>
         </div>
 
         {sections.map((section) => (
-          <div key={section.navTitle} className="mb-7 flex flex-col">
+          <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
             <ScrollHeading
               title={section.navTitle}
               heading="h2"
-              className="mb-3 font-poppins text-heading-2-mobile sm:text-heading-2"
+              className="mb-5 font-poppins text-heading-2-mobile sm:mb-3 sm:text-heading-2"
             />
-            <div className="flex flex-row justify-between">{section.content}</div>
+            <div className="font-arial text-body-md-mobile sm:text-body-md">{section.content}</div>
           </div>
         ))}
       </div>

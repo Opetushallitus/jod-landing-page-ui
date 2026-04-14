@@ -38,10 +38,9 @@ const AboutService = () => {
       createArticleSectionData(
         t('about-service.sections.my-path.navTitle'),
         <>
-          <p className="mb-5">
-            <Trans i18nKey="about-service.sections.my-path.description" />
-          </p>
-          <h3 className="mb-5 font-poppins text-heading-3-mobile sm:text-heading-3">
+          <Trans i18nKey="about-service.sections.my-path.description" />
+
+          <h3 className="mt-8 mb-5 font-poppins text-heading-3-mobile sm:mt-7 sm:mb-3 sm:text-heading-3">
             {t('about-service.sections.my-path.data-sources.title')}
           </h3>
           <p className="mb-8">
