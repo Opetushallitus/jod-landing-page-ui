@@ -2,7 +2,7 @@ import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 
-import { type MenuSection, PageNavigation, useMediaQueries } from '@jod/design-system';
+import { Button, cx, type MenuSection, PageNavigation, useCookieConsent, useMediaQueries } from '@jod/design-system';
 import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
 
 import { MainLayout } from '@/components';
@@ -42,6 +42,7 @@ const PrivacyAndCookies = () => {
   const { t } = useTranslation();
   const { lg } = useMediaQueries();
   const title = t('privacy-policy-and-cookies.title');
+  const { open: openCookieConsent } = useCookieConsent();
 
   const yksiloRegisterContent: RegisterContentItem[] = React.useMemo(() => {
     return [
@@ -167,9 +168,14 @@ const PrivacyAndCookies = () => {
       {
         navTitle: t('privacy-policy-and-cookies.intro.title'),
         content: (
-          <p>
-            <Trans i18nKey="privacy-policy-and-cookies.intro.description" />
-          </p>
+          <>
+            <p className="text-body-lg-mobile sm:text-body-lg">
+              <Trans i18nKey="privacy-policy-and-cookies.intro.description" />
+            </p>
+            <p>
+              <Trans i18nKey="privacy-policy-and-cookies.intro.note" />
+            </p>
+          </>
         ),
       },
       {
@@ -432,7 +438,19 @@ const PrivacyAndCookies = () => {
       },
       {
         navTitle: t('privacy-cookies.possession.title'),
-        content: <Trans i18nKey="privacy-cookies.possession.description" />,
+        content: (
+          <>
+            <p>
+              <Trans i18nKey="privacy-cookies.possession.description" />
+            </p>
+            <Button
+              onClick={openCookieConsent}
+              label={t('privacy-cookies.possession.button-label')}
+              size="sm"
+              variant="accent"
+            />
+          </>
+        ),
       },
       {
         navTitle: t('privacy-cookies.site-specific.title'),
@@ -443,7 +461,7 @@ const PrivacyAndCookies = () => {
         content: <Trans i18nKey="privacy-cookies.blocking.description" />,
       },
     ];
-  }, [t]);
+  }, [t, openCookieConsent]);
 
   const allSections = React.useMemo(
     () => [...privacyPolicySections, ...cookiesSections],
@@ -505,31 +523,47 @@ const PrivacyAndCookies = () => {
       <InfoBox items={infoBoxItems} className="mb-8" />
 
       <div>
-        {privacyPolicySections.map((section) => (
-          <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
-            <ScrollHeading
-              title={section.navTitle}
-              heading="h2"
-              className={`font-poppins text-heading-2-mobile sm:text-heading-2 ${(section.showNavTitle ?? true) ? 'mb-3' : 'size-0 text-[0px] text-transparent'}`}
-            />
-            <div className="font-arial text-body-md-mobile sm:text-body-md [&_p]:mb-6 [&_p]:last:mb-0 sm:[&_p]:mb-5">
-              {section.content}
+        {privacyPolicySections.map((section, index) => {
+          const navStyle = index === 0 ? 'mb-6' : 'mb-3';
+          return (
+            <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
+              <ScrollHeading
+                title={section.navTitle}
+                heading={index === 0 ? 'h2' : 'h3'}
+                className={cx(
+                  'font-poppins',
+                  index === 0 ? 'text-heading-1-mobile sm:text-heading-1' : 'text-heading-2-mobile sm:text-heading-2',
+                  (section.showNavTitle ?? true) ? navStyle : 'size-0 text-[0px] text-transparent',
+                )}
+              />
+              <div className="font-arial text-body-md-mobile sm:text-body-md [&_p]:mb-6 [&_p]:last:mb-0 sm:[&_p]:mb-5">
+                {section.content}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
 
-        {cookiesSections.map((section) => (
-          <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
-            <ScrollHeading
-              title={section.navTitle}
-              heading="h2"
-              className={`font-poppins text-heading-2-mobile sm:text-heading-2 ${(section.showNavTitle ?? true) ? 'mb-3' : 'size-0 text-[0px] text-transparent'}`}
-            />
-            <div className="font-arial text-body-md-mobile sm:text-body-md [&_p]:mb-6 [&_p]:last:mb-0 sm:[&_p]:mb-5">
-              {section.content}
+        <hr className="my-8 border-t-2 border-t-border-form" />
+
+        {cookiesSections.map((section, index) => {
+          const navStyle = index === 0 ? 'mb-6' : 'mb-3';
+          return (
+            <div key={section.navTitle} className={cx('flex flex-col', index === 0 ? '' : 'mb-8 sm:mb-7')}>
+              <ScrollHeading
+                title={section.navTitle}
+                heading={index === 0 ? 'h2' : 'h3'}
+                className={cx(
+                  'font-poppins',
+                  index === 0 ? 'text-heading-1-mobile sm:text-heading-1' : 'text-heading-2-mobile sm:text-heading-2',
+                  (section.showNavTitle ?? true) ? navStyle : 'size-0 text-[0px] text-transparent',
+                )}
+              />
+              <div className="font-arial text-body-md-mobile sm:text-body-md [&_p]:mb-6 [&_p]:last:mb-0 sm:[&_p]:mb-5">
+                {section.content}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </MainLayout>
   );

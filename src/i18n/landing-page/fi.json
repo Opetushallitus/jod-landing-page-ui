@@ -29,20 +29,6 @@
       "1": {
         "description": "<p>Urapolut ovat yhä moninaisempia, ja aiempaa useammat tekevät isoja suunnanmuutoksia työuransa aikana. Myös osaamisvaatimukset ovat jatkuvassa muutoksessa. Osaamispolku on kehitetty tukemaan jokaista työelämän muutoksissa.</p><p>– Osaamispolku auttaa pohtimaan työuraa suunnitelmallisesti. Voit hahmottaa tilannettasi ja vaihtoehtojasi, olit sitten hakemassa töitä, suunnittelemassa alanvaihtoa tai kartoittamassa osaamisen kehittämiseen liittyviä tarpeitasi. Omaa suuntaansa pohtivalle nuorelle Osaamispolku tarjoaa kattavasti tietoa eri ammateista ja koulutusaloista, kuvaa työ- ja elinkeinoministeriön johtava asiantuntija <strong>Tiina Salminen</strong>.</p>"
       },
-      "10": {
-        "description": "<List><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/tyokalu\" target=\"_blank\"><strong>Löydä mahdollisuuksia</strong></Link>: Yhdistä osaamisesi ja kiinnostuksenkohteesi, ja saat selville, millaiset koulutukset ja/tai työtehtävät voisivat sopia sinulle. Voit myös tutkia suoraan kiinnostavia koulutuksia ja aloja palkkatietoineen ja työllisyysnäkymineen.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/kirjaudu-sisaan\" target=\"_blank\"><strong>Luo oma osaamisprofiili</strong></Link>: Tallenna työ- ja koulutushistoriasi sekä saavutuksesi omaan osaamisprofiiliisi. Voit hyödyntää tietoja Osaamispolussa sopivien koulutus- ja työmahdollisuuksien etsimisessä sekä työnhaussa. Lisäksi voit asettaa tavoitteita ja suunnitella polkuja niiden saavuttamiseksi. Päätät itse, miten ja missä tietojasi käytetään ja kenelle niitä jaat.</ListItem><ListItem><Link href=\"https://www.suomi.fi/aihe/ohjaus-ja-neuvontapalveluja\" target=\"_blank\"><strong>Ohjaus- ja neuvontapalvelut</strong></Link>: Tutustu kunnassasi tarjolla oleviin uraohjaus- ja neuvontapalveluihin.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/tietopalvelu/fi\" target=\"_blank\"><strong>Tietopalvelu</strong></Link>: Löydät luotettavaa ja ajantasaista tilastotietoa työmarkkinoista, koulutuksesta ja osaamisesta kattavasti Osaamispolun Tietopalvelusta.</ListItem></List>",
-        "navTitle": "Miksi kokeilla Osaamispolkua?"
-      },
-      "11": {
-        "description": "<p>Kokeile miltä sinun Osaamispolkusi voisi näyttää – osaamisesi ja kiinnostuksesi saattavat avata yllättäviäkin mahdollisuuksia!</p><p>Tutustu Osaamispolkuun: <Link href=\"https://osaamispolku.fi\" target=\"_blank\">osaamispolku.fi</Link></p>"
-      },
-      "12": {
-        "description": "<p>Seuraa Osaamispolkua somessa:</p><List><ListItem><Link href=\"https://www.facebook.com/osaamispolku\" target=\"_blank\">Facebook</Link></ListItem><ListItem>Instagram <Link href=\"https://www.instagram.com/osaamispolku\" target=\"_blank\"> @osaamispolku</Link></ListItem><ListItem><Link href=\"https://www.linkedin.com/company/osaamispolku/\" target=\"_blank\">LinkedIn</Link></ListItem></List>",
-        "navTitle": "Seuraa somessa"
-      },
-      "13": {
-        "description": "<i>Osaamispolku-palvelu on julkaistu tammikuussa 2026. Palvelu toimii suomeksi, ruotsiksi ja englanniksi. Osaamispolusta vastaavat opetus- ja kulttuuriministeriö, työ- ja elinkeinoministeriö, Opetushallitus ja KEHA-keskus.</i>"
-      },
       "2": {
         "description": "<p>Osaamispolusta löytyy työkaluja osaamisen kartoittamiseen, kiinnostusten tunnistamiseen sekä koulutus- ja urapolkujen suunnitteluun. Osaamispolku auttaa muodostamaan selkeän kokonaiskuvan, jossa oma osaaminen ja mielekkäät suunnat yhdistyvät ajantasaiseen tietoon työmarkkinoiden ja eri alojen näkymistä.</p><p>– Osaamispolun tärkein tehtävä on tukea ihmistä tekemään tietoisia valintoja opiskelun, työn ja oman osaamisen kehittämisen suhteen. On tunnistettu, että isojakin päätöksiä saatetaan joutua tekemään puutteellisen tiedon pohjalta. Esimerkiksi mielikuvat uramahdollisuuksista ja koulutuspoluista perustuvat usein tämän hetken tarjontaan – eivät siihen, mitä mahdollisuuksia ylipäänsä on olemassa, sanoo opetus- ja kulttuuriministeriön erityisasiantuntija <strong>Tomi Kytölä</strong>.</p><p>Osaamispolusta on hyötyä erityisesti silloin, kun on jonkinlaisen valintatilanteen edessä, eikä ole vielä ihan varma, mihin suuntaan kannattaisi lähteä. Palvelun kartoitustyökaluista voi olla apua ennen kuin siirtyy hakemaan työ- tai opiskelupaikkaa. Palvelu ei ota kantaa siihen, mihin suuntaan pitäisi lähteä, vaan tarjoaa tietoa päätöksenteon tueksi.</p><p>– Osaamispolku ei tee päätöksiä käyttäjän puolesta. Tavoitteena on, että jokainen pystyisi tekemään opintoihin ja työuraan liittyviä valintoja, jotka perustuvat riittävään kokonaiskuvaan ja vastaavat kunkin omia tavoitteita, Kytölä täydentää.</p>",
         "navTitle": "Tee valintoja tiedon, älä arvailun varassa"
@@ -73,6 +59,20 @@
       "9": {
         "description": "<p>Osaamispolku on maksuton ja avoimesti käytettävissä verkossa osoitteessa osaamispolku.fi. Palvelu on julkaistu suomeksi, ruotsiksi ja englanniksi. Voit tutustua palveluun helposti kirjautumatta ja kirjautua myöhemmin, jolloin tietosi tallentuvat ja voit päivittää niitä. Osaamispolkuun luodusta profiilista voi siirtää tietoja esimerkiksi Työmarkkinatorin työnhakuprofiiliin. Käyttäjä hallinnoi itse omia tietojaan ja päättää niiden siirtämisestä ja käytöstä. Tiedot säilyvät käyttäjän hallinnassa ja ovat hyödynnettävissä koko elämän ajan.</p>",
         "navTitle": "Näin pääset alkuun"
+      },
+      "10": {
+        "description": "<List><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/tyokalu\" target=\"_blank\"><strong>Löydä mahdollisuuksia</strong></Link>: Yhdistä osaamisesi ja kiinnostuksenkohteesi, ja saat selville, millaiset koulutukset ja/tai työtehtävät voisivat sopia sinulle. Voit myös tutkia suoraan kiinnostavia koulutuksia ja aloja palkkatietoineen ja työllisyysnäkymineen.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/yksilo/fi/kirjaudu-sisaan\" target=\"_blank\"><strong>Luo oma osaamisprofiili</strong></Link>: Tallenna työ- ja koulutushistoriasi sekä saavutuksesi omaan osaamisprofiiliisi. Voit hyödyntää tietoja Osaamispolussa sopivien koulutus- ja työmahdollisuuksien etsimisessä sekä työnhaussa. Lisäksi voit asettaa tavoitteita ja suunnitella polkuja niiden saavuttamiseksi. Päätät itse, miten ja missä tietojasi käytetään ja kenelle niitä jaat.</ListItem><ListItem><Link href=\"https://www.suomi.fi/aihe/ohjaus-ja-neuvontapalveluja\" target=\"_blank\"><strong>Ohjaus- ja neuvontapalvelut</strong></Link>: Tutustu kunnassasi tarjolla oleviin uraohjaus- ja neuvontapalveluihin.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/tietopalvelu/fi\" target=\"_blank\"><strong>Tietopalvelu</strong></Link>: Löydät luotettavaa ja ajantasaista tilastotietoa työmarkkinoista, koulutuksesta ja osaamisesta kattavasti Osaamispolun Tietopalvelusta.</ListItem></List>",
+        "navTitle": "Miksi kokeilla Osaamispolkua?"
+      },
+      "11": {
+        "description": "<p>Kokeile miltä sinun Osaamispolkusi voisi näyttää – osaamisesi ja kiinnostuksesi saattavat avata yllättäviäkin mahdollisuuksia!</p><p>Tutustu Osaamispolkuun: <Link href=\"https://osaamispolku.fi\" target=\"_blank\">osaamispolku.fi</Link></p>"
+      },
+      "12": {
+        "description": "<p>Seuraa Osaamispolkua somessa:</p><List><ListItem><Link href=\"https://www.facebook.com/osaamispolku\" target=\"_blank\">Facebook</Link></ListItem><ListItem>Instagram <Link href=\"https://www.instagram.com/osaamispolku\" target=\"_blank\"> @osaamispolku</Link></ListItem><ListItem><Link href=\"https://www.linkedin.com/company/osaamispolku/\" target=\"_blank\">LinkedIn</Link></ListItem></List>",
+        "navTitle": "Seuraa somessa"
+      },
+      "13": {
+        "description": "<i>Osaamispolku-palvelu on julkaistu tammikuussa 2026. Palvelu toimii suomeksi, ruotsiksi ja englanniksi. Osaamispolusta vastaavat opetus- ja kulttuuriministeriö, työ- ja elinkeinoministeriö, Opetushallitus ja KEHA-keskus.</i>"
       }
     },
     "title": "Osaamispolku tukee oman suunnan löytämisessä"
@@ -545,6 +545,7 @@
       "title": "Evästeiden estäminen"
     },
     "possession": {
+      "button-label": "Osaamispolun evästeasetukset",
       "description": "Evästeitä voi vapaasti hallita ja/tai poistaa. Ohjeita löytyy esimerkiksi osoitteesta aboutcookies.org.",
       "title": "Evästeiden käytön hallinta"
     },
@@ -631,7 +632,7 @@
       "title": "Tiedot tietojen siirrosta kolmansiin maihin ja tiedot käytettävistä suojatoimista"
     },
     "intro": {
-      "description": "<p>Tässä tietosuojaselosteessa kuvataan, miten henkilötietoja käsitellään Osaamispolku-palvelussa. Selosteessa kerrotaan myös, mitä oikeuksia rekisteröidyillä henkilöillä on ja miten oikeuksia voi käyttää. Rekisteröityjä ovat osaamisprofiilin tehneet henkilöt sekä ohjaajan työpöydälle kirjautuneet henkilöt.</p><p>Tietosuojaselostetta päivitetään säännöllisesti. Ajankohtainen versio löytyy aina tältä sivulta</p>",
+      "description": "Tässä tietosuojaselosteessa kuvataan, miten henkilötietoja käsitellään Osaamispolku-palvelussa. Selosteessa kerrotaan myös, mitä oikeuksia rekisteröidyillä henkilöillä on ja miten oikeuksia voi käyttää. Rekisteröityjä ovat osaamisprofiilin tehneet henkilöt sekä ohjaajan työpöydälle kirjautuneet henkilöt.",
       "note": "Tietosuojaselostetta päivitetään säännöllisesti. Ajankohtainen versio löytyy aina tältä sivulta.",
       "title": "Tietosuojaseloste"
     },
