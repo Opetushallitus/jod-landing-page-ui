@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router';
+import { Link, Outlet, ScrollRestoration, useHref, useLocation } from 'react-router';
 
 import {
   Button,
@@ -24,6 +24,28 @@ import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
 import { langLabels, supportedLanguageCodes, type LangCode } from '@/i18n/config';
 import { getNotifications } from '@/utils/notifications';
 import { getLinkTo } from '@/utils/routeUtils';
+
+const LanguageButtonWrapper = () => {
+  const {
+    i18n: { language },
+  } = useTranslation();
+  const { generateLocalizedPath } = useLocalizedRoutes();
+  return (
+    <LanguageButton
+      serviceVariant="palveluportaali"
+      testId="language-button"
+      language={language as LangCode}
+      supportedLanguageCodes={supportedLanguageCodes}
+      generateLocalizedPath={generateLocalizedPath}
+      linkComponent={Link}
+      translations={{
+        fi: { change: 'Vaihda kieli.', label: langLabels.fi },
+        sv: { change: 'Andra språk.', label: langLabels.sv },
+        en: { change: 'Change language.', label: langLabels.en },
+      }}
+    />
+  );
+};
 
 const Root = () => {
   const {
@@ -88,8 +110,6 @@ const Root = () => {
     document.documentElement.setAttribute('lang', language);
   }, [language]);
 
-  const { generateLocalizedPath } = useLocalizedRoutes();
-
   React.useEffect(() => {
     getNotifications().forEach((notification) => {
       addTemporaryNote(() => ({
@@ -123,21 +143,7 @@ const Root = () => {
         <NavigationBar
           logo={{ to: `/${language}`, language, srText: t('common:osaamispolku') }}
           menuComponent={<MenuButton onClick={() => setNavMenuOpen(!navMenuOpen)} label={t('common:menu')} />}
-          languageButtonComponent={
-            <LanguageButton
-              serviceVariant="palveluportaali"
-              testId="language-button"
-              language={language as LangCode}
-              supportedLanguageCodes={supportedLanguageCodes}
-              generateLocalizedPath={generateLocalizedPath}
-              linkComponent={Link}
-              translations={{
-                fi: { change: 'Vaihda kieli.', label: langLabels.fi },
-                sv: { change: 'Andra språk.', label: langLabels.sv },
-                en: { change: 'Change language.', label: langLabels.en },
-              }}
-            />
-          }
+          languageButtonComponent={<LanguageButtonWrapper />}
           renderLink={({ to, className, children }) => (
             <Link to={to} className={className}>
               {children as React.ReactNode}
@@ -196,10 +202,13 @@ const Root = () => {
 
 const RootWithCookieConsentProvider = () => {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
+  const href = useHref(t('common:slugs.privacy-and-cookies'));
 
   return (
     <CookieConsentProvider
-      serviceVariant="palveluportaali"
+      automaticallyOpen={pathname !== href}
+      languageButtonComponent={<LanguageButtonWrapper />}
       translations={{
         guard: {
           buttonLabel: t('common:cookie-consent.guard.buttonLabel'),
@@ -214,10 +223,10 @@ const RootWithCookieConsentProvider = () => {
           currentSelectionLabel: t('common:cookie-consent.modal.currentSelectionLabel'),
           declineOptionalLabel: t('common:cookie-consent.modal.declineOptionalLabel'),
           description: t('common:cookie-consent.modal.description'),
-          hereLabel: t('common:cookie-consent.modal.hereLabel'),
           name: t('common:cookie-consent.modal.name'),
           readMoreHref: t('common:cookie-consent.modal.readMoreHref'),
           readMoreLabel: t('common:cookie-consent.modal.readMoreLabel'),
+          externalLinkIconAriaLabel: t('common:external-link'),
           statisticsDescription: t('common:cookie-consent.modal.statisticsDescription'),
           title: t('common:cookie-consent.modal.title'),
         },
