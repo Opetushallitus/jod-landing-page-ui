@@ -545,6 +545,7 @@
       "title": "Blockering av cookies"
     },
     "possession": {
+      "button-label": "Kompetensstigens cookieinställningar",
       "description": "Du kan fritt hantera och/eller radera cookies. Instruktioner finns till exempel på adressen aboutcookies.org.",
       "title": "Hantering av användningen av cookies"
     },
@@ -631,7 +632,7 @@
       "title": "Information om överföringen av uppgifter till tredje land och om skyddsåtgärder som vidtas"
     },
     "intro": {
-      "description": "<p>Denna dataskyddsbeskrivning beskriver hur personuppgifter behandlas i tjänsten Kompetensstigen. Beskrivningen förklarar också vilka rättigheter de registrerade personerna har och hur dessa rättigheter kan utövas. Som registrerade räknas personer som har skapat en kompetensprofil och personer som är inloggade på vägledarens skrivbord.</p><p>Dataskyddsbeskrivningen uppdateras regelbundet. Du hittar alltid den aktuella versionen på denna sida</p>",
+      "description": "Denna dataskyddsbeskrivning beskriver hur personuppgifter behandlas i tjänsten Kompetensstigen. Beskrivningen förklarar också vilka rättigheter de registrerade personerna har och hur dessa rättigheter kan utövas. Som registrerade räknas personer som har skapat en kompetensprofil och personer som är inloggade på vägledarens skrivbord.",
       "note": "Dataskyddsbeskrivningen uppdateras regelbundet. Du hittar alltid den aktuella versionen på denna sida.",
       "title": "Dataskyddsbeskrivning"
     },

@@ -545,6 +545,7 @@
       "title": "How to block cookies"
     },
     "possession": {
+      "button-label": "Competency Path's cookie settings",
       "description": "You can freely manage and/or delete cookies. Instructions are available, for example, at aboutcookies.org.",
       "title": "Managing the use of cookies"
     },
@@ -631,7 +632,7 @@
       "title": "Information on data transfers to third countries and information on the safeguards used"
     },
     "intro": {
-      "description": "<p>This privacy policy describes how personal data is processed in the Competency Path service. It also explains what rights data subjects have and how they can exercise their rights. The persons registered are those who have created the competence profile and those who are logged in to the guidance practitioner's desktop.</p><p>The privacy policy is updated regularly. You can always find the latest version on this page</p>",
+      "description": "This privacy policy describes how personal data is processed in the Competency Path service. It also explains what rights data subjects have and how they can exercise their rights. The persons registered are those who have created the competence profile and those who are logged in to the guidance practitioner's desktop.",
       "note": "The privacy policy is updated regularly. You can always find the latest version on this page.",
       "title": "Privacy policy"
     },
