@@ -314,8 +314,8 @@ const Home = () => {
           <p>{t('home.competency-path-help.you.text-2')}</p>
         </div>
         <div className="mt-6 flex flex-col gap-7 font-arial text-body-md-mobile sm:flex-row sm:flex-wrap sm:text-body-md">
-          <div className="flex flex-col gap-5 md:max-w-[320px]">
-            <div className="flex h-[70px] flex-col items-start justify-center">{opintopolkuLogo}</div>
+          <div className="md:max-w-xs flex flex-col gap-5">
+            <h3 className="flex h-[70px] flex-col items-start justify-center">{opintopolkuLogo}</h3>
             <div>
               <Trans
                 i18nKey="home.competency-path-help.opintopolku.text-1"
@@ -333,8 +333,8 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-5 md:max-w-[320px]">
-            <div className="flex h-[70px] flex-col items-start justify-center">{tmtLogo}</div>
+          <div className="md:max-w-xs flex flex-col gap-5">
+            <h3 className="flex h-[70px] flex-col items-start justify-center">{tmtLogo}</h3>
             <div>
               <Trans
                 i18nKey="home.competency-path-help.tyomarkkinatori.text-1"
@@ -352,13 +352,13 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-5 md:max-w-[320px]">
-            <div className="flex h-[70px] flex-col items-start justify-center">
+          <div className="md:max-w-xs flex flex-col gap-5">
+            <h3 className="flex h-[70px] flex-col items-start justify-center">
               <LogoOpinfi
                 aria-label={t('home.how-competency-path-helps-you-opinfi-title')}
                 className="h-6 max-w-full"
               />
-            </div>
+            </h3>
             <div>
               <Trans
                 i18nKey="home.competency-path-help.opinfi.text-1"
