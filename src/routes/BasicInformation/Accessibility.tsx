@@ -17,20 +17,7 @@ const Accessibility = () => {
         <>
           <p>{t('accessibility.sections.status.description')}</p>
           <ol className="mt-4 mb-2 ml-7 flex list-decimal flex-col gap-5">
-            <li>{t('accessibility.sections.status.item-1')}</li>
-            <li>{t('accessibility.sections.status.item-2')}</li>
-            <li>{t('accessibility.sections.status.item-3')}</li>
-            <li>{t('accessibility.sections.status.item-4')}</li>
-            <li>{t('accessibility.sections.status.item-5')}</li>
-            <li>{t('accessibility.sections.status.item-6')}</li>
-            <li>{t('accessibility.sections.status.item-7')}</li>
-            <li>{t('accessibility.sections.status.item-8')}</li>
-            <li>{t('accessibility.sections.status.item-9')}</li>
-            <li>{t('accessibility.sections.status.item-10')}</li>
-            <li>{t('accessibility.sections.status.item-11')}</li>
-            <li>{t('accessibility.sections.status.item-12')}</li>
-            <li>{t('accessibility.sections.status.item-13')}</li>
-            <li>{t('accessibility.sections.status.item-14')}</li>
+            <Trans i18nKey="accessibility.sections.status.items" components={{ li: <li></li> }}></Trans>
           </ol>
         </>,
         false,
