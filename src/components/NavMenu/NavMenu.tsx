@@ -98,6 +98,7 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       openSubMenuLabel={t('common:open-submenu')}
       portalLinkComponent={PortalLink}
       portalLinkLabel={t('common:competency-path-portal')}
+      portalExternal={false}
       selectedLanguage={language}
       serviceVariant="palveluportaali"
       externalLinkIconAriaLabel={t('common:external-link')}
