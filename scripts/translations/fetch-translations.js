@@ -48,7 +48,7 @@ function sortedJsonStringify(value, indent = 2) {
 function writeToFile(outputPath, data) {
   return new Promise((resolve, reject) => {
     const parsed = JSON.parse(data);
-    // Ensure file ends with exactly one newline (Prettier requirement)
+    // Ensure file ends with exactly one newline
     const formattedData = sortedJsonStringify(parsed) + '\n';
 
     fs.writeFile(outputPath, formattedData, 'utf-8', (err) => {
