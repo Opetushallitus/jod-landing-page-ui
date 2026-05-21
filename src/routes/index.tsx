@@ -2,6 +2,7 @@ import { RouteObject, replace } from 'react-router';
 
 import { NoteStackProvider } from '@jod/design-system';
 
+import { ModalProvider } from '@/hooks/useModal/ModalProvider';
 import i18n, { supportedLanguageCodes } from '@/i18n/config';
 
 import { AboutService, AiUsage, DataSources, PrivacyAndCookies } from './BasicInformation';
@@ -93,7 +94,9 @@ const rootRoute: RouteObject = {
   loader: loader,
   element: (
     <NoteStackProvider>
-      <Root />
+      <ModalProvider>
+        <Root />
+      </ModalProvider>
     </NoteStackProvider>
   ),
   children: [

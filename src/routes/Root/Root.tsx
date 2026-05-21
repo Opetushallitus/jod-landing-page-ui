@@ -21,6 +21,7 @@ import { FeedbackModal } from '@/components';
 import { NavMenu } from '@/components/NavMenu/NavMenu';
 import { Toaster } from '@/components/Toaster/Toaster';
 import { useLocalizedRoutes } from '@/hooks/useLocalizedRoutes';
+import { ModalProvider } from '@/hooks/useModal/ModalProvider';
 import { langLabels, supportedLanguageCodes, type LangCode } from '@/i18n/config';
 import { getNotifications } from '@/utils/notifications';
 import { getLinkTo } from '@/utils/routeUtils';
@@ -233,7 +234,9 @@ const RootWithCookieConsentProvider = () => {
         },
       }}
     >
-      <Root />
+      <ModalProvider>
+        <Root />
+      </ModalProvider>
     </CookieConsentProvider>
   );
 };

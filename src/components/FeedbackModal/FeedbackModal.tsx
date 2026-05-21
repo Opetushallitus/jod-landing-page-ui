@@ -5,8 +5,19 @@ import toast from 'react-hot-toast/headless';
 import { useTranslation } from 'react-i18next';
 import { z } from 'zod';
 
-import { Button, Checkbox, InputField, Modal, RadioButton, RadioButtonGroup, Textarea } from '@jod/design-system';
+import {
+  Button,
+  Checkbox,
+  InputField,
+  Modal,
+  RadioButton,
+  RadioButtonGroup,
+  Textarea,
+  useMediaQueries,
+} from '@jod/design-system';
 import { JodOpenInNew } from '@jod/design-system/icons';
+
+import { useModal } from '@/hooks/useModal/useModal';
 
 const DETAILS_MAX_LENGTH = 2048;
 const MESSAGE_MAX_LENGTH = 5000;
@@ -46,6 +57,28 @@ const Feedback = z
 
 type Feedback = z.infer<typeof Feedback>;
 
+const FeedbackSuccessFooter = ({
+  hideDialog,
+  closeActiveModal,
+  label,
+  size,
+}: {
+  hideDialog: () => void;
+  closeActiveModal: () => void;
+  label: string;
+  size: 'lg' | 'sm';
+}) => (
+  <Button
+    label={label}
+    size={size}
+    variant="accent"
+    onClick={() => {
+      hideDialog();
+      closeActiveModal();
+    }}
+  />
+);
+
 export interface FeedbackModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -72,6 +105,20 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
   const { isValid, errors } = useFormState({ control });
   const wantsContact = watch('wantsContact');
   const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const { showDialog, closeActiveModal } = useModal();
+  const { sm } = useMediaQueries();
+
+  const successFooter = React.useCallback(
+    (hideDialog: () => void) => (
+      <FeedbackSuccessFooter
+        hideDialog={hideDialog}
+        closeActiveModal={closeActiveModal}
+        label={t('common:feedback.close')}
+        size={sm ? 'lg' : 'sm'}
+      />
+    ),
+    [closeActiveModal, t, sm],
+  );
 
   React.useEffect(() => {
     reset();
@@ -109,9 +156,11 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
       reset();
       onClose();
 
-      // Wait a moment before showing success message
-      await new Promise((resolve) => setTimeout(resolve, 50));
-      toast.success(t('common:feedback.success'));
+      showDialog({
+        title: t('common:feedback.success-title'),
+        description: t('common:feedback.success-description'),
+        footer: successFooter,
+      });
     } catch (_) {
       setIsSubmitting(false);
       toast.error(t('common:feedback.error'));
