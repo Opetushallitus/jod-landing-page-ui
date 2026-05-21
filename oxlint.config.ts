@@ -21,5 +21,6 @@ export default defineConfig({
         ignoreRestSiblings: true,
       },
     ],
+    'vitest/require-mock-type-parameters': 'off',
   },
 });
