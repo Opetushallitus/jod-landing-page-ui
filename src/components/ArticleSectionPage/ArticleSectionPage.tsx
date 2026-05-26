@@ -1,12 +1,10 @@
-import { useMediaQueries } from '@jod/design-system';
+import { IconHeading, ScrollHeading, useMediaQueries } from '@jod/design-system';
 import { JodInfo } from '@jod/design-system/icons';
 
 import type { ArticleSection } from '@/routes/types';
 
 import { ArticleSectionNavigation } from '../ArticleSectionNavigation/ArticleSectionNavigation';
-import { IconHeading } from '../IconHeading';
 import { MainLayout } from '../MainLayout/MainLayout';
-import { ScrollHeading } from '../ScrollHeading/ScrollHeading';
 
 interface ArticleSectionPageProps {
   title: string;

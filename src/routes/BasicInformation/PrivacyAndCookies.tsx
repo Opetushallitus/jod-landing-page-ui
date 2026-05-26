@@ -2,14 +2,21 @@ import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 
-import { Button, cx, type MenuSection, PageNavigation, useCookieConsent, useMediaQueries } from '@jod/design-system';
+import {
+  Button,
+  cx,
+  IconHeading,
+  type MenuSection,
+  PageNavigation,
+  ScrollHeading,
+  useCookieConsent,
+  useMediaQueries,
+} from '@jod/design-system';
 import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
 
 import { MainLayout } from '@/components';
 import { ArticleAccordion } from '@/components/ArticleAccordion';
-import { IconHeading } from '@/components/IconHeading';
 import { InfoBox, InfoboxItem } from '@/components/InfoBox';
-import { ScrollHeading } from '@/components/ScrollHeading/ScrollHeading';
 import { getLinkTo } from '@/utils/routeUtils';
 
 import type { ArticleSection } from '../types';
