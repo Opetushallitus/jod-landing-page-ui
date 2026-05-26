@@ -1,13 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { useMediaQueries } from '@jod/design-system';
+import { IconHeading, ScrollHeading, useMediaQueries } from '@jod/design-system';
 import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
 
 import { ArticleSectionNavigation } from '@/components/ArticleSectionNavigation/ArticleSectionNavigation';
-import { IconHeading } from '@/components/IconHeading';
 import { MainLayout } from '@/components/MainLayout/MainLayout';
-import { ScrollHeading } from '@/components/ScrollHeading/ScrollHeading';
 
 import type { ArticleSection } from '../types';
 
