@@ -1,12 +1,12 @@
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 
-import { IconHeading, ScrollHeading, useMediaQueries } from '@jod/design-system';
+import { IconHeading, MainLayout, ScrollHeading, useMediaQueries } from '@jod/design-system';
 import { JodAi } from '@jod/design-system/icons';
 
-import { MainLayout } from '@/components';
 import { ArticleAccordion } from '@/components/ArticleAccordion';
 import { ArticleSectionNavigation } from '@/components/ArticleSectionNavigation/ArticleSectionNavigation';
+import { Breadcrumb } from '@/components/Breadcrumb/Breadcrumb';
 import { InfoBox, InfoboxItem } from '@/components/InfoBox';
 
 import type { ArticleSection } from '../types';
@@ -167,28 +167,30 @@ const AiUsage = () => {
   }, [t, infoBoxItems]);
 
   return (
-    <MainLayout navChildren={<ArticleSectionNavigation sections={sections} />}>
-      {!lg && (
-        <div className="mb-8">
-          <ArticleSectionNavigation sections={sections} activeIndicator="dot" collapsed />
-        </div>
-      )}
-      <title>{title}</title>
-      <IconHeading icon={<JodAi />} title={title} testId="about-ai-title" />
-
-      <div>
-        {sections.map((section) => (
-          <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
-            <ScrollHeading
-              title={section.navTitle}
-              heading="h2"
-              className={`font-poppins text-heading-2-mobile sm:text-heading-2 ${(section.showNavTitle ?? true) ? 'mb-3' : 'size-0 text-[0px] text-transparent'}`}
-            />
-            <div className="flex flex-row justify-between font-arial text-body-md-mobile sm:text-body-md">
-              {section.content}
-            </div>
+    <MainLayout breadcrumbComponent={<Breadcrumb />} navChildren={<ArticleSectionNavigation sections={sections} />}>
+      <div className="px-5 sm:px-6 lg:pr-0">
+        {!lg && (
+          <div className="mb-8">
+            <ArticleSectionNavigation sections={sections} activeIndicator="dot" collapsed />
           </div>
-        ))}
+        )}
+        <title>{title}</title>
+        <IconHeading icon={<JodAi />} title={title} testId="about-ai-title" />
+
+        <div>
+          {sections.map((section) => (
+            <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
+              <ScrollHeading
+                title={section.navTitle}
+                heading="h2"
+                className={`font-poppins text-heading-2-mobile sm:text-heading-2 ${(section.showNavTitle ?? true) ? 'mb-3' : 'size-0 text-[0px] text-transparent'}`}
+              />
+              <div className="flex flex-row justify-between font-arial text-body-md-mobile sm:text-body-md">
+                {section.content}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </MainLayout>
   );
