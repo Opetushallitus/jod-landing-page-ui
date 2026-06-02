@@ -1,11 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { IconHeading, ScrollHeading, useMediaQueries } from '@jod/design-system';
+import { IconHeading, MainLayout, ScrollHeading, useMediaQueries } from '@jod/design-system';
 import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
 
 import { ArticleSectionNavigation } from '@/components/ArticleSectionNavigation/ArticleSectionNavigation';
-import { MainLayout } from '@/components/MainLayout/MainLayout';
+import { Breadcrumb } from '@/components/Breadcrumb/Breadcrumb';
 
 import type { ArticleSection } from '../types';
 
@@ -193,30 +193,32 @@ const DataSources = () => {
   }, [t]);
 
   return (
-    <MainLayout navChildren={<ArticleSectionNavigation sections={sections} />}>
-      {!lg && (
-        <div className="mb-8">
-          <ArticleSectionNavigation sections={sections} activeIndicator="dot" collapsed />
-        </div>
-      )}
-      <title>{title}</title>
-      <IconHeading icon={<JodInfo />} title={title} testId="data-sources-title" />
-
-      <div>
-        <div className="mb-7 flex flex-col">
-          <p className="text-body-lg-mobile sm:text-body-lg">{t('data-sources.intro')}</p>
-        </div>
-
-        {sections.map((section) => (
-          <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
-            <ScrollHeading
-              title={section.navTitle}
-              heading="h2"
-              className="mb-5 font-poppins text-heading-2-mobile sm:mb-3 sm:text-heading-2"
-            />
-            <div className="font-arial text-body-md-mobile sm:text-body-md">{section.content}</div>
+    <MainLayout breadcrumbComponent={<Breadcrumb />} navChildren={<ArticleSectionNavigation sections={sections} />}>
+      <div className="px-5 sm:px-6 lg:pr-0">
+        {!lg && (
+          <div className="mb-8">
+            <ArticleSectionNavigation sections={sections} activeIndicator="dot" collapsed />
           </div>
-        ))}
+        )}
+        <title>{title}</title>
+        <IconHeading icon={<JodInfo />} title={title} testId="data-sources-title" />
+
+        <div>
+          <div className="mb-7 flex flex-col">
+            <p className="text-body-lg-mobile sm:text-body-lg">{t('data-sources.intro')}</p>
+          </div>
+
+          {sections.map((section) => (
+            <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
+              <ScrollHeading
+                title={section.navTitle}
+                heading="h2"
+                className="mb-5 font-poppins text-heading-2-mobile sm:mb-3 sm:text-heading-2"
+              />
+              <div className="font-arial text-body-md-mobile sm:text-body-md">{section.content}</div>
+            </div>
+          ))}
+        </div>
       </div>
     </MainLayout>
   );

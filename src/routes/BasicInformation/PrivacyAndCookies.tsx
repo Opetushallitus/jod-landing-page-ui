@@ -6,6 +6,7 @@ import {
   Button,
   cx,
   IconHeading,
+  MainLayout,
   type MenuSection,
   PageNavigation,
   ScrollHeading,
@@ -14,8 +15,8 @@ import {
 } from '@jod/design-system';
 import { JodInfo, JodOpenInNew } from '@jod/design-system/icons';
 
-import { MainLayout } from '@/components';
 import { ArticleAccordion } from '@/components/ArticleAccordion';
+import { Breadcrumb } from '@/components/Breadcrumb/Breadcrumb';
 import { InfoBox, InfoboxItem } from '@/components/InfoBox';
 import { getLinkTo } from '@/utils/routeUtils';
 
@@ -519,58 +520,60 @@ const PrivacyAndCookies = () => {
   }, [t]);
 
   return (
-    <MainLayout navChildren={navChildren}>
-      {!lg && (
-        <div className="mb-8">
-          <PageNavigation menuSection={menuSection} collapsed />
+    <MainLayout breadcrumbComponent={<Breadcrumb />} navChildren={navChildren}>
+      <div className="px-5 sm:px-6 lg:pr-0">
+        {!lg && (
+          <div className="mb-8">
+            <PageNavigation menuSection={menuSection} collapsed />
+          </div>
+        )}
+        <title>{title}</title>
+        <IconHeading icon={<JodInfo />} title={title} testId="privacy-policy-title" />
+        <InfoBox items={infoBoxItems} className="mb-8" />
+
+        <div>
+          {privacyPolicySections.map((section, index) => {
+            const navStyle = index === 0 ? 'mb-6' : 'mb-3';
+            return (
+              <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
+                <ScrollHeading
+                  title={section.navTitle}
+                  heading={index === 0 ? 'h2' : 'h3'}
+                  className={cx(
+                    'font-poppins',
+                    index === 0 ? 'text-heading-1-mobile sm:text-heading-1' : 'text-heading-2-mobile sm:text-heading-2',
+                    (section.showNavTitle ?? true) ? navStyle : 'size-0 text-[0px] text-transparent',
+                  )}
+                />
+                <div className="font-arial text-body-md-mobile sm:text-body-md [&_p]:mb-6 [&_p]:last:mb-0 sm:[&_p]:mb-5">
+                  {section.content}
+                </div>
+              </div>
+            );
+          })}
+
+          <hr className="my-8 border-t-2 border-t-border-form" />
+
+          {cookiesSections.map((section, index) => {
+            const navStyle = index === 0 ? 'mb-6' : 'mb-3';
+            return (
+              <div key={section.navTitle} className={cx('flex flex-col', index === 0 ? '' : 'mb-8 sm:mb-7')}>
+                <ScrollHeading
+                  title={section.navTitle}
+                  heading={index === 0 ? 'h2' : 'h3'}
+                  className={cx(
+                    'font-poppins',
+                    index === 0 ? 'text-heading-1-mobile sm:text-heading-1' : 'text-heading-2-mobile sm:text-heading-2',
+                    (section.showNavTitle ?? true) ? navStyle : 'size-0 text-[0px] text-transparent',
+                  )}
+                />
+                <div className="font-arial text-body-md-mobile sm:text-body-md [&_p]:mb-6 [&_p]:last:mb-0 sm:[&_p]:mb-5">
+                  {section.content}
+                </div>
+              </div>
+            );
+          })}
         </div>
-      )}
-      <title>{title}</title>
-      <IconHeading icon={<JodInfo />} title={title} testId="privacy-policy-title" />
-      <InfoBox items={infoBoxItems} className="mb-8" />
-
-      <div>
-        {privacyPolicySections.map((section, index) => {
-          const navStyle = index === 0 ? 'mb-6' : 'mb-3';
-          return (
-            <div key={section.navTitle} className="mb-8 flex flex-col sm:mb-7">
-              <ScrollHeading
-                title={section.navTitle}
-                heading={index === 0 ? 'h2' : 'h3'}
-                className={cx(
-                  'font-poppins',
-                  index === 0 ? 'text-heading-1-mobile sm:text-heading-1' : 'text-heading-2-mobile sm:text-heading-2',
-                  (section.showNavTitle ?? true) ? navStyle : 'size-0 text-[0px] text-transparent',
-                )}
-              />
-              <div className="font-arial text-body-md-mobile sm:text-body-md [&_p]:mb-6 [&_p]:last:mb-0 sm:[&_p]:mb-5">
-                {section.content}
-              </div>
-            </div>
-          );
-        })}
-
-        <hr className="my-8 border-t-2 border-t-border-form" />
-
-        {cookiesSections.map((section, index) => {
-          const navStyle = index === 0 ? 'mb-6' : 'mb-3';
-          return (
-            <div key={section.navTitle} className={cx('flex flex-col', index === 0 ? '' : 'mb-8 sm:mb-7')}>
-              <ScrollHeading
-                title={section.navTitle}
-                heading={index === 0 ? 'h2' : 'h3'}
-                className={cx(
-                  'font-poppins',
-                  index === 0 ? 'text-heading-1-mobile sm:text-heading-1' : 'text-heading-2-mobile sm:text-heading-2',
-                  (section.showNavTitle ?? true) ? navStyle : 'size-0 text-[0px] text-transparent',
-                )}
-              />
-              <div className="font-arial text-body-md-mobile sm:text-body-md [&_p]:mb-6 [&_p]:last:mb-0 sm:[&_p]:mb-5">
-                {section.content}
-              </div>
-            </div>
-          );
-        })}
       </div>
     </MainLayout>
   );
