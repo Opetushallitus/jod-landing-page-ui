@@ -15,7 +15,7 @@ const PortalLink = ({ children, className }: LinkComponent) => {
   const activeClasses = cx(
     'text-white!',
     'bg-secondary-gray',
-    'hover:bg-secondary-5-light-3!',
+    'hover:bg-primary-5-light-3!',
     'hover:text-primary-gray!',
     'active:bg-primary-gray!',
     'active:text-white!',

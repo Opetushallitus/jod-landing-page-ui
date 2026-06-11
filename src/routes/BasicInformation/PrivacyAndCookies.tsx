@@ -552,7 +552,7 @@ const PrivacyAndCookies = () => {
             );
           })}
 
-          <hr className="my-8 border-t-2 border-t-border-form" />
+          <hr className="border-t-border-form my-8 border-t-2" />
 
           {cookiesSections.map((section, index) => {
             const navStyle = index === 0 ? 'mb-6' : 'mb-3';
