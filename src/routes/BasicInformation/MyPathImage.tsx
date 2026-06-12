@@ -391,7 +391,7 @@ const MyPathMobile = () => {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <div className="flex w-full items-center gap-3 rounded-md bg-secondary-1-light-2 py-3 pr-3 pl-5">
+        <div className="flex w-full items-center gap-3 rounded-md bg-primary-1-light-2 py-3 pr-3 pl-5">
           <span className="grow">{t('about-service.sections.my-path.image.enter-your-info')}</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
             <path
@@ -416,7 +416,7 @@ const MyPathMobile = () => {
               />
               <path d="M17 4.50011L24.5 8.96083e-07L24.5 24L17 19.5001L17 4.50011Z" fill="white" />
             </svg>
-            <div className="w-[140px] rounded-[30px] border-2 border-secondary-1-dark bg-white p-4">
+            <div className="w-[140px] rounded-[30px] border-2 border-primary-1-dark bg-white p-4">
               {t('about-service.sections.my-path.image.tell-about-skills')}
             </div>
           </div>
@@ -427,25 +427,25 @@ const MyPathMobile = () => {
           <ServiceHelpsWithAiTooltip />
         </div>
         <ArrowMobile color="#B4B5E4" className="mb-2" />
-        <div className="flex w-full items-center justify-between gap-3 rounded-md bg-secondary-1-light-1 px-5 py-3">
+        <div className="flex w-full items-center justify-between gap-3 rounded-md bg-primary-1-light-1 px-5 py-3">
           {t('about-service.sections.my-path.image.choose-interests-and-skills')}
           <ChooseInterestsAndSkillsTooltip />
         </div>
         <ArrowMobile color="#85c4ec" className="mb-2" />
-        <div className="grid w-full grid-cols-2 gap-2 rounded-md border-4 border-secondary-1-light-2 bg-white p-2 text-right text-white">
-          <div className="flex items-center justify-center gap-3 rounded-sm bg-secondary-1-dark p-3">
+        <div className="grid w-full grid-cols-2 gap-2 rounded-md border-4 border-primary-1-light-2 bg-white p-2 text-right text-white">
+          <div className="flex items-center justify-center gap-3 rounded-sm bg-primary-1-dark p-3">
             {t('about-service.sections.my-path.image.professions')}
             <ProfessionsTooltip />
           </div>
-          <div className="flex items-center justify-center gap-3 rounded-sm bg-secondary-1 p-3">
+          <div className="flex items-center justify-center gap-3 rounded-sm bg-primary-1 p-3">
             {t('about-service.sections.my-path.image.degrees')}
             <DegreesTooltip />
           </div>
-          <div className="flex items-center justify-center gap-3 rounded-sm bg-secondary-1-dark p-3">
+          <div className="flex items-center justify-center gap-3 rounded-sm bg-primary-1-dark p-3">
             {t('about-service.sections.my-path.image.other-work-opportunities')}
             <OtherWorkPpportunitiesTooltip />
           </div>
-          <div className="flex items-center justify-center gap-3 rounded-sm bg-secondary-1 p-3">
+          <div className="flex items-center justify-center gap-3 rounded-sm bg-primary-1 p-3">
             {t('about-service.sections.my-path.image.other-education')}
             <OtherEducationTooltip />
           </div>
@@ -458,7 +458,7 @@ const MyPathMobile = () => {
         <div className="grid w-full grid-cols-2 gap-5">
           <div className="flex h-full flex-col items-center">
             <ArrowMobile color="#CCC" rotation={180} className="mt-2" />
-            <div className="flex w-full flex-1 flex-col items-end justify-between gap-3 rounded-md bg-primary-light-2 px-5 py-3">
+            <div className="bg-primary-light-2 flex w-full flex-1 flex-col items-end justify-between gap-3 rounded-md px-5 py-3">
               <div className="flex flex-col items-end">
                 <span>{t('about-service.sections.my-path.image.career-info')}</span>
                 <span>{t('about-service.sections.my-path.image.job-postings')}</span>
@@ -468,7 +468,7 @@ const MyPathMobile = () => {
           </div>
           <div className="flex h-full flex-col items-center">
             <ArrowMobile color="#CCC" rotation={180} className="mt-2" />
-            <div className="flex w-full flex-1 flex-col items-end justify-between gap-3 rounded-md bg-primary-light-2 px-5 py-3">
+            <div className="bg-primary-light-2 flex w-full flex-1 flex-col items-end justify-between gap-3 rounded-md px-5 py-3">
               {t('about-service.sections.my-path.image.education-options')}
               {opintopolkuLogo}
             </div>

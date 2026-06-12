@@ -83,7 +83,7 @@ const MainCard = () => {
       <div className="relative mx-auto max-w-[1092px] px-5 sm:px-6 xl:px-0" ref={firstCardRef}>
         <div className="max-w-[716px]">
           <HeroCard
-            backgroundColor="var(--color-secondary-1-dark-2)"
+            backgroundColor="var(--color-primary-1-dark-2)"
             content={t('home.hero.content')}
             title={t('home.hero.title')}
             titleLevel={1}
@@ -274,7 +274,7 @@ const Home = () => {
       </Content>
       <Content className="grid grid-cols-1 gap-7 lg:grid-cols-3">
         <HeroCard
-          backgroundColor="var(--color-secondary-1-dark-2)"
+          backgroundColor="var(--color-primary-1-dark-2)"
           content={t('home.sections.osaamispolku.content')}
           title={t('home.sections.osaamispolku.title')}
           size="sm"
@@ -286,7 +286,7 @@ const Home = () => {
           buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
         />
         <HeroCard
-          backgroundColor="var(--color-secondary-2-dark)"
+          backgroundColor="var(--color-primary-2-dark)"
           content={t('home.sections.ohjaaja.content')}
           title={t('home.sections.ohjaaja.title')}
           size="sm"
@@ -297,7 +297,7 @@ const Home = () => {
           buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
         />
         <HeroCard
-          backgroundColor="var(--color-secondary-4-dark)"
+          backgroundColor="var(--color-primary-4-dark)"
           content={t('home.sections.tietopalvelu.content')}
           title={t('home.sections.tietopalvelu.title')}
           to={`/tietopalvelu/${language}`}
@@ -390,7 +390,7 @@ const Home = () => {
             buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
             titleLevel={2}
             titleClassName="text-heading-2"
-            backgroundColor="var(--color-secondary-2-dark)"
+            backgroundColor="var(--color-primary-2-dark)"
           />
         </div>
       </Content>
