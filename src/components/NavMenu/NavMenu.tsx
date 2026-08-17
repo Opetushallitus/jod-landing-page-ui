@@ -22,7 +22,11 @@ const PortalLink = ({ children, className }: LinkComponent) => {
   );
 
   return (
-    <NavLink className={({ isActive }) => cx(className, { [activeClasses]: isActive })} to={`/${language}`}>
+    <NavLink
+      className={({ isActive }) => cx(className, { [activeClasses]: isActive })}
+      to={`/${language}`}
+      data-testid="navmenu-competency-path-portal"
+    >
       {children}
     </NavLink>
   );
@@ -61,18 +65,21 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
           url: `/yksilo/${language}`,
           description: t('common:navigation.external.yksilo.description'),
           accentColor: '#006DB3',
+          testId: 'osaamispolku',
         },
         {
           label: t('common:navigation.external.ohjaaja.label'),
           url: `/ohjaaja/${language}`,
           description: t('common:navigation.external.ohjaaja.description'),
           accentColor: '#00818A',
+          testId: 'ohjaaja',
         },
         {
           label: t('common:navigation.external.tietopalvelu.label'),
           url: `/tietopalvelu/${language}`,
           description: t('common:navigation.external.tietopalvelu.description'),
           accentColor: '#AD4298',
+          testId: 'tietopalvelu',
         },
       ],
     },
@@ -82,6 +89,7 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
         {
           label: t('common:navigation.extra.palveluhakemisto.label'),
           url: t('common:navigation.extra.palveluhakemisto.url'),
+          testId: 'palveluhakemisto',
         },
       ],
     },
@@ -104,6 +112,7 @@ export const NavMenu = ({ open, onClose }: { open: boolean; onClose: () => void 
       externalLinkIconAriaLabel={t('common:external-link')}
       ariaLabel={t('common:navigation-menu')}
       navigationAriaLabel={t('common:main-navigation')}
+      testId="navmenu"
     />
   );
 };

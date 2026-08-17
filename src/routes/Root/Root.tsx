@@ -74,22 +74,27 @@ const Root = () => {
     {
       href: `/${language}/${t('common:slugs.about-service')}`,
       label: t('common:footer.more-info-links.about-service'),
+      testId: 'footer-about-service-link',
     },
     {
       href: `/${language}/${t('common:slugs.privacy-and-cookies')}`,
       label: t('common:footer.more-info-links.privacy-and-cookies'),
+      testId: 'footer-privacy-and-cookies-link',
     },
     {
       href: `/${language}/${t('common:slugs.data-sources')}`,
       label: t('common:footer.more-info-links.data-sources'),
+      testId: 'footer-data-sources-link',
     },
     {
       href: `/${language}/${t('common:slugs.ai-usage')}`,
       label: t('common:footer.more-info-links.ai-usage'),
+      testId: 'footer-ai-usage-link',
     },
     {
       href: `/${language}/${t('common:slugs.accessibility')}`,
       label: t('common:footer.more-info-links.accessibility'),
+      testId: 'footer-accessibility-link',
     },
   ];
 

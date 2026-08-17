@@ -76,6 +76,7 @@ const FeedbackSuccessFooter = ({
       hideDialog();
       closeActiveModal();
     }}
+    testId="feedback-success-close"
   />
 );
 
@@ -160,6 +161,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
         title: t('common:feedback.success-title'),
         description: t('common:feedback.success-description'),
         footer: successFooter,
+        testId: 'feedback-success-dialog',
       });
     } catch (_) {
       setIsSubmitting(false);
@@ -173,7 +175,11 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
       open={isOpen}
       onClose={onClose}
       fullWidthContent
-      topSlot={<h2 className="mb-5 text-heading-1-mobile sm:text-heading-1">{t('common:feedback.title')}</h2>}
+      topSlot={
+        <h2 className="mb-5 text-heading-1-mobile sm:text-heading-1" data-testid="feedback-modal-title">
+          {t('common:feedback.title')}
+        </h2>
+      }
       content={
         <Form
           id={formId}
@@ -182,7 +188,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
           data-testid="feedback-form"
           className="box-content max-w-modal-content px-5 md:px-9"
         >
-          <p className="mb-9 text-body-md-mobile sm:text-body-md">
+          <p className="mb-9 text-body-md-mobile sm:text-body-md" data-testid="feedback-modal-intro">
             {t('common:feedback.intro-1')} {t('common:feedback.intro-2')}
             <br />
             <br />
@@ -197,7 +203,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                 value={value}
                 onChange={onChange}
                 className="mb-6"
-                data-testid="feedback-section-group"
+                testId="feedback-section-group"
               >
                 <RadioButton label={t('common:feedback.sections.osaamispolkuni')} value="Osaamispolkuni" />
                 <RadioButton label={t('common:feedback.sections.ohjaajan-osio')} value="Ohjaajan osio" />
@@ -215,7 +221,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                 value={value}
                 onChange={onChange}
                 className="mb-6"
-                data-testid="feedback-type-group"
+                testId="feedback-type-group"
               >
                 <RadioButton label={t('common:feedback.types.kehu')} value="Kehu" />
                 <RadioButton label={t('common:feedback.types.kehitysehdotus')} value="Kehitysehdotus" />
@@ -232,7 +238,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
               maxLength={MESSAGE_MAX_LENGTH}
               requiredText={t('common:required')}
               errorMessage={errors.message ? t('common:error.form.required') : undefined}
-              data-testid="feedback-message"
+              testId="feedback-message"
             />
           </div>
           <Controller
@@ -247,7 +253,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                 checked={value}
                 onChange={onChange}
                 className={wantsContact ? 'mb-5' : 'mb-7'}
-                data-testid="feedback-wants-contact"
+                testId="feedback-wants-contact"
               />
             )}
           />
@@ -259,7 +265,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                 maxLength={EMAIL_MAX_LENGTH}
                 requiredText={t('common:required')}
                 errorMessage={errors.email ? t('common:error.form.email') : undefined}
-                data-testid="feedback-email"
+                testId="feedback-email"
               />
             </div>
           )}
@@ -282,6 +288,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex text-accent hover:underline"
+                  data-testid="feedback-privacy-link-oph"
                 >
                   {t('common:feedback.links.oph')}
                   <JodOpenInNew ariaLabel={t('common:external-link')} />
@@ -293,6 +300,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex text-accent hover:underline"
+                  data-testid="feedback-privacy-link-keha"
                 >
                   {t('common:feedback.links.keha')}
                   <JodOpenInNew ariaLabel={t('common:external-link')} />
@@ -304,6 +312,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex text-accent hover:underline"
+                  data-testid="feedback-privacy-link-okm"
                 >
                   {t('common:feedback.links.okm')}
                   <JodOpenInNew ariaLabel={t('common:external-link')} />
@@ -323,7 +332,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
               onClose();
             }}
             className="whitespace-nowrap"
-            data-testid="feedback-cancel"
+            testId="feedback-cancel"
           />
           <Button
             variant="white"
@@ -331,11 +340,11 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
             className="whitespace-nowrap"
             disabled={!isValid || isSubmitting}
             form={formId}
-            data-testid="feedback-submit"
+            testId="feedback-submit"
           />
         </div>
       }
-      data-testid="feedback-modal"
+      testId="feedback-modal"
     />
   );
 };
