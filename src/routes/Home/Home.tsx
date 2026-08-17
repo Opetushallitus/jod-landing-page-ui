@@ -23,12 +23,14 @@ const ExternalLink = ({
   children,
   to,
   className,
+  testId,
 }: {
   to: object | string;
   className?: string;
   children: React.ReactNode;
+  testId?: string;
 }) => (
-  <a href={to as string} className={className} target="_blank" rel="noopener noreferrer">
+  <a href={to as string} className={className} target="_blank" rel="noopener noreferrer" data-testid={testId}>
     {children}
   </a>
 );
@@ -91,6 +93,7 @@ const MainCard = () => {
             buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
             to={`/yksilo/${language}`}
             linkComponent={ExternalLink}
+            testId="home-hero"
           />
         </div>
       </div>
@@ -142,10 +145,12 @@ interface HomeAccordionProps {
   icon: React.ReactNode;
   setIsOpen?: (isOpen: boolean) => void;
   isOpen?: boolean;
+  testId?: string;
 }
-const HomeAccordion = ({ title, content, icon, isOpen, setIsOpen }: HomeAccordionProps) => {
+const HomeAccordion = ({ title, content, icon, isOpen, setIsOpen, testId }: HomeAccordionProps) => {
   const triggerId = React.useId();
   const contentId = `${triggerId}-panel`;
+  const getTestId = (suffix: string) => (testId ? `${testId}-${suffix}` : testId);
   return (
     <div className="flex w-full items-center gap-4 bg-white px-4 py-3 shadow-[0_2px_8px_rgba(0,0,0,0.15)] sm:max-w-[717px]">
       <Accordion
@@ -165,8 +170,13 @@ const HomeAccordion = ({ title, content, icon, isOpen, setIsOpen }: HomeAccordio
         }
         ellipsis={false}
         className="w-full"
+        testId={getTestId('accordion')}
       >
-        <section id={contentId} className="mt-3 mb-6 ml-[44px] font-arial text-body-md-mobile sm:text-body-md">
+        <section
+          id={contentId}
+          className="mt-3 mb-6 ml-[44px] font-arial text-body-md-mobile sm:text-body-md"
+          data-testid={getTestId('content')}
+        >
           {content}
         </section>
       </Accordion>
@@ -248,6 +258,7 @@ const Home = () => {
             title={t('home.competency-path-help.situation.accordion-1-title')}
             content={t('home.competency-path-help.situation.accordion-1-text')}
             icon={<JodQuestionMark size={18} />}
+            testId="home-accordion-1"
           />
           <HomeAccordion
             isOpen={openAccordion === 2}
@@ -255,6 +266,7 @@ const Home = () => {
             title={t('home.competency-path-help.situation.accordion-2-title')}
             content={t('home.competency-path-help.situation.accordion-2-text')}
             icon={<JodBuild size={18} />}
+            testId="home-accordion-2"
           />
           <HomeAccordion
             isOpen={openAccordion === 3}
@@ -262,6 +274,7 @@ const Home = () => {
             title={t('home.competency-path-help.situation.accordion-3-title')}
             content={t('home.competency-path-help.situation.accordion-3-text')}
             icon={<JodCertificate size={18} />}
+            testId="home-accordion-3"
           />
           <HomeAccordion
             isOpen={openAccordion === 4}
@@ -269,6 +282,7 @@ const Home = () => {
             title={t('home.competency-path-help.situation.accordion-4-title')}
             content={t('home.competency-path-help.situation.accordion-4-text')}
             icon={<JodFavs size={18} />}
+            testId="home-accordion-4"
           />
         </div>
       </Content>
@@ -284,6 +298,7 @@ const Home = () => {
           buttonVariant="white"
           to={`/yksilo/${language}`}
           buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
+          data-testid="home-section-osaamispolku"
         />
         <HeroCard
           backgroundColor="var(--color-primary-2-dark)"
@@ -295,6 +310,7 @@ const Home = () => {
           to={`/ohjaaja/${language}`}
           buttonLabel={t('home.sections.ohjaaja.link-text')}
           buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
+          data-testid="home-section-ohjaaja"
         />
         <HeroCard
           backgroundColor="var(--color-primary-4-dark)"
@@ -306,6 +322,7 @@ const Home = () => {
           linkComponent={ExternalLink}
           buttonLabel={t('home.sections.tietopalvelu.link-text')}
           buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
+          data-testid="home-section-tietopalvelu"
         />
       </Content>
       <Content title={t('home.competency-path-help.you.title')} headingLevel={2} headingClassName="max-w-[748px]!">
@@ -391,6 +408,7 @@ const Home = () => {
             titleLevel={2}
             titleClassName="text-heading-2"
             backgroundColor="var(--color-primary-2-dark)"
+            testId="palveluhakemisto"
           />
         </div>
       </Content>
