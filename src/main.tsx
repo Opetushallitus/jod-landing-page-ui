@@ -20,7 +20,7 @@ try {
 
 const root = createRoot(document.getElementById('root')!);
 
-if (import.meta.env.NODE_ENV !== 'production') {
+if (import.meta.env.DEV) {
   // oxlint-disable-next-line typescript/no-floating-promises
   import('web-vitals').then((vitals) => {
     const warnOnlyNegativeMetrics = (metric: Metric) => {
