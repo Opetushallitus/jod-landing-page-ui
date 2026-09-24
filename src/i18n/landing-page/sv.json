@@ -26,9 +26,6 @@
   "about-individuals": {
     "intro": "Kompetensstigen är en ny, kostnadsfri webbtjänst som hjälper dig med karriärplanering, kompetensutveckling och arbetssökande oavsett var du befinner dig i ditt arbetsliv. Det är värt att testa Kompetensstigen för alla som funderar på sin väg framåt — oavsett om det handlar om utbildning, karriärval eller anställning.",
     "sections": {
-      "1": {
-        "description": "<p>Idag finns det allt fler karriärvägar att välja mellan, och fler än någonsin gör stora förändringar under sitt arbetsliv. Kompetenskraven genomgår dessutom konstant förändring. Kompetensstigen har utvecklats för att fungera som ett stöd för att hantera förändringar i arbetslivet.</p><p>– Kompetensstigen finns till för att hjälpa människor att planera sin karriär på ett strukturerat sätt. Använd tjänsten för att skapa en tydligare bild av din situation och dina valmöjligheter, oavsett om du är arbetssökande, planerar ett karriärbyte, eller om du vill kartlägga dina behov av kompetensutveckling. För unga människor som funderar över sin framtid samlar Kompetensstigen en stor mängd information om olika yrken och utbildningsområden, säger <strong>Tiina Salminen,</strong> senior specialist på arbets- och näringsministeriet.</p>"
-      },
       "10": {
         "description": "<List><ListItem><Link href=\"https://osaamispolku.fi/yksilo/sv/verktyg\" target=\"_blank\"><strong>Upptäck nya möjligheter:</strong></Link> Sammanställ dina kompetenser och intressen för att se vilka utbildningar eller jobb som kan passa dig. Du kan dessutom utforska utbildningar och yrkesområden direkt, inklusive löneinformation och prognoser för sysselsättning.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/yksilo/sv/logga-in\" target=\"_blank\"><strong>Skapa din egen kompetensprofil:</strong></Link> Spara din arbetslivserfarenhet, din utbildningsbakgrund och dina prestationer i din kompetensprofil. Du kan använda informationen för att hitta passande jobb- och studiemöjligheter i Kompetensstigen, samt när du söker jobb. Du kan även sätta upp mål och planera vägar för att nå dem. Du bestämmer hur och var informationen används, och vem den delas med.</ListItem><ListItem><Link href=\"https://www.suomi.fi/amne/vaglednings-och-radgivningstjanster\" target=\"_blank\"><strong>Studie- och yrkesvägledare:</strong></Link> Se vilka vägledningstjänster som finns tillgängliga i din kommun.</ListItem><ListItem><Link href=\"https://osaamispolku.fi/tietopalvelu/sv\" target=\"_blank\"><strong>Informationstjänsten:</strong></Link> Kompetensstigens informationstjänst ger dig ett brett utbud av pålitlig och aktuell statistik kring arbetsmarknad, utbildning och kompetens.</ListItem></List>",
         "navTitle": "Varför ska du testa Kompetensstigen?"
@@ -42,6 +39,9 @@
       },
       "13": {
         "description": "<i>Kompetensstigen lanserades i januari 2026. Tjänsten är tillgänglig på finska, svenska och engelska. Kompetensstigen drivs av undervisnings- och kulturministeriet, arbets- och näringsministeriet, utbildningsstyrelsen och UF-centret.</i>"
+      },
+      "1": {
+        "description": "<p>Idag finns det allt fler karriärvägar att välja mellan, och fler än någonsin gör stora förändringar under sitt arbetsliv. Kompetenskraven genomgår dessutom konstant förändring. Kompetensstigen har utvecklats för att fungera som ett stöd för att hantera förändringar i arbetslivet.</p><p>– Kompetensstigen finns till för att hjälpa människor att planera sin karriär på ett strukturerat sätt. Använd tjänsten för att skapa en tydligare bild av din situation och dina valmöjligheter, oavsett om du är arbetssökande, planerar ett karriärbyte, eller om du vill kartlägga dina behov av kompetensutveckling. För unga människor som funderar över sin framtid samlar Kompetensstigen en stor mängd information om olika yrken och utbildningsområden, säger <strong>Tiina Salminen,</strong> senior specialist på arbets- och näringsministeriet.</p>"
       },
       "2": {
         "description": "<p>Kompetensstigen ger dig verktyg för att kartlägga kompetenser och intressen, samt planera utbildnings- och karriärvägar. Tjänsten hjälper dig att skapa en tydlig bild som kopplar samman din kompetens och dina möjliga vägar framåt med aktuell arbetsmarknadsinformation.</p><p>– Kompetensstigens viktigaste uppgift är att fungera som ett stöd som hjälper människor att fatta väl underbyggda beslut kring utbildning, jobb och kompetensutveckling. Vi vet att till och med avgörande beslut ibland tas baserat på bristande information. Många ser exempelvis bara de karriärmöjligheter eller utbildningar som är tillgängliga just nu – inte det breda utbud av möjligheter som faktiskt finns där, säger <strong>Tomi Kytölä,</strong> senior specialist på undervisnings- och kulturministeriet.</p><p>Kompetensstigen är extra användbar för dig som står inför ett vägval och är osäker på ditt beslut. Kartläggningsverktygen kan vara ett bra stöd innan du börjar söka jobb eller utbildningar. Tjänsten tar inte själva besluten, men den hjälper dig med information som fungerar som ett stöd i processen.</p><p>– Kompetensstigen tar inte besluten åt dig. Målet är att alla ska kunna ta väl underbyggda karriär- och utbildningsbeslut baserat på ett tillräckligt bra underlag som speglar personliga målsättningar, tillägger Kytölä.</p>",
@@ -109,7 +109,7 @@
         "navTitle": "Väglednings- och rådgivningstjänster"
       },
       "guidelines": {
-        "description": "Utforska de gemensamma riktlinjerna för att använda information i JOD-tjänster. Riktlinjerna hjälper dig att använda informationen som tillhandahålls av tjänsterna effektivt för olika ändamål.",
+        "description": "Bekanta dig med Kompetensstigens tjänsters gemensamma anvisningar för användning av information. Anvisningarna hjälper dig att använda den information som tjänsterna erbjuder effektivt för olika ändamål.",
         "linkLabel": "Gå till riktlinjer",
         "linkUrl": "/tietopalvelu/sv/anvisningar-for-dataanvandare",
         "navTitle": "Riktlinjer för informationsanvändare"
@@ -203,7 +203,7 @@
       },
       "status": {
         "description": "Webbplatsen uppfyller lagens tillgänglighetskrav enligt WCAG 2.1 nivå AA, med följande identifierade brister:",
-        "items": "<li>På sidorna finns enskilda rubrikliknande texter som ännu inte har markerats som rubriker för personer som använder hjälpmedel. Detta kan göra det långsammare att bläddra om användaren är van vid att navigera på sidor huvudsakligen med hjälp av rubriker. WCAG 1.3.1 Information och relationer (A)</li><li>Vissa huvudrubriker kan använda textfärger som inte uppnår tillräcklig kontrast. WCAG 1.4.3 Kontrast (minimum)</li><li>Användaren kan inte ändra storlek eller rad-/teckenmellanrum för allt textinnehåll enligt tillgänglighetskraven. Sidorna är dock responsiva, vilket gör att visningen kan förstoras med webbläsarens zoomfunktion. WCAG 1.4.4 Textstorlek; 1.4.12 Textavstånd</li><li>Min Kompetensstig: Nya arbetsplatser, utbildningar, kompetenser och annan information läggs huvudsakligen till via modaldialoger. Knapparna som öppnar dessa dialoger informerar inte alltid hjälpmedelsanvändare om att fokus flyttas till en modal. WCAG 4.1.2 Namn, roll, värde</li><li>I olika delar av tjänsten finns klickbara rutor som fungerar som länkar. Rutorna och de karuseller de bildar innehåller fortsatt brister som påverkar tangentbords- och skärmläsaranvändare. Exempelvis kan rutorna ha godtyckliga textalternativ, inkonsekvent läsordning eller sakna information om att området är klickbart.WCAG 1.3.1 Information och relationer (A)</li><li>Innehållet i Kompetensstigens informationstjänst består delvis av inbäddade Power BI-rapporter, vars användning med skärmläsare kräver mycket skicklighet. Rapporterna har också delar som inte är tillgängliga. Under utvecklingen har tillgänglighetsbrister åtgärdats i så stor utsträckning som möjligt. Vid vidareutvecklingen av tjänsten strävar vi efter att erbjuda ett alternativt sätt att presentera information för det centrala innehållet.</li>",
+        "items": "<li>På sidorna finns enskilda rubrikliknande texter som ännu inte har markerats som rubriker för personer som använder hjälpmedel. Detta kan göra det långsammare att bläddra om användaren är van vid att navigera på sidor huvudsakligen med hjälp av rubriker. WCAG 1.3.1 Information och relationer (A)</li><li>Vissa huvudrubriker kan använda textfärger som inte uppnår tillräcklig kontrast. WCAG 1.4.3 Kontrast (minimum)</li><li>Användaren kan inte ändra storlek eller rad-/teckenmellanrum för allt textinnehåll enligt tillgänglighetskraven. Sidorna är dock responsiva, vilket gör att visningen kan förstoras med webbläsarens zoomfunktion. WCAG 1.4.4 Textstorlek; 1.4.12 Textavstånd</li><li>Min Kompetensstig: Nya arbetsplatser, utbildningar, kompetenser och annan information läggs huvudsakligen till via modaldialoger. Knapparna som öppnar dessa dialoger informerar inte alltid hjälpmedelsanvändare om att fokus flyttas till en modal. WCAG 4.1.2 Namn, roll, värde</li><li>I min kompetensstigen visas intressen i listor. När ett enskilt intresse fokuseras med tangentbord eller mus visas ytterligare information i en popup-bubbla. Denna tilläggsinformation kan varken läsas med skärmläsare eller visas i pekläge. WCAG 1.3.1 Information och relationer</li><li>I olika delar av tjänsten finns klickbara rutor som fungerar som länkar. Rutorna och de karuseller de bildar innehåller fortsatt brister som påverkar tangentbords- och skärmläsaranvändare. Exempelvis kan rutorna ha godtyckliga textalternativ, inkonsekvent läsordning eller sakna information om att området är klickbart.WCAG 1.3.1 Information och relationer (A)</li><li>Innehållet i Kompetensstigens informationstjänst består delvis av inbäddade Power BI-rapporter, vars användning med skärmläsare kräver mycket skicklighet. Rapporterna har också delar som inte är tillgängliga. Under utvecklingen har tillgänglighetsbrister åtgärdats i så stor utsträckning som möjligt. Vid vidareutvecklingen av tjänsten strävar vi efter att erbjuda ett alternativt sätt att presentera information för det centrala innehållet.</li>",
         "navTitle": "Tillgänglighetens status"
       },
       "updates": {
@@ -608,6 +608,10 @@
       },
       "title": "Syftet med behandlingen av personuppgifter"
     },
+    "info-about-3rd-country": {
+      "description": "Uppgifterna lagras i serverhallar hos tjänsteleverantören Amazon Web Services inom EU. Uppgifterna överförs inte till länder utanför EU eller Europeiska ekonomiska samarbetsområdet.",
+      "title": "Information om överföringen av uppgifter till tredje land och om skyddsåtgärder som vidtas"
+    },
     "info": {
       "contact": {
         "content": "Riku Hanhinen",
@@ -633,10 +637,6 @@
         "content": "Utbildningsstyrelsen och UF-centret",
         "title": "Den personuppgiftsansvarige:"
       }
-    },
-    "info-about-3rd-country": {
-      "description": "Uppgifterna lagras i serverhallar hos tjänsteleverantören Amazon Web Services inom EU. Uppgifterna överförs inte till länder utanför EU eller Europeiska ekonomiska samarbetsområdet.",
-      "title": "Information om överföringen av uppgifter till tredje land och om skyddsåtgärder som vidtas"
     },
     "intro": {
       "description": "Denna dataskyddsbeskrivning beskriver hur personuppgifter behandlas i tjänsten Kompetensstigen. Beskrivningen förklarar också vilka rättigheter de registrerade personerna har och hur dessa rättigheter kan utövas. Som registrerade räknas personer som har skapat en kompetensprofil och personer som är inloggade på vägledarens skrivbord.",

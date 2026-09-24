@@ -26,16 +26,16 @@
     }
   },
   "delete": "Delete",
+  "error-boundary": {
+    "session-expired": "Your session has expired. You must log in to the service again or use the service without logging in.",
+    "title": "An error occurred",
+    "unexpected": "An unexpected error occurred. This may be due to a loss of network connection or a service error."
+  },
   "error": {
     "form": {
       "email": "Check the email address",
       "required": "Mandatory field"
     }
-  },
-  "error-boundary": {
-    "session-expired": "Your session has expired. You must log in to the service again or use the service without logging in.",
-    "title": "An error occurred",
-    "unexpected": "An unexpected error occurred. This may be due to a loss of network connection or a service error."
   },
   "external-link": "The link leads outside the service",
   "feedback": {
