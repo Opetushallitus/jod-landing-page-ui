@@ -11,12 +11,14 @@ import {
   MatomoTracker,
   MenuButton,
   NavigationBar,
+  pictureToImageSet,
   ServiceVariantProvider,
   SkipLink,
   useCookieConsent,
   useNoteStack,
 } from '@jod/design-system';
 
+import feedbackBg from '@/../assets/feedback.jpg?preset=bg';
 import { FeedbackModal } from '@/components';
 import { NavMenu } from '@/components/NavMenu/NavMenu';
 import { Toaster } from '@/components/Toaster/Toaster';
@@ -143,7 +145,10 @@ const Root = () => {
   const { open: openCookieConsent } = useCookieConsent();
 
   return (
-    <div className="bg-bg-gray text-primary-gray">
+    <div
+      className="bg-bg-gray text-primary-gray"
+      style={{ '--feedback-bg': pictureToImageSet(feedbackBg) } as React.CSSProperties}
+    >
       <link rel="manifest" href={`/manifest-${language}.json`} crossOrigin="use-credentials" />
       <header role="banner" className="sticky top-0 z-30 print:hidden">
         <SkipLink hash="#jod-main" label={t('common:skiplinks.main')} />
@@ -185,7 +190,7 @@ const Root = () => {
         feedbackContent={t('common:footer.feedback-content')}
         feedbackButtonLabel={t('common:footer.feedback-button-label')}
         feedbackOnClick={() => setFeedbackVisible(true)}
-        feedbackBgImageClassName="bg-[url(@/../assets/feedback.jpg)] bg-cover bg-[50%_50%]"
+        feedbackBgImageClassName="bg-(image:--feedback-bg) bg-cover bg-[50%_50%]"
         copyright={t('common:footer.copyright')}
         socialMedia={socialMedia}
         externalLinkIconAriaLabel={t('common:external-link')}

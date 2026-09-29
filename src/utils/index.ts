@@ -35,3 +35,10 @@ export const createArticleSectionData = (
     showNavTitle,
   };
 };
+
+/**
+ * `sizes` for images in the main column of ArticleSectionPage (MainLayout), so the browser
+ * downloads the width that is actually rendered instead of the full viewport width.
+ */
+export const articleImageSizes =
+  '(min-width: 1140px) 728px, (min-width: 1024px) calc(66.67vw - 32px), (min-width: 640px) calc(100vw - 48px), calc(100vw - 32px)';
