@@ -1,10 +1,12 @@
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 
-import articleImageSrc from '@/../assets/landing-page-osaamispolku-ohjaajille.jpg';
+import { Picture } from '@jod/design-system';
+
+import articleImageSrc from '@/../assets/landing-page-osaamispolku-ohjaajille.jpg?preset=article';
 import { BasicArticleSectionContent } from '@/components/ArticleSectionContent/BasicArticleSectionContent';
 import { ArticleSectionPage } from '@/components/ArticleSectionPage/ArticleSectionPage';
-import { createArticleSectionData } from '@/utils';
+import { articleImageSizes, createArticleSectionData } from '@/utils';
 
 import { ArticleSection } from '../types';
 
@@ -13,7 +15,12 @@ const AboutGuidance = () => {
 
   const sections: ArticleSection[] = React.useMemo(() => {
     return [
-      createArticleSectionData('1', <img src={articleImageSrc} alt="" className="w-full rounded" />, false, false),
+      createArticleSectionData(
+        '1',
+        <Picture picture={articleImageSrc} alt="" className="h-auto w-full rounded" sizes={articleImageSizes} />,
+        false,
+        false,
+      ),
       createArticleSectionData('2', <Trans i18nKey="about-guidance.sections.1.description" />, true, false),
 
       createArticleSectionData(

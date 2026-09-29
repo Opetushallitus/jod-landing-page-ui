@@ -1,12 +1,14 @@
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 
-import articleImageSrcFi from '@/../assets/landing-page-osaamispolku-yksiloille-FI.jpg';
-import articleIntroImageSrc from '@/../assets/landing-page-osaamispolku-yksiloille-intro.jpg';
-import articleImageSrcSv from '@/../assets/landing-page-osaamispolku-yksiloille-SV.jpg';
+import { Picture } from '@jod/design-system';
+
+import articleImageSrcFi from '@/../assets/landing-page-osaamispolku-yksiloille-FI.jpg?preset=article';
+import articleIntroImageSrc from '@/../assets/landing-page-osaamispolku-yksiloille-intro.jpg?preset=article';
+import articleImageSrcSv from '@/../assets/landing-page-osaamispolku-yksiloille-SV.jpg?preset=article';
 import { BasicArticleSectionContent } from '@/components/ArticleSectionContent/BasicArticleSectionContent';
 import { ArticleSectionPage } from '@/components/ArticleSectionPage/ArticleSectionPage';
-import { createArticleSectionData } from '@/utils';
+import { articleImageSizes, createArticleSectionData } from '@/utils';
 
 import { ArticleSection } from '../types';
 
@@ -19,7 +21,7 @@ const AboutIndividuals = () => {
     return [
       createArticleSectionData(
         'image',
-        <img src={articleIntroImageSrc} alt="" className="w-full rounded" />,
+        <Picture picture={articleIntroImageSrc} alt="" className="h-auto w-full rounded" sizes={articleImageSizes} />,
         false,
         false,
       ),
@@ -44,7 +46,12 @@ const AboutIndividuals = () => {
       createArticleSectionData(
         'image2',
         <figure>
-          <img src={articleImageSrc} alt={t('about-individuals.sections.5.navTitle')} className="w-full rounded" />
+          <Picture
+            picture={articleImageSrc}
+            alt={t('about-individuals.sections.5.navTitle')}
+            className="h-auto w-full rounded"
+            sizes={articleImageSizes}
+          />
           <figcaption className="text-sm text-text-secondary mt-2 italic">
             {t('about-individuals.sections.6.description')}
           </figcaption>

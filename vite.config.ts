@@ -4,12 +4,42 @@ import { fileURLToPath } from 'node:url';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
+import { imagetools, type Picture as ImagetoolsPicture } from 'vite-imagetools';
+
+import type { PictureData } from '@jod/design-system';
+
+// Build-time image optimization presets, used as `import hero from './hero.jpg?preset=hero'`.
+// Query parameters override the preset, e.g. `?preset=article&w=480;960`.
+const imagePresets: Record<string, Record<string, string>> = {
+  // Full-width hero, always rendered at 1440px, so only the format varies.
+  hero: { format: 'avif;webp;jpg', as: 'picture' },
+  // Article images in the main column of MainLayout (max 728px): 1x and 2x desktop,
+  // 2x and 3x phones. Rendered widths are in `articleImageSizes`.
+  article: { format: 'avif;webp;jpg', w: '480;728;1080;1456', as: 'picture' },
+  // CSS backgrounds: a single width, converted to `image-set()` with `pictureToImageSet`.
+  bg: { format: 'avif;webp;jpg', w: '1440', as: 'picture' },
+};
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    imagetools({
+      defaultDirectives: (url) => new URLSearchParams(imagePresets[url.searchParams.get('preset') ?? ''] ?? {}),
+      // Emit `as=picture` in the shape of the design system's `PictureData`,
+      // so imports can be passed straight to `<Picture picture={...} />`.
+      extendOutputFormats: (builtins) => ({
+        ...builtins,
+        picture: (args) => async (metadatas) => {
+          const { sources, img } = (await builtins.picture(args)(metadatas)) as ImagetoolsPicture;
+          return {
+            sources: Object.entries(sources).map(([format, srcSet]) => ({ srcSet, type: `image/${format}` })),
+            img,
+          } satisfies PictureData;
+        },
+      }),
+    }),
     {
       name: 'serve-notifications-json',
       configureServer(server) {

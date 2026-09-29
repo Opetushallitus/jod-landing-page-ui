@@ -2,13 +2,13 @@ import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
 
-import { Accordion, cx, HeroCard, useMediaQueries } from '@jod/design-system';
+import { Accordion, cx, HeroCard, Picture, useMediaQueries } from '@jod/design-system';
 import { JodBuild, JodCertificate, JodFavs, JodOpenInNew, JodQuestionMark } from '@jod/design-system/icons';
 
-import heroSrc1 from '@/../assets/landing-page-hero-1.jpg';
-import heroSrc2 from '@/../assets/landing-page-hero-2.jpg';
-import heroSrc3 from '@/../assets/landing-page-hero-3.jpg';
-import heroSrc4 from '@/../assets/landing-page-hero-4.jpg';
+import heroSrc1 from '@/../assets/landing-page-hero-1.jpg?preset=hero';
+import heroSrc2 from '@/../assets/landing-page-hero-2.jpg?preset=hero';
+import heroSrc3 from '@/../assets/landing-page-hero-3.jpg?preset=hero';
+import heroSrc4 from '@/../assets/landing-page-hero-4.jpg?preset=hero';
 import {
   LogoOpinfi,
   LogoOpintopolkuEn,
@@ -74,13 +74,16 @@ const MainCard = () => {
   return (
     <>
       {/* Hero aspect ratio = ((9 / 21) * 1440px) = 617px */}
-      <img
-        src={heroSrc}
+      <Picture
+        picture={heroSrc}
         alt=""
         role="none"
+        loading="eager"
+        fetchPriority="high"
+        sizes="1440px"
         className="pointer-events-none w-(--breakpoint-xl) touch-none object-cover object-[71.7%_50%] select-none sm:h-[617px] sm:object-[70%_50%] md:object-[67.3%_50%] lg:object-[58.5%_50%] xl:object-[50%_50%]"
         style={sm ? undefined : { height: heroHeight }}
-        data-testid="home-hero"
+        testId="home-hero"
       />
       <div className="relative mx-auto max-w-[1092px] px-5 sm:px-6 xl:px-0" ref={firstCardRef}>
         <div className="max-w-[716px]">

@@ -1,12 +1,14 @@
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 
-import articleImage1SrcFi from '@/../assets/landing-page-tietopalvelu-image-1-FI.jpg';
-import articleImage1SrcSv from '@/../assets/landing-page-tietopalvelu-image-1-SV.jpg';
-import articleIntroImageSrc from '@/../assets/landing-page-tietopalvelu-intro.jpg';
+import { Picture } from '@jod/design-system';
+
+import articleImage1SrcFi from '@/../assets/landing-page-tietopalvelu-image-1-FI.jpg?preset=article';
+import articleImage1SrcSv from '@/../assets/landing-page-tietopalvelu-image-1-SV.jpg?preset=article';
+import articleIntroImageSrc from '@/../assets/landing-page-tietopalvelu-intro.jpg?preset=article';
 import { BasicArticleSectionContent } from '@/components/ArticleSectionContent/BasicArticleSectionContent';
 import { ArticleSectionPage } from '@/components/ArticleSectionPage/ArticleSectionPage';
-import { createArticleSectionData } from '@/utils';
+import { articleImageSizes, createArticleSectionData } from '@/utils';
 
 import { ArticleSection } from '../types';
 
@@ -19,7 +21,7 @@ const AboutInformationService = () => {
     return [
       createArticleSectionData(
         'image',
-        <img src={articleIntroImageSrc} alt="" className="w-full rounded" />,
+        <Picture picture={articleIntroImageSrc} alt="" className="h-auto w-full rounded" sizes={articleImageSizes} />,
         false,
         false,
       ),
@@ -37,10 +39,11 @@ const AboutInformationService = () => {
       createArticleSectionData(
         'image2',
         <figure>
-          <img
-            src={articleImage1Src}
+          <Picture
+            picture={articleImage1Src}
             alt={t('about-information-service.sections.3.imageAlt')}
-            className="w-full rounded"
+            className="h-auto w-full rounded"
+            sizes={articleImageSizes}
           />
           <figcaption className="text-sm text-text-secondary mt-2 italic">
             {t('about-information-service.sections.3.imageCaption')}
