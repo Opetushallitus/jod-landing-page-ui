@@ -119,6 +119,21 @@ const Root = () => {
     document.documentElement.setAttribute('lang', language);
   }, [language]);
 
+  // Reset the focus to the start of the document on page change, like a full page load does.
+  // Otherwise the focus stays where it was, e.g. in the clicked footer link.
+  const previousPathname = React.useRef(location.pathname);
+  React.useEffect(() => {
+    if (previousPathname.current === location.pathname) {
+      return;
+    }
+    previousPathname.current = location.pathname;
+
+    const { body } = document;
+    body.setAttribute('tabindex', '-1');
+    body.focus({ preventScroll: true });
+    body.addEventListener('blur', () => body.removeAttribute('tabindex'), { once: true });
+  }, [location.pathname]);
+
   React.useEffect(() => {
     getNotifications().forEach((notification) => {
       addTemporaryNote(() => ({
