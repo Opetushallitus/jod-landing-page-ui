@@ -119,20 +119,45 @@ const Root = () => {
     document.documentElement.setAttribute('lang', language);
   }, [language]);
 
-  // Reset the focus to the start of the document on page change, like a full page load does.
-  // Otherwise the focus stays where it was, e.g. in the clicked footer link.
-  const previousPathname = React.useRef(location.pathname);
+  // Moves the focus after navigation, because the router only scrolls:
+  // - focus the target of the hash, e.g. a heading in the page navigation or in a direct link
+  // - on page change, focus the first h1 inside main content or the skip link if no h1 found
+  const previousPathname = React.useRef<string | null>(null);
   React.useEffect(() => {
-    if (previousPathname.current === location.pathname) {
-      return;
-    }
-    previousPathname.current = location.pathname;
+    const timeout = window.setTimeout(() => {
+      const isPageChange = previousPathname.current !== location.pathname;
+      previousPathname.current = location.pathname;
 
-    const { body } = document;
-    body.setAttribute('tabindex', '-1');
-    body.focus({ preventScroll: true });
-    body.addEventListener('blur', () => body.removeAttribute('tabindex'), { once: true });
-  }, [location.pathname]);
+      let hashTarget: HTMLElement | null = null;
+      try {
+        hashTarget = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
+      } catch {
+        // Invalid hash, nothing to focus
+      }
+
+      if (hashTarget) {
+        hashTarget.setAttribute('tabIndex', '-1');
+        hashTarget.focus({ preventScroll: true });
+        return;
+      }
+
+      if (!isPageChange) {
+        return;
+      }
+
+      const mainElement = document.querySelector('#jod-main');
+      const firstHeading = mainElement?.querySelector('h1') || document.querySelector('h1');
+
+      if (firstHeading) {
+        firstHeading.setAttribute('tabIndex', '-1');
+        firstHeading.focus({ preventScroll: true });
+      } else {
+        const skipLink = document.querySelector<HTMLAnchorElement>('a[href="#jod-main"]');
+        skipLink?.focus();
+      }
+    });
+    return () => window.clearTimeout(timeout);
+  }, [location.pathname, location.hash, location.key]);
 
   React.useEffect(() => {
     getNotifications().forEach((notification) => {
