@@ -22,7 +22,7 @@ export const ArticleSectionNavigation = ({
       title: t('on-this-page'),
       linkItems: sections.map((section) => ({
         label: section.navTitle,
-        linkComponent: getLinkTo(`#${section.navTitle}`, { useAnchor: true }),
+        linkComponent: getLinkTo(`#${section.navTitle}`),
       })),
     };
     return (

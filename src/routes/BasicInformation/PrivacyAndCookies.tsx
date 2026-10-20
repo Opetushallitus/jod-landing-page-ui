@@ -480,7 +480,7 @@ const PrivacyAndCookies = () => {
       title: t('on-this-page'),
       linkItems: allSections.map((section) => ({
         label: section.navTitle,
-        linkComponent: getLinkTo(`#${section.navTitle}`, { useAnchor: true }),
+        linkComponent: getLinkTo(`#${section.navTitle}`),
       })),
     }),
     [t, allSections],
