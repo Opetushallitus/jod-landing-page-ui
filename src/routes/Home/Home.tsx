@@ -92,6 +92,7 @@ const MainCard = () => {
             content={t('home.hero.content')}
             title={t('home.hero.title')}
             titleLevel={1}
+            titleClassName="ds:focus:outline-0"
             buttonLabel={t('home.hero.link-text')}
             buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
             to={`/yksilo/${language}`}
