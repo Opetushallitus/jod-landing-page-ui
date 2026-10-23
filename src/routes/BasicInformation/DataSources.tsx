@@ -163,7 +163,7 @@ const DataSources = () => {
                         href={l.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex text-accent hover:underline"
+                        className="inline-flex text-accent underline"
                       >
                         {l.label}
                         <JodOpenInNew ariaLabel={t('common:external-link')} />
@@ -179,7 +179,7 @@ const DataSources = () => {
                   href={links[0].href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex text-accent hover:underline"
+                  className="inline-flex text-accent underline"
                 >
                   {links[0].label}
                   <JodOpenInNew ariaLabel={t('common:external-link')} />
