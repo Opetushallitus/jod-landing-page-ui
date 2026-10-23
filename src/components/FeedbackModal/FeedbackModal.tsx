@@ -287,7 +287,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                   href={t('common:feedback.linkHrefs.oph')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex text-accent hover:underline"
+                  className="inline-flex text-accent underline"
                   data-testid="feedback-privacy-link-oph"
                 >
                   {t('common:feedback.links.oph')}
@@ -299,7 +299,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                   href={t('common:feedback.linkHrefs.keha')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex text-accent hover:underline"
+                  className="inline-flex text-accent underline"
                   data-testid="feedback-privacy-link-keha"
                 >
                   {t('common:feedback.links.keha')}
@@ -311,7 +311,7 @@ export const FeedbackModal = ({ isOpen, onClose, section, area, language }: Feed
                   href={t('common:feedback.linkHrefs.okm')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex text-accent hover:underline"
+                  className="inline-flex text-accent underline"
                   data-testid="feedback-privacy-link-okm"
                 >
                   {t('common:feedback.links.okm')}

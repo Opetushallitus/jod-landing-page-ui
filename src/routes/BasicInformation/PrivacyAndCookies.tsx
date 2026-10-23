@@ -338,7 +338,7 @@ const PrivacyAndCookies = () => {
                             to={t(
                               'privacy-policy-and-cookies.storing-time-of-personal-data.data-subject-rights.request-of-data.link',
                             )}
-                            className="inline-flex text-accent hover:underline"
+                            className="inline-flex text-accent underline"
                             target="_blank"
                             rel="noopener noreferrer"
                           />
@@ -426,7 +426,7 @@ const PrivacyAndCookies = () => {
               CustomLink1: (
                 <Link
                   to="https://www.microsoft.com/en-us/privacy/privacystatement"
-                  className="inline-flex text-accent hover:underline"
+                  className="inline-flex text-accent underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 />
@@ -434,7 +434,7 @@ const PrivacyAndCookies = () => {
               CustomLink2: (
                 <Link
                   to="https://policies.google.com/privacy"
-                  className="inline-flex text-accent hover:underline"
+                  className="inline-flex text-accent underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 />

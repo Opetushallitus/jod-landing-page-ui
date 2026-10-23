@@ -32,7 +32,7 @@ const AboutGuidance = () => {
         <Trans
           i18nKey="about-guidance.sections.3.description"
           // oxlint-disable-next-line jsx_a11y/anchor-has-content, jsx_a11y/anchor-is-valid
-          components={{ Link: <a className="inline-flex text-accent hover:underline"></a> }}
+          components={{ Link: <a className="inline-flex text-accent underline"></a> }}
         />,
       ),
       createArticleSectionData(
@@ -47,7 +47,7 @@ const AboutGuidance = () => {
             List: <ul className="mt-4 ml-7 list-outside list-disc"></ul>,
             ListItem: <li></li>,
             // oxlint-disable-next-line jsx_a11y/anchor-has-content, jsx_a11y/anchor-is-valid
-            Link: <a className="inline-flex text-accent hover:underline"></a>,
+            Link: <a className="inline-flex text-accent underline"></a>,
           }}
         />,
         false,

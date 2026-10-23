@@ -45,7 +45,7 @@ const AboutService = () => {
           </h3>
           <p className="mb-8">
             {t('about-service.sections.my-path.data-sources.description')}{' '}
-            <Link to={`/${language}/${t('common:slugs.ai-usage')}`} className="text-accent hover:underline">
+            <Link to={`/${language}/${t('common:slugs.ai-usage')}`} className="text-accent underline">
               {t('about-service.sections.my-path.data-sources.read-more-link')}
             </Link>
             .
