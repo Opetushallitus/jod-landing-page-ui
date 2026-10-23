@@ -58,7 +58,7 @@ const AboutInformationService = () => {
           components={{
             ListItem: <li></li>,
             List: <ul className="mt-4 ml-7 list-outside list-disc"></ul>,
-            Link: <a className="inline-flex text-accent hover:underline"></a>,
+            Link: <a className="inline-flex text-accent underline"></a>,
           }}
           i18nKey="about-information-service.sections.3.description-2"
         />,

@@ -79,7 +79,7 @@ const AboutIndividuals = () => {
             List: <ol className="mt-4 ml-7 list-outside list-decimal"></ol>,
             ListItem: <li></li>,
             // oxlint-disable-next-line jsx_a11y/anchor-has-content, jsx_a11y/anchor-is-valid
-            Link: <a className="inline-flex text-accent hover:underline"></a>,
+            Link: <a className="inline-flex text-accent underline"></a>,
           }}
         />,
         false,
@@ -91,7 +91,7 @@ const AboutIndividuals = () => {
           i18nKey="about-individuals.sections.11.description"
           components={{
             // oxlint-disable-next-line jsx_a11y/anchor-has-content, jsx_a11y/anchor-is-valid
-            Link: <a className="inline-flex text-accent hover:underline"></a>,
+            Link: <a className="inline-flex text-accent underline"></a>,
           }}
         />,
         true,
@@ -105,7 +105,7 @@ const AboutIndividuals = () => {
             List: <ul className="mt-4 ml-7 list-outside list-disc"></ul>,
             ListItem: <li></li>,
             // oxlint-disable-next-line jsx_a11y/anchor-has-content, jsx_a11y/anchor-is-valid
-            Link: <a className="inline-flex text-accent hover:underline"></a>,
+            Link: <a className="inline-flex text-accent underline"></a>,
           }}
         />,
         true,
