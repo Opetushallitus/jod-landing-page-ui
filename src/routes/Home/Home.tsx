@@ -410,7 +410,7 @@ const Home = () => {
             buttonLabel={t('home.personal-guidance.link-text')}
             buttonIcon={<JodOpenInNew ariaLabel={t('common:external-link')} />}
             titleLevel={2}
-            titleClassName="text-heading-2"
+            size="sm"
             backgroundColor="var(--color-primary-2-dark)"
             testId="palveluhakemisto"
           />
