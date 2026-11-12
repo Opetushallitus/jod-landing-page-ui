@@ -213,7 +213,7 @@ const Root = () => {
       <ServiceVariantProvider value="palveluportaali">
         <Outlet />
       </ServiceVariantProvider>
-      <Chatbot />
+      <Chatbot ariaLabel={t('common:chatbot.name')} />
       <Footer
         language={language}
         okmLabel={t('common:footer.logos.okm-label')}
