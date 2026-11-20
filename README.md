@@ -55,6 +55,26 @@ To update the JOD Design System to the latest version:
 2. Update the `@jod/design-system` dependency URL in `package.json` to point to the latest release `.tgz` file
 3. Run `npm install` to install the updated version
 
+## End-to-end tests
+
+The Playwright tests in `e2e/` run against the UI only. The feedback API and the service notifications are replaced by
+an in-memory fake (`e2e/backend.ts`), so no backend or test environment is needed and the tests run in the build
+workflow on every pull request.
+
+```shell
+npm run test:e2e:install   # once, and after updating @playwright/test
+npm run test:e2e           # headless, on Chrome (desktop and mobile)
+npm run test:e2e:all       # on all browsers
+npm run test:e2e -- --project=firefox   # on the chosen browsers
+npm run test:e2e -- --ui   # watch and debug the tests in the Playwright UI
+```
+
+- The tests use port 5180, so that they never reuse another Vite server running on the default port 5173.
+- Locally the tests start `vite dev` (or reuse one running on port 5180); in CI they run against `vite preview` of the
+  build.
+- By default the tests run on Chrome only (desktop and mobile), in CI on the bundled Chromium, to keep the runs fast.
+- A request the fake does not handle fails the test, so a new API call needs a handler in `e2e/backend.ts`.
+
 ## Accessibility testing
 
 ### Axe
