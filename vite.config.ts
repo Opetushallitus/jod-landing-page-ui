@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import { imagetools, type Picture as ImagetoolsPicture } from 'vite-imagetools';
+import { configDefaults } from 'vitest/config';
 
 import type { PictureData } from '@jod/design-system';
 
@@ -110,6 +111,7 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: ['./vitest.setup.ts'],
+    exclude: [...configDefaults.exclude, 'e2e'],
     coverage: {
       provider: 'v8',
       reporter: ['lcov'],
